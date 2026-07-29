@@ -1,0 +1,88 @@
+{
+  "ratio": "4:3",
+  "intent": "An elegant pair of gold hexagonal-frame glasses rests on a polished dark wooden surface beside a partially open leather-bound book in a warm, scholarly environment.",
+  "atmosphere": "Elegant and sophisticated",
+  "style": "Photorealistic product photography",
+  "lighting": "Soft ambient warm lighting from overhead sources, golden color temperature, gentle directional highlights on metallic surfaces with soft diffused shadows.",
+  "elements": [
+    {
+      "id": 1,
+      "caption": "Elegant eyeglasses with distinctive hexagonal gold-toned metal frame, each lens surrounded by six precisely angled sides forming a geometric honeycomb shape; thin polished metal temples with subtle brushed finish catching warm amber highlights along the edges; delicate gold nose pads with translucent silicone cushions; tiny precision hinges visible at the frame corners showing fine craftsmanship details; the metal surface exhibits micro-scratches and subtle patina indicating gentle use.",
+      "position": "<bbox>280 380 620 680</bbox>",
+      "depth": 60,
+      "photography": {
+        "composition": "full shot",
+        "angle": "slightly high-angle",
+        "perspective": "three-quarter view"
+      }
+    },
+    {
+      "id": 2,
+      "caption": "Two clear optical lenses set within the hexagonal gold frames, each lens showing subtle anti-reflective coating with faint blue-purple edge tint; the lens surfaces capture soft distorted reflections of overhead ceiling lights as elongated warm white ovals; minute dust particles and faint fingerprint smudges visible upon close inspection adding realism.",
+      "position": "<bbox>310 410 590 650</bbox>",
+      "depth": 55,
+      "photography": {
+        "composition": "close-up",
+        "perspective": "front view"
+      }
+    },
+    {
+      "id": 3,
+      "caption": "Partially open leather-bound book with rich cognac-brown aged leather cover showing natural patina, subtle creasing, and worn edges revealing lighter tan undertones; the spine displays gentle cracking and embossed decorative lines; pages are cream-colored with fine paper grain texture, completely blank and untouched, fanned slightly open revealing the thickness of multiple sheets; the book lies at an angle with its cover slightly curled from age.",
+      "position": "<bbox>580 420 920 780</bbox>",
+      "depth": 70,
+      "photography": {
+        "composition": "partial shot",
+        "angle": "slightly high-angle",
+        "perspective": "three-quarter view",
+        "visibility": "The right edge of the book extends beyond the frame."
+      }
+    }
+  ],
+  "relationships": [
+    "The gold hexagonal glasses <bbox>280 380 620 680</bbox> rest on the dark wooden surface <bbox>0 500 999 999</bbox> to the left of the leather-bound book <bbox>580 420 920 780</bbox>.",
+    "The clear lenses <bbox>310 410 590 650</bbox> are set within the gold hexagonal frame of the glasses <bbox>280 380 620 680</bbox>.",
+    "The leather-bound book <bbox>580 420 920 780</bbox> lies partially open on the dark wooden surface <bbox>0 500 999 999</bbox> with its pages facing upward."
+  ],
+  "scene": {
+    "setting": "A refined study or library interior during daytime, with warm ambient lighting filtering through unseen windows, featuring a polished dark wooden desk or table surface.",
+    "elements": [
+      {
+        "id": 4,
+        "caption": "Smooth polished dark walnut wooden surface with rich deep brown tones and visible wood grain running diagonally across the frame; the lacquered finish reflects soft warm highlights from overhead lighting in elongated streaks; subtle natural imperfections including minor scratches and wood knot patterns add authenticity; the surface shows gentle wear patterns consistent with regular use.",
+        "position": "<bbox>0 500 999 999</bbox>",
+        "depth": 100
+      },
+      {
+        "id": 5,
+        "caption": "Soft out-of-focus background showing warm cream-colored walls with subtle texture, a hint of dark wooden bookshelf edges visible at the top left corner with indistinct book spines in muted tones of burgundy, navy, and forest green.",
+        "position": "<bbox>0 0 999 520</bbox>",
+        "depth": 220
+      },
+      {
+        "id": 6,
+        "caption": "Warm ceiling light reflection visible as soft elongated oval shapes in the out-of-focus background, suggesting recessed lighting fixtures or a decorative pendant lamp above the scene.",
+        "position": "<bbox>200 50 450 200</bbox>",
+        "depth": 240
+      },
+      {
+        "id": 7,
+        "caption": "Subtle shadow cast by the glasses onto the wooden surface, soft-edged and warm-toned, extending toward the lower right indicating light source from upper left.",
+        "position": "<bbox>350 650 650 750</bbox>",
+        "depth": 90
+      },
+      {
+        "id": 8,
+        "caption": "Faint shadow beneath the open book, deeper and more diffused, following the contour of the book's spine and pages on the wooden surface.",
+        "position": "<bbox>600 720 900 820</bbox>",
+        "depth": 95
+      }
+    ]
+  },
+  "photography": {
+    "layout": "Single image",
+    "shot_type": "Medium close-up",
+    "camera_angle": "Slightly high-angle",
+    "lens_and_effect": "50mm f/2.8, moderate depth of field with gentle background blur."
+  }
+}

@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Text Prompt Scaling Law in Visual Generation</title>
+<meta name="description" content="A text prompt scaling law for text-to-image generation: caption information content, not length, predicts generation quality. ByteDance Seed." />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..700;1,400..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;rect width='16' height='16' fill='%23f6f6f2'/&gt;&lt;text y='13' x='2' font-size='12' font-family='monospace' font-weight='bold' fill='%231f7a4d'&gt;T&lt;/text&gt;&lt;/svg&gt;" />
+<style>
+:root { --accent: #1f7a4d; --accent-deep: #175c39; --paper: #f6f6f2; --paper-warm: #fcfcf7; }
+html, body { font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif; }
+
+.page { max-width: 1080px; margin: 0 auto; padding: 30px 36px 80px; }
+@media (max-width: 700px) { .page { padding: 22px 20px 56px; } }
+
+/* ---- hero header ---- */
+.hero-head { text-align: center; padding: 18px 0 6px; }
+.venue {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 18px;
+}
+h1.big {
+  font-family: "Hanken Grotesk", system-ui, sans-serif; font-weight: 700;
+  font-size: clamp(30px, 5.2vw, 52px); line-height: 1.04;
+  letter-spacing: -0.03em; margin: 0 auto 18px; max-width: 22ch;
+  color: var(--ink-strong);
+}
+h1.big em { font-style: normal; color: var(--accent); }
+.authors { font-size: 18px; color: var(--ink-strong); margin: 0 auto 4px; max-width: 60ch; line-height: 1.5; }
+.affil { font-style: italic; color: var(--ink-muted); font-size: 15.5px; margin-bottom: 22px; }
+
+.links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 6px 0 4px; }
+.links a {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: "IBM Plex Mono", monospace; font-size: 13px; letter-spacing: 0.02em;
+  color: var(--paper); background: var(--ink-strong);
+  text-decoration: none; padding: 9px 17px; border-radius: 2px;
+  border: 1px solid var(--ink-strong); transition: background 140ms, color 140ms, transform 100ms;
+}
+.links a:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); }
+.links a .ic { width: 15px; height: 15px; flex: 0 0 auto; }
+.links a.ghost { background: transparent; color: var(--ink-strong); }
+.links a.ghost:hover { background: var(--ink-strong); color: var(--paper); }
+
+.div { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
+
+/* ---- demo video placeholder ---- */
+.video-frame {
+  margin: 30px 0 6px; aspect-ratio: 16 / 9; width: 100%;
+  background: repeating-linear-gradient(135deg, transparent 0 22px, rgba(94,87,74,0.045) 22px 44px), var(--paper-warm);
+  border: 1px solid var(--rule); border-radius: 3px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: var(--ink-soft);
+}
+.video-frame .play {
+  width: 64px; height: 64px; border-radius: 50%;
+  border: 1.5px solid var(--ink-soft); display: flex; align-items: center; justify-content: center;
+  color: var(--ink-muted); font-size: 22px; padding-left: 5px;
+}
+.video-frame .vlabel { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
+
+/* ---- abstract ---- */
+.abstract { max-width: 700px; margin: 34px auto 4px; }
+.abstract .abs-h {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-soft); text-align: center; margin: 0 0 18px;
+}
+.abstract .abs-h::before, .abstract .abs-h::after {
+  content: ''; display: inline-block; width: 30px; height: 1px;
+  background: var(--rule); vertical-align: middle; margin: 0 14px 3px;
+}
+.abstract p {
+  font-size: 17px; line-height: 1.74; color: var(--ink); margin: 0 0 14px;
+  text-align: justify; hyphens: auto;
+}
+.abstract p:last-child { margin-bottom: 0; }
+.abstract p em { font-style: italic; color: var(--ink-strong); }
+.abstract p .term { font-style: normal; font-weight: 600; color: var(--accent); }
+.abstract p strong { font-weight: 600; color: var(--ink-strong); }
+
+/* ============ flowing article ============ */
+.col { max-width: 720px; margin: 0 auto; }
+.col h2.sec {
+  font-family: "Hanken Grotesk", system-ui, sans-serif; font-style: normal; font-weight: 700;
+  font-size: 27px; margin: 48px 0 16px; color: var(--ink-strong); line-height: 1.12; letter-spacing: -0.02em;
+}
+.col h2.sec::before { content: '§ '; font-family: "IBM Plex Mono", monospace; color: var(--accent); font-style: normal; font-weight: 500; font-size: 16px; }
+.col p {
+  font-size: 18.5px; line-height: 1.72; color: var(--ink); margin: 0 0 16px;
+  hyphens: auto;
+}
+.col p em { font-style: italic; color: var(--ink-strong); }
+.col p .term { font-style: normal; font-weight: 600; color: var(--accent); }
+.col p.lead { font-size: 20px; line-height: 1.6; color: var(--ink-strong); }
+.eqn-block {
+  font-family: "IBM Plex Mono", monospace; font-size: 14px; line-height: 1.9;
+  color: var(--ink-strong); margin: 6px 0 18px; padding: 14px 18px;
+  border-left: 3px solid var(--accent); background: var(--paper-warm);
+}
+
+/* inline figure inside the reading column */
+.figrow { margin: 26px 0; }
+.figrow img, .figrow .chart-host { width: 100%; display: block; border-radius: 2px; }
+.figrow img { border: 1px solid var(--rule-soft); transition: transform 160ms, box-shadow 160ms; cursor: zoom-in; }
+.figrow img:hover { transform: scale(1.008); box-shadow: 0 6px 22px rgba(20,16,8,0.14); }
+.figrow figcaption { font-size: 14px; font-style: italic; color: var(--ink-muted); margin-top: 9px; line-height: 1.5; }
+.figrow figcaption b { font-style: normal; font-weight: 600; color: var(--ink-strong); }
+
+/* ---- reconstruction figure (paper Fig. 2, rebuilt native) ---- */
+.rc2-wrap { display: grid; grid-template-columns: 218px 1fr; gap: 20px; align-items: center; }
+@media (max-width: 760px) { .rc2-wrap { grid-template-columns: 1fr; gap: 14px; } }
+.rc2-ref { display: flex; flex-direction: column; }
+.rc2-ref img { width: 100%; border: 1px solid var(--rule-soft); border-radius: 3px; display: block; cursor: zoom-in; }
+.rc2-reflab { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); text-align: center; margin-top: 7px; }
+.rc2-grid { display: grid; grid-template-columns: 15px repeat(4, 1fr); gap: 7px 9px; align-items: start; }
+.rc2-head { text-align: center; font-family: "Hanken Grotesk", sans-serif; font-size: 15px; font-weight: 600; color: var(--ink-strong); line-height: 1.15; letter-spacing: -0.01em; }
+.rc2-head span { display: block; font-family: "IBM Plex Mono", monospace; font-size: 9px; color: var(--ink-soft); letter-spacing: 0.02em; margin-top: 2px; }
+.rc2-rowlab { writing-mode: vertical-rl; transform: rotate(180deg); text-align: center; align-self: center; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
+.rc2-rowlab.nl { color: var(--red); }
+.rc2-rowlab.sp { color: var(--blue); }
+.rc2-cell img { width: 100%; border: 1px solid var(--rule-soft); border-radius: 3px; display: block; cursor: zoom-in; transition: transform 140ms; }
+.rc2-cell img:hover { transform: scale(1.02); }
+.rc2-m { margin-top: 5px; text-align: center; line-height: 1.32; }
+.rc2-m .d { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--ink-muted); }
+.rc2-m .d b { font-weight: 600; }
+.rc2-m.up .d { color: var(--emerald); }
+.rc2-m .sl { display: block; font-family: "IBM Plex Mono", monospace; font-size: 9px; color: var(--ink-soft); margin-top: 1px; }
+.chart-host { max-width: 560px; margin: 0 auto; }
+
+/* break out wider than the reading column */
+.out { width: min(1040px, 94vw); position: relative; left: 50%; transform: translateX(-50%); }
+
+/* schema + ladder block (compact, breaks out a little) */
+.schema-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 32px; align-items: start; margin: 22px 0; }
+@media (max-width: 820px) { .schema-grid { grid-template-columns: 1fr; gap: 20px; } }
+.json-box {
+  background: #1f1d18; color: #e8e3d6; font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px; line-height: 1.65; padding: 16px 18px; border-radius: 3px; overflow-x: auto; white-space: pre; margin: 0;
+}
+.json-box .k { color: #f4a59b; } .json-box .s { color: #d6c89c; } .json-box .n { color: #9fc7da; }
+.json-box .b { color: #c8a4d4; } .json-box .c { color: #6e6a5d; font-style: italic; } .json-box .p { color: #7d7765; }
+
+.ladder { display: flex; flex-direction: column; }
+.ladder-row { display: grid; grid-template-columns: 50px 1fr auto; align-items: center; gap: 11px; padding: 8px 0; border-bottom: 1px solid var(--rule-soft); }
+.ladder-row:last-child { border-bottom: none; }
+.lv { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; color: #fff; text-align: center; padding: 3px 0; border-radius: 3px; }
+.ladder-add { font-size: 14px; color: var(--ink-strong); }
+.ladder-add .plus { color: var(--accent); font-weight: 600; }
+.ladder-add .sub { display: block; font-size: 11.5px; color: var(--ink-soft); font-family: "IBM Plex Mono", monospace; margin-top: 1px; }
+.ladder-nums { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); text-align: right; white-space: nowrap; }
+.ladder-nums b { color: var(--blue); font-weight: 600; }
+.lever-note { font-size: 14.5px; font-style: italic; color: var(--ink-muted); margin: 14px 0 0; line-height: 1.55; }
+.lever-note b { font-style: normal; font-weight: 600; color: var(--ink-strong); }
+.ladder-block { max-width: 720px; margin: 26px auto 0; }
+
+/* ---- training recipe flow diagram ---- */
+.recipe { margin: 32px auto 30px; }
+.recipe-head { text-align: center; margin-bottom: 18px; }
+.recipe-title { font-family: "Hanken Grotesk", sans-serif; font-size: 19px; font-weight: 700; color: var(--ink-strong); letter-spacing: -0.01em; }
+.recipe-sub { display: block; font-size: 13px; color: var(--ink-muted); margin-top: 3px; }
+.recipe-sub .ill { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--amber); }
+.recipe-flow { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; }
+.rstage {
+  flex: 1 1 0; min-width: 158px; max-width: 210px;
+  border: 1px solid var(--rule); border-top: 3px solid var(--stage, var(--ink-soft));
+  border-radius: 3px; background: var(--paper-warm);
+  padding: 12px 13px 11px; display: flex; flex-direction: column; gap: 7px;
+  transition: transform 140ms, box-shadow 140ms;
+}
+.rstage:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(20,16,8,0.10); }
+.rstep { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.01em; color: var(--stage, var(--ink-strong)); }
+.rwhat { font-size: 13px; line-height: 1.42; color: var(--ink-strong); flex: 1; }
+.rwhat .sub2 { display: block; font-size: 10.5px; color: var(--ink-soft); font-family: "IBM Plex Mono", monospace; margin-top: 3px; line-height: 1.4; }
+.rnum { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); border-top: 1px solid var(--rule-soft); padding-top: 7px; }
+.rnum b { color: var(--stage, var(--blue)); font-weight: 600; }
+.rarr { display: flex; align-items: center; justify-content: center; color: var(--ink-soft); font-size: 18px; padding: 0 6px; flex: 0 0 auto; align-self: center; }
+.rarr.fin { color: var(--blue); }
+.rstage.s-base { --stage: #a89f8d; }
+.rstage.s-sft  { --stage: #cf6f66; }
+.rstage.s-cs   { --stage: #b23d34; }
+.rstage.s-rft  { --stage: #821e1a; }
+.rstage.s-out  { --stage: var(--blue); background: #eef3f8; }
+.recipe-duality { margin-top: 17px; border-top: 1px dashed var(--rule); padding-top: 15px; }
+.rdlab { display: block; text-align: center; font-size: 13.5px; font-style: italic; color: var(--ink-muted); margin-bottom: 12px; }
+.rdlab b { font-style: normal; color: var(--ink-strong); }
+.rdchips { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.rdchip { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ink-strong); border: 1px solid var(--rule); border-radius: 999px; padding: 8px 17px; background: var(--paper); transition: border-color 140ms, transform 120ms; }
+.rdchip:hover { transform: translateY(-1px); }
+.rdchip.white:hover { border-color: var(--blue); }
+.rdchip.black:hover { border-color: var(--ink-strong); }
+.rdchip .rname { font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 600; color: var(--ink-strong); }
+.rdchip i { color: var(--ink-soft); font-style: normal; font-size: 14px; }
+.rdchip .rmono { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 7px; border-radius: 3px; }
+.rdchip.white b { color: var(--blue); font-weight: 600; } .rdchip.white .rmono { background: #e3edf6; color: var(--blue); }
+.rdchip.black b { color: var(--ink-strong); font-weight: 600; } .rdchip.black .rmono { background: var(--ink-strong); color: var(--paper); }
+@media (max-width: 640px) {
+  .recipe-flow { flex-direction: column; align-items: stretch; }
+  .rarr { transform: rotate(90deg); padding: 6px 0; }
+  .rstage { max-width: none; }
+}
+.stagefig { max-width: 690px; margin: 24px auto; }
+.stagefig .chart-host { border: 1px solid var(--rule-soft); border-radius: 3px; padding: 9px 11px; }
+
+/* SFT before/after bbox overlay (1x4: two prompts x before/after) */
+.sftfig { max-width: none; width: min(1040px, 94vw); position: relative; left: 50%; transform: translateX(-50%); margin: 26px auto; }
+.sftfig figcaption { max-width: 760px; margin-left: auto; margin-right: auto; }
+.sftc { border: 1px solid var(--rule-soft); border-radius: 3px; padding: 14px 12px 12px; }
+.sftc-bar { display: flex; justify-content: center; margin-bottom: 16px; }
+.sftc-box { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.03em; color: var(--ink-strong); background: transparent; border: 1px solid var(--rule); border-radius: 999px; padding: 6px 16px; cursor: pointer; transition: background 140ms, color 140ms, border-color 140ms; }
+.sftc-box:hover { background: var(--paper-warm); }
+.sftc-box.on { background: var(--blue); color: #fff; border-color: var(--blue); }
+.sftc-pair { display: flex; gap: 22px; justify-content: center; align-items: flex-end; flex-wrap: wrap; }
+.sftc-col { display: flex; flex-direction: column; align-items: center; gap: 9px; }
+.sftc .sftc-h { display: flex; flex-direction: column; align-items: center; gap: 1px; margin: 0; }
+.sftc-h .pp { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.sftc-h .st { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.04em; text-transform: uppercase; }
+.sftc-h .st.before { color: var(--ink-muted); }
+.sftc-h .st.after { color: var(--blue); font-weight: 500; }
+.sftc-canvas { line-height: 0; }
+.sbx-svg { display: block; border: 1px solid var(--rule); border-radius: 3px; }
+.sft-bx { cursor: default; }
+.sft-bx .fillr { transition: fill-opacity 140ms; }
+.sft-bx.hot .fillr { fill-opacity: 0.24; }
+.sft-ov { transition: opacity 220ms ease; }
+.ov-off .sft-ov { opacity: 0; }
+.sftc .sftc-meta { text-align: center; font-size: 13.5px; color: var(--ink-muted); margin: 16px auto 2px; max-width: 680px; min-height: 20px; font-style: italic; line-height: 1.45; }
+.sftc .sftc-meta b { font-style: normal; }
+.sftc .sftc-meta .lyr { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); font-style: normal; }
+.sftc .sftc-meta .src { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); font-style: normal; margin-left: 6px; }
+@media (max-width: 720px) { .sftc-pair { gap: 14px; } }
+
+/* ---- structured-prompt schema viz (image + element list + bbox) ---- */
+.schema-viz { margin: 24px 0 10px; }
+.sv-top { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+.sv-all { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-strong); background: transparent; border: 1px solid var(--rule); border-radius: 3px; padding: 7px 14px; cursor: pointer; transition: background 140ms, color 140ms; }
+.sv-all:hover { background: var(--paper-warm); }
+.sv-all.on { background: var(--ink-strong); color: var(--paper); border-color: var(--ink-strong); }
+.sv-main { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+@media (max-width: 820px) { .sv-main { grid-template-columns: 1fr; gap: 20px; } }
+.sv-image { position: relative; }
+.sv-image img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; }
+.sv-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.sv-cap { margin-top: 10px; font-size: 13.5px; line-height: 1.5; color: var(--ink); min-height: 44px; }
+.sv-cap b { color: var(--ink-strong); } .sv-cap .dep { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-soft); }
+.sv-cap .muted { color: var(--ink-soft); font-style: italic; }
+.sv-global { font-size: 13px; line-height: 1.5; color: var(--ink-muted); margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid var(--rule-soft); }
+.sv-global .gk { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-right: 6px; }
+.sv-global .gchips { margin-top: 7px; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.sv-global .gchips span { font-size: 12.5px; }
+.sv-global .gchips b { font-family: "IBM Plex Mono", monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); margin-right: 4px; }
+.sv-list { max-height: 430px; overflow-y: auto; padding-right: 8px; scrollbar-width: thin; scrollbar-color: var(--rule) transparent; }
+.sv-list::-webkit-scrollbar { width: 7px; }
+.sv-list::-webkit-scrollbar-track { background: transparent; margin: 4px 0; }
+.sv-list::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 6px; }
+.sv-list::-webkit-scrollbar-thumb:hover { background: var(--ink-soft); }
+.sv-list { -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 10px, #000 calc(100% - 10px), transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 10px, #000 calc(100% - 10px), transparent 100%); }
+.sv-grouph { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); margin: 12px 0 6px; }
+.sv-item { border-radius: 3px; }
+.sv-item.open { background: rgba(33,102,172,0.06); }
+.sv-row { display: grid; grid-template-columns: 26px 1fr auto; align-items: center; gap: 9px; padding: 6px 8px; border-radius: 3px; cursor: pointer; transition: background 120ms; }
+.sv-row:hover { background: var(--paper-warm); }
+.sv-item.open .sv-row { background: rgba(33,102,172,0.10); }
+.sv-row .idx { font-family: "IBM Plex Mono", monospace; font-size: 10px; color: #fff; text-align: center; border-radius: 3px; padding: 2px 0; }
+.sv-item.elem .idx { background: #2166ac; } .sv-item.scene .idx { background: #8c8473; }
+.sv-row .lab { font-size: 14.5px; color: var(--ink-strong); }
+.sv-row .dep { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--ink-soft); }
+/* expandable detail */
+.sv-detail { display: none; padding: 4px 10px 12px 36px; }
+.sv-item.open .sv-detail { display: block; animation: svIn 180ms ease; }
+@keyframes svIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+.sv-d-cap { font-size: 13.5px; line-height: 1.5; color: var(--ink-strong); margin: 0 0 8px; }
+.sv-detail dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; }
+.sv-detail dt { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); white-space: nowrap; padding-top: 2px; }
+.sv-detail dd { margin: 0; font-size: 12.5px; line-height: 1.5; color: var(--ink); }
+.sv-detail dd.mono { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); }
+
+/* ---- GPG visualisation (image + per-token surprisal bars) ---- */
+.gpgviz { display: grid; grid-template-columns: 300px 1fr; gap: 30px; align-items: start; margin: 24px 0 8px; }
+@media (max-width: 760px) { .gpgviz { grid-template-columns: 1fr; gap: 18px; } }
+.gv-left .gv-img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; transition: filter 380ms ease; }
+.gv-imgwrap { position: relative; }
+.gv-imgwrap.hidden .gv-img { filter: grayscale(0.92) blur(3px) brightness(0.62); }
+.gv-veil { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 10px; opacity: 0; transition: opacity 380ms ease; pointer-events: none; border-radius: 2px; }
+.gv-imgwrap.hidden .gv-veil { opacity: 1; }
+.gv-veil-chip { display: inline-flex; align-items: center; gap: 8px; font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--paper); background: rgba(12, 10, 8, 0.8); border: 1px solid rgba(255, 255, 255, 0.28); border-radius: 999px; padding: 8px 15px; box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
+.gv-veil-chip svg { flex: 0 0 auto; }
+.gv-toggle { display: inline-block; margin: 12px 0 0; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--paper); background: var(--ink-strong); border: 1px solid var(--ink-strong); border-radius: 3px; padding: 8px 16px; cursor: pointer; transition: background 140ms, border-color 140ms; }
+.gv-toggle:hover { background: var(--accent); border-color: var(--accent); }
+.gv-toggle.off { background: transparent; color: var(--ink-strong); }
+.gv-toggle.off:hover { background: var(--ink-strong); color: var(--paper); }
+.gv-toggle b { font-weight: 600; }
+.gv-cap { font-size: 13px; font-style: italic; color: var(--ink-muted); margin: 14px 0 0; line-height: 1.55; }
+.gv-head { font-size: 14.5px; color: var(--ink-strong); margin-bottom: 4px; }
+.gv-head b { color: var(--blue); }
+
+/* ---- ED bipartite matching viz ---- */
+.ph { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 9px; }
+.ph .tag { color: var(--accent); }
+.edmatch { margin: 24px 0 8px; }
+.em-bar-top { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 14px; flex-wrap: wrap; }
+.em-reveal { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--paper); background: var(--ink-strong); border: 1px solid var(--ink-strong); border-radius: 3px; padding: 8px 16px; cursor: pointer; transition: background 140ms, border-color 140ms; }
+.em-reveal:hover { background: var(--accent); border-color: var(--accent); }
+.em-reveal.on { background: transparent; color: var(--ink-strong); }
+.em-reveal.on:hover { background: var(--ink-strong); color: var(--paper); }
+.em-cols { display: grid; grid-template-columns: 300px 1fr 1fr; gap: 24px; align-items: start; }
+@media (max-width: 760px) { .em-cols { grid-template-columns: 1fr; gap: 18px; } }
+.em-image { position: relative; }
+.em-image .em-img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; }
+.em-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.em-halluc {
+  position: absolute; top: 8px; left: 8px; opacity: 0; transition: opacity 150ms;
+  font-family: "IBM Plex Mono", monospace; font-size: 11px; color: #fff;
+  background: rgba(154,59,51,0.92); padding: 4px 9px; border-radius: 3px;
+}
+.em-halluc.on { opacity: 1; }
+.em-hint { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--ink-soft); margin: 7px 0 0; text-align: center; }
+.em-h { font-family: "Hanken Grotesk", sans-serif; font-style: normal; font-weight: 600; font-size: 14px; color: var(--ink-strong); margin: 0 0 10px; }
+.em-h .muted { color: var(--ink-soft); font-size: 13px; }
+.em-caption, .em-source { display: flex; flex-direction: column; gap: 5px; }
+.em-source { transition: opacity 320ms; }
+.edmatch:not(.revealed) .em-source { opacity: 0.18; }
+.etup { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; padding: 4px 9px; border-radius: 3px; border: 1px solid; transition: color 200ms, background 200ms, border-color 200ms; }
+.etup.neutral { color: var(--ink-muted); border-color: var(--rule); background: transparent; }
+.etup.ok { color: #2f6e3a; border-color: #b6d3b9; background: rgba(74,122,79,0.08); }
+.etup.no { color: #9a3b33; border-color: #e0bdb8; background: rgba(178,24,43,0.06); text-decoration: line-through; text-decoration-color: rgba(154,59,51,0.5); }
+.etup.miss { color: #7d7565; border-color: var(--rule); background: rgba(140,132,115,0.05); border-style: dashed; }
+.em-bars { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr auto; gap: 14px 24px; align-items: center; }
+@media (max-width: 640px) { .em-bars { grid-template-columns: 1fr; } }
+.em-bar { display: flex; align-items: center; gap: 10px; }
+.em-bar .bl { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); width: 64px; }
+.em-bar .bt { flex: 1; height: 8px; background: var(--rule-soft); border-radius: 4px; overflow: hidden; }
+.em-bar .bf { display: block; height: 100%; width: 0; border-radius: 4px; transition: width 520ms cubic-bezier(.4,0,.2,1); }
+.em-bar .bf.p { background: var(--blue); } .em-bar .bf.r { background: #4a7a4f; }
+.em-bar .bv { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--ink-strong); min-width: 56px; }
+.em-bar .bv b { color: var(--blue); }
+.em-ed { font-size: 16px; color: var(--ink-strong); text-align: right; }
+.em-ed b { font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 21px; color: var(--accent); }
+.mx-note { font-size: 13px; font-style: italic; color: var(--ink-muted); margin: 16px 0 0; line-height: 1.55; }
+.mx-note .syn { font-family: "IBM Plex Mono", monospace; font-style: normal; font-size: 11px; color: var(--amber); letter-spacing: 0.04em; }
+
+/* ---- reconstruction-probe widget ---- */
+.recon { margin: 26px 0; }
+.recon-imgs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 560px) { .recon-imgs { grid-template-columns: 1fr; } }
+.recon-imgs figure { margin: 0; }
+.recon-imgs img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; aspect-ratio: 3/4; object-fit: cover; }
+.recon-imgs figcaption { margin-top: 7px; font-size: 12.5px; line-height: 1.4; }
+.recon-imgs .rlabel { font-style: italic; color: var(--ink-strong); }
+.recon-imgs .rlabel.nl { color: var(--red); } .recon-imgs .rlabel.sp { color: var(--blue); }
+.recon-imgs .rscore { display: block; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; color: var(--ink-muted); margin-top: 2px; }
+.recon-control { display: flex; align-items: center; gap: 14px; margin: 18px 0 6px; flex-wrap: wrap; }
+.recon-control .clab { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+.recon-seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; }
+.recon-seg button {
+  font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-muted);
+  background: transparent; border: none; border-right: 1px solid var(--rule); padding: 7px 14px; cursor: pointer;
+  transition: background 120ms, color 120ms;
+}
+.recon-seg button:last-child { border-right: none; }
+.recon-seg button:hover { background: var(--paper-warm); }
+.recon-seg button.on { background: var(--ink-strong); color: var(--paper); }
+.recon-chart { max-width: 560px; margin: 10px auto 0; }
+
+/* ---- native SVG charts ---- */
+.chart-svg { width: 100%; height: auto; display: block; overflow: visible; }
+.chart-svg .ax-lab { font-family: "IBM Plex Mono", monospace; font-size: 11px; fill: var(--ink-muted); }
+.chart-svg .ax-title { font-family: "Hanken Grotesk", sans-serif; font-size: 13px; font-weight: 600; fill: var(--ink-strong); }
+.chart-svg .eqn { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; }
+.chart-svg .end-lab { font-family: "Hanken Grotesk", sans-serif; font-size: 13px; font-weight: 600; }
+.chart-tip {
+  position: absolute; z-index: 60; pointer-events: none; opacity: 0;
+  background: #1f1d18; color: #f0ebdd; font-family: "IBM Plex Mono", monospace;
+  font-size: 11.5px; line-height: 1.5; padding: 7px 10px; border-radius: 3px;
+  transition: opacity 100ms; box-shadow: 0 4px 16px rgba(0,0,0,0.25); white-space: nowrap;
+}
+.chart-tip b { color: #f4a59b; font-weight: 500; }
+
+/* ---- benchmark table ---- */
+.bench-wrap { overflow-x: auto; margin: 10px 0 6px; }
+table.bench { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; color: var(--ink); }
+table.bench th, table.bench td { padding: 7px 11px; text-align: center; white-space: nowrap; }
+table.bench thead th { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.02em; color: var(--ink-muted); border-bottom: 1.5px solid var(--ink-strong); vertical-align: bottom; }
+table.bench td:first-child, table.bench th:first-child { text-align: left; font-family: "Hanken Grotesk", sans-serif; font-size: 14px; font-weight: 500; }
+table.bench tbody tr td { border-bottom: 1px solid var(--rule-soft); }
+table.bench .grouprow td { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); text-align: left; padding-top: 13px; padding-bottom: 4px; border-bottom: none; }
+table.bench tr.ours td { background: rgba(31,122,77,0.09); font-weight: 600; color: var(--ink-strong); border-top: 1.5px solid var(--accent); border-bottom: 1.5px solid var(--accent); }
+table.bench tr.ours td:first-child { color: var(--accent); }
+table.bench .best { font-weight: 600; }
+table.bench .muted { color: var(--ink-soft); }
+.bench-note { font-size: 13px; font-style: italic; color: var(--ink-muted); margin: 6px 0 0; line-height: 1.5; }
+
+/* ---- gallery + bibtex ---- */
+.gallery-masonry { columns: 320px 3; column-gap: 12px; margin: 22px 0 10px; }
+.gallery-masonry img { width: 100%; display: block; margin: 0 0 12px; border: 1px solid var(--rule-soft); border-radius: 3px; break-inside: avoid; cursor: zoom-in; transition: transform 160ms, box-shadow 160ms; }
+.gallery-masonry img:hover { transform: scale(1.012); box-shadow: 0 8px 26px rgba(20,16,8,0.16); }
+.gallery-cap { font-size: 14px; font-style: italic; color: var(--ink-muted); margin: 6px 0 0; line-height: 1.5; max-width: 760px; }
+.gallery-cap b { font-style: normal; font-weight: 600; color: var(--ink-strong); }
+figure.fig { margin: 22px 0 8px; }
+figure.fig img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; }
+figure.fig figcaption { font-size: 14px; font-style: italic; color: var(--ink-muted); margin-top: 10px; line-height: 1.5; }
+figure.fig figcaption b { font-style: normal; font-weight: 600; color: var(--ink-strong); }
+.bibwrap { position: relative; max-width: 720px; margin: 0 auto; }
+.bibtex { background: #1f1d18; color: #e8e3d6; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; line-height: 1.6; padding: 20px 22px; border-radius: 2px; overflow-x: auto; white-space: pre; margin: 8px 0 0; }
+.bibtex .k { color: #f4a59b; } .bibtex .s { color: #d6c89c; } .bibtex .f { color: #9fc7da; }
+.copybtn { position: absolute; top: 12px; right: 12px; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.04em; color: #cfc8b6; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 5px 10px; border-radius: 2px; cursor: pointer; transition: background 120ms; }
+.copybtn:hover { background: rgba(255,255,255,0.18); }
+footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 13px; color: var(--ink-soft); font-style: italic; }
+
+.lb { position: fixed; inset: 0; background: rgba(15,12,7,0.88); display: none; align-items: center; justify-content: center; z-index: 50; cursor: zoom-out; padding: 30px; }
+.lb.on { display: flex; }
+.lb img { max-width: 92vw; max-height: 90vh; border-radius: 2px; box-shadow: 0 10px 50px rgba(0,0,0,0.5); }
+
+/* ---- zero-shot SP-editing showcase (paper Fig. 1 bottom) ---- */
+.spedit { border: 1px solid var(--rule); border-radius: 4px; padding: 18px 20px 15px; background: var(--paper-warm); margin: 26px 0; }
+.spe-top { display: flex; justify-content: space-between; align-items: center; gap: 12px 16px; flex-wrap: wrap; margin-bottom: 15px; }
+.spe-title { margin: 0; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-muted); }
+.spe-title .tag { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; background: var(--accent); color: #fff; padding: 3px 8px; border-radius: 3px; margin-right: 7px; }
+.spe-cases { display: flex; gap: 6px; }
+.spe-case { font-family: "IBM Plex Mono", monospace; font-size: 12px; padding: 6px 13px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink-muted); cursor: pointer; border-radius: 100px; transition: border-color 140ms, color 140ms, background 140ms; }
+.spe-case:hover { border-color: var(--accent); color: var(--ink-strong); }
+.spe-case.on { background: var(--ink-strong); color: var(--paper); border-color: var(--ink-strong); }
+.spe-stage { display: grid; grid-template-columns: 1fr 30px 1fr; gap: 14px; align-items: start; }
+.spe-side { min-width: 0; }
+.spe-lab { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-muted); margin-bottom: 7px; height: 16px; }
+.spe-lab.edit { color: var(--ink-strong); font-weight: 600; }
+.spe-lab.edit span { color: var(--ink-soft); font-weight: 400; }
+.spe-imgwrap { position: relative; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; aspect-ratio: 1280 / 951; background: #111; }
+.spe-img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.spe-overlay { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.spe-arrow { align-self: center; justify-self: center; font-size: 24px; color: var(--ink-soft); margin-top: 46px; }
+.spe-diff { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; margin-top: 9px; display: flex; flex-direction: column; gap: 1px; word-break: break-word; }
+.spe-diff .f { color: var(--ink-muted); }
+.spe-diff .d.rem { color: #cf222e; }
+.spe-diff .d.add { color: #1a7f37; }
+.spe-chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 15px 0 11px; }
+.spe-chip { display: inline-flex; align-items: center; font-family: "IBM Plex Mono", monospace; font-size: 12.5px; padding: 7px 13px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer; border-radius: 4px; transition: border-color 140ms, background 140ms, color 140ms; }
+.spe-chip:hover { border-color: var(--accent); }
+.spe-chip.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+.spe-chip .bb { font-size: 8.5px; letter-spacing: 0.05em; text-transform: uppercase; background: rgba(0,0,0,0.13); padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+.spe-chip.on .bb { background: rgba(255,255,255,0.26); }
+.spe-note { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-muted); margin: 0; line-height: 1.6; }
+.spe-note .lg.rem { color: #cf222e; font-weight: 600; }
+.spe-note .lg.add { color: #1a7f37; font-weight: 600; }
+@media (max-width: 640px) {
+  .spe-stage { grid-template-columns: 1fr; }
+  .spe-arrow { transform: rotate(90deg); margin: 0; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero-head">
+    <div class="venue">Technical Report · ByteDance Seed · 2026</div>
+    <h1 class="big">Text Prompt Scaling Law<br/>in <em>Visual Generation</em></h1>
+    <p class="authors">Zilong Chen &nbsp;·&nbsp; Chaorui Deng &nbsp;·&nbsp; Kunchang Li &nbsp;·&nbsp; Hongyi Yuan &nbsp;·&nbsp; Haoqi Fan</p>
+    <p class="affil">ByteDance Seed</p>
+    <nav class="links">
+      <a href="#" class="ghost"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M12 12.5v4.6"/><path d="M9.8 14.9 12 17.1l2.2-2.2"/></svg> Paper (PDF)</a>
+      <a href="#" class="ghost"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="3" width="15" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg> arXiv</a>
+      <a href="https://github.com/heheyas/context-scaling" class="ghost"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.3-4-2.3-5.6-2.7M15 21v-3.3c0-.9-.3-1.6-.8-2 2.7-.3 5.4-1.3 5.4-5.9 0-1.3-.5-2.4-1.2-3.2.1-.3.5-1.5-.1-3.1 0 0-1-.3-3.3 1.2a11 11 0 0 0-5.6 0C6.5 1.5 5.5 1.8 5.5 1.8c-.6 1.6-.2 2.8-.1 3.1-.7.8-1.2 1.9-1.2 3.2 0 4.6 2.7 5.6 5.4 5.9-.4.4-.7.9-.8 1.7"/></svg> Code</a>
+      <a href="https://huggingface.co/collections/heheyas/context-scaling" target="_blank" rel="noopener noreferrer" class="ghost"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"/></svg> Models</a>
+      <a href="https://heheyas-context-scaling.hf.space" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M10 9.3 14.6 12 10 14.7z" fill="currentColor" stroke="none"/></svg> Demo</a>
+    </nav>
+  </header>
+
+  <div class="video-frame" id="demo-video">
+    <div class="play">&#9658;</div>
+    <div class="vlabel">demo video</div>
+  </div>
+  <section class="abstract">
+    <p class="abs-h">Abstract</p>
+    <p>Progress in language modelling has come from scaling three axes &mdash; model size, training
+    data, and compute. Text-to-image generation inherited all three, but the analogy hides an
+    asymmetry: a language model learns from the text stream itself, whereas a text-to-image model can
+    only learn to render what its captions expose about the pixels. How much image-grounded
+    information a caption carries is therefore a <em>fourth axis</em> &mdash; one that has stayed
+    largely unmeasured, and so never deliberately scaled. We adapt two complementary measures of
+    caption&ndash;image information: <span class="term">Grounded Perplexity Gain</span> (GPG, a
+    <em>white-box</em> model-based mutual-information estimate) and <span class="term">Effective
+    Detailness</span> (ED, a <em>black-box</em> attribute precision&ndash;recall score). Across a
+    controlled sweep of caption formats and detail levels &mdash; architecture, data, and compute
+    held fixed &mdash; converged diffusion loss follows measured informativeness, falling linearly in
+    GPG (<em>r</em>&nbsp;=&nbsp;&minus;0.984) and as a power law in ED (<em>r</em>&nbsp;=&nbsp;&minus;0.971):
+    a <em>text prompt scaling law</em>.</p>
+    <p>The law motivates a factorisation of quality into <em>Diffusability</em> &mdash; how well a
+    caption format exposes and organises image-grounded information for the diffuser &mdash; and
+    <em>Promptability</em> &mdash; how well an LLM prompter supplies it through that format. To raise
+    diffusability we introduce <span class="term">structured prompts</span>: a designed JSON schema
+    populated per training image by a mixture of domain experts (a VLM for scene semantics, reconciled
+    with frozen pose, depth, and segmentation specialists), which steadily raises measured
+    informativeness and, through the law, lowers converged loss. With that format and a trained
+    diffuser held fixed, promptability rises zero-shot with prompter scale and chain-of-thought, so
+    progress in general LLMs transfers through the caption interface into image quality; we push it
+    further with supervised fine-tuning, a chain-of-thought cold-start, and verifier-gated
+    self-distillation from an image-conditioned teacher. Raising both, our system leads open-weight
+    text-to-image models on nearly all compositional, reasoning, and world-knowledge benchmarks and
+    matches the strongest closed systems on most. <strong>To raise the quality ceiling, scale the
+    caption&rsquo;s information, not just the diffusion model.</strong></p>
+  </section>
+
+  <hr class="div" />
+
+  <!-- ============ ARTICLE ============ -->
+  <article class="col">
+
+    <h2 class="sec">The bottleneck is information, not length</h2>
+    <p class="lead">Text-to-image generation inherited language modelling&rsquo;s recipe &mdash; bigger backbones,
+    more data, more compute. On simple prompts this translates cleanly into quality. On the prompts people
+    actually find hard &mdash; multi-object compositions, precise spatial layouts, attribute&ndash;object binding,
+    world-knowledge probes &mdash; it has stalled.</p>
+    <p>There is a reason the analogy breaks. A language model learns from the text stream itself; a text-to-image
+    model can only learn to render what its captions <em>expose</em> about the pixels. Visual content a caption
+    omits, or binds ambiguously, stays in the image but is weakly supervised. So the image-grounded information a
+    caption carries is a <em>fourth axis</em> &mdash; parallel to model, data, and compute &mdash; that bounds
+    what a diffuser can learn to recover from text, yet it has rarely been treated as an explicit training
+    variable.</p>
+    <p>The natural fix would be longer, more detailed captions. We show that does not work &mdash; because length
+    and information are not the same thing. Lengthening a natural-language caption typically adds paraphrase,
+    discourse connectives, and implicit cross-references; it rarely adds new image-grounded conditioning content
+    per token. The optimizer sees more text but no more signal, and the saturation on long-prompt benchmarks is
+    the predictable consequence.</p>
+    <p>We make this concrete with a <em>fixed-backbone reconstruction probe</em>. A caption is informative to the
+    extent that a diffuser conditioned on it can reproduce a held-out reference image. Using the same Qwen-Image
+    backbone and seed, we reconstruct one reference from natural-language captions of increasing length and from
+    structured prompts of increasing schema coverage, and read off image-side similarity (DINOv3, SigLIP2, and
+    LPIPS).</p>
+
+    <figure class="figrow out">
+      <div class="rc2-wrap">
+        <div class="rc2-ref">
+          <img src="assets/recon/ref.jpg" alt="reference photograph to reconstruct" />
+          <span class="rc2-reflab">Reference</span>
+        </div>
+        <div class="rc2-grid">
+          <div></div>
+          <div class="rc2-head">L5<span>NL · 470 tok</span></div>
+          <div class="rc2-head">L6<span>NL · 695 tok</span></div>
+          <div class="rc2-head">L8<span>NL · 1,322 tok</span></div>
+          <div class="rc2-head">L10<span>NL · 2,130 tok</span></div>
+
+          <div class="rc2-rowlab nl">Natural language</div>
+          <div class="rc2-cell"><img src="assets/recon/nl_l5.jpg" alt="NL L5 reconstruction" /><div class="rc2-m"><span class="d">DINOv3 <b>0.51</b></span><span class="sl">SigLIP2 0.36 · LPIPS 0.68</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/nl_l6.jpg" alt="NL L6 reconstruction" /><div class="rc2-m"><span class="d">DINOv3 <b>0.48</b></span><span class="sl">SigLIP2 0.36 · LPIPS 0.69</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/nl_l8.jpg" alt="NL L8 reconstruction" /><div class="rc2-m"><span class="d">DINOv3 <b>0.46</b></span><span class="sl">SigLIP2 0.33 · LPIPS 0.69</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/nl_l10.jpg" alt="NL L10 reconstruction" /><div class="rc2-m"><span class="d">DINOv3 <b>0.51</b></span><span class="sl">SigLIP2 0.36 · LPIPS 0.68</span></div></div>
+
+          <div class="rc2-rowlab sp">Structured prompt</div>
+          <div class="rc2-cell"><img src="assets/recon/sp_l5.jpg" alt="SP L5 reconstruction" /><div class="rc2-m"><span class="d">DINOv3 <b>0.41</b></span><span class="sl">SigLIP2 0.32 · LPIPS 0.72</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/sp_l6.jpg" alt="SP L6 reconstruction" /><div class="rc2-m up"><span class="d">DINOv3 <b>0.60</b> &uarr;</span><span class="sl">SigLIP2 0.44 · LPIPS 0.62</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/sp_l8.jpg" alt="SP L8 reconstruction" /><div class="rc2-m up"><span class="d">DINOv3 <b>0.61</b> &uarr;</span><span class="sl">SigLIP2 0.45 · LPIPS 0.60</span></div></div>
+          <div class="rc2-cell"><img src="assets/recon/sp_l10.jpg" alt="SP L10 reconstruction" /><div class="rc2-m up"><span class="d">DINOv3 <b>0.65</b> &uarr;</span><span class="sl">SigLIP2 0.46 · LPIPS 0.59</span></div></div>
+        </div>
+      </div>
+      <figcaption><b>A fixed-backbone probe separates information from length.</b> From one held-out reference
+      (<em>left</em>), the same Qwen-Image backbone reconstructs it from natural-language captions
+      (<span style="color:var(--red);font-weight:600;font-style:normal;">NL</span>, top) and structured prompts
+      (<span style="color:var(--blue);font-weight:600;font-style:normal;">SP</span>, bottom) at four levels. The
+      NL captions keep the same entities and relationships while growing from 470 to 2,130 tokens, yet all three
+      metrics stay flat; restoring SP fields improves them steadily (DINOv3&nbsp;/&nbsp;SigLIP2 cosine, higher is
+      better; LPIPS distance, lower is better; <span style="color:var(--emerald);font-weight:600;">green</span>
+      marks improvement over L5).</figcaption>
+    </figure>
+
+    <p>The natural-language reconstructions barely change as the caption grows; the structured ones get steadily
+    more faithful. The constraint is the caption <em>format</em>, not its length &mdash; which points to a fourth
+    scaling axis, parallel to and independent of model, data, and compute: the
+    <span class="term">information content of the caption itself</span>.</p>
+
+    <h2 class="sec">Two metrics for caption information</h2>
+    <p>To treat &ldquo;information&rdquo; as a scaling quantity we have to measure it. We use two metrics with
+    deliberately different assumptions, so that their agreement means something.</p>
+    <p><span class="term">Grounded Perplexity Gain</span> (GPG) is <em>white-box</em>. Fix a frozen
+    vision&ndash;language judge (here Qwen3.5-397B-A17B) and, for each content token of a caption, measure the
+    log-likelihood it gains once the image is revealed. Summed over the caption, this is the empirical mutual information between caption and
+    image under that judge &mdash; how much the picture &ldquo;explains&rdquo; the words. A caption full of
+    precise, image-grounded detail scores high; one full of generic prose scores low no matter how long it is.</p>
+
+    <div class="gpgviz out" id="gpg-viz">
+      <div class="gv-left">
+        <div class="gv-imgwrap">
+          <img class="gv-img" src="assets/gpg_truck.jpg" alt="reference image: a silver pickup truck loaded with cardboard boxes" />
+          <div class="gv-veil" aria-hidden="true">
+            <span class="gv-veil-chip">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7c-2.1 0-4-.6-5.6-1.6"/>
+                <circle cx="12" cy="12" r="2.7"/>
+                <line x1="3" y1="3" x2="21" y2="21"/>
+              </svg>
+              image hidden from the judge
+            </span>
+          </div>
+        </div>
+        <button class="gv-toggle">image <b>on</b></button>
+        <p class="gv-cap">&ldquo;A silver pickup truck transports cardboard boxes, a wrapped cylinder, and Coca-Cola cans on a street.&rdquo;</p>
+      </div>
+      <div class="gv-right">
+        <div class="gv-head"></div>
+        <div class="gv-chart"></div>
+        <p class="mx-note"><span class="syn">illustrative data</span> &mdash; each bar is a token&rsquo;s surprisal
+        under the judge. The blue base is the surprisal that <em>remains</em> with the image; toggle the image off
+        and the amber part grows &mdash; how much the picture explains, the per-token grounding gain. Their sum is
+        GPG. Grounded tokens (silver, truck, cardboard) light up; filler (a, on, and) barely moves.</p>
+      </div>
+    </div>
+
+    <p><span class="term">Effective Detailness</span> (ED) is <em>black-box</em>. It never looks at
+    log-probabilities. Instead it extracts the attribute tuples a caption asserts &mdash; colors, materials,
+    positions, relationships &mdash; and scores their precision and recall (F<sub>0.5</sub>, weighting precision
+    over recall, so hallucinated attributes are punished more than missing ones) against an image-grounded source
+    set. The image side is extracted once, offline, by Gemini&nbsp;3&nbsp;Pro; caption extraction and matching are
+    then pure text-to-text (GPT-5.4), with no log-probabilities in the loop.</p>
+    <div class="edmatch out" id="ed-viz">
+      <div class="em-bar-top">
+        <button class="em-reveal">reveal the image&rsquo;s source set &rarr;</button>
+      </div>
+      <div class="em-cols">
+        <div class="em-image">
+          <img class="em-img" src="assets/gpg_truck.jpg" alt="reference image: a silver pickup truck loaded with cardboard boxes" />
+          <svg class="em-overlay" viewBox="0 0 1 1" preserveAspectRatio="none"></svg>
+          <div class="em-halluc">✗ not in the image</div>
+          <p class="em-hint">hover a tuple &rarr; its region</p>
+        </div>
+        <div class="em-col">
+          <p class="em-h">the caption asserts</p>
+          <div class="em-caption"></div>
+        </div>
+        <div class="em-col">
+          <p class="em-h">the image contains <span class="muted">(source set)</span></p>
+          <div class="em-source"></div>
+        </div>
+      </div>
+      <div class="em-bars">
+        <div class="em-bar"><span class="bl">Precision</span><div class="bt"><i class="bf p"></i></div><span class="bv pv"></span></div>
+        <div class="em-bar"><span class="bl">Recall</span><div class="bt"><i class="bf r"></i></div><span class="bv rv"></span></div>
+        <div class="em-ed">ED = F<sub>0.5</sub>(P, R) = <b class="edv">&mdash;</b></div>
+      </div>
+      <p class="mx-note"><span class="syn">illustrative data</span> &mdash; <b style="color:#2f6e3a;font-style:normal">green</b>
+      tuples appear in both (matched); <b style="color:#9a3b33;font-style:normal">red</b> are in the caption only
+      (hallucinations &mdash; they lower <em>precision</em>); <b style="color:#7d7565;font-style:normal">grey</b> are in
+      the image only (missed &mdash; they lower <em>recall</em>). ED weights precision over recall
+      (F<sub>0.5</sub>), since a hallucinated attribute hurts generation more than a missing one.</p>
+    </div>
+
+    <p>The two metrics share almost no machinery: one queries a model&rsquo;s internal probabilities, the other
+    compares extracted facts. If either were merely reflecting its own idiosyncrasies &mdash; a judge&rsquo;s
+    distribution, an extractor&rsquo;s vocabulary &mdash; they would rank captions differently. That they do not
+    is the first sign both are tracking something real.</p>
+
+    <h2 class="sec">The text prompt scaling law</h2>
+    <p>With a way to measure caption information, we can ask whether it predicts anything. It predicts the central
+    quantity in diffusion training: the converged loss.</p>
+    <p>We assemble <span class="term">15 caption configurations</span> from one set of full image annotations
+    &mdash; three natural-language controls, the six nested structured-prompt levels (L5&ndash;L10), three
+    spatial-grid variants, and three field ablations &mdash; and train a separate diffuser (a shared BAGEL
+    checkpoint) on each to a common budget of 2.84&times;10<sup>10</sup> image tokens, holding the images,
+    architecture, and optimisation fixed so the caption is the only changing variable. Then we plot converged MSE
+    against each information metric. Hover any point below for its values.</p>
+
+    <figure class="figrow out">
+      <div class="chart-host" id="chart-scaling" style="max-width:none;"></div>
+      <figcaption><b>The law, both rulers.</b> Converged training MSE across all 15 cells, plotted against
+      caption information two ways: <b>(a)</b> linear in the white-box GPG estimate (r&nbsp;=&nbsp;&minus;0.984)
+      and <b>(b)</b> a power law in the black-box ED attribute recall (r&nbsp;=&nbsp;&minus;0.971). Built from
+      disjoint machinery, the two rulers rank every cell the same way. Hover any point for its values.</figcaption>
+    </figure>
+
+    <div class="eqn-block">
+      MSE = 0.4549 &minus; 8.45&times;10<sup>&minus;5</sup>&middot;GPG&nbsp;&nbsp;&nbsp;(r&nbsp;=&nbsp;&minus;0.984)<br/>
+      MSE = 0.4200&middot;ED<sup>&minus;0.2073</sup>&nbsp;&nbsp;&nbsp;(r&nbsp;=&nbsp;&minus;0.971)
+    </div>
+
+    <p>Read it family by family. Natural-language cells (red squares) cluster at the left &mdash;
+    GPG&nbsp;&asymp;&nbsp;110, creeping up only slightly as the caption lengthens (GPG is a token sum) &mdash; while
+    their losses barely move.
+    Structured prompts (blue circles) march down the line as the schema grows richer. Spatial variants and field
+    ablations land exactly where their GPG predicts. Length appears nowhere in the law; information is everything.</p>
+    <p>The slope has a clean reading: it is an <em>exchange rate</em>. Every nat of caption information buys a
+    fixed reduction in training loss, regardless of where that nat comes from. And the law is not a fragile fit.
+    Fit on the natural-language and nested-SP families alone, it predicts the six held-out spatial and field
+    variants to mean-absolute MSE errors of 5.0&times;10<sup>&minus;4</sup> (GPG) and 8.1&times;10<sup>&minus;4</sup>
+    (ED); its residual standard deviations are &asymp;&nbsp;6&times;10<sup>&minus;4</sup> and
+    &asymp;&nbsp;7.8&times;10<sup>&minus;4</sup>; budget-wise refits preserve both relations; and the two rulers,
+    built from disjoint machinery, rank all 15 cells the same way (&rho;<sub>Spearman</sub>&nbsp;=&nbsp;0.96). The
+    law tracks caption information itself, not either metric&rsquo;s design.</p>
+    <p>A scaling law is only useful if you can move along it. Caption information factorises into two levers we
+    can raise independently &mdash; schematically, <span class="term">Quality &asymp; Diffusability &times; Promptability</span>.
+    Diffusability is the quality ceiling a caption <em>format</em> affords; Promptability is how much of that
+    ceiling a real <em>prompter</em> reaches. The next two sections raise each in turn.</p>
+
+    <h2 class="sec">Raising Diffusability: the structured-prompt schema</h2>
+    <p>Diffusability is a property of the caption format, so we raise it by replacing free-form prose with a typed
+    JSON schema in which every conditioning axis has its own <span class="term">addressable slot</span>: a global
+    <em>intent</em>; a <em>scene</em> block; per-element entries with explicit bounding boxes, depth, materials
+    and pose; inter-element <em>relationships</em> that reference those boxes; and a <em>photography</em> block
+    for global camera parameters. Each token now populates a field value &mdash; a coordinate, an attribute, an
+    element index &mdash; rather than extending a sentence, so the length actually carries conditioning information.</p>
+
+    <div class="schema-viz out" id="schema-viz">
+      <div class="sv-top">
+        <button class="sv-all">show all 30 regions</button>
+      </div>
+      <div class="sv-main">
+        <div class="sv-imgwrap">
+          <div class="sv-image">
+            <img src="assets/schema_room.jpg" alt="a dark luxury living room described by the structured prompt" />
+            <svg class="sv-overlay" viewBox="0 0 999 999" preserveAspectRatio="none"></svg>
+          </div>
+          <div class="sv-cap"></div>
+        </div>
+        <div class="sv-right">
+          <div class="sv-global"></div>
+          <div class="sv-list"></div>
+        </div>
+      </div>
+      <p class="mx-note">Every object is its own <em>addressable slot</em> &mdash; a bounding box, a depth, a
+      caption, and typed attribute fields. <b style="color:#2166ac;font-style:normal">Foreground elements</b> and
+      <b style="color:#8c8473;font-style:normal">scene</b> elements together tile the whole image; the prompter
+      fills each slot, and the diffuser renders from them. Hover to locate a slot; click to pin its fields;
+      &ldquo;show all regions&rdquo; reveals the full layout.</p>
+    </div>
+
+    <p>Populating this schema for every training image is a heterogeneous perception problem, so we build it with a
+    five-stage pipeline of frozen domain experts. A VLM (Seed-VL) recovers the global scene and per-element
+    semantics; <em>Sapiens</em> contributes 133 pose keypoints for human elements, <em>DepthAnything&nbsp;V2</em>
+    estimates relative depth, and <em>SAM&nbsp;2.1</em> supplies masks and occlusion cues; a final VLM pass
+    reconciles this evidence &mdash; kept as intermediate signal, never copied into the schema as raw predictions
+    &mdash; into one coherent full-schema (L10) SP. To separate schema richness from annotation quality, the six
+    controlled levels below are then derived from each L10 record by deterministic field removal, so richness
+    varies without re-annotating the image.</p>
+
+    <div class="ladder-block">
+      <div class="ladder">
+          <div class="ladder-row"><span class="lv" style="background:#9ec0dc">L5</span>
+            <span class="ladder-add">intent + element captions<span class="sub">base schema</span></span>
+            <span class="ladder-nums">447 tok &middot; GPG <b>112</b> &middot; .4466</span></div>
+          <div class="ladder-row"><span class="lv" style="background:#7aa9cf">L6</span>
+            <span class="ladder-add"><span class="plus">+</span> bounding boxes<span class="sub">per-element position</span></span>
+            <span class="ladder-nums">542 tok &middot; GPG <b>128</b> &middot; .4438</span></div>
+          <div class="ladder-row"><span class="lv" style="background:#5390c0">L7</span>
+            <span class="ladder-add"><span class="plus">+</span> scene background<span class="sub">setting, surfaces</span></span>
+            <span class="ladder-nums">647 tok &middot; GPG <b>142</b> &middot; .4428</span></div>
+          <div class="ladder-row"><span class="lv" style="background:#2f78b3">L8</span>
+            <span class="ladder-add"><span class="plus">+</span> dynamic attributes<span class="sub">material, state, pose</span></span>
+            <span class="ladder-nums">803 tok &middot; GPG <b>165</b> &middot; .4407</span></div>
+          <div class="ladder-row"><span class="lv" style="background:#1c5d97">L9</span>
+            <span class="ladder-add"><span class="plus">+</span> depth &amp; relationships<span class="sub">ordering, references</span></span>
+            <span class="ladder-nums">1062 tok &middot; GPG <b>192</b> &middot; .4384</span></div>
+          <div class="ladder-row"><span class="lv" style="background:#163d6b">L10</span>
+            <span class="ladder-add"><span class="plus">+</span> element photography<span class="sub">full schema</span></span>
+            <span class="ladder-nums">1374 tok &middot; GPG <b>210</b> &middot; .4370</span></div>
+        </div>
+      </div>
+    <!-- /ladder-block -->
+
+    <p>Restoring one field group at a time nearly doubles GPG, from 112 to 210, and walks the converged loss
+    straight down the scaling law, 0.4466&nbsp;&rarr;&nbsp;0.4370. Ablating each group from the full L10 schema,
+    retrained at the same budget, shows where the information lives. <b>Scene background dominates</b>: removing
+    it costs 42 GPG nats and +35&times;10<sup>&minus;4</sup> MSE, a substantially larger loss increase than any
+    other field. <b>Bounding boxes are second</b>: removing them costs only about 6 GPG nats yet still
+    +14&times;10<sup>&minus;4</sup> MSE &mdash; explicit coordinates help the diffuser more than the judge&rsquo;s
+    score alone reveals. Removing depth, relationships, or atmosphere/lighting changes the loss by at most
+    1.5&times;10<sup>&minus;4</sup>. The schema we ship is one high-Diffusability instantiation; the scaling law
+    makes the design falsifiable &mdash; any format that scores higher on the rulers should land lower on the loss
+    curve.</p>
+
+    <p>Addressable fields have one more consequence. Because the structured prompt annotates the image
+    exhaustively, changing a single field and re-rendering alters exactly that aspect while the rest of the
+    composition stays put &mdash; the fields are honoured independently and faithfully. Each edit below is
+    zero-shot on the fixed backbone and touches one field; the <em>Move</em> edit also overlays the old
+    (<span style="color:#cf222e;font-weight:600;">dashed red</span>) and new
+    (<span style="color:#1a7f37;font-weight:600;">green</span>) bounding boxes.</p>
+
+    <div class="spedit out" id="sp-edit"></div>
+
+    <h2 class="sec">Raising Promptability: training the prompter</h2>
+    <p>A schema&rsquo;s ceiling is only worth as much as the prompter that fills it.
+    <span class="term">Promptability</span> is how reliably an LLM populates the schema&rsquo;s slots with
+    precise, internally consistent values rather than generic or contradictory ones. The failure modes are
+    specific. A weak prompter emits valid JSON but fills it with safe, photogenic defaults &mdash; a centred
+    subject, a clean background &mdash; collapsing the very compositional variety the schema exists to express.
+    Or it writes coordinates and relationships that contradict one another, which the diffuser then cannot
+    satisfy. A strong prompter realises near the ceiling; a weak one wastes most of it. And because at inference
+    there is no reference image, Promptability shows up directly as realised generation quality.</p>
+    <p>It is raised by two complementary forces. The first is <em>scale</em>. Across the Qwen3.5 family, from 0.8B
+    to 397B, GenEval++ accuracy climbs from 46.4% to 86.8%, still rising in the mixture-of-experts regime. Letting
+    the prompter reason in a chain of thought helps too, sharpening the finer structure and preference metrics at
+    every size except the smallest &mdash; where the 0.8B model tends to loop before producing valid JSON. Because
+    the diffusion backbone is frozen throughout, progress in language models propagates straight into image quality
+    with no retraining of the renderer: the prompter is a scaling lever in its own right, and every advance in open
+    LLMs is an advance in generation.</p>
+
+    <figure class="figrow out">
+      <div class="chart-host" id="chart-prompter" style="max-width:none;"></div>
+      <figcaption>Backbone frozen throughout: across the Qwen3.5 family (0.8B&nbsp;&rarr;&nbsp;397B), generated-image
+      quality climbs with prompter scale on all four measures &mdash; <b>(a)</b> GenEval++ alignment,
+      <b>(b)</b> WISE world-knowledge, <b>(c)</b> GPT-5.4 structure, and <b>(d)</b> GSB net preference.
+      Chain-of-thought reasoning (<span style="color:var(--blue);font-weight:600;">thinking</span>) adds a further
+      margin at nearly every size, most clearly on structure and preference; the exception is the smallest 0.8B
+      model, which loops before emitting valid JSON. Hover any point for values.</figcaption>
+    </figure>
+
+    <figure class="recipe out">
+      <div class="recipe-head">
+        <span class="recipe-title">The training recipe</span>
+        <span class="recipe-sub">three training stages on a frozen backbone, each fixing the last one&rsquo;s failure mode
+        &nbsp;&middot;&nbsp; <span class="ill">illustrative numbers, Tab. 4</span></span>
+      </div>
+      <div class="recipe-flow">
+        <div class="rstage s-base">
+          <span class="rstep">Base</span>
+          <span class="rwhat">zero-shot Qwen3.5<span class="sub2">defaults to canonical layouts</span></span>
+          <span class="rnum">struct <b>4.9</b></span>
+        </div>
+        <span class="rarr">&rarr;</span>
+        <div class="rstage s-sft">
+          <span class="rstep">+ SFT</span>
+          <span class="rwhat">structured-prompt distribution<span class="sub2">learns non-canonical layouts</span></span>
+          <span class="rnum">struct <b>6.3</b> &middot; GSB <b>23</b></span>
+        </div>
+        <span class="rarr">&rarr;</span>
+        <div class="rstage s-cs">
+          <span class="rstep">+ Cold-start</span>
+          <span class="rwhat">image-grounded chain of thought<span class="sub2">derive from the prompt alone</span></span>
+          <span class="rnum">struct <b>6.8</b> &middot; GSB <b>29</b></span>
+        </div>
+        <span class="rarr">&rarr;</span>
+        <div class="rstage s-rft">
+          <span class="rstep">+ RFT</span>
+          <span class="rwhat">verifier-gated OPSD<span class="sub2">gate rollouts, distil the teacher</span></span>
+          <span class="rnum">struct <b>7.6</b> &middot; GSB <b>42</b></span>
+        </div>
+        <span class="rarr fin">&rArr;</span>
+        <div class="rstage s-out">
+          <span class="rstep">Trained prompter</span>
+          <span class="rwhat">+ optional agentic loop<span class="sub2">render &middot; inspect &middot; refine &le; T<sub>max</sub></span></span>
+          <span class="rnum">DPG-Bench <b>90.7</b></span>
+        </div>
+      </div>
+      <div class="recipe-duality">
+        <span class="rdlab"><b>Verifier-gated OPSD</b> &mdash; the verifier decides <em>which</em> rollouts train; OPSD decides <em>toward what</em></span>
+        <div class="rdchips">
+          <span class="rdchip white"><span class="rname">QA verifier</span> gates accepted rollouts <i>&rarr;</i> coverage, structure, aesthetics <span class="rmono">a gate, not a reward</span></span>
+          <span class="rdchip black"><span class="rname">OPSD</span> distils an image-conditioned teacher <i>&rarr;</i> into the image-free student <span class="rmono">on-policy</span></span>
+        </div>
+      </div>
+    </figure>
+
+    <p>The second force is the <em>three-stage training pipeline</em> above; what each stage actually does is worth
+    spelling out. <span class="term">SFT</span> teaches the structured-prompt distribution &mdash; which field
+    combinations actually occur in real images. A base model, pre-trained on image&ndash;caption pairs, has only
+    ever seen photogenic compositions, so asked for &ldquo;a book with only its left half in frame&rdquo; it
+    quietly re-centres it. After fine-tuning on our SP corpus the prompter instead emits a bounding box that runs
+    past the canvas edge, and the diffuser renders the truncation faithfully. SFT is the single largest jump
+    (structure 4.9&nbsp;&rarr;&nbsp;6.3, GSB to 23%) &mdash; what it adds is <em>distributional</em> knowledge of
+    structured prompts, not format syntax.</p>
+    <figure class="figrow sftfig">
+      <div class="sftc" id="sft-compare">
+        <div class="sftc-bar">
+          <button class="sftc-box on">bounding boxes: on</button>
+        </div>
+        <div class="sftc-pair"></div>
+        <p class="sftc-meta">Hover a box to read its element caption.</p>
+      </div>
+      <figcaption>Two DPG-Bench prompts &mdash; a pair of glasses with a book, and a man with an acoustic guitar
+      &mdash; each generated <b>before vs after prompt-to-SP fine-tuning</b>, with the structured prompt&rsquo;s
+      bounding boxes drawn on the resulting image. Before SFT the prompter scatters the scene across many
+      loosely-grounded, overlapping regions; after SFT it commits to a compact, well-grounded layout and the
+      generation reads as one coherent scene. Toggle the boxes; hover any box for its caption.
+      <span class="ill">Real structured prompts &amp; generations, DPG-Bench.</span></figcaption>
+    </figure>
+    <p><span class="term">Cold-start</span> grafts an image-grounded chain of thought. We distil
+    (prompt&nbsp;&rarr;&nbsp;reasoning&nbsp;&rarr;&nbsp;JSON) traces from a teacher that <em>is</em> shown the
+    reference image but is system-prompted to frame its reasoning as a derivation from the user&rsquo;s prompt
+    alone &mdash; never &ldquo;I see X in the image.&rdquo; A Gemini judge keeps only the traces whose reasoning is
+    consistent with the caption, image, and target SP. The student learns that derivation style; at inference,
+    with no image in hand, it reconstructs an admissible analysis from the prompt before emitting the schema. This
+    is what lets a single forward pass produce a globally consistent layout rather than a bag of locally plausible
+    fields.</p>
+    <p><span class="term">RFT</span> then moves training onto the prompter&rsquo;s <em>own</em> rollouts. The fixed
+    diffuser renders each one, and a QA verifier accepts or rejects it, screening for prompt coverage, structure,
+    and aesthetics. Crucially the verifier is a <em>gate</em>, not a reward: it cannot supervise the plausible
+    visual detail a request leaves unspecified, so the parameter update comes instead from <em>OPSD</em> &mdash;
+    on-policy self-distillation from a frozen teacher that <em>sees</em> the reference image, matching its
+    next-token distribution along the accepted rollout into the image-free student. Neither the verifier score nor
+    GPG is optimised directly. This verifier-gated OPSD lifts structure 6.8&nbsp;&rarr;&nbsp;7.6 and human GSB to
+    <span class="term">42%</span> over the base prompter, while DPG-Bench &mdash; near-saturated for every variant
+    &mdash; reaches 90.71.</p>
+    <figure class="figrow out">
+      <div class="chart-host" id="fig-pipeline" style="max-width:none;"></div>
+      <figcaption><b>The three-stage prompter-training pipeline.</b> <b>(a)&nbsp;SFT</b> learns the target
+      structured-prompt distribution from (prompt,&nbsp;SP) pairs. <b>(b)&nbsp;Cold-start</b> bootstraps an
+      image-free prompt&nbsp;&rarr;&nbsp;chain-of-thought&nbsp;&rarr;&nbsp;SP derivation from privileged
+      image-conditioned traces. <b>(c)&nbsp;RFT</b> renders the student&rsquo;s own rollouts; a QA verifier
+      <em>gates</em> the accepted trajectories, and OPSD distils a frozen, image-conditioned teacher into the
+      image-free student. Only the student is updated.</figcaption>
+    </figure>
+    <p>These levers compose. At inference, an optional <em>refine&ndash;render&ndash;judge loop</em> spends extra
+    compute on the prompt side: render the structured prompt, have an online Gemini judge return PASS or a
+    field-level critique over structure, alignment, and aesthetics, and rewrite only the offending slots &mdash;
+    repeating up to T<sub>max</sub> rounds or until PASS. Because the prompt is a structured object, a critique
+    becomes a targeted edit rather than a rewrite of the whole caption. But the returns are modest: the trained
+    prompter reaches <span class="term">53.7% GSB by four rounds</span> and only 54.3% by eight. Unlike
+    reasoning-style tasks, once the prompt-side specification is substantially right, further rounds cannot fix how
+    the diffuser <em>renders</em> it &mdash; so the bottleneck, having moved from the model to the caption, moves
+    back to the model.</p>
+
+    <h2 class="sec">Results</h2>
+    <p>Put together &mdash; structured captions measured by GPG and ED, produced by a scaled, verifier-gated
+    prompter &mdash; the system leads open-weight text-to-image models on nearly all compositional, reasoning, and
+    world-knowledge benchmarks, <span class="term">single-shot</span>, with the diffusion backbone held fixed, and
+    matches the strongest closed systems on most. The benchmarks probe complementary skills: object-centric and
+    compositional alignment (GenEval, GenEval2), dense and information-intensive prompt following (DPG-Bench,
+    TIIF), world knowledge (WISE), and composition-plus-reasoning (CoReBench). Among open-weight systems it leads
+    every column but one &mdash; TIIF-short, where it trails Emu3.5 by 0.4 points (89.1 vs 89.5).</p>
+    <p>A same-architecture control isolates the interface from scale and extra training. Against the original
+    Qwen-Image, the complete system raises GenEval2 Soft-TIFA GM from <b>33.8</b> to <b>72.5</b> and CoReBench from
+    <b>58.9</b> to <b>85.2</b>. More stringently, retraining that same diffuser and prompter on the same images,
+    stages, and budgets but with a free-form natural-language interface (<em>Matched&nbsp;NL</em>) stays near the
+    official prompt enhancer (GM 36.5 vs 36.1; CoReBench 76.1 vs 74.7), while the structured system reaches 72.5
+    and 85.2. The gain comes from the structured interface and its supervision, not from more training.</p>
+  </article>
+
+  <!-- benchmark table breaks out wider -->
+  <div class="out">
+    <div class="bench-wrap">
+      <table class="bench">
+        <thead>
+          <tr>
+            <th>Model</th><th>GenEval</th><th>GenEval2<br/>AM&nbsp;/&nbsp;GM</th>
+            <th>DPG</th><th>TIIF<br/>s&nbsp;/&nbsp;l</th><th>WISE</th><th>CoReBench</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grouprow"><td colspan="7">without prompt enhancement</td></tr>
+          <tr><td>FLUX.1 Dev</td><td>0.67</td><td>67.1/21.1</td><td>83.84</td><td>71.1/71.8</td><td>0.50</td><td>42.2</td></tr>
+          <tr><td>OmniGen2</td><td>0.80</td><td class="muted">&mdash;</td><td>83.57</td><td class="muted">&mdash;</td><td class="muted">&mdash;</td><td>42.9</td></tr>
+          <tr><td>Emu3.5</td><td>0.86</td><td class="muted">&mdash;</td><td>87.46</td><td><span class="best">89.5</span>/88.2</td><td>0.57</td><td class="muted">&mdash;</td></tr>
+          <tr><td>BAGEL</td><td>0.82</td><td class="muted">&mdash;</td><td>85.07</td><td>71.5/71.7</td><td>0.52</td><td>38.2</td></tr>
+          <tr><td>Qwen-Image</td><td>0.87</td><td>80.8/33.8</td><td>88.32</td><td>86.1/86.8</td><td>0.62</td><td>58.9</td></tr>
+          <tr class="grouprow"><td colspan="7">with prompt enhancement</td></tr>
+          <tr><td>BAGEL + CoT</td><td>0.88</td><td>70.9/23.1</td><td class="muted">&mdash;</td><td class="muted">&mdash;</td><td>0.70</td><td>41.1</td></tr>
+          <tr><td>GPT-Image-1</td><td>0.84</td><td class="muted">&mdash;</td><td>85.15</td><td>89.2/88.3</td><td>0.80</td><td>72.6</td></tr>
+          <tr><td>Nano Banana</td><td>0.89</td><td>82.8/44.6</td><td>85.23</td><td class="muted">&mdash;</td><td><span class="best">0.89</span></td><td>75.9</td></tr>
+          <tr><td>LongCat-Image</td><td>0.87</td><td class="muted">&mdash;</td><td>86.80</td><td class="muted">&mdash;</td><td>0.65</td><td>59.6</td></tr>
+          <tr><td>HunyuanImage 3.0</td><td>0.72</td><td class="muted">&mdash;</td><td>86.10</td><td class="muted">&mdash;</td><td>0.57</td><td>58.7</td></tr>
+          <tr><td>Qwen-Image<sup>*</sup></td><td>0.91</td><td>82.4/36.1<sup>&dagger;</sup></td><td>87.20<sup>&dagger;</sup></td><td>88.3/88.4<sup>&dagger;</sup></td><td>0.83</td><td>74.7<sup>&dagger;</sup></td></tr>
+          <tr><td>Matched NL + Qwen-Image</td><td>0.91</td><td>82.4/36.5</td><td>87.80</td><td>88.5/88.0</td><td>0.84</td><td>76.1</td></tr>
+          <tr class="ours">
+            <td>Ours (Qwen-Image)</td><td class="best">0.94</td>
+            <td><span class="best">90.6</span>/<span class="best">72.5</span></td><td class="best">90.71</td>
+            <td>89.1/<span class="best">89.2</span></td><td class="best">0.89</td><td class="best">85.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="bench-note" style="text-align:center;">
+      Representative systems as of July 2026; higher is better. GenEval: object accuracy. GenEval2: arithmetic /
+      geometric mean of Soft-TIFA. DPG, TIIF (short/long): dense / information-intensive following. WISE: world
+      knowledge. CoReBench: composition and reasoning. &ldquo;PE&rdquo; = prompt enhancement; Qwen-Image<sup>*</sup>
+      uses its official PE; <em>Matched&nbsp;NL</em> retrains the same diffuser + prompter under our budgets but
+      with free-form NL captions. <sup>&dagger;</sup>our re-evaluation on Qwen-Image-2512. <b>Ours</b> is
+      single-shot, with no agentic iteration.
+    </p>
+  </div>
+
+  <article class="col">
+    <p style="margin-top:26px;">Qualitatively, higher-information conditioning shows up on the cases most systems
+    fail: multi-object scenes with correct counts and layout, legible dense text, infographics and UI mockups,
+    branded illustration. None of it comes from a larger diffusion model &mdash; the backbone is unchanged; the
+    gain is a higher-information conditioning stream.</p>
+  </article>
+
+  <hr class="div" />
+
+  <h2 class="sec" style="max-width:720px;margin-left:auto;margin-right:auto;">Gallery</h2>
+  <div class="out">
+    <div class="gallery-masonry">
+      <img class="gm-item" src="assets/gallery/g01.jpg" alt="a monkey in a denim jacket sipping a cocktail at a bar" />
+      <img class="gm-item" src="assets/gallery/g02.jpg" alt="an exhibition poster titled “COSMOS”" />
+      <img class="gm-item" src="assets/gallery/g03.jpg" alt="a festival crowd beneath red lanterns and a dragon dance" />
+      <img class="gm-item" src="assets/gallery/g04.jpg" alt="a safety poster, “Gas Cylinders — handle with care”" />
+      <img class="gm-item" src="assets/gallery/g05.jpg" alt="wine bottles beside a pineapple on a wooden table" />
+      <img class="gm-item" src="assets/gallery/g06.jpg" alt="an illustrated husky among autumn leaves" />
+      <img class="gm-item" src="assets/gallery/g07.jpg" alt="a bakery advertisement, “Green Crumb — freshly baked goodness daily”" />
+      <img class="gm-item" src="assets/gallery/g08.jpg" alt="a coffee advertisement, “Morning Brews, Starts”" />
+      <img class="gm-item" src="assets/gallery/g09.jpg" alt="a cozy sunlit bedroom interior" />
+      <img class="gm-item" src="assets/gallery/g10.jpg" alt="a corporate poster, “Innovate. Elevate. Empower.” with a rising arrow" />
+      <img class="gm-item" src="assets/gallery/g11.jpg" alt="a circular cafe logo, “Hometown Coffee Co.”" />
+      <img class="gm-item" src="assets/gallery/g12.jpg" alt="a physics infographic explaining the ideal gas law, PV = nRT" />
+    </div>
+    <p class="gallery-cap"><b>Qualitative gallery.</b> Photoreal scenes, dense text rendering, posters and
+    infographics, branded product shots, and complex layouts &mdash; all single-shot, with the diffusion backbone
+    held fixed. Click any image to enlarge.</p>
+  </div>
+
+  <hr class="div" />
+
+  <!-- ============ BIBTEX ============ -->
+  <h2 class="sec" style="max-width:720px;margin-left:auto;margin-right:auto;">Citation</h2>
+  <div class="bibwrap">
+    <button class="copybtn" id="copybib">copy</button>
+    <pre class="bibtex" id="bibtex">@article<span class="f">{</span>chen2026textprompt<span class="f">,</span>
+  <span class="k">title</span>   = <span class="s">{Text Prompt Scaling Law in Visual Generation}</span>,
+  <span class="k">author</span>  = <span class="s">{Chen, Zilong and Deng, Chaorui and Li, Kunchang and Yuan, Hongyi and Fan, Haoqi}</span>,
+  <span class="k">journal</span> = <span class="s">{Technical Report, ByteDance Seed}</span>,
+  <span class="k">year</span>    = <span class="s">{2026}</span>
+<span class="f">}</span></pre>
+  </div>
+
+  <footer class="foot">
+    <span>Text Prompt Scaling Law in Visual Generation &middot; ByteDance Seed</span>
+    <span>Page template: typed-paper aesthetic</span>
+  </footer>
+</div>
+
+<div class="lb" id="lightbox"><img src="" alt="" /></div>
+
+<script src="js/charts.js?v=33"></script>
+<script>
+const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
+document.querySelectorAll('.figrow img, figure.fig img, .gallery-masonry img').forEach(im => {
+  im.addEventListener('click', () => { lbImg.src = im.src; lb.classList.add('on'); });
+});
+lb.addEventListener('click', () => lb.classList.remove('on'));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+
+document.getElementById('copybib').addEventListener('click', async () => {
+  const txt = document.getElementById('bibtex').innerText;
+  try { await navigator.clipboard.writeText(txt);
+    const b = document.getElementById('copybib'); b.textContent = 'copied ✓';
+    setTimeout(() => b.textContent = 'copy', 1400);
+  } catch (e) {}
+});
+</script>
+</body>
+</html>

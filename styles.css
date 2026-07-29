@@ -1,0 +1,318 @@
+/* ============================================================
+   Context Scaling · Demo pages · shared stylesheet
+   ============================================================
+   Aesthetic: working-paper / typed-page. Minimal chrome.
+   Structure comes from typography and rules, not from cards.
+   ============================================================ */
+
+:root {
+  --paper:      #f6f3eb;
+  --paper-warm: #faf6ec;
+  --paper-deep: #ede7d6;
+  --ink:        #1a1a1a;
+  --ink-strong: #0a0a0a;
+  --ink-muted:  #5e574a;
+  --ink-soft:   #8c8473;
+  --rule:       #d6cfb9;
+  --rule-soft:  #e6dfca;
+  --red:        #b2182b;
+  --blue:       #2166ac;
+  --emerald:    #4a7a4f;
+  --amber:      #b8862a;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "EB Garamond", "Palatino Linotype", "Palatino", "Book Antiqua", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--ink); color: var(--paper); }
+
+/* --- layout: a single text column --------------------------- */
+
+.shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 36px 36px 72px;
+}
+
+@media (max-width: 700px) {
+  body { font-size: 17px; }
+  .shell { padding: 24px 20px 56px; }
+}
+
+/* --- top line (replaces topbar) ----------------------------- */
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 6px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+.topline .label { letter-spacing: 0.02em; }
+.topline nav { display: flex; gap: 18px; font-style: normal; }
+.topline a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 120ms, border-color 120ms;
+}
+.topline a:hover, .topline a.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* --- title block -------------------------------------------- */
+
+h1.title {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  margin: 0 0 14px;
+  color: var(--ink-strong);
+}
+
+h1.title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.subtitle {
+  font-size: 17px;
+  color: var(--ink-muted);
+  margin: 0 0 36px;
+  max-width: 60ch;
+  line-height: 1.55;
+}
+
+.subtitle em { color: var(--ink); font-style: italic; }
+
+/* --- section heading: small caps inline, no rules ----------- */
+
+h2.section {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 40px 0 14px;
+  color: var(--ink-strong);
+}
+
+h2.section::before {
+  content: '§ ';
+  color: var(--accent);
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+/* --- paragraph defaults ------------------------------------ */
+
+p, .body p {
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+p.note {
+  font-size: 15px;
+  font-style: italic;
+  color: var(--ink-muted);
+  margin: 12px 0 18px;
+}
+
+p.note .strike {
+  font-family: "JetBrains Mono", monospace;
+  font-style: normal;
+  font-size: 12.5px;
+  color: var(--accent);
+  text-decoration: line-through;
+  text-decoration-color: var(--accent);
+}
+
+p.note .ok {
+  font-family: "JetBrains Mono", monospace;
+  font-style: normal;
+  font-size: 12.5px;
+  color: var(--emerald);
+}
+
+/* --- input quote (replaces input card) ---------------------- */
+
+p.input-quote {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink-strong);
+  margin: 6px 0 12px;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+}
+
+p.meta {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  margin: 0 0 24px;
+}
+p.meta .sep { color: var(--rule); margin: 0 8px; }
+
+/* --- stage block (replaces the marker-grid cards) ----------- */
+
+.stage {
+  margin: 22px 0;
+}
+
+.stage h3 {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0 0 8px;
+  color: var(--ink-strong);
+}
+
+.stage h3 .tag {
+  font-family: "JetBrains Mono", monospace;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-right: 10px;
+}
+
+.stage p { margin: 0 0 10px; }
+.stage p:last-child { margin-bottom: 0; }
+
+.stage em.hedge {
+  background: rgba(74,122,79,0.10);
+  font-style: italic;
+  padding: 0 3px;
+  color: var(--emerald);
+}
+
+.stage .deriv {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--ink-strong);
+  margin: 8px 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--rule);
+  white-space: pre-wrap;
+}
+
+.stage .bbox-line {
+  color: var(--accent);
+}
+
+/* --- JSON output -------------------------------------------- */
+
+.json-output {
+  background: #1f1d18;
+  color: #e8e3d6;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12.5px;
+  line-height: 1.6;
+  padding: 18px 22px;
+  border-radius: 0;
+  overflow-x: auto;
+  white-space: pre;
+  margin: 16px 0 24px;
+}
+
+.json-output .k    { color: #f4a59b; }
+.json-output .s    { color: #d6c89c; }
+.json-output .n    { color: #9fc7da; }
+.json-output .b    { color: #c8a4d4; }
+.json-output .c    { color: #6e6a5d; font-style: italic; }
+.json-output .p    { color: #7d7765; }
+
+/* --- footer ------------------------------------------------- */
+
+footer.foot {
+  margin-top: 48px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--ink-muted);
+  font-style: italic;
+}
+
+footer.foot a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 120ms, border-color 120ms;
+}
+
+footer.foot a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* --- inline list & utility --------------------------------- */
+
+ul.tight {
+  margin: 6px 0 14px;
+  padding-left: 20px;
+}
+ul.tight li {
+  margin: 2px 0;
+  padding-left: 4px;
+}
+
+code, .mono {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.88em;
+}
+
+.run-row {
+  margin: 8px 0 20px;
+}
+
+.run-row button {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  padding: 6px 12px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  transition: background 120ms, color 120ms;
+}
+
+.run-row button:hover { background: var(--ink); color: var(--paper); }
+
+.run-row .hint {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-left: 10px;
+}

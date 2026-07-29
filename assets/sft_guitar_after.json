@@ -1,0 +1,69 @@
+{
+  "ratio": "2:3",
+  "intent": "A man plays an acoustic guitar while seated in a warmly lit interior.",
+  "style": "photorealistic portrait photography",
+  "atmosphere": "Intimate, serene",
+  "lighting": "Soft, warm directional lighting from the left illuminates the man's face and upper body, casting gentle, soft-edged shadows that enhance the intimate, serene mood of the scene.",
+  "photography": {
+    "layout": "Single image",
+    "shot_type": "medium close-up",
+    "camera_angle": "eye-level",
+    "lens_and_effect": "shallow depth of field creating a blurred bokeh background"
+  },
+  "elements": [
+    {
+      "id": 1,
+      "caption": "Upper-body shot of Hu Ge playing an acoustic guitar while facing right",
+      "photography": {
+        "visibility": "Lower legs and feet are not visible."
+      },
+      "hair": "short, neatly styled black hair",
+      "clothing": "crisp white long-sleeved button-down shirt; dark brown trousers",
+      "posture": "sitting",
+      "gesture": "right hand positioned over the guitar's soundhole; left hand pressing down on the guitar's fretboard to form a chord",
+      "gaze": "head turned fully to his right, gaze directed off-camera in that direction",
+      "facial_expression": "calm and focused",
+      "position": "<bbox>0 12 999 998</bbox>",
+      "depth": 149
+    },
+    {
+      "id": 2,
+      "caption": "Partial shot of a light honey-brown acoustic guitar with hands interacting with its strings",
+      "photography": {
+        "visibility": "The lower body is obscured by a person's torso."
+      },
+      "body_features": "smooth matte light honey-brown wooden top; dark brown wooden binding lining the body edge; circular soundhole bordered by layered concentric light and dark wood inlay; bridge crafted from matching light-toned wood; six thin metal strings stretched across the bridge",
+      "neck_and_headstock": "dark brown wooden neck; polished metal frets along the neck; six tuning pegs with white plastic tuning knobs on the headstock",
+      "gesture": "one hand pressing down on the neck's frets to form a chord; another hand positioned over the strings near the soundhole, poised to pluck them",
+      "position": "<bbox>37 319 999 789</bbox>",
+      "depth": 102
+    },
+    {
+      "id": 3,
+      "caption": "Partial shot of a dark brown leather belt with a polished silver metal buckle",
+      "photography": {
+        "visibility": "Sections of the belt are obscured by a hand and a piece of fabric"
+      },
+      "strap": "deep dark brown leather with a smooth, slightly glossy finish; has subtle natural creases showing signs of gentle wear",
+      "buckle": "polished bright silver-toned metal; rectangular shape with a central prong; prong fastened through one of the evenly spaced circular punched holes along the strap",
+      "position": "<bbox>344 759 639 834</bbox>",
+      "depth": 164
+    }
+  ],
+  "scene": {
+    "setting": "a cozy indoor room during the evening",
+    "elements": [
+      {
+        "id": 4,
+        "caption": "Blurred warm-toned interior wall with soft blended golden and amber hues",
+        "color_palette": "warm golden tones; amber tones; honeyed brown tones",
+        "surface_characteristics": "soft out-of-focus surface; smooth hazy finish; subtle diffused gradients across the expanse",
+        "position": "<bbox>0 0 999 409</bbox>"
+      }
+    ]
+  },
+  "relationships": [
+    "person <bbox>0 12 999 998</bbox> is playing the acoustic guitar <bbox>37 319 999 789</bbox>.",
+    "person <bbox>0 12 999 998</bbox> is wearing the leather belt <bbox>344 759 639 834</bbox>."
+  ]
+}

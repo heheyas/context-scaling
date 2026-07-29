@@ -1,0 +1,119 @@
+{
+  "scene": "Global Renewable Energy 2026 infographic",
+  "prompts": [
+    {
+      "level": 1,
+      "words": 9,
+      "prompt": "A data infographic about global renewable energy in 2026.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    },
+    {
+      "level": 2,
+      "words": 40,
+      "prompt": "A data infographic about global renewable energy in 2026, drawn as a clean modern landscape dashboard on a light background, with a bold title across the top and several charts, key statistics, and small icons arranged in a grid layout.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    },
+    {
+      "level": 3,
+      "words": 82,
+      "prompt": "A data infographic about global renewable energy in 2026, drawn as a clean modern landscape dashboard on a light background, with a bold title across the top and several charts, key statistics, and small icons arranged in a grid layout. The bold title reads \"GLOBAL RENEWABLE ENERGY 2026\" with a short subtitle beneath it. A large hero statistic reads \"42% of world electricity\". A horizontal bar chart compares solar, wind, hydro and nuclear. The colour scheme is teal and green on white.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    },
+    {
+      "level": 4,
+      "words": 140,
+      "prompt": "A data infographic about global renewable energy in 2026, drawn as a clean modern landscape dashboard on a light background, with a bold title across the top and several charts, key statistics, and small icons arranged in a grid layout. The bold title reads \"GLOBAL RENEWABLE ENERGY 2026\" with a short subtitle beneath it. A large hero statistic reads \"42% of world electricity\". A horizontal bar chart compares solar, wind, hydro and nuclear. The colour scheme is teal and green on white. The bar chart shows solar 28%, wind 24%, hydro 19%, nuclear 15% and other 14%, each bar labelled with its percentage. Three stat-callout cards with small icons read \"+18% solar year over year\", \"1.2M new jobs\" and \"$2.1T invested\". A donut chart shows regional share with a small legend, and a thin footer line cites the data source.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    },
+    {
+      "level": 5,
+      "words": 235,
+      "prompt": "A data infographic about global renewable energy in 2026, drawn as a clean modern landscape dashboard on a light background, with a bold title across the top and several charts, key statistics, and small icons arranged in a grid layout. The bold title reads \"GLOBAL RENEWABLE ENERGY 2026\" with a short subtitle beneath it. A large hero statistic reads \"42% of world electricity\". A horizontal bar chart compares solar, wind, hydro and nuclear. The colour scheme is teal and green on white. The bar chart shows solar 28%, wind 24%, hydro 19%, nuclear 15% and other 14%, each bar labelled with its percentage. Three stat-callout cards with small icons read \"+18% solar year over year\", \"1.2M new jobs\" and \"$2.1T invested\". A donut chart shows regional share with a small legend, and a thin footer line cites the data source. A line chart in the corner shows installed capacity rising from 2018 to 2026. A simplified world map highlights the leading regions in darker teal. Each bar has axis labels and faint gridlines; the four energy icons are a sun, a wind turbine, a water drop and an atom. The title is a heavy sans-serif in dark teal (#0f766e); the bars are green; accents are amber. The layout is a left column of charts and a right column of stat cards, with generous white margins and a short annotation callout pointing at the solar bar.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    },
+    {
+      "level": 6,
+      "words": 398,
+      "prompt": "A data infographic about global renewable energy in 2026, drawn as a clean modern landscape dashboard on a light background, with a bold title across the top and several charts, key statistics, and small icons arranged in a grid layout. The bold title reads \"GLOBAL RENEWABLE ENERGY 2026\" with a short subtitle beneath it. A large hero statistic reads \"42% of world electricity\". A horizontal bar chart compares solar, wind, hydro and nuclear. The colour scheme is teal and green on white. The bar chart shows solar 28%, wind 24%, hydro 19%, nuclear 15% and other 14%, each bar labelled with its percentage. Three stat-callout cards with small icons read \"+18% solar year over year\", \"1.2M new jobs\" and \"$2.1T invested\". A donut chart shows regional share with a small legend, and a thin footer line cites the data source. A line chart in the corner shows installed capacity rising from 2018 to 2026. A simplified world map highlights the leading regions in darker teal. Each bar has axis labels and faint gridlines; the four energy icons are a sun, a wind turbine, a water drop and an atom. The title is a heavy sans-serif in dark teal (#0f766e); the bars are green; accents are amber. The layout is a left column of charts and a right column of stat cards, with generous white margins and a short annotation callout pointing at the solar bar. Exact layout: a full-width title band at the top, the bar chart and line chart stacked in the left column, the donut chart and the three stat cards in the right column, and a five-country comparison table along the bottom with columns for country, renewable share and year-over-year growth (Norway 98%, Brazil 89%, Germany 52%, China 35%, USA 31%). Percentage labels sit on each donut segment; the line chart has year ticks from 2018 through 2026 and a dashed projection to 2030. A small circular badge in the top-right corner reads \"2026 EDITION\". A key-takeaways box on the right lists three short bullets: \"Solar leads new capacity\", \"Costs down 12%\" and \"Storage doubling\". Thin divider rules separate the sections, every card carries a soft drop shadow, and a small grey footnote at the bottom reads \"Source: International Energy Outlook 2026\". The overall style is a crisp, professional editorial infographic with a consistent teal-green-amber palette, clean sans-serif typography, rounded-corner cards and balanced negative space.",
+      "gpt": [
+        "ok",
+        [
+          1024,
+          683
+        ]
+      ],
+      "qwen": [
+        "ok",
+        [
+          1024,
+          571
+        ]
+      ]
+    }
+  ]
+}

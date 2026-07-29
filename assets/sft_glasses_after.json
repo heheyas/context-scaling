@@ -1,0 +1,62 @@
+{
+  "ratio": "4:5",
+  "intent": "Gold wire-rimmed eyeglasses rest on a polished wooden table beside a leather-bound book.",
+  "style": "photorealistic product photography",
+  "atmosphere": "Calm, sophisticated",
+  "lighting": "Soft, diffused natural lighting from the left, casting gentle, soft-edged shadows that emphasize the texture of the wooden table and the metallic sheen of the glasses.",
+  "photography": {
+    "layout": "Single image",
+    "shot_type": "close-up",
+    "camera_angle": "eye-level",
+    "lens_and_effect": "standard lens with deep focus"
+  },
+  "elements": [
+    {
+      "id": 1,
+      "caption": "Front view full shot of polished gold wire-rimmed eyeglasses with clear lenses",
+      "frame_features": "thin polished gold-toned metal frames; sharp angular hexagonal shape around clear lenses; small matching gold metal nose pads attached to the inner upper frame sections; thin metal arms extending outwards from the outer edges of the frame front",
+      "lens_features": "clear lenses with smooth glossy finish; faint subtle reflections across lens surfaces",
+      "surface_finish": "bright reflective polished finish on all metal components",
+      "position": "<bbox>114 402 732 698</bbox>",
+      "depth": 174
+    },
+    {
+      "id": 2,
+      "caption": "Partial shot of a dark brown leather-bound book with gold embossed details",
+      "photography": {
+        "visibility": "The full form of the book is not visible."
+      },
+      "cover": "deep dark brown leather with a smooth, subtly glossy finish; faint natural grain patterns across the surface",
+      "spine": "thin pale tan leather band running along the spine edge, separating the cover from the page block",
+      "embossed_details": "raised gold embossed text on the upper cover: 'MIGNON' above 'SOUTHERN'; matching gold embossed decorative flourishes on the lower right of the cover; small rectangular gold embossed plaque on the spine with fine illegible stamped text",
+      "page_block": "stacked pages with a uniform warm tan edge",
+      "position": "<bbox>644 40 999 760</bbox>",
+      "depth": 115
+    },
+    {
+      "id": 3,
+      "caption": "Gold embossed text on dark brown leather with decorative flourishes",
+      "text_layout": "Upper section: MIGNON positioned above SOUTHERN; Lower right: vertical stacked text with THE above a partial letter, then P and B",
+      "embossed_features": "Raised, polished gold embossed lettering; Ornate gold flourishes framing the upper text block; Matching decorative gold flourishes beneath the vertical text",
+      "background_surface": "Dark brown leather surface",
+      "position": "<bbox>807 158 999 578</bbox>",
+      "depth": 97
+    }
+  ],
+  "scene": {
+    "setting": "an indoor study or workspace during daytime with soft ambient light",
+    "elements": [
+      {
+        "id": 4,
+        "caption": "Deep warm brown polished wooden table with flowing grain and glossy reflective surface",
+        "surface_features": "deep warm brown polished wood surface; distinct flowing wood grain patterns across the flat expanse; high-gloss finish that catches light; smooth refined texture with subtle reflective highlights; natural variations in the wood's tone",
+        "position": "<bbox>0 100 999 998</bbox>"
+      }
+    ]
+  },
+  "relationships": [
+    "The gold wire-rimmed eyeglasses <bbox>114 402 732 698</bbox> are resting on the polished wooden table <bbox>0 100 999 998</bbox>.",
+    "The leather-bound book <bbox>644 40 999 760</bbox> is placed on the polished wooden table <bbox>0 100 999 998</bbox> adjacent to the eyeglasses <bbox>114 402 732 698</bbox>.",
+    "The gold embossed text <bbox>807 158 999 578</bbox> is printed on the cover of the leather-bound book <bbox>644 40 999 760</bbox>."
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "ratio": "3:4",
+  "intent": "A focused musician in a crisp white shirt and black tie sits with an acoustic guitar, his fingers positioned on the strings as he prepares to strum a chord in a warmly lit intimate room.",
+  "atmosphere": "Warm and contemplative",
+  "style": "Cinematic photorealistic portrait photography",
+  "lighting": "Soft warm directional light from upper-left at approximately 45 degrees, golden color temperature around 3200K, creating gentle highlights on shirt fabric and guitar wood with soft diffused shadows falling to the right.",
+  "elements": [
+    {
+      "id": 1,
+      "caption": "Man's torso clad in crisp white cotton button-down shirt with visible fine weave texture, collar neatly pressed with subtle crease lines, fabric showing natural folds at the elbows and waist where it gathers; the shirt's bright white surface catches warm highlights on the left shoulder and chest while falling into soft shadow on the right side.",
+      "position": "<bbox>280 180 720 750</bbox>",
+      "depth": 50,
+      "photography": {
+        "composition": "medium shot",
+        "angle": "eye-level",
+        "perspective": "three-quarter view"
+      }
+    },
+    {
+      "id": 2,
+      "caption": "Sleek narrow black silk tie with subtle diagonal weave pattern visible under close inspection, the fabric showing a soft sheen where light strikes it; tie knot sits neatly at the collar with the blade hanging straight down the center of the white shirt, creating strong contrast.",
+      "position": "<bbox>450 220 550 580</bbox>",
+      "depth": 55,
+      "photography": {
+        "composition": "detail shot",
+        "perspective": "front view"
+      }
+    },
+    {
+      "id": 3,
+      "caption": "Acoustic guitar with warm honey-colored spruce top showing visible wood grain running vertically, the wood surface has a glossy finish that reflects warm light in elongated streaks; dark rosewood or mahogany back and sides with richer brown tones; circular soundhole surrounded by decorative rosette with concentric ring patterns in cream and dark wood.",
+      "position": "<bbox>180 380 780 880</bbox>",
+      "depth": 60,
+      "photography": {
+        "composition": "full shot",
+        "angle": "slightly high-angle",
+        "perspective": "three-quarter view"
+      }
+    },
+    {
+      "id": 4,
+      "caption": "Guitar fretboard made of dark ebony or rosewood with visible wood grain, six steel strings running along its length catching pinpoint highlights from the warm lighting; mother-of-pearl position markers at fret positions 3, 5, 7, 9 appearing as small luminous dots; metal frets showing slight wear marks from use.",
+      "position": "<bbox>420 240 620 520</bbox>",
+      "depth": 65,
+      "photography": {
+        "composition": "detail shot",
+        "perspective": "close-up view"
+      }
+    },
+    {
+      "id": 5,
+      "caption": "Left hand positioned on the guitar fretboard, fingers pressing down on strings to form a chord; skin texture visible with natural lines and creases, fingernails trimmed short; the hand shows slight tension in the tendons indicating focused pressure on the strings; warm light catches the knuckles creating subtle highlights.",
+      "position": "<bbox>390 290 520 450</bbox>",
+      "depth": 70,
+      "photography": {
+        "composition": "close-up",
+        "angle": "side view",
+        "perspective": "profile of hand"
+      }
+    },
+    {
+      "id": 6,
+      "caption": "Right hand hovering near the guitar's soundhole in strumming position, fingers slightly curved and relaxed; the palm faces inward toward the guitar body; skin tone warm under the golden lighting with visible texture on the palm and fingers; subtle shadow cast on the guitar's top surface below the hand.",
+      "position": "<bbox>560 520 700 680</bbox>",
+      "depth": 75,
+      "photography": {
+        "composition": "close-up",
+        "angle": "slightly high-angle",
+        "perspective": "top-down view"
+      }
+    }
+  ],
+  "relationships": [
+    "The man's torso <bbox>280 180 720 750</bbox> is seated behind the acoustic guitar <bbox>180 380 780 880</bbox>.",
+    "The black tie <bbox>450 220 550 580</bbox> hangs down the center of the white shirt <bbox>280 180 720 750</bbox>.",
+    "The left hand <bbox>390 290 520 450</bbox> is positioned on the guitar fretboard <bbox>420 240 620 520</bbox> pressing the strings.",
+    "The right hand <bbox>560 520 700 680</bbox> is positioned near the guitar soundhole for strumming.",
+    "The guitar fretboard <bbox>420 240 620 520</bbox> extends upward from the guitar body <bbox>180 380 780 880</bbox>."
+  ],
+  "scene": {
+    "setting": "A warmly lit interior room during late afternoon or evening, with soft ambient lighting creating an intimate music practice or performance atmosphere.",
+    "elements": [
+      {
+        "id": 7,
+        "caption": "Softly blurred background wall in warm neutral tones of cream or light beige, out of focus with no distinct details visible, creating smooth bokeh that emphasizes the sharp focus on the musician in the foreground.",
+        "position": "<bbox>0 0 999 400</bbox>",
+        "depth": 200
+      },
+      {
+        "id": 8,
+        "caption": "Blurred dark wooden furniture piece in the background, possibly a bookshelf or cabinet, appearing as indistinct warm brown shapes with no readable details due to shallow depth of field.",
+        "position": "<bbox>0 100 200 500</bbox>",
+        "depth": 220
+      },
+      {
+        "id": 9,
+        "caption": "Soft out-of-focus warm light source in the upper background, appearing as a glowing amber circle or oval bokeh shape, suggesting a lamp or window with warm evening light filtering through.",
+        "position": "<bbox>700 50 950 250</bbox>",
+        "depth": 240
+      },
+      {
+        "id": 10,
+        "caption": "Blurred floor surface in the lower background, appearing as a soft dark brown or warm gray area with no distinct texture visible, providing grounding for the seated musician's position.",
+        "position": "<bbox>0 700 999 999</bbox>",
+        "depth": 180
+      },
+      {
+        "id": 11,
+        "caption": "Indistinct blurred shape in the far right background suggesting a plant or decorative object, appearing as soft green and brown tones completely out of focus, adding depth to the scene without distracting from the main subject.",
+        "position": "<bbox>800 300 999 600</bbox>",
+        "depth": 230
+      }
+    ]
+  },
+  "photography": {
+    "layout": "Single image",
+    "shot_type": "Medium close-up",
+    "camera_angle": "Eye-level, slightly high-angle on guitar",
+    "lens_and_effect": "85mm f/1.8, very shallow depth of field with strong background bokeh, sharp focus on musician and guitar with progressive blur toward background."
+  }
+}
