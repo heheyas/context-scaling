@@ -227,6 +227,9 @@
     svg.appendChild(marker("circle", lx + 140, ly, 4, BLUE));
     svg.appendChild(txt(lx + 159, ly + 4, "thinking", { class: "ax-lab", fill: INK }));
 
+    const defs = el("defs", {}); svg.appendChild(defs);
+    const clipRects = [];   // each panel's data is clipped to a rect that grows left→right on scroll
+
     PS_PANELS.forEach((p, pi) => {
       const ox = pi * PW;
       const x0 = ox + pin.l, x1 = ox + PW - pin.r, y0 = pin.t, y1 = H - pin.b;
@@ -243,11 +246,18 @@
       PS_SIZES.forEach((s, i) => svg.appendChild(txt(X(i), y1 + 13, s.replace("B", ""), { "text-anchor": "middle", class: "ax-lab", "font-size": 9.5 })));
       svg.appendChild(txt((x0 + x1) / 2, H - 6, "prompter size (B)", { "text-anchor": "middle", class: "ax-lab", "font-size": 10, fill: MUTED }));
 
+      // clip the data (lines + markers) to a growable rect; axes/ticks stay visible
+      const clipId = `psclip${pi}`;
+      const crect = el("rect", { x: x0 - 5, y: 0, width: 0, height: H });
+      const clip = el("clipPath", { id: clipId }); clip.appendChild(crect); defs.appendChild(clip);
+      clipRects.push({ rect: crect, w: (x1 - x0) + 10 });
+      const gdata = el("g", { "clip-path": `url(#${clipId})` }); svg.appendChild(gdata);
+
       const drawLine = (data, on) => {
         const ln = el("polyline", { points: data.map((v, i) => `${X(i)},${Y(v)}`).join(" "), fill: "none",
           stroke: on ? BLUE : PS_NT, "stroke-width": on ? 2.2 : 1.8 });
         if (!on) ln.setAttribute("stroke-dasharray", "5 3");
-        svg.appendChild(ln);
+        gdata.appendChild(ln);
         data.forEach((v, i) => {
           const mk = on ? marker("circle", X(i), Y(v), 3.6, BLUE)
                         : el("rect", { x: X(i) - 3, y: Y(v) - 3, width: 6, height: 6, fill: "#fff", stroke: PS_NT, "stroke-width": 1.4 });
@@ -255,7 +265,7 @@
           mk.addEventListener("mouseenter", e => showTip(`<b>${p.t.replace(/^\([a-d]\)\s*/, "")} · ${PS_SIZES[i]}</b><br>${on ? "thinking" : "no thinking"}: ${p.fmt(v)}${p.unit}`, e));
           mk.addEventListener("mousemove", moveTip);
           mk.addEventListener("mouseleave", hideTip);
-          svg.appendChild(mk);
+          gdata.appendChild(mk);
         });
       };
       drawLine(p.nt, false);
@@ -263,6 +273,22 @@
     });
 
     container.appendChild(svg);
+
+    // scroll-linked reveal: curves draw in small→large as the figure scrolls up into view
+    const setF = f => clipRects.forEach(cr => cr.rect.setAttribute("width", (f * cr.w).toFixed(1)));
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { setF(1); return; }
+    let ticking = false;
+    const apply = () => {
+      ticking = false;
+      const r = container.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight || 800;
+      setF(Math.max(0, Math.min(1, (vh * 0.88 - r.top) / (vh * 0.52))));
+    };
+    const onScroll = () => { if (!ticking) { ticking = true; requestAnimationFrame(apply); } };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    apply();
   }
 
   // ============================================================
@@ -1055,6 +1081,398 @@
     render();
   }
 
+  // ============================================================
+  //  Agentic inference-time loop (paper §agentic, Fig. agent_loop_new)
+  //  Steppable refine–render–judge diagram; illustrative trajectory.
+  // ============================================================
+  function agenticLoop(container) {
+    const W = 1040, H = 366, svg = makeSVG(W, H);
+    const MAG = "#a5318f", GRY = "#5e574a", JUD = BLUE, PASSC = "#2f8f4e", FAILC = "#b2182b", CRITC = "#b8862a";
+    const midY = 176, nh = 58;
+
+    // static connector arrows (under nodes)
+    const flowArrows = [];
+    const mkArrow = (x1, y1, x2, y2, color, opts) => { const a = arrow(x1, y1, x2, y2, color, opts); svg.appendChild(a); return a; };
+
+    // main left→right flow (collected so we can animate them)
+    flowArrows.push(mkArrow(180, midY + nh / 2, 214, midY + nh / 2, AXIS, { w: 1.5 }));   // state → prompter
+    flowArrows.push(mkArrow(354, midY + nh / 2, 374, midY + nh / 2, AXIS, { w: 1.5 }));   // prompter → SP
+    flowArrows.push(mkArrow(438, midY + nh / 2, 460, midY + nh / 2, AXIS, { w: 1.5 }));   // SP → diffuser
+    flowArrows.push(mkArrow(584, midY + nh / 2, 600, midY + nh / 2, AXIS, { w: 1.5 }));   // diffuser → I_t
+    flowArrows.push(mkArrow(682, midY + nh / 2, 706, midY + nh / 2, AXIS, { w: 1.5 }));   // I_t → judge
+    flowArrows.push(mkArrow(880, midY + nh / 2, 906, midY + nh / 2, AXIS, { w: 1.5 }));   // judge → verdict
+
+    // PASS branch (verdict → down → return), initially dim
+    const passArrow = mkArrow(961, midY + nh, 961, 300, PASSC, { w: 2.2, head: 8 });
+    const passBox = fbox(846, 300, 150, 40, [{ t: "PASS → return Iₜ", size: 11.5, weight: "600", fill: PASSC }], { fill: "#eef6ef", stroke: PASSC, sw: 1.3 });
+    svg.appendChild(passBox);
+
+    // FAIL branch (verdict → up → critique → left → back into state), initially dim
+    const failUp = mkArrow(961, midY, 961, 96, FAILC, { w: 2, head: 7 });
+    const critNode = fbox(372, 74, 250, 40, [{ t: "critique", size: 11, weight: "600", fill: CRITC, mono: true }, { t: "append to state", size: 9, italic: true, fill: MUTED }], { fill: "#fbf4e6", stroke: CRITC, sw: 1.3, lh: 12.5 });
+    // horizontal + elbow lines for the fail loop
+    const failTop = el("path", { d: `M961 94 L622 94`, fill: "none", stroke: FAILC, "stroke-width": 2, "stroke-dasharray": "6 4" }); svg.appendChild(failTop);
+    const failBack = el("path", { d: `M372 94 L96 94 L96 ${midY - 2}`, fill: "none", stroke: FAILC, "stroke-width": 2, "stroke-dasharray": "6 4", "marker-end": "" }); svg.appendChild(failBack);
+    const failBackHead = arrow(96, midY - 22, 96, midY - 2, FAILC, { w: 2, head: 7 }); svg.appendChild(failBackHead);
+    svg.appendChild(critNode);
+    // marching-dash "flow" on the connectors — dashes travel along each arrow's direction
+    [...flowArrows, passArrow, failUp].forEach(a => { const ln = a.querySelector("line"); if (ln) ln.classList.add("pl-flow"); });
+    [failTop, failBack].forEach(p => p.classList.add("pl-flow"));
+
+    // nodes (on top)
+    const stateBox = fbox(24, midY, 156, nh, [
+      { t: "user request", size: 12, weight: "600", fill: INK },
+      { t: "+ critique history", size: 10, italic: true, fill: MUTED }], { fill: PAPER, accent: INK, lh: 15 });
+    svg.appendChild(stateBox);
+    svg.appendChild(fbox(214, midY, 140, nh, [
+      { t: "LLM prompter", size: 12.5, weight: "600", fill: MAG },
+      { t: "emits SPₜ", size: 10, italic: true, fill: MUTED }], { fill: "#f7ecf4", accent: MAG, lh: 15 }));
+    svg.appendChild(fbox(374, midY + 13, 64, nh - 26, [{ t: "SPₜ", size: 12, weight: "600", mono: true, fill: MAG }], { fill: "#fff", stroke: MAG, sw: 1.2 }));
+    svg.appendChild(fbox(460, midY, 124, nh, [
+      { t: "diffuser", size: 12.5, weight: "600", fill: GRY },
+      { t: "renders Iₜ", size: 10, italic: true, fill: MUTED }], { fill: PAPER, accent: GRY, lh: 15 }));
+    svg.appendChild(fbox(600, midY + 6, 82, nh - 12, [{ t: "Iₜ", size: 13, weight: "600", mono: true, fill: GRY }, { t: "image", size: 9, italic: true, fill: MUTED }], { fill: "#f0ede6", stroke: GRY, sw: 1.2, lh: 13 }));
+    svg.appendChild(fbox(706, midY, 174, nh, [
+      { t: "Gemini judge", size: 12.5, weight: "600", fill: JUD },
+      { t: "sees only Iₜ, not the SP", size: 9.5, italic: true, fill: MUTED }], { fill: "#eef3f8", accent: JUD, lh: 15 }));
+    // verdict node — dynamic (static title + one dynamic line)
+    const verdictRect = rrect(906, midY, 110, nh, { fill: PAPER, stroke: RULE, "stroke-width": 1.3 });
+    svg.appendChild(verdictRect);
+    svg.appendChild(txt(961, midY + 21, "verdict", { "text-anchor": "middle", "font-family": SERIF, "font-weight": "600", "font-size": 12, fill: INK }));
+    const verdictTxt = txt(961, midY + 41, "PASS / FAIL", { "text-anchor": "middle", "font-family": SERIF, "font-weight": "700", "font-size": 13.5, fill: SOFT });
+    svg.appendChild(verdictTxt);
+
+    // header + auto-play control
+    svg.appendChild(txt(24, 28, "The refine–render–judge loop", { "font-family": SERIF, "font-weight": "600", "font-size": 15, fill: INK }));
+    svg.appendChild(txt(24, 46, "an illustrative trajectory, looping automatically — hover to pause", { "font-family": SERIF, "font-style": "italic", "font-size": 11.5, fill: MUTED }));
+    const roundBadge = txt(W - 24, 30, "round t = 0", { "text-anchor": "end", "font-family": MONO, "font-size": 13, "font-weight": "600", fill: INK });
+    svg.appendChild(roundBadge);
+
+    // critique history panel (bottom-left, fills as the loop runs)
+    svg.appendChild(txt(24, 300, "critique history (state)", { "font-family": MONO, "font-size": 10.5, fill: SOFT }));
+    const histLines = [];
+    for (let i = 0; i < 3; i++) { const t = txt(24, 320 + i * 16, "", { "font-family": MONO, "font-size": 11.5, fill: INK }); svg.appendChild(t); histLines.push(t); }
+
+    // illustrative trajectory (failure categories are the paper's; wording illustrative)
+    const TRAJ = [
+      { v: "FAIL", cat: "structure", crit: "add missing support relation" },
+      { v: "FAIL", cat: "granularity", crit: "collapse over-enumerated elements → groups" },
+      { v: "PASS", cat: "", crit: "structure + alignment + aesthetics pass" },
+    ];
+    let step = 0;   // 0 = idle; 1..3 = after that round
+    const setBranch = (e, on) => e.setAttribute("opacity", on ? "1" : "0.18");
+    function setStep(s) {
+      step = s;
+      roundBadge.textContent = step === 0 ? "round t = 0" : (TRAJ[step - 1].v === "PASS" ? `PASS at t = ${step}` : `round t = ${step}`);
+      if (step === 0) { verdictTxt.textContent = "PASS / FAIL"; verdictTxt.setAttribute("fill", SOFT); verdictRect.setAttribute("stroke", RULE); }
+      else {
+        const v = TRAJ[step - 1].v;
+        verdictTxt.textContent = v === "PASS" ? "PASS ✓" : "FAIL ✗"; verdictTxt.setAttribute("fill", v === "PASS" ? PASSC : FAILC);
+        verdictRect.setAttribute("stroke", v === "PASS" ? PASSC : FAILC);
+      }
+      const isPass = step > 0 && TRAJ[step - 1].v === "PASS";
+      const isFail = step > 0 && TRAJ[step - 1].v === "FAIL";
+      [passArrow, passBox].forEach(e => setBranch(e, isPass));
+      [failUp, failTop, failBack, failBackHead, critNode].forEach(e => setBranch(e, isFail));
+      const crits = TRAJ.slice(0, step).filter(t => t.v === "FAIL");
+      histLines.forEach((ln, i) => { ln.textContent = crits[i] ? `t${i + 1}  ✗ ${crits[i].cat}: ${crits[i].crit}` : (step > 0 && i === crits.length && isPass ? `t${step}  ✓ ${TRAJ[step - 1].crit}` : ""); ln.setAttribute("fill", crits[i] ? FAILC : PASSC); });
+    }
+    [passArrow, passBox, failUp, failTop, failBack, failBackHead, critNode].forEach(e => e.setAttribute("opacity", "0.18"));
+
+    // "processing" ring that sweeps the pipeline nodes each round
+    const NODES = [[24, 176, 156, 58], [214, 176, 140, 58], [374, 189, 64, 32], [460, 176, 124, 58], [600, 182, 82, 46], [706, 176, 174, 58], [906, 176, 110, 58]];
+    const pulse = rrect(0, 0, 10, 10, { fill: "none", stroke: INK, "stroke-width": 2.2, rx: 8, class: "pl-ring" });
+    pulse.setAttribute("opacity", "0"); pulse.style.transition = "opacity 140ms ease";
+    svg.appendChild(pulse);
+    function pulseAt(i) {
+      if (i < 0) { pulse.setAttribute("opacity", "0"); return; }
+      const b = NODES[i];
+      pulse.setAttribute("x", b[0] - 4); pulse.setAttribute("y", b[1] - 4);
+      pulse.setAttribute("width", b[2] + 8); pulse.setAttribute("height", b[3] + 8);
+      pulse.setAttribute("opacity", "0.85");
+    }
+
+    // flat looping timeline: intro → (sweep 6 nodes → verdict) per round → gap → repeat
+    const TL = [{ f: () => { pulseAt(-1); setStep(0); }, d: 850 }];
+    TRAJ.forEach((r, ri) => {
+      for (let n = 0; n <= 5; n++) TL.push({ f: () => pulseAt(n), d: 235 });
+      TL.push({ f: () => { pulseAt(6); setStep(ri + 1); }, d: r.v === "PASS" ? 2000 : 1150 });
+    });
+    TL.push({ f: () => pulseAt(-1), d: 450 });
+
+    let idx = 0, timer = null, visible = false, hoverPaused = false, userPaused = false;
+    function frame() {
+      const fr = TL[idx]; fr.f();
+      timer = setTimeout(() => { timer = null; idx = (idx + 1) % TL.length; frame(); }, fr.d);
+    }
+    function start() { if (timer || !visible || hoverPaused || userPaused) return; frame(); }
+    function halt() { if (timer) { clearTimeout(timer); timer = null; } }
+
+    // pause / play toggle
+    const btn = el("g", {}); btn.style.cursor = "pointer";
+    const btnTx = txt(W - 64, 57, "❚❚ pause", { "text-anchor": "middle", "font-family": MONO, "font-size": 12, fill: MUTED });
+    btn.appendChild(rrect(W - 104, 40, 80, 26, { fill: "none", stroke: RULE, "stroke-width": 1.2, rx: 4 }));
+    btn.appendChild(btnTx); svg.appendChild(btn);
+    btn.addEventListener("click", () => {
+      userPaused = !userPaused;
+      btnTx.textContent = userPaused ? "▶ play" : "❚❚ pause";
+      if (userPaused) halt(); else start();
+    });
+
+    // pause on hover so the reader can study a frame
+    container.addEventListener("pointerenter", () => { hoverPaused = true; halt(); });
+    container.addEventListener("pointerleave", () => { hoverPaused = false; start(); });
+
+    setStep(0);
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { setStep(TRAJ.length); pulseAt(-1); userPaused = true; btnTx.textContent = "▶ play"; }
+
+    // only animate while on-screen
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(ents => ents.forEach(en => { visible = en.isIntersecting; if (visible) start(); else halt(); }), { threshold: 0.2 }).observe(container);
+    } else { visible = true; start(); }
+
+    container.appendChild(svg);
+  }
+
+  // ============================================================
+  //  Agentic inference-time scaling (paper Table tab:agentic).
+  //  Real data: Base vs Trained across T_max = 1,2,4,8.
+  // ============================================================
+  const AG_TMAX = ["1", "2", "4", "8"];
+  const AG_PANELS = [
+    { key: "gsb", title: "(a) GSB net preference", unit: "%", lo: 0, hi: 60, ticks: [0, 20, 40, 60], fmt: v => v,
+      base: [null, 14.3, 22.7, 23.7], trained: [42.0, 49.0, 53.7, 54.3], ref: { y: 44.7, label: "Claude Code (agentic) 44.7" } },
+    { key: "struct", title: "(b) Structure score", unit: "/10", lo: 4, hi: 9, ticks: [4, 5, 6, 7, 8, 9], fmt: v => v.toFixed(1),
+      base: [4.86, 5.39, 6.03, 6.11], trained: [7.60, 7.94, 8.21, 8.26], ref: null },
+  ];
+  function agenticScaling(container) {
+    const W = 1040, H = 300, PW = W / 2, svg = makeSVG(W, H);
+    const pin = { l: 52, r: 22, t: 50, b: 46 };
+    const SOFTB = "#9ec0dc";
+
+    // shared legend
+    const lx = W / 2 - 120, ly = 16;
+    svg.appendChild(el("line", { x1: lx, y1: ly, x2: lx + 24, y2: ly, stroke: SOFTB, "stroke-width": 1.8, "stroke-dasharray": "5 3" }));
+    svg.appendChild(el("rect", { x: lx + 8, y: ly - 3.5, width: 7, height: 7, fill: "#fff", stroke: SOFTB, "stroke-width": 1.4 }));
+    svg.appendChild(txt(lx + 31, ly + 4, "Base (zero-shot)", { class: "ax-lab", fill: INK }));
+    svg.appendChild(el("line", { x1: lx + 150, y1: ly, x2: lx + 174, y2: ly, stroke: BLUE, "stroke-width": 2.4 }));
+    svg.appendChild(marker("circle", lx + 162, ly, 4, BLUE));
+    svg.appendChild(txt(lx + 181, ly + 4, "Trained prompter", { class: "ax-lab", fill: INK }));
+
+    AG_PANELS.forEach((p, pi) => {
+      const ox = pi * PW, x0 = ox + pin.l, x1 = ox + PW - pin.r, y0 = pin.t, y1 = H - pin.b;
+      const X = i => x0 + i / (AG_TMAX.length - 1) * (x1 - x0);
+      const Y = v => y1 - (v - p.lo) / (p.hi - p.lo) * (y1 - y0);
+      svg.appendChild(txt((x0 + x1) / 2, y0 - 18, p.title, { "text-anchor": "middle", class: "ax-title", "font-size": 13.5 }));
+      p.ticks.forEach(v => {
+        svg.appendChild(el("line", { x1: x0, y1: Y(v), x2: x1, y2: Y(v), stroke: GRID, "stroke-width": 0.6, opacity: 0.5 }));
+        svg.appendChild(txt(x0 - 7, Y(v) + 3.5, p.fmt(v), { "text-anchor": "end", class: "ax-lab", "font-size": 10 }));
+      });
+      svg.appendChild(el("line", { x1: x0, y1: y1, x2: x1, y2: y1, stroke: AXIS, "stroke-width": 1 }));
+      svg.appendChild(el("line", { x1: x0, y1: y0, x2: x0, y2: y1, stroke: AXIS, "stroke-width": 1 }));
+      AG_TMAX.forEach((s, i) => svg.appendChild(txt(X(i), y1 + 14, s, { "text-anchor": "middle", class: "ax-lab", "font-size": 10.5 })));
+      svg.appendChild(txt((x0 + x1) / 2, H - 7, "refinement budget Tₘₐₓ (rounds)", { "text-anchor": "middle", class: "ax-lab", "font-size": 10, fill: MUTED }));
+      // reference line (coding agent)
+      if (p.ref) {
+        svg.appendChild(el("line", { x1: x0, y1: Y(p.ref.y), x2: x1, y2: Y(p.ref.y), stroke: SOFT, "stroke-width": 1.1, "stroke-dasharray": "2 3" }));
+        svg.appendChild(txt(x1 - 3, Y(p.ref.y) - 5, p.ref.label, { "text-anchor": "end", "font-family": MONO, "font-size": 9.5, fill: SOFT }));
+      }
+      const drawLine = (data, on) => {
+        const pts = data.map((v, i) => v == null ? null : `${X(i)},${Y(v)}`).filter(Boolean);
+        const ln = el("polyline", { points: pts.join(" "), fill: "none", stroke: on ? BLUE : SOFTB, "stroke-width": on ? 2.4 : 1.8 });
+        if (!on) ln.setAttribute("stroke-dasharray", "5 3");
+        svg.appendChild(ln);
+        data.forEach((v, i) => {
+          if (v == null) return;
+          const mk = on ? marker("circle", X(i), Y(v), 3.8, BLUE)
+                        : el("rect", { x: X(i) - 3, y: Y(v) - 3, width: 6, height: 6, fill: "#fff", stroke: SOFTB, "stroke-width": 1.4 });
+          mk.style.cursor = "pointer";
+          mk.addEventListener("mouseenter", e => showTip(`<b>${on ? "Trained" : "Base"} · Tₘₐₓ=${AG_TMAX[i]}</b><br>${p.title.replace(/^\([ab]\)\s*/, "")}: ${p.fmt(v)}${p.unit}`, e));
+          mk.addEventListener("mousemove", moveTip); mk.addEventListener("mouseleave", hideTip);
+          svg.appendChild(mk);
+        });
+      };
+      drawLine(p.base, false);
+      drawLine(p.trained, true);
+    });
+    container.appendChild(svg);
+  }
+
+  // ============================================================
+  //  Inference animation: user prompt → thinking → SP → image.
+  //  Real cases from window.PIPE_CASES (js/pipeline_cases.js); cycles through them.
+  // ============================================================
+  function hlJson(line) {
+    const re = /("(?:[^"\\]|\\.)*")|(-?\d+\.?\d*)|([{}\[\],:])|(\s+)|([^\s"{}\[\],:]+)/g;
+    const toks = []; let m;
+    while ((m = re.exec(line))) {
+      if (m[1]) toks.push({ t: "str", v: m[1] });
+      else if (m[2]) toks.push({ t: "num", v: m[2] });
+      else if (m[3]) toks.push({ t: "pun", v: m[3] });
+      else if (m[4]) toks.push({ t: "sp", v: m[4] });
+      else toks.push({ t: "txt", v: m[5] });
+    }
+    for (let i = 0; i < toks.length; i++) {
+      if (toks[i].t === "str") { let j = i + 1; while (j < toks.length && toks[j].t === "sp") j++; if (j < toks.length && toks[j].t === "pun" && toks[j].v === ":") toks[i].t = "key"; }
+    }
+    return toks.map(tk => {
+      const e = tk.v.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      return (tk.t === "sp" || tk.t === "txt") ? e : `<span class="pa-${tk.t}">${e}</span>`;
+    }).join("");
+  }
+  const paEsc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  // split a thinking line into a class + html: "Stage X — …" headers get their own level style
+  function thinkParts(s) {
+    const t = String(s).trim();
+    if (/^stage\b/i.test(t) || /^step\s+\d/i.test(t)) return { cls: "pa-tline pa-tstage", html: paEsc(t) };
+    const body = t.replace(/^[-•*]\s?/, "");
+    return { cls: "pa-tline", html: `<span class="mk">·</span>${paEsc(body)}` };
+  }
+  // ============================================================
+  //  Inference animation: user prompt -> thinking -> SP -> image.
+  //  pipeAnim(container, cases, opts): opts.picker adds a sample picker
+  //  (play the selected case once, hold on the result) instead of auto-cycling.
+  // ============================================================
+  function pipeAnim(container, casesIn, opts) {
+    opts = opts || {};
+    const CASES = (casesIn || window.PIPE_CASES || []).filter(Boolean);
+    if (!CASES.length) return;
+    const picker = !!opts.picker;
+    const ratioCss = r => (r && /^\d+\s*:\s*\d+$/.test(r)) ? r.replace(/\s*:\s*/, " / ") : "4 / 3";
+    const mk = (tag, cls, html) => { const n = document.createElement(tag); if (cls) n.className = cls; if (html != null) n.innerHTML = html; return n; };
+    container.innerHTML = "";
+
+    // optional sample picker (thumbnails)
+    let pickEls = [];
+    if (picker) {
+      const pk = mk("div", "pa-picker");
+      pickEls = CASES.map((c, i) => {
+        const b = mk("button", "pa-pick"); b.title = c.prompt;
+        const im = mk("img"); im.src = c.image; im.alt = c.prompt; im.loading = "lazy"; b.appendChild(im);
+        b.addEventListener("click", () => selectCase(i));
+        pk.appendChild(b); return b;
+      });
+      container.appendChild(pk);
+    }
+
+    // header: stage chips + toggle
+    const head = mk("div", "pa-head");
+    const stages = mk("div", "pa-stages");
+    const chipNames = ["user prompt", "thinking", "structured prompt", "image"];
+    const chips = chipNames.map((nm, i) => { const c = mk("span", "pa-chip", `<span class="n">${i + 1}</span>${nm}`); stages.appendChild(c); if (i < 3) stages.appendChild(mk("span", "pa-sep", "→")); return c; });
+    const toggle = mk("button", "pa-toggle", "❚❚ pause");
+    head.appendChild(stages); head.appendChild(toggle);
+    // main: left stream + right canvas
+    const main = mk("div", "pa-main");
+    const stream = mk("div", "pa-stream");
+    const pWrap = mk("div", "pa-prompt"); pWrap.appendChild(mk("div", "pa-label", "user prompt"));
+    const ptext = mk("div", "pa-ptext"); pWrap.appendChild(ptext);
+    const tWrap = mk("div", "pa-think"); tWrap.appendChild(mk("div", "pa-label", "thinking"));
+    const tLines = mk("div", "pa-lines"); tWrap.appendChild(tLines);
+    const spWrap = mk("div", "pa-sp"); spWrap.appendChild(mk("div", "pa-label", "structured prompt"));
+    const jsonPre = mk("pre", "pa-json"); spWrap.appendChild(jsonPre);
+    stream.appendChild(pWrap); stream.appendChild(tWrap); stream.appendChild(spWrap);
+    const canvas = mk("div", "pa-canvas");
+    const frame = mk("div", "pa-frame");
+    const img = mk("img"); img.alt = "image rendered from the structured prompt"; img.loading = "lazy";
+    const boxes = el("svg", { class: "pa-boxes", viewBox: "0 0 1000 1000", preserveAspectRatio: "none" });
+    frame.appendChild(img); frame.appendChild(mk("div", "pa-skel")); frame.appendChild(boxes);
+    canvas.appendChild(frame); canvas.appendChild(mk("div", "pa-imlabel", "diffuser renders the SP · hover to show the layout"));
+    main.appendChild(stream); main.appendChild(canvas);
+    container.appendChild(head); container.appendChild(main);
+    container.appendChild(mk("p", "pa-note", picker
+      ? `real prompter cases · <span class="ill">pick a sample above</span> to watch its pipeline — user prompt, thinking, and structured prompt are the model’s own outputs.`
+      : `real prompter cases · <span class="ill">${CASES.length} shown in rotation</span> — user prompt, thinking, and structured prompt are the model’s own outputs.`));
+    CASES.forEach(c => { const im = new Image(); im.src = c.image; });  // warm the cache
+
+    function clearBoxes() { boxes.classList.remove("fade"); while (boxes.firstChild) boxes.removeChild(boxes.firstChild); }
+    function drawBox(x1, y1, x2, y2, label, withLabel) {
+      const g = el("g", { class: "pa-box" });
+      g.appendChild(el("rect", { x: x1 * 1000, y: y1 * 1000, width: (x2 - x1) * 1000, height: (y2 - y1) * 1000, rx: 10, fill: "rgba(94,203,127,0.10)", stroke: "#5ecb7f", "stroke-width": 2.2, "vector-effect": "non-scaling-stroke" }));
+      if (withLabel && label) {
+        const s = label.length > 16 ? label.slice(0, 16) + "…" : label;
+        g.appendChild(txt(x1 * 1000 + 12, y1 * 1000 + 34, s, { "font-family": MONO, "font-size": 24, "font-weight": "600", fill: "#eafff1", "paint-order": "stroke", stroke: "rgba(0,0,0,0.65)", "stroke-width": 5, "stroke-linejoin": "round" }));
+      }
+      boxes.appendChild(g);
+      requestAnimationFrame(() => g.classList.add("show"));
+    }
+    function streamLine(box, cls, html) { const l = mk("div", cls, html); box.appendChild(l); requestAnimationFrame(() => { l.classList.add("show"); box.scrollTop = box.scrollHeight; }); return l; }
+    function setStage(s) { chips.forEach((c, i) => { c.classList.toggle("on", i === s); c.classList.toggle("done", i < s); }); }
+
+    let cur = CASES[0];
+    function loadCase(c) {
+      cur = c; setStage(0); ptext.textContent = ""; ptext.classList.add("typing");
+      tLines.innerHTML = ""; jsonPre.innerHTML = ""; clearBoxes();
+      frame.classList.remove("rendered", "laying");
+      frame.style.aspectRatio = ratioCss(c.ratio);
+      if (c.image) img.src = c.image;
+    }
+    function idle() { setStage(0); ptext.textContent = ""; ptext.classList.remove("typing"); tLines.innerHTML = ""; jsonPre.innerHTML = ""; clearBoxes(); frame.classList.remove("rendered", "laying"); frame.style.aspectRatio = ratioCss(CASES[0].ratio); img.src = CASES[0].image; }
+    function completeStatic(c) {
+      cur = c; ptext.textContent = c.prompt; ptext.classList.remove("typing");
+      tLines.innerHTML = ""; c.thinking.forEach(s => { const tp = thinkParts(s); tLines.appendChild(mk("div", tp.cls + " show", tp.html)); });
+      jsonPre.innerHTML = ""; c.sp.forEach(s => jsonPre.appendChild(mk("div", "pa-jline show", hlJson(s))));
+      frame.style.aspectRatio = ratioCss(c.ratio); img.src = c.image; frame.classList.remove("laying"); frame.classList.add("rendered"); clearBoxes();
+      chips.forEach(cp => { cp.classList.remove("on"); cp.classList.add("done"); });
+    }
+
+    // op-list for one case; length-adaptive + snappy (few, short pauses)
+    function buildOps(c) {
+      const ops = [{ f: () => loadCase(c), d: 110 }];
+      // type the whole prompt over a fixed ~0.4s budget regardless of length
+      const pd = Math.max(3, Math.round(400 / Math.max(1, c.prompt.length)));
+      for (let i = 0; i < c.prompt.length; i++) ops.push({ f: () => { ptext.textContent = c.prompt.slice(0, i + 1); }, d: pd });
+      ops.push({ f: () => ptext.classList.remove("typing"), d: 70 });
+      ops.push({ f: () => setStage(1), d: 50 });
+      // thinking streams over ~1s total; SP over ~0.85s total (length-adaptive, floored so it stays visible)
+      const td = Math.min(55, Math.max(12, Math.round(1000 / c.thinking.length)));
+      c.thinking.forEach(s => { const tp = thinkParts(s); ops.push({ f: () => streamLine(tLines, tp.cls, tp.html), d: td }); });
+      ops.push({ f: () => {}, d: 60 });
+      ops.push({ f: () => { setStage(2); frame.classList.add("laying"); }, d: 50 });
+      const sd = Math.min(26, Math.max(6, Math.round(850 / c.sp.length)));
+      let bi = 0;
+      c.sp.forEach(s => ops.push({ f: () => { streamLine(jsonPre, "pa-jline", hlJson(s)); if (s.indexOf("<bbox>") >= 0) { const e = c.elements[bi++]; if (e) drawBox(e.x1, e.y1, e.x2, e.y2, e.name, false); } }, d: sd }));
+      ops.push({ f: () => {}, d: 70 });
+      ops.push({ f: () => { setStage(3); frame.classList.remove("laying"); frame.classList.add("rendered"); boxes.classList.add("fade"); }, d: 420 });
+      ops.push({ f: () => {}, d: picker ? 350 : 500 });
+      return ops;
+    }
+
+    let caseIdx = 0, ops = [], opIdx = 0, timer = null, visible = false, hoverPaused = false, userPaused = false;
+    function frameStep() {
+      if (opIdx >= ops.length) {
+        if (picker) { timer = null; return; }              // done: hold on the result
+        if (ops.length) caseIdx = (caseIdx + 1) % CASES.length;
+        ops = buildOps(CASES[caseIdx]); opIdx = 0;
+      }
+      const op = ops[opIdx]; op.f();
+      timer = setTimeout(() => { timer = null; opIdx++; frameStep(); }, op.d);
+    }
+    function start() { if (timer || !visible || hoverPaused || userPaused) return; frameStep(); }
+    function halt() { if (timer) { clearTimeout(timer); timer = null; } }
+    function selectCase(i) {
+      caseIdx = i; pickEls.forEach((b, j) => b.classList.toggle("on", j === i));
+      halt(); ops = buildOps(CASES[i]); opIdx = 0; userPaused = false; toggle.textContent = "❚❚ pause"; start();
+    }
+
+    toggle.addEventListener("click", () => { userPaused = !userPaused; toggle.textContent = userPaused ? "▶ play" : "❚❚ pause"; if (userPaused) halt(); else start(); });
+    container.addEventListener("pointerenter", () => { hoverPaused = true; halt(); });
+    container.addEventListener("pointerleave", () => { hoverPaused = false; start(); });
+    // hover the rendered image to show its layout bboxes
+    frame.addEventListener("mouseenter", () => { if (frame.classList.contains("rendered") && cur) { clearBoxes(); cur.elements.forEach(e => drawBox(e.x1, e.y1, e.x2, e.y2, e.name, true)); } });
+    frame.addEventListener("mouseleave", () => { if (frame.classList.contains("rendered")) clearBoxes(); });
+
+    idle();
+    if (picker && pickEls[0]) pickEls[0].classList.add("on");
+    const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) { completeStatic(CASES[0]); userPaused = true; toggle.textContent = "▶ play"; }
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(ents => ents.forEach(en => { visible = en.isIntersecting; if (visible) start(); else halt(); }), { threshold: 0.12 }).observe(container);
+    } else { visible = true; start(); }
+  }
+
+
   function init() {
     const s = document.getElementById("chart-scaling");
     if (s) scalingChart(s);
@@ -1074,6 +1492,14 @@
     if (fp) trainPipeline(fp);
     const spe = document.getElementById("sp-edit");
     if (spe) spEditWidget(spe);
+    const al = document.getElementById("fig-agentic");
+    if (al) agenticLoop(al);
+    const ac = document.getElementById("chart-agentic");
+    if (ac) agenticScaling(ac);
+    const pa = document.getElementById("pipe-anim");
+    if (pa) pipeAnim(pa, window.PIPE_CASES);
+    const cs = document.getElementById("case-showcase");
+    if (cs) pipeAnim(cs, window.PIPE_SHOWCASE, { picker: true });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();

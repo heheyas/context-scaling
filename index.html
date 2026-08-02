@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Text Prompt Scaling Law in Visual Generation</title>
-<meta name="description" content="A text prompt scaling law for text-to-image generation: caption information content, not length, predicts generation quality. ByteDance Seed." />
+<title>Scaling Properties of Text Conditioning in Visual Generation</title>
+<meta name="description" content="Scaling properties of text conditioning in visual generation: converged diffusion loss scales with the structured language in the prompt, not its token count. ByteDance Seed." />
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..700;1,400..600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'&gt;&lt;rect width='16' height='16' fill='%23f6f6f2'/&gt;&lt;text y='13' x='2' font-size='12' font-family='monospace' font-weight='bold' fill='%231f7a4d'&gt;T&lt;/text&gt;&lt;/svg&gt;" />
@@ -24,9 +24,9 @@ html, body { font-family: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI"
 }
 h1.big {
   font-family: "Hanken Grotesk", system-ui, sans-serif; font-weight: 700;
-  font-size: clamp(30px, 5.2vw, 52px); line-height: 1.04;
-  letter-spacing: -0.03em; margin: 0 auto 18px; max-width: 22ch;
-  color: var(--ink-strong);
+  font-size: clamp(28px, 4.4vw, 44px); line-height: 1.08;
+  letter-spacing: -0.03em; margin: 0 auto 18px; max-width: 40ch;
+  color: var(--ink-strong); text-wrap: balance;
 }
 h1.big em { font-style: normal; color: var(--accent); }
 .authors { font-size: 18px; color: var(--ink-strong); margin: 0 auto 4px; max-width: 60ch; line-height: 1.5; }
@@ -47,19 +47,13 @@ h1.big em { font-style: normal; color: var(--accent); }
 
 .div { border: none; border-top: 1px solid var(--rule); margin: 40px 0; }
 
-/* ---- demo video placeholder ---- */
+/* ---- demo video ---- */
 .video-frame {
   margin: 30px 0 6px; aspect-ratio: 16 / 9; width: 100%;
-  background: repeating-linear-gradient(135deg, transparent 0 22px, rgba(94,87,74,0.045) 22px 44px), var(--paper-warm);
-  border: 1px solid var(--rule); border-radius: 3px;
-  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: var(--ink-soft);
+  border: 1px solid var(--rule); border-radius: 3px; overflow: hidden;
+  background: var(--paper-warm);
 }
-.video-frame .play {
-  width: 64px; height: 64px; border-radius: 50%;
-  border: 1.5px solid var(--ink-soft); display: flex; align-items: center; justify-content: center;
-  color: var(--ink-muted); font-size: 22px; padding-left: 5px;
-}
-.video-frame .vlabel { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
+.video-frame iframe { width: 100%; height: 100%; display: block; border: 0; }
 
 /* ---- abstract ---- */
 .abstract { max-width: 700px; margin: 34px auto 4px; }
@@ -177,6 +171,20 @@ h1.big em { font-style: normal; color: var(--accent); }
 .rnum b { color: var(--stage, var(--blue)); font-weight: 600; }
 .rarr { display: flex; align-items: center; justify-content: center; color: var(--ink-soft); font-size: 18px; padding: 0 6px; flex: 0 0 auto; align-self: center; }
 .rarr.fin { color: var(--blue); }
+/* flowing arrows: a staggered rightward drift gives a sense of flow through the stages */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes rarr-flow { 0% { transform: translateX(-2px); opacity: .4; } 50% { transform: translateX(3px); opacity: 1; } 100% { transform: translateX(-2px); opacity: .4; } }
+  .recipe-flow > .rarr { animation: rarr-flow 1.7s ease-in-out infinite; }
+  .recipe-flow > *:nth-child(2) { animation-delay: 0s; }
+  .recipe-flow > *:nth-child(4) { animation-delay: .19s; }
+  .recipe-flow > *:nth-child(6) { animation-delay: .38s; }
+  .recipe-flow > *:nth-child(8) { animation-delay: .57s; }
+  /* agentic loop: marching dashes flow along the connectors + a breathing processing ring */
+  @keyframes pl-march { to { stroke-dashoffset: -20; } }
+  #fig-agentic .pl-flow { stroke-dasharray: 6 4; animation: pl-march .8s linear infinite; }
+  @keyframes pl-ring { 0%, 100% { stroke-width: 1.8px; } 50% { stroke-width: 3.4px; } }
+  #fig-agentic .pl-ring { animation: pl-ring 1.15s ease-in-out infinite; }
+}
 .rstage.s-base { --stage: #a89f8d; }
 .rstage.s-sft  { --stage: #cf6f66; }
 .rstage.s-cs   { --stage: #b23d34; }
@@ -197,7 +205,7 @@ h1.big em { font-style: normal; color: var(--accent); }
 .rdchip.black b { color: var(--ink-strong); font-weight: 600; } .rdchip.black .rmono { background: var(--ink-strong); color: var(--paper); }
 @media (max-width: 640px) {
   .recipe-flow { flex-direction: column; align-items: stretch; }
-  .rarr { transform: rotate(90deg); padding: 6px 0; }
+  .recipe-flow > .rarr { animation: none; transform: rotate(90deg); padding: 6px 0; }
   .rstage { max-width: none; }
 }
 .stagefig { max-width: 690px; margin: 24px auto; }
@@ -397,6 +405,19 @@ table.bench .muted { color: var(--ink-soft); }
 .gallery-masonry img:hover { transform: scale(1.012); box-shadow: 0 8px 26px rgba(20,16,8,0.16); }
 .gallery-cap { font-size: 14px; font-style: italic; color: var(--ink-muted); margin: 6px 0 0; line-height: 1.5; max-width: 760px; }
 .gallery-cap b { font-style: normal; font-weight: 600; color: var(--ink-strong); }
+/* hero animation (after abstract) */
+.hero-anim { margin: 30px 0 6px; }
+.hero-anim-h { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-soft); text-align: center; margin: 0 0 14px; }
+.hero-anim-h::before, .hero-anim-h::after { content: ''; display: inline-block; width: 30px; height: 1px; background: var(--rule); vertical-align: middle; margin: 0 14px 3px; }
+/* prompt-to-image case showcase (real cases, hover reveals bboxes) */
+.showcase { columns: 300px 3; column-gap: 14px; margin: 22px 0 10px; }
+.sc-card { break-inside: avoid; margin: 0 0 16px; }
+.sc-imgwrap { position: relative; border: 1px solid var(--rule-soft); border-radius: 4px; overflow: hidden; cursor: zoom-in; background: #14130f; }
+.sc-imgwrap img { width: 100%; display: block; }
+.sc-imgwrap:hover { box-shadow: 0 8px 26px rgba(20,16,8,0.18); }
+.sc-boxes { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity .25s ease; pointer-events: none; }
+.sc-imgwrap:hover .sc-boxes { opacity: 1; }
+.sc-cap { font-family: "Hanken Grotesk", sans-serif; font-size: 13.5px; line-height: 1.42; color: var(--ink-muted); margin: 8px 2px 0; }
 figure.fig { margin: 22px 0 8px; }
 figure.fig img { width: 100%; display: block; border: 1px solid var(--rule-soft); border-radius: 2px; }
 figure.fig figcaption { font-size: 14px; font-style: italic; color: var(--ink-muted); margin-top: 10px; line-height: 1.5; }
@@ -447,6 +468,67 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
   .spe-stage { grid-template-columns: 1fr; }
   .spe-arrow { transform: rotate(90deg); margin: 0; }
 }
+
+/* ---- prompt → thinking → SP → image inference animation ---- */
+.pipe-anim { border: 1px solid var(--rule); border-radius: 6px; background: var(--paper-warm); padding: 18px 20px 15px; margin: 26px 0; }
+.pa-picker { display: flex; gap: 8px; overflow-x: auto; padding: 2px 2px 12px; margin-bottom: 14px; border-bottom: 1px solid var(--rule-soft); scrollbar-width: thin; }
+.pa-pick { flex: 0 0 auto; width: 68px; height: 50px; padding: 0; border: 2px solid transparent; border-radius: 5px; overflow: hidden; cursor: pointer; background: #14130f; opacity: .55; transition: opacity .15s, border-color .15s, transform .12s; }
+.pa-pick img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pa-pick:hover { opacity: 1; transform: translateY(-1px); }
+.pa-pick.on { opacity: 1; border-color: var(--accent); }
+.pa-head { display: flex; justify-content: space-between; align-items: center; gap: 12px 16px; flex-wrap: wrap; margin-bottom: 16px; }
+.pa-stages { display: flex; gap: 5px; align-items: center; flex-wrap: wrap; }
+.pa-chip { font-family: "IBM Plex Mono", monospace; font-size: 11.5px; color: var(--ink-soft); display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px; border: 1px solid var(--rule); border-radius: 100px; background: var(--paper); transition: color .25s, border-color .25s; }
+.pa-chip .n { width: 16px; height: 16px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; background: var(--rule); color: var(--paper-warm); transition: background .25s; }
+.pa-chip.on { color: var(--ink-strong); border-color: var(--accent); }
+.pa-chip.on .n, .pa-chip.done .n { background: var(--accent); color: #fff; }
+.pa-chip.done { color: var(--ink-muted); }
+.pa-sep { color: var(--rule); font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+.pa-toggle { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--ink-muted); background: none; border: 1px solid var(--rule); border-radius: 4px; padding: 5px 12px; cursor: pointer; transition: border-color .15s, color .15s; }
+.pa-toggle:hover { border-color: var(--accent); color: var(--ink-strong); }
+.pa-main { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 24px; align-items: start; min-height: 344px; }
+.pa-main > * { min-width: 0; }
+.pa-stream { display: flex; flex-direction: column; gap: 15px; min-width: 0; }
+.pa-prompt, .pa-think, .pa-sp, .pa-lines, .pa-json { min-width: 0; max-width: 100%; }
+.pa-label { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 7px; }
+.pa-label::before { content: "▸ "; color: var(--accent); }
+.pa-ptext { font-family: "Hanken Grotesk", sans-serif; font-size: 18px; font-weight: 500; color: var(--ink-strong); line-height: 1.5; min-height: 1.5em; }
+.pa-ptext.typing::after { content: ""; display: inline-block; width: 2px; height: 1.05em; background: var(--accent); margin-left: 2px; vertical-align: -3px; animation: pa-blink 1s step-end infinite; }
+@keyframes pa-blink { 50% { opacity: 0; } }
+.pa-lines { display: flex; flex-direction: column; gap: 6px; max-height: 130px; overflow-y: auto; padding-right: 10px; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: var(--ink-soft) var(--rule-soft); }
+.pa-lines::-webkit-scrollbar { width: 8px; }
+.pa-lines::-webkit-scrollbar-thumb { background: var(--ink-soft); border-radius: 4px; }
+.pa-lines::-webkit-scrollbar-track { background: var(--rule-soft); border-radius: 4px; }
+.pa-tline { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; line-height: 1.55; color: var(--ink-muted); opacity: 0; transform: translateY(4px); transition: opacity .45s ease, transform .45s ease; padding-left: 13px; border-left: 2px solid var(--rule-soft); overflow-wrap: anywhere; }
+.pa-tline.show { opacity: 1; transform: none; }
+.pa-tline .mk { color: var(--accent); margin-right: 7px; }
+.pa-tline.pa-tstage { color: var(--accent); font-weight: 700; border-left-color: var(--accent); margin-top: 9px; padding-left: 11px; letter-spacing: 0.01em; }
+.pa-tline.pa-tstage:first-child { margin-top: 0; }
+.pa-json { margin: 0; background: #1c1b17; border-radius: 5px; padding: 14px 16px; max-height: 224px; overflow: auto; font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.65; color: #d8d3c6; scroll-behavior: smooth; scrollbar-width: thin; scrollbar-color: #45413a transparent; }
+.pa-json::-webkit-scrollbar { width: 7px; height: 7px; }
+.pa-json::-webkit-scrollbar-thumb { background: #45413a; border-radius: 4px; }
+.pa-json::-webkit-scrollbar-track { background: transparent; }
+.pa-jline { white-space: pre; opacity: 0; transform: translateY(3px); transition: opacity .3s ease, transform .3s ease; }
+.pa-jline.show { opacity: 1; transform: none; }
+.pa-json .pa-key { color: #e8b4a4; } .pa-json .pa-str { color: #cdbf8f; } .pa-json .pa-num { color: #9fc7da; } .pa-json .pa-pun { color: #8f8a7a; }
+.pa-canvas { display: flex; flex-direction: column; gap: 9px; position: sticky; top: 14px; }
+.pa-frame { position: relative; aspect-ratio: 4 / 3; border-radius: 5px; overflow: hidden; border: 1px solid var(--rule); background: #14130f; }
+.pa-frame img { width: 100%; height: 100%; object-fit: cover; display: block; filter: blur(20px) saturate(1.25); transform: scale(1.07); opacity: .32; transition: filter 1.15s ease, opacity 1.15s ease, transform 1.15s ease; }
+.pa-frame.rendered img { filter: none; opacity: 1; transform: none; }
+.pa-skel { position: absolute; inset: 0; background: linear-gradient(110deg, rgba(255,255,255,.02) 30%, rgba(255,255,255,.09) 50%, rgba(255,255,255,.02) 70%); background-size: 220% 100%; animation: pa-shimmer 1.5s linear infinite; opacity: 1; transition: opacity .7s ease; pointer-events: none; }
+.pa-frame.rendered .pa-skel { opacity: 0; }
+@keyframes pa-shimmer { to { background-position: -220% 0; } }
+/* partial "laying out" reveal while the SP (and its bboxes) stream */
+.pa-frame.laying img { filter: blur(9px) saturate(1.1); opacity: .5; transform: scale(1.03); }
+.pa-frame.laying .pa-skel { opacity: 0; }
+.pa-boxes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.pa-box { opacity: 0; transition: opacity .35s ease; }
+.pa-box.show { opacity: 1; }
+.pa-boxes.fade { opacity: 0; transition: opacity .8s ease; }
+.pa-imlabel { font-family: "IBM Plex Mono", monospace; font-size: 11px; color: var(--ink-soft); text-align: center; }
+.pipe-anim .pa-note { font-family: "IBM Plex Mono", monospace; font-size: 10.5px; line-height: 1.5; color: var(--ink-soft); margin: 13px 0 0; }
+.pipe-anim .pa-note .ill { color: var(--amber); }
+@media (max-width: 720px) { .pa-main { grid-template-columns: 1fr; } .pa-canvas { position: static; } }
 </style>
 </head>
 <body>
@@ -455,7 +537,7 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
   <!-- ============ HERO ============ -->
   <header class="hero-head">
     <div class="venue">Technical Report · ByteDance Seed · 2026</div>
-    <h1 class="big">Text Prompt Scaling Law<br/>in <em>Visual Generation</em></h1>
+    <h1 class="big">Scaling Properties of Text Conditioning<br/>in <em>Visual Generation</em></h1>
     <p class="authors">Zilong Chen &nbsp;·&nbsp; Chaorui Deng &nbsp;·&nbsp; Kunchang Li &nbsp;·&nbsp; Hongyi Yuan &nbsp;·&nbsp; Haoqi Fan</p>
     <p class="affil">ByteDance Seed</p>
     <nav class="links">
@@ -468,38 +550,30 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
   </header>
 
   <div class="video-frame" id="demo-video">
-    <div class="play">&#9658;</div>
-    <div class="vlabel">demo video</div>
+    <iframe src="https://www.youtube-nocookie.com/embed/pNUQAMGKVvc" title="Scaling Properties of Text Conditioning — demo video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
   </div>
   <section class="abstract">
     <p class="abs-h">Abstract</p>
-    <p>Progress in language modelling has come from scaling three axes &mdash; model size, training
-    data, and compute. Text-to-image generation inherited all three, but the analogy hides an
-    asymmetry: a language model learns from the text stream itself, whereas a text-to-image model can
-    only learn to render what its captions expose about the pixels. How much image-grounded
-    information a caption carries is therefore a <em>fourth axis</em> &mdash; one that has stayed
-    largely unmeasured, and so never deliberately scaled. We adapt two complementary measures of
-    caption&ndash;image information: <span class="term">Grounded Perplexity Gain</span> (GPG, a
-    <em>white-box</em> model-based mutual-information estimate) and <span class="term">Effective
-    Detailness</span> (ED, a <em>black-box</em> attribute precision&ndash;recall score). Across a
-    controlled sweep of caption formats and detail levels &mdash; architecture, data, and compute
-    held fixed &mdash; converged diffusion loss follows measured informativeness, falling linearly in
-    GPG (<em>r</em>&nbsp;=&nbsp;&minus;0.984) and as a power law in ED (<em>r</em>&nbsp;=&nbsp;&minus;0.971):
-    a <em>text prompt scaling law</em>.</p>
-    <p>The law motivates a factorisation of quality into <em>Diffusability</em> &mdash; how well a
-    caption format exposes and organises image-grounded information for the diffuser &mdash; and
-    <em>Promptability</em> &mdash; how well an LLM prompter supplies it through that format. To raise
-    diffusability we introduce <span class="term">structured prompts</span>: a designed JSON schema
-    populated per training image by a mixture of domain experts (a VLM for scene semantics, reconciled
-    with frozen pose, depth, and segmentation specialists), which steadily raises measured
-    informativeness and, through the law, lowers converged loss. With that format and a trained
-    diffuser held fixed, promptability rises zero-shot with prompter scale and chain-of-thought, so
-    progress in general LLMs transfers through the caption interface into image quality; we push it
-    further with supervised fine-tuning, a chain-of-thought cold-start, and verifier-gated
-    self-distillation from an image-conditioned teacher. Raising both, our system leads open-weight
-    text-to-image models on nearly all compositional, reasoning, and world-knowledge benchmarks and
-    matches the strongest closed systems on most. <strong>To raise the quality ceiling, scale the
-    caption&rsquo;s information, not just the diffusion model.</strong></p>
+    <p>We study empirical <em>scaling properties</em> for text conditioning in visual generation. Such
+    properties have rarely been measured because diffusion loss does not scale with the number of tokens in
+    natural-language prompts. Surprisingly, we find that the converged diffusion loss scales with the amount of
+    <span class="term">structured language</span> in the prompt. To quantify structured language, we adapt two
+    complementary measures: a <em>white-box</em> likelihood metric (<span class="term">GPG</span>) and a
+    <em>black-box</em> attribute metric (<span class="term">ED</span>). Across controlled training runs, the
+    converged diffusion loss decreases approximately linearly with GPG and follows a power law with ED.</p>
+    <p>Guided by these scaling properties, we improve <em>diffusability</em> by constructing
+    <span class="term">structured prompts</span> with semantic and geometric annotations derived from images,
+    and improve <em>promptability</em> by training a prompter through supervised fine-tuning, cold-start, and
+    verifier-gated on-policy distillation. The resulting system outperforms all evaluated open-weight models on
+    nearly every compositional, reasoning, and world-knowledge benchmark, while matching or surpassing the
+    strongest closed-weight models on most evaluations.</p>
+  </section>
+
+  <section class="hero-anim">
+    <p class="hero-anim-h">The system, end to end</p>
+    <div class="pipe-anim out" id="pipe-anim"></div>
   </section>
 
   <hr class="div" />
@@ -777,6 +851,10 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
     <div class="spedit out" id="sp-edit"></div>
 
     <h2 class="sec">Raising Promptability: training the prompter</h2>
+    <p>At inference there is no image to copy from &mdash; only a user&rsquo;s request. The prompter has to
+    <em>reason</em> the unstated visual details into place and emit a complete structured prompt in a single
+    pass (the animation at the top of the page walks through one such pass).</p>
+
     <p>A schema&rsquo;s ceiling is only worth as much as the prompter that fills it.
     <span class="term">Promptability</span> is how reliably an LLM populates the schema&rsquo;s slots with
     precise, internally consistent values rather than generic or contradictory ones. The failure modes are
@@ -898,15 +976,54 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
       <em>gates</em> the accepted trajectories, and OPSD distils a frozen, image-conditioned teacher into the
       image-free student. Only the student is updated.</figcaption>
     </figure>
-    <p>These levers compose. At inference, an optional <em>refine&ndash;render&ndash;judge loop</em> spends extra
-    compute on the prompt side: render the structured prompt, have an online Gemini judge return PASS or a
-    field-level critique over structure, alignment, and aesthetics, and rewrite only the offending slots &mdash;
-    repeating up to T<sub>max</sub> rounds or until PASS. Because the prompt is a structured object, a critique
-    becomes a targeted edit rather than a rewrite of the whole caption. But the returns are modest: the trained
-    prompter reaches <span class="term">53.7% GSB by four rounds</span> and only 54.3% by eight. Unlike
-    reasoning-style tasks, once the prompt-side specification is substantially right, further rounds cannot fix how
-    the diffuser <em>renders</em> it &mdash; so the bottleneck, having moved from the model to the caption, moves
-    back to the model.</p>
+    <p>Training front-loads the correction into a single forward pass. But when we still want to spend more
+    compute at generation time, the same structured interface lets us do it on the <em>prompt</em> side &mdash;
+    the subject of the next section.</p>
+
+    <h2 class="sec">Agentic inference: refine&ndash;render&ndash;judge</h2>
+    <p>The prompter&rsquo;s SP is a single shot, but nothing stops us from rendering it, looking at the result,
+    and revising. Because the schema exposes every visual decision as a <em>named field</em>, a critique of the
+    image becomes a targeted edit of a few slots rather than a rewrite of the whole caption &mdash; which makes
+    an agentic loop natural here in a way it is not for free-form prose.</p>
+    <p>The loop keeps the previous prompts and the critique history as explicit state. At round&nbsp;<em>t</em>,
+    the prompter turns the user request plus the accumulated critique into SP<sub>t</sub>; the fixed diffuser
+    renders&nbsp;I<sub>t</sub>; and an online Gemini judge &mdash; which sees <em>only the image, never the
+    SP</em> &mdash; returns per-axis scores over structure, alignment, and aesthetics with a PASS/FAIL decision
+    and a list of observed failures. A PASS returns the image; a FAIL appends the critique so the next round
+    revises the offending objects, attributes, relations, or layout. Repeated failures license progressively
+    broader edits &mdash; from a local field tweak, to regrouping elements, to re-planning the whole scene. The
+    loop stops at PASS or T<sub>max</sub>.</p>
+
+    <figure class="figrow out">
+      <div class="chart-host" id="fig-agentic" style="max-width:none;"></div>
+      <figcaption><b>The agentic inference-time loop.</b> The prompter emits SP<sub>t</sub> from the request and
+      accumulated critique; the diffuser renders I<sub>t</sub>; the online judge scores the image alone and
+      returns PASS or a field-level critique that is appended to the state. Step through an
+      <span class="ill">illustrative trajectory</span> (the failure categories &mdash; structure, granularity,
+      layout &mdash; are the paper&rsquo;s).</figcaption>
+    </figure>
+
+    <p>Does spending these rounds pay off? Both prompters improve with T<sub>max</sub>, but the gains are
+    concentrated in <em>structure</em>, not basic alignment &mdash; the feedback mostly repairs object
+    decomposition, relations, and layout, exactly the failures the schema makes addressable. And the returns
+    saturate quickly.</p>
+
+    <figure class="figrow out">
+      <div class="chart-host" id="chart-agentic" style="max-width:none;"></div>
+      <figcaption><b>Agentic inference-time scaling.</b> GSB net preference <b>(a)</b> and GPT-5.4 structure
+      score <b>(b)</b> as the refinement budget T<sub>max</sub> grows, at fixed schema, diffuser, judge, and
+      prompter weights. The trained prompter (blue) starts far above the zero-shot Base (grey) and clears the
+      strongest multi-turn coding agent by two rounds; both curves flatten by four. Hover any point for values.</figcaption>
+    </figure>
+
+    <p>The takeaway cuts against the usual &ldquo;just add inference compute&rdquo; story. At T<sub>max</sub>&nbsp;=&nbsp;8
+    the trained prompter reaches <span class="term">54.3% GSB</span>, above the <b>44.7%</b> of the strongest
+    coding agent &mdash; which is itself already multi-turn &mdash; while reaching PASS in about
+    <b>2.3 rounds</b> on average (vs 3.41 for Base). Training absorbs most of the work iteration would otherwise
+    pay for: it lifts the starting point <em>and</em> shortens the trajectory. Once the prompt-side
+    specification is substantially right, more rounds cannot fix how the diffuser <em>renders</em> it &mdash; so
+    the bottleneck, having moved from the model to the caption, moves back to the model. Agentic inference
+    complements training here; it does not replace it.</p>
 
     <h2 class="sec">Results</h2>
     <p>Put together &mdash; structured captions measured by GPG and ED, produced by a scaled, verifier-gated
@@ -976,25 +1093,12 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
 
   <hr class="div" />
 
-  <h2 class="sec" style="max-width:720px;margin-left:auto;margin-right:auto;">Gallery</h2>
+  <h2 class="sec" style="max-width:720px;margin-left:auto;margin-right:auto;">Prompt-to-image case showcase</h2>
   <div class="out">
-    <div class="gallery-masonry">
-      <img class="gm-item" src="assets/gallery/g01.jpg" alt="a monkey in a denim jacket sipping a cocktail at a bar" />
-      <img class="gm-item" src="assets/gallery/g02.jpg" alt="an exhibition poster titled “COSMOS”" />
-      <img class="gm-item" src="assets/gallery/g03.jpg" alt="a festival crowd beneath red lanterns and a dragon dance" />
-      <img class="gm-item" src="assets/gallery/g04.jpg" alt="a safety poster, “Gas Cylinders — handle with care”" />
-      <img class="gm-item" src="assets/gallery/g05.jpg" alt="wine bottles beside a pineapple on a wooden table" />
-      <img class="gm-item" src="assets/gallery/g06.jpg" alt="an illustrated husky among autumn leaves" />
-      <img class="gm-item" src="assets/gallery/g07.jpg" alt="a bakery advertisement, “Green Crumb — freshly baked goodness daily”" />
-      <img class="gm-item" src="assets/gallery/g08.jpg" alt="a coffee advertisement, “Morning Brews, Starts”" />
-      <img class="gm-item" src="assets/gallery/g09.jpg" alt="a cozy sunlit bedroom interior" />
-      <img class="gm-item" src="assets/gallery/g10.jpg" alt="a corporate poster, “Innovate. Elevate. Empower.” with a rising arrow" />
-      <img class="gm-item" src="assets/gallery/g11.jpg" alt="a circular cafe logo, “Hometown Coffee Co.”" />
-      <img class="gm-item" src="assets/gallery/g12.jpg" alt="a physics infographic explaining the ideal gas law, PV = nRT" />
-    </div>
-    <p class="gallery-cap"><b>Qualitative gallery.</b> Photoreal scenes, dense text rendering, posters and
-    infographics, branded product shots, and complex layouts &mdash; all single-shot, with the diffusion backbone
-    held fixed. Click any image to enlarge.</p>
+    <div class="pipe-anim" id="case-showcase"></div>
+    <p class="gallery-cap"><b>Pick a sample</b> from the strip to watch its pipeline &mdash; user prompt
+    &rarr; staged thinking &rarr; structured prompt &rarr; rendered image. <b>Hover the result</b> to reveal
+    its bounding boxes.</p>
   </div>
 
   <hr class="div" />
@@ -1003,8 +1107,8 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
   <h2 class="sec" style="max-width:720px;margin-left:auto;margin-right:auto;">Citation</h2>
   <div class="bibwrap">
     <button class="copybtn" id="copybib">copy</button>
-    <pre class="bibtex" id="bibtex">@article<span class="f">{</span>chen2026textprompt<span class="f">,</span>
-  <span class="k">title</span>   = <span class="s">{Text Prompt Scaling Law in Visual Generation}</span>,
+    <pre class="bibtex" id="bibtex">@article<span class="f">{</span>chen2026scaling<span class="f">,</span>
+  <span class="k">title</span>   = <span class="s">{Scaling Properties of Text Conditioning in Visual Generation}</span>,
   <span class="k">author</span>  = <span class="s">{Chen, Zilong and Deng, Chaorui and Li, Kunchang and Yuan, Hongyi and Fan, Haoqi}</span>,
   <span class="k">journal</span> = <span class="s">{Technical Report, ByteDance Seed}</span>,
   <span class="k">year</span>    = <span class="s">{2026}</span>
@@ -1012,18 +1116,21 @@ footer.foot { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--r
   </div>
 
   <footer class="foot">
-    <span>Text Prompt Scaling Law in Visual Generation &middot; ByteDance Seed</span>
+    <span>Scaling Properties of Text Conditioning in Visual Generation &middot; ByteDance Seed</span>
     <span>Page template: typed-paper aesthetic</span>
   </footer>
 </div>
 
 <div class="lb" id="lightbox"><img src="" alt="" /></div>
 
-<script src="js/charts.js?v=33"></script>
+<script src="js/pipeline_cases.js?v=3"></script>
+<script src="js/charts.js?v=46"></script>
 <script>
 const lb = document.getElementById('lightbox'), lbImg = lb.querySelector('img');
-document.querySelectorAll('.figrow img, figure.fig img, .gallery-masonry img').forEach(im => {
-  im.addEventListener('click', () => { lbImg.src = im.src; lb.classList.add('on'); });
+// delegated so it also catches JS-built images (e.g. the case showcase)
+document.addEventListener('click', e => {
+  const im = e.target.closest('.figrow img, figure.fig img, .gallery-masonry img, .sc-imgwrap img');
+  if (im) { lbImg.src = im.src; lb.classList.add('on'); }
 });
 lb.addEventListener('click', () => lb.classList.remove('on'));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
