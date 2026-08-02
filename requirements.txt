@@ -1,0 +1,38 @@
+# Core training / inference
+torch>=2.4
+transformers>=4.45
+diffusers>=0.30
+safetensors>=0.4
+accelerate>=0.30
+einops>=0.7
+flash-attn>=2.5
+
+# Data
+pyarrow>=15
+Pillow>=10
+opencv-python-headless>=4.9
+
+# Serving / API
+fastapi>=0.110
+uvicorn[standard]>=0.27
+requests>=2.31
+httpx>=0.27
+pydantic>=2.6
+json-repair>=0.25
+
+# LLM / VLM judges
+google-generativeai>=0.7
+openai>=1.30
+anthropic>=0.30
+
+# Eval utilities
+numpy>=1.26
+scipy>=1.12
+pandas>=2.1
+tqdm>=4.66
+
+# Visualization
+matplotlib>=3.8
+
+# Logging
+wandb>=0.16

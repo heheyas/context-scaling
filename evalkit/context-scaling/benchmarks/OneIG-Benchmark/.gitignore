@@ -1,0 +1,5 @@
+.DS_store
+.idea
+*/.DS_store
+__pycache__
+**/__pycache__/

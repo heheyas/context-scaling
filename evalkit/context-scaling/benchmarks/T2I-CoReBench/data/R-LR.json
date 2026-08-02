@@ -1,0 +1,1359 @@
+{
+  "R-LR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four containers arranged in a row on a white table. The containers are: box, jar, bag, and bottle. Each container holds exactly one type of fruit and has exactly one color. The fruits are: apple, banana, orange, and grape. The colors are: red, blue, green, and yellow. Use these clues: (1) The green container is immediately to the left of the red container. (2) The jar contains the apple and is blue. (3) The bag is yellow and is at position 4. (4) The bottle contains the banana and is not green. (5) The box contains the orange. (6) The red container is at position 3. (7) The container at position 1 is not the bottle.",
+    "Checklist": [
+      { "question": "Is the container at position 1 a jar?", "tags": ["multi-hop"]},
+      { "question": "Is the container at position 2 a box?", "tags": ["multi-hop"]},
+      { "question": "Is the container at position 3 a bottle?", "tags": ["multi-hop"]},
+      { "question": "Is the container at position 4 a bag?", "tags": ["0-hop"]},
+      { "question": "Is the container at position 1 blue?", "tags": ["multi-hop"]},
+      { "question": "Is the container at position 2 green?", "tags": ["multi-hop"]},
+      { "question": "Is the container at position 3 red?", "tags": ["0-hop"]},
+      { "question": "Is the container at position 4 yellow?", "tags": ["0-hop"]},
+      { "question": "Does the container at position 1 contain an apple?", "tags": ["multi-hop"]},
+      { "question": "Does the container at position 2 contain a orange?", "tags": ["multi-hop"]},
+      { "question": "Does the container at position 3 contain an banana?", "tags": ["multi-hop"]},
+      { "question": "Does the container at position 4 contain a grape?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three robots in a laboratory. Each robot has a different color (red, blue, green) and holds a different tool (hammer, scanner, wrench). The robots make statements: (1) Red robot says: 'Blue robot has the hammer.' (2) Blue robot says: 'I have the scanner.' (3) Green robot says: 'Red robot is lying.' (4) Red robot also says: 'I have the wrench.' (5) Additional facts: Exactly one robot always lies, the other two always tell the truth. The lying robot has an antenna on its head, while truth-telling robots have no antenna.",
+    "Checklist": [
+      { "question": "Does the red robot have an antenna on its head?", "tags": ["multi-hop"]},
+      { "question": "Does the blue robot have no antenna on its head?", "tags": ["multi-hop"]},
+      { "question": "Does the green robot have no antenna on its head?", "tags": ["multi-hop"]},
+      { "question": "Is the red robot holding the hammer?", "tags": ["multi-hop"]},
+      { "question": "Is the blue robot holding the scanner?", "tags": ["multi-hop"]},
+      { "question": "Is the green robot holding the wrench?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing three magical crystals on pedestals, arranged from left to right, that transform through a sequence. Initially all crystals are white. The transformation rules are: (1) Any white crystal becomes red after one pulse. (2) Any red crystal becomes blue after one pulse. (3) Any blue crystal becomes green after one pulse. (4) The left crystal receives 3 pulses total. (5) The middle crystal receives 2 pulses total. (6) The right crystal receives 1 pulse total. (7) All crystals start white and transform simultaneously. Show the final state after all transformations.",
+    "Checklist": [
+      { "question": "Is the left crystal green in the final state?", "tags": ["multi-hop"]},
+      { "question": "Is the middle crystal blue in the final state?", "tags": ["multi-hop"]},
+      { "question": "Is the right crystal red in the final state?", "tags": ["1-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four doors in a castle hallway. Each door has a different color (gold, silver, bronze, black) and leads to a different room (throne room, library, treasury, dungeon). Use these conditional rules: (1) If a door is gold, then it leads to the throne room. (2) If a door leads to the library, then it is silver. (3) The bronze door does not lead to the dungeon. (4) The black door is not the treasury door. (5) Door 1 is gold. (6) Door 3 leads to the library. (7) Door 4 leads to the dungeon.",
+    "Checklist": [
+      { "question": "Is door 1 gold?", "tags": ["0-hop"]},
+      { "question": "Is door 2 bronze?", "tags": ["multi-hop"]},
+      { "question": "Is door 3 silver?", "tags": ["1-hop"]},
+      { "question": "Is door 4 black?", "tags": ["multi-hop"]},
+      { "question": "Does door 1 lead to the throne room?", "tags": ["1-hop"]},
+      { "question": "Does door 2 lead to the treasury?", "tags": ["multi-hop"]},
+      { "question": "Does door 3 lead to the library?", "tags": ["0-hop"]},
+      { "question": "Does door 4 lead to the dungeon?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three scholars wearing different colored robes (purple, orange, white) and holding different scrolls that glow with different colors (red, green, blue). Each scholar makes one claim: (1) Scholar in purple says: 'The scholar with the red glowing scroll wears orange.' (2) Scholar in orange says: 'I do not have the blue glowing scroll.' (3) Scholar in white says: 'The purple scholar has the green glowing scroll.' (4) Additional facts: Two scholars always tell the truth, one always lies. The lying scholar wears a pointed hat, while truth-telling scholars have no hat.",
+    "Checklist": [
+      { "question": "Is the purple scholar holding the blue glowing scroll?", "tags": ["multi-hop"]},
+      { "question": "Is the orange scholar holding the red glowing scroll?", "tags": ["multi-hop"]},
+      { "question": "Is the white scholar holding the green glowing scroll?", "tags": ["multi-hop"]},
+      { "question": "Does the purple scholar wear no hat?", "tags": ["multi-hop"]},
+      { "question": "Does the orange scholar wear no hat?", "tags": ["multi-hop"]},
+      { "question": "Does the white scholar wear a pointed hat?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four elemental spirits in a mystical circle. Each spirit controls a different element (fire, water, earth, air) and has a different form (dragon, serpent, eagle, bear). Use these exclusion rules: (1) The fire spirit is not a dragon. (2) The water spirit is not a serpent. (3) The earth spirit is not a bear. (4) The air spirit is not an eagle. (5) The dragon controls either earth or air. (6) The serpent controls fire. (7) The bear does not control water.",
+    "Checklist": [
+      { "question": "Does the fire spirit have a serpent form?", "tags": ["1-hop"]},
+      { "question": "Does the water spirit have an eagle form?", "tags": ["multi-hop"]},
+      { "question": "Does the earth spirit have a dragon form?", "tags": ["multi-hop"]},
+      { "question": "Does the air spirit have a bear form?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four knights at a square table. Each knight wears armor of a different color (red, blue, green, yellow) and carries a different weapon (sword, axe, mace, bow). Use these positioning clues: (1) The red knight sits directly across from the blue knight. (2) The green knight sits to the immediate right (clockwise) of the red knight. (3) The yellow knight carries the bow. (4) The blue knight carries the mace. (5) The knight with the axe sits next to the knight with the mace.",
+    "Checklist": [
+      { "question": "Is the red knight carrying the sword?", "tags": ["multi-hop"]},
+      { "question": "Is the blue knight carrying the mace?", "tags": ["0-hop"]},
+      { "question": "Is the green knight carrying the axe?", "tags": ["multi-hop"]},
+      { "question": "Is the yellow knight carrying the bow?", "tags": ["0-hop"]},
+      { "question": "Is the knight with the sword sitting across from the knight with the mace?", "tags": ["multi-hop"]},
+      { "question": "Is the knight with the axe sitting across from the knight with the bow?", "tags": ["multi-hop"]},
+      { "question": "Is the red knight sitting to the immediate left of the green knight?", "tags": ["1-hop"]},
+      { "question": "Is the yellow knight sitting to the immediate left of the red knight?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing three alchemists in a workshop, arranged left, center, and right. Each alchemist wears a different colored coat (crimson, emerald, sapphire) and works with a different potion (healing, poison, invisibility). Use these clues: (1) The alchemist in the center wears an emerald coat. (2) The alchemist with the emerald coat is making the poison potion. (3) The alchemist making the poison potion has the alchemist making the healing potion to their immediate right. (4) The alchemist making the healing potion wears a sapphire coat.",
+    "Checklist": [
+      { "question": "Does the left alchemist have a crimson coat?", "tags": ["multi-hop"]},
+      { "question": "Does the center alchemist have an emerald coat?", "tags": ["0-hop"]},
+      { "question": "Does the right alchemist have a sapphire coat?", "tags": ["multi-hop"]},
+      { "question": "Does the left alchemist make the invisibility potion?", "tags": ["multi-hop"]},
+      { "question": "Does the center alchemist make the poison potion?", "tags": ["1-hop"]},
+      { "question": "Does the right alchemist make the healing potion?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four magical totems arranged in a square pattern (top-left, top-right, bottom-left, bottom-right). Each totem has a different symbol (star, moon, sun, lightning) and a different height (tall, medium, short, tiny). The pattern follows these rules: (1) The tallest totem has the sun symbol and is in the top-left corner. (2) The lightning totem is tiny and is diagonally opposite the star totem. (3) The moon totem is shorter than the star totem. (4) The shortest totem is in the bottom-left corner.",
+    "Checklist": [
+      { "question": "Is the star totem in the top-right position?", "tags": ["multi-hop"]},
+      { "question": "Is the moon totem in the bottom-right position?", "tags": ["multi-hop"]},
+      { "question": "Is the sun totem in the top-left position?", "tags": ["0-hop"]},
+      { "question": "Is the lightning totem in the bottom-left position?", "tags": ["1-hop"]},
+      { "question": "Is the star totem medium height?", "tags": ["multi-hop"]},
+      { "question": "Is the moon totem short height?", "tags": ["multi-hop"]},
+      { "question": "Is the sun totem tall height?", "tags": ["0-hop"]},
+      { "question": "Is the lightning totem tiny height?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four oracle statues in a temple. Each statue has different colored eyes (amber, jade, ruby, onyx) and holds a different magical artifact (scroll, orb, staff, tome). The oracles make claims: (1) The amber-eyed oracle says: 'The ruby-eyed oracle holds the staff.' (2) The jade-eyed oracle says: 'I hold the orb.' (3) The ruby-eyed oracle says: 'The amber-eyed oracle is lying.' (4) The onyx-eyed oracle says: 'Exactly three oracles are lying.' (5) Additional facts: Each oracle either always lies or always tells the truth. Truth-telling oracles have glowing halos above their heads, while lying oracles have no halo. The ruby-eyed oracle’s halo is glowing. The onyx-eyed oracle holds the tome.",
+    "Checklist": [
+      { "question": "Does the amber-eyed oracle have no glowing halo?", "tags": ["multi-hop"]},
+      { "question": "Does the jade-eyed oracle have a glowing halo?", "tags": ["multi-hop"]},
+      { "question": "Does the ruby-eyed oracle have a glowing halo?", "tags": ["multi-hop"]},
+      { "question": "Does the onyx-eyed oracle have no glowing halo?", "tags": ["multi-hop"]},
+      { "question": "Does the amber-eyed oracle hold the staff?", "tags": ["multi-hop"]},
+      { "question": "Does the jade-eyed oracle hold the orb?", "tags": ["1-hop"]},
+      { "question": "Does the ruby-eyed oracle hold the scroll?", "tags": ["multi-hop"]},
+      { "question": "Does the onyx-eyed oracle hold the tome?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four wizards standing around a magical pentagram. Each wizard wears robes of different colors (crimson, azure, emerald, golden) and holds a different magical orb (fire, ice, earth, void). The wizards make statements: (1) The crimson wizard says: 'The azure wizard holds the ice orb.' (2) The azure wizard says: 'The emerald wizard holds the fire orb.' (3) The emerald wizard says: 'The golden wizard is lying.' (4) The golden wizard says: 'The crimson wizard holds the void orb.' (5) Additional facts: Exactly one wizard always lies, others tell truth. Lying wizards have glowing red eyes, truth-telling wizards have normal eyes. The crimson wizard holds the earth orb.",
+    "Checklist": [
+      { "question": "Does the crimson wizard have normal eyes?", "tags": ["multi-hop"]},
+      { "question": "Does the azure wizard have normal eyes?", "tags": ["multi-hop"]},
+      { "question": "Does the emerald wizard have normal eyes?", "tags": ["multi-hop"]},
+      { "question": "Does the golden wizard have glowing red eyes?", "tags": ["multi-hop"]},
+      { "question": "Is the crimson wizard holding the earth orb?", "tags": ["multi-hop"]},
+      { "question": "Is the azure wizard holding the ice orb?", "tags": ["1-hop"]},
+      { "question": "Is the emerald wizard holding the fire orb?", "tags": ["1-hop"]},
+      { "question": "Is the golden wizard holding the void orb?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of five enchanted mirrors arranged in a row on a wall (positions 1 to 5, from left to right). Each mirror has a different frame material (silver, gold, copper, bronze, obsidian) and shows a different reflection (castle, forest, ocean, mountain, desert). Use these clues: (1) The mirror at position 3 is copper and shows the castle. (2) The bronze mirror is at one of the ends. (3) The obsidian mirror, which shows the ocean, is at the far right (position 5). (4) The mirror showing the forest is immediately to the left of the mirror showing the ocean. (5) The gold mirror shows the mountain.",
+    "Checklist": [
+      { "question": "Is the mirror at position 1 made of bronze?", "tags": ["multi-hop"] },
+      { "question": "Does the mirror at position 1 show the desert?", "tags": ["multi-hop"] },
+      { "question": "Is the mirror at position 2 made of gold?", "tags": ["multi-hop"] },
+      { "question": "Does the mirror at position 2 show the mountain?", "tags": ["1-hop"] },
+      { "question": "Is the mirror at position 3 made of copper?", "tags": ["0-hop"] },
+      { "question": "Does the mirror at position 3 show the castle?", "tags": ["0-hop"] },
+      { "question": "Is the mirror at position 4 made of silver?", "tags": ["multi-hop"] },
+      { "question": "Does the mirror at position 4 show the forest?", "tags": ["1-hop"] },
+      { "question": "Is the mirror at position 5 made of obsidian?", "tags": ["1-hop"] },
+      { "question": "Does the mirror at position 5 show the ocean?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four elemental guardians standing in a row, at positions 1 to 4 from left to right. Each guardian has a different form (warrior, mage, archer, monk) and controls a different element (fire, water, earth, air). The arrangement follows these rules: (1) The mage is at position 2 and controls the water element. (2) The guardian at position 3 is the archer. (3) The warrior controls the fire element and is not adjacent to the archer. (4) The monk is at one of the ends (position 1 or 4) and controls the air element.",
+    "Checklist": [
+      { "question": "Is the guardian at position 1 a warrior?", "tags": ["multi-hop"]},
+      { "question": "Is the guardian at position 2 a mage?", "tags": ["0-hop"]},
+      { "question": "Is the guardian at position 3 an archer?", "tags": ["0-hop"]},
+      { "question": "Is the guardian at position 4 a monk?", "tags": ["multi-hop"]},
+      { "question": "Does the guardian at position 1 control fire?", "tags": ["multi-hop"]},
+      { "question": "Does the guardian at position 2 control water?", "tags": ["0-hop"]},
+      { "question": "Does the guardian at position 3 control earth?", "tags": ["multi-hop"]},
+      { "question": "Does the guardian at position 4 control air?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing three magical cauldrons brewing potions. Each cauldron has a different metal (iron, silver, gold) and contains a different colored potion (red, blue, green). The cauldrons make bubbling sounds that form words: (1) The iron cauldron bubbles: 'I contain the red potion.' (2) The silver cauldron bubbles: 'The gold cauldron contains the red potion.' (3) The gold cauldron bubbles: 'I contain the green potion.' (4) Additional facts: One cauldron always lies (its bubbles form false statements), others tell truth. Lying cauldrons have purple flames underneath, truth-telling cauldrons have orange flames.",
+    "Checklist": [
+      { "question": "Does the iron cauldron have orange flames underneath?", "tags": ["multi-hop"]},
+      { "question": "Does the silver cauldron have purple flames underneath?", "tags": ["multi-hop"]},
+      { "question": "Does the gold cauldron have orange flames underneath?", "tags": ["multi-hop"]},
+      { "question": "Does the iron cauldron contain red potion?", "tags": ["multi-hop"]},
+      { "question": "Does the silver cauldron contain blue potion?", "tags": ["multi-hop"]},
+      { "question": "Does the gold cauldron contain green potion?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four magical stones arranged in a diamond pattern (top, bottom, left, right). Each stone has a different shape (cube, sphere, pyramid, cylinder) and emits a different colored light (violet, amber, emerald, sapphire). Use these rules: (1) The stone at the top is a cube that emits violet light. (2) The stone at the left is a pyramid. (3) The stone at the right is a cylinder that emits emerald light. (4) The sphere is at the bottom and emits sapphire light.",
+    "Checklist": [
+      { "question": "Is the stone at the top position a cube?", "tags": ["multi-hop"]},
+      { "question": "Is the stone at the right position a cylinder?", "tags": ["multi-hop"]},
+      { "question": "Is the stone at the bottom position a sphere?", "tags": ["multi-hop"]},
+      { "question": "Is the stone at the left position a pyramid?", "tags": ["0-hop"]},
+      { "question": "Does the stone at the top position emit violet light?", "tags": ["0-hop"]},
+      { "question": "Does the stone at the right position emit emerald light?", "tags": ["multi-hop"]},
+      { "question": "Does the stone at the bottom position emit sapphire light?", "tags": ["multi-hop"]},
+      { "question": "Does the stone at the left position emit amber light?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four apprentice alchemists working at lab stations, ordered from 1 to 4, left to right. Each apprentice wears a different colored apron (scarlet, blue, green, gold) and works with a different apparatus (distiller, crucible, retort, alembic). Chain reactions occur: (1) If an apprentice uses a distiller, then their apron turns scarlet. (2) If an apprentice's apron is blue, then they use a crucible. (3) If an apprentice uses a retort, then the apprentice to their right uses an alembic. (4) Apprentice at station 3 has a green apron. (5) Apprentice at station 2 uses a retort. (6) Apprentice at station 4 has a blue apron.",
+    "Checklist": [
+      { "question": "Does the apprentice at station 4 have a blue apron?", "tags": ["0-hop"]},
+      { "question": "Does the apprentice at station 2 use a retort?", "tags": ["0-hop"]},
+      { "question": "Does the apprentice at station 3 have a green apron?", "tags": ["0-hop"]},
+      { "question": "Does the apprentice at station 4 use a crucible?", "tags": ["1-hop"]},
+      { "question": "Does the apprentice at station 3 use an alembic?", "tags": ["1-hop"]},
+      { "question": "Does the apprentice at station 1 use a distiller?", "tags": ["multi-hop"]},
+      { "question": "Does the apprentice at station 1 have a scarlet apron?", "tags": ["multi-hop"]},
+      { "question": "Does the apprentice at station 2 have a gold apron?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing three mystical artifacts on pedestals in a triangle formation. Each artifact has a different material (crystal, metal, wood) and a different visual effect (wreathed in flames, shrouded in mist, covered in vines). The artifacts make statements: (1) The crystal artifact says: 'I am covered in vines.' (2) The metal artifact says: 'The crystal artifact is lying.' (3) The wood artifact says: 'I am wreathed in flames, and the metal artifact is telling the truth.' (4) Additional facts: Exactly one artifact lies, others tell truth. Lying artifacts have cracks on their surface, truth-telling artifacts have smooth surfaces.",
+    "Checklist": [
+      { "question": "Does the crystal artifact have cracks on its surface?", "tags": ["multi-hop"]},
+      { "question": "Does the metal artifact have a smooth surface?", "tags": ["multi-hop"]},
+      { "question": "Does the wood artifact have a smooth surface?", "tags": ["multi-hop"]},
+      { "question": "Is the crystal artifact shrouded in mist?", "tags": ["multi-hop"]},
+      { "question": "Is the metal artifact covered in vines?", "tags": ["multi-hop"]},
+      { "question": "Is the wood artifact wreathed in flames?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of five ritual candles arranged in a pentagram formation (top, top-right, bottom-right, bottom-left, top-left). Each candle has a different height (tallest, tall, medium, short, shortest) and burns with a different colored flame (white, blue, green, yellow, red). Use these constraints: (1) The candle with the white flame is the tallest and is at the top position. (2) The candle with the blue flame is shorter than the one with the green flame. (3) The candle at the bottom-left has a yellow flame and is short. (4) The candle with the red flame is at the bottom-right and is medium height. (5) The shortest candle is at the top-right position.",
+    "Checklist": [
+      { "question": "Is the candle at top position the tallest height?", "tags": ["0-hop"]},
+      { "question": "Is the candle at top-right position the shortest height?", "tags": ["0-hop"]},
+      { "question": "Is the candle at bottom-left position short height?", "tags": ["0-hop"]},
+      { "question": "Is the candle at bottom-right position medium height?", "tags": ["0-hop"]},
+      { "question": "Is the candle at top-left position tall height?", "tags": ["multi-hop"]},
+      { "question": "Does the candle at top position burn with white flame?", "tags": ["0-hop"]},
+      { "question": "Does the candle at top-right position burn with blue flame?", "tags": ["multi-hop"]},
+      { "question": "Does the candle at bottom-left position burn with yellow flame?", "tags": ["0-hop"]},
+      { "question": "Does the candle at bottom-right position burn with red flame?", "tags": ["0-hop"]},
+      { "question": "Does the candle at top-left position burn with green flame?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four time portals arranged in a square formation. Each portal has a different frame material (Crystal, Stone, Metal, Wood) and leads to a different era (ancient, medieval, modern, future). The portals operate under these rules: (1) Portals leading to past eras (ancient, medieval) have blue energy; the portal to the future has red energy. (2) The Crystal portal leads to the ancient era. (3) The Wood portal is diagonally opposite to the Metal portal. (4) The portal at the bottom-right leads to the modern era, has a Stone frame and green energy. (5) The Metal portal is at the top-right position. (6) The portal at the bottom-left leads to the medieval era.",
+    "Checklist": [
+      { "question": "Is the portal at the top-left position made of Crystal?", "tags": ["multi-hop"]},
+      { "question": "Is the portal at the top-right position made of Metal?", "tags": ["0-hop"]},
+      { "question": "Is the portal at the bottom-left position made of Wood?", "tags": ["multi-hop"]},
+      { "question": "Is the portal at the bottom-right position made of Stone?", "tags": ["multi-hop"]},
+      { "question": "Does the portal at the top-left have blue energy?", "tags": ["multi-hop"]},
+      { "question": "Does the portal at the top-right have red energy?", "tags": ["multi-hop"]},
+      { "question": "Does the portal at the bottom-left have blue energy?", "tags": ["1-hop"]},
+      { "question": "Does the portal at the bottom-right have green energy?", "tags": ["1-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three sage spirits floating in a sacred grove. Each spirit has a different ethereal color (silver, gold, pearl) and guards a different magical artifact (Tome, Orb, Scroll). The spirits communicate: (1) The silver spirit says: 'The gold spirit guards the Orb.' (2) The gold spirit says: 'The pearl spirit guards the Orb.' (3) The pearl spirit says: 'I guard the Tome.' (4) Additional facts: Two spirits always speak truth, one always lies. Truth-speaking spirits have bright auras around them, lying spirits have dim auras.",
+    "Checklist": [
+      { "question": "Does the silver spirit have a bright aura?", "tags": ["multi-hop"]},
+      { "question": "Does the gold spirit have a dim aura?", "tags": ["multi-hop"]},
+      { "question": "Does the pearl spirit have a bright aura?", "tags": ["multi-hop"]},
+      { "question": "Does the silver spirit guard the Scroll?", "tags": ["multi-hop"]},
+      { "question": "Does the gold spirit guard the Orb?", "tags": ["multi-hop"]},
+      { "question": "Does the pearl spirit guard the Tome?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four magical books on lecterns in a library. Each book has a different cover color (crimson, violet, emerald, azure) and contains a different magical glyph (Glyph of the Sun, Glyph of the Moon, Glyph of the Serpent, Glyph of the Eye). The books speak: (1) The crimson book says: 'I contain the Glyph of the Serpent. The azure book contains the Glyph of the Moon.' (2) The violet book says: 'I contain the Glyph of the Eye.' (3) The emerald book says: 'The azure book is lying.' (4) The azure book says: 'The crimson book contains the Glyph of the Serpent.' (5) Facts: One book always lies, others tell truth. Lying books have torn pages, truth-telling books have pristine pages.",
+    "Checklist": [
+      { "question": "Does the crimson book have pristine pages?", "tags": ["multi-hop"]},
+      { "question": "Does the violet book have pristine pages?", "tags": ["multi-hop"]},
+      { "question": "Does the emerald book have pristine pages?", "tags": ["multi-hop"]},
+      { "question": "Does the azure book have torn pages?", "tags": ["multi-hop"]},
+      { "question": "Does the crimson book contain the Glyph of the Serpent?", "tags": ["multi-hop"]},
+      { "question": "Does the violet book contain the Glyph of the Eye?", "tags": ["1-hop"]},
+      { "question": "Does the emerald book contain the Glyph of the Sun?", "tags": ["multi-hop"]},
+      { "question": "Does the azure book contain the Glyph of the Moon?", "tags": ["1-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing six crystal spheres arranged in two rows of three on a marble platform. Each sphere displays a different number from 1 to 6 and glows with different intensity (dim, bright). Rules: (1) All spheres in the top row are bright, all in the bottom row are dim. (2) No two adjacent spheres (horizontally or vertically) can have consecutive numbers (e.g., 3 cannot be next to 2 or 4). (3) The sphere displaying the number 6 is at the top-left position. (4) The sphere displaying the number 1 is at the bottom-right position. (5) The sphere displaying the number 4 is also in the top row.",
+    "Checklist": [
+      { "question": "Does the sphere at the top-left display the number 6?", "tags": ["0-hop"]},
+      { "question": "Does the sphere at the top-middle display the number 2?", "tags": ["multi-hop"]},
+      { "question": "Does the sphere at the top-right display the number 4?", "tags": ["multi-hop"]},
+      { "question": "Does the sphere at the bottom-left display the number 3?", "tags": ["multi-hop"]},
+      { "question": "Does the sphere at the bottom-middle display the number 5?", "tags": ["multi-hop"]},
+      { "question": "Does the sphere at the bottom-right display the number 1?", "tags": ["0-hop"]},
+      { "question": "Do the spheres in the top row glow brightly?", "tags": ["0-hop"]},
+      { "question": "Do the spheres in the bottom row glow dimly?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three enchanted armor sets on display stands, named A, B, and C (in order from left to right). Each armor has a different metal (gold, bronze, mithril) and a different enchantment effect (fire protection, ice resistance, lightning immunity). The assignments follow these rules: (1) Armor A is made of bronze. (2) The bronze armor has ice resistance. (3) Armor B has fire protection. (4) The gold armor has lightning immunity.",
+    "Checklist": [
+      { "question": "Is armor A made of bronze?", "tags": ["0-hop"]},
+      { "question": "Is armor B made of mithril?", "tags": ["multi-hop"]},
+      { "question": "Is armor C made of gold?", "tags": ["multi-hop"]},
+      { "question": "Does armor A have ice resistance?", "tags": ["1-hop"]},
+      { "question": "Does armor B have fire protection?", "tags": ["0-hop"]},
+      { "question": "Does armor C have lightning immunity?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four mystical gardens in a square courtyard. Each garden has different flowers (roses, lilies, orchids, tulips) and a different central feature (Fountain of Life, Warrior's Statue, Scholar's Sundial, Whispering Tree). The gardens are arranged as follows: (1) The garden with the Fountain of Life has lilies and is at the top-left position. (2) The garden with the Warrior's Statue is adjacent to both the garden with the Scholar's Sundial and the one with the Whispering Tree. (3) The garden with orchids has the Scholar's Sundial and is at the bottom-left position. (4) The garden with the Whispering Tree is at the top-right position. (5) The garden at the bottom-right has tulips.",
+    "Checklist": [
+      { "question": "Does the garden at top-left have lilies?", "tags": ["0-hop"]},
+      { "question": "Does the garden at top-right have roses?", "tags": ["multi-hop"]},
+      { "question": "Does the garden at bottom-left have orchids?", "tags": ["0-hop"]},
+      { "question": "Does the garden at bottom-right have tulips?", "tags": ["0-hop"]},
+      { "question": "Does the garden at top-left have a Fountain of Life?", "tags": ["0-hop"]},
+      { "question": "Does the garden at top-right have a Whispering Tree?", "tags": ["0-hop"]},
+      { "question": "Does the garden at bottom-left have a Scholar's Sundial?", "tags": ["0-hop"]},
+      { "question": "Does the garden at bottom-right have a Warrior's Statue?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four alchemical vessels standing in a row from left to right. Each vessel is made of a different metal (Gold, Silver, Copper, Iron) and contains a different glowing liquid (Red, Blue, Green, Yellow). The arrangement follows these rules: (1) The Gold vessel is immediately to the left of the Iron vessel. (2) The Copper vessel is immediately to the right of the Iron vessel. (3) The Silver vessel is at the far right end (position 4). (4) The vessel containing the Yellow liquid is at the far left end (position 1). (5) The vessel containing the Blue liquid is to the right of the vessel with the Red liquid. (6) The vessel containing the Green liquid is in the Silver vessel.",
+    "Checklist": [
+      { "question": "Is the vessel at position 1 made of Gold?", "tags": ["multi-hop"]},
+      { "question": "Is the vessel at position 2 made of Iron?", "tags": ["multi-hop"]},
+      { "question": "Is the vessel at position 3 made of Copper?", "tags": ["multi-hop"]},
+      { "question": "Is the vessel at position 4 made of Silver?", "tags": ["0-hop"]},
+      { "question": "Does the vessel at position 1 contain the Yellow liquid?", "tags": ["0-hop"]},
+      { "question": "Does the vessel at position 2 contain the Red liquid?", "tags": ["multi-hop"]},
+      { "question": "Does the vessel at position 3 contain the Blue liquid?", "tags": ["multi-hop"]},
+      { "question": "Does the vessel at position 4 contain the Green liquid?", "tags": ["1-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three oracle mirrors in a triangular chamber. Each mirror has a different frame material (gold, silver, obsidian) and shows a different vision (a volcano erupting, a serene forest, a storm of stars). The mirrors declare: (1) The gold mirror says: 'The silver mirror shows a serene forest.' (2) The silver mirror says: 'I show a volcano erupting.' (3) The obsidian mirror says: 'I show a volcano erupting.' (4) Facts: Two mirrors speak truth, one lies. Truth mirrors have glowing frames, lying mirrors have dull frames.",
+    "Checklist": [
+      { "question": "Does the gold mirror have a glowing frame?", "tags": ["multi-hop"]},
+      { "question": "Does the silver mirror have a dull frame?", "tags": ["multi-hop"]},
+      { "question": "Does the obsidian mirror have a glowing frame?", "tags": ["multi-hop"]},
+      { "question": "Does the gold mirror show a storm of stars?", "tags": ["multi-hop"]},
+      { "question": "Does the silver mirror show a serene forest?", "tags": ["multi-hop"]},
+      { "question": "Does the obsidian mirror show a volcano erupting?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of five elemental totems standing in a circle around a sacred fire, with positions labeled North, East, South, West, and Northwest. Each totem represents a different element (fire, water, earth, air, void) and has a different height (shortest, short, medium, tall, tallest). Rules: (1) The Earth totem is the tallest and is at the North position. (2) The Water totem is the shortest and is at the South position. (3) The Void totem is medium height and is at the East position. (4) The Fire totem is short and is adjacent to the Earth totem. (5) No two adjacent totems can have consecutive heights.",
+    "Checklist": [
+      { "question": "Is the totem at the North position the tallest?", "tags": ["0-hop"]},
+      { "question": "Is the totem at the East position medium height?", "tags": ["0-hop"]},
+      { "question": "Is the totem at the South position the shortest?", "tags": ["0-hop"]},
+      { "question": "Is the totem at the West position tall?", "tags": ["multi-hop"]},
+      { "question": "Is the totem at the Northwest position short?", "tags": ["multi-hop"]},
+      { "question": "Does the totem at the North position represent Earth?", "tags": ["0-hop"]},
+      { "question": "Does the totem at the East position represent Void?", "tags": ["0-hop"]},
+      { "question": "Does the totem at the South position represent Water?", "tags": ["0-hop"]},
+      { "question": "Does the totem at the West position represent Air?", "tags": ["multi-hop"]},
+      { "question": "Does the totem at the Northwest position represent Fire?", "tags": ["multi-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four magical chess pieces on a board, arranged left to right. Each piece has a different material (marble, ebony, crystal, jade) and a different magical glyph inscribed on its base (Glyph of Flame, Glyph of Wave, Glyph of Mountain, Glyph of Storm). The assignments follow these rules: (1) The piece at the far left is the marble piece and has the Glyph of Wave on its base. (2) The piece at the far right has the Glyph of Storm on its base. (3) The crystal piece has the Glyph of Mountain and is immediately to the right of the ebony piece. (4) The ebony piece has the Glyph of Flame on its base.",
+    "Checklist": [
+      { "question": "Is the piece at the far left made of marble?", "tags": ["0-hop"]},
+      { "question": "Is the piece second from the left made of ebony?", "tags": ["multi-hop"]},
+      { "question": "Is the piece second from the right made of crystal?", "tags": ["multi-hop"]},
+      { "question": "Is the piece at the far right made of jade?", "tags": ["multi-hop"]},
+      { "question": "Does the piece at the far left have the Glyph of Wave on its base?", "tags": ["0-hop"]},
+      { "question": "Does the piece second from the left have the Glyph of Flame on its base?", "tags": ["0-hop"]},
+      { "question": "Does the piece second from the right have the Glyph of Mountain on its base?", "tags": ["0-hop"]},
+      { "question": "Does the piece at the far right have the Glyph of Storm on its base?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four mystical lanterns hanging in a row from a wooden beam, at positions 1 to 4 from left to right. Each lantern has different color glass (red, blue, green, yellow) and contains different magical light sources (firefly, candle, crystal, ember). Rules: (1) The crystal light source is in the green lantern at position 3. (2) The yellow lantern contains fireflies and is at position 1. (3) The ember light source is in position 4. (4) The candle light source is not in the red lantern. (5) The blue lantern is at position 2.",
+    "Checklist": [
+      { "question": "Is the lantern at position 1 yellow?", "tags": ["0-hop"]},
+      { "question": "Is the lantern at position 2 blue?", "tags": ["0-hop"]},
+      { "question": "Is the lantern at position 3 green?", "tags": ["0-hop"]},
+      { "question": "Is the lantern at position 4 red?", "tags": ["multi-hop"]},
+      { "question": "Does the lantern at position 1 contain fireflies?", "tags": ["0-hop"]},
+      { "question": "Does the lantern at position 2 contain a candle?", "tags": ["multi-hop"]},
+      { "question": "Does the lantern at position 3 contain a crystal?", "tags": ["0-hop"]},
+      { "question": "Does the lantern at position 4 contain an ember?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four enchanted weapons displayed on weapon racks. Each weapon has a different type (sword, axe, bow, staff), a different gem inlay (ruby, sapphire, emerald, diamond), and a different enchantment (flame, frost, shock, heal). Constraints: (1) Weapons with red gems (ruby) have flame enchantment. (2) The staff has a diamond and heal enchantment. (3) The bow does not have an emerald inlay. (4) A weapon with the shock enchantment has a sapphire inlay. (5) The axe has the frost enchantment. (6) The sword does not have a ruby inlay.",
+    "Checklist": [
+      { "question": "Does the sword have a sapphire inlay?", "tags": ["multi-hop"]},
+      { "question": "Does the axe have an emerald inlay?", "tags": ["multi-hop"]},
+      { "question": "Does the bow have a ruby inlay?", "tags": ["multi-hop"]},
+      { "question": "Does the staff have a diamond inlay?", "tags": ["0-hop"]},
+      { "question": "Does the sword have the shock enchantment?", "tags": ["multi-hop"]},
+      { "question": "Does the axe have the frost enchantment?", "tags": ["0-hop"]},
+      { "question": "Does the bow have the flame enchantment?", "tags": ["multi-hop"]},
+      { "question": "Does the staff have the heal enchantment?", "tags": ["0-hop"]}
+    ],
+    "Remark": "Claude"
+  },
+  "R-LR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four knights standing in a line. Two are “Loyal Knights” in polished golden armor, and two are “Traitor Knights” in scarred, dark armor. Each knight carries a different banner: a Lion, a Wolf, an Eagle, or a Serpent. Their identities and banners are fixed by these clues:\n1. The knight in the second position carries the Wolf banner.\n2. The knight with the Eagle banner stands next to the knight with the Lion banner.\n3. The Traitor Knight with the Serpent banner is at one of the ends of the line.\n4. The knight in the third position is a Loyal Knight.\n5. The knight holding the Lion banner is not at an end of the line.\n6. The knight in the fourth position is a Loyal Knight.",
+    "Checklist": [
+      { "question": "Is the knight in position 1 a Traitor Knight (in dark, scarred armor)?", "tags": ["multi-hop"] },
+      { "question": "Is the knight in position 1 holding the Serpent banner?",                "tags": ["multi-hop"] },
+      { "question": "Is the knight in position 2 a Traitor Knight (in dark, scarred armor)?", "tags": ["multi-hop"] },
+      { "question": "Is the knight in position 2 holding the Wolf banner?",                   "tags": ["0-hop"] },
+      { "question": "Is the knight in position 3 a Loyal Knight (in golden armor)?",          "tags": ["0-hop"] },
+      { "question": "Is the knight in position 3 holding the Lion banner?",                   "tags": ["multi-hop"] },
+      { "question": "Is the knight in position 4 a Loyal Knight (in golden armor)?",          "tags": ["0-hop"] },
+      { "question": "Is the knight in position 4 holding the Eagle banner?",                  "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with four wizards, each in a different environment. One is in a Fiery Volcano, one is in a Lush Forest, one is on a Snowy Peak, and one is in a Dank Cave. Each wizard has a different familiar: a Dragon, a Unicorn, a Griffin, or a Golem. The pairings are determined by these clues:\n1. The wizard with the Dragon is in the Fiery Volcano.\n2. The wizard with the Unicorn is not on the Snowy Peak.\n3. The wizard in the Lush Forest does not have the Griffin.\n4. The wizard on the Snowy Peak is not the one with the Golem.\n5. The wizard in the Dank Cave has the Golem.",
+    "Checklist": [
+      { "question": "Is there a wizard with a Dragon familiar in a Fiery Volcano?", "tags": ["0-hop"] },
+      { "question": "Is there a wizard with a Unicorn familiar in a Lush Forest?", "tags": ["multi-hop"] },
+      { "question": "Is there a wizard with a Griffin familiar on a Snowy Peak?", "tags": ["multi-hop"] },
+      { "question": "Is there a wizard with a Golem familiar in a Dank Cave?", "tags": ["0-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four alien creatures standing in a group. Three are truthful 'Mind-speakers' which have three eyes. One is a lying 'Mind-bender' which has only one large eye. Each creature is a different color: Red, Blue, Green, or Yellow. Their identity and color are determined by their statements:\n- The Red creature says: 'The Green creature is the Mind-bender.'\n- The Blue creature says: 'The Yellow creature is a Mind-speaker.'\n- The Green creature says: 'The Red creature is the Mind-bender.'\n- The Yellow creature says: 'The Red creature is a Mind-speaker.'",
+    "Checklist": [
+      { "question": "Is the Red creature a Mind-speaker (has three eyes)?", "tags": ["multi-hop"] },
+      { "question": "Is the Blue creature a Mind-speaker (has three eyes)?", "tags": ["multi-hop"] },
+      { "question": "Is the Green creature a Mind-bender (has one large eye)?", "tags": ["multi-hop"] },
+      { "question": "Is the Yellow creature a Mind-speaker (has three eyes)?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of five pedestals in a row in a hall. On exactly three of the pedestals, there is a magical orb. Two pedestals are empty. The orbs are a red Orb of Flame, a blue Orb of Frost, and a green Orb of Nature. Their placement is determined by these rules:\n1. The two empty pedestals are next to each other.\n2. The Orb of Flame is on the middle pedestal (position 3).\n3. The Orb of Frost is not at an end of the row (position 1 or 5).\n4. The Orb of Nature is to the left of the Orb of Flame.",
+    "Checklist": [
+      { "question": "Is the pedestal in position 1 holding the Orb of Nature?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 2 holding the Orb of Frost?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 3 holding the Orb of Flame?", "tags": ["0-hop"] },
+      { "question": "Is the pedestal in position 4 empty?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 5 empty?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of three Kings, each sitting on a different throne and holding a different scepter. The Kings are the King of the North, King of the South, and King of the East. The thrones are made of Ice, Sandstone, and Wood. The scepters are topped with a Crystal, a Ruby, or a Skull. The pairings are determined by these clues:\n1. The King of the North sits on the Throne of Ice.\n2. The King on the Wooden throne holds the Skull-topped scepter.\n3. The King of the South holds the Ruby-topped scepter.\n4. The King on the Wooden throne is not the King of the South.",
+    "Checklist": [
+      { "question": "Does the King of the North sit on the Throne of Ice?", "tags": ["0-hop"] },
+      { "question": "Does the King of the North hold the Crystal-topped scepter?", "tags": ["multi-hop"] },
+      { "question": "Does the King of the South sit on the Sandstone throne?", "tags": ["multi-hop"] },
+      { "question": "Does the King of the South hold the Ruby-topped scepter?", "tags": ["0-hop"] },
+      { "question": "Does the King of the East sit on the Wooden throne?", "tags": ["multi-hop"] },
+      { "question": "Does the King of the East hold the Skull-topped scepter?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with four empty thrones in a council chamber. Each throne is made of a different material (Gold, Silver, Iron, Bronze) and has a different colored cushion (Red, Blue, Green, Purple). The pairings are determined by these rules:\n1. The Gold throne has the Red cushion.\n2. The throne with the Blue cushion is not made of Silver.\n3. The Iron throne has the Purple cushion.\n4. The throne with the Green cushion is not the Bronze throne.",
+    "Checklist": [
+      { "question": "Is there a Gold throne with a Red cushion?", "tags": ["0-hop"] },
+      { "question": "Is there a Silver throne with a Green cushion?", "tags": ["multi-hop"] },
+      { "question": "Is there an Iron throne with a Purple cushion?", "tags": ["0-hop"] },
+      { "question": "Is there a Bronze throne with a Blue cushion?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four robots. Three are truthful 'Warden' models with a glowing blue light on their chest. One is a lying 'Infiltrator' model with a glowing red light. Each robot has a different shape: a Cube, a Sphere, a Pyramid, and a Cone. Their identity is determined by their statements:\n- The Cube-shaped robot says: 'The Sphere-shaped robot is the Infiltrator.'\n- The Sphere-shaped robot says: 'The Pyramid-shaped robot is the Infiltrator.'\n- The Pyramid-shaped robot says: 'I am not the Infiltrator.'\n- The Cone-shaped robot says: 'The Cube-shaped robot is a Warden.'",
+    "Checklist": [
+      { "question": "Is the robot with the Cube shape a Warden model (has a blue light)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot with the Sphere shape an Infiltrator model (has a red light)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot with the Pyramid shape a Warden model (has a blue light)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot with the Cone shape a Warden model (has a blue light)?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of four magical weapons displayed on stands in a vault. Each weapon (a Sword, a Dagger, a Mace, an Axe) is made of a different material (Gold, Silver, Bronze, Iron). The pairings are determined by these clues:\n1. The Gold weapon is not the Dagger or the Axe.\n2. The Silver weapon is the Mace.\n3. The Bronze weapon is not the Axe.",
+    "Checklist": [
+      { "question": "Is the displayed Sword made of Gold?", "tags": ["multi-hop"] },
+      { "question": "Is the displayed Dagger made of Bronze?", "tags": ["multi-hop"] },
+      { "question": "Is the displayed Mace made of Silver?", "tags": ["0-hop"] },
+      { "question": "Is the displayed Axe made of Iron?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene of a wizard's experiment. On a table are four potion bottles, each a different shape: Square, Round, Star, and Triangle. Each potion has a different final color: Red, Blue, Purple, or Orange. The colors are the result of these conditional rules:\n1. If a potion is in a Star-shaped bottle, it turns Purple.\n2. The Round bottle contains a Red potion.\n3. A potion turns Orange if it is in the bottle to the immediate right of the Red potion.\n4. The Square bottle is at the far-left end of the row.\n5. The Star-shaped bottle is not at the far-right end.",
+    "Checklist": [
+      { "question": "Is the bottle in position 1 (far-left) Square-shaped?", "tags": ["0-hop"] },
+      { "question": "Is the potion in the bottle at position 1 Blue?", "tags": ["multi-hop"] },
+      { "question": "Is the bottle in position 2 Star-shaped?", "tags": ["multi-hop"] },
+      { "question": "Is the potion in the bottle at position 2 Purple?", "tags": ["multi-hop"] },
+      { "question": "Is the bottle in position 3 Round-shaped?", "tags": ["multi-hop"] },
+      { "question": "Is the potion in the bottle at position 3 Red?", "tags": ["multi-hop"] },
+      { "question": "Is the bottle in position 4 (far-right) Triangle-shaped?", "tags": ["multi-hop"] },
+      { "question": "Is the potion in the bottle at position 4 Orange?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of five pedestals in a line. Exactly three pedestals hold a gem, and two are empty. The gems are a red Ruby, a blue Sapphire, and a green Emerald. Their placement is determined by these rules:\n1. The Ruby is on the far-left pedestal (position 1).\n2. The two empty pedestals are not next to each other.\n3. The Sapphire is to the immediate right of an empty pedestal.\n4. The Emerald is not at the far-right end.\n5. The Emerald is to the immediate right of the Ruby.",
+    "Checklist": [
+      { "question": "Is the pedestal in position 1 holding the Ruby?", "tags": ["0-hop"] },
+      { "question": "Is the pedestal in position 2 holding the Emerald?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 3 empty?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 4 holding the Sapphire?", "tags": ["multi-hop"] },
+      { "question": "Is the pedestal in position 5 empty?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene of four alien artifacts. Each has a different shape (a Cube, a Sphere, a Pyramid, a Helix) and is made of a different material (a Crystal material, a Metal material, a Stone material, a Wood material). The pairings are determined by these clues:\n1. The Sphere is made of the Crystal material.\n2. The Cube is not made of the Stone material.\n3. The Helix is made of the Metal material.\n4. The Pyramid is not made of the Wood material.",
+    "Checklist": [
+      { "question": "Is the artifact with a Cube shape made of the Wood material?", "tags": ["multi-hop"] },
+      { "question": "Is the artifact with a Sphere shape made of the Crystal material?", "tags": ["0-hop"] },
+      { "question": "Is the artifact with a Pyramid shape made of the Stone material?", "tags": ["multi-hop"] },
+      { "question": "Is the artifact with a Helix shape made of the Metal material?", "tags": ["0-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene of three mechs in a hangar bay. Each mech has a different chassis type (a Bipedal chassis, a Quadrupedal chassis, a Tank Treads chassis). Each mech has a different primary weapon system visible (a Large Cannon, Missile Pods, a Giant Sword). The pairings are determined by these rules:\n1. The mech with the Bipedal chassis does not have the Giant Sword.\n2. The mech with the Large Cannon does not have the Tank Treads chassis.\n3. The mech with the Quadrupedal chassis has the Giant Sword.",
+    "Checklist": [
+      { "question": "Is there a mech with a Bipedal chassis and a Large Cannon?", "tags": ["multi-hop"] },
+      { "question": "Is there a mech with a Quadrupedal chassis and a Giant Sword?", "tags": ["0-hop"] },
+      { "question": "Is there a mech with Tank Treads chassis and Missile Pods?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of five robed figures sitting around a circular table. Three are truthful 'Oracles' wearing white robes. Two are lying 'Deceivers' wearing grey robes. Each figure has a different colored crystal floating in front of them: Red, Blue, Green, Yellow, or Purple. Their identity and crystal are determined by their statements:\n- The figure with the Red crystal says: 'The figure with the Blue crystal is a Deceiver.'\n- The figure with the Blue crystal says: 'I am an Oracle.'\n- The figure with the Green crystal says: 'The figure with the Yellow crystal is an Oracle.'\n- The figure with the Yellow crystal says: 'The figure with the Blue crystal is a Deceiver.'\n- The figure with the Purple crystal says: 'The figure with the Red crystal is a Deceiver.'",
+    "Checklist": [
+      { "question": "Is the figure with the Red crystal an Oracle (in a white robe)?", "tags": ["multi-hop"] },
+      { "question": "Is the figure with the Blue crystal a Deceiver (in a grey robe)?", "tags": ["multi-hop"] },
+      { "question": "Is the figure with the Green crystal an Oracle (in a white robe)?", "tags": ["multi-hop"] },
+      { "question": "Is the figure with the Yellow crystal an Oracle (in a white robe)?", "tags": ["multi-hop"] },
+      { "question": "Is the figure with the Purple crystal a Deceiver (in a grey robe)?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene of four houses in a row on a street. Each house is a different color (Red, Blue, Green, Yellow) and has a different fantasy creature as a pet in the yard (a Dragon, a Griffin, a Unicorn, a Manticore). The pairings are determined by these clues:\n1. The Red house has the Dragon.\n2. The house with the Griffin is at the far-left end (position 1).\n3. The Blue house is immediately to the right of the Green house.\n4. The Unicorn is not at the house in position 2 and position 4.\n5. The house with the Manticore is not next to the house with the Griffin.\n6. The Green house has the Unicorn.",
+    "Checklist": [
+      { "question": "Is the house in position 1 Yellow?", "tags": ["multi-hop"] },
+      { "question": "Is the pet at the house in position 1 a Griffin?", "tags": ["0-hop"] },
+      { "question": "Is the house in position 2 Red?", "tags": ["multi-hop"] },
+      { "question": "Is the pet at the house in position 2 a Dragon?", "tags": ["multi-hop"] },
+      { "question": "Is the house in position 3 Green?", "tags": ["multi-hop"] },
+      { "question": "Is the pet at the house in position 3 a Unicorn?", "tags": ["multi-hop"] },
+      { "question": "Is the house in position 4 Blue?", "tags": ["multi-hop"] },
+      { "question": "Is the pet at the house in position 4 a Manticore?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four elemental statues in a line. Each statue has a different form (a Golem, a Nymph, a Sylph, a Salamander) and is made of a different material (Stone, Water, Air, Fire). The Air and Water statues are translucent. The Stone and Fire statues are opaque. Their pairings are determined by these rules:\n1. The Golem is made of Stone.\n2. The statue made of Air is in the third position.\n3. The Nymph is immediately to the left of the Sylph.\n4. The Salamander is not at an end of the line.\n5. The statue made of Fire is not in the first position.\n6. The Golem is at one of the ends of the line.\n7. The Salamander is made of Fire.",
+    "Checklist": [
+      { "question": "Is the statue in position 1 a Golem?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 1 made of opaque Stone?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 2 a Salamander?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 2 made of opaque Fire?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 3 a Nymph?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 3 made of translucent Air?", "tags": ["0-hop"] },
+      { "question": "Is the statue in position 4 a Sylph?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 4 made of translucent Water?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of four alien plants. Each plant has a different shaped pot (Cube, Sphere, Pyramid, Cylinder) and each produces a different colored fruit (Red, Blue, Green, Yellow). The pairings are determined by these clues:\n1. The plant in the Sphere-shaped pot does not produce Yellow fruit.\n2. The plant producing Blue fruit is in the Cylinder-shaped pot.\n3. The plant in the Cube-shaped pot produces Red fruit.\n4. The plant producing Green fruit is not in the Pyramid-shaped pot.",
+    "Checklist": [
+      { "question": "Is there a plant in a Cube-shaped pot that produces Red fruit?", "tags": ["0-hop"] },
+      { "question": "Is there a plant in a Sphere-shaped pot that produces Green fruit?", "tags": ["multi-hop"] },
+      { "question": "Is there a plant in a Pyramid-shaped pot that produces Yellow fruit?", "tags": ["multi-hop"] },
+      { "question": "Is there a plant in a Cylinder-shaped pot that produces Blue fruit?", "tags": ["0-hop"] }
+    ],    
+    "Remark": "Gemini"
+  },
+  "R-LR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with four magical stone runes on a table. Initially, all runes are plain grey stone. Their final appearance is determined by a series of magical empowerments:\n1. A 'Fire' rune was placed to the left of the first rune, then removed. Any rune that was next to the Fire rune now glows with a red-hot light.\n2. An 'Ice' rune was placed to the right of the fourth rune, then removed. Any rune that was next to the Ice rune is now covered in a layer of white frost.\n3. A rune becomes cracked and broken if it is both glowing red-hot and covered in frost.\n4. The third rune from the left was swapped with an 'Earth' rune, which is brown and has no special properties.",
+    "Checklist": [
+      { "question": "Is the first rune on the left a glowing red-hot grey stone?", "tags": ["1-hop"] },
+      { "question": "Is the second rune from the left a plain grey stone?", "tags": ["1-hop"] },
+      { "question": "Is the third rune from the left a brown Earth rune?", "tags": ["0-hop"] },
+      { "question": "Is the fourth rune on the right a grey stone covered in white frost?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four robots. Three are truthful 'Logic-bots' with a sleek, polished chrome finish. One is a lying 'Chaos-bot' with a dented, rusty finish. Each robot displays a different symbol on its chest: a Gear, a Lightning Bolt, a Shield, or a Target. Their identity is determined by their statements:\n- The robot with the Gear says: 'The robot with the Target is the Chaos-bot.'\n- The robot with the Lightning Bolt says: 'The robot with the Gear is a Logic-bot.'\n- The robot with the Shield says: 'I am a Logic-bot.'\n- The robot with the Target says: 'The robot with the Lightning Bolt is a Chaos-bot.'",
+    "Checklist": [
+      { "question": "Is the robot displaying a Gear symbol a Logic-bot (polished chrome)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot displaying a Lightning Bolt symbol a Logic-bot (polished chrome)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot displaying a Shield symbol a Logic-bot (polished chrome)?", "tags": ["multi-hop"] },
+      { "question": "Is the robot displaying a Target symbol a Chaos-bot (dented and rusty)?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with three magical beasts and their riders. Each beast has a different elemental type: a Fire-mane Lion, an Ice-scale Lizard, and a Stone-hide Bear. Each rider has a different weapon, which is determined by their beast. A rider of a Fire-mane Lion wields a Flaming Sword. A rider of an Ice-scale Lizard wields an Icy Spear. A rider of a Stone-hide Bear wields a Stone Maul. The pairings are determined by these clues:\n1. The rider with the Stone Maul is not the female elf.\n2. The male human is the rider of the Fire-mane Lion.\n3. The third rider is a dwarf with a large beard.",
+    "Checklist": [
+      { "question": "Is the male human riding the Fire-mane Lion?", "tags": ["1-hop"] },
+      { "question": "Does the male human wield the Flaming Sword?", "tags": ["1-hop"] },
+      { "question": "Is the female elf riding the Ice-scale Lizard?", "tags": ["multi-hop"] },
+      { "question": "Does the female elf wield the Icy Spear?", "tags": ["multi-hop"] },
+      { "question": "Is the dwarf riding the Stone-hide Bear?", "tags": ["multi-hop"] },
+      { "question": "Does the dwarf wield the Stone Maul?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with three spaceship captains. Each captain is a different, visually distinct alien species: a tall, mantis-like alien with a green exoskeleton; a stout, crocodile-like alien with tough scales; and a being whose body is formed from glowing, translucent crystals. Each is the owner of a different class of spaceship (a sleek Fighter, a bulky Freighter, a nimble Scout). The pairings are determined by these clues:\n1. The crocodile-like alien captain does not own the Freighter.\n2. The owner of the Scout is not the crystalline being.\n3. The mantis-like alien captain owns the Freighter.",
+    "Checklist": [
+      { "question": "Is the mantis-like alien captain paired with the bulky Freighter?", "tags": ["0-hop"] },
+      { "question": "Is the crocodile-like alien captain paired with the nimble Scout?", "tags": ["multi-hop"] },
+      { "question": "Is the crystalline being paired with the sleek Fighter?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four suspects in a lineup from left (position 1) to right (position 4). Three are innocent citizens in normal attire. One is a 'Phantom Thief' who wears a white mask and a black cape. Each suspect has a different colored coat: Red, Blue, Green, or Yellow. Their identity is determined by their statements:\n- Suspect 1 says: 'The suspect in the blue coat is the Phantom Thief.'\n- Suspect 2 says: 'I am not the Phantom Thief.'\n- Suspect 3 says: 'Suspect 1 is innocent.'\n- Suspect 4 says: 'The suspect in the green coat is the Phantom Thief.'\n- Additional Facts: Only one of the four suspects is lying. Suspect 1 wears the red coat, and Suspect 3 wears the green coat. The Phantom Thief is the only suspect who is lying.",
+    "Checklist": [
+      { "question": "Is the suspect in position 1 innocent (not wearing a white mask and a black cape)?", "tags": ["multi-hop"] },
+      { "question": "Is the suspect in position 1 wearing a red coat?", "tags": ["0-hop"] },
+      { "question": "Is the suspect in position 2 innocent (not wearing a white mask and a black cape)?", "tags": ["multi-hop"] },
+      { "question": "Is the suspect in position 2 wearing a yellow coat?", "tags": ["multi-hop"] },
+      { "question": "Is the suspect in position 3 innocent (not wearing a white mask and a black cape)?", "tags": ["multi-hop"] },
+      { "question": "Is the suspect in position 3 wearing a green coat?", "tags": ["0-hop"] },
+      { "question": "Is the suspect in position 4 the Phantom Thief (wearing a white mask and a black cape)?", "tags": ["multi-hop"] },
+      { "question": "Is the suspect in position 4 wearing a blue coat?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a 3x3 grid of empty garden plots. In exactly four of the plots, a magical plant is growing. The plants are a Sun-petal (glows yellow), a Moon-bloom (glows silver), a Shadow-fern (dark purple leaves), and a Heart-leaf (has red, heart-shaped leaves). Their placement is determined by these rules:\n1. The Sun-petal is in a corner cell.\n2. The Moon-bloom is in the leftmost column.\n3. The Shadow-fern is in the cell directly below the Sun-petal.\n4. The Heart-leaf is not in the same row or column as any other plant.\n5. The Moon-bloom is not in the bottom row.\n6. The Moon-bloom is in the same row as the Sun-petal.",
+    "Checklist": [
+      { "question": "Is the plant in the top-right cell (row 1, col 3) the Sun-petal?", "tags": ["multi-hop"] },
+      { "question": "Is the plant in the center-right cell (row 2, col 3) the Shadow-fern?", "tags": ["multi-hop"] },
+      { "question": "Is the plant in the top-left cell (row 1, col 1) the Moon-bloom?", "tags": ["multi-hop"] },
+      { "question": "Is the plant in the bottom-center cell (row 3, col 2) the Heart-leaf?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of four magical candles in a row from left (pos 1) to right (pos 4). Each candle is made of a different colored wax: Red, Blue, Green, or White. Initially, all candles are unlit. A magical ritual was performed, and their final state (lit or unlit) is determined by these rules:\n1. The White candle is always lit.\n2. A candle becomes lit if it is next to the Blue candle and the Blue candle's final state is unlit.\n3. The Red candle is never lit.\n4. The Green candle is at the far-left end (position 1).\n5. The White candle is immediately to the right of the Blue candle.\n6. The Red candle is at one of the ends.",
+    "Checklist": [
+      { "question": "Is the candle in position 1 made of Green wax?", "tags": ["0-hop"] },
+      { "question": "Is the candle in position 1 lit?", "tags": ["multi-hop"] },
+      { "question": "Is the candle in position 2 made of Blue wax?", "tags": ["multi-hop"] },
+      { "question": "Is the candle in position 2 unlit?", "tags": ["multi-hop"] },
+      { "question": "Is the candle in position 3 made of White wax?", "tags": ["multi-hop"] },
+      { "question": "Is the candle in position 3 lit?", "tags": ["1-hop"] },
+      { "question": "Is the candle in position 4 made of Red wax?", "tags": ["multi-hop"] },
+      { "question": "Is the candle in position 4 unlit?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four guardians at a crossroads. Two are 'Light Guardians' with a silver aura who always tell the truth. Two are 'Shadow Guardians' with a purple aura who always lie. Each guardian protects a different path (North, East, South, West). The correct path to safety is the one protected by the North path. Their identities are determined by their statements:\n- The guardian of the North path says: 'The guardian of the South path is a Shadow Guardian.'\n- The guardian of the East path says: 'The path to safety is to the East.'\n- The guardian of the South path says: 'The guardian of the West path is a Shadow Guardian.'\n- The guardian of the West path says: 'The guardian of the North path is a Light Guardian.'",
+    "Checklist": [
+      { "question": "Is the guardian of the North path a Light Guardian (has a silver aura)?", "tags": ["multi-hop"] },
+      { "question": "Is the guardian of the East path a Shadow Guardian (has a purple aura)?", "tags": ["multi-hop"] },
+      { "question": "Is the guardian of the South path a Shadow Guardian (has a purple aura)?", "tags": ["multi-hop"] },
+      { "question": "Is the guardian of the West path a Light Guardian (has a silver aura)?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene with three dragon riders and their dragons. Each rider wears a different armor set (gleaming Gold, polished Silver, dark Iron). Each dragon has a different scale color (Ruby Red, Emerald Green, Sapphire Blue). Each rider holds a different weapon (a Lance, a Sword, a Bow). The pairings are determined by these dependency rules:\n1. The rider in Gold armor rides the Ruby Red dragon.\n2. The rider of the Emerald Green dragon holds the Bow.\n3. The rider in Silver armor does not ride the Sapphire Blue dragon.\n4. The rider holding the Lance does not wear Iron armor.",
+    "Checklist": [
+      { "question": "Does the rider in Gold armor ride the Ruby Red dragon?", "tags": ["0-hop"] },
+      { "question": "Does the rider in Gold armor hold the Lance?", "tags": ["multi-hop"] },
+      { "question": "Does the rider in Silver armor ride the Emerald Green dragon?", "tags": ["multi-hop"] },
+      { "question": "Does the rider in Silver armor hold the Bow?", "tags": ["1-hop"] },
+      { "question": "Does the rider in Iron armor ride the Sapphire Blue dragon?", "tags": ["multi-hop"] },
+      { "question": "Does the rider in Iron armor hold the Sword?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four enchanted instruments in a bard's college. The instruments are a Lute, a Harp, a Flute, and a Drum. Each is made from a different magical wood (Sun-bleached Yew, Shadowy Oak, River-worn Willow, Ancient Ash). When played, each produces a unique visual effect (a shower of golden sparks, a swirl of blue mist, a cascade of green leaves, a shimmering silver light). The pairings are determined by these clues:\n1. The instrument made from Yew produces a shower of golden sparks.\n2. The Harp is made from Willow.\n3. The instrument that produces a swirl of blue mist is not the Flute.\n4. The Drum is made from Ash wood.\n5. The Lute does not produce a shimmering silver light.\n6. The Drum produces a swirl of blue mist.\n7. The Flute is made from Sun-bleached Yew.",
+    "Checklist": [
+      { "question": "Is the Lute made from Shadowy Oak?", "tags": ["multi-hop"] },
+      { "question": "Does the Lute produce a cascade of green leaves?", "tags": ["multi-hop"] },
+      { "question": "Is the Harp made from River-worn Willow?", "tags": ["0-hop"] },
+      { "question": "Does the Harp produce a shimmering silver light?", "tags": ["multi-hop"] },
+      { "question": "Is the Flute made from Sun-bleached Yew?", "tags": ["0-hop"] },
+      { "question": "Does the Flute produce a shower of golden sparks?", "tags": ["1-hop"] },
+      { "question": "Is the Drum made from Ancient Ash?", "tags": ["0-hop"] },
+      { "question": "Does the Drum produce a swirl of blue mist?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four elemental guardians. Three are truthful 'True' guardians with a calm expression, and one is a lying 'False' guardian with an angry expression. Each is visually distinct: a Fire guardian with flaming hair, a Water guardian made of flowing water, an Earth guardian made of rock, and an Air guardian that is translucent. Their identity is determined by their statements:\n- The Fire guardian says: 'The Earth guardian is False.'\n- The Water guardian says: 'The Air guardian is a True guardian.'\n- The Earth guardian says: 'I am a True guardian.'\n- The Air guardian says: 'The Fire guardian is False.'",
+    "Checklist": [
+      { "question": "Does the Fire guardian have an angry expression?", "tags": ["multi-hop"] },
+      { "question": "Does the Water guardian have a calm expression?", "tags": ["multi-hop"] },
+      { "question": "Does the Earth guardian have a calm expression?", "tags": ["multi-hop"] },
+      { "question": "Does the Air guardian have a calm expression?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Create an image of four fantasy adventurers: a Knight, a Wizard, an Archer, and a Rogue. Each adventurer has a different magical mount: a Gryphon, a Dragon, a Phoenix, or a Pegasus. Each also has a different banner: one with a Sun, a Moon, a Star, or a Water. The pairings are determined by these clues:\n1. The Wizard rides the Phoenix.\n2. The adventurer with the Sun banner is the Knight.\n3. The Archer does not ride the Dragon.\n4. The adventurer who rides the Gryphon has the banner with the Moon.\n5. The Rogue does not have the banner with the Star.\n6. The Archer has the banner with the Star.",
+    "Checklist": [
+      { "question": "Does the Knight ride the Dragon?", "tags": ["multi-hop"] },
+      { "question": "Does the Knight have the Sun banner?", "tags": ["0-hop"] },
+      { "question": "Does the Wizard ride the Phoenix?", "tags": ["0-hop"] },
+      { "question": "Does the Wizard have the Water banner?", "tags": ["multi-hop"] },
+      { "question": "Does the Archer ride the Pegasus?", "tags": ["multi-hop"] },
+      { "question": "Does the Archer have the Star banner?", "tags": ["0-hop"] },
+      { "question": "Does the Rogue ride the Gryphon?", "tags": ["multi-hop"] },
+      { "question": "Does the Rogue have the Moon banner?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Depict a scene of four statues in a line in an enchanted garden. Each is made of a different material: Iron, Copper, Silver, or Gold. Their final appearance is determined by these conditional rules:\n1. A statue becomes covered in green moss if it is made of Iron or Copper.\n2. A statue glows with a white light if it is made of Silver or is next to the Gold statue.\n3. The Iron statue is at the far-left (position 1).\n4. The Gold statue is in the third position.\n5. The Silver statue is not in the fourth position.",
+    "Checklist": [
+      { "question": "Is the statue in position 1 made of Iron?", "tags": ["0-hop"] },
+      { "question": "Is the statue in position 1 covered in green moss?", "tags": ["1-hop"] },
+      { "question": "Is the statue in position 2 made of Silver?", "tags": ["multi-hop"] },
+      { "question": "Does the statue in position 2 glow with a white light?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 3 made of Gold?", "tags": ["0-hop"] },
+      { "question": "Does the statue in position 3 lack any moss or glow?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 4 made of Copper?", "tags": ["multi-hop"] },
+      { "question": "Is the statue in position 4 covered in green moss?", "tags": ["multi-hop"] },
+      { "question": "Does the statue in position 4 glow with a white light?", "tags": ["1-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a wizard's bookshelf with five empty slots, labeled 1 to 5 from left to right. On exactly three of the slots, there is a magical grimoire. Two slots are empty. The grimoires are a red book with a flame symbol, a blue book with a wave symbol, and a green book with a leaf symbol. Their placement is determined by these rules:\n1. The blue book is in slot 4.\n2. The red book is immediately to the left of an empty slot.\n3. The empty slots are not at the first and the last position (1 and 5).",
+    "Checklist": [
+      { "question": "Is the bookshelf slot in position 1 holding the red book?", "tags": ["multi-hop"] },
+      { "question": "Is the bookshelf slot in position 2 empty?", "tags": ["multi-hop"] },
+      { "question": "Is the bookshelf slot in position 3 empty?", "tags": ["multi-hop"] },
+      { "question": "Is the bookshelf slot in position 4 holding the blue book?", "tags": ["0-hop"] },
+      { "question": "Is the bookshelf slot in position 5 holding the green book?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-LR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four playing cards laid face-up in a single row from left (position 1) to right (position 4). The cards are the Jack, Queen, Ace and King, each of a different suit — hearts, clubs, spades and diamonds. Determine the unique rank-and-suit for every position by logically solving the clues, then illustrate the row.\n\n1. The clubs card is immediately to the right of the hearts card.\n2. The spades card is somewhere to the right of the clubs card.\n3. The King of diamonds is at the far right.\n4. The Jack is the hearts card.\n5. The Queen is the clubs card.",
+    "Checklist": [
+      { "question": "Is the card in position 1 the Jack?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 1 a hearts card?", "tags": ["1-hop"] },
+      { "question": "Is the card in position 2 the Queen?", "tags": ["1-hop"] },
+      { "question": "Is the card in position 2 a clubs card?", "tags": ["1-hop"] },
+      { "question": "Is the card in position 3 the Ace?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 3 a spades card?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 4 the King?", "tags": ["0-hop"] },
+      { "question": "Is the card in position 4 a diamonds card?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four fantasy adventurers — a knight, a wizard, an archer and a rogue — seated around a circular stone table viewed from above. The seats correspond to the compass points north (top), east (right), south (bottom) and west (left). Each character wears a cloak of a different colour chosen from red, blue, green and yellow. Work out the only possible seating position and cloak colour of every character by logically solving the clues below, then depict the scene.\n\n1. The Knight wears the Green cloak.\n2. The Wizard sits opposite the Knight.\n3. The Wizard wears the Blue cloak.\n4. The Archer sits in the West seat and wears the Yellow cloak.\n5. The Rogue sits immediately clockwise from the Knight.",
+    "Checklist": [
+      { "question": "Is the adventurer at the north seat a knight?", "tags": ["multi-hop"] },
+      { "question": "Is the cloak at the north seat green?", "tags": ["multi-hop"] },
+      { "question": "Is the adventurer at the east seat a rogue?", "tags": ["multi-hop"] },
+      { "question": "Is the cloak at the east seat red?", "tags": ["multi-hop"] },
+      { "question": "Is the adventurer at the south seat a wizard?", "tags": ["multi-hop"] },
+      { "question": "Is the cloak at the south seat blue?", "tags": ["0-hop"] },
+      { "question": "Is the adventurer at the west seat an archer?", "tags": ["multi-hop"] },
+      { "question": "Is the cloak at the west seat yellow?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four transparent boxes labelled A, B, C and D, each painted a unique colour chosen from red, blue, green and yellow. The boxes are nested like Russian dolls. Solve the clues to decide the single correct nesting order and colour assignment, then depict the scene so that every box and its label are visible and the containment relations are clear.\n\n1. The green box directly contains the yellow box.\n2. The blue box is directly inside the yellow box.\n3. Box B is directly inside the blue box.\n4. Box A is neither blue nor yellow.\n5. The red box is not directly inside the green box.\n6. Box D is yellow.\n7. Box C contains exactly one other box.",
+    "Checklist": [
+      { "question": "Is Box A the outer-most box?", "tags": ["multi-hop"] },
+      { "question": "Is Box A green?", "tags": ["multi-hop"] },
+      { "question": "Does Box A directly contain Box D?", "tags": ["multi-hop"] },
+      { "question": "Is Box D yellow?", "tags": ["0-hop"] },
+      { "question": "Does Box D directly contain Box C?", "tags": ["multi-hop"] },
+      { "question": "Is Box C blue?", "tags": ["multi-hop"] },
+      { "question": "Does Box C directly contain Box B?", "tags": ["multi-hop"] },
+      { "question": "Is Box B red?", "tags": ["multi-hop"] },
+      { "question": "Is Box B the innermost box?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a vertical tower of five solid blocks — a square, a star, a pentagon, a triangle and a circle — stacked from bottom (level 1) to top (level 5) against a neutral backdrop. Paint each block with a different colour chosen from red, blue, green, yellow and purple. Determine the unique colour and position of every shape by logically solving the clues below, then illustrate the tower.\n\n1. The green block is directly above the star.\n2. The triangle is somewhere above the yellow block.\n3. The square is blue.\n4. The pentagon is not at either the top or the bottom.\n5. The block immediately below the red block is a circle.\n6. The purple block is exactly two levels above the star.\n7. The block on the very top is neither yellow nor green.\n8. The pentagon is purple.",
+    "Checklist": [
+      { "question": "Is the block at level 1 a circle?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 1 yellow?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 2 a star?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 2 red?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 3 a triangle?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 3 green?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 4 a pentagon?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 4 purple?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 5 a square?", "tags": ["multi-hop"] },
+      { "question": "Is the block at level 5 blue?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a simple garden seen from above, divided into four equal plots arranged in a 2 × 2 grid: northwest (NW), northeast (NE), southwest (SW) and southeast (SE). Each plot contains exactly one flower — a rose, a tulip, a daisy or a lily — and each flower is a different colour selected from red, blue, yellow and white. Work out the only possible flower and colour in every plot by solving the clues below, then render the scene.\n\n1. The red flower is adjacent (shares an edge) to the lily.\n2. The tulip is not in the northeast plot.\n3. The blue flower is diagonally across from the tulip.\n4. The daisy is white.\n5. The yellow flower is north of the rose.\n6. The northeast plot is not yellow.",
+    "Checklist": [
+      { "question": "Is the NW plot a tulip?", "tags": ["multi-hop"] },
+      { "question": "Is the NW plot yellow?", "tags": ["multi-hop"] },
+      { "question": "Is the NE plot a daisy?", "tags": ["multi-hop"] },
+      { "question": "Is the NE plot white?", "tags": ["0-hop"] },
+      { "question": "Is the SW plot a rose?", "tags": ["multi-hop"] },
+      { "question": "Is the SW plot red?", "tags": ["multi-hop"] },
+      { "question": "Is the SE plot a lily?", "tags": ["multi-hop"] },
+      { "question": "Is the SE plot blue?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four robots standing in a straight line from left (Robot 1) to right (Robot 4). Each wears a coloured helmet — red, blue, green or yellow — with no duplicates. Every robot holds a sign showing its statement exactly as written below. Exactly one robot is lying; all others are telling the truth. Work out the unique helmet colour of every robot, then depict the scene with the robots, helmet colours and the signs clearly visible.\n\n• Robot 1 says: \"My helmet is not red.\"\n• Robot 2 says: \"Robot 3's helmet is blue.\"\n• Robot 3 says: \"Robot 1 is lying.\"\n• Robot 4 says: \"Exactly one of us is lying.\"\nAdditional facts:\n5. Robot 1's helmet is red.\n6. Robot 4's helmet is yellow.",
+    "Checklist": [
+      { "question": "Is Robot 1's helmet red?",    "tags": ["0-hop"] },
+      { "question": "Is Robot 2's helmet green?",  "tags": ["multi-hop"] },
+      { "question": "Is Robot 3's helmet blue?",   "tags": ["multi-hop"] },
+      { "question": "Is Robot 4's helmet yellow?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four treasure chests arranged in a row from left (position 1) to right (position 4). The chests are named — Earth, Air, Fire and Water — and each chest is painted a distinctive colour from red, blue, green and yellow. Solve the clues to decide the single correct order and colour of the chests, then illustrate the row with clear labels.\n\n1. The Air chest is immediately to the right of the red chest.\n2. The Water chest is somewhere to the left of the yellow chest.\n3. The green chest is at one of the ends of the row.\n4. The Earth chest is not red.\n5. The chest immediately to the left of the blue chest is Fire.\n6. The chest in position 3 is not yellow.\n7. The yellow chest is immediately to the left of the red chest.",
+    "Checklist": [
+      { "question": "Is the chest in position 1 Water?",   "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 1 green?",   "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 2 Earth?",   "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 2 yellow?",  "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 3 Fire?",    "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 3 red?",     "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 4 Air?",     "tags": ["multi-hop"] },
+      { "question": "Is the chest in position 4 blue?",    "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four houses in a straight street labelled 1 (leftmost) to 4 (rightmost). Each house is painted a different colour — red, blue, green or yellow — and each is home to a different pet — dog, cat, fish or bird. Work out the unique colour and pet for every house using the clues, then depict the street with clear numbers, colours and small icons of the pets in front of each house.\n\n1. The green house is immediately to the left of the house with the bird.\n2. The dog lives in the red house.\n3. The blue house is somewhere to the right of the fish.\n4. The cat does not live in a yellow house.\n5. The house at the far right is not green.\n6. The yellow house is house 2.\n7. The fish is not in house 1.",
+    "Checklist": [
+      { "question": "Is house 1 red?", "tags": ["multi-hop"] },
+      { "question": "Does house 1 have a dog?", "tags": ["multi-hop"] },
+      { "question": "Is house 2 yellow?", "tags": ["0-hop"] },
+      { "question": "Does house 2 have a fish?", "tags": ["multi-hop"] },
+      { "question": "Is house 3 green?", "tags": ["multi-hop"] },
+      { "question": "Does house 3 have a cat?", "tags": ["multi-hop"] },
+      { "question": "Is house 4 blue?", "tags": ["multi-hop"] },
+      { "question": "Does house 4 have a bird?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four glowing magic crystals placed around a circular stone altar, viewed from above. The positions correspond to the compass points north (top), east (right), south (bottom) and west (left). Each crystal has a distinct shape (cube, pyramid, sphere or octahedron) and embodies a different element (fire, water, earth or air). Determine the unique shape–element pairing at every compass point by solving the clues, then depict the altar clearly.\n\n1. The fire crystal is opposite the cube.\n2. The water crystal is immediately clockwise from the air crystal.\n3. The sphere is not at the south.\n4. The octahedron is immediately counter-clockwise from the earth crystal.\n5. The crystal at the west is a pyramid.\n6. The crystal at the north embodies air.",
+    "Checklist": [
+      { "question": "Is the north crystal a cube?", "tags": ["multi-hop"] },
+      { "question": "Is the north crystal air?", "tags": ["0-hop"] },
+      { "question": "Is the east crystal a sphere?", "tags": ["multi-hop"] },
+      { "question": "Is the east crystal water?", "tags": ["multi-hop"] },
+      { "question": "Is the south crystal an octahedron?", "tags": ["multi-hop"] },
+      { "question": "Is the south crystal fire?", "tags": ["multi-hop"] },
+      { "question": "Is the west crystal a pyramid?", "tags": ["0-hop"] },
+      { "question": "Is the west crystal earth?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four playing cards laid face-up in a single row from left (position 1) to right (position 4). The cards are the Ace, King, Queen and Jack, each of a different suit — hearts, diamonds, clubs and spades — with no duplicates of rank or suit. Solve the clues to decide the unique rank and suit of every card, then illustrate the row clearly.\n\n1. The King is somewhere to the right of the spade.\n2. The card immediately to the left of the Queen is a heart.\n3. The Ace is not the diamond.\n4. The club is immediately to the left of the Jack.\n5. The spade is not at either end of the row.\n6. The King is at the far right.\n7. The heart is at the far left.",
+    "Checklist": [
+      { "question": "Is the card in position 1 the Ace?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 1 a hearts card?", "tags": ["0-hop"] },
+      { "question": "Is the card in position 2 the Queen?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 2 a clubs card?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 3 the Jack?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 3 a spades card?", "tags": ["multi-hop"] },
+      { "question": "Is the card in position 4 the King?", "tags": ["0-hop"] },
+      { "question": "Is the card in position 4 a diamonds card?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Five hard-cover books — Alpha, Bravo, Charlie, Delta and Echo — stand on a shelf from left (position 1) to right (position 5). Each book cover is a different colour: red, blue, green, yellow or purple. Work out the only possible title-and-colour order, then illustrate the row.\n\n1. The yellow book is somewhere to the right of Echo.\n2. Alpha is exactly between the blue book and Delta (three consecutive positions).\n3. The green book is immediately to the left of Bravo.\n4. Charlie is not at either end.\n5. The purple book is immediately to the right of Alpha.\n6. Bravo is not yellow.\n7. Charlie is green.",
+    "Checklist": [
+      { "question": "Is the book in position 1 titled Echo?",        "tags": ["multi-hop"] },
+      { "question": "Is the book in position 1 blue?",               "tags": ["multi-hop"] },
+      { "question": "Is the book in position 2 titled Alpha?",       "tags": ["multi-hop"] },
+      { "question": "Is the book in position 2 yellow?",             "tags": ["multi-hop"] },
+      { "question": "Is the book in position 3 titled Delta?",       "tags": ["multi-hop"] },
+      { "question": "Is the book in position 3 purple?",             "tags": ["multi-hop"] },
+      { "question": "Is the book in position 4 titled Charlie?",     "tags": ["multi-hop"] },
+      { "question": "Is the book in position 4 green?",              "tags": ["0-hop"] },
+      { "question": "Is the book in position 5 titled Bravo?",       "tags": ["multi-hop"] },
+      { "question": "Is the book in position 5 red?",                "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "A tower of four solid blocks — star, square, circle and triangle — is stacked from bottom (level 1) to top (level 4). Each block is painted either red, blue, green or yellow. Deduce the unique shape-and-colour of every level and draw the tower.\n\n1. The star block is at the bottom.\n2. The square block is directly above the star.\n3. The red block is directly above the star.\n4. The triangle block is blue.\n5. The blue block is immediately below the yellow block.\n6. The circle block is somewhere above the green block.\n7. The yellow block is not at the bottom.\n8. The square block is not green.",
+    "Checklist": [
+      { "question": "Is the block on level 1 a star?", "tags": ["0-hop"] },
+      { "question": "Is the block on level 1 green?", "tags": ["multi-hop"] },
+      { "question": "Is the block on level 2 a square?", "tags": ["1-hop"] },
+      { "question": "Is the block on level 2 red?", "tags": ["1-hop"] },
+      { "question": "Is the block on level 3 a triangle?", "tags": ["1-hop"] },
+      { "question": "Is the block on level 3 blue?", "tags": ["multi-hop"] },
+      { "question": "Is the block on level 4 a circle?", "tags": ["multi-hop"] },
+      { "question": "Is the block on level 4 yellow?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Four stone animal statues (lion, bull, eagle, serpent) stand at the compass points of a circular plaza viewed from above: north (top), east (right), south (bottom) and west (left). Each statue is lit by a different colour spotlight: red, blue, green or yellow. Work out the unique arrangement and colour, then depict the plaza.\n\n1. The statue at the north position is green.\n2. The statue at the east position is red.\n3. The statue at the south position is blue.\n4. The lion is opposite the blue statue.\n5. The eagle is immediately clockwise from the red statue.\n6. The yellow statue is opposite the bull.",
+    "Checklist": [
+      { "question": "Is the north statue a lion?",   "tags": ["multi-hop"] },
+      { "question": "Is the north statue green?",    "tags": ["0-hop"] },
+      { "question": "Is the east statue a bull?",    "tags": ["multi-hop"] },
+      { "question": "Is the east statue red?",       "tags": ["0-hop"] },
+      { "question": "Is the south statue an eagle?", "tags": ["multi-hop"] },
+      { "question": "Is the south statue blue?",     "tags": ["0-hop"] },
+      { "question": "Is the west statue a serpent?", "tags": ["multi-hop"] },
+      { "question": "Is the west statue yellow?",    "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Five magical creatures — a Dragon, a Griffin, a Phoenix, a Unicorn and a Golem — stand in a straight row from left (position 1) to right (position 5). Each creature is a different solid colour: red, blue, green, yellow or purple. Decide the unique creature-and-colour for every position and render the scene.\n\n1. The Golem is at one of the ends.\n2. The Dragon is green.\n3. The purple creature is immediately to the right of the Griffin.\n4. The Unicorn is immediately to the left of the yellow creature.\n5. The Phoenix is somewhere to the left of the blue creature.\n6. The red creature is not at an end.\n7. The creature in position 3 is purple.\n8. The creature at the far right is yellow.",
+    "Checklist": [
+      { "question": "Is the Dragon at position 1?", "tags": ["multi-hop"] },
+      { "question": "Is the creature at position 1 green?", "tags": ["1-hop"] },
+      { "question": "Is the Griffin at position 2?", "tags": ["1-hop"] },
+      { "question": "Is the creature at position 2 red?", "tags": ["multi-hop"] },
+      { "question": "Is the Phoenix at position 3?", "tags": ["multi-hop"] },
+      { "question": "Is the creature at position 3 purple?", "tags": ["0-hop"] },
+      { "question": "Is the Unicorn at position 4?", "tags": ["1-hop"] },
+      { "question": "Is the creature at position 4 blue?", "tags": ["multi-hop"] },
+      { "question": "Is the Golem at position 5?", "tags": ["multi-hop"] },
+      { "question": "Is the creature at position 5 yellow?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "A small garden is divided into four plots arranged in a 2 × 2 grid: northwest (NW), northeast (NE), southwest (SW) and southeast (SE). Each plot contains one fruit plant — apple, banana, cherry or date — and every plant bears a different coloured tag: red, blue, green or yellow. Determine the unique fruit-and-colour for every plot, then illustrate the grid.\n\n1. The red tag is on a plot adjacent (shares an edge) to the apple.\n2. The banana is in the NE plot.\n3. The blue tag is diagonally opposite the date.\n4. The tag in the NE plot is green.\n5. The apple is not in the NW plot.\n6. The plot west of the cherry carries the yellow tag.\n7. The banana plot is directly north of the blue tag.",
+    "Checklist": [
+      { "question": "Is the date plant in the NW plot?", "tags": ["multi-hop"] },
+      { "question": "Does the NW plot have a red tag?", "tags": ["multi-hop"] },
+      { "question": "Is the banana plant in the NE plot?", "tags": ["0-hop"] },
+      { "question": "Does the NE plot have a green tag?", "tags": ["0-hop"] },
+      { "question": "Is the apple plant in the SW plot?", "tags": ["multi-hop"] },
+      { "question": "Does the SW plot have a yellow tag?", "tags": ["1-hop"] },
+      { "question": "Is the cherry plant in the SE plot?", "tags": ["multi-hop"] },
+      { "question": "Does the SE plot have a blue tag?", "tags": ["1-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Five glowing discs — sun, moon, comet, star and planet — are stacked from bottom (level 1) to top (level 5). Each disc glows in a different colour: red, blue, green, yellow or purple. Work out the only possible shape-and-colour stacking order and draw the tower.\n\n1. The sun disc is at the bottom.\n2. The moon disc is directly above the purple disc.\n3. The red disc is two levels below the star disc.\n4. The disc on level 3 is green.\n5. The blue disc is immediately below the planet disc.\n6. The yellow disc is somewhere above the moon disc.\n7. The comet disc is not at the top.\n8. The sun disc is not adjacent to the purple disc.",
+    "Checklist": [
+      { "question": "Is the disc at level 1 the sun disc?", "tags": ["0-hop"] },
+      { "question": "Does the disc at level 1 glow purple?", "tags": ["multi-hop"] },
+      { "question": "Is the disc at level 2 the moon disc?", "tags": ["multi-hop"] },
+      { "question": "Does the disc at level 2 glow red?", "tags": ["multi-hop"] },
+      { "question": "Is the disc at level 3 the comet disc?", "tags": ["multi-hop"] },
+      { "question": "Does the disc at level 3 glow green?", "tags": ["0-hop"] },
+      { "question": "Is the disc at level 4 the star disc?", "tags": ["multi-hop"] },
+      { "question": "Does the disc at level 4 glow blue?", "tags": ["multi-hop"] },
+      { "question": "Is the disc at level 5 the planet disc?", "tags": ["multi-hop"] },
+      { "question": "Does the disc at level 5 glow yellow?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Four railway carriages stand in a line from left (car 1) to right (car 4). Each carriage carries one animal logo — bear, lion, tiger or wolf — and is painted a different colour: red, blue, green or yellow. Deduce the single correct animal-and-colour order, then show the train.\n\n1. The green carriage is immediately to the left of the tiger carriage.\n2. The wolf carriage is at one of the ends.\n3. The red carriage is somewhere to the right of the wolf carriage.\n4. The bear carriage is immediately to the right of the blue carriage.\n5. The lion carriage is not adjacent to the blue carriage.\n6. Carriage 2 is blue.\n7. The bear carriage is yellow.",
+    "Checklist": [
+      { "question": "Is carriage 1 the wolf carriage?", "tags": ["multi-hop"] },
+      { "question": "Is carriage 1 painted green?", "tags": ["multi-hop"] },
+      { "question": "Is carriage 2 the tiger carriage?", "tags": ["multi-hop"] },
+      { "question": "Is carriage 2 painted blue?", "tags": ["0-hop"] },
+      { "question": "Is carriage 3 the bear carriage?", "tags": ["1-hop"] },
+      { "question": "Is carriage 3 painted yellow?", "tags": ["1-hop"] },
+      { "question": "Is carriage 4 the lion carriage?", "tags": ["multi-hop"] },
+      { "question": "Is carriage 4 painted red?", "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Five table-lamps — pyramid, cone, cube, cylinder and sphere — sit in a straight row from left (lamp 1) to right (lamp 5). Each has a unique shade colour: red, blue, green, yellow or purple. Find the only possible shape-and-colour arrangement, then render the row.\n\n1. Lamp 3 is blue.\n2. Lamp 2 is a cone.\n3. Lamp 5 is purple.\n4. The red lamp is somewhere to the left of the cone.\n5. The sphere lamp stands immediately to the right of the green lamp.\n6. The yellow lamp is exactly between the pyramid lamp and the cube lamp (three consecutive positions).\n7. The cube lamp is not at either end.",
+    "Checklist": [
+      { "question": "Is the lamp at position 1 a pyramid?", "tags": ["multi-hop"] },
+      { "question": "Does the lamp at position 1 have a red shade?", "tags": ["1-hop"] },
+      { "question": "Is the lamp at position 2 a cone?", "tags": ["0-hop"] },
+      { "question": "Does the lamp at position 2 have a yellow shade?", "tags": ["multi-hop"] },
+      { "question": "Is the lamp at position 3 a cube?", "tags": ["multi-hop"] },
+      { "question": "Does the lamp at position 3 have a blue shade?", "tags": ["0-hop"] },
+      { "question": "Is the lamp at position 4 a cylinder?", "tags": ["multi-hop"] },
+      { "question": "Does the lamp at position 4 have a green shade?", "tags": ["multi-hop"] },
+      { "question": "Is the lamp at position 5 a sphere?", "tags": ["multi-hop"] },
+      { "question": "Does the lamp at position 5 have a purple shade?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four friends sitting in a straight line from left (seat 1) to right (seat 4). Each wears a shirt of a different colour — red, blue, green or yellow — and each drinks a different beverage: tea, coffee, juice or water. Work out the unique seating plan by solving the clues, then draw the scene.\n\n1. The person wearing the yellow shirt is drinking juice.\n2. The person in seat 3 wears a green shirt.\n3. The person drinking water is immediately to the left of the person drinking coffee.\n4. The person in the red shirt is drinking water.\n5. The person drinking coffee wears the blue shirt.",
+    "Checklist": [
+      { "question": "Is the person in seat 1 wearing a red shirt?", "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 1 drinking water?",     "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 2 wearing a blue shirt?", "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 2 drinking coffee?",    "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 3 wearing a green shirt?", "tags": ["0-hop"] },
+      { "question": "Is the person in seat 3 drinking tea?",       "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 4 wearing a yellow shirt?", "tags": ["multi-hop"] },
+      { "question": "Is the person in seat 4 drinking juice?",    "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Four glass jars labelled J1 (leftmost) to J4 (rightmost) stand in a row. Each jar has a different coloured lid — red, blue, green or yellow — and contains a different insect: ant, beetle, caterpillar or dragonfly. Figure out the only possible jar-lid-insect arrangement and depict the row.\n\n1. Jar 2 has a green lid.\n2. The jar with the blue lid is immediately to the left of the caterpillar jar.\n3. The ant jar is somewhere to the right of the red-lid jar.\n4. Jar 4 does not contain the beetle.\n5. The dragonfly jar is at one of the ends.\n6. The blue-lid jar contains the ant.\n7. The blue lid is not on an end jar.",
+    "Checklist": [
+      { "question": "Does jar J1 have a red lid?",         "tags": ["multi-hop"] },
+      { "question": "Does jar J1 contain a dragonfly?",    "tags": ["multi-hop"] },
+      { "question": "Does jar J2 have a green lid?",       "tags": ["0-hop"] },
+      { "question": "Does jar J2 contain a beetle?",       "tags": ["multi-hop"] },
+      { "question": "Does jar J3 have a blue lid?",        "tags": ["multi-hop"] },
+      { "question": "Does jar J3 contain an ant?",         "tags": ["1-hop"] },
+      { "question": "Does jar J4 have a yellow lid?",      "tags": ["multi-hop"] },
+      { "question": "Does jar J4 contain a caterpillar?",  "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four planets — a small, grey planet with craters (like Mercury), a shrouded yellow-white planet (like Venus), a blue and white marble-like planet (like Earth) and a dusty red planet (like Mars) — aligned in a single straight row from left (position 1) to right (position 4) against a starry backdrop. Each planet has a distinct atmospheric glow chosen from red, blue, green and yellow. Work out the only possible planet-and-colour order by logically solving the clues, then render the row.\n\n1. The blue glow is immediately to the right of the red glow.\n2. The blue and white marble-like planet (Earth) is somewhere to the right of the small, grey planet (Mercury).\n3. The yellow glow is at the far right.\n4. The dusty red planet (Mars) has the yellow glow.\n5. The small, grey planet (Mercury) is immediately to the left of the blue and white marble-like planet (Earth).\n6. The shrouded yellow-white planet (Venus) has the red glow.",
+    "Checklist": [
+      { "question": "Is the planet in position 1 the shrouded yellow-white planet (Venus)?", "tags": ["multi-hop"] },
+      { "question": "Does the planet in position 1 have a red glow?", "tags": ["1-hop"] },
+      { "question": "Is the planet in position 2 the small, grey planet (Mercury)?", "tags": ["multi-hop"] },
+      { "question": "Does the planet in position 2 have a blue glow?", "tags": ["multi-hop"] },
+      { "question": "Is the planet in position 3 the blue and white marble-like planet (Earth)?", "tags": ["multi-hop"] },
+      { "question": "Does the planet in position 3 have a green glow?", "tags": ["multi-hop"] },
+      { "question": "Is the planet in position 4 the dusty red planet (Mars)?", "tags": ["1-hop"] },
+      { "question": "Does the planet in position 4 have a yellow glow?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four pets — dog, cat, rabbit and turtle — sitting in a straight row from left (position 1) to right (position 4) on a wooden bench. Each pet wears a collar of a different colour: red, blue, green or yellow. Deduce the unique pet-and-colour order from the clues and illustrate the scene.\n\n1. The cat sits immediately to the right of the red-collared pet.\n2. The blue-collared pet sits immediately to the right of the cat.\n3. The turtle wears a green collar.\n4. The pet at the far left is a dog.\n5. The yellow collar is not at either end.\n6. The rabbit sits somewhere to the right of the yellow-collared pet.",
+    "Checklist": [
+      { "question": "Is the pet in position 1 a dog?",             "tags": ["0-hop"] },
+      { "question": "Is the collar in position 1 red?",            "tags": ["multi-hop"] },
+      { "question": "Is the pet in position 2 a cat?",             "tags": ["multi-hop"] },
+      { "question": "Is the collar in position 2 yellow?",         "tags": ["multi-hop"] },
+      { "question": "Is the pet in position 3 a rabbit?",          "tags": ["multi-hop"] },
+      { "question": "Is the collar in position 3 blue?",           "tags": ["multi-hop"] },
+      { "question": "Is the pet in position 4 a turtle?",          "tags": ["multi-hop"] },
+      { "question": "Is the collar in position 4 green?",          "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a garden seen from above, divided into a 2 × 2 grid of plots: northwest (NW), northeast (NE), southwest (SW) and southeast (SE). Each plot contains one geometric sculpture — square, circle, triangle or star — and each sculpture is painted a unique colour from red, blue, green and yellow. Solve the clues to decide the unique sculpture-and-colour placement, then depict the grid.\n\n1. The red sculpture is north of the green sculpture.\n2. The square is directly west of the blue sculpture.\n3. The star is south of the circle.\n4. The triangle is not in the northeast plot.\n5. The yellow sculpture is in the southeast plot.",
+    "Checklist": [
+      { "question": "Is the NW plot a square?",                    "tags": ["multi-hop"] },
+      { "question": "Is the NW plot red?",                         "tags": ["multi-hop"] },
+      { "question": "Is the NE plot a circle?",                    "tags": ["multi-hop"] },
+      { "question": "Is the NE plot blue?",                        "tags": ["multi-hop"] },
+      { "question": "Is the SW plot a triangle?",                  "tags": ["multi-hop"] },
+      { "question": "Is the SW plot green?",                       "tags": ["multi-hop"] },
+      { "question": "Is the SE plot a star?",                      "tags": ["multi-hop"] },
+      { "question": "Is the SE plot yellow?",                      "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of a vertical stack of four ornamental blocks — hexagon, diamond, crescent and heart — from bottom (level 1) to top (level 4) against a neutral backdrop. Each block glows in a different colour: red, blue, green or yellow. Determine the unique block-and-colour order by solving the clues and illustrate the tower.\n\n1. The green block is directly above the red block.\n2. The blue block is somewhere above the diamond.\n3. The heart block is on the top level.\n4. The diamond block is not blue.\n5. The hexagon block is on the bottom level.\n6. The yellow block is directly above the blue block.",
+    "Checklist": [
+      { "question": "Is level 1 a hexagon?",                       "tags": ["0-hop"] },
+      { "question": "Is level 1 red?",                             "tags": ["multi-hop"] },
+      { "question": "Is the level 2 block a diamond?",             "tags": ["multi-hop"] },
+      { "question": "Is the level 2 block green?",                 "tags": ["multi-hop"] },
+      { "question": "Is the level 3 block a crescent?",            "tags": ["multi-hop"] },
+      { "question": "Is the level 3 block blue?",                  "tags": ["multi-hop"] },
+      { "question": "Is the level 4 block a heart?",               "tags": ["0-hop"] },
+      { "question": "Is the level 4 block yellow?",                "tags": ["multi-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four solid objects — a diamond, an oval, a rectangle and a pentagon — arranged in a single straight row from left (position 1) to right (position 4) on a plain table. Each object is painted a different colour chosen from red, blue, green and yellow. Work out the only possible colour-and-position of every shape by logically solving the clues below, then render the scene.\n\n1. The red object is immediately to the left of the blue object.\n2. The yellow object is at the far right.\n3. The diamond is green.\n4. The blue object is a rectangle.\n5. The pentagon is yellow.\n6. The oval is not at either end.",
+    "Checklist": [
+      { "question": "Is the object in position 1 a diamond?",  "tags": ["multi-hop"] },
+      { "question": "Is the object in position 1 green?",      "tags": ["multi-hop"] },
+      { "question": "Is the object in position 2 an oval?",    "tags": ["multi-hop"] },
+      { "question": "Is the object in position 2 red?",        "tags": ["multi-hop"] },
+      { "question": "Is the object in position 3 a rectangle?", "tags": ["multi-hop"] },
+      { "question": "Is the object in position 3 blue?",       "tags": ["multi-hop"] },
+      { "question": "Is the object in position 4 a pentagon?", "tags": ["multi-hop"] },
+      { "question": "Is the object in position 4 yellow?",     "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four pirates seated around a circular table viewed from above. The seats correspond to north (top), east (right), south (bottom) and west (left). Each pirate is visually distinct: one has a hook hand, one has a parrot on their shoulder, one has a wooden leg, and one has a large gold earring. Each wears a scarf of a different colour: red, blue, green or yellow. Deduce the unique seating and colour for every pirate from the clues, then illustrate the scene.\n\n1. The pirate with the parrot sits immediately clockwise from the pirate with the hook hand.\n2. The green scarf is opposite the seat of the pirate with the hook hand.\n3. The pirate with the gold earring wears the yellow scarf.\n4. The pirate in the east wears the blue scarf.\n5. The pirate wearing the yellow scarf sits in the west seat.",
+    "Checklist": [
+      { "question": "Is the north seat occupied by the pirate with a hook hand?", "tags": ["multi-hop"] },
+      { "question": "Is the north scarf red?",                                      "tags": ["multi-hop"] },
+      { "question": "Is the east seat occupied by the pirate with a parrot?",      "tags": ["multi-hop"] },
+      { "question": "Is the east scarf blue?",                                     "tags": ["0-hop"] },
+      { "question": "Is the south seat occupied by the pirate with a wooden leg?", "tags": ["multi-hop"] },
+      { "question": "Is the south scarf green?",                                   "tags": ["multi-hop"] },
+      { "question": "Is the west seat occupied by the pirate with a gold earring?", "tags": ["multi-hop"] },
+      { "question": "Is the west scarf yellow?",                                     "tags": ["1-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four glowing elemental crystals — fire, water, earth and air — arranged in a straight row from left (position 1) to right (position 4) on an altar. Each crystal radiates a unique colour: red, blue, green or yellow. Solve the clues to decide the single correct element-and-colour order, then draw the row.\n\n1. The blue crystal is immediately to the right of the red crystal.\n2. The green crystal is somewhere to the right of the blue crystal.\n3. The yellow crystal is at the far right.\n4. The fire crystal is red.\n5. The air crystal is yellow.\n6. The water crystal is immediately to the left of the earth crystal.",
+    "Checklist": [
+      { "question": "Is the crystal in position 1 fire?",           "tags": ["0-hop"] },
+      { "question": "Is the crystal in position 1 red?",            "tags": ["0-hop"] },
+      { "question": "Is the crystal in position 2 water?",          "tags": ["multi-hop"] },
+      { "question": "Is the crystal in position 2 blue?",           "tags": ["multi-hop"] },
+      { "question": "Is the crystal in position 3 earth?",          "tags": ["multi-hop"] },
+      { "question": "Is the crystal in position 3 green?",          "tags": ["multi-hop"] },
+      { "question": "Is the crystal in position 4 air?",            "tags": ["0-hop"] },
+      { "question": "Is the crystal in position 4 yellow?",         "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image showing four playing cards laid face-up in a single row from left (position 1) to right (position 4). The cards are Jack, Queen, Ace and King, each of a different suit: clubs, hearts, spades and diamonds. Determine the unique card-and-suit order through the clues, then illustrate the row.\n\n1. The hearts card is immediately to the right of the clubs card.\n2. The spades card is somewhere to the right of the hearts card.\n3. The King is at the far right.\n4. The Jack is immediately to the left of the Queen.\n5. The diamonds card is the King.\n6. The Queen is the hearts card.",
+    "Checklist": [
+      { "question": "Is the card in position 1 a clubs card?",         "tags": ["multi-hop"] },
+      { "question": "Is the card in position 1 a Jack?",                "tags": ["multi-hop"] },
+      { "question": "Is the card in position 2 a hearts card?",         "tags": ["multi-hop"] },
+      { "question": "Is the card in position 2 a Queen?",               "tags": ["multi-hop"] },
+      { "question": "Is the card in position 3 a spades card?",         "tags": ["multi-hop"] },
+      { "question": "Is the card in position 3 an Ace?",                "tags": ["multi-hop"] },
+      { "question": "Is the card in position 4 a diamonds card?",       "tags": ["1-hop"] },
+      { "question": "Is the card in position 4 a King?",                "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four parked cars in a line from left (spot 1) to right (spot 4). The cars are Volvo, Tesla, BMW and Audi, each painted a unique colour from red, blue, green and yellow. Determine the single correct car-and-colour order by solving the clues, then depict the line.\n\n1. The green car is immediately to the right of the yellow car.\n2. The red car is in the last spot (spot 4).\n3. The blue car is immediately to the right of the green car.\n4. The Tesla is not at an end.\n5. The BMW is blue.\n6. The Volvo is not red.",
+    "Checklist": [
+      { "question": "Is spot 1 occupied by a Volvo?",               "tags": ["multi-hop"] },
+      { "question": "Is the car in spot 1 yellow?",                 "tags": ["multi-hop"] },
+      { "question": "Is spot 2 occupied by a Tesla?",               "tags": ["multi-hop"] },
+      { "question": "Is the car in spot 2 green?",                  "tags": ["multi-hop"] },
+      { "question": "Is spot 3 occupied by a BMW?",                 "tags": ["multi-hop"] },
+      { "question": "Is the car in spot 3 blue?",                   "tags": ["multi-hop"] },
+      { "question": "Is spot 4 occupied by an Audi?",               "tags": ["multi-hop"] },
+      { "question": "Is the car in spot 4 red?",                    "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-LR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Logical Reasoning",
+    "Prompt": "Generate an image of four antique keys laid left to right (position 1 – 4) on a velvet cloth. The keys are made of gold, silver, bronze, and iron; each has a uniquely shaped head: round, square, heart, or diamond. Work out the unique key-and-shape order from the clues, then illustrate the row.\n\n1. The key with the square head is immediately to the right of the key with the round head.\n2. The key with the diamond head is at the far right.\n3. The key immediately to the left of the key with the heart-shaped head is silver.\n4. The bronze key has a heart-shaped head.\n5. The gold key is at the far left.",
+    "Checklist": [
+      { "question": "Is the key in position 1 a gold key?",                 "tags": ["0-hop"] },
+      { "question": "Does the key in position 1 have a round head?",       "tags": ["multi-hop"] },
+      { "question": "Is the key in position 2 a silver key?",               "tags": ["multi-hop"] },
+      { "question": "Does the key in position 2 have a square head?",      "tags": ["multi-hop"] },
+      { "question": "Is the key in position 3 a bronze key?",               "tags": ["multi-hop"] },
+      { "question": "Does the key in position 3 have a heart-shaped head?", "tags": ["multi-hop"] },
+      { "question": "Is the key in position 4 an iron key?",                "tags": ["multi-hop"] },
+      { "question": "Does the key in position 4 have a diamond-shaped head?", "tags": ["0-hop"] }
+    ],
+    "Remark": "GPT"
+  }
+}

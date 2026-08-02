@@ -1,0 +1,121 @@
+Context-Scaling
+Copyright (c) 2025 ByteDance Ltd. and/or its affiliates
+
+This product includes software developed at ByteDance Ltd. and/or its affiliates.
+
+================================================================================
+Upstream lineage (ByteDance Bagel)
+================================================================================
+
+The training stack in `training/` originates from ByteDance's internal
+multi-modal foundation-model codebase, internally referred to as **Bagel**.
+A sibling open-source release of the same upstream code is published as
+part of the Echo-4o repository under `modeling/bagel/` (see entry 7 below).
+
+Files such as `training/modeling/shared/modeling_utils.py`,
+`training/modeling/qwen2/*`, and several modules under `training/data/` and
+`training/train/` therefore exhibit high textual similarity to the
+corresponding files in Echo-4o. Both releases are derivative works of the
+same ByteDance-internal source and are distributed under the Apache License,
+Version 2.0.
+
+================================================================================
+Third-party software included in this repository
+================================================================================
+
+This repository contains code derived from the following third-party
+open-source projects. Each derived file carries its own copyright header
+naming the original authors and the modifications by ByteDance.
+
+--------------------------------------------------------------------------------
+1. huggingface/diffusers
+   https://github.com/huggingface/diffusers
+   Licensed under the Apache License, Version 2.0
+
+   Files derived from diffusers (with modifications) include, but are not
+   limited to:
+   - training/modeling/qwenimage/transformer.py
+   - training/modeling/qwenimage/vae.py
+   - training/modeling/qwenimage/model.py (partial)
+
+--------------------------------------------------------------------------------
+2. huggingface/transformers
+   https://github.com/huggingface/transformers
+   Licensed under the Apache License, Version 2.0
+
+   Files derived from transformers (with modifications) include, but are not
+   limited to:
+   - training/modeling/qwen2/* (Qwen2 modeling code)
+   - training/modeling/qwenimage/text_encoder_navit.py
+
+--------------------------------------------------------------------------------
+3. QwenLM/Qwen2.5 (Alibaba Cloud / Qwen Team)
+   https://github.com/QwenLM/Qwen2.5
+   Licensed under the Apache License, Version 2.0
+
+   The Qwen2 text encoder code is also derived in part from the original
+   Qwen2/Qwen2.5 reference implementation.
+
+--------------------------------------------------------------------------------
+4. djghosh13/geneval
+   https://github.com/djghosh13/geneval
+   Licensed under the MIT License
+
+   Files derived from GenEval are in:
+   - evalkit/context-scaling/benchmarks/geneval/
+
+--------------------------------------------------------------------------------
+5. ELLA-Diffusion/ELLA
+   https://github.com/ELLA-Diffusion/ELLA
+   Licensed under the Apache License, Version 2.0
+
+   DPG-Bench code derived from ELLA is in:
+   - evalkit/context-scaling/benchmarks/ELLA/dpg_bench/
+
+--------------------------------------------------------------------------------
+6. OneIG-Bench/OneIG-Benchmark
+   https://github.com/OneIG-Bench/OneIG-Benchmark
+   License: see benchmark subdirectory
+
+   Files are in:
+   - evalkit/context-scaling/benchmarks/OneIG-Benchmark/
+
+--------------------------------------------------------------------------------
+7. yejy53/Echo-4o (GenEval++)
+   https://github.com/yejy53/Echo-4o
+   License: see benchmark subdirectory
+
+   Files are in:
+   - evalkit/context-scaling/benchmarks/Echo-4o/
+
+   See also the lineage note above: Echo-4o's `modeling/bagel/` directory
+   and our `training/modeling/`, `training/data/`, and `training/train/`
+   directories are sibling derivative works of the same upstream
+   ByteDance Bagel codebase.
+
+--------------------------------------------------------------------------------
+8. WISE, GenExam, TIIF-Bench, T2I-CoReBench, GenEval2
+   See per-benchmark subdirectories under
+   evalkit/context-scaling/benchmarks/ for original copyright, license,
+   and citation information.
+
+--------------------------------------------------------------------------------
+9. McGill-NLP/llm2vec
+   https://github.com/McGill-NLP/llm2vec
+   Licensed under the MIT License
+
+   Vendored as part of OneIG-Bench's `llm2clip` text-embedding utility:
+   - evalkit/context-scaling/benchmarks/OneIG-Benchmark/scripts/utils/llm2clip/llm2vec/
+
+--------------------------------------------------------------------------------
+10. NVlabs/Sana
+    https://github.com/NVlabs/Sana
+    Licensed under the Apache License, Version 2.0
+
+    Used by the DPG-Bench evaluation entry point:
+    - evalkit/context-scaling/benchmarks/ELLA/dpg_bench/compute_dpg_bench.py
+
+================================================================================
+Full text of the Apache License, Version 2.0 is available in the LICENSE file
+at the root of this repository.
+================================================================================

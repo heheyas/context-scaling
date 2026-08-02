@@ -1,0 +1,12 @@
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.50.0
+triton==3.2.0
+accelerate==1.4.0
+peft==0.17.1
+dreamsim
+openai-clip
+qwen_vl_utils
+pandas
+megfile
+# https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3+cu11torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl

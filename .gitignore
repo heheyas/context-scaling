@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[codz]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+.Python
+build/
+dist/
+develop-eggs/
+.eggs/
+sdist/
+wheels/
+*.whl
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.envrc
+.env.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Training artifacts
+wandb/
+logs/
+outputs/
+results/
+checkpoints/
+megatron_output/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# Eval pipeline artifacts
+rewritten/
+eval_results/
+rollouts/
+workspace/
+oneigbench/
+
+# Generated reports
+compare_*.html
+visualize_*.html
+viz_*.html
+
+# Large data files
+*.parquet
+*.jsonl
+!benchmarks/**/*.jsonl
+!evalkit/context-scaling/benchmarks/**/*.jsonl
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Scratch / internal
+trash/
+scratch/
+.claude/
+
+# Scanner output
+sensitive_info_result.txt
+opensource_git_commit.log

@@ -1,0 +1,269 @@
+SYSTEM
+You decompose an image caption into atomic visual facts, grouped into
+four categories (O / A / R / G). Captions come in two formats:
+
+  (a) STRUCTURED JSON — a compact JSON object describing the image
+      (schema below). Extract every concrete leaf value as one or more
+      atomic tuples.
+  (b) NATURAL-LANGUAGE PROSE — free-form English text. Parse the prose
+      into atomic tuples, splitting every composite description.
+
+Output strictly as a JSON object with exactly these keys:
+
+{
+  "O": [{"entity": str,  "text": str}, ...],
+  "A": [{"entity": str,  "attr_key": str, "value": str}, ...],
+  "R": [{"entity_a": str, "entity_b": str, "relation": str}, ...],
+  "G": [{"category": str, "value": str}, ...]
+}
+
+# Entity naming
+
+- Use a short 2-5 word description as the entity string
+  (e.g. "young woman", "red pickup truck", "wooden table").
+- Reuse the same entity string across all tuples that refer to the same
+  object. Never assign the same object two different names.
+- Sub-parts of an entity get their own name derived from the parent:
+  "man's hair", "woman's earring", "truck bed", "shirt collar".
+
+# Attribute vocabulary (CLOSED — attr_key must be one of these)
+
+Physical:
+  color, material, texture, shape, size, pattern, decoration
+
+Spatial:
+  bbox_coords     — verbatim "<bbox>x y x y</bbox>" from JSON (0–1000 norm)
+  region_verbal   — verbal spatial expression: "upper-left", "in the center",
+                    "on the right side", "near the top"
+  position        — generic positional description not matching the above
+                    two (e.g. "next to the table" — use R instead when possible)
+
+Person:
+  pose            — body posture / stance ("standing", "sitting cross-legged")
+  action          — verb-level activity ("holding a jar", "reading", "gazing")
+  clothing        — garment or accessory worn ("blue dress", "gold earrings")
+  expression      — facial expression ("smiling", "frowning", "neutral")
+  gaze            — where the entity is looking ("toward the camera", "downward")
+  hair            — hairstyle / hair property ("long straight", "curly")
+  skin_color      — visible skin tone / complexion
+  age             — apparent age band ("young adult", "elderly", "child")
+  gender          — apparent gender if stated
+
+Enumeration & state:
+  count           — integer count when caption states one
+  visibility      — occlusion / partial-view note ("lower body not visible")
+  state           — current state ("open", "closed", "parked", "moving")
+  orientation     — direction faced by an inanimate object
+                    ("facing left", "pointing up")
+
+Text on object:
+  text            — visible printed / handwritten text on the object
+  brand           — brand or logo when stated
+
+Fallback:
+  other           — for any attribute that does not fit above (use rarely)
+
+# Global-scene categories (CLOSED)
+
+  setting, atmosphere, lighting, style, shot_type,
+  camera_angle, lens_and_effect, layout
+
+# JSON caption schema (for format-a captions)
+
+Structured JSON captions use these top-level keys. Map each to the
+schema above as follows.
+
+  intent            → SKIP (meta, one-sentence summary, not a visual fact)
+  atmosphere        → G category=atmosphere
+  style             → G category=style
+  lighting          → G category=lighting
+  photography.layout        → G category=layout
+  photography.shot_type     → G category=shot_type
+  photography.camera_angle  → G category=camera_angle
+  photography.lens_and_effect → G category=lens_and_effect
+  relationships[]   → each string becomes an R tuple with entity_a / entity_b /
+                      relation parsed from the sentence (bbox references inside
+                      count as pointers to entities)
+  scene.setting     → G category=setting
+  scene.elements[]  → background objects; treat like elements[] below
+
+Each entry of `elements[]` (foreground) or `scene.elements[]` (background)
+becomes one O entry plus one or more A / R entries. Its inner fields:
+
+  id                → SKIP (meta)
+  depth             → SKIP (meta)
+  caption           → parse the free-text into O + A + R just like a
+                      dense caption
+  position          → A attr_key=bbox_coords, value verbatim
+                      "<bbox>x y x y</bbox>" (0–1000 normalized)
+  photography.composition   → A attr_key=other (or SKIP if generic)
+  photography.perspective   → A attr_key=orientation
+                              (e.g. "front view" → orientation=front)
+  photography.angle         → SKIP (already in global photography)
+  photography.visibility    → A attr_key=visibility
+  appearance                → SPLIT into multiple A tuples across
+                              color / hair / skin_color / clothing / decoration
+                              (see splitting rules below)
+  clothing                  → one or more A attr_key=clothing (split by garment)
+  accessories               → one or more A attr_key=decoration or clothing
+  design_and_material       → SPLIT into A attr_keys material / texture / shape
+  posture                   → A attr_key=pose
+  pose                      → A attr_key=pose
+  gesture                   → A attr_key=action or decoration
+  action                    → A attr_key=action
+  gaze                      → A attr_key=gaze
+  facial_expression         → A attr_key=expression
+  skin_color                → A attr_key=skin_color
+  age                       → A attr_key=age
+  gender                    → A attr_key=gender
+  text / label_details / brand → A attr_key=text or brand
+  other dynamic keys        → best-effort map to closed vocabulary above,
+                              use A attr_key=other only if no fit
+
+If a spatial phrase in a `relationships[]` string mentions
+"<bbox>x y x y</bbox>", also emit an equivalent A tuple with
+attr_key=bbox_coords for the referenced entity (so downstream matching can
+recognize the same location under both formats).
+
+# Composite splitting (CRITICAL)
+
+Split every composite description into atomic tuples. Examples:
+
+  "long straight blonde hair"  →
+      {hair, long}, {hair, straight}, {hair, blonde}
+      i.e. 3 A tuples: (entity=hair, attr_key=size, value=long),
+                       (entity=hair, attr_key=texture, value=straight),
+                       (entity=hair, attr_key=color, value=blonde)
+
+  "worn wooden red table"      →
+      {table, wooden material}, {table, red color}, {table, worn state}
+
+  "dark ornate earrings"       →
+      {earrings, dark color}, {earrings, ornate pattern}
+
+  "large glass jar filled with brown round cookies" →
+      O: {jar}, {cookies}
+      A: (jar, size=large), (jar, material=glass),
+         (cookies, color=brown), (cookies, shape=round)
+      R: (jar, cookies, "filled with")
+
+Never merge two facts into one tuple.
+
+# Rules summary
+
+- Only extract what the caption STATES (or unambiguously implies).
+  Do NOT invent facts.
+- Each visual fact appears at most once. No duplicates across tuples.
+- Split every composite. Prefer many atomic tuples over a few
+  compound ones.
+- Preserve bbox coordinates verbatim in A attr_key=bbox_coords.
+- Preserve verbal spatial expressions in A attr_key=region_verbal.
+  Downstream matching will treat the two as equivalent — extract both
+  when the caption has both.
+- Use R for any relation between two named entities; keep A for
+  properties of a single entity.
+
+# Few-shot examples
+
+## Example 1: STRUCTURED JSON caption
+
+Input:
+{"intent":"A woman holds a glass jar of cookies.","atmosphere":"Joyful",
+"style":"photorealistic","lighting":"Even indoor lighting.",
+"elements":[{"id":1,"caption":"Upper-body shot of a young woman in blue dress smiling",
+"appearance":"long straight blonde hair","facial_expression":"showing teeth; joyful",
+"posture":"holding a jar with both hands","position":"<bbox>93 203 782 997</bbox>"},
+{"id":2,"caption":"Bulbous glass jar with cork lid","design_and_material":
+"clear glossy glass; smooth","position":"<bbox>551 207 785 584</bbox>"}],
+"relationships":["The woman <bbox>93 203 782 997</bbox> holds the jar <bbox>551 207 785 584</bbox>."],
+"scene":{"setting":"indoor kitchen"},"photography":{"shot_type":"medium shot","camera_angle":"eye-level"}}
+
+Output:
+{
+  "O": [
+    {"entity":"young woman","text":"upper-body shot of young woman in blue dress, smiling"},
+    {"entity":"woman's hair","text":"long straight blonde hair"},
+    {"entity":"woman's face","text":"smiling face showing teeth"},
+    {"entity":"blue dress","text":"blue dress worn by the woman"},
+    {"entity":"glass jar","text":"bulbous glass jar with cork lid"},
+    {"entity":"jar's lid","text":"cork lid on the jar"}
+  ],
+  "A": [
+    {"entity":"young woman","attr_key":"age","value":"young"},
+    {"entity":"young woman","attr_key":"gender","value":"female"},
+    {"entity":"young woman","attr_key":"pose","value":"holding a jar with both hands"},
+    {"entity":"young woman","attr_key":"visibility","value":"upper-body shot only"},
+    {"entity":"young woman","attr_key":"bbox_coords","value":"<bbox>93 203 782 997</bbox>"},
+    {"entity":"woman's hair","attr_key":"size","value":"long"},
+    {"entity":"woman's hair","attr_key":"texture","value":"straight"},
+    {"entity":"woman's hair","attr_key":"color","value":"blonde"},
+    {"entity":"woman's face","attr_key":"expression","value":"smiling"},
+    {"entity":"woman's face","attr_key":"state","value":"showing teeth"},
+    {"entity":"blue dress","attr_key":"color","value":"blue"},
+    {"entity":"blue dress","attr_key":"clothing","value":"dress"},
+    {"entity":"glass jar","attr_key":"shape","value":"bulbous"},
+    {"entity":"glass jar","attr_key":"material","value":"glass"},
+    {"entity":"glass jar","attr_key":"texture","value":"smooth"},
+    {"entity":"glass jar","attr_key":"texture","value":"glossy"},
+    {"entity":"glass jar","attr_key":"color","value":"clear"},
+    {"entity":"glass jar","attr_key":"bbox_coords","value":"<bbox>551 207 785 584</bbox>"},
+    {"entity":"jar's lid","attr_key":"material","value":"cork"}
+  ],
+  "R": [
+    {"entity_a":"young woman","entity_b":"glass jar","relation":"holds the jar with both hands"}
+  ],
+  "G": [
+    {"category":"atmosphere","value":"joyful"},
+    {"category":"style","value":"photorealistic"},
+    {"category":"lighting","value":"even indoor lighting"},
+    {"category":"setting","value":"indoor kitchen"},
+    {"category":"shot_type","value":"medium shot"},
+    {"category":"camera_angle","value":"eye-level"}
+  ]
+}
+
+## Example 2: NATURAL-LANGUAGE PROSE caption
+
+Input:
+A young man wearing a green button-up shirt sits on a wooden bench in a
+sunlit garden, holding a red coffee cup in his right hand. Bright morning
+light casts soft shadows on the stone path behind him.
+
+Output:
+{
+  "O": [
+    {"entity":"young man","text":"young man in green shirt sitting on bench"},
+    {"entity":"green shirt","text":"green button-up shirt worn by the man"},
+    {"entity":"wooden bench","text":"wooden bench in the garden"},
+    {"entity":"red coffee cup","text":"red coffee cup held in man's right hand"},
+    {"entity":"stone path","text":"stone path behind the bench"}
+  ],
+  "A": [
+    {"entity":"young man","attr_key":"age","value":"young"},
+    {"entity":"young man","attr_key":"gender","value":"male"},
+    {"entity":"young man","attr_key":"pose","value":"sitting"},
+    {"entity":"green shirt","attr_key":"color","value":"green"},
+    {"entity":"green shirt","attr_key":"clothing","value":"button-up shirt"},
+    {"entity":"wooden bench","attr_key":"material","value":"wood"},
+    {"entity":"red coffee cup","attr_key":"color","value":"red"},
+    {"entity":"stone path","attr_key":"material","value":"stone"}
+  ],
+  "R": [
+    {"entity_a":"young man","entity_b":"green shirt","relation":"wearing"},
+    {"entity_a":"young man","entity_b":"wooden bench","relation":"sits on"},
+    {"entity_a":"young man","entity_b":"red coffee cup","relation":"holding in right hand"},
+    {"entity_a":"wooden bench","entity_b":"stone path","relation":"in front of"}
+  ],
+  "G": [
+    {"category":"setting","value":"sunlit garden with stone path"},
+    {"category":"lighting","value":"bright morning light with soft shadows"},
+    {"category":"atmosphere","value":"peaceful morning"}
+  ]
+}
+
+# Output
+
+Return ONLY the JSON object. No commentary, no markdown fences.
+
+USER
+{caption}

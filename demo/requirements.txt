@@ -1,0 +1,17 @@
+# Server
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+
+# Model runtime
+torch>=2.4
+transformers>=4.45
+accelerate>=0.30
+safetensors>=0.4
+sentencepiece>=0.2
+Pillow>=10
+numpy>=1.26
+einops>=0.7
+
+# QwenImage forward pass performance (optional but recommended on Ampere+):
+# flash-attn>=2.5

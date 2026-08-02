@@ -1,0 +1,61 @@
+You are about to receive a description of an image as a compact JSON
+object. The schema is as follows.
+
+Coordinate convention: every "<bbox>x_min y_min x_max y_max</bbox>" in
+the JSON is a bounding box on the image. The four integers are
+normalized to a 0–1000 range relative to the image canvas: x_min is
+the left edge, y_min the top edge, x_max the right edge, y_max the
+bottom edge. (0,0) is the top-left corner of the image and
+(1000,1000) is the bottom-right corner.
+
+Top-level fields:
+
+- intent (string): A single declarative sentence summarizing the
+  image's main subject, action, or message.
+- atmosphere (string): A concise descriptor of the overall mood
+  (e.g. "Serene", "Tense", "Joyful").
+- style (string): The visual aesthetic (e.g. "cinematic photorealism",
+  "watercolor illustration", "3D render").
+- lighting (string): Detailed description of light quality, direction,
+  source, shadow effects, and its interaction with the environment
+  (e.g. "Dramatic chiaroscuro lighting from a single overhead
+  spotlight, casting deep, hard-edged shadows.").
+- elements (list of dicts): All foreground objects. Each dict may
+  include any of:
+    - id (int): unique identifier.
+    - caption (string): concise description of visual features.
+    - position (string): "<bbox>x_min y_min x_max y_max</bbox>".
+    - depth (int, optional): 0 (closest to camera) to 255 (horizon).
+    - photography (dict, optional): per-element framing, with keys:
+        - composition (e.g. "full-body shot", "close-up")
+        - angle       (e.g. "high-angle", "low-angle")
+        - perspective (e.g. "front view", "rightside view")
+        - visibility  (only if partially out of frame / occluded;
+                       e.g. "The lower body is not visible.")
+    - any number of dynamic attribute keys describing inherent
+      features (e.g. "appearance", "clothing", "design_and_material").
+    - any number of dynamic action keys describing actions
+      (e.g. "pose", "gesture", "expression").
+- relationships (list of strings): Sentences describing specific
+  interactions (occlusion, support, relative position, etc.) between
+  elements. Entities are referenced inline by their
+  "<bbox>...</bbox>".
+- scene (dict): Environmental context, with keys:
+    - setting (string): Macro environment, including location, time
+      of day, and weather (e.g. "an office during the daytime",
+      "a foggy street at night").
+    - elements (list of dicts): background elements, each with keys
+      including id, caption, position, depth.
+- photography (dict): Global camera settings, with keys:
+    - layout (string): Canvas structure. For standard single-frame
+      images this is "Single image". Composite images use values like
+      "Diptych (side-by-side)", "Triptych", "Grid layout (2x2)".
+    - shot_type   (e.g. "close-up", "medium shot", "full shot")
+    - camera_angle (e.g. "eye-level", "high-angle", "low-angle")
+    - lens_and_effect: optical characteristics such as blur (bokeh),
+      distortion (fisheye), or artifacts (lens flare).
+
+The JSON is compact: no whitespace between separators. Field order
+may vary, and only fields with information are present. The total
+set of facts in this JSON is exactly what is visible (or directly
+inferable) in the image.

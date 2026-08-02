@@ -1,0 +1,1622 @@
+{
+  "R-HR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all organic materials experience reverse gravity, create an image of a modern kitchen scene. The kitchen contains: a wooden cutting board on the counter, fresh apples in a bowl, a potted plant on the windowsill, a steel knife on the cutting board, a glass of milk, leather oven mitts hanging on a hook, a ceramic plate, and a loaf of bread on the counter.",
+    "Checklist": [
+      { "question": "Is the wooden cutting board floating upward away from the counter?", "tags": ["hypo_pos"] },
+      { "question": "Are the apples floating upward out of the bowl?", "tags": ["hypo_pos"] },
+      { "question": "Is the potted plant (including soil and plant) floating upward away from the windowsill?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel knife remaining on the counter?", "tags": ["hypo_neg"] },
+      { "question": "Is the milk floating upward out of the glass?", "tags": ["hypo_pos"] },
+      { "question": "Are the leather oven mitts floating upward away from the hook?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic plate remaining in its normal position?", "tags": ["hypo_neg"] },
+      { "question": "Is the loaf of bread floating upward away from the counter?", "tags": ["hypo_pos"] },
+      { "question": "Is the glass itself remaining in its normal position?", "tags": ["hypo_neg"] },
+      { "question": "Are the bowl and counter remaining in their normal positions?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all metallic objects become completely transparent, show a living room scene containing: a brass lamp on a wooden side table, a leather sofa, a steel coffee table with a wooden magazine rack underneath, copper picture frames on the walls, a plastic remote control on the coffee table, a silver candlestick holder with a wax candle, and a fabric curtain with metal rings.",
+    "Checklist": [
+      { "question": "Is the lamp on the side table completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the leather sofa maintaining its normal opaque appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the coffee table completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden magazine rack maintaining its normal opaque appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the picture frames on the walls completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic remote control maintaining its normal opaque appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the candlestick holder completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the wax candle maintaining its normal opaque appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the rings on the fabric curtain completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the fabric curtain maintaining its normal opaque appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the side table maintaining its normal opaque appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all round objects display inverted colors (red becomes cyan, blue becomes orange, green becomes magenta, yellow becomes purple, black becomes white, white becomes black), depict an art studio scene with: a red circular canvas on a yellow easel, blue square canvases leaning against the wall, a green spherical sculpture on a white pedestal, yellow triangular color swatches on the table, a black rectangular chalkboard, a white round clock on the wall, and orange cylindrical paint tubes scattered on the table.",
+    "Checklist": [
+      { "question": "Is the circular canvas displaying cyan color instead of red?", "tags": ["hypo_pos"] },
+      { "question": "Are the square canvases maintaining their original blue color?", "tags": ["hypo_neg"] },
+      { "question": "Is the spherical sculpture displaying magenta color instead of green?", "tags": ["hypo_pos"] },
+      { "question": "Are the triangular color swatches maintaining their original yellow color?", "tags": ["hypo_neg"] },
+      { "question": "Is the rectangular chalkboard maintaining its original black color?", "tags": ["hypo_neg"] },
+      { "question": "Is the round clock displaying black color instead of white?", "tags": ["hypo_pos"] },
+      { "question": "Are the cylindrical paint tubes displaying blue color instead of orange?", "tags": ["hypo_pos"] },
+      { "question": "Is the easel maintaining its yellow color?", "tags": ["hypo_neg"] },
+      { "question": "Is the pedestal maintaining its white color?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all wooden objects transform into living plants, show a library scene containing: wooden bookshelves filled with books, a wooden desk with papers, a wooden chair, metal bookends, a plastic pen holder, leather-bound books, a wooden picture frame on the desk, and a ceramic coffee mug. The rule is: every wooden object visibly sprouts green leaves, small branches, or bark textures, while non-wooden objects remain normal.",
+    "Checklist": [
+      { "question": "Are the wooden bookshelves visibly sprouting green leaves, small branches, or bark textures?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden desk visibly sprouting green leaves, small branches, or bark textures?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden chair visibly sprouting green leaves, small branches, or bark textures?", "tags": ["hypo_pos"] },
+      { "question": "Are the metal bookends maintaining their normal, non-plant-like appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the plastic pen holder maintaining its normal, non-plant-like appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the leather-bound books maintaining their normal, non-plant-like appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden picture frame visibly sprouting green leaves, small branches, or bark textures?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic coffee mug maintaining its normal, non-plant-like appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the papers maintaining their normal, non-plant-like appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the books maintaining their normal, non-plant-like appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where electronic devices project holographic displays floating above them, create a modern office scene with: a laptop computer on a desk, a smartphone on the desk, a digital clock on the wall, a wooden desk, metal filing cabinets, a fabric office chair, paper documents, a ceramic coffee mug, and a plastic calculator.",
+    "Checklist": [
+      { "question": "Is there a holographic display floating above the laptop computer?", "tags": ["hypo_pos"] },
+      { "question": "Is there a holographic display floating above the smartphone?", "tags": ["hypo_pos"] },
+      { "question": "Is there a holographic display floating above the digital clock?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden desk maintaining its normal non-projecting appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal filing cabinets maintaining their normal non-projecting appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the fabric office chair maintaining its normal non-projecting appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the paper documents maintaining their normal non-projecting appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the ceramic coffee mug maintaining its normal non-projecting appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is there a holographic display floating above the plastic calculator?", "tags": ["hypo_pos"] },
+      { "question": "Are the walls maintaining their normal non-projecting appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all cold objects emit bright glowing light, show an ice cream parlor scene containing: scoops of ice cream in metal bowls, frozen popsicles in a glass freezer case, cold milk in glass bottles, warm coffee in ceramic mugs, room temperature plastic spoons, cold metal ice cream scooper, a warm person behind the counter, and cold ice cubes in a metal bucket.",
+    "Checklist": [
+      { "question": "Are the scoops of ice cream emitting bright glowing light?", "tags": ["hypo_pos"] },
+      { "question": "Are the frozen popsicles in the freezer case emitting bright glowing light?", "tags": ["hypo_pos"] },
+      { "question": "Is the cold milk in the bottles emitting bright glowing light?", "tags": ["hypo_pos"] },
+      { "question": "Are the warm coffee mugs maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the room temperature plastic spoons maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the cold metal ice cream scooper emitting bright glowing light?", "tags": ["hypo_pos"] },
+      { "question": "Is the warm person maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the cold ice cubes emitting bright glowing light?", "tags": ["hypo_pos"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all transparent objects become solid bright yellow, create a greenhouse scene featuring: glass panels forming the greenhouse walls, clear plastic plant pots, glass watering bottles, transparent acrylic plant labels, wooden plant tables, metal watering cans, ceramic flower pots, soil, and green plants inside various containers.",
+    "Checklist": [
+      { "question": "Are the greenhouse panels appearing solid bright yellow instead of transparent?", "tags": ["hypo_pos"] },
+      { "question": "Are the plastic plant pots appearing solid bright yellow instead of transparent?", "tags": ["hypo_pos"] },
+      { "question": "Are the watering bottles appearing solid bright yellow instead of transparent?", "tags": ["hypo_pos"] },
+      { "question": "Are the acrylic plant labels appearing solid bright yellow instead of transparent?", "tags": ["hypo_pos"] },
+      { "question": "Are the wooden plant tables maintaining their normal brown color?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal watering cans maintaining their normal metallic color?", "tags": ["hypo_neg"] },
+      { "question": "Are the ceramic flower pots maintaining their normal opaque colors?", "tags": ["hypo_neg"] },
+      { "question": "Is the soil maintaining its normal brown color?", "tags": ["hypo_neg"] },
+      { "question": "Are the green plants maintaining their normal green color?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where moving objects leave visible trails behind them, show a children's playground scene with: kids running around, a swing in motion, a spinning merry-go-round, a stationary seesaw, children sliding down a slide, a motionless sandbox, trees swaying in the wind, and a dog chasing a ball.",
+    "Checklist": [
+      { "question": "Are there visible trails following the running children?", "tags": ["hypo_pos"] },
+      { "question": "Is there a visible trail following the swing's motion?", "tags": ["hypo_pos"] },
+      { "question": "Is there a visible trail showing the merry-go-round's spinning motion?", "tags": ["hypo_pos"] },
+      { "question": "Is the stationary seesaw showing no trails since it's not moving?", "tags": ["hypo_neg"] },
+      { "question": "Are there visible trails following the children sliding down?", "tags": ["hypo_pos"] },
+      { "question": "Is the motionless sandbox showing no trails since it's stationary?", "tags": ["hypo_neg"] },
+      { "question": "Are there visible trails following the swaying tree branches?", "tags": ["hypo_pos"] },
+      { "question": "Are there visible trails following the running dog?", "tags": ["hypo_pos"] },
+      { "question": "Is there a visible trail following the moving ball?", "tags": ["hypo_pos"] },
+      { "question": "Are stationary playground equipment (benches, posts) showing no trails?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where all soft objects instantly sprout sharp metallic spikes, create a cozy bedroom scene with: fluffy pillows on a wooden bed, a soft fabric comforter, plush stuffed animals on a metal nightstand, a hard ceramic lamp, wooden furniture, a soft fabric rug, cotton curtains, and a rigid plastic alarm clock.",
+    "Checklist": [
+      { "question": "Are the fluffy pillows covered with sharp metallic spikes?", "tags": ["hypo_pos"] },
+      { "question": "Is the soft fabric comforter covered with sharp metallic spikes?", "tags": ["hypo_pos"] },
+      { "question": "Are the plush stuffed animals covered with sharp metallic spikes?", "tags": ["hypo_pos"] },
+      { "question": "Is the hard ceramic lamp maintaining its normal smooth surface?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden furniture maintaining its normal smooth surface?", "tags": ["hypo_neg"] },
+      { "question": "Is the soft fabric rug covered with sharp metallic spikes?", "tags": ["hypo_pos"] },
+      { "question": "Are the cotton curtains covered with sharp metallic spikes?", "tags": ["hypo_pos"] },
+      { "question": "Is the rigid plastic alarm clock maintaining its normal smooth surface?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden bed frame maintaining its normal smooth surface?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal nightstand maintaining its normal smooth surface?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where brightly colored objects automatically turn grayscale, show a vibrant children's playroom containing: red toy cars, blue building blocks, yellow rubber ducks, green stuffed dinosaurs, colorful crayons, white paper sheets, black toy phones, wooden toy chest, metal toy trains, and clear plastic storage bins.",
+    "Checklist": [
+      { "question": "Are the toy cars appearing in grayscale instead of red?", "tags": ["hypo_pos"] },
+      { "question": "Are the building blocks appearing in grayscale instead of blue?", "tags": ["hypo_pos"] },
+      { "question": "Are the rubber ducks appearing in grayscale instead of yellow?", "tags": ["hypo_pos"] },
+      { "question": "Are the stuffed dinosaurs appearing in grayscale instead of green?", "tags": ["hypo_pos"] },
+      { "question": "Are the crayons appearing in grayscale instead of their original colors?", "tags": ["hypo_pos"] },
+      { "question": "Are the white paper sheets maintaining their normal white color?", "tags": ["hypo_neg"] },
+      { "question": "Are the black toy phones maintaining their normal black color?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden toy chest maintaining its normal brown wood color?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal toy trains maintaining their normal metallic color?", "tags": ["hypo_neg"] },
+      { "question": "Are the clear plastic storage bins maintaining their normal transparent appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where smooth surfaces become extremely rough and textured, display a modern spa scene with: smooth marble countertops, polished glass mirrors, smooth ceramic tiles on the floor, rough natural stone walls, smooth wooden massage tables, polished metal faucets, smooth plastic bottles, textured fabric towels, smooth rubber mats, and polished crystal decorations.",
+    "Checklist": [
+      { "question": "Are the marble countertops appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the glass mirrors appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the ceramic tiles appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the rough natural stone walls maintaining their normal rough texture?", "tags": ["hypo_neg"] },
+      { "question": "Are the wooden massage tables appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the metal faucets appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the plastic bottles appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the textured fabric towels maintaining their normal textured appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the rubber mats appearing extremely rough and textured?", "tags": ["hypo_pos"] },
+      { "question": "Are the crystal decorations appearing extremely rough and textured?", "tags": ["hypo_pos"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where old and worn objects instantly become brand new, show an antique shop scene containing: a rusty old bicycle, worn leather books, a tarnished silver tea set, a new plastic clock, faded vintage posters, a scratched wooden chest, aged bronze sculptures, fresh flowers in a vase, weathered stone figurines, and a pristine glass display case.",
+    "Checklist": [
+      { "question": "Is the bicycle appearing brand new and shiny?", "tags": ["hypo_pos"] },
+      { "question": "Are the leather books appearing brand new with perfect binding?", "tags": ["hypo_pos"] },
+      { "question": "Is the silver tea set appearing brand new and polished?", "tags": ["hypo_pos"] },
+      { "question": "Is the new plastic clock maintaining its current new appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the vintage posters appearing brand new with vibrant colors?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden chest appearing brand new without scratches?", "tags": ["hypo_pos"] },
+      { "question": "Are the bronze sculptures appearing brand new and polished?", "tags": ["hypo_pos"] },
+      { "question": "Are the fresh flowers maintaining their current fresh appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the stone figurines appearing brand new and smooth?", "tags": ["hypo_pos"] },
+      { "question": "Is the pristine glass display case maintaining its current new appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where dark-colored objects emit intense bright light, show a photography studio scene with: black camera equipment, white photography backdrops, dark gray tripods, bright silver reflectors, black lighting stands, white studio lights, dark brown wooden props, bright yellow accessories, black cable wires, and white ceiling tiles.",
+    "Checklist": [
+      { "question": "Is the black camera equipment emitting intense bright light?", "tags": ["hypo_pos"] },
+      { "question": "Are the white photography backdrops maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the dark gray tripods emitting intense bright light?", "tags": ["hypo_pos"] },
+      { "question": "Are the bright silver reflectors maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the black lighting stands emitting intense bright light?", "tags": ["hypo_pos"] },
+      { "question": "Are the white studio lights maintaining their normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the dark brown wooden props emitting intense bright light?", "tags": ["hypo_pos"] },
+      { "question": "Are the bright yellow accessories maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the black cable wires emitting intense bright light?", "tags": ["hypo_pos"] },
+      { "question": "Are the white ceiling tiles maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where artificial objects transform into stone material with invariant shape, create a modern laboratory scene containing: plastic test tubes, artificial LED lights, synthetic rubber gloves, natural wooden tables, man-made glass beakers, artificial fabric lab coats, synthetic plastic chairs, natural stone countertops, artificial metal instruments, and natural leather notebook covers.",
+    "Checklist": [
+      { "question": "Are the plastic test tubes transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the artificial LED lights transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the synthetic rubber gloves transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural wooden tables maintaining their normal wood material?", "tags": ["hypo_neg"] },
+      { "question": "Are the man-made glass beakers transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the artificial fabric lab coats transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the synthetic plastic chairs transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural stone countertops maintaining their normal stone material?", "tags": ["hypo_neg"] },
+      { "question": "Are the artificial metal instruments transformed into stone material with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural leather notebook covers maintaining their normal leather material?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects with text or numbers have all writing disappear, create a bookstore scene containing: books with titles on covers, blank notebooks, price tags on merchandise, plain wooden shelves, magazines with text, unmarked storage boxes, newspapers with headlines, unlabeled furniture, store signs with writing, and plain decorative items.",
+    "Checklist": [
+      { "question": "Are the book covers now completely blank with no visible titles?", "tags": ["hypo_pos"] },
+      { "question": "Are the blank notebooks maintaining their normal blank appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the price tags now completely blank with no visible numbers or text?", "tags": ["hypo_pos"] },
+      { "question": "Are the plain wooden shelves maintaining their normal unmarked appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the magazines now completely blank with no visible text?", "tags": ["hypo_pos"] },
+      { "question": "Are the unmarked storage boxes maintaining their normal blank appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the newspapers now completely blank with no visible headlines or text?", "tags": ["hypo_pos"] },
+      { "question": "Is the unlabeled furniture maintaining its normal unmarked appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the store signs now completely blank with no visible writing?", "tags": ["hypo_pos"] },
+      { "question": "Are the plain decorative items maintaining their normal unmarked appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects with sharp corners become perfectly round, display a construction site scene with: square wooden planks, round metal pipes, rectangular concrete blocks, circular steel drums, triangular warning signs, spherical safety helmets, angular metal beams, round wheels on equipment, cubic storage containers, and cylindrical concrete pillars.",
+    "Checklist": [
+      { "question": "Are the wooden planks now appearing perfectly round?", "tags": ["hypo_pos"] },
+      { "question": "Are the round metal pipes maintaining their normal round shape?", "tags": ["hypo_neg"] },
+      { "question": "Are the concrete blocks now appearing perfectly round?", "tags": ["hypo_pos"] },
+      { "question": "Are the circular steel drums maintaining their normal round shape?", "tags": ["hypo_neg"] },
+      { "question": "Are the warning signs now appearing perfectly round?", "tags": ["hypo_pos"] },
+      { "question": "Are the spherical safety helmets maintaining their normal round shape?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal beams now appearing perfectly round?", "tags": ["hypo_pos"] },
+      { "question": "Are the round wheels maintaining their normal round shape?", "tags": ["hypo_neg"] },
+      { "question": "Are the storage containers now appearing perfectly round?", "tags": ["hypo_pos"] },
+      { "question": "Are the cylindrical concrete pillars maintaining their normal round shape?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where rough textured objects become perfectly smooth, display a pottery studio scene with: rough clay pottery pieces, smooth glazed ceramics, rough sandpaper sheets, smooth glass surfaces, rough wooden work tables, smooth metal tools, rough canvas textures, smooth plastic containers, rough stone grinding wheels, and smooth porcelain finished pieces.",
+    "Checklist": [
+      { "question": "Are the clay pottery pieces now appearing perfectly smooth?", "tags": ["hypo_pos"] },
+      { "question": "Are the smooth glazed ceramics maintaining their normal smooth appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the sandpaper sheets now appearing perfectly smooth?", "tags": ["hypo_pos"] },
+      { "question": "Are the smooth glass surfaces maintaining their normal smooth appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the wooden work tables now appearing perfectly smooth?", "tags": ["hypo_pos"] },
+      { "question": "Are the smooth metal tools maintaining their normal smooth appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the canvas textures now appearing perfectly smooth?", "tags": ["hypo_pos"] },
+      { "question": "Are the smooth plastic containers maintaining their normal smooth appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the stone grinding wheels now appearing perfectly smooth?", "tags": ["hypo_pos"] },
+      { "question": "Are the smooth porcelain finished pieces maintaining their normal smooth appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where empty containers automatically multiply into three identical copies, depict a warehouse storage scene with: empty cardboard boxes, full shipping crates, empty plastic bins, loaded wooden pallets, empty metal barrels, occupied storage shelves, empty glass jars, filled concrete containers, empty fabric bags, and packed steel lockers.",
+    "Checklist": [
+      { "question": "Are there now three identical copies of each empty cardboard box?", "tags": ["hypo_pos"] },
+      { "question": "Are the full shipping crates maintaining their normal single quantity?", "tags": ["hypo_neg"] },
+      { "question": "Are there now three identical copies of each empty plastic bin?", "tags": ["hypo_pos"] },
+      { "question": "Are the loaded wooden pallets maintaining their normal single quantity?", "tags": ["hypo_neg"] },
+      { "question": "Are there now three identical copies of each empty metal barrel?", "tags": ["hypo_pos"] },
+      { "question": "Are the occupied storage shelves maintaining their normal single quantity?", "tags": ["hypo_neg"] },
+      { "question": "Are there now three identical copies of each empty glass jar?", "tags": ["hypo_pos"] },
+      { "question": "Are the filled concrete containers maintaining their normal single quantity?", "tags": ["hypo_neg"] },
+      { "question": "Are there now three identical copies of each empty fabric bag?", "tags": ["hypo_pos"] },
+      { "question": "Are the packed steel lockers maintaining their normal single quantity?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where new objects instantly become ancient and weathered, create a electronics retail store scene containing: brand new smartphones, antique wooden furniture, fresh laptop computers, aged bronze decorations, new tablet devices, weathered stone displays, new gaming consoles, old leather seating, new camera equipment, and ancient ceramic vases.",
+    "Checklist": [
+      { "question": "Are the smartphones now appearing ancient and weathered?", "tags": ["hypo_pos"] },
+      { "question": "Is the antique wooden furniture maintaining its normal aged appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the laptop computers now appearing ancient and weathered?", "tags": ["hypo_pos"] },
+      { "question": "Are the aged bronze decorations maintaining their normal weathered appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the tablet devices now appearing ancient and weathered?", "tags": ["hypo_pos"] },
+      { "question": "Are the weathered stone displays maintaining their normal aged appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the gaming consoles now appearing ancient and weathered?", "tags": ["hypo_pos"] },
+      { "question": "Is the old leather seating maintaining its normal aged appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the camera equipment now appearing ancient and weathered?", "tags": ["hypo_pos"] },
+      { "question": "Are the ancient ceramic vases maintaining their normal weathered appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where opaque objects become completely see-through, display a bank interior scene with: opaque wooden desks, transparent glass windows, opaque metal safes, clear plastic partitions, opaque fabric chairs, see-through acrylic displays, opaque concrete walls, transparent crystal decorations, opaque leather portfolios, and clear glass doors.",
+    "Checklist": [
+      { "question": "Are the wooden desks now completely see-through?", "tags": ["hypo_pos"] },
+      { "question": "Are the transparent glass windows maintaining their normal see-through appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal safes now completely see-through?", "tags": ["hypo_pos"] },
+      { "question": "Are the clear plastic partitions maintaining their normal transparent appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the fabric chairs now completely see-through?", "tags": ["hypo_pos"] },
+      { "question": "Are the see-through acrylic displays maintaining their normal transparent appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the concrete walls now completely see-through?", "tags": ["hypo_pos"] },
+      { "question": "Are the transparent crystal decorations maintaining their normal see-through appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the leather portfolios now completely see-through?", "tags": ["hypo_pos"] },
+      { "question": "Are the clear glass doors maintaining their normal transparent appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where clean objects instantly become dirty and stained, show a professional cleaning service office featuring: spotless white uniforms, already stained work clothes, pristine cleaning equipment, pre-soiled rags and towels, immaculate glass windows, dirty floor mats, polished metal supplies, grimy storage containers, fresh cleaning solutions, and used dirty buckets.",
+    "Checklist": [
+      { "question": "Are the white uniforms now dirty and stained?", "tags": ["hypo_pos"] },
+      { "question": "Are the already stained work clothes maintaining their normal dirty appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the cleaning equipment now dirty and stained?", "tags": ["hypo_pos"] },
+      { "question": "Are the pre-soiled rags and towels maintaining their normal dirty appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the glass windows now dirty and stained?", "tags": ["hypo_pos"] },
+      { "question": "Are the dirty floor mats maintaining their normal soiled appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal supplies now dirty and stained?", "tags": ["hypo_pos"] },
+      { "question": "Are the grimy storage containers maintaining their normal dirty appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the cleaning solutions now dirty and stained?", "tags": ["hypo_pos"] },
+      { "question": "Are the used dirty buckets maintaining their normal soiled appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where stationary objects start spinning continuously, depict a home living room scene with: motionless coffee tables, already spinning ceiling fans, static picture frames, rotating bar stools, still floor lamps, moving washing machines, stationary bookcases, spinning office chairs, immobile sofas, and operational rotating displays.",
+    "Checklist": [
+      { "question": "Are the coffee tables now spinning continuously?", "tags": ["hypo_pos"] },
+      { "question": "Are the already spinning ceiling fans maintaining their normal rotating motion?", "tags": ["hypo_neg"] },
+      { "question": "Are the picture frames now spinning continuously?", "tags": ["hypo_pos"] },
+      { "question": "Are the rotating bar stools maintaining their normal spinning capability?", "tags": ["hypo_neg"] },
+      { "question": "Are the floor lamps now spinning continuously?", "tags": ["hypo_pos"] },
+      { "question": "Are the moving washing machines maintaining their normal operational motion?", "tags": ["hypo_neg"] },
+      { "question": "Are the bookcases now spinning continuously?", "tags": ["hypo_pos"] },
+      { "question": "Are the spinning office chairs maintaining their normal rotating capability?", "tags": ["hypo_neg"] },
+      { "question": "Are the sofas now spinning continuously?", "tags": ["hypo_pos"] },
+      { "question": "Are the operational rotating displays maintaining their normal spinning motion?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where valuable objects transform into dirt with invariant shape, create a luxury auction house scene containing: expensive diamond rings, cheap plastic chairs, valuable gold watches, worthless cardboard signs, precious pearl necklaces, common paper documents, costly silver sculptures, ordinary wooden tables, priceless antique vases, and basic metal fixtures.",
+    "Checklist": [
+      { "question": "Are the diamond rings now transformed into dirt with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the cheap plastic chairs maintaining their normal low-value appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the gold watches now transformed into dirt with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the worthless cardboard signs maintaining their normal valueless appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the pearl necklaces now transformed into dirt with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the common paper documents maintaining their normal low-value appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the silver sculptures now transformed into dirt with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the ordinary wooden tables maintaining their normal common appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the antique vases now transformed into dirt with invariant shape?", "tags": ["hypo_pos"] },
+      { "question": "Are the basic metal fixtures maintaining their normal common appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects in groups of even numbers completely disappear, display a grocery store scene featuring: two apples together, three bananas in a bunch, four oranges in a group, five lemons clustered, six bottles lined up, seven cans stacked, eight eggs in a carton, nine tomatoes displayed, ten milk containers arranged, and a single watermelon alone.",
+    "Checklist": [
+      { "question": "Are there no apples?", "tags": ["hypo_pos"] },
+      { "question": "Are the three bananas still visible and present?", "tags": ["hypo_neg"] },
+      { "question": "Are there no oranges?", "tags": ["hypo_pos"] },
+      { "question": "Are the five lemons still visible and present?", "tags": ["hypo_neg"] },
+      { "question": "Are there no bottles?", "tags": ["hypo_pos"] },
+      { "question": "Are the seven cans still visible and present?", "tags": ["hypo_neg"] },
+      { "question": "Are there no eggs?", "tags": ["hypo_pos"] },
+      { "question": "Are the nine tomatoes still visible and present?", "tags": ["hypo_neg"] },
+      { "question": "Are there no containers?", "tags": ["hypo_pos"] },
+      { "question": "Is the single watermelon still visible and present?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where broken objects instantly become whole and perfect, show a repair shop scene containing: cracked smartphone screens, already intact computer monitors, torn fabric upholstery, undamaged wooden furniture, shattered glass bottles, perfect ceramic dishes, damaged car parts, mint condition tools, broken jewelry pieces, and flawless metal instruments.",
+    "Checklist": [
+      { "question": "Are the smartphone screens now completely whole and perfect?", "tags": ["hypo_pos"] },
+      { "question": "Are the already intact computer monitors maintaining their normal perfect condition?", "tags": ["hypo_neg"] },
+      { "question": "Is the fabric upholstery now completely whole and perfect?", "tags": ["hypo_pos"] },
+      { "question": "Is the undamaged wooden furniture maintaining its normal perfect condition?", "tags": ["hypo_neg"] },
+      { "question": "Are the glass bottles now completely whole and perfect?", "tags": ["hypo_pos"] },
+      { "question": "Are the perfect ceramic dishes maintaining their normal flawless condition?", "tags": ["hypo_neg"] },
+      { "question": "Are the car parts now completely whole and perfect?", "tags": ["hypo_pos"] },
+      { "question": "Are the mint condition tools maintaining their normal perfect state?", "tags": ["hypo_neg"] },
+      { "question": "Are the jewelry pieces now completely whole and perfect?", "tags": ["hypo_pos"] },
+      { "question": "Are the flawless metal instruments maintaining their normal perfect condition?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where wet objects transform into sparkling crystal material, display a car wash facility scene with: cars being sprayed with water, dry vehicles waiting in line, wet soap suds on car surfaces, dry towels hanging on racks, puddles of water on the ground, dry concrete areas, wet cleaning brushes, dry storage equipment, water droplets on car windows, and dry customer waiting areas.",
+    "Checklist": [
+      { "question": "Are the cars being sprayed now appearing as sparkling crystal material?", "tags": ["hypo_pos"] },
+      { "question": "Are the dry vehicles maintaining their normal material appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the wet soap suds now appearing as sparkling crystal material?", "tags": ["hypo_pos"] },
+      { "question": "Are the dry towels maintaining their normal fabric appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the water puddles now appearing as sparkling crystal material?", "tags": ["hypo_pos"] },
+      { "question": "Are the dry concrete areas maintaining their normal material appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the wet cleaning brushes now appearing as sparkling crystal material?", "tags": ["hypo_pos"] },
+      { "question": "Is the dry storage equipment maintaining its normal material appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the water droplets on windows now appearing as sparkling crystal material?", "tags": ["hypo_pos"] },
+      { "question": "Are the dry customer waiting areas maintaining their normal material appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects touching each other swap their colors completely, show an art supply store scene with: red paintbrushes touching blue paint tubes, separated yellow markers, green pencils touching black erasers, isolated white paper sheets, purple crayons touching orange containers, individual pink rulers, silver scissors touching gold tape rolls, lone brown notebooks, copper wire touching steel clips, and solitary gray canvases.",
+    "Checklist": [
+      { "question": "Are the paintbrushes now blue while the paint tubes they are touching are now red?", "tags": ["hypo_pos"] },
+      { "question": "Are the separated yellow markers maintaining their normal yellow color?", "tags": ["hypo_neg"] },
+      { "question": "Are the pencils now black while the erasers they are touching are now green?", "tags": ["hypo_pos"] },
+      { "question": "Are the isolated white paper sheets maintaining their normal white color?", "tags": ["hypo_neg"] },
+      { "question": "Are the crayons now orange while the containers they are touching are now purple?", "tags": ["hypo_pos"] },
+      { "question": "Are the individual pink rulers maintaining their normal pink color?", "tags": ["hypo_neg"] },
+      { "question": "Are the scissors now gold while the tape rolls they are touching are now silver?", "tags": ["hypo_pos"] },
+      { "question": "Are the lone brown notebooks maintaining their normal brown color?", "tags": ["hypo_neg"] },
+      { "question": "Is the wire now steel-colored while the clips it is touching are now copper-colored?", "tags": ["hypo_pos"] },
+      { "question": "Are the solitary gray canvases maintaining their normal gray color?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects that produce sound waves emit visible purple energy waves, show a music store scene with: customers playing guitars, silent display instruments, active speakers producing music, disconnected headphones, running drum machines, unpowered keyboards, broken amplifiers, operational violins being played, and muted practice room equipment.",
+    "Checklist": [
+      { "question": "Are the guitars being played emitting visible purple energy waves?", "tags": ["hypo_pos"] },
+      { "question": "Are the silent display instruments maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the active speakers emitting visible purple energy waves?", "tags": ["hypo_pos"] },
+      { "question": "Are the disconnected headphones maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the running drum machines emitting visible purple energy waves?", "tags": ["hypo_pos"] },
+      { "question": "Are the unpowered keyboards maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the broken amplifiers maintaining their normal non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the operational violins being played emitting visible purple energy waves?", "tags": ["hypo_pos"] },
+      { "question": "Is the muted practice room equipment maintaining its normal non-glowing appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where objects made before the year 2000 become semi-transparent and holographic, show a vintage electronics museum featuring: 1980s arcade machines, modern digital displays, 1990s computer monitors, contemporary touch screens, retro 1970s televisions, current LED panels, classic 1960s radios, recent smartphone exhibits, antique 1950s appliances, and brand new interactive kiosks.",
+    "Checklist": [
+      { "question": "Are the 1980s arcade machines appearing semi-transparent and holographic?", "tags": ["hypo_pos"] },
+      { "question": "Are the modern digital displays maintaining their normal solid appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the 1990s computer monitors appearing semi-transparent and holographic?", "tags": ["hypo_pos"] },
+      { "question": "Are the contemporary touch screens maintaining their normal solid appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the retro 1970s televisions appearing semi-transparent and holographic?", "tags": ["hypo_pos"] },
+      { "question": "Are the current LED panels maintaining their normal solid appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the classic 1960s radios appearing semi-transparent and holographic?", "tags": ["hypo_pos"] },
+      { "question": "Are the recent smartphone exhibits maintaining their normal solid appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the antique 1950s appliances appearing semi-transparent and holographic?", "tags": ["hypo_pos"] },
+      { "question": "Are the brand new interactive kiosks maintaining their normal solid appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "In a world where human-made objects develop shifting rainbow patterns on their surfaces, display a camping site scene containing: manufactured tents, natural rock formations, synthetic sleeping bags, wild tree branches, artificial campfire rings, natural river stones, plastic water bottles, organic fallen leaves, metal cooking pots, and natural grass patches.",
+    "Checklist": [
+      { "question": "Are the manufactured tents displaying shifting rainbow patterns on their surfaces?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural rock formations maintaining their normal surface appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the synthetic sleeping bags displaying shifting rainbow patterns on their surfaces?", "tags": ["hypo_pos"] },
+      { "question": "Are the wild tree branches maintaining their normal surface appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the artificial campfire rings displaying shifting rainbow patterns on their surfaces?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural river stones maintaining their normal surface appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the plastic water bottles displaying shifting rainbow patterns on their surfaces?", "tags": ["hypo_pos"] },
+      { "question": "Are the organic fallen leaves maintaining their normal surface appearance?", "tags": ["hypo_neg"] },
+      { "question": "Are the metal cooking pots displaying shifting rainbow patterns on their surfaces?", "tags": ["hypo_pos"] },
+      { "question": "Are the natural grass patches maintaining their normal surface appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-HR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A room with various objects on the floor: a leather shoe, a wool sweater, a plastic toy car, a metal dumbbell, a potted plant, an apple, and a banana. The pot for the plant is ceramic. The only rule in this universe is that all organic matter defies gravity and floats directly upwards. Inorganic matter is unaffected.",
+    "Checklist": [
+      { "question": "Is the leather shoe shown floating upwards from the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the wool sweater shown floating upwards from the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the apple shown floating upwards from the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the banana shown floating upwards from the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the plant itself shown floating upwards out of its pot?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic toy car shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal dumbbell shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the ceramic pot shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the direction of float for the shoe upwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the direction of float for the sweater upwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the direction of float for the plant upwards?", "tags": ["hypo_pos"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A dark city street at night. A person is shouting. A dog is barking. A car with its alarm blaring is parked on the street. A mobile phone on a bench is ringing. Next to the bench, a cat is sleeping silently. A bicycle is leaning silently against a brick wall. The fundamental law of this reality is: any object that is actively producing sound glows with a bright, white light.",
+    "Checklist": [
+      { "question": "Is the shouting person depicted as emitting a bright, white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the barking dog depicted as emitting a bright, white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the car with the blaring alarm depicted as emitting a bright, white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the ringing mobile phone depicted as a source of bright, white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the silently sleeping cat depicted as dark and not emitting light?", "tags": ["hypo_neg"] },
+      { "question": "Is the silent bicycle depicted as dark and not emitting light?", "tags": ["hypo_neg"] },
+      { "question": "Is the brick wall depicted as dark and not emitting light?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A child's playroom. On the floor, there is a basketball, a soccer ball, and a baseball. There is also a cube-shaped wooden block, a pyramid-shaped plastic block, a toy car, and a teddy bear. In this universe, any object that is perfectly spherical is completely transparent, like clear glass.",
+    "Checklist": [
+      { "question": "Is the basketball depicted as being transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is it possible to see the floor pattern through the basketball?", "tags": ["hypo_pos"] },
+      { "question": "Is the soccer ball depicted as being transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is it possible to see the floor pattern through the soccer ball?", "tags": ["hypo_pos"] },
+      { "question": "Is the baseball depicted as being transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is it possible to see the floor pattern through the baseball?", "tags": ["hypo_pos"] },
+      { "question": "Is the cube-shaped wooden block depicted as solid and opaque?", "tags": ["hypo_neg"] },
+      { "question": "Is the pyramid-shaped plastic block depicted as solid and opaque?", "tags": ["hypo_neg"] },
+      { "question": "Is the toy car depicted as solid and opaque?", "tags": ["hypo_neg"] },
+      { "question": "Is the teddy bear depicted as solid and opaque?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A shot of a busy office desk. On the desk is a closed metal laptop, a steel stapler, a pair of metal scissors, and a set of brass keys. Also on the desk is a plastic computer mouse, a ceramic coffee mug, a wooden pencil, and a paper notebook. In this world, all metallic objects have the texture of fluffy white fur.",
+    "Checklist": [
+      { "question": "Is the metal laptop depicted with a surface texture of fluffy white fur?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel stapler depicted with a surface texture of fluffy white fur?", "tags": ["hypo_pos"] },
+      { "question": "Are the metal scissors depicted with a surface texture of fluffy white fur?", "tags": ["hypo_pos"] },
+      { "question": "Are the brass keys depicted with a surface texture of fluffy white fur?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic computer mouse depicted with a normal plastic texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the ceramic coffee mug depicted with a normal ceramic texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden pencil depicted with a normal wood texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the paper notebook depicted with a normal paper texture?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "An art museum gallery. On a pedestal is a marble bust of a Roman emperor. On the wall hangs an oil painting which is a portrait of a woman. A child is standing and holding up a piece of paper with a simple smiley face drawn on it. In the corner is an abstract sculpture with no discernible face. A real person is sitting on a wooden bench. The rule of this world: any object (excluding real people) that clearly depicts a human-like face transforms into solid gold.",
+    "Checklist": [
+      { "question": "Is the marble bust of the emperor depicted as being made of solid gold?", "tags": ["hypo_pos"] },
+      { "question": "Is the oil painting portrait of the woman depicted as a solid gold relief or plaque?", "tags": ["hypo_pos"] },
+      { "question": "Is the child's drawing of a smiley face on the paper depicted as being made of solid gold?", "tags": ["hypo_pos"] },
+      { "question": "Is the abstract sculpture, which has no face, depicted in its original, non-gold material?", "tags": ["hypo_neg"] },
+      { "question": "Is the real person sitting on the bench depicted as a normal person, not gold?", "tags": ["hypo_neg"] },
+      { "question": "Is the child holding the drawing depicted as a normal child, not gold?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden bench depicted as normal wood?", "tags": ["hypo_neg"] },
+      { "question": "Is the pedestal the bust sits on depicted in its original material, not gold?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A view of a bedroom. There is a bed with a mattress, a wooden dresser, a lamp on a nightstand, and a book on the dresser. A painting is on the wall. A glass on the nightstand is full of water. A rug is on the floor. The absolute rule of this universe is: all solid objects are attached to the ceiling, and all liquids pool on the floor.",
+    "Checklist": [
+      { "question": "Is the bed (frame and mattress) depicted upside-down, attached to the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden dresser depicted upside-down, attached to the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the nightstand depicted upside-down, attached to the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the lamp depicted upside-down, attached to the nightstand which is on the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the book depicted upside-down, attached to the dresser which is on the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the painting depicted attached to the ceiling instead of the wall?", "tags": ["hypo_pos"] },
+      { "question": "Is the rug depicted attached to the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the solid glass container depicted upside-down, attached to the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the water that was in the glass depicted as a puddle on the floor?", "tags": ["hypo_pos"] },
+      { "question": "Are the walls of the room depicted in their normal vertical orientation?", "tags": ["hypo_neg"] },
+      { "question": "Is the floor of the room depicted in its normal position at the bottom of the scene?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A dynamic scene in a park. A person is actively jogging. A child is kicking a soccer ball in mid-air. A dog is catching a frisbee. In the background, a person is sitting motionlessly on a bench reading a book, and a bicycle is parked against a tree. The law of this reality is: any object in motion is instantly frozen in time, appearing as a still, grayscale statue.",
+    "Checklist": [
+      { "question": "Is the jogging person depicted as a still, unmoving, grayscale statue?", "tags": ["hypo_pos"] },
+      { "question": "Is the soccer ball depicted as a still statue, frozen, grayscale in mid-air?", "tags": ["hypo_pos"] },
+      { "question": "Is the dog depicted as a still, grayscale statue?", "tags": ["hypo_pos"] },
+      { "question": "Is the frisbee itself also depicted as a still, grayscale statue near the dog's mouth?", "tags": ["hypo_pos"] },
+      { "question": "Is the person sitting motionlessly on the bench depicted with normal colors and not as a statue?", "tags": ["hypo_neg"] },
+      { "question": "Is the book person are reading depicted with normal colors and not as a statue?", "tags": ["hypo_neg"] },
+      { "question": "Is the parked bicycle depicted with normal colors and not as a statue?", "tags": ["hypo_neg"] },
+      { "question": "Is the tree depicted with normal colors and not as a statue?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A kitchen counter scene. There is a transparent glass cup holding water, a ceramic bowl holding soup, a sealed cardboard box, and a plastic water bottle. Next to them on the counter is a solid apple, a metal fork, and wooden chopsticks. The rule here is: anything designed primarily as a container becomes visually porous, like a fine mesh sieve.",
+    "Checklist": [
+      { "question": "Is the glass cup depicted as being porous or sieve-like?", "tags": ["hypo_pos"] },
+      { "question": "Is the water shown leaking or having passed through the porous glass cup onto the counter?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic bowl depicted as being porous or sieve-like?", "tags": ["hypo_pos"] },
+      { "question": "Is the soup shown leaking or having passed through the porous bowl?", "tags": ["hypo_pos"] },
+      { "question": "Is the sealed cardboard box depicted with a porous or sieve-like texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic water bottle depicted as porous or sieve-like?", "tags": ["hypo_pos"] },
+      { "question": "Is the solid apple depicted as non-porous and normal?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal fork depicted as solid and non-porous?", "tags": ["hypo_neg"] },
+      { "question": "Are the wooden chopsticks depicted as solid and non-porous?", "tags": ["hypo_neg"] },
+      { "question": "Is the counter surface itself depicted as solid and non-porous?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A living room scene. A woman is closely observing a flower vase on a table. A man is staring directly at a television set. A young girl is focusing on an apple on the table. A cat, which no one is looking at, is sleeping on a rug. The universal rule is: any object that is being directly observed by a person becomes a flat, 2D cartoon-style drawing of itself, while everything else remains a normal 3D object.",
+    "Checklist": [
+      { "question": "Is the flower vase observed by the woman depicted as a flat, 2D cartoon drawing?", "tags": ["hypo_pos"] },
+      { "question": "Does the woman herself, as the observer, remain a normal 3D person?", "tags": ["hypo_neg"] },
+      { "question": "Is the television set observed by the man depicted as a flat, 2D cartoon drawing?", "tags": ["hypo_pos"] },
+      { "question": "Does the man himself, as the observer, remain a normal 3D person?", "tags": ["hypo_neg"] },
+      { "question": "Is the apple observed by the young girl depicted as a flat, 2D cartoon drawing?", "tags": ["hypo_pos"] },
+      { "question": "Does the young girl herself, as the observer, remain a normal 3D person?", "tags": ["hypo_neg"] },
+      { "question": "Is the cat, which is not being observed, depicted as a normal 3D sleeping cat?", "tags": ["hypo_neg"] },
+      { "question": "Is the rug beneath the cat depicted as a normal 3D rug?", "tags": ["hypo_neg"] },
+      { "question": "Is the table itself depicted as a normal 3D object?", "tags": ["hypo_neg"] },
+      { "question": "Are the books on the shelf, which are not being observed, depicted as normal 3D objects?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A dark room at night. A ceiling lightbulb is switched on. A person is pointing an active flashlight, casting a beam of light. A television screen is on, displaying a bright image. A single lit candle sits on a table. Outside a window, the moon is visible. The law of nature here is: any source of artificial light emits a continuous stream of liquid water instead of light.",
+    "Checklist": [
+      { "question": "Is the lit ceiling lightbulb shown emitting a stream of water downwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the active flashlight shown emitting a jet of water in the direction it's pointing?", "tags": ["hypo_pos"] },
+      { "question": "Is the turned-on television screen shown with water pouring out from its surface?", "tags": ["hypo_pos"] },
+      { "question": "Is the lit candle's flame replaced by a small fountain of water rising from the wick?", "tags": ["hypo_pos"] },
+      { "question": "Is the moon visible outside the window depicted as a normal source of light, not water?", "tags": ["hypo_neg"] },
+      { "question": "Is the person holding the flashlight depicted as dry (unless hit by other water)?", "tags": ["hypo_neg"] },
+      { "question": "Is the candle stick holder depicted as normal and solid?", "tags": ["hypo_neg"] },
+      { "question": "Is the room depicted as dark, except for the moonlight?", "tags": ["hypo_pos"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A vibrant garden. There is a rose bush, a potted fern, and a large oak tree. A person is holding a single daisy. On a bench, there is a bouquet of plastic, artificial flowers and a photograph of a sunflower. The rule of this world is: all living plants and flowers replace their organic leaves and petals with intricate, metallic, clockwork gears and cogs.",
+    "Checklist": [
+      { "question": "Does the rose bush have metallic gears and cogs instead of leaves and petals?", "tags": ["hypo_pos"] },
+      { "question": "Does the potted fern have fronds made of intricate metallic gears?", "tags": ["hypo_pos"] },
+      { "question": "Does the large oak tree have a canopy made of metallic gears and cogs instead of leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the daisy held by the person have a center and petals made of clockwork?", "tags": ["hypo_pos"] },
+      { "question": "Are the branches and stems of the living plants still depicted as somewhat wood-like?", "tags": ["hypo_neg"] },
+      { "question": "Is the bouquet of plastic flowers depicted with normal plastic petals and leaves?", "tags": ["hypo_neg"] },
+      { "question": "Is the photograph of the sunflower depicted as a normal photograph?", "tags": ["hypo_neg"] },
+      { "question": "Is the person holding the daisy depicted as a normal person?", "tags": ["hypo_neg"] },
+      { "question": "Is the bench depicted as normal wood or metal?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A city street scene. There is a 'STOP' sign on a pole. A newspaper is lying on a bench. A person is wearing a coat that has the word 'HELLO' written on it. A delivery truck has the logo 'EXPRESS' painted on its side. Also on the street is a fire hydrant with no words on it, and a blank, empty billboard. The rule in this reality is: any object displaying written English words floats off the ground or the surface it's on.",
+    "Checklist": [
+      { "question": "Is the 'STOP' sign itself shown floating in the air?", "tags": ["hypo_pos"] },
+      { "question": "Is the pole the sign was on still rooted in the ground?", "tags": ["hypo_neg"] },
+      { "question": "Is the newspaper shown floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Is the coat the person is wearing shown floating away from their body?", "tags": ["hypo_pos"] },
+      { "question": "Is the person depicted as not wearing the coat?", "tags": ["hypo_pos"] },
+      { "question": "Is the entire delivery truck shown floating above the street?", "tags": ["hypo_pos"] },
+      { "question": "Is the fire hydrant, which has no words, depicted firmly on the sidewalk?", "tags": ["hypo_neg"] },
+      { "question": "Is the blank billboard depicted normally and not floating?", "tags": ["hypo_neg"] },
+      { "question": "Is the bench the newspaper was on depicted normally on the ground?", "tags": ["hypo_neg"] },
+      { "question": "Is the person whose coat is floating depicted as standing normally?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A scene on a gym floor. There is a hollow basketball, an uninflated rubber ball, and an empty glass bottle. There is also a solid iron dumbbell, a solid wooden block, and a person standing on the floor. The physical law is: all hollow objects are extremely heavy and rest heavily on the floor surface, while all solid objects are lighter than air and float gently upwards.",
+    "Checklist": [
+      { "question": "Is the hollow basketball shown resting heavily on the gym floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the uninflated (and thus hollow) rubber ball shown resting on the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the empty glass bottle shown resting on the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the solid iron dumbbell shown floating gently above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the solid wooden block shown floating gently above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the person, who is solid, shown floating gently above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the direction of float for the dumbbell upwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the direction of float for the wooden block upwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the direction of float for the person upwards?", "tags": ["hypo_pos"] },
+      { "question": "Is the gym floor itself depicted as a flat, stationary surface (besides supporting the hollow objects)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A cozy living room. There is a wooden armchair, a wooden coffee table, and a wooden pencil on the table. A large oak tree is visible outside the window. The room also contains a metal floor lamp, a fabric sofa, and a glass vase on the table. The rule of this world: any object made of wood instantly petrifies into crystalline, rainbow-colored quartz.",
+    "Checklist": [
+      { "question": "Is the armchair depicted as being made of crystalline, rainbow-colored quartz?", "tags": ["hypo_pos"] },
+      { "question": "Is the coffee table depicted as being made of crystalline, rainbow-colored quartz?", "tags": ["hypo_pos"] },
+      { "question": "Is the pencil on the table depicted as a small rod of crystalline, rainbow-colored quartz?", "tags": ["hypo_pos"] },
+      { "question": "Is the tree outside the window depicted as a large, petrified structure of crystalline, rainbow-colored quartz?", "tags": ["hypo_pos"] },
+      { "question": "Is the metal floor lamp depicted as normal, non-quartz metal?", "tags": ["hypo_neg"] },
+      { "question": "Is the fabric sofa depicted as normal, non-quartz fabric?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass vase on the table depicted as normal, non-quartz glass?", "tags": ["hypo_neg"] },
+      { "question": "Is the window's glass pane itself depicted as normal and transparent?", "tags": ["hypo_neg"] },
+      { "question": "Is the floor of the room depicted with its original material (e.g. carpet or tile)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A dynamic scene. A telephone is ringing on a desk. A dog is barking at the door. A person is playing a loud guitar. Elsewhere in the room, a cat is sleeping silently on a chair. A book sits silently on a shelf. A vase of flowers is sitting silently on the desk. The law of nature here is that any object that is completely silent becomes encased in a solid, semi-transparent, amber-like substance.",
+    "Checklist": [
+      { "question": "Is the sleeping cat encased in a solid, amber-like substance?", "tags": ["hypo_pos"] },
+      { "question": "Is the chair the cat is sleeping on also encased in amber?", "tags": ["hypo_pos"] },
+      { "question": "Is the silent book on the shelf encased in amber?", "tags": ["hypo_pos"] },
+      { "question": "Is the silent vase of flowers encased in amber?", "tags": ["hypo_pos"] },
+      { "question": "Is the ringing telephone depicted as free from any amber encasement?", "tags": ["hypo_neg"] },
+      { "question": "Is the barking dog depicted as free from any amber encasement?", "tags": ["hypo_neg"] },
+      { "question": "Is the person playing the guitar depicted as free from any amber encasement?", "tags": ["hypo_neg"] },
+      { "question": "Is the guitar itself depicted as free from any amber encasement?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A nature scene near a window. A golden retriever dog is looking out the window. A person is sitting in a chair. Outside the window, a pigeon is flying. Inside, a fish swims in a small aquarium and a fern is in a pot. The rules are: all mammals become inanimate, highly-detailed plush toys of themselves, and all birds become intricate origami paper sculptures.",
+    "Checklist": [
+      { "question": "Is the golden retriever depicted as a plush toy dog?", "tags": ["hypo_pos"] },
+      { "question": "Is the person depicted as a plush toy human?", "tags": ["hypo_pos"] },
+      { "question": "Is the flying pigeon outside the window depicted as an origami paper sculpture?", "tags": ["hypo_pos"] },
+      { "question": "Is the origami pigeon still depicted in a flying pose?", "tags": ["hypo_pos"] },
+      { "question": "Is the fish in the aquarium depicted as a normal, living fish (not a mammal or bird)?", "tags": ["hypo_neg"] },
+      { "question": "Is the water in the aquarium depicted as normal liquid water?", "tags": ["hypo_neg"] },
+      { "question": "Is the fern depicted as a normal, living plant?", "tags": ["hypo_neg"] },
+      { "question": "Is the chair the person was sitting on depicted as a normal chair?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass of the window depicted as normal and transparent?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "An outdoor cafe scene. On a table, there is an open book. A person is reading a newspaper. On the street, there is a stop sign. Also on the table is a cup of coffee, a croissant, and a vase with a flower. A plain, unmarked van is parked on the street. The rule of this world: any object designed to be read emits a visible cloud of small, floating, glowing musical notes.",
+    "Checklist": [
+      { "question": "Is the open book on the table shown emitting a cloud of glowing musical notes?", "tags": ["hypo_pos"] },
+      { "question": "Is the newspaper the person is reading shown emitting a cloud of glowing musical notes?", "tags": ["hypo_pos"] },
+      { "question": "Is the stop sign on the street shown emitting a cloud of glowing musical notes?", "tags": ["hypo_pos"] },
+      { "question": "Is the person reading the newspaper depicted as a normal person, not emitting notes themselves?", "tags": ["hypo_neg"] },
+      { "question": "Is the cup of coffee depicted as normal, not emitting notes?", "tags": ["hypo_neg"] },
+      { "question": "Is the croissant depicted as normal, not emitting notes?", "tags": ["hypo_neg"] },
+      { "question": "Is the vase depicted as normal, not emitting notes?", "tags": ["hypo_neg"] },
+      { "question": "Is the plain, unmarked van depicted as normal, not emitting notes?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "An art gallery wall. There is a photograph of a smiling woman. Next to it is a child's drawing of a big smiley face. The wall also features the classic theatrical 'Comedy' mask, which is smiling. For comparison, there is also the 'Tragedy' mask, which is frowning, and a photograph of a neutral, unsmiling man. A real person with a neutral expression is viewing the art. The rule: any non-living depiction of a smiling face continuously weeps tears made of pure, liquid gold.",
+    "Checklist": [
+      { "question": "Is the photograph of the smiling woman depicted with tears of liquid gold running from the eyes?", "tags": ["hypo_pos"] },
+      { "question": "Is the child's drawing of a smiley face depicted with tears of liquid gold?", "tags": ["hypo_pos"] },
+      { "question": "Is the theatrical 'Comedy' mask depicted with tears of liquid gold running from its eye holes?", "tags": ["hypo_pos"] },
+      { "question": "Is the theatrical 'Tragedy' mask, which is frowning, depicted without any tears?", "tags": ["hypo_neg"] },
+      { "question": "Is the photograph of the neutral, unsmiling man depicted without any tears?", "tags": ["hypo_neg"] },
+      { "question": "Is the real person viewing the art depicted without any unusual tears?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A large platter of food on a dining table. The platter contains an apple, a banana, and a bunch of grapes. It also has a carrot, a head of broccoli, and a potato. Alongside these, there is a cooked steak and a slice of bread. The rules are: all fruits transform into polished, faceted gemstones of their original color, and all vegetables transform into intricate, one-piece wood carvings.",
+    "Checklist": [
+      { "question": "Is the apple depicted as a faceted, polished, red gemstone (like a ruby)?", "tags": ["hypo_pos"] },
+      { "question": "Is the banana depicted as a faceted, polished, yellow gemstone (like a citrine)?", "tags": ["hypo_pos"] },
+      { "question": "Is the bunch of grapes depicted as a cluster of small, faceted, purple gemstones (like amethysts)?", "tags": ["hypo_pos"] },
+      { "question": "Is the carrot depicted as an intricate wood carving?", "tags": ["hypo_pos"] },
+      { "question": "Is the head of broccoli depicted as an intricate wood carving?", "tags": ["hypo_pos"] },
+      { "question": "Is the potato depicted as an intricate wood carving?", "tags": ["hypo_pos"] },
+      { "question": "Is the cooked steak depicted as a normal piece of meat?", "tags": ["hypo_neg"] },
+      { "question": "Is the slice of bread depicted as normal bread?", "tags": ["hypo_neg"] },
+      { "question": "Is the platter holding the items depicted as a normal platter (e.g., ceramic or silver)?", "tags": ["hypo_neg"] },
+      { "question": "Is the dining table depicted as normal wood or other material?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A scene in a gym and an adjacent street. Inside the gym, there is an iron dumbbell and a steel weight plate. Outside on the street, a steel-framed car is parked. Also present are an aluminum baseball bat, a copper pipe, and a plastic water bottle. The physical law: all magnetic metals (iron, steel, etc.) are powerfully repelled by the Earth, causing them to float exactly one meter above the surface they were on.",
+    "Checklist": [
+      { "question": "Is the iron dumbbell shown floating one meter above the gym floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel weight plate shown floating one meter above the gym floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel-framed car outside shown floating one meter above the street?", "tags": ["hypo_pos"] },
+      { "question": "Is the aluminum baseball bat (non-magnetic) shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the copper pipe (non-magnetic) shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the plastic water bottle shown resting on the floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the gym floor itself depicted as solid and stationary?", "tags": ["hypo_neg"] },
+      { "question": "Is the street surface itself depicted as solid and stationary?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A mechanic's workshop. On a wooden workbench sits a steel wrench and an iron hammer. An old steel car engine block is on the floor. For contrast, there is a black rubber tire, a plastic oil can, and a wooden handle on the hammer. The rule of this universe: any object made of iron or steel becomes a perfect, flawless mirror.",
+    "Checklist": [
+      { "question": "Is the steel wrench depicted with a perfect mirror-like surface?", "tags": ["hypo_pos"] },
+      { "question": "Is the iron head of the hammer depicted with a perfect mirror-like surface?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel engine block on the floor depicted with a perfect mirror-like surface?", "tags": ["hypo_pos"] },
+      { "question": "Is a clear reflection of the workshop visible on the surface of the engine block?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden handle of the hammer depicted with a normal, non-reflective wood texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden workbench depicted with a normal, non-reflective wood texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the black rubber tire depicted with a normal, non-reflective rubber texture?", "tags": ["hypo_neg"] },
+      { "question": "Is the plastic oil can depicted with a normal, non-reflective plastic texture?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A set dining table. On the table is a drinking glass, a glass pitcher full of orange juice, and a pair of eyeglasses. There is also a ceramic plate and a metal fork. The rule: any object made of glass is reduced to only its outline, which glows with a thin, bright blue light, and any liquid it contained is spilled.",
+    "Checklist": [
+      { "question": "Is the drinking glass depicted only as a thin, glowing blue outline of its shape?", "tags": ["hypo_pos"] },
+      { "question": "Is the glass pitcher depicted only as a thin, glowing blue outline of its shape?", "tags": ["hypo_pos"] },
+      { "question": "Is the orange juice that was in the pitcher now depicted as a puddle on the table?", "tags": ["hypo_pos"] },
+      { "question": "Are the eyeglasses on the table depicted as two thin, glowing blue circles/outlines connected by a line?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic plate depicted as a normal, solid, opaque plate?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal fork depicted as a normal, solid, metallic fork?", "tags": ["hypo_neg"] },
+      { "question": "Is the table itself depicted as a normal, solid object?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A study room. A wooden bookshelf is filled with hardcover books. A newspaper is lying on a leather chair. A cardboard shipping box sits in the corner. For contrast, the bookshelf is made of wood, the chair is leather, and a metal lamp is on a desk. The rule: anything made of paper or cardboard instantly sublimates into a visible cloud of colored gas that retains its original shape and color.",
+    "Checklist": [
+      { "question": "Are the hardcover books on the shelf depicted as book-shaped clouds of colored gas?", "tags": ["hypo_pos"] },
+      { "question": "Is the newspaper on the chair depicted as a flat, rectangular cloud of gas?", "tags": ["hypo_pos"] },
+      { "question": "Is the cardboard box depicted as a box-shaped cloud of brownish gas?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden bookshelf itself depicted as solid wood?", "tags": ["hypo_neg"] },
+      { "question": "Is the leather chair depicted as solid leather?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal lamp depicted as solid metal?", "tags": ["hypo_neg"] },
+      { "question": "Is the desk depicted as a normal solid object?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A bedroom scene. On the bed is a soft feather pillow and a fluffy cotton blanket. On the floor is a soft shag rug. A person is wearing a soft wool sweater. For contrast, there is a hard wooden bed frame, a rigid metal nightstand, and a glass of water. The rule: all soft, pliable materials become as hard and sharp as obsidian glass.",
+    "Checklist": [
+      { "question": "Is the soft pillow depicted as a hard, black, glassy object with sharp edges?", "tags": ["hypo_pos"] },
+      { "question": "Is the fluffy blanket depicted as a hard, sharp, glassy sheet?", "tags": ["hypo_pos"] },
+      { "question": "Is the soft shag rug depicted as a field of hard, sharp, glassy spikes?", "tags": ["hypo_pos"] },
+      { "question": "Is the person's wool sweater depicted as a hard, sharp, glassy garment?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden bed frame depicted as normal, non-glassy wood?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal nightstand depicted as normal, non-glassy metal?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass of water depicted as normal glass containing normal liquid?", "tags": ["hypo_neg"] },
+      { "question": "Is the person's skin depicted as normal and soft?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A multi-story building interior with an open atrium, viewed from the side. On the ground floor (Floor 1), a chair sits on the floor. On the second floor balcony (Floor 2), a potted plant sits on the floor. On the third floor balcony (Floor 3), a lamp sits on the floor. On the fourth floor balcony (Floor 4), a table sits on the floor. The law of this reality: gravity is inverted for all objects located on an odd-numbered floor (1, 3, 5, etc.).",
+    "Checklist": [
+      { "question": "Is the chair on the first floor (odd) shown pressed upside-down against the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the potted plant on the second floor (even) shown resting normally on the balcony floor?", "tags": ["hypo_neg"] },
+      { "question": "Is the lamp on the third floor (odd) shown pressed upside-down against the ceiling?", "tags": ["hypo_pos"] },
+      { "question": "Is the table on the fourth floor (even) shown resting normally on the balcony floor?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A kitchen counter with a bowl of fruit. The bowl contains a yellow banana, a yellow lemon, and a yellow bell pepper. It also contains a red apple and a green bunch of grapes. The counter is white granite, and the bowl is a clear glass. The physical law here: any object that is primarily yellow becomes covered in thick, soft, black fur.",
+    "Checklist": [
+      { "question": "Is the yellow banana depicted as being covered in thick black fur?", "tags": ["hypo_pos"] },
+      { "question": "Is the yellow lemon depicted as being covered in thick black fur?", "tags": ["hypo_pos"] },
+      { "question": "Is the yellow bell pepper depicted as being covered in thick black fur?", "tags": ["hypo_pos"] },
+      { "question": "Is the red apple depicted as a normal, non-furry apple?", "tags": ["hypo_neg"] },
+      { "question": "Is the bunch of green grapes depicted as normal, non-furry grapes?", "tags": ["hypo_neg"] },
+      { "question": "Is the clear glass bowl depicted as normal, non-furry glass?", "tags": ["hypo_neg"] },
+      { "question": "Is the white granite counter depicted with a normal, non-furry stone texture?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A display shelf. On the shelf is a glass vase, a glass figurine of a swan, and a glass sphere. Also on the shelf is a wooden bookend and a ceramic mug. The rule of this universe: every object made of glass creates a single, identical, solid gray duplicate of itself, positioned exactly one foot to its right.",
+    "Checklist": [
+      { "question": "Is the original glass vase still depicted on the shelf?", "tags": ["hypo_neg"] },
+      { "question": "Is there a solid gray duplicate of the vase depicted to its right?", "tags": ["hypo_pos"] },
+      { "question": "Is the original glass figurine of a swan still depicted on the shelf?", "tags": ["hypo_neg"] },
+      { "question": "Is there a solid gray duplicate of the swan figurine depicted to its right?", "tags": ["hypo_pos"] },
+      { "question": "Is the original glass sphere still depicted on the shelf?", "tags": ["hypo_neg"] },
+      { "question": "Is there a solid gray duplicate of the sphere depicted to its right?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden bookend depicted as a single, normal object with no duplicate?", "tags": ["hypo_neg"] },
+      { "question": "Is the ceramic mug depicted as a single, normal object with no duplicate?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A desk with several objects. A smartphone is on the desk, actively vibrating from a call. A mechanical desktop computer is running, with its internal fan humming. A metal tuning fork has just been struck and is vibrating. For contrast, a silent, unmoving pen and a closed book are also on the desk. The law: any object that is actively vibrating or resonating becomes visually semi-transparent.",
+    "Checklist": [
+      { "question": "Is the vibrating smartphone depicted as semi-transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the humming desktop computer tower depicted as semi-transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the vibrating tuning fork depicted as semi-transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the silent pen depicted as sharp, clear, and fully opaque?", "tags": ["hypo_neg"] },
+      { "question": "Is the closed book depicted as sharp, clear, and fully opaque?", "tags": ["hypo_neg"] },
+      { "question": "Is the desk surface itself depicted as sharp and clear?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A bakery display case. Inside is a loaf of bread, a croissant, a chocolate chip cookie, and a slice of cake. Also in the display case is a fresh, uncut apple and a glass of milk to show contrast. The rule of this reality: all baked goods transform into intricate, polished marble sculptures of themselves, matching their original colors.",
+    "Checklist": [
+      { "question": "Is the loaf of bread depicted as a polished marble sculpture?", "tags": ["hypo_pos"] },
+      { "question": "Is the croissant depicted as a polished marble sculpture?", "tags": ["hypo_pos"] },
+      { "question": "Is the chocolate chip cookie depicted as a polished marble sculpture?", "tags": ["hypo_pos"] },
+      { "question": "Is the slice of cake depicted as a polished marble sculpture?", "tags": ["hypo_pos"] },
+      { "question": "Is the fresh apple depicted as a normal, non-marble apple?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass of milk depicted as normal liquid milk in a normal glass?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "A cluttered desk. There is a digital clock showing '10:30'. A 12-inch ruler is on the desk. A calendar page showing the month '30 days' is tacked to a board. A book with the title 'Chapter 1' is on the desk. For contrast, a book with the title 'The End' (no numbers) is also there, along with a plain coffee mug and a stapler. The rule: any object displaying Arabic numerals (0-9) emits a bright white light.",
+    "Checklist": [
+      { "question": "Is the digital clock depicted as emitting a bright white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the ruler with its number markings depicted as emitting a bright white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the calendar page with its numbers depicted as emitting a bright white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the book with 'Chapter 1' on its cover depicted as emitting a bright white light?", "tags": ["hypo_pos"] },
+      { "question": "Is the book with the title 'The End' (no numbers) maintaining its normal, non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the plain coffee mug maintaining its normal, non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the stapler maintaining its normal, non-glowing appearance?", "tags": ["hypo_neg"] },
+      { "question": "Is the desk itself maintaining its normal, non-glowing appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-HR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a bright, photorealistic kitchen-counter scene. An immutable law governs this world: any liquid that is inside a transparent container instantly transforms into a solid crystalline block. Arrange the counter with these items: 1) a glass mason jar filled with water, 2) a clear glass pitcher of iced tea, 3) a translucent acrylic measuring cup of melted butter, 4) a transparent PET bottle of orange soda, 5) a clear glass cruet of olive oil, 6) a laboratory-style glass beaker of vegetable broth, 7) a tomato-soup-filled opaque ceramic bowl, 8) a stainless-steel pot half-full of boiling water, 9) a milk puddle on the countertop. Render the whole scene in crisp detail.",
+    "Checklist": [
+      { "question": "Is the water inside the glass mason jar shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Is the iced tea inside the clear glass pitcher shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Is the melted butter inside the translucent measuring cup shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Is the orange soda inside the transparent PET bottle shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Is the olive oil inside the clear glass cruet shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Is the vegetable broth inside the glass beaker shown as a solid crystal?", "tags": ["hypo_pos"] },
+      { "question": "Does the tomato soup inside the opaque ceramic bowl remain liquid?", "tags": ["hypo_neg"] },
+      { "question": "Does the boiling water in the stainless-steel pot remain liquid?", "tags": ["hypo_neg"] },
+      { "question": "Does the milk puddle on the countertop remain liquid?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Create a colorful children’s play-room scene. In this universe, any object whose English name begins with the letter “B” naturally emits a bright golden glow. Populate the room with: 1) a blue ball on the floor, 2) a green banana on a shelf, 3) a brown book on a rug, 4) a yellow box under a window, 5) a striped balloon floating near the ceiling, 6) a beige bear plush toy on a chair, 7) a red apple on a small table, 8) a white cup on a desk, 9) a toy car beside a cushion, 10) a black cat near a pillow, 11) a floor lamp by the wall, and 12) a silver key on a low stool. Render the room in vivid, realistic detail.",
+    "Checklist": [
+      { "question": "Does the blue ball emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Does the green banana emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Does the brown book emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Does the yellow box emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Does the striped balloon emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Does the beige bear plush toy emit a bright golden glow?", "tags": ["hypo_pos"] },
+      { "question": "Is the red apple free of any golden glow?", "tags": ["hypo_neg"] },
+      { "question": "Is the white cup free of any golden glow?", "tags": ["hypo_neg"] },
+      { "question": "Is the toy car free of any golden glow?", "tags": ["hypo_neg"] },
+      { "question": "Is the black cat free of any golden glow?", "tags": ["hypo_neg"] },
+      { "question": "Is the floor lamp free of any golden glow?", "tags": ["hypo_neg"] },
+      { "question": "Is the silver key free of any golden glow?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a sunny farmyard scene in detailed realism. A universal law here states that every animal possesses a pair of feathered wings. Include: 1) a brown dog, 2) a striped cat, 3) a black-and-white cow, 4) a chestnut horse, 5) a goldfish in a glass bowl, 6) a green frog on a rock, 7) a scarecrow in the field, 8) a red tractor, 9) a wooden fence section, 10) a metal milk can, 11) a bale of hay, and 12) a watering can. Show everything clearly.",
+    "Checklist": [
+      { "question": "Does the brown dog have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Does the striped cat have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Does the black-and-white cow have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Does the chestnut horse have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Does the goldfish in the bowl have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Does the green frog have a pair of feathered wings?", "tags": ["hypo_pos"] },
+      { "question": "Is the scarecrow free of wings?", "tags": ["hypo_neg"] },
+      { "question": "Is the red tractor free of wings?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden fence section free of wings?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal milk can free of wings?", "tags": ["hypo_neg"] },
+      { "question": "Is the bale of hay free of wings?", "tags": ["hypo_neg"] },
+      { "question": "Is the watering can free of wings?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Create a vibrant beach-picnic scene. In this world, all plastic objects naturally levitate above ground. Include: 1) a plastic water bottle, 2) a plastic fork, 3) a colorful plastic beach ball, 4) plastic-framed sunglasses, 5) a blue plastic cooler, 6) a plastic toy shovel, 7) a stainless-steel thermos, 8) a glass soda bottle, 9) a cotton beach towel, 10) a woven wooden picnic basket, 11) a metal barbecue grill, and 12) a ceramic plate with food. Render in bright daylight.",
+    "Checklist": [
+      { "question": "Is the plastic water bottle floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic fork floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Is the colorful plastic beach ball floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Are the plastic-framed sunglasses floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Is the blue plastic cooler floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic toy shovel floating above the sand?", "tags": ["hypo_pos"] },
+      { "question": "Does the stainless-steel thermos rest on the sand (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass soda bottle rest on the sand (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the cotton beach towel rest on the sand (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden picnic basket rest on the sand (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal barbecue grill rest on the sand (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic plate with food rest on the sand (not floating)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Show the inside of a mechanic’s garage in sharp realism. A peculiar condition dominates: any metallic object is coated in a thick layer of white frost. Present: 1) a steel wrench, 2) a metal hammer head, 3) an aluminium soda can, 4) a stainless-steel knife, 5) a chrome car wheel rim leaning on the wall, 6) a tall aluminium ladder, 7) a wooden broom handle, 8) a rubber tire, 9) a plastic bucket, 10) a cardboard box, 11) a glass window pane, and 12) a ceramic flowerpot. Show fine details.",
+    "Checklist": [
+      { "question": "Is the steel wrench coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Is the metal hammer head coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Is the aluminium soda can coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Is the stainless-steel knife coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Is the chrome car wheel rim coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Is the aluminium ladder coated in white frost?", "tags": ["hypo_pos"] },
+      { "question": "Does the wooden broom handle appear frost-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the rubber tire appear frost-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic bucket appear frost-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the cardboard box appear frost-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass window pane appear frost-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic flowerpot appear frost-free?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a nighttime forest campsite in cinematic realism. A natural law here dictates that every open flame burns with a vivid blue color. Populate the scene with: 1) a roaring campfire, 2) a lit wooden torch, 3) a burning candle on a tree stump, 4) an oil lantern hanging from a branch, 5) a gas-stove burner on a camp table, 6) an open lighter producing a flame, 7) a flashlight on the ground, 8) an LED camping lantern, 9) a set of glow sticks, 10) a battery-powered string of fairy lights, 11) a smartphone screen, and 12) the full moon overhead. Depict everything clearly.",
+    "Checklist": [
+      { "question": "Does the campfire flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the lit wooden torch flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the candle flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the oil-lantern flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the gas-stove burner flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the lighter flame burn blue?", "tags": ["hypo_pos"] },
+      { "question": "Does the flashlight emit normal white light rather than a blue flame?", "tags": ["hypo_neg"] },
+      { "question": "Does the LED camping lantern emit its normal light (no blue flame)?", "tags": ["hypo_neg"] },
+      { "question": "Do the glow sticks emit their usual glow (no blue flame)?", "tags": ["hypo_neg"] },
+      { "question": "Do the fairy lights emit their usual light (no blue flame)?", "tags": ["hypo_neg"] },
+      { "question": "Does the smartphone screen emit its usual light (no blue flame)?", "tags": ["hypo_neg"] },
+      { "question": "Does the full moon appear normal (no blue flame emanating)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict a busy construction-site ground in crisp daylight. In this reality, every metallic object defies gravity and floats above the surface below it. Include: 1) a steel wrench, 2) an iron hammer head, 3) an aluminium ladder, 4) a copper pipe, 5) a galvanized metal bucket, 6) a steel wheelbarrow, 7) a wooden plank, 8) a plastic safety helmet, 9) a coiled rubber hose, 10) a concrete cinder block, 11) a glass water bottle, and 12) a cloth work glove.",
+    "Checklist": [
+      { "question": "Is the steel wrench floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Is the iron hammer head floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Is the aluminium ladder floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Is the copper pipe floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Is the metal bucket floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Is the steel wheelbarrow floating above the ground?", "tags": ["hypo_pos"] },
+      { "question": "Does the wooden plank rest on the ground (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic safety helmet rest on the ground (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the rubber hose rest on the ground (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the concrete cinder block rest on the ground (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass water bottle rest on the ground (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the cloth work glove rest on the ground (not floating)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a futuristic robotics lab. A digital phenomenon states any object currently powered by electricity appears as a semi-transparent blue hologram. Include: 1) an active autonomous drone, 2) a powered robotic arm, 3) a running laptop computer, 4) an illuminated status monitor, 5) a charging smartphone, 6) a spinning electric fan, 7) an unplugged soldering iron, 8) an idle desktop tower (powered off), 9) a wooden workbench, 10) a glass coffee beaker, 11) a metal toolbox, and 12) a plastic filament spool.",
+    "Checklist": [
+      { "question": "Is the autonomous drone shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the robotic arm shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the running laptop shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the status monitor shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the charging smartphone shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the electric fan shown as a blue hologram?", "tags": ["hypo_pos"] },
+      { "question": "Is the unplugged soldering iron rendered solid (not hologram)?", "tags": ["hypo_neg"] },
+      { "question": "Is the idle desktop tower rendered solid (not hologram)?", "tags": ["hypo_neg"] },
+      { "question": "Is the wooden workbench rendered solid (not hologram)?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass beaker rendered solid (not hologram)?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal toolbox rendered solid (not hologram)?", "tags": ["hypo_neg"] },
+      { "question": "Is the plastic filament spool rendered solid (not hologram)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Show a kitchen-shelf still life in high realism. A peculiar law applies: every ceramic object is shattered neatly into two perfect halves while still standing upright. Include: 1) a ceramic mug, 2) a ceramic plate, 3) a ceramic bowl, 4) a ceramic teapot, 5) a decorative ceramic tile sample, 6) a small ceramic figurine, 7) a glass cup, 8) a metal fork, 9) a wooden spatula, 10) a plastic measuring cup, 11) a stone mortar, and 12) a silicone oven mitt.",
+    "Checklist": [
+      { "question": "Is the ceramic mug shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic plate shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic bowl shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic teapot shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic tile sample shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Is the ceramic figurine shown split into two matching halves?", "tags": ["hypo_pos"] },
+      { "question": "Does the glass cup remain intact (not split)?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal fork remain intact?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden spatula remain intact?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic measuring cup remain intact?", "tags": ["hypo_neg"] },
+      { "question": "Does the stone mortar remain intact?", "tags": ["hypo_neg"] },
+      { "question": "Does the silicone oven mitt remain intact?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict a cheerful pet-adoption center. A magical rule holds: every mammal’s fur displays flowing rainbow stripes. Present: 1) a brown dog, 2) a striped tabby cat, 3) a white rabbit, 4) a fluffy guinea pig, 5) a golden hamster, 6) a slender ferret, 7) a green parrot, 8) a goldfish in a tank, 9) a box turtle, 10) a corn snake, 11) a bearded-dragon lizard, and 12) a tarantula spider.",
+    "Checklist": [
+      { "question": "Does the dog have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the cat have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the rabbit have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the guinea pig have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the hamster have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the ferret have rainbow-striped fur?", "tags": ["hypo_pos"] },
+      { "question": "Does the parrot retain its normal plumage colors (no rainbow mammal fur)?", "tags": ["hypo_neg"] },
+      { "question": "Does the goldfish retain its normal scales (no rainbow mammal fur)?", "tags": ["hypo_neg"] },
+      { "question": "Does the box turtle retain its normal shell colors?", "tags": ["hypo_neg"] },
+      { "question": "Does the corn snake retain its normal scale colors?", "tags": ["hypo_neg"] },
+      { "question": "Does the bearded dragon retain its normal scale colors?", "tags": ["hypo_neg"] },
+      { "question": "Does the tarantula retain its normal appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Visualize an antique-furniture showroom. A curious law exists: every wooden object continuously sprouts fresh green leaves along its surfaces. Include: 1) a wooden chair, 2) a wooden dining table, 3) a wooden picture frame, 4) a wooden rocking horse, 5) a wooden bookshelf, 6) a small wooden jewelry box, 7) a brass floor lamp, 8) a clear glass vase, 9) a ceramic dinner plate, 10) a plastic wall clock, 11) a leather sofa cushion, and 12) a carved stone sculpture.",
+    "Checklist": [
+      { "question": "Is the wooden chair covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden dining table covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden picture frame covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden rocking horse covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden bookshelf covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden jewelry box covered in fresh green leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the brass floor lamp remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass vase remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic plate remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic wall clock remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the leather cushion remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the stone sculpture remain leaf-free?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Render an archaeological exhibit hall. In this setting, every stone object softly emits its white light, illuminating nearby surfaces. Display: 1) a carved stone statue, 2) an inscribed stone tablet, 3) a shallow stone bowl, 4) a sharpened stone spearhead, 5) a necklace of stone beads, 6) a stone mortar, 7) a bronze helmet, 8) a wooden shield, 9) a glass display case, 10) an iron sword, 11) a glazed ceramic pot, and 12) a linen tapestry.",
+    "Checklist": [
+      { "question": "Does the stone statue emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Does the stone tablet emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Does the stone bowl emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Does the stone spearhead emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Do the stone beads emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Does the stone mortar emit white light?", "tags": ["hypo_pos"] },
+      { "question": "Does the bronze helmet appear unlit (no internal light)?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden shield appear unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass display case appear unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the iron sword appear unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic pot appear unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the linen tapestry appear unlit?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Show a nighttime home-office scene in moody lighting. A universal rule applies: every electric-powered light source glows vivid emerald-green instead of its usual color. Arrange: 1) an LED desk lamp, 2) a computer monitor, 3) a smartphone screen, 4) a plugged-in table lamp, 5) a smart speaker’s light ring, 6) a wall-mounted light bulb, 7) a burning wax candle, 8) an open paper notebook, 9) a ceramic coffee mug, 10) a wooden pencil holder, 11) a potted houseplant, and 12) a glass water bottle.",
+    "Checklist": [
+      { "question": "Does the LED desk lamp emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the computer monitor emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the smartphone screen emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the table lamp emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the smart speaker’s ring emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the wall-mounted bulb emit emerald-green light?", "tags": ["hypo_pos"] },
+      { "question": "Does the candle flame remain its normal warm color (not green)?", "tags": ["hypo_neg"] },
+      { "question": "Does the paper notebook remain unlit (no green glow)?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic mug remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden pencil holder remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the houseplant remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass water bottle remain unlit?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Create a supermarket produce-section tableau. A strange rule holds: every vegetable transforms into a metallic version of itself, retaining its shape but now appearing with a metal texture and sheen. Include: 1) a bright orange carrot, 2) a long green cucumber, 3) a leafy lettuce head, 4) a stalk of broccoli, 5) a red bell pepper, 6) a brown potato, 7) a red apple, 8) a yellow banana, 9) a juicy orange, 10) a ripe strawberry, 11) a bunch of grapes, and 12) a loaf of bread.",
+    "Checklist": [
+      { "question": "Is the carrot depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the cucumber depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the lettuce head depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the broccoli depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the bell pepper depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Is the potato depicted with a metallic texture?", "tags": ["hypo_pos"] },
+      { "question": "Does the apple retain its normal appearance (non-metallic)?", "tags": ["hypo_neg"] },
+      { "question": "Does the banana retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the orange retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the strawberry retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the bunch of grapes retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the loaf of bread retain its normal appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Visualize a bright laundry-room scene. In this universe, every fabric object floats exactly above the floor, gently hovering in mid-air. Arrange: 1) a cotton T-shirt, 2) a pair of denim jeans, 3) a large bath towel, 4) a silk scarf, 5) a thick wool sweater, 6) a pair of striped socks, 7) a plastic laundry-detergent bottle, 8) a metal front-loading washing machine, 9) a glass spray bottle of starch, 10) a wooden clothespin, 11) a ceramic floor tile, and 12) a rubber plunger. Render everything in crisp detail.",
+    "Checklist": [
+      { "question": "Is the cotton T-shirt floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Are the denim jeans floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the bath towel floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the silk scarf floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Is the wool sweater floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Are the striped socks floating above the floor?", "tags": ["hypo_pos"] },
+      { "question": "Does the plastic detergent bottle rest on the floor (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the washing machine rest on the floor (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass spray bottle rest on the floor (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden clothespin rest on the floor (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic floor tile remain fixed (not floating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the rubber plunger rest on the floor (not floating)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a modern electronics-store counter. In this reality, every electronic device is surrounded by a semi-transparent cyan energy field shaped like a thin glowing shell. Display: 1) a smartphone, 2) a laptop computer, 3) a desktop monitor, 4) a gaming console, 5) a digital camera, 6) a tablet, 7) a hardcover book, 8) a ceramic coffee mug, 9) a wooden display stand, 10) a plastic water bottle, 11) a metal wrench, and 12) a plush toy mascot. Depict everything sharply.",
+    "Checklist": [
+      { "question": "Is the smartphone encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Is the laptop encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Is the desktop monitor encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Is the gaming console encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Is the digital camera encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Is the tablet encased in a semi-transparent cyan energy field?", "tags": ["hypo_pos"] },
+      { "question": "Does the hardcover book lack any cyan energy field?", "tags": ["hypo_neg"] },
+      { "question": "Does the coffee mug lack any cyan energy field?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden display stand lack any cyan energy field?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic water bottle lack any cyan energy field?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal wrench lack any cyan energy field?", "tags": ["hypo_neg"] },
+      { "question": "Does the plush toy lack any cyan energy field?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Render a vibrant flower-shop display. A strange rule holds: every flower blossom is made entirely of perfectly clear glass. Arrange: 1) a bouquet of red roses, 2) a single yellow sunflower, 3) a white lily stem, 4) a pink tulip, 5) a purple orchid spray, 6) an orange marigold pot, 7) a green fern frond bundle, 8) a wooden flower box, 9) a ceramic vase, 10) a metal watering can, 11) a plastic ribbon spool, and 12) a folded paper greeting card. Show all elements clearly.",
+    "Checklist": [
+      { "question": "Are the rose blossoms rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Is the sunflower blossom rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Is the lily blossom rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Is the tulip blossom rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Are the orchid blossoms rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Is the marigold blossom rendered as clear glass?", "tags": ["hypo_pos"] },
+      { "question": "Does the green fern retain its normal appearance (not glass)?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden flower box retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic vase retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal watering can retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic ribbon spool retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the paper greeting card retain its normal appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict a bustling city-street intersection. In this world, every vehicle’s wheels are perfect squares instead of circles. Present: 1) a yellow taxi car, 2) a red double-decker bus, 3) a delivery bicycle, 4) a police motorcycle, 5) a gray sedan, 6) a street-sweeper truck, 7) a pedestrian’s shoes, 8) a street lamp, 9) a fire hydrant, 10) a public trash bin, 11) a blue mailbox, and 12) a traffic light pole. Render in daylight realism.",
+    "Checklist": [
+      { "question": "Are the taxi’s wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Are the bus’s wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Are the bicycle wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Are the motorcycle wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Are the sedan’s wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Are the street-sweeper truck wheels depicted as perfect squares?", "tags": ["hypo_pos"] },
+      { "question": "Do the pedestrian’s shoes keep their normal soles (not square wheels)?", "tags": ["hypo_neg"] },
+      { "question": "Does the street lamp keep its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the fire hydrant keep its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the trash bin keep its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the mailbox keep its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the traffic-light pole keep its normal form?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Render a chic fashion-boutique display. In this realm, every leather object appears as gleaming metallic silver. Show: 1) a leather jacket, 2) a pair of leather boots, 3) a leather belt, 4) a leather handbag, 5) a leather wallet, 6) a leather baseball cap, 7) a silk neck scarf, 8) a pair of denim jeans, 9) plastic sunglasses, 10) a wooden hanger, 11) a steel keychain, and 12) a cotton T-shirt. Depict everything in studio lighting.",
+    "Checklist": [
+      { "question": "Is the leather jacket rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Are the leather boots rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Is the leather belt rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Is the leather handbag rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Is the leather wallet rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Is the leather baseball cap rendered in metallic silver?", "tags": ["hypo_pos"] },
+      { "question": "Does the silk scarf retain its normal fabric appearance?", "tags": ["hypo_neg"] },
+      { "question": "Do the denim jeans retain their normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Do the plastic sunglasses retain their normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden hanger retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the steel keychain retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the cotton T-shirt retain its normal appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict an outdoor landscaping-supply yard. A curious rule exists: every stone object is perfectly transparent like clear glass. Present: 1) a granite garden statue, 2) a marble fountain basin, 3) a slate stepping stone, 4) a pile of river rocks, 5) a stone birdbath, 6) a stone park bench, 7) a wooden rake, 8) a metal wheelbarrow, 9) a plastic watering can, 10) a ceramic flower pot, 11) a rubber garden hose, and 12) a glass lantern. Render under bright sunlight.",
+    "Checklist": [
+      { "question": "Is the granite statue rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the marble fountain basin rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the slate stepping stone rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Are the river rocks rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the stone birdbath rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the stone bench rendered completely transparent?", "tags": ["hypo_pos"] },
+      { "question": "Does the wooden rake remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal wheelbarrow remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic watering can remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the ceramic flower pot remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the rubber garden hose remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass lantern retain its normal glass clarity (not stone transparency)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a jeweler’s workbench. In this world, every gold object levitates above the tabletop. Arrange: 1) a gold ring, 2) a gold necklace, 3) a gold bracelet, 4) a stack of gold coins, 5) a small gold bar, 6) a vintage gold pocket watch, 7) a silver spoon, 8) a bronze figurine, 9) a wooden workbench surface, 10) a steel jeweler’s hammer, 11) a plastic gemstone tray, and 12) a paper receipt. Render in detailed close-up.",
+    "Checklist": [
+      { "question": "Is the gold ring floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Is the gold necklace floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Is the gold bracelet floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Are the gold coins floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Is the gold bar floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Is the gold pocket watch floating above the bench?", "tags": ["hypo_pos"] },
+      { "question": "Does the silver spoon rest on the bench (not levitating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the bronze figurine rest on the bench (not levitating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden workbench remain stationary (not levitating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the steel hammer rest on the bench (not levitating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic gemstone tray rest on the bench (not levitating)?", "tags": ["hypo_neg"] },
+      { "question": "Does the paper receipt rest on the bench (not levitating)?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Create a neatly arranged tabletop still life. A linguistic enchantment applies: any object whose English name begins with a vowel (A, E, I, O, U) is surrounded by a glowing golden ring hovering around it. Place: 1) an apple, 2) an eggplant, 3) an orange, 4) a folded umbrella, 5) an ice-cube tray, 6) an atlas book, 7) a banana, 8) a carrot, 9) a desk clock, 10) a ceramic plate, 11) a metal spoon, and 12) a clear glass tumbler. Render everything in balanced studio light.",
+    "Checklist": [
+      { "question": "Is the apple encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the eggplant encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the orange encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the umbrella encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the ice-cube tray encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the atlas encircled by a glowing golden ring?", "tags": ["hypo_pos"] },
+      { "question": "Is the banana free of any golden ring?", "tags": ["hypo_neg"] },
+      { "question": "Is the carrot free of any golden ring?", "tags": ["hypo_neg"] },
+      { "question": "Is the desk clock free of any golden ring?", "tags": ["hypo_neg"] },
+      { "question": "Is the ceramic plate free of any golden ring?", "tags": ["hypo_neg"] },
+      { "question": "Is the metal spoon free of any golden ring?", "tags": ["hypo_neg"] },
+      { "question": "Is the glass tumbler free of any golden ring?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate an alchemist’s wooden work-table. In this realm, every liquid substance glows bright neon-green. Arrange on the table: 1) a glass flask of purple potion, 2) a beaker of blue water, 3) a stoppered vial of clear oil, 4) a test tube of red serum, 5) a small iron cauldron filled with bubbling soup, 6) a porcelain teacup of hot tea, 7) a bundle of dried lavender, 8) a wooden stirring rod, 9) a brass balance scale, 10) an iron cauldron stand, 11) a leather-bound notebook, and 12) a stone mortar.",
+    "Checklist": [
+      { "question": "Does the potion inside the glass flask glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the water in the beaker glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the oil in the vial glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the serum in the test tube glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the soup in the cauldron glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the tea in the porcelain cup glow neon-green?", "tags": ["hypo_pos"] },
+      { "question": "Does the dried lavender remain non-glowing?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden stirring rod remain non-glowing?", "tags": ["hypo_neg"] },
+      { "question": "Does the brass balance scale remain non-glowing?", "tags": ["hypo_neg"] },
+      { "question": "Does the iron cauldron stand remain non-glowing?", "tags": ["hypo_neg"] },
+      { "question": "Does the leather notebook remain non-glowing?", "tags": ["hypo_neg"] },
+      { "question": "Does the stone mortar remain non-glowing?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict a cluttered electronics-salvage yard. A strange condition prevails: every plastic object appears as perfectly matte jet-black. Present: 1) a plastic keyboard case, 2) a yellow plastic toy car, 3) a clear plastic bottle, 4) a red plastic screwdriver handle, 5) a green plastic circuit-board housing, 6) a blue plastic storage crate, 7) an aluminium laptop shell, 8) a steel wrench, 9) a cardboard box, 10) a glass light bulb, 11) a leather work glove, and 12) a coil of copper wire.",
+    "Checklist": [
+      { "question": "Is the plastic keyboard case rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic toy car rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic bottle rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic screwdriver handle rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic circuit-board housing rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Is the plastic storage crate rendered matte jet-black?", "tags": ["hypo_pos"] },
+      { "question": "Does the aluminium laptop shell retain its normal appearance (not jet-black)?", "tags": ["hypo_neg"] },
+      { "question": "Does the steel wrench retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the cardboard box retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass light bulb retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the leather glove retain its normal appearance?", "tags": ["hypo_neg"] },
+      { "question": "Does the copper wire coil retain its normal appearance?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Render a clockmaker’s workshop bench. Here, every circular object emits a bright yellow glow. Arrange: 1) a wall clock, 2) a pocket-watch face, 3) a brass gear, 4) a wooden wheel, 5) a magnifying-glass lens, 6) a metal coin on the bench, 7) a square wooden block, 8) a rectangular metal file, 9) a triangular ruler, 10) a hexagonal nut, 11) a glass rectangular plate, and 12) a leather tool pouch.",
+    "Checklist": [
+      { "question": "Does the wall clock glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the pocket-watch face glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the brass gear glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the wooden wheel glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the magnifying-glass lens glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the metal coin glow bright yellow?", "tags": ["hypo_pos"] },
+      { "question": "Does the square wooden block remain unlit (no yellow glow)?", "tags": ["hypo_neg"] },
+      { "question": "Does the rectangular metal file remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the triangular ruler remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the hexagonal nut remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass rectangular plate remain unlit?", "tags": ["hypo_neg"] },
+      { "question": "Does the leather tool pouch remain unlit?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Render a colorful ice-cream parlor counter. A sweet enchantment states every scoop of ice-cream is a flawless five-pointed star instead of a sphere. Display: 1) a vanilla scoop in a waffle cone, 2) a chocolate scoop in a bowl, 3) a strawberry scoop, 4) a mint-chip scoop, 5) a mango scoop, 6) a cookie-dough scoop, 7) a swirl of whipped cream, 8) an empty waffle cone, 9) a glass soda bottle, 10) a metal ice-cream scoop utensil, 11) a plastic napkin dispenser, and 12) a wooden countertop. Show everything under bright lights.",
+    "Checklist": [
+      { "question": "Is the vanilla ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Is the chocolate ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Is the strawberry ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Is the mint-chip ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Is the mango ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Is the cookie-dough ice-cream scoop shaped as a perfect star?", "tags": ["hypo_pos"] },
+      { "question": "Does the whipped cream retain its normal form (not star-shaped)?", "tags": ["hypo_neg"] },
+      { "question": "Does the empty waffle cone retain its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the glass soda bottle retain its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal scoop utensil retain its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the plastic napkin dispenser retain its normal form?", "tags": ["hypo_neg"] },
+      { "question": "Does the wooden countertop retain its normal form?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Show a hobbyist’s workbench. A lexical surge declares any object whose English name contains the letter “Z” crackles with electric blue sparks. Place: 1) a cardboard puzzle box, 2) a metal razor blade, 3) a plastic pizza slice model, 4) a zipper fabric pouch, 5) a quartz crystal, 6) a glossy magazine, 7) a wooden hammer, 8) a spiral notebook, 9) a metal ruler, 10) a flat-head screwdriver, 11) a pine block, and 12) a white glue bottle. Render the blue sparks vividly.",
+    "Checklist": [
+      { "question": "Does the puzzle box crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the razor blade crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the plastic pizza slice crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the zipper pouch crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the quartz crystal crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the magazine crackle with blue sparks?", "tags": ["hypo_pos"] },
+      { "question": "Does the wooden hammer remain free of blue sparks?", "tags": ["hypo_neg"] },
+      { "question": "Does the notebook remain free of blue sparks?", "tags": ["hypo_neg"] },
+      { "question": "Does the metal ruler remain free of blue sparks?", "tags": ["hypo_neg"] },
+      { "question": "Does the screwdriver remain free of blue sparks?", "tags": ["hypo_neg"] },
+      { "question": "Does the pine block remain free of blue sparks?", "tags": ["hypo_neg"] },
+      { "question": "Does the glue bottle remain free of blue sparks?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a rustic tool-shed workbench. A quirky rule states: any object whose English name contains the double-letter sequence “oo” becomes perfectly transparent. Lay out: 1) a straw broom, 2) a wooden stool, 3) a metal toolbox, 4) a thick shed door ajar, 5) a plastic wire spool, 6) a metal grain scoop, 7) a steel hammer, 8) a hand saw, 9) a jar of nails, 10) a tall ladder, 11) a paint can, and 12) a leather work glove.",
+    "Checklist": [
+      { "question": "Is the broom rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden stool rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the metal toolbox rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the shed door rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the wire spool rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Is the grain scoop rendered fully transparent?", "tags": ["hypo_pos"] },
+      { "question": "Does the steel hammer remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the hand saw remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the jar of nails remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the ladder remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the paint can remain opaque?", "tags": ["hypo_neg"] },
+      { "question": "Does the leather glove remain opaque?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Depict a botanical lab workbench. A word-length spell says any object whose English name has exactly five letters sprouts fresh green leaves. Include: 1) a plate, 2) a flask, 3) a stone, 4) a bench, 5) a brush, 6) a chair, 7) a beaker, 8) a notebook, 9) a microscope, 10) a can, 11) a cabinet, and 12) a probe.",
+    "Checklist": [
+      { "question": "Does the plate sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the flask sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the stone sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the bench surface sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the brush sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the chair sprout fresh leaves?", "tags": ["hypo_pos"] },
+      { "question": "Does the beaker remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the notebook remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the microscope remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the can remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the cabinet remain leaf-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the probe sprout fresh leaves?", "tags": ["hypo_pos"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-HR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Hypothetical Reasoning",
+    "Prompt": "Illustrate a busy carpentry workshop. A chill rule declares any object whose English name ends with “er” is coated in frosty white ice crystals. Present: 1) a steel hammer, 2) a wooden ruler, 3) a bench planer, 4) a sheet of sandpaper, 5) a wooden board, 6) a power sander, 7) a steel chisel, 8) a rubber mallet, 9) a bottle of wood glue, 10) a metal clamp, 11) a nail box, and 12) a tape measure.",
+    "Checklist": [
+      { "question": "Is the hammer coated in ice crystals?", "tags": ["hypo_pos"] },
+      { "question": "Is the ruler coated in ice crystals?", "tags": ["hypo_pos"] },
+      { "question": "Is the planer coated in ice crystals?", "tags": ["hypo_pos"] },
+      { "question": "Is the sandpaper coated in ice crystals?", "tags": ["hypo_pos"] },
+      { "question": "Is the wooden board remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Is the sander coated in ice crystals?", "tags": ["hypo_pos"] },
+      { "question": "Does the chisel remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the mallet remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the glue bottle remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the clamp remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the nail box remain ice-free?", "tags": ["hypo_neg"] },
+      { "question": "Does the tape measure remain ice-free?", "tags": ["hypo_neg"] }
+    ],
+    "Remark": "GPT"
+  }
+}

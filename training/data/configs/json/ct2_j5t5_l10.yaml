@@ -1,0 +1,37 @@
+# Copyright (c) 2025 ByteDance Ltd. and/or its affiliates
+# SPDX-License-Identifier: Apache-2.0
+#
+# Continued-training (CT) recipe: mix natural-language T2I pretrain data
+# with structured-prompt T2I data at 1:1 ratio (j5t5), using L10 (full
+# ground-truth) structured prompts.
+#
+# Each `dataset_names: - <name>: [N]` line means "sample N parquet shards
+# from this dataset". `<DATASET_NAME>` placeholders must be defined in
+# `data/dataset_info.py` before training.
+
+unified_t2i_pretrain:
+  dataset_names:
+  - <DATASET_NAME_1>: [4000000]
+  - <DATASET_NAME_2>: [3000000]
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+    max_pixels: 1048576 # 1024x1024
+  max_aspect_ratio: 4.0
+  is_mandatory: true
+  weight: 10
+
+t2i_ct_json:
+  dataset_names:
+  - <DATASET_NAME_3>: [1408]
+  sampling_config_name: l10
+  json_single_quote: True
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1024
+    min_image_size: 512
+    max_pixels: 1048576 # 1024x1024
+  max_aspect_ratio: 4.0
+  is_mandatory: true
+  weight: 10

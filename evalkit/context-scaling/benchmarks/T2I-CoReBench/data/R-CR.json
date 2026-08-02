@@ -1,0 +1,1184 @@
+{
+  "R-CR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A professional chef is preparing a flame-seared steak in a busy kitchen while simultaneously chopping onions on a wooden cutting board, with a large pot of water reaching boiling point on the gas stove, and fresh bread dough rising in a warm corner near the oven.",
+    "Checklist": [
+      { "question": "Is the chef holding a knife while chopping onions?", "tags": [] },
+      { "question": "Is there a visible flame or heat source under the steak?", "tags": [] },
+      { "question": "Are there bubbles or steam visible from the boiling water?", "tags": [] },
+      { "question": "Are there chopped onion pieces visible on the cutting board?", "tags": [] },
+      { "question": "Does the surface of the steak show a dark, charred or browned crust from the searing?", "tags": [] },
+      { "question": "Is the rising dough contained within a bowl or other container?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A fire has broken out on the upper floors of a multi-story building in a city. Below on the street, a full-scale emergency response is underway as firefighters actively work to control the blaze.",
+    "Checklist": [
+      { "question": "Are the firefighters wearing heavy protective suits, helmets, and possibly breathing apparatus?", "tags": [] },
+      { "question": "Is a ladder truck positioned near the building with its ladder extended up towards the burning floors?", "tags": [] },
+      { "question": "Are powerful streams of water being sprayed from fire hoses towards the building?", "tags": [] },
+      { "question": "Are there emergency vehicles, like fire engines or ambulances, on the street with their emergency lights flashing?", "tags": [] },
+      { "question": "Are bright orange or red flames visible coming from the windows of the upper floors?", "tags": [] },
+      { "question": "Is a large amount of thick, dark smoke billowing from the burning parts of the building?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a Canadian sugar bush on a bright day in late winter, the annual maple sap harvest is underway. The snow on the forest floor is beginning to melt under the sun, creating the ideal temperature conditions for the sap to flow. Farmers are moving through the forest, tending to the trees.",
+    "Checklist": [
+      { "question": "Are there metal spiles (taps) inserted into the trunks of the maple trees?", "tags": [] },
+      { "question": "Is there a collection system, such as a metal bucket or a plastic bag, placed under each spile to catch the sap?", "tags": [] },
+      { "question": "Are the branches of the trees depicted as bare and leafless, typical of late winter during the maple sap harvest?", "tags": [] },
+      { "question": "Are the farmers dressed in warm winter clothing, such as heavy jackets, hats, and boots, appropriate for the snowy, late-winter conditions?", "tags": [] },
+      { "question": "Is there still a significant layer of snow on the ground throughout the forest, possibly with some patches of melted ground visible?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Japanese rice farmers are planting seedlings in flooded terraced fields during spring while carefully spacing each plant by hand, with water buffalo helping to plow the muddy soil, and irrigation channels directing mountain water flow between the field levels.",
+    "Checklist": [
+      { "question": "Are the farmers bending over or kneeling to plant individual rice seedlings by hand?", "tags": [] },
+      { "question": "Is the water buffalo pulling a traditional plowing tool while working the muddy soil?", "tags": [] },
+      { "question": "Are small green rice seedlings spaced evenly in rows across the flooded field surface?", "tags": [] },
+      { "question": "Are the fields arranged in a step-like fashion, with distinct drops in elevation from one terrace to the next?", "tags": [] },
+      { "question": "Are the farmers' lower legs and clothing visibly wet and muddy from wading in the field?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A gardener is raking fallen autumn leaves in their backyard while apple trees are dropping ripe fruit, with a compost pile decomposing in the corner, and migrating birds gathering on power lines preparing for their journey south.",
+    "Checklist": [
+      { "question": "Are the fallen leaves displaying autumn colors such as red, orange, or yellow?", "tags": [] },
+      { "question": "Are some apples visible on the ground beneath the apple trees?", "tags": [] },
+      { "question": "Is the gardener holding a rake with tines or sweaper for gathering leaves?", "tags": [] },
+      { "question": "Is the gardener dressed in clothing appropriate for the cool autumn weather?", "tags": [] },
+      { "question": "Is there a large group or flock of birds on the power lines, rather than just one or two?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. An Indian bride and groom are participating in a traditional sacred fire ritual during their wedding ceremony, with the priest chanting mantras while family members throw flower petals, and traditional musicians playing drums and other instruments in the background, and offerings placed all around the sacred fire.",
+    "Checklist": [
+      { "question": "Is there a sacred fire (agni) burning in the center of the ceremony?", "tags": [] },
+      { "question": "Are the bride and groom wearing elaborate traditional Indian wedding attire?", "tags": [] },
+      { "question": "Are the musicians holding traditional Indian instruments like tabla or dhol?", "tags": [] },
+      { "question": "Is the priest wearing traditional religious garments or robes?", "tags": [] },
+      { "question": "Are the offerings placed around the sacred fire traditional items such as rice, ghee, flowers, or coconuts?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. An American family is gathered around the dining table for Thanksgiving dinner, with the main dish and traditional side dishes set out, most common traditional dessert placed nearby for dessert, and the table decorated with autumn-themed ornaments. The family members are bowing their heads in prayer, following the holiday tradition, as the meal is about to begin.",
+    "Checklist": [
+      { "question": "Is the main dish clearly depicted as a roast turkey on the table?", "tags": [] },
+      { "question": "Are the side dishes shown consistent with traditional Thanksgiving foods, such as mashed potatoes, stuffing, green bean casserole, or cornbread?", "tags": [] },
+      { "question": "Are the family members shown using traditional prayer gestures, such as clasping their hands or holding hands, while bowing their heads in prayer?", "tags": [] },
+      { "question": "Is the traditional dessert on the table specifically depicted as a pumpkin pie, consistent with common Thanksgiving customs?", "tags": [] },
+      { "question": "Are knives and forks clearly placed on the dining table, as would be typical for a Thanksgiving dinner setting?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A farmer is milking cows in the barn during early morning while chickens peck at scattered grain in the farmyard, with a rooster announcing the dawn, and newborn calves staying close to their mothers in the spring pasture.",
+    "Checklist": [
+      { "question": "Are the farmer's hands positioned on the cow's udder to perform the milking?", "tags": [] },
+      { "question": "Is there a bucket or container positioned to collect the milk?", "tags": [] },
+      { "question": "Does the rooster have a prominent red comb on its head?", "tags": [] },
+      { "question": "Is the rooster stretching its neck upwards as it crows?", "tags": [] },
+      { "question": "Is the early morning sun visible low on the horizon, consistent with dawn?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A Chinese family is celebrating Chinese New Year by setting off firecrackers in their courtyard while elders give lucky money (Ya Sui Qian) to the children, with traditional lion dancers performing energetic movements, and incense burning at the family altar.",
+    "Checklist": [
+      { "question": "Are there bright flashes of light and sparks visible from the exploding firecrackers?", "tags": [] },
+      { "question": "Are the lion dancers wearing colorful, elaborate lion costumes?", "tags": [] },
+      { "question": "Is there red paper debris on the ground from the exploded firecrackers?", "tags": [] },
+      { "question": "Are the children holding or receiving red envelopes (hongbao)?", "tags": [] },
+      { "question": "Are the burning incense sticks placed upright in an incense burner or a bowl filled with ash?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In the vast, snowy landscape of northern Norway, traditional Sami herders are managing their large reindeer herd. Dressed in their distinctive attire to protect against the cold, they work to move the mass of animals across the tundra. One herder is skillfully preparing to use a traditional lasso.",
+    "Checklist": [
+      { "question": "Is the herd a dense, moving mass of animals, rather than being scattered individuals across the landscape?", "tags": [] },
+      { "question": "Are the Sami herders wearing their traditional gákti, which is characterized by bright colors (like blue and red) and intricate woven patterns on the cuffs and hem?", "tags": [] },
+      { "question": "Are the antlers of the reindeer clearly visible?", "tags": [] },
+      { "question": "Is the landscape predominantly white with snow, with only sparse, hardy vegetation like moss or small shrubs visible?", "tags": [] },
+      { "question": "Is one of the herders holding a suopunki (a traditional Sami lasso), preparing to throw it towards a specific reindeer?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Children are ice skating on a frozen pond during winter while their parents watch from the snowy shore, with a small bonfire crackling nearby for warmth, and bare winter trees surrounding the scene with icicles hanging from their branches.",
+    "Checklist": [
+      { "question": "Are the children wearing ice skates with metal blades?", "tags": [] },
+      { "question": "Is the pond surface solid and white/clear indicating it's frozen?", "tags": [] },
+      { "question": "Are the parents wearing heavy winter coats and warm clothing?", "tags": [] },
+      { "question": "Is wood or fuel visible near or in the bonfire?", "tags": [] },
+      { "question": "Is smoke rising from the bonfire?", "tags": [] },
+      { "question": "Are there scratch marks or blade tracks visible on the ice surface?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Brazilian carnival dancers are performing samba in elaborate feathered costumes while drummers play rhythmic beats, with spectators throwing confetti and cheering, and street vendors selling grilled meat on skewers during the hot summer celebration.",
+    "Checklist": [
+      { "question": "Are the dancers wearing large, elaborate headpieces or back-mounted feather arrangements as part of their costumes?", "tags": [] },
+      { "question": "Are the drummers holding drumsticks or mallets to play their instruments?", "tags": [] },
+      { "question": "Is the ground or street littered with debris, such as confetti or streamers, typical of a large celebration?", "tags": [] },
+      { "question": "Are the street vendors using grills or heat sources to cook the meat?", "tags": [] },
+      { "question": "Are the spectators and vendors dressed in light summer clothing appropriate for the hot weather?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In the Kenyan savanna, a group of young Maasai men, dressed in their vibrant ceremonial attire, are performing the traditional jumping dance (adumu). As one warrior takes his turn, leaping straight into the air from a standing position, other members of the community, including elders, watch on.",
+    "Checklist": [
+      { "question": "Are the warriors wearing their characteristic red shúkàs (cloths) draped over their bodies?", "tags": [] },
+      { "question": "Are the men adorned with elaborate, colorful beaded necklaces, bracelets, and anklets?", "tags": [] },
+      { "question": "Is the warrior who is jumping keeping his body remarkably straight and narrow, with heels not touching the ground upon landing?", "tags": [] },
+      { "question": "Are the other warriors formed in a circle or semi-circle around the jumper, chanting or singing to provide a rhythm?", "tags": [] },
+      { "question": "Are the warriors holding traditional long, thin spears, either participating in the dance with them or resting them nearby?", "tags": [] },
+      { "question": "Is the surrounding landscape a dry, open savanna with acacia trees and tall grasses?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A gardener is digging the soil in springtime while bees collect nectar from blooming fruit trees, with earthworms visible in the freshly turned soil, and butterfly caterpillars feeding on leafy plants nearby.",
+    "Checklist": [
+      { "question": "Is the gardener using a tool, such as a trowel or a spade, to dig the soil", "tags": [] },
+      { "question": "Are the bees positioned on or very close to the flowers?", "tags": [] },
+      { "question": "Is the freshly turned soil visibly clumpy and uneven, rather than smooth and flat?", "tags": [] },
+      { "question": "Do the blossoms on the fruit trees have visible centers (stamens/pistils) where bees would collect nectar?", "tags": [] },
+      { "question": "Are there bite marks or holes in the leaves the caterpillars are on?", "tags": [] },
+      { "question": "Is the gardener kneeling, crouching, or bending over to access the soil for planting?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a sunlit temple courtyard in India, during a cultural festival, classical dancers are performing a vibrant dance. Their elaborate costumes and graceful movements are designed to evoke the image of India's national bird. Musicians sit to the side, providing a live, traditional score for the performance.",
+    "Checklist": [
+      { "question": "Are the dancers' costumes predominantly in shades of iridescent blue and green, reminiscent of a peacock's plumage?", "tags": [] },
+      { "question": "Are the dancers using intricate hand gestures (mudras) and fluid body movements to mimic the graceful motions of a peacock?", "tags": [] },
+      { "question": "Are there musicians on the side of the performance area, playing traditional Indian instruments like a sitar, tabla, or flute?", "tags": [] },
+      { "question": "Are the dancers wearing elaborate traditional jewelry, such as large earrings, necklaces, and bangles, as well as distinct, heavy makeup around their eyes?", "tags": [] },
+      { "question": "Is the performance taking place against the backdrop of traditional Indian temple architecture, such as carved stone pillars or decorated walls?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a traditional Chinese courtyard garden at night, a multi-generational family is gathered for their annual Mid-Autumn celebration. The sky is clear and illuminated, casting a gentle glow over the scene. Soft, warm glows flicker through the trees, their light casting delicate shadows across the stone pathway. On a stone table, they are sharing a special type of traditional pastry, and the air is filled with a sweet, seasonal floral fragrance.",
+    "Checklist": [
+      { "question": "Is the full moon the prominent focal point in the clear night sky?", "tags": [] },
+      { "question": "Are the pastries on the table traditional mooncakes, identifiable by their round shape and intricate, decorative patterns pressed onto the top crust?", "tags": [] },
+      { "question": "Is the garden illuminated by the soft, warm glow of decorative Chinese lanterns hanging from tree branches or the eaves of the house?", "tags": [] },
+      { "question": "Is there a tea set on the table, with small cups, as tea is traditionally served alongside mooncakes?", "tags": [] },
+      { "question": "Is the source of the sweet fragrance in the air blooming osmanthus trees, which have tiny, clustered yellow or white flowers?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Wildlife photographers are capturing images of elephants drinking water at a watering hole during the dry season while vultures circle overhead, with zebras grazing on sparse grass, and a lion pride resting in the shade of acacia trees.",
+    "Checklist": [
+      { "question": "Are the photographers holding cameras with large telephoto lenses?", "tags": [] },
+      { "question": "Are the elephants using their trunks to drink water or spray themselves?", "tags": [] },
+      { "question": "Are the vultures spreading their wings while circling in the sky?", "tags": [] },
+      { "question": "Is there a group of multiple zebras present, not just a single one?", "tags": [] },
+      { "question": "Is the vegetation around the watering hole brown or sparse indicating dry conditions?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Master glassblowers are shaping molten glass by blowing air through long metal pipes while heating the material in intense furnaces, with apprentices gathering glass on the end of rods, and artisans using specialized tools to create intricate designs.",
+    "Checklist": [
+      { "question": "Are the glassblowers' cheeks puffed out while blowing air through the metal pipes?", "tags": [] },
+      { "question": "Is the molten glass glowing orange or red from the intense heat?", "tags": [] },
+      { "question": "Are bright flames visible inside the furnace openings?", "tags": [] },
+      { "question": "Are the apprentices rotating the rods to gather molten glass onto the tips?", "tags": [] },
+      { "question": "Are the artisans holding specialized shaping tools like jacks or paddles?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A farm family is making fresh apple cider by pressing apples in their orchard during harvest season, with fermentation bubbles forming in glass containers, and children collecting fallen apples while wasps are attracted to the sweet juice.",
+    "Checklist": [
+      { "question": "Is the family using a mechanical press or crushing device for the apples?", "tags": [] },
+      { "question": "Are the glass containers for fermentation fitted with airlocks to release gas?", "tags": [] },
+      { "question": "Are the children carrying baskets or containers for collecting apples?", "tags": [] },
+      { "question": "Are the wasps primarily gathered around the apple press or the discarded apple pulp?", "tags": [] },
+      { "question": "Is there a pile of wet, mashed apple pulp (pomace) visible near the press?", "tags": [] },
+      { "question": "Are numerous ripe apples scattered on the ground beneath the apple trees?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Korean martial artists are demonstrating taekwondo techniques by breaking wooden boards with powerful kicks while wearing traditional white uniforms, with spectators sitting respectfully on the floor, and a master instructor counting movements in Korean, with a large South Korean flag hanging in the background.",
+    "Checklist": [
+      { "question": "Are there broken pieces of wood from the board-breaking demonstration?", "tags": [] },
+      { "question": "Does the white taekwondo uniform (dobok) have a V-neck collar?", "tags": [] },
+      { "question": "Are the spectators sitting in cross-legged or kneeling positions on the floor?", "tags": [] },
+      { "question": "Are colored belts visible around the martial artists' waists indicating their ranks?", "tags": [] },
+      { "question": "Is the large South Korean flag correctly depicted with a red-and-blue yin-yang circle in the center and four black trigrams in the corners?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. During the annual Chonburi Buffalo Racing Festival in Thailand, jockeys are skillfully guiding their powerful water buffaloes down a muddy racetrack at full speed. The jockeys, balancing precariously on the backs of the animals, urge them towards the finish line, cheered on by a large crowd.",
+    "Checklist": [
+      { "question": "Are the jockeys riding the buffaloes bareback, without any saddles, clinging directly to the animals as they race?", "tags": [] },
+      { "question": "Is there mud and water visibly being kicked up into the air by the buffaloes' hooves as they charge down the track?", "tags": [] },
+      { "question": "Are the water buffaloes depicted with a red-handled tether or rope typically used to guide them during the Chonburi Buffalo Racing Festival?", "tags": [] },
+      { "question": "Are the jockeys depicted holding whips, as is commonly used to urge the buffaloes during the Chonburi Buffalo Racing Festival?", "tags": [] },
+      { "question": "Are the buffaloes displaying the large, curved horns characteristic of the species?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Emergency room doctors are treating a patient with a broken arm while nurses monitor vital signs on electronic displays, with medical equipment beeping continuously, and paramedics bringing in another patient from a car accident.",
+    "Checklist": [
+      { "question": "Are the doctors wearing professional medical attire such as white coats or scrubs?", "tags": [] },
+      { "question": "Is the patient with the broken arm having their limb supported or immobilized?", "tags": [] },
+      { "question": "Are the doctors wearing surgical gloves while examining the patient?", "tags": [] },
+      { "question": "Are the electronic displays showing lines, numbers, or waveforms indicating vital signs?", "tags": [] },
+      { "question": "Is the second patient being transported into the emergency room on a stretcher or gurney?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. During a festive Oktoberfest celebration in a large tent, German families are gathered at long wooden tables, drinking beer and sharing pretzels while musicians play traditional alpine horns.",
+    "Checklist": [
+      { "question": "Are the musicians' cheeks puffed out while blowing into the alpine horns?", "tags": [] },
+      { "question": "Are the pretzels showing their characteristic twisted, knotted shape?", "tags": [] },
+      { "question": "Are many of the men wearing traditional leather shorts (lederhosen) with suspenders?", "tags": [] },
+      { "question": "Are many of the women wearing traditional dresses with aprons (dirndl)?", "tags": [] },
+      { "question": "Is beer foam visible at the top of the large mugs or steins?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A master potter is shaping clay while students watch the demonstration, with wet clay pieces drying on nearby shelves, and a kiln heating pottery pieces to extremely high temperatures for the firing process.",
+    "Checklist": [
+      { "question": "Are the potter's hands wet and in direct contact with the spinning clay?", "tags": [] },
+      { "question": "Is the clay being shaped placed on the spinning wheel’s throwing plate?", "tags": [] },  
+      { "question": "Is clay splatter or residue visible on the potter's apron or clothing?", "tags": [] },
+      { "question": "Is the kiln closed during the firing process?", "tags": [] },
+      { "question": "Are there visible splatters of clay around the pottery being shaped on the wheel?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Scuba divers are exploring a coral reef underwater while fish swim around them, with diving instructors to communicate, and underwater photographers capturing images of sea turtles gliding through the crystal-clear water.",
+    "Checklist": [
+      { "question": "Are the divers wearing masks that cover their eyes and nose?", "tags": [] },
+      { "question": "Are air bubbles rising upward from the divers' breathing apparatus?", "tags": [] },
+      { "question": "Are the instructors' hands positioned to form specific gesture shapes for signaling?", "tags": [] },
+      { "question": "Are the photographers holding waterproof camera housings or equipment?", "tags": [] },
+      { "question": "Are the sea turtles' flippers extended outwards, consistent with a gliding posture, rather than tucked in?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Arctic explorers are building an emergency snow shelter during a blizzard while their sled dogs huddle together for warmth, with frozen breath visible in the frigid air, and expedition members to cut building blocks from packed snow.",
+    "Checklist": [
+      { "question": "Are the explorers wearing heavy, multi-layered insulated clothing, including hoods and face protection?", "tags": [] },
+      { "question": "Is snow visibly accumulating on the sled dogs' fur as they huddle in the blizzard?", "tags": [] },
+      { "question": "Are the explorers wearing protective goggles to shield their eyes from the blowing snow and ice?", "tags": [] },
+      { "question": "Are there cut, block-shaped pieces of snow on the ground, ready for construction?", "tags": [] },
+      { "question": "Are the explorers using a tool, such as an ice axe or a snow saw, to cut the packed snow?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Greek Orthodox priests are conducting an Easter service by swinging incense burners during liturgical chanting while worshippers hold lit candles, with elaborate golden icons arranged in tiered rows at the front of the church, and traditional Easter bread being blessed at the altar.",
+    "Checklist": [
+      { "question": "Is a priest holding the incense burner (censer) by its long chains, causing it to be in an arc of motion?", "tags": [] },
+      { "question": "Are the priests wearing ornate, embroidered vestments, distinct from everyday clothing?", "tags": [] },
+      { "question": "Are the worshippers using small paper or cardboard discs (bobeches) on their candles to catch dripping wax?", "tags": [] },
+      { "question": "Is an iconostasis (a large screen or wall covered in icons) visible, separating the sanctuary from the main body of the church?", "tags": [] },
+      { "question": "Is the traditional Easter bread (tsoureki) braided and decorated with a red-dyed egg?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Traditional Filipino families are celebrating a traditional wedding ceremony by releasing a kind of birds as symbols of peace while the bride and groom exchange symbolic wedding tokens, with relatives throwing rice grains for prosperity, and musicians playing traditional instruments during the joyous occasion.",
+    "Checklist": [
+      { "question": "Is the groom wearing a Barong Tagalog (a formal, embroidered shirt worn untucked)?", "tags": [] },
+      { "question": "Is the bride wearing a traditional Filipiniana gown, possibly with distinctive 'butterfly sleeves'?", "tags": [] },
+      { "question": "Are the symbolic wedding tokens being exchanged specifically ceremonial coins (the Arrhae) and rings?", "tags": [] },
+      { "question": "Is a ceremonial veil draped over both the bride and groom's shoulders, and/or a decorative cord (yugal) looped around them?", "tags": [] },
+      { "question": "Are the released birds white doves, symbolizing peace?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Indian spice merchants are grinding fresh turmeric and cardamom in traditional stone mortars while customers smell the aromatic powders, with vendors weighing colorful spices on balance scales, and workers roasting whole spices over open flames to enhance their flavors.",
+    "Checklist": [
+      { "question": "Are the merchants using both hands to operate the heavy stone pestles?", "tags": [] },
+      { "question": "Are the customers' noses positioned close to the spices while smelling?", "tags": [] },
+      { "question": "Are bright yellow turmeric powder and green cardamom visible in the grinding mortars?", "tags": [] },
+      { "question": "Are metal weights visible on one side of the balance scales?", "tags": [] },
+      { "question": "Are flames visible under the pans where whole spices are being roasted?", "tags": [] },
+      { "question": "Is aromatic smoke rising from the roasting spices over the flames?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Native American elders are conducting a purification ceremony in a traditional sweat lodge by pouring water over heated stones while participants sit in a circle, with sage burning for spiritual cleansing, and blessing rituals being performed.",
+    "Checklist": [
+      { "question": "Is the sweat lodge a low, dome-shaped structure made of natural materials like bent wood and covered with blankets or hides?", "tags": [] },
+      { "question": "Is there a circular pit dug into the center of the lodge floor that contains the hot stones?", "tags": [] },
+      { "question": "Is the elder using a ladle or a dipper to pour water from a bucket onto the hot stones?", "tags": [] },
+      { "question": "Is white steam or mist rising from the heated stones as water is poured over them?", "tags": [] },
+      { "question": "Are eagle feathers being used as part of the blessing rituals?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-CR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a busy kitchen, a chef is preparing several things at once. A pot of water is at a rolling boil on a gas stove. Beside it, a stick of butter is in a hot skillet. On a cutting board, the chef is chopping tomatoes for a salad. Beside the cutting board, a tray full of ice cubes has been sitting on the counter for a while after being taken out of the freezer.",
+    "Checklist": [
+      { "question": "Are there blue or orange flames visible from the gas stove burner beneath the pot?", "tags": [] },
+      { "question": "Is there steam rising from the surface of the water in the pot?", "tags": [] },
+      { "question": "Is the butter in the skillet in a liquid or partially liquid state?", "tags": [] },
+      { "question": "Is there a knife on the cutting board with the tomatoes?", "tags": [] },
+      { "question": "Is there condensation or small puddles of water on the counter around the ice cube tray?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At a campsite after a recent rain shower, two people are setting up. One person is now hammering a metal tent stake into the ground. The other person is roasting a marshmallow over a campfire. A helium-filled party balloon is tied to a backpack. Two compasses are laid flat on different surfaces: one on a rock and another on a nearby tree stump.",
+    "Checklist": [
+      { "question": "Is the person setting up the tent holding a hammer in their hand?", "tags": [] },
+      { "question": "Is the marshmallow on the stick browned or blackened from the fire?", "tags": [] },
+      { "question": "Is the person roasting the marshmallow holding a long stick or skewer?", "tags": [] },
+      { "question": "Is the helium balloon floating upwards with its string taut?", "tags": [] },
+      { "question": "Are the needles of both compasses pointing in the same direction?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside an artist's studio, an artist is painting with oil paints on a canvas. To their side, the artist just cleaned a brush in a jar of turpentine. On their palette, they have just mixed blue and yellow paint together. On a small table, a half-eaten green apple's flesh is exposed to the air.",
+    "Checklist": [
+      { "question": "Is the canvas supported by an easel?", "tags": [] },
+      { "question": "Is there at least one paintbrush visible in the scene (e.g., in hand, on a table, or in the jar)?", "tags": [] },
+      { "question": "Is the liquid in the turpentine jar discolored by paint pigment?", "tags": [] },
+      { "question": "Has the exposed white flesh of the apple turned brownish?", "tags": [] },
+      { "question": "Is there a patch of green paint on the palette where the blue and yellow paints were mixed?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a snowy street in Quebec, Canada during the Winter Carnival, a vendor is pouring hot maple taffy onto a trough of clean snow. A child is holding a cup of hot chocolate. A spectator has just used a party popper to celebrate. The festival mascot, Bonhomme Carnaval, is joyfully greeting the crowd.",
+    "Checklist": [
+      { "question": "Are there popsicle sticks or small wooden spatulas ready to roll the taffy?", "tags": [] },
+      { "question": "Are the people in the scene wearing heavy winter clothing like coats, hats, and gloves?", "tags": [] },
+      { "question": "Is Bonhomme Carnaval depicted as a large snowman figure wearing a red tuque (cap) and a colorful ceinture fléchée (arrow sash)?", "tags": [] },
+      { "question": "Is there colorful confetti or streamers on the ground or in the air near the spectator?", "tags": [] },
+      { "question": "Is there visible steam rising from the cup of hot chocolate?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a high school chemistry lab, a student wearing safety goggles is conducting experiments while strictly following laboratory regulations. A Bunsen burner is used to heat a beaker of water. And now he is dipping a piece of blue litmus paper into a clear acidic liquid. Nearby, a strip of magnesium is reacting with dilute hydrochloric acid in a beaker. Someone has just dropped a glass flask on the tile floor.",
+    "Checklist": [
+      { "question": "Are there condensation droplets on the upper, cooler parts of the beaker's inner walls?", "tags": [] },
+      { "question": "Is the student using tweezers to hold the litmus paper while dipping it into the liquid?", "tags": [] },
+      { "question": "Has the part of the blue litmus paper submerged in the liquid turned red or pink?", "tags": [] },
+      { "question": "Does the reaction of magnesium with dilute hydrochloric acid produce a large amount of bubbles?", "tags": [] },
+      { "question": "Is the glass flask on the floor shattered into pieces?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A celebration for Día de los Muertos (Day of the Dead) is happening in a home in Mexico. A woman is placing traditional, symbolic flowers on an ofrenda. A man is lighting a tall prayer candle. A butterfly, seen as a symbol for this holiday, has landed on the ofrenda.",
+    "Checklist": [
+      { "question": "Does the ofrenda also have framed photographs of people on it?", "tags": [] },
+      { "question": "Are the flowers on the ofrenda vibrant orange cempasúchil (marigolds)?", "tags": [] },
+      { "question": "Is the man holding a lit match or a lighter to the wick of the candle?", "tags": [] },
+      { "question": "Is there food, such as 'pan de muerto' or fruit, placed on the ofrenda as an offering?", "tags": [] },
+      { "question": "Is the butterfly a Monarch butterfly with orange and black wings?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A competitive curling match is in progress. A player has just released the granite stone and is sliding alongside it. Two other players are vigorously sweeping the ice in the path of the moving stone. The skip is at the far end of the sheet, indicating the target.",
+    "Checklist": [
+      { "question": "Is the playing surface a sheet of perfectly smooth ice?", "tags": [] },
+      { "question": "Is the player who released the stone in a low, lunging position?", "tags": [] },
+      { "question": "Are the two sweepers using specialized curling brooms or brushes?", "tags": [] },
+      { "question": "Is the moving granite stone circular with a handle on top?", "tags": [] },
+      { "question": "Are the players wearing matching team uniforms?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a garden after a rainstorm, a person is watering a wilting potted sunflower with a watering can. A soccer ball has just struck and broken a nearby window pane and is now lying on the grass. A snail is moving across a wet stone path. A bird is in a tree, actively building a nest.",
+    "Checklist": [
+      { "question": "Are the leaves and stem of the sunflower drooping downwards?", "tags": [] },
+      { "question": "Are the leaves of other plants or the blades of grass in the garden visibly wet with raindrops?", "tags": [] },
+      { "question": "Is there a pattern of cracked glass on the window pane, with some pieces possibly missing?", "tags": [] },
+      { "question": "Is there a glistening, slimy trail on the stone path behind the snail?", "tags": [] },
+      { "question": "Is the bird carrying a twig, piece of grass, or moss in its beak?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At a busy construction site, a worker is operating a jackhammer on a concrete sidewalk. Another worker is welding two steel beams together. A dump truck is in the process of tipping its load of gravel onto the ground. An architect is reviewing a large blueprint.",
+    "Checklist": [
+      { "question": "Is the worker operating the jackhammer wearing heavy ear protectors?", "tags": [] },
+      { "question": "Is there dust and small chunks of concrete flying from the point where the jackhammer meets the sidewalk?", "tags": [] },
+      { "question": "Is the welder wearing a protective dark-lensed welding helmet over their face?", "tags": [] },
+      { "question": "Are bright sparks being emitted from the point of contact between the welding tool and the steel beams?", "tags": [] },
+      { "question": "Are all the individuals on the construction site wearing safety helmets?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In an Antarctic research station, a scientist drills into a thick ice sheet to get an ice core sample. An emperor penguin is sliding quickly down a gentle, snowy slope. Another scientist standing outside exhales. An Adélie penguin has just leaped out of the freezing water onto an ice floe. A snow vehicle has just parked nearby.",
+    "Checklist": [
+      { "question": "Is there a specialized ice drill or auger apparatus set up on the ice where the scientist is working?", "tags": [] },
+      { "question": "Is the emperor penguin lying on its belly, propelling itself forward with its flippers (tobogganing)?", "tags": [] },
+      { "question": "Is the exhaled breath of the scientist visible as a white cloud of condensation?", "tags": [] },
+      { "question": "Are the scientists wearing heavy cold-weather gear suitable for Antarctic conditions?", "tags": [] },  
+      { "question": "Is the snow vehicle equipped with caterpillar tracks instead of regular road tires?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. During the Holi festival in India, a crowd of people are celebrating in the street. The air is filled with joyous shouts and the beat of music. A young man throws a handful of bright pink colored powder (gulal) at a friend. A woman is using a traditional pichkari to spray colored water. A street vendor is frying fresh jalebi in a large, shallow pan of hot oil.",
+    "Checklist": [
+      { "question": "Are the faces and clothes of the people in the crowd stained with multiple bright colors?", "tags": [] },
+      { "question": "Is the pichkari shown in the traditional form of a long tubular pipe?", "tags": [] },
+      { "question": "Is the oil in the pan bubbling vigorously around the jalebi swirls?", "tags": [] },
+      { "question": "Are the jalebi themselves a bright orange color?", "tags": [] },
+      { "question": "Is the street vendor using a skewer or slotted spoon to handle the jalebi in the hot oil?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On the deep ocean floor, a deep-sea submarine illuminates the area with its forward-facing spotlights. A startled pufferfish has inflated itself. An anglerfish is hunting nearby.",
+    "Checklist": [
+      { "question": "Is the pufferfish depicted as a sphere with its spines fully extended?", "tags": [] },
+      { "question": "Is there a small, glowing bioluminescent lure dangling from a stalk on the anglerfish's head?", "tags": [] },
+      { "question": "Are there visible particles (marine snow) floating within the beams of the submarine's lights?", "tags": [] },
+      { "question": "Is the area outside of the submarine's spotlights and the anglerfish's lure depicted as completely black or extremely dark?", "tags": [] },
+      { "question": "Is the submarine's main viewport shown as a small, thick-looking circle or dome, rather than a large, flat pane of glass?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a medieval alchemist's workshop, a sealed glass retort containing a green liquid is being heated over a charcoal brazier. The retort's neck leads down into a collection flask. An alchemist is writing notes in a book with a quill pen. A sand-filled hourglass on the table has just been turned over. A thick tallow candle on the desk is also lit, casting flickering light.",
+    "Checklist": [
+      { "question": "Is the charcoal in the brazier glowing red or orange?", "tags": [] },
+      { "question": "Are there droplets of condensed liquid on the inner surface of the retort's cooler neck?", "tags": [] },
+      { "question": "Is a clear, distilled liquid pooling in the collection flask at the end of the retort's neck?", "tags": [] },
+      { "question": "Is sand actively streaming from the top bulb to the bottom bulb of the hourglass?", "tags": [] },
+      { "question": "Is the lit tallow candle misshapen, with solidified drips of wax on its sides?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside a natural history museum, a fully assembled Allosaurus skeleton is on display. A paleontologist is meticulously cleaning a fossilized trilobite embedded in rock. A display case shows a collection of fluorescent minerals being illuminated by an ultraviolet lamp. A taxidermied Arctic fox is displayed in a diorama.",
+    "Checklist": [
+      { "question": "Is the Allosaurus skeleton supported by a custom-built metal framework or armature?", "tags": [] },
+      { "question": "Is the paleontologist using a small, fine-tipped tool like a dental pick or a small brush on the fossil?", "tags": [] },
+      { "question": "Is the ultraviolet lamp itself visibly turned on, possibly casting a purplish light inside the display case?", "tags": [] },
+      { "question": "Are the fluorescent minerals in the display case glowing brightly with various colors under the illumination?", "tags": [] },
+      { "question": "Does the diorama containing the Arctic fox feature a painted background and a simulated foreground depicting a snowy or tundra-like environment?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a car repair garage, a mechanic is under a car. Another mechanic is removing the lug nuts from a wheel. A car battery is being charged on a workbench. An oxy-acetylene torch is being used to cut through a thick, rusted chain.",
+    "Checklist": [
+      { "question": "Is the car raised high off the ground on a two-post or four-post hydraulic lift?", "tags": [] },
+      { "question": "Is the mechanic working on the wheel using a lug wrench or an impact wrench?", "tags": [] },
+      { "question": "Are there thick red and black cables connecting the battery charger to the positive and negative terminals of the battery?", "tags": [] },
+      { "question": "Is the flame from the oxy-acetylene torch intensely bright and bluish-white?", "tags": [] },
+      { "question": "Is a shower of sparks being ejected from the chain link that is being cut?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside a modern bowling alley, a person has just released a bowling ball, and it is rolling down the lane. At the end of another lane, a ball has just struck the pins. A patron is eating an order of hot nachos with cheese. An electronic scoring monitor is displaying the game's progress.",
+    "Checklist": [
+      { "question": "Is the bowling ball currently on the wooden lane, between the bowler and the pins?", "tags": [] },
+      { "question": "Are the pins at the end of the other lane scattered or in the process of falling over?", "tags": [] },
+      { "question": "Is the person who just released the ball standing at the beginning of the lane, near the foul line?", "tags": [] },
+      { "question": "Is the cheese on the nachos in a melted or liquid state, rather than solid?", "tags": [] },
+      { "question": "Are there gutters on both sides of the bowling lane?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a lush green apiary, a beekeeper is tending to a beehive. They are using a lit bee smoker to calm the bees before opening a hive box. Inside the open box, a frame covered in honeycomb is visible. A bucket is nearby, being filled by honey dripping from an uncapped honeycomb frame.",
+    "Checklist": [
+      { "question": "Is the beekeeper wearing a protective suit with a veiled hood and gloves?", "tags": [] },
+      { "question": "Is smoke puffing out from the nozzle of the metal bee smoker?", "tags": [] },
+      { "question": "Does the honeycomb consist of a dense matrix of hexagonal wax cells?", "tags": [] },
+      { "question": "Is the honey dripping into the bucket a thick, viscous, golden liquid?", "tags": [] },
+      { "question": "Are many bees flying around the open hive and the beekeeper?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A formal Japanese tea ceremony (chanoyu) is taking place in a traditional tea room. The host is whisking the green tea. The guest is sitting properly on the floor. The room has sliding paper screen doors.",
+    "Checklist": [
+      { "question": "Is the floor covered with woven straw tatami mats?", "tags": [] },
+      { "question": "Are the host and guest kneeling in the formal 'seiza' position?", "tags": [] },
+      { "question": "Is the host using a bamboo whisk (a chasen) to prepare the tea?", "tags": [] },
+      { "question": "Is there a tea bowl present for the preparation and serving of the matcha?", "tags": [] },
+      { "question": "Are the host and guest wearing traditional kimonos?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a chaotic hospital emergency room, a medical team is attending to a patient on a gurney. A doctor is carefully examining the patient's eyes. A nurse is applying pressure to a bleeding wound on the patient's arm.",
+    "Checklist": [
+      { "question": "Are the doctors and nurses wearing scrubs?", "tags": [] },
+      { "question": "Is the doctor holding the penlight so it shines a small beam of light into the patient's eye?", "tags": [] },
+      { "question": "Is the nurse pressing a white gauze pad against the patient's arm?", "tags": [] },
+      { "question": "Is the gauze pad visibly soaked with red blood?", "tags": [] },
+      { "question": "Is the patient lying on their back on the gurney?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A scuba diver is exploring a coral reef. They are breathing from their equipment. A moray eel is peeking out from a crevice in the rocks. The diver is in the process of cutting a tangled piece of fishing line.",
+    "Checklist": [
+      { "question": "Is the scuba diver wearing a diving mask over their eyes and nose?", "tags": [] },
+      { "question": "Are bubbles continuously rising from the diver's regulator (mouthpiece)?", "tags": [] },
+      { "question": "Is only the head and front part of the moray eel's body visible from the crevice?", "tags": [] },
+      { "question": "Is the diver using a knife to perform the cutting action?", "tags": [] },
+      { "question": "Is the diver wearing a compressed air tank on their back?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. It's a late autumn day in a backyard. A person is raking colorful fallen maple leaves. A Halloween jack-o'-lantern is sitting on the porch step.",
+    "Checklist": [
+      { "question": "Are the fallen maple leaves on the ground a mixture of various autumn colors, such as red, orange, yellow, and brown?", "tags": [] },
+      { "question": "Is the person wearing clothing appropriate for cool autumn weather, such as a jacket or a sweater?", "tags": [] },
+      { "question": "Does the pumpkin have a face (eyes, nose, mouth) cut into it?", "tags": [] },
+      { "question": "Are the deciduous trees visible in the backyard mostly bare of leaves?", "tags": [] },
+      { "question": "Is the grass on the lawn no longer uniformly green, but showing patches of yellow or brown?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a pharmacy, a pharmacist is dispensing a prescription. They are using a special tray to count small blue pills. A label is currently being printed from a small, specialized label printer. A customer is signing for their prescription with a stylus on a digital pad.",
+    "Checklist": [
+      { "question": "Is the pharmacist working behind a high counter that separates the pharmacy workspace from the customer area?", "tags": [] },
+      { "question": "Is the pharmacist using a small spatula to guide the pills on the counting tray?", "tags": [] },
+      { "question": "Is a white, adhesive prescription label emerging from the slot of the printer?", "tags": [] },
+      { "question": "Are there shelves in the background filled with rows of uniform drug stock bottles?", "tags": [] },
+      { "question": "Is there a larger stock bottle on the counter from which the pills were dispensed onto the tray?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A powerful electrical storm is happening at night. A bolt of lightning strikes a tall oak tree in a field. The wind is so strong that it has blown a person's umbrella inside-out. Heavy rain is falling. A car is speeding down the road.",
+    "Checklist": [
+      { "question": "Is the oak tree splintered, smoking, or on fire at the point of impact?", "tags": [] },
+      { "question": "Is the canopy of the umbrella inverted, pointing upwards away from the handle?", "tags": [] },
+      { "question": "Is the surface of the road visibly wet, with puddles or a sheen of water?", "tags": [] },
+      { "question": "Are the car's headlights turned on?", "tags": [] },
+      { "question": "Are the windshield wipers on the speeding car visibly active rather than in the off position?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a forest, a lumberjack is using a chainsaw to cut into the trunk of a large pine tree. Another lumberjack is splitting a cut log with a large splitting maul. A nearby tree has already been felled.",
+    "Checklist": [
+      { "question": "Is the lumberjack using the chainsaw wearing a protective hard hat?", "tags": [] },
+      { "question": "Is a spray of sawdust being ejected from where the chainsaw's blade meets the tree?", "tags": [] },
+      { "question": "Is there a wedge-shaped notch cut into the side of the tree trunk?", "tags": [] },
+      { "question": "Is the splitting maul shown embedded in the top of the log, or is the log already split in two?", "tags": [] },
+      { "question": "Are the felled tree and the stump showing a pattern of concentric growth rings on their cut surfaces?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A boxing match between men is underway. One boxer has just been knocked down and is on the canvas. The referee is in the middle of a count. In the corner, a coach is holding a water bottle with the top squeezed. The other boxer is standing in a neutral corner.",
+    "Checklist": [
+      { "question": "Are both boxers wearing large, padded boxing gloves?", "tags": [] },
+      { "question": "Is the referee holding up a number of fingers to indicate the count?", "tags": [] },
+      { "question": "Is the knocked-down boxer on one knee or on their back/side on the floor of the ring?", "tags": [] },
+      { "question": "Is the boxing ring enclosed by ropes?", "tags": [] },
+      { "question": "Are the boxers wearing shorts and no shirts?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A person is ice fishing on a vast, frozen lake in sub-zero temperatures. They have just pulled a fish. They are holding a thermos of hot coffee.",
+    "Checklist": [
+      { "question": "Is there a hole cut into the surface of the ice near the person?", "tags": [] },
+      { "question": "Is the person using a short fishing rod or a similar ice fishing device to catch the fish?", "tags": [] },
+      { "question": "Is the person wearing very thick, insulated winter clothing?", "tags": [] },
+      { "question": "Is steam rising from the mouth of the open thermos?", "tags": [] },
+      { "question": "Is the person sitting on a small stool or an overturned bucket?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A forest fire is raging. A firefighter is aiming a hose at the base of a burning tree. High above, a helicopter is releasing a load of water from a large bucket. An adult deer and a fawn are fleeing the fire.",
+    "Checklist": [
+      { "question": "Is the firefighter wearing a fire-resistant jacket and a helmet?", "tags": [] },
+      { "question": "Is a powerful stream of water jetting from the nozzle of the hose?", "tags": [] },
+      { "question": "Is the nozzle of the firefighter’s hose connected to a hose pipe?", "tags": [] },
+      { "question": "Is a large cloud of white steam and smoke erupting from the point where the helicopter's water drop is hitting the fire?", "tags": [] },
+      { "question": "Are the deer running away from the direction of the flames and smoke?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. A vibrant Chinese New Year parade is in progress along a street decorated with traditional, festive elements. A long, ornate dragon costume is being manipulated by a team of dancers. A string of firecrackers has just been set off on the street. A child is receiving lucky money (yā suì qián) from an elder.",
+    "Checklist": [
+      { "question": "Are the legs and feet of multiple dancers visible beneath the dragon costume?", "tags": [] },
+      { "question": "Is the dragon costume being held aloft on poles?", "tags": [] },
+      { "question": "Is the street littered with red paper debris from the exploded firecrackers?", "tags": [] },
+      { "question": "Is the lucky money being presented to the child inside of an ornate, red envelope?", "tags": [] },
+      { "question": "Are there red lanterns hanging as decorations along the parade route?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a murky swamp at dusk, an alligator lurks in the water. An airboat is speeding across the water's surface. A frog on a lily pad is croaking. A cloud of fireflies is glowing nearby.",
+    "Checklist": [
+      { "question": "Are only the eyes and snout of the alligator visible above the water's surface?", "tags": [] },
+      { "question": "Is there a large, powerful fan at the rear of the airboat?", "tags": [] },
+      { "question": "Are the fireflies depicted as small, individual points of yellow-green light?", "tags": [] },
+      { "question": "Is the airboat creating a wake or spray of water as it speeds across the surface?", "tags": [] },
+      { "question": "As the frog is croaking, is its vocal sac beneath its chin visibly inflated like a balloon?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At the Scottish Highland Games, an athlete is in the middle of the caber toss run-up. A bagpiper is actively playing their instrument. A tug-of-war competition is in full swing.",
+    "Checklist": [
+      { "question": "Are the athletes and many spectators wearing tartan kilts?", "tags": [] },
+      { "question": "Is the athlete holding the caber by cupping its narrow base in their hands, balancing the long log against their shoulder?", "tags": [] },
+      { "question": "Are the bagpiper's cheeks puffed out with air?", "tags": [] },
+      { "question": "Are the members of both tug-of-war teams leaning their bodies far back to maximize their pulling force?", "tags": [] },
+      { "question": "Is the rope in the tug-of-war competition pulled taut with no slack?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-CR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "In a professional kitchen with stainless steel surfaces, a chef is actively cooking at a stove, tossing vegetables in a wok over a high, roaring gas flame. A large cloud of steam is visibly rising from the wok. Nearby, another cook is chopping onions.",
+    "Checklist": [
+      { "question": "Is there a large metal range hood positioned above the stove to ventilate the steam?", "tags": [] },
+      { "question": "Is the chef cooking over the flame wearing a professional uniform, such as a chef's jacket or an apron?", "tags": [] },
+      { "question": "Is there a cutting board on the counter directly underneath the onions being chopped?", "tags": [] },
+      { "question": "Is the wok sitting on a heavy-duty metal grate that is part of the stove?", "tags": [] },
+      { "question": "Are the flames from the gas stove located directly underneath the bottom of the wok?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a bright high-school laboratory, a student performs an acid-base titration for her chemistry exam. A burette filled with dilute hydrochloric acid drips into a conical flask containing sodium hydroxide solution that was tinted pale pink by an indicator dye. The student is writing the final volume in her notebook as the colour has already varied.",
+    "Checklist": [
+      { "question": "Is the student wearing proper chemistry lab gear, such as safety goggles and a white lab coat?", "tags": [] },
+      { "question": "Is the burette held upright by a stand or clamp?", "tags": [] },
+      { "question": "Is the reaction mixture contained in a conical flask beneath the burette?", "tags": [] },
+      { "question": "Is the solution in the flask colourless at the moment she writes down the result?", "tags": [] },
+      { "question": "Is there a stopcock (a valve with a small handle) at the bottom of the burette, used to control the flow of the liquid?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a sunny December afternoon at a Queensland beach, an extended family enjoys Christmas lunch together. Children sculpt a festive sand ‘tree’ decorated with shells while two teenagers are playing a casual cricket match near the shoreline. Adults laugh as they turn sizzling prawns that crackle over hot coals.",
+    "Checklist": [
+      { "question": "Is a portable grill or barbecue present for cooking the prawns?", "tags": [] },
+      { "question": "Are metal tongs being used to turn the sizzling prawns?", "tags": [] },
+      { "question": "Is a cricket bat available for the beach cricket game?", "tags": [] },
+      { "question": "Are the prawns on the grill turning a cooked reddish color?", "tags": [] },  
+      { "question": "Are the people on the beach wearing summer clothing, such as swimsuits or shorts, appropriate for a sunny day?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At a suburban building site, a carpenter is working on a half-finished wooden deck, driving fasteners into freshly cut planks while chatting with a coworker who calls out the next measurement. Nearby, another worker is cutting a board.",
+    "Checklist": [
+      { "question": "Is the carpenter holding a tool used for driving fasteners, such as a hammer, power drill, or nail gun?", "tags": [] },
+      { "question": "Is the carpenter maintaining a low posture, such as squatting or half-kneeling, while working on the deck?", "tags": [] },
+      { "question": "Is there a tape measure visible nearby, consistent with the coworker calling out measurements?", "tags": [] },
+      { "question": "Is the worker cutting a board using a saw or a similar tool?", "tags": [] },
+      { "question": "Is there a visible accumulation of sawdust on the surfaces of the planks and around the work area?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a city rooftop, a beekeeper and their friend are conducting a routine inspection of a bustling, active beehive. They have both taken thorough safety precautions for the task. The beekeeper is in the process of lifting a frame from a hive box. A gentle stream of smoke is being used to keep the bees calm.",
+    "Checklist": [
+      { "question": "Is the beekeeper wearing protective gear like a netted veil that covers their face and protective gloves on their hands?", "tags": [] },
+      { "question": "Is there a smoker tool visible nearby, which is the source of the smoke?", "tags": [] },
+      { "question": "Are the wooden hive boxes stacked vertically to form the beehive structure?", "tags": [] },
+      { "question": "Is the surface of the frame being lifted covered with a multitude of live, crawling bees?", "tags": [] },
+      { "question": "Is the friend, who is also near the open hive, wearing protective gear like a veil?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. High on a frozen waterfall, a mountaineer pauses mid-climb, breath turning to mist in the frigid air while snowflakes drift around the sheer wall of blue ice. The scene should be depicted as a wide panoramic view.",
+    "Checklist": [
+      { "question": "Is the climber wielding an ice axe in at least one hand?", "tags": [] },
+      { "question": "Are metal crampons attached to the climber’s boots?", "tags": [] },
+      { "question": "Is a climbing rope secured to the climber’s harness?", "tags": [] },
+      { "question": "Is the rope anchored into the ice above or beside the climber?", "tags": [] },
+      { "question": "Is the climber wearing a protective helmet?", "tags": [] },
+      { "question": "Is at least one locking carabiner clipped to the harness?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside a traditional Japanese tearoom, a host is conducting a formal tea ceremony (chanoyu). The host is in the midst of preparing the tea, a process which requires whisking it in a bowl to create a fine, frothy layer. The host and two guests observe the strict etiquette of the occasion, all kneeling formally on the floor.",
+    "Checklist": [
+      { "question": "Is the host using a bamboo whisk (chasen) to prepare the tea?", "tags": [] },
+      { "question": "Is the tea being prepared inside a ceramic tea bowl (chawan)?", "tags": [] },
+      { "question": "Is the floor of the room covered with tatami mats, appropriate for a traditional tearoom?", "tags": [] },
+      { "question": "Is there a cast-iron kettle (kama) present as the source for hot water?", "tags": [] },
+      { "question": "Are the host and guests kneeling in the formal seiza posture on the floor?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a sun-filled living room, a young professional is performing the common chore of preparing a dress shirt for the week ahead. The wrinkled shirt is laid out flat on a narrow, padded board. They are skillfully applying a heavy heated tool.",
+    "Checklist": [
+      { "question": "Is the person using a clothes iron?", "tags": [] },
+      { "question": "Is the shirt laid out on an ironing board?", "tags": [] },
+      { "question": "Is a power cord visible, connecting the iron to an electrical outlet?", "tags": [] },
+      { "question": "Is the person standing up to perform this task?", "tags": [] },
+      { "question": "Is there visible steam rising from the heated area of the tool?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a cold winter morning after an overnight snowfall, a homeowner, dressed appropriately for the weather, undertakes the physical task of clearing a path on their driveway for the family car. The surrounding landscape is blanketed in fresh snow.",
+    "Checklist": [
+      { "question": "Is the person wearing a combination of appropriate winter attire, such as a heavy coat, hat, and gloves?", "tags": [] },
+      { "question": "Is the person using a tool specifically designed for moving large amounts of snow, such as a snow shovel or a snow blower?", "tags": [] },
+      { "question": "Is there a mound or bank of displaced snow piled up alongside it?", "tags": [] },
+      { "question": "Is the family car also covered with a layer of accumulated snow from the overnight storm?", "tags": [] },
+      { "question": "Are the nearby trees bare of leaves, consistent with a winter snow scene?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a dimly lit artisan workshop, a craftsperson, who has taken all necessary safety precautions for working with extreme heat, is working with a mass of molten glass, heated to a liquid state in a roaring furnace.",
+    "Checklist": [
+      { "question": "Is the craftsperson wearing both protective eye gear (like goggles) and heat-resistant gloves or arm coverings?", "tags": [] },
+      { "question": "Is the craftsperson using a long metal rod to handle the molten glass?", "tags": [] },
+      { "question": "Is the material at the end of the pole glowing with a bright orange or yellow light, indicating its intense heat?", "tags": [] },
+      { "question": "Is the furnace opening visibly glowing, casting strong light and shadows?", "tags": [] },
+      { "question": "Is the glowing mass of material sagging slightly under its own weight, indicating its molten, non-solid state?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a rustic Neapolitan pizzeria, an experienced chef expertly slides an uncooked margherita toward the blazing brick oven. At a nearby wooden table, diners have just been served a piping hot, cooked pizza. The aroma of tomato and basil fills the cosy space.",
+    "Checklist": [
+      { "question": "Is the chef wearing a traditional chef's uniform while preparing the pizza?", "tags": [] },
+      { "question": "Is a long-handled pizza peel being used to slide the pizza into the oven?", "tags": [] },
+      { "question": "Are burning logs or an intense, visible flame present inside the brick oven?", "tags": [] },
+      { "question": "Does the uncooked margherita pizza visibly feature its key ingredients: a base of red tomato sauce, patches of white mozzarella cheese, and fresh basil leaves?", "tags": [] },
+      { "question": "Is there visible steam rising from the cooked pizza that was just served to the diners' table?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+
+  "R-CR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At a bustling summertime fairground, a child has just bought a helium balloon and tied it to their hand while holding an ice cream cone that had been bought some time ago. At the small painted booth, the vendor is preparing the next colorful balloon using a specialized inflation device.",
+    "Checklist": [
+      { "question": "Is the 'specialized inflation device' a nozzle connected by a hose to a large, pressurized metal gas cylinder?", "tags": [] },
+      { "question": "Is there a balloon fitted over the nozzle of the inflation device as the vendor prepares it?", "tags": [] },
+      { "question": "Is the balloon in the child's hand floating upward, with the string pulled taut?", "tags": [] },
+      { "question": "Is the ice cream in the cone partially melted?", "tags": [] },
+      { "question": "Is everyone dressed in summer-appropriate clothing, such as short sleeves?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a veterinary clinic's examination room, a veterinarian is conducting a check-up on a nervous terrier. The vet is leaning over the animal to listen carefully to its heartbeat. The owner stands close by, stroking the dog's head to keep it calm. On the stainless steel counter in the background, a single syringe has been prepared next to a small vial. On the wall, an X-ray film is clipped onto an illuminated light box.",
+    "Checklist": [
+      { "question": "Is the veterinarian using a stethoscope to listen to the dog's heartbeat?", "tags": [] },
+      { "question": "Is the dog positioned on an elevated metal examination table?", "tags": [] },
+      { "question": "Is the veterinarian wearing professional attire suitable for a medical environment, such as scrubs or a lab coat?", "tags": [] },
+      { "question": "Is the needle of the prepared syringe on the counter still covered with its protective cap?", "tags": [] },
+      { "question": "Does the illuminated X-ray on the wall display the skeletal structure of an animal?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside a home during the holy month of Ramadan, a traditional family is gathered together. They are about to break their fast with the Iftar meal, just as the sun sets. The room is filled with a warm, ambient glow. A full spread of food and drinks is laid out before them, and they are engaged in prayer before the meal while sitting on a rug on the floor.",
+    "Checklist": [
+      { "question": "Are both dates and glasses of water laid out, as is traditional for breaking the fast?", "tags": [] },
+      { "question": "Are the room lights turned on to provide the warm ambient glow during Iftar?", "tags": [] },
+      { "question": "Are family members raising their hands with palms up at chest or face level, with heads bowed or eyes closed in prayer?", "tags": [] },
+      { "question": "Is the spread of food and drinks placed on the floor along with the family?", "tags": [] },
+      { "question": "Are the food dishes on the platters and in the bowls still full and largely untouched?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a quiet forest clearing at dawn, a hiker is focused on the task of preparing the morning coffee. He has set up his portable equipment with the goal of heating water efficiently in the cool air. His full backpack, built for hiking with external straps and a rolled-up sleeping bag attached, lies on the ground nearby.",
+    "Checklist": [
+      { "question": "Is a compact camping stove set up on the ground to serve as the heat source?", "tags": [] },
+      { "question": "Is the portable stove burning with a visible blue flame while heating the water?", "tags": [] },
+      { "question": "Is a metal pot or kettle sitting on the stove?", "tags": [] },
+      { "question": "Is a mug or insulated cup placed nearby, ready for the coffee?", "tags": [] },
+      { "question": "Is the backpack a large-capacity hiking model with visible external straps for gear?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a sunlit art studio, a potter is hunched in concentration over their work. As they apply gentle pressure with their hands, a symmetrical clay pot rises smoothly upwards from a lump of clay. The task requires their hands to be constantly wet, and the process has left splatters of clay on the surrounding surfaces. On shelves nearby, other pots are in the process of drying.",
+    "Checklist": [
+      { "question": "Is the potter working at a spinning pottery wheel to achieve the symmetrical, rising shape?", "tags": [] },
+      { "question": "Is there a bowl or bucket of water within the potter's immediate reach?", "tags": [] },
+      { "question": "Are there visible splatters of wet clay (slip) on the body of the wheel and the area around it?", "tags": [] },
+      { "question": "Is the potter seated on a stool or bench?", "tags": [] },
+      { "question": "Is the potter wearing an apron to protect their clothing from clay splatters?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. Inside a dim industrial workshop, a worker is carefully guiding a welding tool along a seam to join two steel plates. A heavy ground clamp is firmly attached to the workpiece. The worker has taken all necessary safety precautions for this task.",
+    "Checklist": [
+      { "question": "Is the worker holding a welding tool (like a torch or stinger) which is the source of the intense light and sparks?", "tags": [] },
+      { "question": "Are bright sparks flying from the welding point as the worker operates the tool?", "tags": [] },
+      { "question": "Is the worker wearing comprehensive protective gear, including a welding helmet with a dark visor covering their face and heavy gloves on their hands?", "tags": [] },
+      { "question": "Is a thick power cable visible, leading to the welding tool being used by the worker?", "tags": [] },
+      { "question": "Is a newly formed, glowing or recently solidified weld bead visible along the seam where the plates are being joined?", "tags": [] },
+      { "question": "Is there visible smoke in the air from the welding process?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a warmly lit Mexican living room, a family is putting the finishing touches on their traditional home altar (ofrenda) for the Day of the Dead (Día de los Muertos) celebration. They are carefully arranging symbolic offerings and vibrant, traditional decorations in honour of their departed loved ones. The air is filled with the fragrant scent of special holiday bread and flowers.",
+    "Checklist": [
+      { "question": "Is a decorated sugar skull (calavera) placed on the altar?", "tags": [] },
+      { "question": "Are bright marigold flowers (cempasúchil) arranged on the altar?", "tags": [] },
+      { "question": "Is the framed photograph of the deceased placed on the altar?", "tags": [] },
+      { "question": "Are lit candles burning on or around the altar to light the way for the spirits?", "tags": [] },
+      { "question": "Are colourful, intricately cut paper banners (papel picado) hanging near the altar?", "tags": [] },
+      { "question": "Is a loaf of the traditional 'bread of the dead' (pan de muerto) set out as an offering?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a crowded university lecture hall shortly before mid-terms, a mathematics professor is briskly writing a complicated integral across the front teaching wall while hundreds of undergraduates copy the symbols in near silence. A shaft of late-morning sun cuts through tall windows, illuminating the white faint chalk dust that hangs in the still air.",
+    "Checklist": [
+      { "question": "Is the teaching wall a large chalkboard, not a whiteboard, consistent with the haze of dust in the air?", "tags": [] },
+      { "question": "Is the professor holding a piece of chalk to write on the board?", "tags": [] },
+      { "question": "Are the seats in the lecture hall arranged in a tiered, descending pattern from back to front?", "tags": [] },
+      { "question": "Are the majority of students looking down and actively writing in notebooks or on laptops?", "tags": [] },
+      { "question": "Is the writing on the teaching wall composed of complex mathematical expressions, including symbols like the integral sign (∫), fractions, and variables?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At dawn inside a warm neighbourhood bakery, a pastry chef is meticulously decorating a multi-layered cake, using professional tools and techniques to achieve a flawless, smooth finish. The air is fragrant from bread that has recently come out of the oven.",
+    "Checklist": [
+      { "question": "Is the chef wearing professional attire suitable for a bakery, such as a chef's jacket or an apron?", "tags": [] },
+      { "question": "Is the cake positioned on a turntable or a similar stand that allows it to be rotated for even decoration?", "tags": [] },
+      { "question": "Is the chef holding a tool designed for applying and smoothing icing, such as an offset spatula or a bench scraper?", "tags": [] },
+      { "question": "Is the surface of the cake being worked on smooth and evenly coated with icing or frosting?", "tags": [] },
+      { "question": "To account for the fragrant air, are there loaves of freshly baked bread visible cooling on wire racks?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. At sunrise in a calm marina, a sailor on a small sloop is preparing for departure. He is focused on the primary task of getting the main sail up; it is currently halfway raised. The boat is still stationary at its berth.",
+    "Checklist": [
+      { "question": "Is the sailor actively pulling on a rope (a halyard) that leads up the mast to raise the sail?", "tags": [] },
+      { "question": "Is the boat tied and secured to the adjacent dock with thick ropes?", "tags": [] },
+      { "question": "Is there a tall, vertical mast rising from the deck, which serves as the support for the sail?", "tags": [] },
+      { "question": "Is the sun visible and positioned low on the horizon, consistent with the time being sunrise?", "tags": [] },
+      { "question": "Are there other boats visible in the background of the marina?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a busy city café during the morning rush, a barista hunches over a humming counter, frothing milk for a drink while customers watch the queue board for their names.",
+    "Checklist": [
+      { "question": "Is a espresso machine present on the counter?", "tags": [] },
+      { "question": "Is the barista holding a stainless steel pitcher (a milk frothing pitcher) that contains the dairy?", "tags": [] },
+      { "question": "Is a thin metal pipe (a steam wand) extending from the machine and inserted into the milk pitcher?", "tags": [] },
+      { "question": "Is visible steam rising from the milk as the barista froths it?", "tags": [] },
+      { "question": "Is there a stack of takeaway or ceramic cups visible nearby, ready for service?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a roadside at dusk, a car fire is being actively fought. A firefighter is braced firmly against the powerful force of a high-pressure hose, directing a jet of water toward the vehicle. In the background, other emergency vehicles help secure the scene.",
+    "Checklist": [
+      { "question": "Is the firefighter wearing a full set of protective gear, including a helmet, heavy bunker jacket, and boots?", "tags": [] },
+      { "question": "Is the firefighter leaning into their stance, physically bracing against the backward thrust from the high-pressure hose?", "tags": [] },
+      { "question": "Is a large cloud of white or grey steam being generated where the water makes contact with the hot, burning parts of the vehicle?", "tags": [] },
+      { "question": "Is the ground around the car wet from the water used to fight the fire?", "tags": [] },
+      { "question": "Are the flashing emergency lights of the firefighter's or other emergency vehicles visible?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a formal training field at night, a competitive archer is demonstrating precise form during a sustained practice session. She has taken all necessary safety precautions for the activity. She is currently at full draw, with her bow aimed at a distant, circular target.",
+    "Checklist": [
+      { "question": "Are the stadium lights turned on to illuminate the training field at night?", "tags": [] },
+      { "question": "Is there an arrow correctly nocked on the bowstring?", "tags": [] },
+      { "question": "Is the archer carrying a quiver for holding arrows?", "tags": [] },
+      { "question": "Is the distant target designed with concentric circles for scoring?", "tags": [] },
+      { "question": "Is the archer wearing necessary protective gear, such as an arm guard on her bow arm and a finger tab or glove on her drawing hand?", "tags": [] },
+      { "question": "Is the archer standing sideways relative to the target to maintain a proper and stable shooting stance?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. On a sun-baked city rooftop, an urban gardener is actively watering several unripe plants in large wooden planters. In one section, tomato vines overflow their supports. Next to them, the feathery green tops of carrots emerge from the soil, and a large wooden planter contains a young grapevine.",
+    "Checklist": [
+      { "question": "Are slender stakes, a cage, or a trellis structure providing physical support for the overflowing tomato vines?", "tags": [] },
+      { "question": "Are the tomato vines bearing unripe fruits, such as green or red-and-green tomatoes?", "tags": [] },
+      { "question": "For the carrots, are only the green, leafy tops visible above the soil, with the orange root part being underground?", "tags": [] },
+      { "question": "Is the grapevine supported by a trellis or similar structure for climbing?", "tags": [] },
+      { "question": "Is the gardener holding a watering can or a hose, directing a stream of water towards the plants?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. During a snowy winter festival, a vendor is making a traditional confection. They are expertly pouring hot, amber-colored syrup from a large pot onto a trough filled with clean, packed snow.",
+    "Checklist": [
+      { "question": "Is there visible steam rising from the hot syrup, especially given the cold winter air?", "tags": [] },
+      { "question": "Is the vendor wearing thick, insulated gloves to handle the hot pot and protect against the cold?", "tags": [] },
+      { "question": "Is the vendor dressed in warm winter clothing appropriate for the snowy outdoor setting?", "tags": [] },
+      { "question": "Is the syrup poured onto the snow in long, thin lines, a shape suitable for being rolled up?", "tags": [] },
+      { "question": "Are there small wooden sticks, like popsicle sticks, available nearby for customers to use?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a professional dance studio designed for ballet, a dancer is captured in a moment of intense focus and physical control. She is poised on the very tips of her toes, holding a pose that requires specialized footwear and immense strength. Soft, rhythmic counts are audible in the room, guiding her timing. The environment is set up for practice and self-correction.",
+    "Checklist": [
+      { "question": "Is a wooden or metal barre visible, attached horizontally to a wall for support during exercises?", "tags": [] },
+      { "question": "Is the dancer wearing pointe shoes, which are characterized by a hard toe box and ribbons that make balancing on the toes possible?", "tags": [] },
+      { "question": "Is there a large, wall-sized mirror that allows the dancer to observe and correct her own posture?", "tags": [] },
+      { "question": "Is the floor a smooth, uniform surface suitable for dancing, such as sprung wood or a marley floor?", "tags": [] },
+      { "question": "Is the dancer wearing typical ballet practice attire, such as a leotard and tights?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a bustling pre-dawn fish market, the floor is slick with melted ice and water. A merchant, dressed in attire suitable for the wet and messy work, is skillfully cutting a fillet from a large fish. A customer is pointing, indicating the piece they want, and the merchant is now preparing to weigh the purchase.",
+    "Checklist": [
+      { "question": "Are the overhead lights turned on to illuminate the market, consistent with the pre-dawn hour?", "tags": [] },
+      { "question": "Is the merchant using a long, sharp knife suitable for filleting fish?", "tags": [] },
+      { "question": "Is the merchant wearing a waterproof apron to protect their clothes?", "tags": [] },
+      { "question": "Is the fish being processed on a dedicated cutting surface, such as a cutting board or a steel counter?", "tags": [] },
+      { "question": "Is there a weighing scale visible on the counter, consistent with the merchant preparing to weigh the fish?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a historic Istanbul neighborhood during the holy month of Ramadan, a traditional drummer is performing his pre-dawn duty. He walks down a narrow, cobblestone lane, striking a steady rhythm on his drum to awaken residents for Suhoor, the final meal before the day's fast begins. His presence is a cherished annual custom.",
+    "Checklist": [
+      { "question": "Is the drummer wearing traditional Ottoman-inspired attire, such as a fez and a vest?", "tags": [] },
+      { "question": "Is the drummer carrying a large, double-sided davul drum, suspended by a strap over his shoulder?", "tags": [] },
+      { "question": "Is the narrow lane illuminated by the warm glow of old-fashioned street lamps?", "tags": [] },
+      { "question": "Are lights visibly turned on in the windows of the houses along the lane, as people wake up for the pre-fast meal?", "tags": [] },
+      { "question": "Is the silhouette of a mosque, including at least one minaret, visible against the dark, pre-dawn sky?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-CR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Commonsense Reasoning",
+    "Prompt": "Describe a realistic scene, including any necessary real-world details to make it believable. In a dim rural workshop, a blacksmith, who has taken appropriate precautions for the hazardous work, is shaping an incandescent bar of steel. He has just moved it from the roaring fire onto a massive, stable work surface and is poised for a powerful blow. A steady current of air is being forced into the fire, causing it to burn intensely.",
+    "Checklist": [
+      { "question": "Is the blacksmith holding a heavy hammer?", "tags": [] },
+      { "question": "Is the blacksmith hammering on an anvil?", "tags": [] },
+      { "question": "Is the blacksmith using long-handled tongs to hold the metal bar?", "tags": [] },
+      { "question": "Is the incandescent bar of steel glowing a bright orange, red, or yellow color from the extreme heat?", "tags": [] },
+      { "question": "Is the blacksmith wearing heavy protective gear, such as a leather apron?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  }
+}

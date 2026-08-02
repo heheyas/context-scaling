@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structured Prompt Studio</title>
+    <style>
+%%CSS%%
+    </style>
+</head>
+<body data-generated="%%GENERATION_TIME%%">
+
+    <div class="app">
+        <!-- ==================== History Bar ==================== -->
+        <div class="history-bar">
+            <div class="history-title">History</div>
+            <div class="history-scroll" id="historyScroll">
+                <div class="history-empty" id="historyEmpty">暂无历史记录</div>
+            </div>
+            <button class="tool-btn history-clear-btn" id="historyClearBtn" onclick="clearHistory()" title="清空历史" style="display:none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+            </button>
+        </div>
+
+        <!-- ==================== Workspace (CSS Grid) ==================== -->
+        <div class="workspace">
+            <!-- Image Panel (row 1, col 1) -->
+            <div class="panel image-panel" id="imagePanel">
+                <div class="panel-toolbar">
+                    <span class="panel-label">Image</span>
+                    <div class="panel-actions">
+                        <button class="tool-btn" onclick="triggerImageUpload()" title="导入图片">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnBboxShow" onclick="showAllBboxes()" title="显示全部 BBox" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnBboxHide" onclick="hideAllBboxes()" title="隐藏全部 BBox" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnImageZoom" onclick="handleImageEnlarge()" title="放大" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnImageDelete" onclick="handleImageDelete()" title="删除图片" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-area" id="imageArea">
+                    <div class="dropzone" id="dropzone" onclick="triggerImageUpload()">
+                        <div class="dropzone-icon">🖼️</div>
+                        <div class="dropzone-text">拖拽图片到此处或点击上传</div>
+                    </div>
+                    <div class="image-display" id="imageDisplay" style="display:none;">
+                        <img id="displayImage" onclick="handleImageClick(event)" title="点击选择 BBox" />
+                        <div class="bbox-container" id="bboxContainer"></div>
+                    </div>
+                </div>
+                <input type="file" id="imageFileInput" accept="image/*" onchange="handleImageFileSelected(event)" style="display:none;">
+            </div>
+
+            <!-- Structured Prompt Panel (row 1, col 2) -->
+            <div class="panel sp-panel" id="spPanel">
+                <div class="panel-toolbar">
+                    <span class="panel-label">Structured Prompt</span>
+                    <div class="panel-actions">
+                        <button class="tool-btn" id="btnSPRaw" onclick="toggleSPRawMode()" title="切换原始JSON">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </button>
+                        <button class="tool-btn" onclick="triggerSPImport()" title="导入 JSON">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnSPUndo" onclick="handleSPUndo()" title="撤销" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+                        </button>
+                        <button class="tool-btn" id="btnSPDelete" onclick="handleSPDelete()" title="清空" style="display:none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="sp-area" id="spArea">
+                    <div class="sp-empty" id="spEmpty">
+                        <div class="sp-empty-icon">📋</div>
+                        <div>Structured Prompt 为空</div>
+                        <div class="sp-empty-hint">可通过"生成SP"按钮生成，或手动导入</div>
+                    </div>
+                    <div class="sp-structured" id="spStructured" style="display:none;"></div>
+                    <textarea id="spTextarea" style="display:none;" spellcheck="false"
+                              placeholder="JSON 格式的 Structured Prompt..."></textarea>
+                </div>
+                <input type="file" id="spFileInput" accept=".json,.txt" onchange="handleSPFileSelected(event)" style="display:none;">
+            </div>
+
+            <!-- Params Bar (row 2, col 1) -->
+            <div class="panel params-bar">
+                <div class="params-label">参数</div>
+                <div class="params-group params-checkbox">
+                    <input type="checkbox" id="paramForceT2I">
+                    <label for="paramForceT2I">Force T2I</label>
+                </div>
+                <div class="params-separator"></div>
+                <div class="params-group">
+                    <label>CFG</label>
+                    <input type="number" id="paramCfgScale" value="4.0" min="0" max="20" step="0.1">
+                </div>
+                <div class="params-group">
+                    <label>Step</label>
+                    <input type="number" id="paramSteps" value="25" min="1" max="100" step="1">
+                </div>
+                <div class="params-spacer"></div>
+                <div class="params-group">
+                    <label>H</label>
+                    <input type="number" id="paramHeight" value="1024" min="64" max="4096" step="32">
+                </div>
+                <div class="params-group">
+                    <label>W</label>
+                    <input type="number" id="paramWidth" value="1024" min="64" max="4096" step="32">
+                </div>
+                <div class="params-group">
+                    <label>Seed</label>
+                    <input type="number" id="paramSeed" value="42" min="-1" max="999999">
+                </div>
+                <div class="params-separator"></div>
+                <div class="params-group" style="flex:2;">
+                    <label>URL</label>
+                    <input type="text" id="paramDitEndpoint" placeholder="http://host:port" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Generate SP Button (row 2, col 2) -->
+            <button class="action-btn gen-sp-btn" id="genSPBtn" onclick="handleGenerateSP()">
+                生成SP
+            </button>
+
+            <!-- User Prompt Bar (row 3, col 1) -->
+            <div class="panel prompt-bar">
+                <div class="prompt-label">User Prompt</div>
+                <textarea id="userPromptInput" placeholder="输入描述文本..." rows="1"></textarea>
+            </div>
+
+            <!-- Generate Image Button (row 3, col 2) -->
+            <button class="action-btn gen-image-btn" id="genImageBtn" onclick="handleGenerateImage()">
+                生成Image
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== Image Enlarge Modal ==================== -->
+    <div class="modal-overlay" id="imageModal" onclick="closeImageModal()">
+        <div class="modal-image-container" id="modalImageContainer" onclick="event.stopPropagation()">
+            <img id="modalImage" class="modal-image" />
+        </div>
+        <button class="modal-close-btn" onclick="closeImageModal()">✕</button>
+    </div>
+
+    <!-- ==================== Diff Confirmation Dialog ==================== -->
+    <div class="modal-overlay" id="diffModal">
+        <div class="diff-dialog" onclick="event.stopPropagation()">
+            <div class="diff-header">
+                <span>内容变更确认</span>
+                <button class="modal-close-btn-sm" onclick="cancelGeneration()">✕</button>
+            </div>
+            <div class="diff-content" id="diffContent"></div>
+            <div class="diff-actions">
+                <button class="action-btn cancel-btn" onclick="cancelGeneration()">取消</button>
+                <button class="action-btn confirm-btn" onclick="confirmGeneration()">确认生成</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== History Detail Modal ==================== -->
+    <div class="modal-overlay" id="historyModal" onclick="closeHistoryModal()">
+        <div class="history-detail" onclick="event.stopPropagation()">
+            <div class="history-detail-header">
+                <span>历史详情</span>
+                <button class="modal-close-btn-sm" onclick="closeHistoryModal()">✕</button>
+            </div>
+            <div class="history-detail-body" id="historyDetailBody"></div>
+            <div class="history-detail-footer">
+                <button class="action-btn restore-part-btn" onclick="restoreImageFromHistory()" title="仅恢复图片">🖼️ 恢复图片</button>
+                <button class="action-btn restore-part-btn" onclick="restorePromptFromHistory()" title="恢复 User Prompt 和 SP">📝 恢复Prompt</button>
+                <button class="action-btn restore-part-btn" onclick="restoreParamsFromHistory()" title="仅恢复生成参数">⚙️ 恢复参数</button>
+                <button class="action-btn restore-btn" onclick="restoreFromHistory()">全部恢复</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== Toast Container ==================== -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ==================== Add Field Dropdown ==================== -->
+    <div class="sp-add-dropdown" id="spAddDropdown" style="display:none;"></div>
+
+    <!-- ==================== Scripts ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/jsonrepair@3/lib/umd/jsonrepair.min.js"></script>
+    <script>
+%%SCRIPT%%
+    </script>
+</body>
+</html>

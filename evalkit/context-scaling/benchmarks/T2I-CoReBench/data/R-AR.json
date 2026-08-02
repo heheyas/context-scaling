@@ -1,0 +1,1177 @@
+{
+  "R-AR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a honeycomb displays the following visual properties: (1) each cell has exactly six sides, (2) all sides of each hexagon are the same length, (3) adjacent cells share common walls, (4) all hexagons are the same size, and (5) the hexagonal pattern covers the entire visible surface, create an image showing clouds arranged in the sky following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does each cloud formation have exactly six sides?", "tags": []},
+      { "question": "Are all sides of each cloud hexagon the same length?", "tags": []},
+      { "question": "Do adjacent cloud formations share common walls?", "tags": []},
+      { "question": "Are all cloud hexagons the same size?", "tags": []},
+      { "question": "Does the hexagonal cloud pattern cover the entire visible sky area?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a 2D schematic diagram of DNA displays the following visual properties: (1) it has two separate strands, (2) both strands curve in a spiral shape, (3) horizontal bars connect the two strands, (4) each horizontal bar spans from one strand to the other, (5) the spiral completes one full turn every five horizontal bars, create an image showing a garden pathway with bridges following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the garden pathway have two separate walking strips?", "tags": []},
+      { "question": "Do both pathway strips curve in a spiral shape?", "tags": []},
+      { "question": "Are there horizontal bridges connecting the two pathway strips?", "tags": []},
+      { "question": "Does each bridge span from one pathway strip to the other?", "tags": []},
+      { "question": "Does the spiral complete one full turn every five bridges?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a checkerboard displays the following visual properties: (1) squares alternate between two colors, (2) each row starts with a different color than the previous row, (3) any two adjacent squares that share a side have different colors, (4) all squares are the same size, (5) the pattern covers the entire board surface, create an image showing agricultural fields viewed from above following this same organizational principle, using different crops to represent the two colors. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the agricultural fields alternate between two different crop types?", "tags": []},
+      { "question": "Does each row of fields start with a different crop type than the previous row?", "tags": []},
+      { "question": "Does any given field have a different crop type from the fields that share a side with it?", "tags": []},
+      { "question": "Are all agricultural fields the same size?", "tags": []},
+      { "question": "Does the field pattern cover the entire visible land area?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+     "Prompt": "Just as a clock face displays the following visual properties: (1) twelve marks are positioned around the outer edge, (2) the marks are evenly spaced around the circle, (3) every third mark is longer than the others, (4) numbers appear next to the longer marks, and (5) two hands of unequal lengths point from the center to different marks, create an image showing flower petal clock arranged following this same organizational principle, using longer petals to represent the longer marks and two stems to act as the clock hands. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are there twelve petals positioned around the flower's outer edge?", "tags": []},
+      { "question": "Are the petals evenly spaced around the circular flower?", "tags": []},
+      { "question": "Is every third petal longer than the others?", "tags": []},
+      { "question": "Do numbers appear next to the longer petals?", "tags": []},
+      { "question": "Are there two distinct stems of unequal lengths extending from the flower center to different petals?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a staircase displays the following visual properties: (1) each step has a horizontal flat surface, (2) each step has a vertical rising surface, (3) all horizontal surfaces are the same width, (4) all vertical surfaces are the same height, (5) steps connect to each other at right angles, create an image showing a waterfall with multiple tiers following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does each waterfall tier have a horizontal flat water surface?", "tags": []},
+      { "question": "Does each waterfall tier have a vertical water drop?", "tags": []},
+      { "question": "Are all horizontal water surfaces the same width?", "tags": []},
+      { "question": "Are all vertical water drops the same height?", "tags": []},
+      { "question": "Do the waterfall tiers connect at right angles?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a gear mechanism displays the following visual properties: (1) teeth project outward from the circular edge, (2) all teeth are the same size, (3) teeth are evenly spaced around the circumference, (4) there are gaps between each tooth, and (5) teeth have flat tops, create an image showing a sunflower following this same organizational principle, with the petals of the sunflower arranged to mimic the teeth of the gear. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do petals project outward from the circular flower center edge?", "tags": []},
+      { "question": "Are all petals the same size?", "tags": []},
+      { "question": "Are petals evenly spaced around the flower center circumference?", "tags": []},
+      { "question": "Are there gaps between each petal?", "tags": []},
+      { "question": "Do petals have flat tops?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as zebra stripes display the following visual properties: (1) stripes alternate between two colors, (2) stripes run parallel to each other, (3) each stripe has the same width, (4) stripes curve following the body contour, (5) the pattern covers the entire visible body surface, create an image showing sand dunes with surface patterns following this same organizational principle, using two different sand textures to represent the alternating colored stripes. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the sand dune patterns alternate between two different textures?", "tags": []},
+      { "question": "Do the patterns run parallel to each other across the dunes?", "tags": []},
+      { "question": "Does each pattern band have the same width?", "tags": []},
+      { "question": "Do the patterns curve following the dune contours?", "tags": []},
+      { "question": "Does the pattern cover the entire visible dune surface?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a spider web displays the following visual properties: (1) straight lines radiate outward from the center, (2) circular lines form concentric rings, (3) the spacing between circular lines is uniform, (4) radial lines are evenly distributed around the center, and (5) all radial lines pass through the circular's center point, create an image showing a city road network following this same organizational principle, with straight roads acting as radial lines and ring roads acting as concentric circles. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do straight roads radiate outward from the city center?", "tags": []},
+      { "question": "Do circular roads form concentric rings around the center?", "tags": []},
+      { "question": "Is the spacing between circular roads uniform?", "tags": []},
+      { "question": "Are radial roads evenly distributed around the center?", "tags": []},
+      { "question": "Do all radial roads pass through the common center of the circular roads?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a pearl necklace displays the following visual properties: (1) spherical beads are connected in a line, (2) each bead touches the next bead, (3) all beads are the same size, (4) the line of beads forms a closed loop, and (5) the spacing between bead centers is uniform, create an image showing stars arranged in a constellation following this same organizational principle, where the stars represent the beads. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are spherical stars arranged in a continuous line?", "tags": []},
+      { "question": "Does each star appear to touch the next star in the sequence?", "tags": []},
+      { "question": "Are all stars the same size?", "tags": []},
+      { "question": "Does the line of stars form a closed loop shape?", "tags": []},
+      { "question": "Is the spacing between star centers uniform?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a folding fan displays the following visual properties: (1) multiple flat segments radiate from a central pivot, (2) segments are connected at the pivot point, (3) each segment is the same length, (4) segments are evenly spaced by angle as they spread out, and (5) the outer edges form a smooth arc, create an image showing a river delta viewed from above following this same organizational principle, where the river channels represent the radiating segments. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do multiple flat water channels radiate from a central source point?", "tags": []},
+      { "question": "Are the channels connected at the source point?", "tags": []},
+      { "question": "Are all the radiating river channels the same length?", "tags": []},
+      { "question": "Are the channels evenly spaced by angle as they spread out from the source?", "tags": []},
+      { "question": "Do the outer channel ends form a smooth arc shape?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a stack of building blocks displays the following visual properties: (1) blocks are placed on top of each other, (2) blocks get smaller toward the top, (3) each block is centered on the block below, (4) blocks have flat horizontal surfaces, and (5) blocks have vertical side faces, create an image showing cloud formations following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are cloud masses placed on top of each other?", "tags": []},
+      { "question": "Do cloud layers get smaller toward the top?", "tags": []},
+      { "question": "Is each cloud layer centered on the cloud layer below it?", "tags": []},
+      { "question": "Do cloud layers have flat horizontal surfaces?", "tags": []},
+      { "question": "Do cloud layers have vertical side faces?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as venetian blinds display the following visual properties: (1) horizontal slats are stacked vertically, (2) all slats are the same height and width, (3) slats are parallel to each other, (4) there are uniform gaps between slats, and (5) slats can be tilted at the same angle, create an image showing building windows on a skyscraper facade following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are horizontal window rows stacked vertically on the building?", "tags": []},
+      { "question": "Are all window rows the same height and width?", "tags": []},
+      { "question": "Are window rows parallel to each other?", "tags": []},
+      { "question": "Are there uniform gaps between window rows?", "tags": []},
+      { "question": "Are all windows tilted at the same angle?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a peacock feather displays the following visual properties: (1) a central shaft runs through the middle, (2) barbs extend outward from both sides of the shaft, (3) barbs are angled upward toward the tip, (4) an eye pattern appears at the top, and (5) the eye pattern is circular with concentric rings, create an image showing a fireworks explosion following this same organizational principle, with the firework's trail mimicking the central shaft and the final burst forming the 'eye' pattern. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does a central bright streak trace the upward path of the firework?", "tags": []},
+      { "question": "Do sparks extend outward from both sides of the central streak?", "tags": []},
+      { "question": "Are sparks angled upward toward the top of the firework?", "tags": []},
+      { "question": "Does an eye pattern appear at the top of the firework?", "tags": []},
+      { "question": "Is the top pattern circular with concentric rings?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a line of dominoes displays the following visual properties: (1) rectangular blocks stand upright in a row, (2) all blocks are the same height, (3) all blocks are the same width, (4) blocks are evenly spaced from each other, and (5) blocks face the same direction, create an image showing a city skyline following this same organizational principle, where the buildings mimic the rectangular blocks. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do rectangular buildings stand upright in a row?", "tags": []},
+      { "question": "Are all buildings the same height?", "tags": []},
+      { "question": "Are all buildings the same width?", "tags": []},
+      { "question": "Are buildings evenly spaced from each other?", "tags": []},
+      { "question": "Do all buildings face the same direction?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a chain displays the following visual properties: (1) oval links connect to form a continuous line, (2) each link passes through the previous link, (3) all links are the same size, (4) links alternate in orientation, and (5) the chain can bend and curve, create an image showing aurora borealis in the night sky following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do oval light formations connect to form a continuous line across the sky?", "tags": []},
+      { "question": "Does each light formation appear to pass through the previous one?", "tags": []},
+      { "question": "Are all light formations the same size?", "tags": []},
+      { "question": "Do light formations alternate in orientation along the aurora?", "tags": []},
+      { "question": "Does the aurora bend and curve across the sky?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a traffic light sequence displays the following visual properties: (1) three circular lights are stacked vertically, (2) lights are housed in a rectangular frame, (3) the top light is red, (4) the middle light is yellow, and (5) the bottom light is green, create an image showing coral formations on a reef following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are three circular coral formations stacked vertically?", "tags": []},
+      { "question": "Are coral formations contained within a rectangular reef structure?", "tags": []},
+      { "question": "Is the top coral formation red in color?", "tags": []},
+      { "question": "Is the middle coral formation yellow in color?", "tags": []},
+      { "question": "Is the bottom coral formation green in color?", "tags": []}
+    ],
+
+    "Remark": "Claude"
+  },
+  "R-AR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a windmill displays the following visual properties: (1) multiple blades radiate from a central hub, (2) all blades are the same length, (3) all blades are the same width, (4) blades are evenly spaced around the hub, and (5) the hub is circular, create an image showing ice crystal formation following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do multiple ice branches radiate from a central point?", "tags": []},
+      { "question": "Are all ice branches the same length?", "tags": []},
+      { "question": "Are all ice branches the same width?", "tags": []},
+      { "question": "Are ice branches evenly spaced around the central point?", "tags": []},
+      { "question": "Is the central formation circular?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as an egg carton displays the following visual properties: (1) circular depressions are arranged in parallel rows, (2) all depressions are the same size, (3) depressions are evenly spaced within each row, (4) each depression has a curved bottom surface, and (5) raised ridges separate adjacent depressions, create an image showing a lunar crater field following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are circular craters arranged in parallel rows across the lunar surface?", "tags": []},
+      { "question": "Are all craters the same size?", "tags": []},
+      { "question": "Are craters evenly spaced within each row?", "tags": []},
+      { "question": "Does each crater have a curved bottom surface?", "tags": []},
+      { "question": "Do raised ridges separate adjacent craters?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as bicycle wheel spokes display the following visual properties: (1) straight lines radiate outward from a central hub, (2) spokes are evenly distributed around the hub, (3) each spoke connects the center hub to the outer rim, (4) spokes maintain perfectly straight paths, and (5) all spokes originate from a single, distinct point, create an image showing a leaf with vein patterns following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do straight veins radiate outward from a central point on the leaf?", "tags": []},
+      { "question": "Are veins evenly distributed around the central point?", "tags": []},
+      { "question": "Does each vein connect the leaf center to the outer edge?", "tags": []},
+      { "question": "Do veins maintain perfectly straight paths?", "tags": []},
+      { "question": "Do all veins originate from a single, distinct point?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a coiled garden hose displays the following visual properties: (1) the hose forms circular loops, (2) loops are stacked vertically on top of each other, (3) the hose maintains the same thickness throughout, (4) the coils form an ascending spiral pattern, and (5) the diameter of the loops decreases from bottom to top, create an image showing a snake positioned in grass following this same organizational principle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the snake's body form circular loops?", "tags": []},
+      { "question": "Are body loops stacked vertically on top of each other?", "tags": []},
+      { "question": "Does the snake maintain the same body thickness throughout?", "tags": []},
+      { "question": "Does the snake's body form an ascending spiral pattern?", "tags": []},
+      { "question": "Does the diameter of the body loops decrease from bottom to top?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a picket fence displays the following visual properties: (1) vertical posts are all the same height, (2) all posts have the same width, (3) posts are evenly spaced along the fence line, (4) posts are perfectly parallel to each other, and (5) posts have pointed triangular ends, create an image showing icicle formations hanging from a roof edge following this same organizational principle, where the icicles mimic the posts of the fence. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all icicles the same height?", "tags": []},
+      { "question": "Do all icicles have the same width?", "tags": []},
+      { "question": "Are icicles evenly spaced along the roof edge?", "tags": []},
+      { "question": "Are icicles perfectly parallel to each other?", "tags": []},
+      { "question": "Do icicles have pointed triangular tips?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as an umbrella displays the following visual properties: (1) straight ribs radiate from a central point, (2) ribs are evenly spaced around the center, (3) ribs connect the center to the outer circular edge, (4) fabric panels stretch between adjacent ribs, and (5) the rib pattern is symmetrical about its central axis, create an image showing butterfly wing patterns following this same organizational principle, where the wing veins mimic the radiating ribs and the wing membranes represent the fabric panels of the umbrella. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do straight wing veins radiate from a central point on the butterfly wing?", "tags": []},
+      { "question": "Are wing veins evenly spaced around the center?", "tags": []},
+      { "question": "Do wing veins connect the center to the outer wing edge?", "tags": []},
+      { "question": "Do wing membrane sections stretch between adjacent veins?", "tags": []},
+      { "question": "Is the vein pattern on the butterfly's left wing a mirror image of the pattern on its right wing?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a computer keyboard displays the following visual properties: (1) rectangular keys are arranged in horizontal rows, (2) all keys are the same size, (3) key rows are staggered with each row offset from the row below, (4) keys within each row are evenly spaced, and (5) there are gaps between individual keys, create an image showing stepping stones across a river following this same organizational principle, where the stones represent the keys of the keyboard. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are rectangular stones arranged in horizontal rows across the river?", "tags": []},
+      { "question": "Are all stepping stones the same size?", "tags": []},
+      { "question": "Are stone rows staggered with each row offset from the row below?", "tags": []},
+      { "question": "Are stones within each row evenly spaced?", "tags": []},
+      { "question": "Are there gaps of water between individual stones?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a leather belt with holes displays the following visual properties: (1) circular holes are arranged in a straight line, (2) all holes have the same diameter, (3) holes are evenly spaced along the belt length, (4) holes are perfectly round, and (5) the distance between hole centers is consistent, create an image showing lily pads floating on a pond following this same organizational principle, where the circular lily pads mimic the holes of the belt. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are circular lily pads arranged in a straight line across the pond?", "tags": []},
+      { "question": "Do all lily pads have the same diameter?", "tags": []},
+      { "question": "Are lily pads evenly spaced along the water surface?", "tags": []},
+      { "question": "Are lily pads perfectly round?", "tags": []},
+      { "question": "Is the distance between lily pad centers consistent?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as fence posts display the following visual properties: (1) cylindrical posts stand vertically, (2) all posts are the same height, (3) all posts have the same diameter, (4) posts are evenly spaced in a straight line, and (5) posts have rounded tops, create an image showing saguaro cacti in a desert following this same organizational principle, where the cacti mimic the cylindrical posts. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do cylindrical cacti stand vertically in the desert?", "tags": []},
+      { "question": "Are all cacti the same height?", "tags": []},
+      { "question": "Do all cacti have the same diameter?", "tags": []},
+      { "question": "Are cacti evenly spaced in a straight line?", "tags": []},
+      { "question": "Do cacti have rounded tops?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a parking lot displays the following visual properties: (1) rectangular spaces are arranged in parallel rows, (2) all parking spaces are the same size, (3) spaces within each row are aligned perfectly, (4) rows are separated by driving lanes, and (5) the grid pattern covers the entire lot surface, create an image showing floating ice chunks in arctic water following this same organizational principle, where the ice chunks represent the parking spaces and the open water represents the driving lanes. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are rectangular ice chunks arranged in parallel rows on the water?", "tags": []},
+      { "question": "Are all ice chunks the same size?", "tags": []},
+      { "question": "Are ice chunks within each row aligned perfectly?", "tags": []},
+      { "question": "Are ice chunk rows separated by channels of open water?", "tags": []},
+      { "question": "Does the ice chunk pattern cover the entire visible water surface?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as roof shingles display the following visual properties: (1) overlapping rectangular pieces cover the surface, (2) each row of shingles overlaps the row below, (3) all shingles are the same size, (4) shingles within each row are aligned horizontally, and (5) rows run parallel across the entire roof, create an image showing butterfly wing scales following this same organizational principle, where the scales on the wing mimic the shingles. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do overlapping rectangular scales cover the butterfly wing surface?", "tags": []},
+      { "question": "Does each row of scales overlap the row below on the wing?", "tags": []},
+      { "question": "Are all wing scales the same size?", "tags": []},
+      { "question": "Are scales within each row aligned horizontally across the wing?", "tags": []},
+      { "question": "Do scale rows run parallel across the entire wing?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a brick wall displays the following visual properties: (1) rectangular bricks are arranged in horizontal rows, (2) each row is offset by half a brick length from the row below, (3) all bricks are the same size, (4) horizontal mortar lines separate each row, and (5) vertical mortar lines separate bricks within rows, create an image showing cumulus cloud formations following this same organizational principle, where the cloud formations mimic the bricks and the clear sky represents the mortar. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are rectangular cloud masses arranged in horizontal rows across the sky?", "tags": []},
+      { "question": "Is each cloud row offset by half a cloud length from the row below?", "tags": []},
+      { "question": "Are all cloud masses the same size?", "tags": []},
+      { "question": "Do horizontal clear air spaces separate each cloud row?", "tags": []},
+      { "question": "Do vertical clear air spaces separate clouds within rows?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a window grid displays the following visual properties: (1) rectangular glass panes are separated by vertical frames, (2) rectangular glass panes are separated by horizontal frames, (3) all glass panes are the same size, (4) frames intersect at right angles, and (5) the grid pattern is perfectly symmetrical, create an image showing lily pad clusters on a pond following this same organizational principle, where the clusters of lily pads represent the glass panes and the channels of water between them form the grid frames. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are rectangular lily pad groups separated by vertical water channels?", "tags": []},
+      { "question": "Are rectangular lily pad groups separated by horizontal water channels?", "tags": []},
+      { "question": "Are all lily pad groups the same size?", "tags": []},
+      { "question": "Do water channels intersect at right angles?", "tags": []},
+      { "question": "Is the lily pad group pattern perfectly symmetrical?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a wire whisk displays the following visual properties: (1) multiple thin wires extend downward from a central handle, (2) wires are evenly distributed around the handle circumference, (3) wires curve outward at their bottom ends, (4) wires form an egg-shaped outline when viewed from the side, and (5) the central handle connects all wires at the top, create an image showing a fantastical, floating aquatic plant following this same organizational principle, with the fronds hanging down from a central floating bulb, mimicking the wires of the whisk. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do multiple thin fronds extend downward from a central floating bulb?", "tags": []},
+      { "question": "Are the fronds evenly distributed around the circumference of the central floating bulb?", "tags": []},
+      { "question": "Do the fronds curve outward at their bottom ends?", "tags": []},
+      { "question": "Do the fronds form an egg-shaped outline when viewed from the side?", "tags": []},
+      { "question": "Does the central floating bulb connect all fronds at the top?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-AR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: When iron filings are scattered around a bar magnet, they form distinct lines. These lines are (1) smooth and curved, (2) emerge from one pole and terminate at the other pole, (3) never cross or intersect each other, (4) are most densely concentrated near the poles, and (5) are least dense in the space far from the poles. Now, apply this rule to a different target scene: The 'poles' are a glowing, red crystal and a glowing, blue crystal, floating in the dark void of space. The 'filings' are swarms of tiny, suspended, golden motes of light. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are these lines of motes smooth and curved, rather than straight or jagged?", "tags": [] },
+      { "question": "Do the lines of motes appear to originate from one of the crystals and end at the other crystal?", "tags": [] },
+      { "question": "Do the individual lines of motes avoid crossing or intersecting with one another?", "tags": [] },
+      { "question": "Is the density of the golden motes visibly highest near the crystals?", "tags": [] },
+      { "question": "Is the density of the golden motes visibly lowest in the space far from the crystals?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as frost forming on a windowpane displays the following visual properties: (1) it originates from a specific point or edge, (2) it spreads outward across the surface from this origin, (3) the pattern is made of intricate, branching, fern-like structures, (4) the pattern is densest near the origin point, and (5) the branches become sparser the farther they are from the origin. Now, apply this rule to a different target scene: The 'windowpane' is a massive, perfectly smooth, vertical slab of polished black obsidian. The 'frost' is a pattern of glowing, silver, crystalline veins. The background is a dark, empty space. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the silver pattern appear to originate from a single point or edge on the obsidian slab?", "tags": [] },
+      { "question": "Does the silver pattern spread outwards across the surface of the obsidian from that origin point?", "tags": [] },
+      { "question": "Is the silver pattern composed of intricate, branching, fern-like or feathery shapes?", "tags": [] },
+      { "question": "Is the silver pattern visibly denser and brighter near its point of origin?", "tags": [] },
+      { "question": "Do the branches of the silver pattern become sparser and more delicate as they get farther from the origin?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: When a droplet of ink falls into clear water, it creates a pattern. This pattern consists of (1) multiple, separate rings, (2) which are concentric and share a common center, (3) with the point of impact being that center. (4) The rings closest to the center are sharp and well-defined. (5) The rings farther from the center are fainter and more diffuse. Now, apply this rule to a different target scene: In the center of a vast, flat, dry, cracked mudflat is a single, pulsating, luminous flower. The 'rings' are patterns of cracks on the surface of the mudflat. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the cracks in the mudflat arranged into multiple, distinct rings?", "tags": [] },
+      { "question": "Are these rings of cracks concentric, sharing a single common center point?", "tags": [] },
+      { "question": "Is the luminous flower located at the exact center of these concentric rings of cracks?", "tags": [] },
+      { "question": "Are the rings of cracks that are closer to the flower more sharply or clearly defined than the outer rings?", "tags": [] },
+      { "question": "Are the rings of cracks that are farther away from the flower visibly fainter, more broken, or more diffuse?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a lightning bolt displays the following visual properties: (1) it has one primary, thick, intensely bright main channel, (2) multiple smaller, thinner secondary branches fork from the main channel, (3) these branches are less bright than the main channel, (4) the entire structure has sharp, jagged, angular turns, and (5) the bolt brightly illuminates the edges of nearby cloud. Now, apply this rule to a different target scene: The 'sky' is a massive, dark, crystalline geode interior. The 'lightning bolt' is a crack forming on the geode's inner surface, which glows with internal, white-hot energy. The 'clouds' are clusters of smaller, non-glowing crystals near the crack The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the glowing crack have a single, primary path that is visibly thicker and brighter than the rest?", "tags": [] },
+      { "question": "Does the primary crack fork into multiple, smaller, thinner secondary cracks?", "tags": [] },
+      { "question": "Are these secondary cracks visibly less bright than the main crack?", "tags": [] },
+      { "question": "Does the path of the crack system consist of sharp, angular turns?", "tags": [] },
+      { "question": "Are the edges of the nearby crystal clusters brightly illuminated by the light from the crack?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a tree trunk cross-section displays the following visual properties: (1) it has a series of many concentric rings, (2) there is a distinct pith at the absolute center, (3) each ring is composed of a lighter and a darker part, (4) the width of the rings varies, and (5) thin, straight lines radiate outwards from the center across the rings, create an image showing a protoplanetary disk nebula in space that follows this same organizational principle, featuring a central star as the pith, gas and dust as the rings, and glowing plasma jets as the radiating lines. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the layers of cosmic gas arranged in a series of many concentric rings?", "tags": [] },
+      { "question": "Is there a single, bright star located at the exact center of these rings?", "tags": [] },
+      { "question": "Does each ring of gas appear to have distinct lighter and darker sections?", "tags": [] },
+      { "question": "Do the individual rings of gas have varying widths?", "tags": [] },
+      { "question": "Are there thin, straight lines of a different appearance (glowing plasma jets) radiating outwards from the central star?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a dandelion seed head displays the following visual properties: (1) it has a central, spherical core, (2) a multitude of very fine filaments radiate outwards from the core, (3) each filament is a straight line, (4) the overall shape formed by the filament ends is a near-perfect sphere, and (5) a tiny seed is visible at the base of each filament, create an image showing a static, explosive phenomenon in deep space that follows this same organizational principle, where a neutron star acts as the central core, streaks of glowing plasma act as the filaments, and points of light on the star's surface act as the seeds. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there a central, dense star from which all phenomena originate?", "tags": [] },
+      { "question": "Are there a great number of fine plasma streaks radiating outwards from the central star?", "tags": [] },
+      { "question": "Are the individual plasma streaks depicted as straight lines?", "tags": [] },
+      { "question": "Do the collected ends of the plasma streaks form a large, spherical shell in space?", "tags": [] },
+      { "question": "Are there distinct, bright points of light on the central star's surface, each aligned with a plasma streak?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a cross-section of a nautilus shell. The pattern is (1) a perfect logarithmic spiral shape. (2) The spiral is divided into many separate internal chambers. (3) A thin, continuous tube (the siphuncle) passes through the center of every chamber. (4) The outermost, largest chamber is open. (5) The entire structure is planar. Now, apply this rule to a different target scene: The 'nautilus shell' is a colossal, ancient, abandoned space station, shown in a cutaway view. The 'chambers' are habitation or cargo bays. The 'siphuncle' is a central transit corridor. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the space station's overall architecture form a logarithmic spiral?", "tags": [] },
+      { "question": "Is the interior of the station divided into multiple, distinct, sealed bays?", "tags": [] },
+      { "question": "Does a continuous transit corridor pass through the approximate center of every single bay?", "tags": [] },
+      { "question": "Is the largest, outermost bay of the station open to space?", "tags": [] },
+      { "question": "Is the entire space station constructed on a single, flat plane?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a single peacock tail feather. The feather has (1) a long, stiff central shaft. (2) Hundreds of smaller barbs that branch off the shaft at an upward angle. (3) A large, distinct 'eyespot' near the tip of the feather. (4) This eyespot is composed of concentric ovals of iridescent color. (5) The typical color order in the eyespot is blue in the center, then bronze, then green. Now, apply this rule to a different target scene: The 'feather' is a monumental, magical artifact made of crystal, floating in a void. The 'shaft' is a solid beam of clear quartz. The 'barbs' are smaller, sharp, angled crystal shards growing from the main beam. The 'eyespot' is a set of nested, glowing, oval energy fields. The 'hairy texture' is a fine network of glowing etches on the crystal shards. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the artifact structured around a long, central beam of clear crystal?", "tags": [] },
+      { "question": "Are there numerous smaller crystal shards branching off from the central beam at an upward angle?", "tags": [] },
+      { "question": "Is there a large, distinct, oval-shaped energy formation near the artifact's tip?", "tags": [] },
+      { "question": "Is this energy formation made of several nested, concentric ovals?", "tags": [] },
+      { "question": "Does the energy formation show concentric colors in the order of blue (center), then bronze, then green?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as the 'crazing' pattern on a ceramic glaze displays the following visual properties: (1) it is a network of interconnected, fine lines, (2) these lines form irregular, polygonal cells, (3) the network covers the entire surface, (4) the size of the polygonal cells is varied, and (5) the lines have sharp edges, create an image of a desert planet from orbit that follows this same organizational principle, where the planet's surface is the ceramic glaze and a network of deep, shadowed canyons represents the crazing cracks. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the planet's surface covered in a network of interconnected, dark canyons?", "tags": [] },
+      { "question": "Do the canyons divide the planet's surface into irregular, polygonal cells of land?", "tags": [] },
+      { "question": "Does this canyon network appear to cover the entire visible surface of the planet?", "tags": [] },
+      { "question": "Does the network create 'cells' of land of varying sizes and shapes?", "tags": [] },
+      { "question": "Are the edges of the canyons sharp and well-defined?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a classic dendritic snowflake displays the following visual properties: (1) it has a small, hexagonal core at the center, (2) six primary, symmetrical arms radiate from the core, (3) these six arms are positioned at 60-degree angles from each other, (4) smaller, intricate side-branches grow from the main arms, and (5) the side-branches on all six arms are nearly identical, create an image showing a massive, metallic space station that follows this same organizational principle, where a central habitat module acts as the core, long docking corridors act as the arms, and solar panel arrays serve as the side-branches. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the space station's central module hexagonal in shape?", "tags": [] },
+      { "question": "Are there exactly six long corridors radiating out from the central module?", "tags": [] },
+      { "question": "Are these six corridors arranged symmetrically around the center, at 60-degree angles from each other?", "tags": [] },
+      { "question": "Are there smaller solar panel arrays and modules branching off the main corridors?", "tags": [] },
+      { "question": "Does the pattern of attachments on one corridor look identical to the patterns on the other five corridors?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of paper chromatography separating a dot of black ink. The pattern on the paper shows (1) a starting line at the bottom where the dot was. (2) The single black dot has separated into several distinct, horizontal bands of different colors above the starting line. (3) These colored bands are located at different heights. (4) The bands are separated by white space. (5) Each band is a solid stripe of a single color (e.g., a yellow band, a red band, a blue band). Now, apply this rule to a different target scene: The 'paper' is a tall, mystical waterfall of pure, clear light. The 'ink dot' is an unseen magical source at the base. The 'bands' are stripes of solid color that have separated within the falling light. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there a clear, empty area at the very bottom of the waterfall of light?", "tags": [] },
+      { "question": "Has the clear light of the waterfall been separated into several distinct, horizontal colored stripes?", "tags": [] },
+      { "question": "Are these horizontal stripes of color located at different vertical heights within the waterfall?", "tags": [] },
+      { "question": "Are the colored stripes separated by sections of the original clear, uncolored light?", "tags": [] },
+      { "question": "Is each stripe a solid band of a single, uniform color?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as lichen growing on a rock displays the following visual properties: (1) it forms flat, circular or lobed patches, (2) patches have a distinct border that is different from the center color, (3) where patches meet, they form a sharp boundary line, (4) patches vary in size, and (5) the lichen's surface texture is distinct from the rock, create an image showing a glowing, crystalline alien infestation on the hull of a decaying starship that follows this same organizational principle, where the starship hull is the rock and the infestation is the lichen. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the alien infestation grow in flat, circular or lobed patches on the starship hull?", "tags": [] },
+      { "question": "Do these crystalline patches have distinct, glowing outer borders of a different color than their centers?", "tags": [] },
+      { "question": "Where two patches of the infestation meet, is there a clear, sharp boundary line between them?", "tags": [] },
+      { "question": "Are the patches of infestation shown in a variety of different sizes?", "tags": [] },
+      { "question": "Does the texture of the infestation appear crystalline, which is distinct from the rusted metal of the hull?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a classic spider web. It has (1) a series of straight, radial spokes that originate from a central hub. (2) A single, continuous thread spirals outwards, connecting the spokes. (3) The entire structure is mostly two-dimensional or planar. (4) The threads are extremely thin and delicate. (5) The spacing between the spiral threads is very regular. (6) Small, shimmering dewdrops are often attached to the threads. (7) The central hub is often open or a thicker mesh. Now, apply this rule to a different target scene: The 'web' is a vast, glowing, navigational star chart in a spaceship's command center. The 'spokes' and 'spiral' are lines of light. The 'dewdrops' are representations of individual stars or planets. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the star chart feature straight lines of light radiating from a central point?", "tags": [] },
+      { "question": "Is there a single, continuous spiral line of light that connects the radial lines?", "tags": [] },
+      { "question": "Is the entire star chart depicted as a flat, two-dimensional projection?", "tags": [] },
+      { "question": "Are the glowing lines that form the chart extremely thin and fine?", "tags": [] },
+      { "question": "Is the distance between the turns of the spiral line of light consistent and regular?", "tags": [] },
+      { "question": "Are there small, bright points of light (stars) located along the glowing lines?", "tags": [] },
+      { "question": "Is the area at the very center of the radial lines depicted as an open space or a denser confluence of light?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a mushroom's gills viewed from below. The pattern has (1) a central stem from which everything radiates. (2) A dense series of thin, flat plates (the gills) that radiate outwards. (3) These plates are parallel to each other and do not touch. (4) They run from the central stem to the outer edge of the circular cap. (5) The density of the plates is very high near the stem. Now, apply this rule to a different target scene: This is a top-down aerial view of a futuristic, circular city. The 'stem' is a massive central tower. The 'gills' are the city's towering residential walls. The 'cap perimeter' is the city's outer wall. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there a single, massive tower at the exact center of the city?", "tags": [] },
+      { "question": "Are there a great number of tall, thin walls radiating outwards from the central tower?", "tags": [] },
+      { "question": "Are these radiating walls parallel to their immediate neighbors and separated by spaces?", "tags": [] },
+      { "question": "Do the walls extend from the central tower all the way to the city's outer edge?", "tags": [] },
+      { "question": "Are the radiating walls most densely packed in the area closest to the central tower?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of lava cooling into basalt columns (like Giant's Causeway). The pattern is (1) a surface made of tightly packed, vertical columns. (2) The cross-section of these columns is polygonal, mostly hexagonal. (3) The columns are all parallel to each other. (4) Their tops are flat. (5) The columns have different heights, creating a stepped, uneven surface. Now, apply this rule to a different target scene: The 'columns' are a dense formation of massive, glowing crystals on the surface of an alien planet. The background is a nebula-filled sky. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the alien landscape formed by a dense field of tightly packed, vertical crystals?", "tags": [] },
+      { "question": "Do the crystals have a polygonal (mostly hexagonal) cross-section when viewed from above?", "tags": [] },
+      { "question": "Are all the crystal columns oriented vertically, parallel to each other?", "tags": [] },
+      { "question": "Do the tops of the crystals appear to be flat surfaces?", "tags": [] },
+      { "question": "Do the crystals have varying heights, creating a stepped or terraced landscape?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Just as a geode displays the following visual properties: (1) it has a hollow cavity on the inside, (2) the interior surface is completely lined with inward-pointing crystals, (3) there is a sharp boundary between the outer shell and the inner crystal layer, (4) the crystals are sharp and multifaceted, and (5) the crystal size is largest at the back and smaller near the opening. Now, apply this rule to a different target scene: The 'geode' is a magical fruit, called a 'Starmelon', which is shown cut in half. The 'outer shell' is a smooth, green rind. The 'crystals' are a form of crystallized, edible, glowing blue sugar. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the inside of the fruit depicted as a hollow cavity?", "tags": [] },
+      { "question": "Is the entire inner surface of the fruit lined with inward-pointing, glowing blue crystals?", "tags": [] },
+      { "question": "Is there a distinct boundary visible between the green rind and the blue crystal lining?", "tags": [] },
+      { "question": "Do the blue sugar formations have sharp, geometric, crystal-like facets?", "tags": [] },
+      { "question": "Are the crystals at the back of the fruit half larger than those near the cut edge?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a virus (bacteriophage). It has (1) a distinct head, which is an angular, polyhedral capsule. (2) A thin, hollow-looking tail sheath connected to the head. (3) The head is much wider than the tail. (4) Several long, spindly leg-like tail fibers are attached to the base of the tail. (5) The entire structure is symmetrical along the head-tail axis. Now, apply this rule to a different target scene: The 'virus' is a type of colossal, ancient, autonomous mining robot on a desolate red planet. The 'head' is a main processing unit. The 'tail' is a drilling shaft, and the 'fibers' are landing/anchoring legs. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the robot have a distinct, angular, polyhedral main processing unit at the top?", "tags": [] },
+      { "question": "Is a thin drilling shaft connected to the bottom of this main unit?", "tags": [] },
+      { "question": "Is the main processing unit significantly wider than the drilling shaft?", "tags": [] },
+      { "question": "Are there several long, spindly landing legs attached to the base of the drilling shaft?", "tags": [] },
+      { "question": "Is the robot's entire structure symmetrical around a vertical axis running through the main unit and drill?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a water ripple from a stone dropped in a pond. The pattern (1) originates from a single, central point of impact. (2) It consists of multiple, concentric, circular waves. (3) The amplitude (height) of the waves is greatest at the center and decreases outwards. (4) The wavelength (distance between waves) increases with distance from the center. (5) The pattern spreads over a flat, two-dimensional surface. Now, apply this rule to a different target scene: The 'surface' is the fabric of spacetime, visualized as a dark grid. The 'impact point' is a single, small, black sphere floating in the center. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the distortions in the spacetime grid originate from the central black sphere?", "tags": [] },
+      { "question": "Are the grid distortions arranged in multiple, concentric, circular waves?", "tags": [] },
+      { "question": "Is the visual intensity of the distortion greatest near the sphere and does it diminish with distance?", "tags": [] },
+      { "question": "Does the distance between one wave of distortion and the next increase for waves that are farther from the center?", "tags": [] },
+      { "question": "Does the wave pattern propagate across the flat, two-dimensional grid?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a pomegranate cut in half. The fruit has (1) a thick, hard outer rind. (2) The interior is divided into multiple irregular chambers by thin, pale, papery membranes. (3) Each chamber is tightly packed with many small, jewel-like seeds (arils). (4) Each individual seed is a translucent, faceted spheroid. (5) The color of the seeds is a vibrant ruby red. Now, apply this rule to a different target scene: The 'pomegranate' is a fractured planetoid, shown cracked open. The 'rind' is the planet's barren, rocky crust. The 'membranes' are thin sheets of solidified mineral. The 'seeds' are valuable, raw, energy crystals. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the fractured planetoid have a thick, rocky outer crust?", "tags": [] },
+      { "question": "Is the interior of the planetoid divided into distinct chambers by thin mineral sheets?", "tags": [] },
+      { "question": "Is each chamber densely packed with many individual energy crystals?", "tags": [] },
+      { "question": "Does each energy crystal appear as a translucent, faceted object?", "tags": [] },
+      { "question": "Are the energy crystals a uniform, vibrant ruby red color?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a bird's nest. It is (1) roughly a bowl-shaped structure. (2) It is constructed from a chaotic, interwoven mass of many thin elements (like twigs and grass). (3) The outer structure is rough and messy. (4) The inner depression is smoother and more tightly woven. (5) It is located in the fork of tree branches. Now, apply this rule to a different target scene: The 'nest' is a small, self-sufficient space station in a desolate asteroid field. The 'twigs' are scavenged pieces of scrap metal, ship hulls, and girders. The 'tree branches' are large, stable asteroids. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the space station's overall structure shaped like a large bowl or cup?", "tags": [] },
+      { "question": "Is the station visibly constructed from a chaotic, interwoven mass of scrap metal pieces?", "tags": [] },
+      { "question": "Is the exterior of the station rough and haphazardly constructed?", "tags": [] },
+      { "question": "Does the station have a central depression or habitation area that appears more orderly and solid?", "tags": [] },
+      { "question": "Is the station built securely within a junction of several large asteroids?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a decaying leaf, where only the skeletal vein structure remains. The pattern shows (1) a prominent, thick central vein (midrib). (2) A network of smaller, branching secondary veins. (3) The veins are all interconnected. (4) The fleshy leaf material between the veins is completely gone, leaving empty space. (5) The structure is extremely fragile and delicate. (6) There are irregular holes and broken sections in the vein network itself. (7) The overall outline of the original leaf shape is still recognizable. Now, apply this rule to a different target scene: The 'leaf' is a derelict, ancient, stained-glass window in a ruined cathedral. The 'veins' are the lead came (the metal dividers). The 'fleshy material' is the colored glass. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the window's design feature a prominent, thick central metal divider?", "tags": [] },
+      { "question": "Is there a network of smaller, branching metal dividers connected to the central one?", "tags": [] },
+      { "question": "Are all the metal dividers part of a single, interconnected framework?", "tags": [] },
+      { "question": "Are most of the spaces between the metal dividers empty, as if the glass has fallen out?", "tags": [] },
+      { "question": "Does the remaining metal framework appear delicate and fragile?", "tags": [] },
+      { "question": "Are there breaks and missing sections in the metal framework itself?", "tags": [] },
+      { "question": "Is the overall original shape of the window (e.g., an arch or circle) still discernible?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a cross-section of an onion. It has (1) a small, central core. (2) It is composed of many distinct, concentric, spherical layers. (3) Each layer fully encloses the one within it. (4) The layers are thin and semi-translucent. (5) The layers are tightly packed against each other with no gaps. Now, apply this rule to a different target scene: The 'onion' is a planetary defense system around a small, blue planet. The 'layers' are nested, spherical energy shields. The 'outer skin' is a final, slightly different-looking outermost shield. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there a small planet visible at the absolute center of the defense system?", "tags": [] },
+      { "question": "Does the defense system consist of numerous, distinct, concentric, spherical energy shields?", "tags": [] },
+      { "question": "Does each shield layer appear to completely envelop the layer inside it?", "tags": [] },
+      { "question": "Are the energy shield layers depicted as thin and semi-translucent?", "tags": [] },
+      { "question": "Are the shield layers shown to be tightly layered with no visible space between them?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a close-up of woven burlap fabric. The pattern has (1) two sets of parallel threads (warp and weft). (2) The two sets are perpendicular to each other, forming a grid. (3) There are small, regular, square-shaped gaps between the threads. (4) The color of the threads is a uniform, earthy brown. (5) The overall pattern is regular and repeating. Now, apply this rule to a different target scene: The 'fabric' is a vast fleet of identical, cylindrical spaceships in a tight orbital formation, viewed from above. The 'threads' are lines of these spaceships. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the fleet arranged into two large sets of straight, parallel lines of ships?", "tags": [] },
+      { "question": "Are these two sets of lines perpendicular, forming a grid-like formation?", "tags": [] },
+      { "question": "Are there regular, squarish gaps in the formation between the lines of ships?", "tags": [] },
+      { "question": "Are all the ships in the fleet identical in shape and of a uniform, earthy brown color?", "tags": [] },
+      { "question": "Does the overall formation of the fleet look highly organized and repetitive?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a snail shell. It has (1) a single, continuous, coiled tube. (2) The tube forms a logarithmic spiral, meaning it gets wider as it spirals outwards. (3) The spiral originates from a tiny central point (the apex). (4) There is a single, large opening (the aperture) at the end of the tube. (5) The material appears hard, solid, and opaque. Now, apply this rule to a different target scene: The 'snail shell' is a massive, ancient, stone breakwater protecting a harbor city. The 'ridges' are defensive ramparts on top of the wall. The 'aperture' is the main entrance to the harbor. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the breakwater a single, continuous, coiled wall?", "tags": [] },
+      { "question": "Does the breakwater wall become progressively wider as it spirals away from its starting point?", "tags": [] },
+      { "question": "Does the spiral shape of the breakwater originate from a small, central point?", "tags": [] },
+      { "question": "Is there a single, large opening at the outer end of the breakwater wall that serves as the harbor entrance?", "tags": [] },
+      { "question": "Is the breakwater constructed from solid, opaque stone?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a torn piece of paper, viewed flat. It shows (1) two separate pieces with matching, interlocking edges. (2) The torn edge is highly irregular and jagged. (3) The edge is composed of tiny, fuzzy, hair-like paper fibers. (4) The tear is not a straight line, but a complex, wandering path. (5) No material is lost; the two pieces would fit together perfectly. Now, apply this rule to a different target scene: The 'paper' is a massive sheet of arctic sea ice, shown from directly above. The 'tear' is a rift or lead that has split the ice sheet in two. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are there two large, separate sheets of ice whose edges appear to perfectly interlock?", "tags": [] },
+      { "question": "Is the edge between the two ice sheets highly irregular and jagged?", "tags": [] },
+      { "question": "Are there small, sharp shards and fragments of ice along the rift edge, resembling fibers?", "tags": [] },
+      { "question": "Does the rift between the ice sheets follow a complex, wandering path?", "tags": [] },
+      { "question": "Does it appear that no ice is missing, and the two sheets could be pushed back together perfectly?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a melting wax candle. It has (1) a solid, cylindrical body. (2) A pool of clear, molten wax at the top. (3) Multiple drips of wax have run down the sides from the top pool. (4) The drips clearly follow a downward path. (5) A single, bright flame sits above the molten pool. Now, apply this rule to a different target scene: The 'candle' is a colossal, ancient, metal statue of a king. The 'drips' are streaks of a different, coppery-green metal that has oxidized and run down. The 'flame' is a glowing crystal held in the statue's crown. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the main body of the metal statue solid and roughly cylindrical?", "tags": [] },
+      { "question": "Is there an accumulation of the coppery-green metal near the top of the statue, as if it were a liquid pool?", "tags": [] },
+      { "question": "Are there multiple streaks of the coppery-green metal running down the sides of the main statue?", "tags": [] },
+      { "question": "Do the streaks clearly originate from the top of the statue and travel downwards?", "tags": [] },
+      { "question": "Is there a single, bright, glowing crystal positioned at the very top of the statue's crown?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a diatom (a type of microscopic algae). It has (1) a rigid, pill-shaped or circular outer shell (frustule). (2) The shell is made of a translucent, glass-like material. (3) Its surface is covered with an intricate and highly regular pattern of tiny pores or holes. (4) The shell is composed of two halves that fit together, often with a visible seam. (5) The entire structure is symmetrical. Now, apply this rule to a different target scene: The 'diatom' is an ancient, derelict alien cargo container floating in deep space. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the alien container's overall shape a rigid, pill-like or circular capsule?", "tags": [] },
+      { "question": "Is the hull of the container made of a translucent or glass-like material?", "tags": [] },
+      { "question": "Is the surface of the container covered in a regular, geometric pattern of tiny pores or windows?", "tags": [] },
+      { "question": "Is there a visible seam running around the middle of the container, suggesting it is made of two halves?", "tags": [] },
+      { "question": "Is the container depicted as being perfectly symmetrical?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of dried mud cracks. The surface (1) is divided into separate, irregular, polygonal tiles. (2) The tiles are separated by interconnected cracks. (3) The edges of the tiles are slightly curled upwards. (4) The cracks are wider at the top than at the bottom. (5) The size of the polygonal tiles is varied. Now, apply this rule to a different target scene: The 'mud' is the thick, metallic armor plating on a giant, dormant war machine. The 'cracks' are fissures where the armor has cooled and contracted, revealing a glowing power source underneath. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the war machine's armor plating visually divided into separate, irregular, polygonal plates?", "tags": [] },
+      { "question": "Are these plates separated by an interconnected network of glowing fissures?", "tags": [] },
+      { "question": "Are the outer edges of the metal plates visibly curled slightly upwards, away from the fissures?", "tags": [] },
+      { "question": "Do the glowing fissures appear wider at the surface and narrower deeper within?", "tags": [] },
+      { "question": "Are the armor plates shown in a variety of different sizes?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of a sunflower head. It has (1) a large, dark, central disc. (2) A ring of large, bright yellow petals surrounds the central disc. (3) Each petal is a simple, flat, teardrop shape. (4) The petals do not overlap significantly. (5) All petals are attached to the outer edge of the central disc. Now, apply this rule to a different target scene: The 'sunflower head' is an ornate, circular, ceremonial shield. The 'central disc' is the shield's dark iron boss. The 'seeds' are inlaid bronze studs. The 'petals' are sharp, golden blades. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Does the shield have a large, dark, circular iron boss at its center?", "tags": [] },
+      { "question": "Is the central boss surrounded by a ring of sharp, golden blades?", "tags": [] },
+      { "question": "Is each individual blade shaped like a simple, flat teardrop?", "tags": [] },
+      { "question": "Are the golden blades arranged in a single layer around the shield's edge without significant overlap?", "tags": [] },
+      { "question": "Are all the golden blades attached directly to the outer edge of the central iron boss?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Create an image based on an analogy. First, understand the source rule: The visual pattern of blood vessels in a living eye. The pattern has (1) a central point (the optic disc) from which the vessels emerge. (2) The vessels branch out from this point, radiating across the surface. (3) The vessels become progressively thinner as they branch and move away from the center. (4) The vessels are a distinct, bright red color. (5) They are seen against a uniform, pale, spherical background (the retina). Now, apply this rule to a different target scene: The 'eye' is a circular, ancient, pale marble slab. The 'vessels' are rivers of molten gold flowing in channels carved into the marble. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the rivers of molten gold appear to originate from a single, central point on the marble slab?", "tags": [] },
+      { "question": "Do the rivers of gold branch out and radiate across the surface of the marble slab?", "tags": [] },
+      { "question": "Do the golden rivers become visibly narrower as they get farther from the central origin point?", "tags": [] },
+      { "question": "Are the rivers filled with a bright, luminous, golden liquid?", "tags": [] },
+      { "question": "Is the marble slab a uniform, pale color, providing a high contrast to the gold?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-AR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show one horizontal bar magnet on a flat surface with many iron filings around it. Learn these numbered visual properties: (1) The filings make smooth, unbroken curves. (2) These curves never cross each other. (3) Some curves connect the space near one end of the magnet to the space near the other end. (4) Other curves bend around the outside of the two ends. (5) Filings are packed more densely near each end and more sparsely far away.\n\nTarget domain (apply the learned rule, do not describe the result): Show a dark tabletop with exactly two short matte-black cylinders placed where the magnet’s two ends would be, and many identical, unlit tealight candles scattered on the table. Position the candles by applying exactly the learned rule from the filings. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the candles form smooth, unbroken chains?", "tags": [] },
+      { "question": "Do the candle chains avoid crossing one another anywhere?", "tags": [] },
+      { "question": "Do some candle chains connect the region near one cylinder to the region near the other?", "tags": [] },
+      { "question": "Do other candle chains bend around the outer sides of the two-cylinder pair?", "tags": [] },
+      { "question": "Is candle density higher near each cylinder and lower farther away?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show laminar smoke streamlines flowing left to right past two identical circular cylinders side by side. Learn these numbered visual properties: (1) Far upstream, the streamlines are roughly parallel. (2) As each line meets a cylinder, it bends smoothly to go around it. (3) The lines do not cross. (4) Between the two cylinders the spacing between lines becomes tighter than on the outer sides. (5) Just behind each cylinder there is a sparser, teardrop-shaped area.\n\nTarget domain (apply the learned rule, do not describe the result): Show a paved plaza from above with exactly two round stone fountains placed like the cylinders, and many small chalk dots sprinkled by a street artist. Arrange the dots into rows by applying exactly the learned rule from the smoke lines. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Upstream of the fountains, are the dot rows roughly parallel?", "tags": [] },
+      { "question": "Do the rows bend smoothly to pass around each fountain?", "tags": [] },
+      { "question": "Do the rows avoid crossing one another?", "tags": [] },
+      { "question": "Between the two fountains, are the rows more tightly spaced than on the outer sides?", "tags": [] },
+      { "question": "Just downstream of each fountain, is there a visibly sparser, teardrop-like area?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a classic brick wall in a running-bond layout. Learn these numbered visual properties: (1) Bricks are equal rectangles arranged in straight horizontal rows. (2) Each row is shifted sideways by half a brick compared to the row above. (3) Horizontal rows are level and evenly spaced. (4) All bricks share the same orientation (long edges horizontal). (5) The pattern fills a clean rectangle at the boundary.\n\nTarget domain (apply the learned rule, do not describe the result): Show a clean wall with many identical rectangular index cards and removable putty. Place the cards on the wall by applying exactly the learned rule from the brick layout. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the cards arranged in straight horizontal rows?", "tags": [] },
+      { "question": "Is each row shifted sideways by half a card relative to the row above?", "tags": [] },
+      { "question": "Are the rows level and evenly spaced?", "tags": [] },
+      { "question": "Do all cards share the same orientation (long edges horizontal)?", "tags": [] },
+      { "question": "Does the overall card layout form a clean rectangle?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show oranges stacked in a crate in a hexagonal close-packed arrangement from a top view. Learn these numbered visual properties: (1) All discs are the same size. (2) Each interior disc touches six neighbors. (3) Rows are offset by half a disc relative to the rows above and below. (4) Center-to-center spacing between touching discs is constant. (5) Straight lines of disc centers exist in three directions 60° apart.\n\nTarget domain (apply the learned rule, do not describe the result): Show a shallow tray and many identical bottle caps. Place the caps on the tray by applying exactly the learned rule from the orange packing. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all caps shown at the same size?", "tags": [] },
+      { "question": "Does each interior cap touch six neighbors?", "tags": [] },
+      { "question": "Are adjacent rows offset by half a cap?", "tags": [] },
+      { "question": "Is the distance between touching cap centers constant across the layout?", "tags": [] },
+      { "question": "Do straight center lines appear in three directions 60° apart?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a single Archimedean spiral painted on paper. Learn these numbered visual properties: (1) It is one continuous curve that starts near a center and winds outward. (2) The curve never crosses itself. (3) The spacing between successive turns is roughly constant. (4) The turning direction is consistent everywhere (all clockwise or all counterclockwise). (5) The curve bends more tightly near the center and more gently farther out.\n\nTarget domain (apply the learned rule, do not describe the result): Show a linen tablecloth and a pile of identical round buttons. Arrange the buttons by applying exactly the learned rule from the spiral. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the buttons form a single continuous chain from near a center toward the outside?", "tags": [] },
+      { "question": "Does the button chain avoid crossing itself anywhere?", "tags": [] },
+      { "question": "Is the spacing between successive turns of the button chain roughly constant?", "tags": [] },
+      { "question": "Does the button chain wind in one consistent direction only?", "tags": [] },
+      { "question": "Is the bending tighter near the center and gentler farther out?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a parquet floor in a herringbone pattern. Learn these numbered visual properties: (1) All pieces are equal rectangles. (2) Rectangles alternate orientation: one set leans left at 45°, the next set leans right at 45°. (3) Adjacent rectangles meet tip-to-side to form sharp V-shaped chevrons. (4) These V-shapes line up into straight zigzag rows. (5) Long edges create short stair-step lines.\n\nTarget domain (apply the learned rule, do not describe the result): Show a large tabletop and many identical wooden tongue depressors (flat sticks). Place the sticks by applying exactly the learned rule from the herringbone pattern. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all sticks equal rectangles?", "tags": [] },
+      { "question": "Do stick orientations alternate left-leaning and right-leaning at about 45°?", "tags": [] },
+      { "question": "Do neighboring sticks meet tip-to-side to form clear V-shapes?", "tags": [] },
+      { "question": "Do these V-shapes align into straight zigzag rows?", "tags": [] },
+      { "question": "Do the long edges create short stair-step lines where they align?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a snowflake with classic six-fold structure. Learn these numbered visual properties: (1) Six main branches radiate from a single center. (2) The branches are equally spaced at 60°. (3) All branches have the same length. (4) Each branch has small side twigs that are mirror-paired across the branch’s center line. (5) All segments are straight, not curved.\n\nTarget domain (apply the learned rule, do not describe the result): Show a black sheet of paper and many clean cotton swabs. Place the swabs by applying exactly the learned rule from the snowflake. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do exactly six main swab branches radiate from one center?", "tags": [] },
+      { "question": "Are the branches equally spaced in angle?", "tags": [] },
+      { "question": "Are all main branches the same length?", "tags": [] },
+      { "question": "On each branch, are small side pieces arranged as mirror-paired twigs?", "tags": [] },
+      { "question": "Are all branch segments straight rather than curved?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a starburst made of straight rays. Learn these numbered visual properties: (1) Many straight rays start from the same central point. (2) The rays are evenly spaced in angle. (3) No ray bends. (4) No two rays overlap. (5) The whole figure has rotational symmetry that repeats at a fixed angle step.\n\nTarget domain (apply the learned rule, do not describe the result): Show a round wooden cutting board and many identical wooden skewers. Place the skewers by applying exactly the learned rule from the starburst. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do all skewer rays begin at one clear center point?", "tags": [] },
+      { "question": "Are the rays evenly spaced in angle around the center?", "tags": [] },
+      { "question": "Are the rays straight with no bends?", "tags": [] },
+      { "question": "Do the rays avoid overlapping each other?", "tags": [] },
+      { "question": "Does the arrangement show repeating rotational symmetry at a fixed angle step?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a Greek-key (meander) border drawn as one continuous path. Learn these numbered visual properties: (1) The path is a single unbroken line from start to finish. (2) The line turns only at right angles. (3) Corridor width (line spacing) stays constant. (4) The path does not cross itself. (5) The path consists of a series of repeating U-shaped turns.\n\nTarget domain (apply the learned rule, do not describe the result): Show a neutral tabletop and a large number of identical black dominoes. Stand the dominoes on edge to trace a path by applying exactly the learned rule from the Greek-key line. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the dominoes trace a single continuous path without breaks?", "tags": [] },
+      { "question": "Does the path make only right-angle turns?", "tags": [] },
+      { "question": "Is the spacing between parallel runs of the path kept constant?", "tags": [] },
+      { "question": "Does the path avoid crossing itself anywhere?", "tags": [] },
+      { "question": "Do repeated U-shaped turns appear at regular intervals along the path?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  }, 
+  "R-AR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a floor tiled by equilateral triangles. Learn these numbered visual properties: (1) All triangles have equal side length. (2) Triangles point up and down in alternating rows. (3) Neighboring rows are offset by half a triangle. (4) At each vertex, six triangle corners meet neatly. (5) The tiling has no gaps or overlaps.\n\nTarget domain (apply the learned rule, do not describe the result): On a tabletop, build the learned rule using identical wooden toothpicks as edges. Use only toothpicks; no drawn lines or glue patterns. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do all formed triangles appear to have equal side length?", "tags": [] },
+      { "question": "Do rows of triangles alternate between pointing up and pointing down?", "tags": [] },
+      { "question": "Are adjacent rows offset by half a triangle width?", "tags": [] },
+      { "question": "At each vertex, do six triangle corners meet cleanly?", "tags": [] },
+      { "question": "Is the toothpick tiling free of gaps and overlaps?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a set of nested squares centered on the same point. Learn these numbered visual properties: (1) All shapes are perfect squares. (2) Every square shares the same center. (3) Each square is larger than the next inner one by a steady step. (4) The spacing between neighboring squares is even. (5) Sides are parallel to the image frame (not rotated).\n\nTarget domain (apply the learned rule, do not describe the result): On a carpet, lay wooden sticks end-to-end to outline the learned rule. Use only identical straight sticks; no drawn guides. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the outlined shapes squares rather than rectangles or diamonds?", "tags": [] },
+      { "question": "Do all squares share one common center?", "tags": [] },
+      { "question": "Do square sizes increase outward in steady steps?", "tags": [] },
+      { "question": "Is the gap between neighboring squares even on all sides?", "tags": [] },
+      { "question": "Are square sides parallel to the frame edges (not rotated)?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a wooden ladder seen from the front. Learn these numbered visual properties: (1) Two long rails are straight and parallel. (2) Rungs are straight and perpendicular to the rails. (3) Rungs are evenly spaced from top to bottom. (4) Every rung touches both rails. (5) All rungs have the same length.\n\nTarget domain (apply the learned rule, do not describe the result): On the ground, make the learned rule using two ropes (rails) and many short dowels (rungs). Use only these items; no drawings or extra lines. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the two ropes straight and parallel like rails?", "tags": [] },
+      { "question": "Are the dowel rungs perpendicular to the ropes?", "tags": [] },
+      { "question": "Are the rungs evenly spaced along the ropes?", "tags": [] },
+      { "question": "Does each rung touch both ropes?", "tags": [] },
+      { "question": "Do all rungs have the same visible length?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a classic chessboard pattern. Learn these numbered visual properties: (1) The board is made of equal squares. (2) Squares are arranged in straight rows and straight columns. (3) Colors alternate in both directions. (4) Any 2×2 block has two of each color at opposite corners. (5) The outer boundary is a clean rectangle.\n\nTarget domain (apply the learned rule, do not describe the result): On a clean floor, place identical square paper coasters in two solid colors to follow the learned rule. Use only the coasters; no printed boards or outlines. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all cells equal squares?", "tags": [] },
+      { "question": "Do squares line up into straight rows and straight columns?", "tags": [] },
+      { "question": "Do colors alternate along rows and along columns?", "tags": [] },
+      { "question": "In any 2×2 set of neighboring squares, do opposite corners match and adjacent corners differ?", "tags": [] },
+      { "question": "Does the overall arrangement form a clean rectangle?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show equal coins laid out in a square packing from a top view. Learn these numbered visual properties: (1) All coins are the same size. (2) Coins sit in straight rows. (3) Coins also sit in straight columns. (4) Each interior coin touches four neighbors (up, down, left, right). (5) Center-to-center spacing is the same horizontally and vertically.\n\nTarget domain (apply the learned rule, do not describe the result): On a baking tray, arrange identical macarons to follow the learned rule. Use only the macarons; no drawn grid. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all macarons shown at the same size?", "tags": [] },
+      { "question": "Are the macarons arranged in straight rows?", "tags": [] },
+      { "question": "Are the macarons arranged in straight columns?", "tags": [] },
+      { "question": "Does each interior macaron touch four neighbors (up, down, left, right)?", "tags": [] },
+      { "question": "Is the center-to-center spacing equal horizontally and vertically?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a simple contour map of one smooth hill using lines only. Learn these numbered visual properties: (1) The map is made of several closed loops. (2) Each inner loop sits fully inside the next outer loop. (3) Loops never cross or touch. (4) Loops are smooth with no sharp corners. (5) Spacing between loops changes gradually.\n\nTarget domain (apply the learned rule, do not describe the result): On a cork board, pin colored twine to lay out the learned rule. Use only twine segments and pins; no printed outlines. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the layout made of several closed twine loops?", "tags": [] },
+      { "question": "Is each inner loop fully inside the next outer loop?", "tags": [] },
+      { "question": "Do the loops avoid touching or crossing each other?", "tags": [] },
+      { "question": "Are the loops smooth curves without sharp corners?", "tags": [] },
+      { "question": "Does the spacing between loops change only gradually, not abruptly?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a simple fish skeleton diagram. Learn these numbered visual properties: (1) One straight spine runs the full length of the body. (2) Ribs leave the spine at a constant slant angle. (3) Ribs come in left–right mirror pairs directly opposite each other. (4) Rib lengths steadily get shorter toward the tail end. (5) Spacing between ribs is roughly even through the middle portion.\n\nTarget domain (apply the learned rule, do not describe the result): On fresh snow, lay down one strip of masking tape as the spine and arrange many fallen leaves as ribs. Place every leaf by applying exactly the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there one straight tape spine running the full length?", "tags": [] },
+      { "question": "Do leaves leave the spine at a constant slant angle?", "tags": [] },
+      { "question": "Do leaves appear in left–right pairs opposite each other on the spine?", "tags": [] },
+      { "question": "Do leaf lengths steadily decrease toward one end (the tail side)?", "tags": [] },
+      { "question": "Is rib (leaf) spacing roughly even across the middle section?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a floor tiled by regular hexagons. Learn these numbered visual properties: (1) Every cell is a perfect hexagon. (2) Three cells meet at each corner. (3) Cells fit with no gaps and no overlaps. (4) All hexagons are the same size. (5) The tiling forms a clean rectangular boundary.\n\nTarget domain (apply the learned rule, do not describe the result): On a baking sheet, place many identical metal hex nuts flat to the surface to follow the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the tiling composed entirely of cells that are perfect hexagons?", "tags": [] },
+      { "question": "Do exactly three cells meet at each corner point?", "tags": [] },
+      { "question": "Are there no gaps or overlaps between neighboring cells?", "tags": [] },
+      { "question": "Are all the hexagonal cells the same size?", "tags": [] },
+      { "question": "Does the overall filled area form a clean rectangle?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a circular gear with identical triangular teeth. Learn these numbered visual properties: (1) There is a circular rim. (2) Identical teeth repeat all the way around. (3) Tooth tips are equally spaced by angle. (4) Each tooth points outward along a radius. (5) The layout has full rotational symmetry by a fixed step.\n\nTarget domain (apply the learned rule, do not describe the result): On a round dinner plate, arrange many identical paper triangles as teeth around the rim to apply the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there a clear circular rim (the plate edge) that the teeth attach to?", "tags": [] },
+      { "question": "Do identical triangular teeth repeat all around the rim?", "tags": [] },
+      { "question": "Are tooth tips equally spaced by angle?", "tags": [] },
+      { "question": "Does each tooth point outward along a radial line?", "tags": [] },
+      { "question": "Does the tooth pattern show a repeating rotational symmetry step?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a sunburst with alternating long and short rays around a circle. Learn these numbered visual properties: (1) All rays start from a common center. (2) Rays are equally spaced by angle. (3) Long and short rays strictly alternate. (4) All long rays match each other in length. (5) All short rays match each other in length.\n\nTarget domain (apply the learned rule, do not describe the result): On a round cutting board, place bamboo skewers of two lengths as rays to apply the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do all skewers begin at one common center?", "tags": [] },
+      { "question": "Are rays equally spaced by angle around the center?", "tags": [] },
+      { "question": "Do long and short rays strictly alternate all the way around?", "tags": [] },
+      { "question": "Do all long rays match each other in length?", "tags": [] },
+      { "question": "Do all short rays match each other in length?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a three-circle Venn diagram made with identical circles. Learn these numbered visual properties: (1) There are exactly three circles. (2) All three circles have the same size. (3) Every pair of circles overlaps. (4) The three circles share one small central region where all three overlap. (5) The overall arrangement has three-fold rotational balance (looks similar after a 120° turn).\n\nTarget domain (apply the learned rule, do not describe the result): On a dark gym mat, lay down three identical hula hoops to follow the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are there exactly three loops visible?", "tags": [] },
+      { "question": "Do all three loops appear the same size?", "tags": [] },
+      { "question": "Does every pair of loops overlap each other somewhere?", "tags": [] },
+      { "question": "Is there a small central region where all three loops overlap together?", "tags": [] },
+      { "question": "Does the arrangement look balanced in three directions (similar after a 120° turn)?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a front view of a triangular fruit-stand pyramid. Learn these numbered visual properties: (1) All items are the same size. (2) Each row above has exactly one fewer item than the row below. (3) Rows are centered so the left and right edges form straight slanted sides. (4) Each item in an upper row sits between two items in the row below. (5) The top row has a single item at the peak.\n\nTarget domain (apply the learned rule, do not describe the result): On a shelf, arrange identical paper cups into rows to follow the learned rule. Use only the cups; no trays or glue. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are all cups the same visible size?", "tags": [] },
+      { "question": "Does each higher row have exactly one fewer cup than the row beneath it?", "tags": [] },
+      { "question": "Do the left and right edges form straight slanted sides?", "tags": [] },
+      { "question": "In upper rows, does each cup sit centered over the gap between two cups below?", "tags": [] },
+      { "question": "Is there exactly one cup at the topmost peak?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a circular necklace with three repeating bead colors. Learn these numbered visual properties: (1) Beads sit around one circle. (2) Spacing between neighboring beads is equal. (3) All beads are the same size and shape. (4) Colors repeat in the strict order A, then B, then C, and then repeat. (5) The counts of A, B, and C beads are equal.\n\nTarget domain (apply the learned rule, do not describe the result): On a round tray, place identical bottle caps in three solid colors to follow the learned rule. Use only the caps; no drawn guides. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do the caps sit around a single circular path?", "tags": [] },
+      { "question": "Is the spacing between neighboring caps equal all the way around?", "tags": [] },
+      { "question": "Are all caps the same size and shape?", "tags": [] },
+      { "question": "Do the colors repeat strictly in the order A, B, C, then A, B, C again?", "tags": [] },
+      { "question": "Are the numbers of A, B, and C caps equal?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a clock face with tick marks only. Learn these numbered visual properties: (1) There is one circular ring. (2) Exactly twelve ticks are equally spaced around the ring. (3) The four ticks at top, bottom, left, and right are longer than the others. (4) Every tick points straight toward the center. (5) No tick reaches the center; all stop short.\n\nTarget domain (apply the learned rule, do not describe the result): On a round placemat, place short and long toothpicks as ticks to follow the learned rule. Use only toothpicks; no printed marks. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there one clear circular boundary for placing ticks?", "tags": [] },
+      { "question": "Are exactly twelve ticks equally spaced around the circle?", "tags": [] },
+      { "question": "Are the top, bottom, left, and right ticks longer than the rest?", "tags": [] },
+      { "question": "Do all ticks point straight toward the center?", "tags": [] },
+      { "question": "Do all ticks stop short of the center without touching it?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a Truchet tiling made of square tiles with quarter-circle arcs. Learn these numbered visual properties: (1) Tiles are arranged in a grid of straight rows and columns. (2) Each tile contains exactly one quarter-circle arc that connects the midpoints of two adjacent sides. (3) Tiles are oriented so the endpoints of arcs on adjacent tiles meet precisely at the midpoint of their shared edge. (4) This connection of arcs forms continuous, unbroken paths that meander across the grid. (5) The gaps between tiles are uniform, creating straight and evenly spaced grid lines.\n\nTarget domain (apply the learned rule, do not describe the result): On a tabletop, place identical square coasters as tiles and lay short curved strings as arcs on each coaster to follow the learned rule. Use only coasters and strings. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are the coasters arranged in straight rows and columns to form a square grid?", "tags": [] },
+      { "question": "Does each coaster have a single string arc that connects the midpoints of two of its adjacent sides?", "tags": [] },
+      { "question": "Where two coasters share an edge, do the endpoints of their string arcs meet precisely at the midpoint of that shared edge?", "tags": [] },
+      { "question": "Do the connected string arcs form continuous, unbroken paths that meander across multiple coasters?", "tags": [] },
+      { "question": "Are the gaps between all adjacent coasters uniform, creating straight and evenly spaced grid lines?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a simple bar chart that rises steadily from left to right. Learn these numbered visual properties: (1) All bars have the same width. (2) Bars stand on the same baseline. (3) Gaps between bars are equal. (4) Bar heights never go down as you move right; they stay the same or increase. (5) The top of each bar is flat (horizontal).\n\nTarget domain (apply the learned rule, do not describe the result): On a tabletop, build columns from identical poker chips to follow the learned rule across a row. Use only the chips; no drawn axes. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do all columns occupy the same width along the row?", "tags": [] },
+      { "question": "Do all columns sit on one straight baseline?", "tags": [] },
+      { "question": "Are the gaps between neighboring columns equal?", "tags": [] },
+      { "question": "Do column heights never decrease as you move from left to right?", "tags": [] },
+      { "question": "Are the tops of the columns flat and level?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a row of identical semicircular arches on equal pillars. Learn these numbered visual properties: (1) Pillars stand in a straight line with equal spacing. (2) Every arch has the same width between its two pillars. (3) Each arch is exactly a half circle. (4) All arches rise to the same height. (5) Neighboring arches meet only at the pillars and do not overlap.\n\nTarget domain (apply the learned rule, do not describe the result): On a long shelf, use pairs of upright books as pillars and bend flexible measuring tapes into half circles between pairs to follow the learned rule. Use only books and tapes. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Do book pillars stand in a straight line with equal spacing?", "tags": [] },
+      { "question": "Does each tape span the same width between its two book pillars?", "tags": [] },
+      { "question": "Is each tape shaped as a clean half circle?", "tags": [] },
+      { "question": "Do all arches rise to the same height?", "tags": [] },
+      { "question": "Do neighboring arches meet only at the pillars with no overlap between curves?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a balanced binary tree diagram. Learn these numbered visual properties: (1) One single root node sits centered at the top. (2) Every non-leaf node has exactly two children. (3) Each pair of children sits symmetrically to the left and right of its parent. (4) Vertical spacing between levels is uniform from top to bottom. (5) The entire left and right halves are mirror images about the center line.\n\nTarget domain (apply the learned rule, do not describe the result): On a cork board, use identical round pushpins as nodes and straight thread segments as edges to build the structure by applying the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there one single pushpin root centered at the top?", "tags": [] },
+      { "question": "Does every non-leaf pushpin have exactly two child pushpins?", "tags": [] },
+      { "question": "Are each parent’s two children placed symmetrically left and right of that parent?", "tags": [] },
+      { "question": "Is the vertical spacing between successive levels uniform?", "tags": [] },
+      { "question": "Is the whole layout mirror-symmetric about a central vertical line?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a straight plant stem with alternating leaves. Learn these numbered visual properties: (1) The stem is straight. (2) Leaves attach one per node, alternating left and right down the stem. (3) Attachment angles are equal on both sides. (4) Spacing between nodes steadily shrinks toward the tip. (5) Leaf size steadily shrinks toward the tip.\n\nTarget domain (apply the learned rule, do not describe the result): Tape one straight string as the stem on a board and attach sticky notes as leaves according to the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is the string stem straight?", "tags": [] },
+      { "question": "Do sticky notes attach one per node, alternating left and right?", "tags": [] },
+      { "question": "Are the attachment angles equal on both sides of the stem?", "tags": [] },
+      { "question": "Does node spacing shrink toward the tip?", "tags": [] },
+      { "question": "Do the sticky notes become progressively smaller toward the tip of the string?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a daisy-like rosette with identical oval petals. Learn these numbered visual properties: (1) There are exactly twelve petals. (2) All petals point outward from the same center. (3) Petals are equally spaced in angle. (4) All petals have the same shape. (5) Petals do not overlap.\n\nTarget domain (apply the learned rule, do not describe the result): Around a jar lid, arrange identical plastic spoons with the bowls outward to apply the learned rule. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Are there exactly twelve spoon ‘petals’?", "tags": [] },
+      { "question": "Do all spoon bowls point outward from one center?", "tags": [] },
+      { "question": "Are the spoons equally spaced in angle around the center?", "tags": [] },
+      { "question": "Do all ‘petals’ have the same visible shape?", "tags": [] },
+      { "question": "Do the spoon bowls avoid overlapping each other?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-AR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Analogical Reasoning",
+    "Prompt": "Analogical instruction — learn a rule from the source, then apply it in a new target domain without describing the outcome.\n\nSource domain (rule to learn): Show a ring of circles that all touch a single center circle (the classic 6-around-1 packing). Learn these numbered visual properties: (1) There is one central circle. (2) Exactly six outer circles surround it. (3) Each outer circle touches the central circle. (4) Each outer circle touches its two neighboring outer circles. (5) All seven circles are the same size.\n\nTarget domain (apply the learned rule, do not describe the result): On a tray, arrange identical cookies to match the learned rule around one cookie in the middle. The image should ultimately be guided by the visual analogy, prioritizing its rules over real-world physics.",
+    "Checklist": [
+      { "question": "Is there one cookie at the center?", "tags": [] },
+      { "question": "Are exactly six cookies arranged around the center cookie?", "tags": [] },
+      { "question": "Does each outer cookie touch the center cookie?", "tags": [] },
+      { "question": "Does each outer cookie touch its two neighboring outer cookies?", "tags": [] },
+      { "question": "Are all seven cookies the same size?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  }
+}

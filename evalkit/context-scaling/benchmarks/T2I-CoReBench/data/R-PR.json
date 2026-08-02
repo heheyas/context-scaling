@@ -1,0 +1,1396 @@
+{
+  "R-PR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Science laboratory scene: You are conducting a crystal growth experiment. Follow these steps in order: 1. Place a clear glass beaker on a lab bench. 2. Pour distilled water into the beaker until it's half full. 3. Add blue copper sulfate crystals to the water. 4. Stir the solution with a glass rod until crystals dissolve. 5. Suspend a wooden stick horizontally across the beaker rim. 6. Tie a piece of string to the stick, letting it hang into the solution. 7. Cover the beaker with a piece of filter paper. 8. Wait for evaporation to occur for sufficient time. Show the final experimental setup with crystals.",
+    "Checklist": [
+      { "question": "Is there a clear glass beaker positioned on a lab bench?", "tags": []},
+      { "question": "Does the beaker contain a blue-colored solution?", "tags": []},
+      { "question": "Is there a wooden stick placed horizontally across the beaker rim?", "tags": []},
+      { "question": "Is a piece of string hanging from the stick into the solution?", "tags": []},
+      { "question": "Is the beaker covered with filter paper?", "tags": []},
+      { "question": "Are crystals visible growing on the string?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Outdoor camping scene: You are setting up a complete campsite in a forest clearing. Follow these steps in order: 1. Choose a flat area and clear away any rocks or sticks. 2. Lay out a blue tarp on the ground as a base. 3. Set up a dome tent on top of the tarp. 4. Arrange a circle of stones for a fire pit in front of the tent. 5. Place dry logs and kindling inside the stone circle. 6. Position two folding chairs on opposite sides of the fire pit. 7. Set up a small camping table between the chairs. 8. Place a lantern on the table. 9. Hang a rope between two trees and attach a clothesline. Show the completed campsite setup.",
+    "Checklist": [
+      { "question": "Is there a blue tarp laid out on the ground?", "tags": []},
+      { "question": "Is a dome tent set up on top of the tarp?", "tags": []},
+      { "question": "Is there a circular fire pit made of stones?", "tags": []},
+      { "question": "Are dry logs and kindling arranged inside the stone circle?", "tags": []},
+      { "question": "Are two folding chairs positioned on opposite sides of the fire pit?", "tags": []},
+      { "question": "Is there a small camping table placed between the chairs?", "tags": []},
+      { "question": "Is a lantern positioned on the table?", "tags": []},
+      { "question": "Is there a rope clothesline hanging between two trees?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bakery kitchen scene: You are decorating a three-layer wedding cake. Follow these steps in order: 1. Place the largest cake layer on a decorative stand. 2. Apply white buttercream frosting evenly across the top surface. 3. Center the medium-sized layer on top of the first layer. 4. Frost the top of the medium layer with white buttercream. 5. Place the smallest layer on top to complete the three tiers. 6. Apply a final coat of white frosting to smooth all visible surfaces. 7. Create pink buttercream roses and place them around the base of each layer. 8. Sprinkle edible gold glitter over the entire cake. 9. Insert a bride and groom cake topper on the top layer. Show the finished decorated wedding cake.",
+    "Checklist": [
+      { "question": "Is the cake assembled in three distinct tiers?", "tags": []},
+      { "question": "Is the cake positioned on a decorative stand?", "tags": []},
+      { "question": "Is the entire cake covered with white buttercream frosting?", "tags": []},
+      { "question": "Are pink buttercream roses placed around the base of each layer?", "tags": []},
+      { "question": "Is edible gold glitter visible sprinkled over the cake surface?", "tags": []},
+      { "question": "Is there a bride and groom cake topper on the top layer?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Office workspace scene: You are organizing an efficient desk setup for productivity. Follow these steps in order: 1. Place a wooden desk against a wall near a window. 2. Position a black office chair in front of the desk. 3. Set up a laptop computer in the center of the desk surface. 4. Place a desk lamp on the left side of the laptop. 5. Arrange a stack of three notebooks to the right of the laptop. 6. Position a coffee mug on a coaster near the notebooks. 7. Attach a small whiteboard to the wall above the desk. 8. Place a potted succulent plant on the windowsill. 9. Organize pens and pencils in a desk organizer cup. Show the completed organized workspace.",
+    "Checklist": [
+      { "question": "Is there a wooden desk positioned against a wall near a window?", "tags": []},
+      { "question": "Is a black office chair placed in front of the desk?", "tags": []},
+      { "question": "Is a laptop computer positioned in the center of the desk?", "tags": []},
+      { "question": "Is there a desk lamp on the left side of the laptop?", "tags": []},
+      { "question": "Are three notebooks stacked to the right of the laptop?", "tags": []},
+      { "question": "Is a coffee mug positioned on a coaster near the notebooks?", "tags": []},
+      { "question": "Is there a small whiteboard attached to the wall above the desk?", "tags": []},
+      { "question": "Is a potted succulent plant placed on the windowsill?", "tags": []},
+      { "question": "Are pens and pencils organized in a desk organizer cup?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bedroom interior scene: You are creating a cozy reading nook in the corner of a bedroom. Follow these steps in order: 1. Place a comfortable armchair in the corner near a window. 2. Position a small round side table next to the chair. 3. Drape a soft throw blanket over the back of the chair. 4. Place a stack of books on the side table. 5. Add a table lamp with a warm light bulb on top of the books. 6. Arrange a decorative pillow on the chair seat. 7. Place a woven basket on the floor beside the chair. 8. Fill the basket with magazines and additional books. 9. Hang string lights around the window frame. Show the completed cozy reading nook.",
+    "Checklist": [
+      { "question": "Is there a comfortable armchair positioned in a corner near a window?", "tags": []},
+      { "question": "Is a small round side table placed next to the chair?", "tags": []},
+      { "question": "Is a soft throw blanket draped over the back of the chair?", "tags": []},
+      { "question": "Is there a stack of books positioned on the side table?", "tags": []},
+      { "question": "Is a table lamp placed on top of the book stack?", "tags": []},
+      { "question": "Is there a decorative pillow on the chair seat?", "tags": []},
+      { "question": "Is a woven basket positioned on the floor beside the chair?", "tags": []},
+      { "question": "Are magazines and books visible inside the basket?", "tags": []},
+      { "question": "Are string lights hanging around the window frame?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Craft workshop scene: You are making a handmade dreamcatcher. Follow these steps in order: 1. Take a wooden embroidery hoop and place it on a work table. 2. Wrap the entire hoop with tan leather cord, securing the ends with glue. 3. Create a web pattern inside the hoop using white cotton thread. 4. Attach small wooden beads at various intersection points of the web. 5. Cut three strips of suede leather in different lengths. 6. Tie the leather strips to the bottom of the hoop, letting them hang down. 7. Thread colorful feathers onto each leather strip. 8. Add small turquoise beads to the ends of each leather strip. 9. Attach a hanging loop to the top of the hoop. Show the completed handmade dreamcatcher.",
+    "Checklist": [
+      { "question": "Is there a wooden embroidery hoop wrapped with tan leather cord?", "tags": []},
+      { "question": "Is there a web pattern created with white cotton thread inside the hoop?", "tags": []},
+      { "question": "Are small wooden beads attached at intersection points of the web?", "tags": []},
+      { "question": "Are three leather strips of different lengths hanging from the bottom?", "tags": []},
+      { "question": "Are colorful feathers threaded onto each leather strip?", "tags": []},
+      { "question": "Are small turquoise beads attached to the ends of the leather strips?", "tags": []},
+      { "question": "Is there a hanging loop attached to the top of the hoop?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Garden landscape scene: You are creating a small herb garden patch in your backyard. Follow these steps in order: 1. Mark out a rectangular area in the yard and remove all grass and weeds. 2. Build a raised border using wooden planks around the perimeter. 3. Fill the enclosed area with rich potting soil. 4. Create three parallel rows by drawing lines in the soil with a garden tool. 5. Plant basil seedlings in the first row, spacing them evenly apart. 6. Plant rosemary sprigs in the second row. 7. Plant lavender seedlings in the third row. 8. Place plant markers at the beginning of each row to identify the herbs. 9. Install a small sprinkler system with a timer. Show the completed organized herb garden.",
+    "Checklist": [
+      { "question": "Is there a rectangular raised garden bed with wooden plank borders?", "tags": []},
+      { "question": "Is the garden bed filled with rich potting soil?", "tags": []},
+      { "question": "Are there three distinct parallel rows visible in the soil?", "tags": []},
+      { "question": "Are basil seedlings planted evenly in the first row?", "tags": []},
+      { "question": "Are rosemary sprigs planted in the second row?", "tags": []},
+      { "question": "Are lavender seedlings planted in the third row?", "tags": []},
+      { "question": "Are plant markers positioned at the beginning of each row?", "tags": []},
+      { "question": "Is there a small sprinkler system installed in the garden?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bathroom spa scene: You are setting up a relaxing home spa experience. Follow these steps in order: 1. Fill a large bathtub with warm water. 2. Add purple lavender bath salts to the water. 3. Light three pillar candles of different heights and place them around the tub edge. 4. Dim the overhead lights to create ambient lighting. 5. Place a bamboo bath tray across the width of the tub. 6. Set a wine glass filled with water on the tray. 7. Position a small potted orchid plant next to the candles. 8. Lay out a fluffy white towel on a nearby stool. 9. Place bath bombs and essential oil bottles on a shelf within reach. Show the completed spa-like bathroom setup.",
+    "Checklist": [
+      { "question": "Is the bathtub filled with water that has purple lavender bath salts added?", "tags": []},
+      { "question": "Are three pillar candles of different heights positioned around the tub edge?", "tags": []},
+      { "question": "Is there ambient lighting with dimmed overhead lights?", "tags": []},
+      { "question": "Is a bamboo bath tray placed across the width of the tub?", "tags": []},
+      { "question": "Is there a wine glass with water positioned on the tray?", "tags": []},
+      { "question": "Is a small potted orchid plant placed next to the candles?", "tags": []},
+      { "question": "Is a fluffy white towel laid out on a nearby stool?", "tags": []},
+      { "question": "Are bath bombs and essential oil bottles positioned on a shelf?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Library study area scene: You are organizing a productive study station in a library corner. Follow these steps in order: 1. Choose a quiet corner table near tall bookshelves. 2. Arrange textbooks in a neat stack on the left side of the table. 3. Open a laptop computer in the center of the workspace. 4. Place a notebook and pen to the right of the laptop. 5. Position a desk organizer with highlighters and sticky notes near the notebook. 6. Set up a small desk fan for air circulation. 7. Place a water bottle and healthy snacks on the table edge. 8. Adjust the table lamp to provide focused lighting on the work area. 9. Arrange a comfortable cushion on the chair for extended studying. Show the well-organized study station setup.",
+    "Checklist": [
+      { "question": "Is the study area located at a corner table near tall bookshelves?", "tags": []},
+      { "question": "Are textbooks arranged in a neat stack on the left side of the table?", "tags": []},
+      { "question": "Is there an open laptop positioned in the center of the workspace?", "tags": []},
+      { "question": "Are a notebook and pen placed to the right of the laptop?", "tags": []},
+      { "question": "Is there a desk organizer with highlighters and sticky notes near the notebook?", "tags": []},
+      { "question": "Is a small desk fan set up for air circulation?", "tags": []},
+      { "question": "Are a water bottle and healthy snacks positioned on the table edge?", "tags": []},
+      { "question": "Is the table lamp turned on and lighting on the work area?", "tags": []},
+      { "question": "Is there a comfortable cushion arranged on the chair?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Garage workshop scene: You are organizing tools and setting up a workbench for a woodworking project. Follow these steps in order: 1. Clear a sturdy workbench and position it in the center of the garage. 2. Mount a pegboard on the wall behind the workbench. 3. Hang various hand tools on the pegboard hooks in an organized pattern. 4. Place a tool chest with multiple drawers to the right of the workbench. 5. Position a table saw on a mobile stand near the left side of the work area. 6. Set up proper lighting with adjustable work lamps above the bench. 7. Arrange safety equipment including goggles and gloves on the workbench surface. 8. Place a shop vacuum cleaner in the corner for cleanup. 9. Store wood pieces and lumber in vertical racks along the garage wall. Show the completed organized workshop setup.",
+    "Checklist": [
+      { "question": "Is there a sturdy workbench positioned in the center of the garage?", "tags": []},
+      { "question": "Is a pegboard mounted on the wall behind the workbench?", "tags": []},
+      { "question": "Are various hand tools hanging on the pegboard hooks?", "tags": []},
+      { "question": "Is there a tool chest with multiple drawers positioned to the right of the workbench?", "tags": []},
+      { "question": "Is a table saw on a mobile stand located near the left side of the work area?", "tags": []},
+      { "question": "Are adjustable work lamps set up above the bench for proper lighting?", "tags": []},
+      { "question": "Are safety equipment including goggles and gloves arranged on the workbench surface?", "tags": []},
+      { "question": "Is there a shop vacuum cleaner positioned in the corner?", "tags": []},
+      { "question": "Are wood pieces and lumber stored in vertical racks along the garage wall?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Chemistry laboratory scene: You are conducting a pH indicator experiment. Follow these steps in order: 1. Place three identical clear glass beakers in a row on the lab bench. 2. Fill each beaker with distilled water. 3. Add red cabbage indicator solution to all three beakers. 4. Add lemon juice to the first beaker. 5. Add baking soda solution to the second beaker. 6. Leave the third beaker unchanged as a control. 7. Place a white label under each beaker indicating 'Acid', 'Base', and 'Neutral'. 8. Position a pH color chart next to the beakers for reference. Show the final experimental setup.",
+    "Checklist": [
+      { "question": "Are there three identical clear glass beakers arranged in a row?", "tags": []},
+      { "question": "Does the first beaker contain a pink-colored solution?", "tags": []},
+      { "question": "Does the second beaker contain a blue-green colored solution?", "tags": []},
+      { "question": "Does the third beaker contain a purple-colored solution?", "tags": []},
+      { "question": "Is there a white label under the first beaker reading 'Acid'?", "tags": []},
+      { "question": "Is there a white label under the second beaker reading 'Base'?", "tags": []},
+      { "question": "Is there a white label under the third beaker reading 'Neutral'?", "tags": []},
+      { "question": "Is there a pH color chart positioned next to the beakers?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Cocktail bar scene: You are creating a layered rainbow cocktail using density differences. Follow these steps in order: 1. Place a tall clear glass on the bar counter. 2. Pour grenadine syrup slowly into the bottom of the glass. 3. Using a bar spoon, gently layer orange juice over the grenadine. 4. Carefully float pineapple juice over the orange juice using a spoon. 5. Slowly add blue curaçao by pouring it over the back of a spoon. 6. Top with a small amount of vodka using the same spoon technique. 7. Add a maraschino cherry to the drink. 8. Place a decorative cocktail umbrella at an angle in the drink. 9. Serve on a cocktail napkin with a stirring stick alongside. Show the completed cocktail.",
+    "Checklist": [
+      { "question": "Is there a tall clear glass containing a layered drink?", "tags": []},
+      { "question": "Is the bottom layer red from grenadine syrup?", "tags": []},
+      { "question": "Is there an orange layer above the red layer?", "tags": []},
+      { "question": "Is there a yellow layer above the orange layer?", "tags": []},
+      { "question": "Is there a blue layer above the yellow layer?", "tags": []},
+      { "question": "Is there a clear layer at the top of the drink?", "tags": []},
+      { "question": "Is there a maraschino cherry partially submerged in the top layers?", "tags": []},
+      { "question": "Is there a decorative cocktail umbrella placed at an angle in the drink?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Art studio scene: You are creating a wet-on-wet watercolor landscape painting. Follow these steps in order: 1. Stretch watercolor paper on a board and secure it with tape. 2. Wet the entire paper surface with clean water using a large brush. 3. While the paper is still damp, apply yellow watercolor paint to the upper portion. 4. Immediately apply orange paint to the same wet area. 5. Add touches of purple to the wet sky area. 6. Paint the lower third with green while the paper remains slightly damp. 7. Allow the painting to dry completely. 8. Once dry, add detailed tree silhouettes with dark brown paint using a fine brush. 9. Mount the finished painting in a simple white frame. Show the completed framed watercolor landscape.",
+    "Checklist": [
+      { "question": "Is the watercolor paper mounted in a simple white frame?", "tags": []},
+      { "question": "Does the sky show a blended sunset effect with yellow and orange colors?", "tags": []},
+      { "question": "Are there purple touches visible in the sky area for cloud formations?", "tags": []},
+      { "question": "Is the lower portion painted green to represent grass?", "tags": []},
+      { "question": "Are there dark brown tree silhouettes painted over the background?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Potter's studio scene: You are creating a ceramic bowl using the wheel throwing technique. Follow these steps in order: 1. Center a ball of clay on the pottery wheel. 2. Start the wheel spinning and wet your hands with water. 3. Press down in the center of the clay to create an opening. 4. Gradually widen the opening by pulling the clay walls outward with your fingers. 5. Shape the walls upward and outward to form a bowl shape. 6. Smooth the rim by running a wet finger around the edge. 7. Use a wire tool to cut the bowl free from the wheel, but accidentally chip a small notch at the bottom of the bowl. 8. Carve a sun pattern onto the surface of the bowl. 9. Carefully lift the bowl and place it on a drying board. 10. Allow the bowl to reach leather-hard consistency. Show the finished ceramic bowl ready for trimming.",
+    "Checklist": [
+      { "question": "Is there a ceramic bowl sitting on a drying board?", "tags": []},
+      { "question": "Does the bowl have a wide opening and curved sides?", "tags": []},
+      { "question": "Is the rim of the bowl smooth and even?", "tags": []},
+      { "question": "Does the bowl have a matte, non-glossy surface, indicating it is no longer wet?", "tags": []},
+      { "question": "Does the dried bowl have a notch at its bottom?", "tags": []},
+      { "question": "Does the bowl have a sun pattern carved on its body?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Greenhouse cultivation scene: You are setting up a controlled plant growth experiment. Follow these steps in order: 1. Place three identical clear plastic containers on a greenhouse bench. 2. Fill each container with the same type of potting soil. 3. Plant identical bean seeds in each container at the same depth. 4. Water all three containers with the same amount of water. 5. Place the first container under full spectrum grow lights. 6. Position the second container in partial shade with filtered light. 7. Move the third container to a dark area with no light exposure. 8. Label each container with 'Full Light', 'Partial Light', and 'No Light' respectively. 9. Wait for the seeds to germinate and grow for two weeks. Show the experimental setup after the growth period.",
+    "Checklist": [
+      { "question": "Are there three identical clear plastic containers on a greenhouse bench?", "tags": []},
+      { "question": "Is each container filled with potting soil?", "tags": []},
+      { "question": "Are there labels reading 'Full Light', 'Partial Light', and 'No Light' on the containers?", "tags": []},
+      { "question": "Does the 'Full Light' container show healthy green plant growth?", "tags": []},
+      { "question": "Are the plants in 'Partial Light' worse than 'Full Light' but better than 'No Light' (e.g., medium height, somewhat pale leaves)?", "tags": []},
+      { "question": "Does the 'No Light' container show pale, etiolated growth or no growth?", "tags": []},
+      { "question": "Is the setup positioned in a greenhouse environment?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Kitchen baking scene: You are preparing a layered parfait dessert with temperature-sensitive components. Follow these steps in order: 1. Place a tall clear glass on the counter. 2. Prepare hot chocolate pudding and pour it into the bottom of the glass. 3. Allow the pudding to cool for 15 minutes. 4. Gently layer cold vanilla yogurt over the chocolate pudding. 5. Sprinkle crushed graham crackers over the yogurt layer. 6. Add a layer of fresh strawberry slices arranged in an overlapping pattern. 7. Top with a dollop of whipped cream that has been chilled. 8. Garnish with a mint leaf and a single whole strawberry. 9. Chill the completed parfait in the refrigerator for 30 minutes. Show the finished chilled parfait.",
+    "Checklist": [
+      { "question": "Is there a tall clear glass containing a layered dessert?", "tags": []},
+      { "question": "Is the bottom layer a set chocolate pudding?", "tags": []},
+      { "question": "Is there a white vanilla yogurt layer above the chocolate pudding?", "tags": []},
+      { "question": "Are crushed graham crackers visible as a layer over the yogurt?", "tags": []},
+      { "question": "Are fresh strawberry slices arranged in an overlapping pattern as a layer?", "tags": []},
+      { "question": "Is there a dollop of whipped cream on top?", "tags": []},
+      { "question": "Is the parfait garnished with a mint leaf and a whole strawberry?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Kitchen meal prep scene: You are preparing ingredients for the week's lunches on Sunday afternoon. Follow these steps in order: 1. Wash and chop fresh vegetables into uniform pieces. 2. Cook a large batch of brown rice in a rice cooker. 3. Grill chicken breasts on the stovetop until fully cooked. 4. Allow the chicken to cool then slice it into strips. 5. Prepare a large batch of quinoa salad with diced vegetables. 6. Portion the cooked rice into three meal prep containers. 7. Add sliced chicken to each container over the rice. 8. Top each container with a serving of quinoa salad. 9. Label each container with the date and store in the refrigerator. Show the completed meal prep containers.",
+    "Checklist": [
+      { "question": "Are there three meal prep containers with organized portions?", "tags": []},
+      { "question": "Does each container have a layer of brown rice at the bottom?", "tags": []},
+      { "question": "Are sliced chicken strips visible in each container?", "tags": []},
+      { "question": "Is quinoa salad with vegetables topped in each container?", "tags": []},
+      { "question": "Are the containers labeled with dates?", "tags": []},
+      { "question": "Does each of the three containers contain rice, chicken, and quinoa salad?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Beachside art scene: You are creating a detailed sand sculpture using layering and carving techniques. Follow these steps in order: 1. Choose a location on the beach with firm, damp sand near the water's edge. 2. Build a large rectangular base of packed sand approximately 3 feet wide. 3. Add successive layers of sand, packing each one firmly before adding the next. 4. Shape the overall form into a castle structure with walls and towers. 5. Carve detailed windows and doors into the castle walls using sculpting tools. 6. Create a surrounding moat by digging channels around the castle base. 7. Wait for incoming waves to reach the moat channels. 8. Decorate the castle with shells, seaweed, and small stones found on the beach. 9. Build small flags from driftwood pieces and seaweed, placing them on the towers. Show the completed sand castle with moat and natural decorations.",
+    "Checklist": [
+      { "question": "Is there a detailed sand castle structure with walls and towers?", "tags": []},
+      { "question": "Are there carved windows and doors visible in the castle walls?", "tags": []},
+      { "question": "Is there a moat surrounding the castle base?", "tags": []},
+      { "question": "Does the moat contain seawater?", "tags": []},
+      { "question": "Is the castle decorated with shells, seaweed, and small stones?", "tags": []},
+      { "question": "Are there small flags made from driftwood and seaweed on the towers?", "tags": []},
+      { "question": "Is the sand castle positioned on firm, damp beach sand near the water's edge?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bedroom morning routine scene: You are making your bed and preparing the room for the day. Follow these steps in order: 1. Pull back the tangled sheets and blankets completely from the mattress. 2. Smooth out all wrinkles on the fitted sheet by pulling it tight. 3. Place the flat sheet evenly over the bed and tuck the bottom edge under the mattress. 4. Layer the comforter over the flat sheet, aligning it evenly on all sides. 5. Fluff each pillow by shaking and patting it vigorously. 6. Arrange the pillows symmetrically at the head of the bed. 7. Fold a decorative throw blanket and place it across the foot of the bed. 8. Open the bedroom curtains to let natural light enter. 9. Pick up any clothes from the floor and place them in the laundry hamper. Show the completed organized bedroom.",
+    "Checklist": [
+      { "question": "Are the bed sheets smooth and wrinkle-free?", "tags": []},
+      { "question": "Is the flat sheet properly tucked under the mattress?", "tags": []},
+      { "question": "Is the comforter evenly aligned on all sides of the bed?", "tags": []},
+      { "question": "Are the pillows fluffed and arranged symmetrically?", "tags": []},
+      { "question": "Is there a folded throw blanket placed across the foot of the bed?", "tags": []},
+      { "question": "Are the curtains open with natural light entering the room?", "tags": []},
+      { "question": "Are clothes no longer scattered on the floor?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Garden vegetable planting scene: You are preparing and planting a small vegetable garden in your backyard. Follow these steps in order: 1. Mark out a 6x4 foot rectangular area in the yard using stakes and string. 2. Remove all grass and weeds from within the marked area. 3. Till the soil to a depth of 8 inches using a garden spade. 4. Mix compost into the tilled soil and rake it smooth. 5. Create three parallel planting rows using a garden hoe. 6. Plant tomato seedlings in the first row, spacing them 18 inches apart. 7. Sow lettuce seeds in the second row according to packet instructions. 8. Plant pepper seedlings in the third row with proper spacing. 9. Water all newly planted areas thoroughly with a garden hose. Show the completed vegetable garden.",
+    "Checklist": [
+      { "question": "Is there a clearly defined rectangular garden area?", "tags": []},
+      { "question": "Is the rectangular garden area free of grass and weeds?", "tags": []},
+      { "question": "Does the soil appear tilled and mixed with compost?", "tags": []},
+      { "question": "Are there three distinct parallel planting rows?", "tags": []},
+      { "question": "Are tomato seedlings planted in the first row?", "tags": []},
+      { "question": "Are pepper seedlings planted in the third row?", "tags": []},
+      { "question": "Does the soil appear freshly watered?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Kitchen smoothie preparation scene: You are making a layered fruit smoothie for breakfast. Follow these steps in order: 1. Place a tall clear glass on the kitchen counter. 2. Blend frozen strawberries with a small amount of milk until smooth. 3. Pour the strawberry mixture into the bottom third of the glass. 4. Rinse the blender and add frozen mango chunks with milk. 5. Blend the mango mixture until smooth. 6. Slowly pour the mango mixture over the back of a spoon into the glass. 7. Rinse the blender again and blend frozen blueberries with milk. 8. Carefully layer the blueberry mixture on top using the spoon technique. 9. Garnish with fresh berries and a mint leaf. Show the completed layered smoothie.",
+    "Checklist": [
+      { "question": "Does the glass contain three distinct colored layers?", "tags": []},
+      { "question": "Is the bottom layer pink/red from strawberries?", "tags": []},
+      { "question": "Is the middle layer orange/yellow from mango?", "tags": []},
+      { "question": "Is the top layer purple/blue from blueberries?", "tags": []},
+      { "question": "Are fresh berries visible as garnish on top?", "tags": []},
+      { "question": "Is there a mint leaf garnishing the smoothie?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bathroom medicine cabinet scene: You are organizing your family's medicine cabinet for safety. Follow these steps in order: 1. Remove all items from the medicine cabinet and place them on the bathroom counter. 2. Clean the cabinet shelves with disinfectant wipes. 3. Check expiration dates on all medications and separate expired items. 4. Place expired medications (blue bottle) on the bottom shelf of the cabinet. 5. Group remaining medications by type on the middle shelf: pain relief (white bottle), vitamins (yellow bottle), first aid supplies (with a red cross logo). 6. Place frequently used items like band-aids on the middle shelf. 7. Store prescription medications (red bottle) on the top shelf away from children. 8. Position a small flashlight in the corner for emergency use. 9. Close the cabinet door and dispose of expired medications properly. Show the organized medicine cabinet.",
+    "Checklist": [
+      { "question": "Are the cabinet shelves clean and organized?", "tags": []},
+      { "question": "Are expired medications (blue bottle) placed on the bottom shelf?", "tags": []},
+      { "question": "Is pain relief (white bottle) grouped on the middle shelf?", "tags": []},
+      { "question": "Is vitamins (yellow bottle) grouped on the middle shelf?", "tags": []},
+      { "question": "Is first aid supplies (red cross logo) grouped on the middle shelf?", "tags": []},
+      { "question": "Are band-aids placed on the middle shelf?", "tags": []},
+      { "question": "Are prescription medications (red bottle) stored on the top shelf?", "tags": []},
+      { "question": "Is there a small flashlight positioned in the cabinet corner?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Backyard picnic setup scene: You are preparing an outdoor lunch for your family on a sunny afternoon. Follow these steps in order: 1. Spread a large checkered blanket on the grass under a shady tree. 2. Place a picnic basket in the center of the blanket. 3. Unpack sandwiches wrapped in paper and arrange them on paper plates. 4. Fill a glass cup with fresh lemonade and place it next to the basket. 5. Set out plastic cups around the blanket for each family member. 6. Open a bag of chips and pour them into a large bowl. 7. Arrange fresh fruit in another bowl next to the chips. 8. Set up a small portable speaker and play soft background music. 9. Add citronella candles around the blanket perimeter to keep insects away. Show the complete picnic setup.",
+    "Checklist": [
+      { "question": "Is there a checkered blanket spread on the grass under a tree?", "tags": []},
+      { "question": "Is a picnic basket positioned in the center of the blanket?", "tags": []},
+      { "question": "Are sandwiches arranged on paper plates around the blanket?", "tags": []},
+      { "question": "Is there a glass cup with lemonade placed next to the basket?", "tags": []},
+      { "question": "Are plastic cups distributed around the blanket?", "tags": []},
+      { "question": "Are chips visible in a large bowl on the blanket?", "tags": []},
+      { "question": "Is fresh fruit arranged in a bowl next to the chips?", "tags": []},
+      { "question": "Is there a portable speaker set up?", "tags": []},
+      { "question": "Are citronella candles positioned around the blanket perimeter?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Living room holiday decoration scene: You are decorating your living room for Christmas celebration. Follow these steps in order: 1. Clear space in the corner of the room for the Christmas tree. 2. Set up an artificial Christmas tree in the designated corner and fluff the branches. 3. Test all string lights before putting them on the tree. 4. Wrap the tested lights around the tree branches starting from the inside and working outward. 5. Hang ornaments evenly throughout the tree, placing heavier ones closer to the trunk. 6. Place a decorative tree topper on the highest branch. 7. Arrange wrapped gift boxes of various sizes under the tree. 8. Hang stockings along the fireplace mantle. 9. Plug in all the lights to illuminate the display. Show the completed Christmas decoration.",
+    "Checklist": [
+      { "question": "Is the Christmas tree properly set up with fluffed branches?", "tags": []},
+      { "question": "Are string lights evenly wrapped around the tree and illuminated?", "tags": []},
+      { "question": "Are ornaments distributed throughout the tree?", "tags": []},
+      { "question": "Is there a decorative tree topper on the highest branch?", "tags": []},
+      { "question": "Are wrapped gift boxes arranged under the tree?", "tags": []},
+      { "question": "Are stockings hanging along the fireplace mantle?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Bathroom relaxation scene: You are preparing a luxurious bubble bath after a long workday. Follow these steps in order: 1. Clean the bathtub thoroughly with bathroom cleaner. 2. Begin filling the tub with warm water at a comfortable temperature. 3. Add lavender-scented bubble bath solution under the running water. 4. Light three aromatherapy candles and place them around the tub edge. 5. Dim the overhead lights to create a relaxing ambiance. 6. Add Epsom salts to the water while it continues filling. 7. Test the water temperature and adjust if needed. 8. Place a fluffy bath towel and robe within easy reach. 9. Turn off the water when the tub is three-quarters full. Show the prepared bubble bath setup.",
+    "Checklist": [
+      { "question": "Is the bathtub filled with water and abundant bubbles?", "tags": []},
+      { "question": "Are three aromatherapy candles lit around the tub edge?", "tags": []},
+      { "question": "Are the overhead lights dimmed to create ambient lighting?", "tags": []},
+      { "question": "Is a fluffy bath towel positioned within easy reach?", "tags": []},
+      { "question": "Is a robe placed nearby for after the bath?", "tags": []},
+      { "question": "Is the bathtub only partially filled with water (not full)?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Kitchen sandwich assembly scene: You are making a gourmet club sandwich for lunch. Follow these steps in order: 1. Toast three slices of whole grain bread until golden brown. 2. Spread mayonnaise on one side of each toasted slice. 3. Layer lettuce leaves on the first slice of bread. 4. Add sliced tomatoes on top of the lettuce. 5. Place crispy bacon strips over the tomatoes. 6. Add the second slice of bread with mayonnaise facing down. 7. Layer sliced turkey breast on top of the second slice. 8. Add sliced avocado over the turkey. 9. Top with the third slice of bread, mayonnaise side down, and secure with toothpicks. Show the completed assembled club sandwich.",
+    "Checklist": [
+      { "question": "Does the sandwich have three layers of toasted bread?", "tags": []},
+      { "question": "Are lettuce leaves visible in the bottom layer?", "tags": []},
+      { "question": "Are sliced tomatoes layered above the lettuce?", "tags": []},
+      { "question": "Are crispy bacon strips visible in the sandwich?", "tags": []},
+      { "question": "Is sliced turkey breast visible in the upper layer?", "tags": []},
+      { "question": "Are sliced avocado pieces visible above the turkey?", "tags": []},
+      { "question": "Is the sandwich secured with toothpicks?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Home office organization scene: You are cleaning and organizing your cluttered desk workspace. Follow these steps in order: 1. Remove all items from the desk surface and place them on the floor. 2. Wipe down the entire desk surface with cleaning spray and a microfiber cloth. 3. Sort the removed items into categories: keep, donate, and trash. 4. Place items to be donated in a cardboard box. 5. Throw away broken or unnecessary items. 6. Organize the 'keep' items in desk drawers by function. 7. Place a tissue box on the clean desk surface. 8. Position a small plant near the computer monitor. 9. Arrange pens and pencils in a desk organizer cup. Show the completely organized workspace.",
+    "Checklist": [
+      { "question": "Is the desk surface clean and mostly clear of clutter?", "tags": []},
+      { "question": "Is tissue box visible on the desk surface?", "tags": []},
+      { "question": "Is there a small plant positioned near the computer monitor?", "tags": []},
+      { "question": "Are pens and pencils organized in a desk organizer cup?", "tags": []},
+      { "question": "Are some items sorted and placed into a separate cardboard box?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Backyard BBQ party setup scene: You are preparing your backyard for a large family barbecue gathering. Follow these steps in order: 1. Set up multiple folding tables and chairs around the patio area. 2. String outdoor lights between trees and around the seating area. 3. Position the gas grill in a central location and connect the propane tank. 4. Set up a beverage station with coolers filled with ice and drinks. 5. Arrange citronella torches around the perimeter for insect control. 6. Place tablecloths and centerpieces on all dining tables. 7. Prepare a designated area for children's games and activities. 8. Test all lighting and equipment before guests arrive. Show the complete party-ready backyard.",
+    "Checklist": [
+      { "question": "Are there multiple folding tables and chairs arranged around the patio?", "tags": []},
+      { "question": "Are outdoor lights strung and illuminating the space?", "tags": []},
+      { "question": "Is there a grill connected to a propane tank?", "tags": []},
+      { "question": "Is there a beverage station visible?", "tags": []},
+      { "question": "Are there citronella torches present?", "tags": []},
+      { "question": "Are tables properly dressed with tablecloths and decorations?", "tags": []},
+      { "question": "Is there a designated children's activity area?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Living room movie night scene: You are setting up a cozy movie evening for the family. Follow these steps in order: 1. Rearrange the furniture to create optimal seating facing the TV. 2. Dim the overhead lights and turn on soft table lamps. 3. Distribute cozy blankets and pillows on the sofa and chairs. 4. Prepare a large bowl of popcorn in the kitchen. 5. Fill individual glasses with cold beverages for each family member. 6. Set up a side table with the popcorn and drinks within easy reach. 7. Queue up the selected movie on the streaming service. 8. Adjust the TV volume to a comfortable level. 9. Turn off mobile phones and place them in a basket. Show the complete movie night setup.",
+    "Checklist": [
+      { "question": "Are the overhead lights dimmed with soft table lamps providing ambient lighting?", "tags": []},
+      { "question": "Are cozy blankets and pillows distributed on the seating?", "tags": []},
+      { "question": "Is there a large bowl of popcorn visible on the side table?", "tags": []},
+      { "question": "Are individual drinks prepared?", "tags": []},
+      { "question": "Is a movie playing on the TV?", "tags": []},
+      { "question": "Are mobile phones collected in a basket away from the seating area?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Home gym setup scene: You are converting your spare room into a functional home workout space. Follow these steps in order: 1. Remove all furniture and existing items from the spare room. 2. Install rubber flooring mats across the entire floor surface. 3. Mount a large mirror on one wall for form checking. 4. Set up a weight rack with various dumbbells and barbells. 5. Position a workout bench in the center of the room. 6. Install wall-mounted storage for resistance bands and accessories. 7. Add proper ventilation with a ceiling fan. 8. Position towels and a water station for convenience. Show the completed home gym.",
+    "Checklist": [
+      { "question": "Does the room have professional rubber flooring throughout?", "tags": []},
+      { "question": "Is there a large mirror mounted for workout visibility?", "tags": []},
+      { "question": "Is a weight rack with various dumbbells and barbells prominently displayed?", "tags": []},
+      { "question": "Is the workout bench centrally positioned for use?", "tags": []},
+      { "question": "Is there a wall-mounted storage rack for resistance bands and accessories?", "tags": []},  
+      { "question": "Is there a ceiling fan installed for ventilation?", "tags": []},  
+      { "question": "Are towels and a water station present for convenience?", "tags": []}  
+    ],
+    "Remark": "Claude"
+  },
+  "R-PR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a detailed, photorealistic image of the final static scene after the following actions are completed. The view is from directly above a wooden artist's table. Do not show any hands or motion. The process is: \n1. Place a large, rectangular white canvas in the center of the table. \n2. Paint a large, solid red circle in the center of the canvas. \n3. Paint a smaller, solid blue square on top of the red circle, partially covering the circle's top-right quadrant. \n4. Accidentally spill a small amount of black ink near the bottom-left corner of the canvas. \n5. Lay a single, thin paintbrush horizontally across the very top edge of the canvas. \n6. Place an open tube of blue paint on the table to the right of the canvas.",
+    "Checklist": [
+      { "question": "Is there a rectangular white canvas on a wooden table?", "tags": [] },
+      { "question": "Is there a solid red circle painted on the canvas?", "tags": [] },
+      { "question": "Is there a solid blue square painted on the canvas?", "tags": [] },
+      { "question": "Does the blue square partially cover the red circle?", "tags": [] },
+      { "question": "Is the blue square positioned over the top-right area of the circle?", "tags": [] },
+      { "question": "Is there a black ink spill on the canvas?", "tags": [] },
+      { "question": "Is the ink spill located in the bottom-left area of the canvas?", "tags": [] },
+      { "question": "Is there a single paintbrush in the image?", "tags": [] },
+      { "question": "Is the paintbrush lying horizontally across the top edge of the canvas?", "tags": [] },
+      { "question": "Is there a tube of paint on the table?", "tags": [] },
+      { "question": "Is the tube of paint blue and open?", "tags": [] },
+      { "question": "Is the tube of paint to the right of the canvas?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a close-up, food photography style image showing only the final state of a sandwich on a white ceramic plate after these steps. The sequence of actions is: \n1. Place a single slice of whole wheat bread on the plate. \n2. Add a layer of green leaf lettuce on top of the bread. \n3. Arrange three thin, red tomato slices in a row on top of the lettuce. \n4. Place a second slice of whole wheat bread on top of the tomatoes. \n5. Cut the entire sandwich perfectly in half, diagonally. \n6. Separate the two halves slightly. \n7. Stick a single toothpick, which has a green olive on its top, into the center of the right half of the sandwich.",
+    "Checklist": [
+      { "question": "Is whole wheat bread on a white ceramic plate?", "tags": [] },
+      { "question": "Is there a visible layer of green lettuce in the sandwich?", "tags": [] },
+      { "question": "Are there visible red tomato slices in the sandwich?", "tags": [] },
+      { "question": "Is the sandwich cut into two halves?", "tags": [] },
+      { "question": "Is the cut diagonal?", "tags": [] },
+      { "question": "Are the two halves slightly separated from each other?", "tags": [] },
+      { "question": "Is there a toothpick present?", "tags": [] },
+      { "question": "Is the toothpick in the right half of the sandwich?", "tags": [] },
+      { "question": "Is there a green olive on top of the toothpick?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Produce a photograph showing the final state of a glass fishbowl on a light-colored surface after this setup process: \n1. Start with an empty, spherical glass fishbowl. \n2. Pour a two-inch layer of bright blue aquarium gravel into the bottom of the bowl. \n3. Fill the bowl with clear water. \n4. Place a small, ceramic model of a sunken pirate ship onto the gravel on the left side. \n5. Place a single, tall, green plastic seaweed plant onto the gravel on the right side. \n6. Drop a single, white seashell into the water, so it comes to rest on the gravel in front of the pirate ship.",
+    "Checklist": [
+      { "question": "Is the main object a spherical glass fishbowl?", "tags": [] },
+      { "question": "Is there a layer of gravel at the bottom of the bowl?", "tags": [] },
+      { "question": "Is the gravel bright blue?", "tags": [] },
+      { "question": "Is the bowl filled with clear water?", "tags": [] },
+      { "question": "Is there a model of a pirate ship inside the bowl?", "tags": [] },
+      { "question": "Is the pirate ship on the left side?", "tags": [] },
+      { "question": "Is there a plastic seaweed plant inside the bowl?", "tags": [] },
+      { "question": "Is the seaweed plant green?", "tags": [] },
+      { "question": "Is the seaweed plant on the right side?", "tags": [] },
+      { "question": "Is there a single white seashell in the bowl?", "tags": [] },
+      { "question": "Is the seashell resting on the gravel in front of the pirate ship?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a close-up, photorealistic image of the final static state of a bathroom mirror after the following actions. \n1. A large, rectangular bathroom mirror is completely covered in white steam condensation. \n2. Someone has used their finger to write the word 'HELLO' in the center of the steam. \n3. A single drop of water has condensed at the top of the letter 'L'. \n4. This water drop has run down, creating a single, thin, clear streak that goes through the letter 'L' and continues down.",
+    "Checklist": [
+      { "question": "Is the image a close-up of a mirror?", "tags": [] },
+      { "question": "Is the mirror's surface covered in white steam?", "tags": [] },
+      { "question": "Is the word 'HELLO' written in the steam?", "tags": [] },
+      { "question": "Is the writing in the center of the mirror?", "tags": [] },
+      { "question": "Is there a single, thin streak from a water droplet?", "tags": [] },
+      { "question": "Does the streak run vertically downwards?", "tags": [] },
+      { "question": "Does the streak pass through the letter 'L' in 'HELLO'?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a photorealistic image showing the final state of a terracotta flower pot after the following gardening steps. \n1. Start with an empty, classic orange terracotta pot on a wooden deck. \n2. Fill the pot three-quarters full with dark, rich potting soil. \n3. Use a finger to poke a one-inch-deep hole in the exact center of the soil's surface. \n4. Place a single, small, white bean seed into the bottom of this hole. \n5. Cover the hole by pushing the surrounding soil over it. \n6. Pour a small amount of water onto the soil, making the surface visibly dark and moist. \n7. Lay a small, gray trowel on the wooden deck to the right of the pot.",
+    "Checklist": [
+      { "question": "Is there an orange terracotta pot in the image?", "tags": [] },
+      { "question": "Is the pot on a wooden deck?", "tags": [] },
+      { "question": "Is the pot filled with dark soil?", "tags": [] },
+      { "question": "Is the seed that was planted no longer visible?", "tags": [] },
+      { "question": "Is the soil surface relatively flat after the hole was covered?", "tags": [] },
+      { "question": "Is the surface of the soil visibly dark and moist?", "tags": [] },
+      { "question": "Is there a trowel on the deck?", "tags": [] },
+      { "question": "Is the trowel located to the right of the pot?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate an image of the final arrangement inside a red, plastic toolbox tray with three compartments (left, middle, right). The image should only show the tray and its contents after these steps: \n1. Start with the empty, three-compartment red toolbox tray. \n2. Place a steel hammer in the left compartment, with its head pointing up. \n3. Place a yellow-handled screwdriver in the middle compartment, lying diagonally. \n4. Drop a handful of about 10-15 silver-colored screws into the right compartment. \n5. Take a single, coiled-up roll of black electrical tape. \n6. Place the roll of black tape into the middle compartment, on top of the screwdriver.",
+    "Checklist": [
+      { "question": "Is the main object a red toolbox tray?", "tags": [] },
+      { "question": "Does the tray have three distinct compartments?", "tags": [] },
+      { "question": "Is there a hammer in the left compartment with its head pointing up?", "tags": [] },
+      { "question": "Is there a screwdriver in the middle compartment?", "tags": [] },
+      { "question": "Does the screwdriver have a yellow handle?", "tags": [] },
+      { "question": "Is there a pile of screws in the right compartment?", "tags": [] },
+      { "question": "Are the screws silver-colored?", "tags": [] },
+      { "question": "Is there a roll of black electrical tape?", "tags": [] },
+      { "question": "Is the electrical tape in the middle compartment?", "tags": [] },
+      { "question": "Is the electrical tape resting on top of the screwdriver?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create an image of a computer screen, showing only the final state of the desktop after these user actions: \n1. The desktop background is set to a high-resolution photograph of a blue, cloudy sky. \n2. A rectangular window for a text editor is open on the left half of the screen. \n3. The sentence 'This is the final result.' is typed into the text editor. \n4. A second, smaller, square-shaped window for a calculator application is open on the top-right corner of the screen. \n5. The number '1337' is displayed on the calculator's screen. \n6. The mouse cursor, which is a standard white arrow, is positioned directly over the number '7' on the calculator's keypad.",
+    "Checklist": [
+      { "question": "Is the image a computer screen?", "tags": [] },
+      { "question": "Does the desktop background show a blue, cloudy sky?", "tags": [] },
+      { "question": "Is there a text editor window open on the left side?", "tags": [] },
+      { "question": "Does the text editor contain the exact sentence 'This is the final result.'?", "tags": [] },
+      { "question": "Is there a calculator window open?", "tags": [] },
+      { "question": "Is the calculator window in the top-right corner?", "tags": [] },
+      { "question": "Does the calculator display the number '1337'?", "tags": [] },
+      { "question": "Is the mouse cursor visible?", "tags": [] },
+      { "question": "Is the mouse cursor a white arrow?", "tags": [] },
+      { "question": "Is the cursor positioned over the number '7' on the calculator's keypad?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Render a photograph of the final result of making a cup of instant coffee on a kitchen counter. The steps are: \n1. Start with an empty, white ceramic mug on a marble countertop. \n2. Place one teaspoon of dark brown instant coffee granules at the bottom of the mug. \n3. Pour hot water into the mug until it is about 80% full. \n4. Add a splash of white milk. \n5. Place a silver-colored metal spoon into the mug. \n6. A single drop of coffee has spilled and is now on the countertop, next to the base of the mug.",
+    "Checklist": [
+      { "question": "Is there a white ceramic mug on a marble countertop?", "tags": [] },
+      { "question": "Is the mug filled with liquid?", "tags": [] },
+      { "question": "Is the liquid in the mug a light brown coffee color (due to the milk)?", "tags": [] },
+      { "question": "Is the mug approximately full?", "tags": [] },
+      { "question": "Is there a metal spoon in the mug?", "tags": [] },
+      { "question": "Is the spoon silver-colored?", "tags": [] },
+      { "question": "Is there a single drop of spilled coffee on the countertop?", "tags": [] },
+      { "question": "Is the spill located next to the mug's base?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a wide-angle photograph of the final state of an extinguished campfire site in a forest at dusk. The process was: \n1. Start with a clear patch of dirt in a forest. \n2. Arrange a circle of large, gray stones to create a fire pit. \n3. Place several logs of wood inside the stone circle. \n4. The logs are now completely charred and blackened. \n5. The fire has been extinguished, and a thin wisp of white smoke is rising from the center of the logs. \n6. An empty, red metal bucket is placed on the ground just outside the stone circle.",
+    "Checklist": [
+      { "question": "Is there a fire pit made from a circle of gray stones?", "tags": [] },
+      { "question": "Are there logs inside the fire pit?", "tags": [] },
+      { "question": "Are the logs visibly charred and black?", "tags": [] },
+      { "question": "Is there no large, active flame visible?", "tags": [] },
+      { "question": "Is a thin wisp of white smoke rising from the logs?", "tags": [] },
+      { "question": "Is there a red metal bucket in the scene?", "tags": [] },
+      { "question": "Is the bucket located outside the stone circle?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create an image of the final state of an open suitcase being packed on a bed. The view should be from the front. The steps are: \n1. An open, dark gray hardshell suitcase is lying flat on a white bed comforter. \n2. Place a stack of three folded t-shirts on the left side of the suitcase. \n3. Place a pair of brown leather shoes on the right side of the suitcase, with the toes pointing towards the top. \n4. Lay a black leather belt, coiled up, on top of the stack of t-shirts. \n5. Put a small, yellow toiletry bag in the empty space at the top of the right side, above the shoes. \n6. The interior mesh divider on the left side has been zipped closed over the t-shirts and belt.",
+    "Checklist": [
+      { "question": "Is there an open, hardshell suitcase on a white bed comforter?", "tags": [] },
+      { "question": "Is the suitcase dark gray?", "tags": [] },
+      { "question": "Is there a stack of three t-shirts on the left side?", "tags": [] },
+      { "question": "Is there a pair of brown leather shoes on the right side?", "tags": [] },
+      { "question": "Is there a black, coiled belt on top of the t-shirts?", "tags": [] },
+      { "question": "Is there a yellow toiletry bag in the suitcase?", "tags": [] },
+      { "question": "Is the toiletry bag located on the right side, above the shoes?", "tags": [] },
+      { "question": "Is the interior mesh divider on the left side closed?", "tags": [] },
+      { "question": "Is the right side of the suitcase (with the shoes) not covered by a divider?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a photorealistic image showing the final state of a science experiment in a tall glass cylinder on a laboratory bench. Do not show any hands or motion. The steps are: \n1. Start with an empty, tall, transparent glass graduated cylinder. \n2. Pour a layer of golden honey to fill the bottom 10% of the cylinder. \n3. Carefully pour a layer of green dish soap on top of the honey. \n4. Carefully pour a layer of water on top of the dish soap. \n5. Pour a final layer of yellow vegetable oil on top of the water. \n6. Drop one small, solid red plastic bead into the cylinder (with a density higher than oil but lower than water).",
+    "Checklist": [
+      { "question": "Is the object a tall, transparent glass cylinder on a lab bench?", "tags": [] },
+      { "question": "Is there a layer of golden honey at the very bottom of the cylinder?", "tags": [] },
+      { "question": "Is there a layer of green liquid directly on top of the honey?", "tags": [] },
+      { "question": "Is there a layer of clear water directly on top of the green liquid?", "tags": [] },
+      { "question": "Is there a layer of yellow oil at the very top of all the liquids?", "tags": [] },
+      { "question": "Is there a single, small red plastic bead inside the cylinder?", "tags": [] },
+      { "question": "Is the red bead suspended at the interface between the water and the oil layers?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a top-down photograph showing the final state of an open cardboard box on a light gray concrete floor. The process is: \n1. Start with an open, empty cardboard box with its top flaps pointing up. \n2. Place a thick, hardcover book with a dark blue cover flat on the bottom of the box, on the left side. \n3. Place a white ceramic mug, standing upright, in the box on the right side. \n4. Stuff crumpled brown packing paper into the box, filling the space around the book and the mug. \n5. Lay a single, unsealed white envelope on top of the crumpled paper.",
+    "Checklist": [
+      { "question": "Are the top flaps of the box open?", "tags": [] },
+      { "question": "Is there a hardcover book with a blue cover inside the box?", "tags": [] },
+      { "question": "Is the book on the left side of the box?", "tags": [] },
+      { "question": "Is there a white ceramic mug inside the box?", "tags": [] },
+      { "question": "Is the mug standing upright on the right side of the box?", "tags": [] },
+      { "question": "Is there crumpled brown packing paper in the box?", "tags": [] },
+      { "question": "Does the paper fill the space around the book and mug?", "tags": [] },
+      { "question": "Is there a white envelope in the image?", "tags": [] },
+      { "question": "Is the envelope lying on top of the packing paper?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Produce a photograph showing the final setup of a simple, abstract board game. The view is from a 45-degree angle. \n1. A square wooden board with a 5x5 grid is placed on a table. \n2. Place one white, cylindrical game piece in the exact center square of the grid. \n3. Place one black, cubic game piece in the top-left corner square of the grid. \n4. Place one red, spherical game piece in the bottom-right corner square of the grid. \n5. Lay a single, standard six-sided die on the table to the right of the board, with the '4' face pointing up.",
+    "Checklist": [
+      { "question": "Is there a square wooden board with a 5x5 grid?", "tags": [] },
+      { "question": "Is there a white game piece in the center square?", "tags": [] },
+      { "question": "Is the white game piece cylindrical?", "tags": [] },
+      { "question": "Is there a black game piece in the top-left corner square?", "tags": [] },
+      { "question": "Is the black game piece a cube?", "tags": [] },
+      { "question": "Is there a red game piece in the bottom-right corner square?", "tags": [] },
+      { "question": "Is the red game piece a sphere?", "tags": [] },
+      { "question": "Is there a single die next to the board?", "tags": [] },
+      { "question": "Is the die to the right of the board?", "tags": [] },
+      { "question": "Is the '4' face of the die visible on top?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Render a high-quality, commercial-style photograph of the final state of a layered cocktail in a glass on a dark, reflective bar counter. \n1. Start with an empty, tall, clear 'highball' glass. \n2. Pour a small amount of dark red grenadine syrup to form a layer at the bottom. \n3. Carefully pour orange juice on top of the grenadine, filling the glass to about 80% full. \n4. Add three large, clear ice cubes. \n5. Rest a circular slice of lime on the rim of the glass as a garnish. \n6. Place a single, black plastic straw into the glass.",
+    "Checklist": [
+      { "question": "Is the glass a tall, clear highball glass?", "tags": [] },
+      { "question": "Is there a visible layer of red liquid at the bottom of the glass?", "tags": [] },
+      { "question": "Is the main liquid in the glass orange juice, on top of the red layer?", "tags": [] },
+      { "question": "Are there exactly three ice cubes in the glass?", "tags": [] },
+      { "question": "Is there a slice of lime on the rim of the glass?", "tags": [] },
+      { "question": "Is the lime slice circular?", "tags": [] },
+      { "question": "Is there a black straw in the glass?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate an image of a single, formal table setting after it has been fully arranged. The view is from the perspective of a seated guest. \n1. Start with a plain white tablecloth. \n2. Place a large, round, blue dinner plate in the center. \n3. Place a smaller, round, white salad plate on top of the blue dinner plate. \n4. Place a folded white cloth napkin on top of the salad plate. \n5. Place a silver fork to the left of the plates. \n6. Place a silver knife to the right of the plates, with its blade facing towards the plates. \n7. Place an empty, clear wine glass at the top-right position, above the knife.",
+    "Checklist": [
+      { "question": "Is there a blue dinner plate at the setting?", "tags": [] },
+      { "question": "Is there a smaller, white salad plate on top of the blue plate?", "tags": [] },
+      { "question": "Is there a folded white cloth napkin on top of the salad plate?", "tags": [] },
+      { "question": "Is there a silver fork to the left of the plates?", "tags": [] },
+      { "question": "Is there a silver knife to the right of the plates?", "tags": [] },
+      { "question": "Is the knife's blade turned to face the plates?", "tags": [] },
+      { "question": "Is there an empty, clear wine glass?", "tags": [] },
+      { "question": "Is the wine glass located in the top-right area of the setting?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a photorealistic image showing the final state of a cup of tea being prepared. \n1. A clear glass mug is on a small, round, wooden saucer. \n2. The mug is filled with hot, steaming water. \n3. A single tea bag is submerged in the water. The tea bag's string and paper tag are hanging over the side of the mug. \n4. A metal teaspoon is resting on the saucer, to the right of the mug. \n5. A small drop of sticky, golden honey is on the curved part of the spoon.",
+    "Checklist": [
+      { "question": "Is there a clear glass mug on a wooden saucer?", "tags": [] },
+      { "question": "Is there a tea bag inside the mug?", "tags": [] },
+      { "question": "Is the tea bag's string hanging over the side?", "tags": [] },
+      { "question": "Is the water inside the mug brown?", "tags": [] },
+      { "question": "Does the water appear hot and steaming?", "tags": [] },
+      { "question": "Is there a teaspoon on the saucer?", "tags": [] },
+      { "question": "Is the teaspoon to the right of the mug?", "tags": [] },
+      { "question": "Is there a drop of golden honey on the spoon?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a top-down, food photography image of an uncooked pizza on a floured wooden surface, showing its final state before baking. The steps are: \n1. Start with a round, flattened pizza dough. \n2. Spread a layer of red tomato sauce over the dough, leaving a one-inch border for the crust. \n3. Sprinkle a generous amount of shredded white mozzarella cheese over the sauce. \n4. Arrange exactly five slices of red pepperoni in a pentagon shape in the center. \n5. Place one whole black olive in the very center of the pepperoni pentagon. \n6. Sprinkle a small amount of dried green oregano over everything.",
+    "Checklist": [
+      { "question": "Is the image a top-down view of an uncooked pizza on a wooden surface?", "tags": [] },
+      { "question": "Is there red sauce on the dough with a bare crust around the edge?", "tags": [] },
+      { "question": "Is there shredded white cheese on top of the sauce?", "tags": [] },
+      { "question": "Are there exactly five slices of pepperoni on the pizza?", "tags": [] },
+      { "question": "Are the pepperoni slices arranged in a pentagon shape?", "tags": [] },
+      { "question": "Is there a single black olive in the image?", "tags": [] },
+      { "question": "Is the black olive in the center of the pepperoni arrangement?", "tags": [] },
+      { "question": "Is there a visible sprinkle of green herbs (oregano) over the pizza?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a photograph of a single pet food bowl on a checkered kitchen floor, showing the final preparation of a meal. \n1. Start with a single, clean, stainless steel pet bowl. \n2. Fill the left half of the bowl with brown, star-shaped dry kibble. \n3. Fill the right half of the bowl with a light-brown, chunky, wet pet food. \n4. Place three small, green, pea-sized vegetable bits on top of the wet food on the right side.",
+    "Checklist": [
+      { "question": "Is the bowl made of stainless steel?", "tags": [] },
+      { "question": "Is the bowl on a checkered floor?", "tags": [] },
+      { "question": "Is the food in the left half of the bowl dry kibble?", "tags": [] },
+      { "question": "Is the dry kibble star-shaped?", "tags": [] },
+      { "question": "Is the food in the right half of the bowl a chunky, wet food?", "tags": [] },
+      { "question": "Are there small, green vegetable bits present?", "tags": [] },
+      { "question": "Are the green bits on top of the wet food portion?", "tags": [] },
+      { "question": "Are there exactly three green bits?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Render an image showing the final, static scene after some minor car maintenance. \n1. The hood of a dark blue car is propped open. \n2. A clean, red shop rag is draped over the front fender on the left side of the engine bay. \n3. A single, metal combination wrench is lying on top of the engine block's plastic cover. \n4. The black plastic cap for the windshield washer fluid reservoir is unscrewed and placed right next to the reservoir's opening.",
+    "Checklist": [
+      { "question": "Is the hood of a car open?", "tags": [] },
+      { "question": "Is the car's color dark blue?", "tags": [] },
+      { "question": "Is there a red rag draped over the car's fender?", "tags": [] },
+      { "question": "Is the rag on the left side?", "tags": [] },
+      { "question": "Is there a single metal wrench present?", "tags": [] },
+      { "question": "Is the wrench lying on the engine cover?", "tags": [] },
+      { "question": "Is there a black plastic cap on the scene?", "tags": [] },
+      { "question": "Is the cap positioned next to the opening of the washer fluid reservoir?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a photorealistic image showing the final state of a wall after decorating. \n1. The wall is painted a light gray color. \n2. A single, unframed, square photograph is attached to the wall. The photo shows a single, large, yellow sunflower. \n3. A piece of clear adhesive tape is visibly holding the top edge of the photograph to the wall. \n4. A small, silver-colored metal pushpin has been pushed into the wall about six inches directly below the photograph. \n5. A single, small, brass-colored key is hanging from the pushpin.",
+    "Checklist": [
+      { "question": "Is the wall painted light gray?", "tags": [] },
+      { "question": "Is there a square, unframed photograph on the wall?", "tags": [] },
+      { "question": "Does the photograph show a yellow sunflower?", "tags": [] },
+      { "question": "Is the photo attached with a visible piece of clear tape at the top?", "tags": [] },
+      { "question": "Is there a pushpin in the wall?", "tags": [] },
+      { "question": "Is the pushpin silver-colored?", "tags": [] },
+      { "question": "Is the pushpin located below the photograph?", "tags": [] },
+      { "question": "Is there a key hanging from the pushpin?", "tags": [] },
+      { "question": "Is the key brass-colored?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate a fantasy-themed, photorealistic image showing the final state of a potion being brewed. The scene is static, with no motion or people. The process is: \n1. A large, black iron cauldron sits on a rough stone floor. \n2. The cauldron is filled three-quarters of the way with a thick, bubbling, purple liquid. \n3. A gnarled, brown mandrake root has been dropped into the liquid. \n4. Three silver-colored, star-shaped anise pods are floating on the surface of the liquid. \n5. An ancient, leather-bound spellbook is lying open on the floor next to the cauldron. \n6. A single, long, black crow's feather is stuck to the right side of the cauldron's rim.",
+    "Checklist": [
+      { "question": "Is there a black iron cauldron on a stone floor?", "tags": [] },
+      { "question": "Is the cauldron filled with a purple liquid?", "tags": [] },
+      { "question": "Does the purple liquid appear to be bubbling?", "tags": [] },
+      { "question": "Is there a brown, gnarled root submerged in the liquid?", "tags": [] },
+      { "question": "Are there exactly three star-shaped pods on the liquid's surface?", "tags": [] },
+      { "question": "Are the star-shaped pods silver-colored?", "tags": [] },
+      { "question": "Is there a leather-bound book on the floor next to the cauldron?", "tags": [] },
+      { "question": "Is the book open?", "tags": [] },
+      { "question": "Is there a single black feather stuck to the right side of the cauldron's rim?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a close-up, top-down photograph of the final static state of a smartphone during a repair, on an anti-static mat. The steps were: \n1. Place a dark gray anti-static work mat on a surface. \n2. Place a modern smartphone, with its back cover removed, in the center of the mat. The phone's internal components are visible. \n3. The phone's rectangular lithium-ion battery has been taken out. \n4. The removed battery is placed on the mat, to the right of the phone. \n5. A single, small, blue plastic prying tool is placed on the mat, to the left of the phone. \n6. A single, tiny, silver-colored screw is on the mat, directly below the phone.",
+    "Checklist": [
+      { "question": "Is there a smartphone in the center with its back cover missing?", "tags": [] },
+      { "question": "Is the phone's battery bay empty?", "tags": [] },
+      { "question": "Is the removed battery on the mat?", "tags": [] },
+      { "question": "Is the battery located to the right of the phone?", "tags": [] },
+      { "question": "Is there a blue plastic prying tool on the mat?", "tags": [] },
+      { "question": "Is the prying tool located to the left of the phone?", "tags": [] },
+      { "question": "Is there a single, tiny screw on the mat?", "tags": [] },
+      { "question": "Is the screw located below the phone?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Produce a food photography image of the final, assembled state of a banana split dessert. \n1. A long, clear glass 'boat' dish is on a table. \n2. A whole banana has been peeled and cut in half lengthwise. \n3. The two banana halves are placed inside the dish, one on each side. \n4. Place a scoop of white vanilla ice cream in the center, between the banana halves. \n5. Place a scoop of pink strawberry ice cream to the left of the vanilla scoop. \n6. Place a scoop of brown chocolate ice cream to the right of the vanilla scoop. \n7. Pour a stream of dark chocolate sauce over the central vanilla scoop only. \n8. A single red maraschino cherry, with its stem attached, is placed on top of the vanilla scoop.",
+    "Checklist": [
+      { "question": "Is the dessert served in a long, clear glass dish?", "tags": [] },
+      { "question": "Is there a split banana with its halves along the sides of the dish?", "tags": [] },
+      { "question": "Are there three scoops of ice cream in the dish?", "tags": [] },
+      { "question": "Is the central ice cream scoop white?", "tags": [] },
+      { "question": "Is the ice cream scoop on the left pink?", "tags": [] },
+      { "question": "Is the ice cream scoop on the right brown?", "tags": [] },
+      { "question": "Is there dark chocolate sauce on the dessert?", "tags": [] },
+      { "question": "Is the chocolate sauce only on the central, white scoop of ice cream?", "tags": [] },
+      { "question": "Is there a single red cherry on top?", "tags": [] },
+      { "question": "Does the cherry have a stem?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Produce a photograph showing the final state of a set of children's wooden toy blocks on a carpeted floor. \n1. A large, red, cubic block is at the bottom. \n2. A smaller, blue, cubic block is placed on top of the red block. \n3. An even smaller, yellow, cylindrical block is placed on top of the blue block. \n4. The yellow cylindrical block has been knocked over and is now lying on its side on top of the blue block. \n5. A single, green, triangular prism block is on the carpet, next to the right side of the red block.",
+    "Checklist": [
+      { "question": "Are the blocks on a carpeted floor?", "tags": [] },
+      { "question": "Is there a large red block at the base of the tower?", "tags": [] },
+      { "question": "Is the red block a cube?", "tags": [] },
+      { "question": "Is there a blue block on top of the red block?", "tags": [] },
+      { "question": "Is the blue block a cube?", "tags": [] },
+      { "question": "Is the yellow block a cylinder?", "tags": [] },
+      { "question": "Is the yellow block lying on its side?", "tags": [] },
+      { "question": "Is the yellow cylindrical block on top of the blue block?", "tags": []},
+      { "question": "Is there a green block on the carpet?", "tags": [] },
+      { "question": "Is the green block a triangular prism?", "tags": [] },
+      { "question": "Is the green block to the right of the red block?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate an image of a desk showing the final state of a partially written letter. \n1. A single sheet of beige parchment paper is on a dark oak desk. \n2. Several sentences have been written in the top half of the paper using black, cursive ink script. \n3. A single, small drop of black ink has blotted the paper near the bottom-right corner. \n4. A black raven-feather quill pen is resting on the desk to the right of the paper. \n5. The tip of the quill pen is visibly stained with black ink. \n6. A small, open glass inkwell containing black ink is placed on the desk, directly above the parchment.",
+    "Checklist": [
+      { "question": "Is there a sheet of beige parchment on a dark oak desk?", "tags": [] },
+      { "question": "Is there black cursive writing on the top half of the paper?", "tags": [] },
+      { "question": "Is there a small black ink blot on the paper?", "tags": [] },
+      { "question": "Is the ink blot in the bottom-right area?", "tags": [] },
+      { "question": "Is there a black feather quill pen to the right of the paper?", "tags": [] },
+      { "question": "Is the tip of the quill stained with ink?", "tags": [] },
+      { "question": "Is there an open inkwell on the desk?", "tags": [] },
+      { "question": "Is the inkwell positioned above the paper?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a detailed photograph showing the final state of a partially assembled model car on a workbench. \n1. The scene is on a green cutting mat with a white grid. \n2. The main plastic body of a model sports car, which is bright red, is in the center of the mat. \n3. The two black plastic front wheels have been glued onto the car's front axle. \n4. The single, clear plastic windshield piece has been glued into place on the car's body. \n5. A single, unattached black plastic rear wheel is lying on the mat to the left of the car body. \n6. A small tube of model glue, with its cap off, is lying on its side on the mat to the right of the car.",
+    "Checklist": [
+      { "question": "Is the scene set on a green cutting mat with a white grid?", "tags": [] },
+      { "question": "Is the main body of a red model car in the center?", "tags": [] },
+      { "question": "Are the two front wheels attached to the car?", "tags": [] },
+      { "question": "Is the clear windshield attached to the car?", "tags": [] },
+      { "question": "Is there a single, unattached wheel on the mat?", "tags": [] },
+      { "question": "Is the unattached wheel to the left of the car?", "tags": [] },
+      { "question": "Is there a tube of glue on the mat?", "tags": [] },
+      { "question": "Is the tube of glue to the right of the car?", "tags": [] },
+      { "question": "Is the cap off the tube of glue?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a photorealistic image showing the final state of a postcard that is ready to be mailed. The process is: \n1. A standard postcard is on a wooden table. The front of the postcard shows a sunny photograph of the Eiffel Tower. \n2. The postcard is flipped over to its back side. \n3. The message 'Wish you were here!' is written in blue ink on the left half. \n4. A single postage stamp, featuring a picture of a brown bird, is stuck to the top-right corner. \n5. A black, circular postal cancellation mark has been stamped partially over the postage stamp and partially on the postcard itself.",
+    "Checklist": [
+      { "question": "Is the image showing the back of a postcard?", "tags": [] },
+      { "question": "Is the postcard on a wooden table?", "tags": [] },
+      { "question": "Is the message 'Wish you were here!' written on the left side?", "tags": [] },
+      { "question": "Is the ink blue?", "tags": [] },
+      { "question": "Is there a postage stamp in the top-right corner?", "tags": [] },
+      { "question": "Does the stamp feature a picture of a brown bird?", "tags": [] },
+      { "question": "Is there a black, circular postmark?", "tags": [] },
+      { "question": "Does the postmark partially cover the stamp?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a close-up food photograph showing a single, decorated cupcake in its final state. \n1. A single, plain cupcake in a blue paper liner is on a small, white ceramic plate. \n2. A large, generous swirl of white vanilla frosting is piped onto the top of the cupcake. \n3. A small dash of rainbow-colored, rod-shaped sprinkles is scattered over the top of the frosting. \n4. A single, small, red gummy bear candy is pushed into the side of the frosting swirl so that it is facing forward.",
+    "Checklist": [
+      { "question": "Is there a single cupcake on a white plate?", "tags": [] },
+      { "question": "Is the cupcake's paper liner blue?", "tags": [] },
+      { "question": "Is there a large swirl of white frosting on the cupcake?", "tags": [] },
+      { "question": "Are there rainbow-colored sprinkles on the frosting?", "tags": [] },
+      { "question": "Are the sprinkles rod-shaped?", "tags": [] },
+      { "question": "Is there a single gummy bear on the cupcake?", "tags": [] },
+      { "question": "Is the gummy bear red?", "tags": [] },
+      { "question": "Is the gummy bear stuck into the side of the frosting?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Generate an image of a messy, used artist's palette, showing only the final static result of the actions. \n1. Start with a traditional, brown, wooden artist's palette with a thumb hole. \n2. Squeeze a fresh dollop of bright red paint near the top edge. \n3. Squeeze a fresh dollop of bright blue paint right next to the red paint. \n4. A small amount of the red and blue paint has been taken and mixed together in the center of the palette. \n5. A metal palette knife is resting on the right side of the palette. \n6. The tip of the palette knife is covered in the mixed paint.",
+    "Checklist": [
+      { "question": "Is the object a traditional wooden artist's palette?", "tags": [] },
+      { "question": "Is there a dollop of unmixed red paint on the palette?", "tags": [] },
+      { "question": "Is there a dollop of unmixed blue paint on the palette?", "tags": [] },
+      { "question": "Is there a distinct patch of purple paint in the center of the palette?", "tags": [] },
+      { "question": "Is there a metal palette knife on the palette?", "tags": [] },
+      { "question": "Is the palette knife resting on the right side?", "tags": [] },
+      { "question": "Is the tip of the palette knife covered in purple paint?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Create a photorealistic image of a bathroom counter in its final state after a morning routine. \n1. The scene is a white porcelain bathroom counter and sink. \n2. Place a white ceramic toothbrush holder on the counter, to the right of the faucet. \n3. Put one blue toothbrush and one red toothbrush into the holder, bristles-up. \n4. Lay a tube of toothpaste on the counter in front of the sink. \n5. The cap from the toothpaste tube has been removed and is not on the tube. \n6. A small, pea-sized amount of white toothpaste has been squeezed out of the tube and is on the counter, right next to the tube's opening.",
+    "Checklist": [
+      { "question": "Is the scene a white bathroom counter and sink?", "tags": [] },
+      { "question": "Is there a white ceramic toothbrush holder?", "tags": [] },
+      { "question": "Is there a blue toothbrush in the holder?", "tags": [] },
+      { "question": "Is there a red toothbrush in the holder?", "tags": [] },
+      { "question": "Is there a tube of toothpaste lying on the counter?", "tags": [] },
+      { "question": "Is the cap missing from the toothpaste tube?", "tags": [] },
+      { "question": "Is there a small amount of squeezed-out toothpaste on the counter?", "tags": [] },
+      { "question": "Is the squeezed-out toothpaste located next to the tube's opening?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-PR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Set an empty clear parfait glass on the centre of a wooden kitchen counter.\n2. Spoon a layer of plain white yogurt into the bottom of the glass.\n3. Sprinkle a layer of golden granola evenly over the yogurt.\n4. Add a layer of sliced fresh strawberries on top of the granola.\n5. Repeat with a second thinner layer of yogurt so that the strawberry slices remain visible from the side.\n6. Drizzle honey in a thin spiral over the upper yogurt layer.\n7. Place a single fresh mint sprig upright in the centre of the top layer and set a long-handled dessert spoon to the right of the glass.\nRender the kitchen counter exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is a tall clear glass positioned at the centre of the counter?", "tags": [] },
+      { "question": "Is the bottom layer inside the glass white yogurt?", "tags": [] },
+      { "question": "Is there a visible granola layer directly above the bottom yogurt layer?", "tags": [] },
+      { "question": "Is there a layer of sliced strawberries above the granola?", "tags": [] },
+      { "question": "Is a second thinner yogurt layer present above the strawberries?", "tags": [] },
+      { "question": "Is honey visibly drizzled on the top surface?", "tags": [] },
+      { "question": "Is a mint sprig standing upright in the top layer?", "tags": [] },
+      { "question": "Is a long dessert spoon resting to the right of the glass?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Place an empty mid-tower computer case upright on a workbench.\n2. Mount an ATX motherboard onto the standoffs inside the case.\n3. Install a CPU with its stock air-cooler onto the motherboard.\n4. Insert two identical RAM sticks into the first and third memory slots.\n5. Seat a full-length graphics card in the primary PCIe slot.\n6. Fit a power-supply unit in the case’s bottom compartment and connect its main cables to the motherboard and graphics card.\n7. Close and secure the transparent tempered-glass side panel.\n8. Position the powered-off PC case at the back-right corner of the workbench with no tools left inside the case.\nRender the workbench exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is the mid-tower case closed with a transparent side panel?", "tags": [] },
+      { "question": "Is a motherboard clearly visible through the glass?", "tags": [] },
+      { "question": "Does a CPU cooler sit atop the CPU socket?", "tags": [] },
+      { "question": "Are exactly two RAM sticks installed in alternating slots?", "tags": [] },
+      { "question": "Is a graphics card installed horizontally in the top PCIe slot?", "tags": [] },
+      { "question": "Is a power-supply unit located in the bottom compartment?", "tags": [] },
+      { "question": "Are power cables connected to both the motherboard and graphics card?", "tags": [] },
+      { "question": "Is the assembled PC case located at the back-right corner of the workbench?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Lay a rectangular wooden base plank flat on a carpenter’s bench.\n2. Nail four equal-height wooden walls upright around the edges of the base to form a box without a roof.\n3. Attach two triangular roof panels together along their long edges to create a peaked roof.\n4. Secure the roof panels onto the top edges of the side walls.\n5. Drill a single circular entrance hole in the centre of the front wall.\n6. Screw a short dowel beneath the hole to serve as a perch.\n7. Paint the entire exterior of the birdhouse bright yellow.\n8. Tie a length of natural-fibre rope through an eye-hook on the roof peak and hang the birdhouse from a low tree branch.\nRender the backyard scene exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a small wooden birdhouse hanging from a tree branch?", "tags": [] },
+      { "question": "Is the birdhouse painted uniformly bright yellow?", "tags": [] },
+      { "question": "Does the birdhouse have a peaked roof attached?", "tags": [] },
+      { "question": "Is there a single circular entrance hole on the front wall?", "tags": [] },
+      { "question": "Is a short perch located directly beneath the entrance hole?", "tags": [] },
+      { "question": "Is the birdhouse suspended by a rope tied to its roof peak?", "tags": [] },
+      { "question": "Is the birdhouse hanging in an outdoor tree setting, not on the bench?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Lay wooden train-track pieces on a play-mat to form an oval circuit.\n2. Insert an arched bridge section on the front side of the oval.\n3. Snap together a battery-powered locomotive followed by two identical passenger carriages.\n4. Place the train on the track just before the bridge.\n5. Attach a pair of red plastic safety gates on either side of the bridge entrance.\n6. Position a small green pine-tree figurine to the left of the bridge.\n7. Place a miniature railroad signal post to the right of the bridge.\n8. Switch the locomotive to the “ON” position.\n9. Wait until the train completes one full circuit and stops on the straight track opposite the bridge.\nRender the play-mat exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Does the wooden track form a complete oval loop?", "tags": [] },
+      { "question": "Is an arched bridge section present on the front side of the oval?", "tags": [] },
+      { "question": "Is the train composed of one locomotive and exactly two carriages?", "tags": [] },
+      { "question": "Is the train stopped on the straight track opposite the bridge?", "tags": [] },
+      { "question": "Are two red safety gates positioned at the bridge entrance?", "tags": [] },
+      { "question": "Is a green pine-tree figurine located left of the bridge?", "tags": [] },
+      { "question": "Is a railroad signal post positioned to the right of the bridge?", "tags": [] },
+      { "question": "Are no other loose track pieces lying outside the oval?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Clamp a clean burette vertically to a metal stand above a laboratory bench.\n2. Fill the burette with a colourless hydrochloric-acid solution up to the 0-mL mark.\n3. Place a conical Erlenmeyer flask containing 25 mL of clear sodium-hydroxide solution on a white tile beneath the burette tip.\n4. Add three drops of phenolphthalein indicator to the flask and swirl briefly.\n5. Position a magnetic stir bar into the flask and set it on an activated magnetic stir plate.\n6. Lower the burette tip so it is 2 cm above the flask opening.\n7. Open the burette stopcock and titrate until the flask solution just turns pale pink, then close the stopcock.\n8. Turn off the magnetic stirrer.\nRender the laboratory bench exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a burette clamped vertically above the bench?", "tags": [] },
+      { "question": "Does the burette tip hover just above an Erlenmeyer flask?", "tags": [] },
+      { "question": "Is the solution inside the flask pale pink?", "tags": [] },
+      { "question": "Is the burette stopcock closed?", "tags": [] },
+      { "question": "Is a magnetic stir bar visible inside the flask?", "tags": [] },
+      { "question": "Is the liquid level in the burette below the 0-mL mark?", "tags": [] },
+      { "question": "Is the flask centred on a white tile beneath the burette tip?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Pitch a green dome tent on a grassy clearing.\n2. Unroll a blue sleeping bag fully inside the tent.\n3. Gather dry firewood and stack it neatly beside a circular stone fire pit in front of the tent.\n4. Arrange the stones to form a ring around ashes in the pit.\n5. Place a metal grill grate across the top of the fire pit.\n6. Set a black kettle filled with water on the centre of the grill grate.\n7. Hang a battery-powered lantern from a short pole planted to the left of the tent entrance and turn the lantern on.\nRender the campsite exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is a green dome tent fully erected on the grass?", "tags": [] },
+      { "question": "Is a blue sleeping bag visible unrolled inside the tent?", "tags": [] },
+      { "question": "Is a stack of firewood placed beside the stone fire pit?", "tags": [] },
+      { "question": "Does a circular ring of stones surround the fire pit?", "tags": [] },
+      { "question": "Is a metal grill grate positioned over the fire pit?", "tags": [] },
+      { "question": "Is a black kettle sitting on the centre of the grill grate?", "tags": [] },
+      { "question": "Is a lantern hanging from a pole to the left of the tent entrance?", "tags": [] },
+      { "question": "Is the lantern visibly turned on, emitting light?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following six steps in order:\n1. Dig a circular planting hole twice as wide as a young maple sapling’s root ball in a suburban front yard.\n2. Place the sapling upright in the hole with its root collar level with the surrounding soil.\n3. Backfill the hole with removed soil, gently tamping around the roots.\n4. Form a shallow earth berm in a circle around the sapling to create a watering basin.\n5. Pour two full watering-cans of water slowly into the basin.\n6. Tie the sapling trunk loosely to a wooden stake using a soft tree-tie just above mid-height.\nRender the yard exactly as it appears once all six steps are complete.",
+    "Checklist": [
+      { "question": "Is a young maple sapling standing upright in the yard?", "tags": [] },
+      { "question": "Is the sapling tied to a single wooden stake with a soft tie?", "tags": [] },
+      { "question": "Is a shallow soil berm visible forming a watering basin?", "tags": [] },
+      { "question": "Is the soil around the sapling visibly moist (darker than dry ground)?", "tags": [] },
+      { "question": "Is the front yard free of extra soil piles from digging?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following six steps in order:\n1. Place a square sheet of purple origami paper flat on a wooden table.\n2. Fold the paper diagonally corner to corner and crease sharply, then unfold.\n3. Fold along the other diagonal and crease, then unfold to reveal an X-shaped crease pattern.\n4. Collapse the paper inward along the creases to form a square base.\n5. Continue folding to create the traditional bird base, then pull out the neck, head, and two wings to form a crane.\n6. Spread the wings gently so the crane stands upright and centre it on the table.\nRender the tabletop exactly as it appears once all six steps are complete.",
+    "Checklist": [
+      { "question": "Is a finished origami crane made from purple paper present on the table?", "tags": [] },
+      { "question": "Are both wings extended outward horizontally?", "tags": [] },
+      { "question": "Is the crane standing upright without external support?", "tags": [] },
+      { "question": "Is the crane’s head distinct and bent slightly downward?", "tags": [] },
+      { "question": "Is no unfolded sheet or scrap paper left on the table?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Stretch a round ball of pizza dough into a flat circle on a wooden pizza peel dusted with flour.\n2. Ladle tomato sauce onto the centre of the dough and spread it evenly, leaving a narrow rim of plain dough.\n3. Sprinkle an even layer of shredded mozzarella cheese over the sauce.\n4. Arrange evenly spaced pepperoni slices across the cheese.\n5. Slide the pizza into a stone-fired oven and bake until the cheese bubbles and the crust browns.\n6. Remove the pizza from the oven with the peel and place it on a round wooden cutting board.\n7. Slice the pizza into exactly six equal wedges using a rocker cutter, leaving the slices in their original circular arrangement.\nRender the pizzeria counter exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is a circular pizza sitting on a wooden cutting board?", "tags": [] },
+      { "question": "Is the pizza sliced into exactly six equal wedges?", "tags": [] },
+      { "question": "Are the slices still arranged in a complete circle?", "tags": [] },
+      { "question": "Does the pizza have visible pepperoni slices on top?", "tags": [] },
+      { "question": "Is melted mozzarella cheese visible beneath the pepperoni?", "tags": [] },
+      { "question": "Is a browned crust rim surrounding the pizza?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Unroll a solid black fabric backdrop from a crossbar stand so it drapes to the studio floor.\n2. Set up a tripod 2 metres in front of the backdrop and mount a DSLR camera on it.\n3. Attach a rectangular softbox light to a light stand positioned 45 degrees to the left of the tripod at head height.\n4. Place a circular silver reflector on a stand 45 degrees to the right of the tripod at the same height as the softbox.\n5. Position a wooden chair centred in front of the backdrop, facing slightly toward the camera.\n6. Rest a vintage hollow-body guitar upright on the seat of the chair, its body facing the camera.\n7. Connect the softbox light to power and switch it on.\n8. Level the camera so its lens points directly at the guitar and lock the tripod head.\nRender the photo studio exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a black backdrop hanging fully extended to the floor?", "tags": [] },
+      { "question": "Is a DSLR camera mounted on a tripod facing the guitar?", "tags": [] },
+      { "question": "Is a softbox light positioned to the camera’s left and turned on?", "tags": [] },
+      { "question": "Is a circular silver reflector on a stand to the camera’s right?", "tags": [] },
+      { "question": "Is a wooden chair centred in front of the backdrop?", "tags": [] },
+      { "question": "Is a vintage hollow-body guitar resting upright on the chair seat?", "tags": [] },
+      { "question": "Is the camera lens level and pointing directly at the guitar?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Place an empty rectangular white ceramic planter on a balcony table.\n2. Fill the planter two-thirds full with coarse cactus potting mix.\n3. Position a tall green aloe vera off-centre toward the back left.\n4. Plant a round purple-tinged echeveria rosette at the front right corner.\n5. Nestle three small assorted stone-crop succulents evenly between the aloe and echeveria.\n6. Spread a thin, even layer of white decorative gravel over all exposed soil.\n7. Set a smooth black river stone, engraved with the word “Grow,” flat in the front centre of the gravel.\n8. Clean the balcony table surface and remove all gardening tools.\nRender the balcony table exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a tall aloe vera planted toward the back left inside the planter?", "tags": [] },
+      { "question": "Is a single echeveria rosette at the planter’s front right corner?", "tags": [] },
+      { "question": "Are exactly three additional small succulents between the aloe and echeveria?", "tags": [] },
+      { "question": "Is white decorative gravel covering all visible soil?", "tags": [] },
+      { "question": "Is a black stone with the word \"Grow\" centred at the front of the planter?", "tags": [] },
+      { "question": "Is the planter rectangular and white?", "tags": [] },
+      { "question": "Is no gardening tool or soil spilled on the balcony table?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Set an empty tall glass bottle with a narrow neck upright on a craft table.\n2. Pour a layer of fine blue sand 1 cm deep into the bottle.\n3. Add a 1 cm layer of yellow sand evenly over the blue.\n4. Tilt the bottle slightly and pour a 1 cm layer of pink sand, creating a diagonal stripe effect.\n5. Level the bottle and add a final 1 cm layer of white sand on top.\n6. Insert a slender wooden stick and gently draw it along the inside wall to create swirling patterns in all coloured layers, then remove the stick.\n7. Seal the bottle with a cork stopper and tie a short piece of twine around the neck in a bow.\nRender the craft table exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is the glass bottle sealed with a cork stopper?", "tags": [] },
+      { "question": "Is twine tied in a bow around the bottle’s neck?", "tags": [] },
+      { "question": "Is the topmost visible sand layer white?", "tags": [] },
+      { "question": "Are distinct blue, yellow, and pink sand layers visible beneath the white layer?", "tags": [] },
+      { "question": "Do the coloured layers exhibit swirling diagonal patterns, not flat lines?", "tags": [] },
+      { "question": "Is the bottle standing upright and centred on the table?", "tags": [] },
+      { "question": "Is no wooden stick left inside the bottle?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following six steps in order:\n1. Place a tall Collins glass on a bar countertop and add six fresh mint leaves.\n2. Add two teaspoons of white sugar and the juice of half a lime over the mint.\n3. Gently muddle the mixture with a wooden muddler, leaving the mint leaves intact.\n4. Fill the glass three-quarters with crushed ice and pour 50 mL of white rum over the ice.\n5. Top up the glass with club soda and stir briefly with a bar spoon.\n6. Garnish with a full mint sprig and a lime wheel on the rim, and place a reusable metal straw inside the glass on the right side.\nRender the bar countertop exactly as it appears once all six steps are complete.",
+    "Checklist": [
+      { "question": "Is a Collins glass filled with liquid?", "tags": [] },
+      { "question": "Is a fresh mint sprig protruding from the top of the drink?", "tags": [] },
+      { "question": "Is a lime wheel attached to the rim of the glass?", "tags": [] },
+      { "question": "Is there a metal straw in the glass?", "tags": [] },
+      { "question": "Are muddled mint leaves visible at the bottom beneath crushed ice?", "tags": [] },
+      { "question": "Is the wooden muddler no longer inside or touching the glass?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Assemble a LEGO chassis using a 6 × 12 stud baseplate.\n2. Snap four identical black wheel assemblies onto the underside axle pins, two per side.\n3. Build a low aerodynamic cockpit with a transparent blue windscreen at the front of the chassis.\n4. Construct a tall rear spoiler from red bricks and attach it centred at the back.\n5. Insert a minifigure wearing a white racing helmet into the cockpit and secure the windscreen.\n6. Place two small round yellow headlights on the front bumper.\n7. Add a pair of decorative flame elements behind the rear wheels.\n8. Position the finished LEGO race car on a grey baseplate racetrack tile.\n9. Remove all unused bricks and leave them off the racetrack tile.\nRender the play area exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Is the LEGO race car sitting on a grey racetrack tile?", "tags": [] },
+      { "question": "Does the car have four black wheels attached?", "tags": [] },
+      { "question": "Is there a transparent blue windscreen on the cockpit?", "tags": [] },
+      { "question": "Is a minifigure with a white helmet seated inside the car?", "tags": [] },
+      { "question": "Is a red rear spoiler centred on the back of the car?", "tags": [] },
+      { "question": "Are two yellow headlights on the front bumper?", "tags": [] },
+      { "question": "Are flame elements visible behind both rear wheels?", "tags": [] },
+      { "question": "Are there no unused LEGO bricks on the racetrack tile?", "tags": []}
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Cover a rectangular dining table with an ironed white tablecloth reaching just past the edge.\n2. Place two identical dinner plates centred at opposite long sides of the table, 60 cm apart.\n3. Set a folded navy-blue cloth napkin on each dinner plate.\n4. To the left of each plate, position a dinner fork (closer to the plate) and a salad fork (to the left of the dinner fork).\n5. Place a dinner knife to the right of each plate, blade facing inward.\n6. Set a water glass above the tip of each knife and a wine glass slightly right of each water glass.\n7. Arrange a small clear glass vase with a single white rose precisely centred between the two place settings.\n8. Lay a lit unscented white taper candle in a silver holder 10 cm behind the vase.\n9. Remove any extra cutlery or décor from the table surface.\nRender the dining table exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Are two complete place settings arranged opposite each other?", "tags": [] },
+      { "question": "Is each cloth napkin navy-blue and resting on its dinner plate?", "tags": [] },
+      { "question": "Are two forks (salad and dinner) placed to the left of each plate?", "tags": [] },
+      { "question": "Is the knife placed to the right of the plate with its blade facing inward?", "tags": [] },
+      { "question": "Are water glasses above the knives with wine glasses just to their right?", "tags": [] },
+      { "question": "Is a single white rose in a clear vase centred between the plates?", "tags": [] },
+      { "question": "Is a lit white taper candle in a silver holder positioned behind the vase?", "tags": [] },
+      { "question": "Is no utensil or decorative item other than those specified on the cloth?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Place a two-layer vanilla sponge cake on a turntable in a bakery kitchen.\n2. Spread an even layer of strawberry jam between the layers.\n3. Cover the entire cake with a thin coat of vanilla buttercream as a crumb coat and chill briefly.\n4. Apply a smooth final layer of pink buttercream over the chilled cake.\n5. Roll white fondant to 3 mm thickness and cut six daisy shapes with a cutter.\n6. Arrange the fondant daisies evenly around the side of the cake, petals facing outward.\n7. Pipe a continuous white shell border around the cake base.\n8. Position the finished cake on a clean white cake board and remove the turntable from view.\nRender the bakery counter exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is the cake covered smoothly in pink buttercream?", "tags": [] },
+      { "question": "Are six white fondant daisies evenly spaced around the cake’s side?", "tags": [] },
+      { "question": "Is a white shell border piped around the base?", "tags": [] },
+      { "question": "Is the cake sitting on a plain white cake board?", "tags": [] },
+      { "question": "Is no turntable visible beneath or around the cake?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Lay two equal-length steel flat bars on a welding table in a T-shape, with one bar vertical and the other horizontal at its midpoint.\n2. Clamp the bars securely with magnetic welding clamps to maintain the T alignment.\n3. Put on a welding helmet and gloves and prepare a MIG welder.\n4. Tack-weld the joint at each corner of the intersection.\n5. Run a continuous fillet weld along both sides of the T joint.\n6. Allow the metal to cool until no glow is visible.\n7. Remove all clamps and chipping slag to reveal clean weld beads.\n8. Stand the welded T-joint upright in the centre of the table with no tools touching it.\nRender the workshop exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a steel T-shaped joint standing upright in the centre of the table?", "tags": [] },
+      { "question": "Are weld beads visible along both sides of the joint intersection?", "tags": [] },
+      { "question": "Are no clamps attached to the metal bars?", "tags": [] },
+      { "question": "Is no visible red or orange glow on the metal (indicating cooling complete)?", "tags": [] },
+      { "question": "Are there no tools touching the T-joint?", "tags": [] },
+      { "question": "Is the T-joint made of exactly two flat bars, not additional pieces?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Prepare cupcake batter and fill six paper liners in a muffin tray halfway.\n2. Bake the tray in an oven until the cupcakes rise and a toothpick comes out clean.\n3. Remove the tray and place it on a wire cooling rack.\n4. Allow the cupcakes to cool until no steam is visible.\n5. Pipe vanilla buttercream frosting in a spiral on each cupcake.\n6. Sprinkle rainbow non-pareil sprinkles over the frosting.\n7. Place a small edible silver pearl in the centre of each frosted cupcake.\n8. Slide the cooled tray off the rack and onto a marble countertop.\n9. Remove the frosting piping bag from the scene.\nRender the countertop exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Are six frosted cupcakes in the muffin tray on the countertop?", "tags": [] },
+      { "question": "Is frosting piped in a spiral pattern on each cupcake?", "tags": [] },
+      { "question": "Do all cupcakes have rainbow sprinkles on the frosting?", "tags": [] },
+      { "question": "Is a single silver pearl centred on each cupcake top?", "tags": [] },
+      { "question": "Is the piping bag absent from the countertop?", "tags": [] },
+      { "question": "Is the muffin tray resting directly on the marble counter, not the cooling rack?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Stand a 2-metre artificial pine tree upright in a living-room corner.\n2. Drape a string of warm-white LED lights evenly around the tree from top to bottom and plug them in.\n3. Hang multicoloured glass baubles evenly on all visible branches.\n4. Place silver tinsel garland spiralling downward around the tree.\n5. Attach a gold star topper securely at the top of the tree.\n6. Place three wrapped gift boxes (small, medium, large) beneath the tree, largest at the back.\n7. Spread a white faux-fur tree skirt fully around the tree base.\n8. Turn on the LED lights.\nRender the living room exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is the gold star topper at the very top of the tree?", "tags": [] },
+      { "question": "Are warm-white LED lights illuminated on the tree?", "tags": [] },
+      { "question": "Is silver tinsel garland wrapped in a spiral around the tree?", "tags": [] },
+      { "question": "Are multicoloured glass baubles hanging on the branches?", "tags": [] },
+      { "question": "Are three wrapped gifts beneath the tree, arranged by size?", "tags": [] },
+      { "question": "Is a white faux-fur tree skirt fully surrounding the base?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Select two sturdy trees 4 metres apart in a forest clearing.\n2. Strap tree-friendly suspension straps around each trunk at shoulder height.\n3. Clip a dark-green camping hammock’s carabiners onto the straps, ensuring the hammock hangs with a shallow sag.\n4. Pitch a rectangular grey rainfly above the hammock using guylines to stakes, forming an A-frame roof.\n5. Place an inflatable sleeping pad and a down quilt neatly inside the hammock.\n6. Tie orange reflective guyline tensioners to each rainfly corner.\n7. Remove any packs and place them under the hammock on a groundsheet.\n8. Illuminate a small battery lantern and hang it from the interior ridgeline inside the bug-net.\nRender the campsite exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Is a dark-green hammock suspended between two trees?", "tags": [] },
+      { "question": "Is a grey rainfly pitched above the hammock in an A-frame shape?", "tags": [] },
+      { "question": "Are orange reflective guylines attached to all four rainfly corners?", "tags": [] },
+      { "question": "Is an inflatable sleeping pad visible inside the hammock?", "tags": [] },
+      { "question": "Is a down quilt neatly placed on the sleeping pad?", "tags": [] },
+      { "question": "Is a small lantern hanging from the ridgeline and turned on?", "tags": [] },
+      { "question": "Are backpacks resting on a groundsheet beneath the hammock, not inside?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Draw a one-metre-wide circle in damp beach sand to mark the castle’s boundary.\n2. Fill a large red bucket with wet sand and invert it at the centre of the circle to form the main tower, then remove the bucket.\n3. Repeat with a smaller blue bucket to create four corner towers evenly spaced around the main tower.\n4. Carve door arches into the base of each corner tower using a plastic spade.\n5. Dig a shallow moat completely encircling the castle’s boundary line.\n6. Pile the excavated sand into low walls connecting all towers.\n7. Press seashells in a ring around the castle wall and place a short stick bearing a white paper flag atop the central tower.\n8. Set the plastic spade flat on the sand to the right of the castle and move all buckets outside the camera frame.\nRender the beach exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a tall central sand tower present within a circular moat?", "tags": [] },
+      { "question": "Are four smaller sand towers positioned symmetrically around the central tower?", "tags": [] },
+      { "question": "Does each corner tower have a carved door arch at its base?", "tags": [] },
+      { "question": "Is a continuous low wall linking all five towers?", "tags": [] },
+      { "question": "Are seashells arranged in a decorative ring around the outer wall?", "tags": [] },
+      { "question": "Is a white-flagged stick planted on top of the central tower?", "tags": [] },
+      { "question": "Is the plastic spade lying on the sand to the right of the castle?", "tags": [] },
+      { "question": "Are there no buckets visible in the scene?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Place a round ball of proofed bread dough on a floured baker’s peel.\n2. Dust the top of the dough lightly with flour.\n3. Score the dough with a single deep cross using a lame.\n4. Slide the dough onto a pre-heated baking stone in an oven and bake.\n5. Remove the loaf with the peel and set it on a wire cooling rack.\n6. Tap the bottom of the loaf once with a gloved hand, then return it upright on the rack.\n7. Position the rack on a marble countertop away from the oven.\n8. Place the scoring lame beside the cooling rack on the right.\nRender the bakery counter exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is a single round loaf resting upright on a wire cooling rack?", "tags": [] },
+      { "question": "Is a cross-shaped score visible on the loaf crust?", "tags": [] },
+      { "question": "Is the rack positioned on a marble countertop, not in the oven?", "tags": [] },
+      { "question": "Is the baker’s peel no longer holding the bread?", "tags": [] },
+      { "question": "Is the scoring lame lying to the right of the rack?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following nine steps in order:\n1. Place a lightweight quadcopter frame on an electronics bench.\n2. Bolt four identical brushless motors to the arm ends.\n3. Solder each motor’s wires to a four-in-one electronic-speed-controller board mounted at the frame centre.\n4. Attach a flight-control board on top of the speed controller using nylon standoffs.\n5. Plug a GPS module into the flight-control board and mount the antenna vertically at the rear.\n6. Connect a fully charged Li-Po battery to the power lead and strap it beneath the frame.\n7. Install four matched two-blade propellers, each with the correct rotation direction.\n8. Arm the flight controller via a USB cable, then disconnect the cable.\n9. Rest the completed drone upright on a silicone work mat with no loose tools touching it.\nRender the electronics bench exactly as it appears once all nine steps are complete.",
+    "Checklist": [
+      { "question": "Are four propellers attached, one on each motor?", "tags": [] },
+      { "question": "Is a Li-Po battery strapped beneath the frame, connected to the power lead?", "tags": [] },
+      { "question": "Is the GPS antenna standing vertically at the rear of the quadcopter?", "tags": [] },
+      { "question": "Is a flight-control board secured above the speed-controller board with standoffs?", "tags": [] },
+      { "question": "Is no USB cable plugged into the drone?", "tags": [] },
+      { "question": "Is the drone resting on a silicone work mat, not clamped or handheld?", "tags": [] },
+      { "question": "Are no loose screws or soldering tools touching the drone?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following six steps in order:\n1. Set a blank 50-cm canvas vertically on a wooden easel in a studio.\n2. Squeeze blue, yellow, red, white, and black acrylic paint onto a round palette.\n3. Dip a wide flat brush into water and apply a light-blue wash over the entire canvas background.\n4. Mix green paint on the palette and use a medium filbert brush to paint a single tall tree on the right side of the canvas.\n5. Clean the brush, mix orange, and paint a setting sun low on the left horizon.\n6. Rinse the brushes and lay them horizontally on a cloth to the right of the palette.\nRender the art studio exactly as it appears once all six steps are complete.",
+    "Checklist": [
+      { "question": "Is a canvas on an easel displaying a light-blue background?", "tags": [] },
+      { "question": "Is a single green tree painted on the right side of the canvas?", "tags": [] },
+      { "question": "Is an orange sun painted low on the left horizon of the canvas?", "tags": [] },
+      { "question": "Is a round palette holding five distinct paint colours?", "tags": [] },
+      { "question": "Is no brush left soaking in a water jar?", "tags": [] },
+      { "question": "Are paintbrushes lying horizontally on a cloth to the right of the palette?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Empty 200 coloured dominoes from a box onto a large wooden table.\n2. Stand 50 dominoes in a straight line from the table’s left edge toward its centre.\n3. Create a 90-degree right turn and stand 50 more dominoes leading toward the table’s back edge.\n4. Build a small arch bridge spanning three domino lengths at the midpoint of the back run using 10 dominoes.\n5. Curve the remaining dominoes back toward the starting area, forming a continuous path that ends 1 cm from the very first domino, leaving a single-domino gap.\n6. Place one upright red “trigger” domino in the gap, not yet touching either end of the path.\n7. Remove all unused dominoes and the storage box from the tabletop.\nRender the tabletop exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is a continuous upright domino path present with only one gap holding a red trigger domino?", "tags": [] },
+      { "question": "Does the path form a 90-degree right turn after the first straight run?", "tags": [] },
+      { "question": "Is a small domino arch bridge incorporated along the back run?", "tags": [] },
+      { "question": "Does the curving return path approach the starting point without touching it?", "tags": [] },
+      { "question": "Are all dominoes in the path standing upright (none toppled)?", "tags": [] },
+      { "question": "Is the trigger domino upright and not yet contacting adjacent dominoes?", "tags": [] },
+      { "question": "Are no spare dominoes or boxes left on the table surface?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Set a black 20-litre plastic tote on a countertop and fill it with nutrient solution to 5 cm below the rim.\n2. Float a white six-hole foam raft on the surface.\n3. Insert six net cups filled with clay pebbles into the raft’s holes.\n4. Transplant one lettuce seedling into each net cup.\n5. Attach an air stone to clear tubing, connect it to an air pump beside the tote, and submerge the stone at the tote’s centre.\n6. Plug in the pump and confirm gentle bubbles beneath the raft.\n7. Mount an LED grow light panel 30 cm above the raft and switch it on.\n8. Place a small digital thermometer-hygrometer on the tote lid near the front edge.\nRender the hydroponic setup exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is the nutrient solution surface below the tote rim (not overflowing)?", "tags": [] },
+      { "question": "Is a foam raft with six net cups floating on the nutrient solution?", "tags": [] },
+      { "question": "Are six lettuce seedlings visible, one in each net cup?", "tags": [] },
+      { "question": "Is an air stone producing bubbles beneath the raft?", "tags": [] },
+      { "question": "Is the air pump located outside the tote with tubing entering the solution?", "tags": [] },
+      { "question": "Is an LED panel illuminated above the tote?", "tags": [] },
+      { "question": "Is a digital thermometer-hygrometer resting on the tote lid?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Spread a 1000-piece jigsaw puzzle of a night cityscape on a large table.\n2. Sort and assemble the edge pieces to form a complete rectangular border.\n3. Group interior pieces by dominant colour and pattern.\n4. Assemble the skyline portion at the top centre inside the border.\n5. Complete the water reflection portion at the bottom edge.\n6. Fill in remaining middle sections until only one piece is missing.\n7. Insert the final piece to complete the puzzle.\n8. Sweep the puzzle box off the table and place them on a nearby chair.\nRender the table exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Is the jigsaw puzzle fully completed with no missing pieces?", "tags": [] },
+      { "question": "Is the finished image a night cityscape showing skyline and water reflection?", "tags": [] },
+      { "question": "Is no loose puzzle piece lying on the table surface?", "tags": [] },
+      { "question": "Is the puzzle box on a nearby chair instead of the table?", "tags": [] },
+      { "question": "Is the puzzle oriented with the skyline at the top?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Lay a bamboo sushi mat on a stainless counter and place a sheet of nori shiny-side down on it.\n2. Spread an even layer of seasoned sushi rice over three-quarters of the nori, leaving the top quarter bare.\n3. Arrange thin cucumber strips horizontally across the rice’s lower third.\n4. Place a row of avocado slices directly above the cucumber.\n5. Roll the mat tightly from the bottom edge until the bare nori seals the roll shut.\n6. Move the roll to a cutting board and slice it into four equal pieces using a wet sharp knife.\n7. Arrange the four pieces in a straight line on a rectangular white plate and place a small pile of pickled ginger at the plate’s left end.\n8. Add a small mound of wasabi and a soy sauce dish on the plate.\nRender the sushi station exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Are four equal sushi pieces aligned in a straight line on the plate?", "tags": [] },
+      { "question": "Is the plate rectangular and white?", "tags": [] },
+      { "question": "Is a small pile of pickled ginger placed at the left end of the plate?", "tags": [] },
+      { "question": "Are visible fillings of cucumber and avocado in each sushi piece?", "tags": [] },
+      { "question": "Is no bamboo mat present on the plate or board?", "tags": [] },
+      { "question": "Is a small mound of wasabi on the plate?", "tags": [] },
+      { "question": "Is there a small dish for soy sauce on the plate?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following eight steps in order:\n1. Trim the stems of three fresh red roses to equal length on a florist’s bench.\n2. Add three open white lilies, each 5 cm taller than the roses.\n3. Insert sprigs of eucalyptus evenly around the flowers for greenery.\n4. Spiral the stems together while rotating to form a balanced bouquet.\n5. Wrap the stems in damp floral paper and secure with a rubber band 10 cm below the blooms.\n6. Enclose the bouquet in a sheet of brown kraft paper folded into a cone and tie natural jute twine around the paper 5 cm above the stem ends.\n7. Attach a small blank white gift tag to the twine bow and set the bouquet upright in a glass vase for display.\n8. Clean the florist’s bench, removing any loose petals, stems, or tools.\nRender the florist’s bench exactly as it appears once all eight steps are complete.",
+    "Checklist": [
+      { "question": "Does the bouquet contain three red roses and three white lilies?", "tags": [] },
+      { "question": "Is eucalyptus greenery evenly distributed around the blooms?", "tags": [] },
+      { "question": "Is the bouquet wrapped in brown kraft paper forming a cone shape?", "tags": [] },
+      { "question": "Is natural twine tied around the kraft paper with a bow?", "tags": [] },
+      { "question": "Is a blank white gift tag attached to the twine bow?", "tags": [] },
+      { "question": "Are the white lilies visibly taller than the red roses?", "tags": [] },
+      { "question": "Is the bouquet standing upright in a clear glass vase?", "tags": [] },
+      { "question": "Are no loose petals, stems, or tools cluttering the bench around the vase?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-PR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Procedural Reasoning",
+    "Prompt": "Illustrate the final scene after performing all of the following seven steps in order:\n1. Cut 18 cm of clear elastic cord and secure one end with tape to a bead board.\n2. String four blue glass beads followed by one silver spacer bead; repeat this pattern twice more.\n3. Test the length around a wrist; ensure the pattern ends with a silver spacer.\n4. Tie a double surgeon’s knot to close the bracelet, leaving a 2 cm tail.\n5. Add a tiny drop of clear jewellery glue to the knot and let it set for one minute.\n6. Slide the nearest silver spacer bead over the knot to hide it and trim excess cord flush.\n7. Lay the finished bracelet in a perfect circle at the centre of a black velvet pad, removing all loose beads.\nRender the crafting surface exactly as it appears once all seven steps are complete.",
+    "Checklist": [
+      { "question": "Is a beaded bracelet arranged in a circle on the velvet pad?", "tags": [] },
+      { "question": "Does the bracelet pattern consist of four blue beads followed by one silver spacer repeated three times?", "tags": [] },
+      { "question": "Is the closing knot completely hidden beneath a silver spacer bead?", "tags": [] },
+      { "question": "Are no elastic cord tails extending beyond the hidden knot?", "tags": [] },
+      { "question": "Is the bracelet laid flat at the exact center of the black velvet pad?", "tags": []},
+      { "question": "Are no loose beads or cord pieces visible on the velvet pad?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  }
+}

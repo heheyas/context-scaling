@@ -1,0 +1,69 @@
+You are EXHAUSTIVELY enumerating GROUNDED VISUAL FACTS from an image.
+
+Your job is to list EVERY distinct, atomic, image-verifiable visual fact. Be thorough. The output should be COMPREHENSIVE — target 80 to 150 tuples total. Do NOT prune for saliency. Include both major and minor visible details, as long as they are atomic and verifiable.
+
+Output a JSON object with four lists, one per category.
+
+Schema:
+{
+  "O": [
+    {"entity": "<short entity descriptor>", "text": "<one-line visual description>"}
+  ],
+  "A": [
+    {"entity": "<entity descriptor>", "attr_key": "<color|material|texture|shape|size|state|action|count|...>", "value": "<atomic attribute value>"}
+  ],
+  "R": [
+    {"entity_a": "<entity>", "entity_b": "<entity>", "relation": "<spatial or contact or interaction relation>"}
+  ],
+  "G": [
+    {"category": "<setting|atmosphere|lighting|style>", "value": "<one-line scene-level fact>"}
+  ]
+}
+
+Rules:
+
+1. **Object (O)** — every visually distinguishable entity. Include:
+   - All people, animals, foreground objects
+   - All distinct background elements (walls, floor, sky, foliage, distant objects)
+   - Surfaces and substrates (table top, ground, water, etc.)
+   - Light sources, shadows, reflections (if separately distinguishable)
+   - Decorative items, text/signage, small accessories
+   Aim for at least 8–15 O entries for typical scenes.
+
+2. **Attribute (A)** — every atomic attribute on every named entity. Be EXHAUSTIVE:
+   - Color (every distinct color present on the entity, not just the dominant)
+   - Material (wood, glass, metal, fabric, plastic, ceramic, plant, organic, ...)
+   - Texture (smooth, rough, glossy, matte, woven, ...)
+   - Shape (round, rectangular, cylindrical, irregular, ...)
+   - Size relative to scene (small, medium, large, dominant, ...)
+   - State / action (sitting, standing, holding, broken, open, ...)
+   - Pattern / decoration (striped, floral, ornamental, ...)
+   - Count (singular, pair, multiple, ...)
+   - Pose / orientation (frontal, profile, tilted, ...)
+   Each (entity, attr_key, value) is ONE atomic fact. SPLIT every composite description.
+   Aim for at least 40–80 A entries for typical scenes.
+
+3. **Relation (R)** — pairwise spatial / contact / interaction relations:
+   - Spatial: above, below, to_the_left_of, behind, in_front_of, at_corner_X, at_edge, adjacent
+   - Contact: touching, leaning_on, holding, attached_to, resting_on
+   - Interaction: looking_at, pointing_to, eating, drinking
+   - Containment: inside, contains, around
+   Use natural language phrases. Cover MOST visible entity pairs that have meaningful relations. Aim for at least 8–20 R entries.
+
+4. **Global (G)** — scene-wide facts. Use only these `category` values:
+   - `setting` — physical environment
+   - `atmosphere` — visually-evident mood (only if obviously visible)
+   - `lighting` — visible illumination
+   - `style` — image style only if non-photographic
+   Do NOT include layout, shot_type, camera_angle, lens_and_effect, or technique metadata.
+   3–6 G entries.
+
+Quality bar:
+- EXHAUSTIVE, not selective. Include details a careful observer would notice on a second pass.
+- Each fact must be image-verifiable. Skip facts you cannot personally verify from the image alone.
+- Avoid speculation, brand names (unless visible), age/price/intent.
+- Avoid duplicates: each fact appears AT MOST once.
+- Atomic: split composites ("red wooden chair" → 3 attribute tuples).
+- Target total tuple count: 80–150 across all four categories.
+
+Return ONLY the JSON object. No prose, no markdown fences.

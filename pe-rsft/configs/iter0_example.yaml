@@ -1,0 +1,89 @@
+# Copyright (c) 2025 ByteDance Ltd. and/or its affiliates
+# SPDX-License-Identifier: Apache-2.0
+# Iter-0 config (no MCP / tool calling).
+#
+# Usage:
+#   # LLM rollout
+#   python -m src.llm.rollout --config configs/iter0_260520.yaml
+#
+#   # DiT generation (PSM)
+#   python -m src.dit.gen_images --config configs/iter0_260520.yaml
+
+# ── Shared paths ──
+shared_root: "<LOCAL_ROOT>/buffer/rft_iter0_260520"
+queries_file: "prompts.jsonl"
+
+# ── Global ──
+seed: 42
+num_images_per_prompt: 4
+shard_size: 64
+
+# ── Stage 1: LLM rollout ──
+llm:
+  # Backend: "vllm" (single-turn) | "vllm_mcp" (multi-turn with tools) | "seed" (legacy)
+  backend: "vllm"
+
+  # vLLM server
+  vllm_url: "http://localhost:8808"
+  vllm_model: null              # null = auto-detect from server
+
+  # vLLM serve deployment (used by scripts/deploy_vllm.sh)
+  serve:
+    model_path: "<HDFS_ROOT>/weights/PE/Qwen3.5-397B-A17B-PE-synth-cot-260516-cold-start-8epochs-gbs64-iter124-hf"
+    port: 8808
+    tp_size: 8
+    dtype: "auto"
+    kv_cache_dtype: "fp8"
+    gpu_memory_utilization: 0.90
+    reasoning_parser: "qwen3"
+    # Other
+    enable_expert_parallel: true
+    language_model_only: true
+    enable_prefix_caching: true
+
+  # Generation params
+  max_tokens: 65536
+  temperature: 0.9
+  top_p: 0.95
+  thinking: true
+
+  # System prompt (student SP — same file shipped with teacher-distill cold start)
+  system_prompts:
+    "pe-rsft/teacher_distill/system_prompts/student.txt": 1.0
+  system_prompt_role: "system"
+  input_template: "<prompt>"
+
+  num_workers: 64
+  bucket_size: 1024
+
+# ── Stage 2: DiT image generation ──
+dit:
+  # Backend: "native" (local serve) | "psm_direct" (Ray PSM)
+  backend: "psm_direct"
+  psm: "<INFERENCE_PSM>"
+  num_steps: 25
+  cfg_scale: 4.5
+  negative_prompt: ""
+  timeout: 600
+  max_retries: 5
+  num_workers: 512
+  poll_interval_sec: 10
+
+# ── Stage 3: single_detail — 每个 image 独立 4 维度评分 ──
+gemini:
+  judge_mode: "single_detail"
+  backend: "gemini"
+  model: "gemini-3-pro-preview-new"
+  api_keys_path: <PATH_TO_GEMINI_KEYS_FILE>   # one key per line
+  # 4 维度独立评分（每个 image 4 次并行 Gemini 调用）
+  verify_thinking_prompt_path: pe-rsft/src/system_prompts/mix_verify_thinking.txt
+  verify_structure_prompt_path: pe-rsft/src/system_prompts/mix_verify_structure.txt
+  verify_alignment_prompt_path: pe-rsft/src/system_prompts/mix_verify_alignment.txt
+  verify_aesthetic_prompt_path: pe-rsft/src/system_prompts/mix_verify_aesthetic.txt
+  num_workers: 384
+  poll_interval_sec: 10
+  image_max_size: 1024
+
+# ── Janitor ──
+janitor:
+  t_stale_sec: 600

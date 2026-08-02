@@ -1,0 +1,1174 @@
+{
+  "R-RR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A white ceramic vase lies in several large pieces on a hardwood floor. Small puddles of water with wilted flower petals are scattered nearby. Muddy paw prints lead across the floor, and a houseplant has been knocked over with soil spilled around it. A cat toy mouse sits near the area.\n\nGenerative Task: Generate an image showing the moment immediately before this scene of destruction occurred. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is there an intact white ceramic vase present in the image?", "tags": []},
+      { "question": "Does the vase contain water and flowers?", "tags": []},
+      { "question": "Is there a cat visible in the scene?", "tags": []},
+      { "question": "Is the houseplant upright and undisturbed?", "tags": []},
+      { "question": "Is the floor clean without water, petals, or soil?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A front yard shows the remnants of winter activity. A large puddle of water sits in the center of the lawn with three dark stones arranged in a vertical line within it. Nearby, an orange carrot lies partially submerged in the muddy water. A black top hat floats on the water's surface, and a red wool scarf is draped over a nearby fence post, still damp. The surrounding grass is flattened in a circular pattern around the puddle.\n\nGenerative Task: Generate an image showing the complete form that existed in this location before the current melted state. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is there a complete snowman present in the image?", "tags": []},
+      { "question": "Are the three dark stones positioned as buttons on the snowman's body?", "tags": []},
+      { "question": "Is the orange carrot serving as the snowman's nose?", "tags": []},
+      { "question": "Is the black top hat positioned on the snowman's head?", "tags": []},
+      { "question": "Is the red scarf wrapped around the snowman's neck?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A dining table shows the aftermath of a meal. Multiple empty plates with crumbs and sauce stains are stacked at one end. Wine glasses contain only red residue at the bottom. Candles have burned down to small stubs with hardened wax pooled around their bases. A serving platter holds only small portions of leftover food. Chairs are pushed back from the table at various angles. Used napkins are crumpled and scattered across the table surface.\n\nGenerative Task: Generate an image showing this dining setup at the moment when everything is ready, but the guests have not yet arrived. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the napkins neatly folded and placed?", "tags": []},
+      { "question": "Does the serving platter contain a full portion of food?", "tags": []},
+      { "question": "Are the wine glasses filled with wine?", "tags": []},
+      { "question": "Are the candles tall and unburned?", "tags": []},
+      { "question": "Are the chairs pulled in close to the table?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A flower garden shows signs of recent disruption. Colorful petals are scattered across the dirt paths between flower beds. Several flower stems have been snapped and lie wilted on the ground. Deep footprints and paw prints crisscross through the previously organized planting areas. A knocked-over watering can lies on its side with water pooled around it. A garden gate stands wide open with its latch broken.\n\nGenerative Task: Generate an image showing the pristine state of this garden before the disruption occurred. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the flowers intact and blooming on their stems?", "tags": []},
+      { "question": "Are the flower beds neatly organized without footprints or paw prints?", "tags": []},
+      { "question": "Is the watering can upright and properly positioned?", "tags": []},
+      { "question": "Is the garden gate closed with its latch intact?", "tags": []},
+      { "question": "Are the dirt paths clean and undisturbed?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A coffee table shows the completion of a jigsaw puzzle project. A fully assembled 1000-piece landscape puzzle sits in the center, depicting a mountain scene. The puzzle box lies open nearby with its colorful cover image matching the completed puzzle. An empty coffee mug sits beside the puzzle box. A recently used pair of reading glasses rests on top of several instruction sheets.\n\nGenerative Task: Generate an image showing the puzzle-solving activity at its most active phase. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is there a person working on the puzzle?", "tags": []},
+      { "question": "Is the puzzle incomplete?", "tags": []},
+      { "question": "Are puzzle pieces scattered on the table?", "tags": []},
+      { "question": "Is the person wearing the reading glasses?", "tags": []},
+      { "question": "Does the coffee mug contain coffee?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: An art studio displays the aftermath of a painting session. A landscape painting with visible sketch outlines sits on the easel, with colored areas still glistening on the canvas. Paint tubes lie scattered with their caps off and dried paint crusted around their openings. A palette holds a mixture of dried colors with brushes stiffened by paint residue. An old pair of reading glasses, typically worn during painting, rests on the table. An artist's apron hangs on a hook with fresh paint stains covering its surface.\n\nGenerative Task: Generate an image depicting the artist actively engaged in the early stages of coloring the landscape painting. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is there an artist actively painting at the easel?", "tags": []},
+      { "question": "Does the painting show a sketch outline with only a small amount of color applied?", "tags": []},
+      { "question": "Is there fresh paint on the palette?", "tags": []},
+      { "question": "Is the artist wearing reading glasses while painting?", "tags": []},
+      { "question": "Is the artist wearing the apron?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A park picnic area shows the remnants of a family gathering. A picnic table holds empty food containers with crumbs and sauce stains. A deflated beach ball lies flat beside folded blankets. An empty cooler sits open with melted ice water pooled at the bottom. Used paper plates and plastic utensils are stacked for disposal. Nearby, a portable BBQ grill is cool to the touch, its grate covered in blackened food residue and the charcoal inside has burned down to fine grey ash.\n\nGenerative Task: Generate an image showing this picnic area during the height of the family activities. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are there family members actively gathered around the picnic table?", "tags": []},
+      { "question": "Do the food containers hold fresh food?", "tags": []},
+      { "question": "Is the beach ball inflated?", "tags": []},
+      { "question": "Is the cooler filled with ice and cold items?", "tags": []},
+      { "question": "Is the BBQ grill in use, with food on the grate?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A living room shows the aftermath of a birthday celebration. Deflated balloons hang limply from chair backs and lie scattered on the floor. An empty cake plate displays only crumbs and frosting smears. Used party hats are scattered across the coffee table with their elastic bands snapped. Empty drink cups are scattered across the table, tipped over with spilled contents. Birthday candles lie extinguished on the table with melted wax pooled around them.\n\nGenerative Task: Generate an image showing this birthday party at its most celebratory moment. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the balloons fully inflated and properly displayed?", "tags": []},
+      { "question": "Is there a complete birthday cake on the plate?", "tags": []},
+      { "question": "Are the party hats being worn or neatly positioned?", "tags": []},
+      { "question": "Are the drink cups upright and filled with drinks on the table?", "tags": []},
+      { "question": "Are the birthday candles lit and standing upright?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A cozy reading room shows signs of a concluded book club meeting. Several books lie closed with bookmarks protruding from various pages. Empty tea cups and saucers are scattered across side tables with tea stains visible in the bottoms. Chairs are pushed back from their circle formation around a central coffee table. Discussion notes, recorded by a secretary, are written on a notepad with completed meeting agenda visible. A recently used reading glasses rest on the coffee table beside the closed books.\n\nGenerative Task: Generate an image showing this book club meeting during its most active discussion period. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the books open on the table?", "tags": []},
+      { "question": "Do the tea cups contain partially consumed tea?", "tags": []},
+      { "question": "Are the chairs arranged in a close circle?", "tags": []},
+      { "question": "Is someone actively taking notes during the discussion?", "tags": []},
+      { "question": "Are the reading glasses being worn?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A garden bed shows recently completed planting work. Small seedlings are positioned in neat rows with fresh soil packed around their roots. Empty seed packets lie scattered with their contents fully used. A watering can sits empty after being used to water the new plants. Gardening tools have been cleaned and stored in a nearby shed. Knee pads are removed and placed on a garden bench with soil stains covering them.\n\nGenerative Task: Generate an image depicting the active planting process that created this organized garden bed. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown actively placing a seedling into the soil or digging a hole for one?", "tags": []},
+      { "question": "Is at least one seed packet open, with some seeds remaining inside or being poured out?", "tags": []},
+      { "question": "Does the watering can contain water (i.e., it is not empty)?", "tags": []},
+      { "question": "Are gardening tools out of the shed, lying on the ground, and visibly dirty from use?", "tags": []},
+      { "question": "Is a person wearing the soil-stained knee pads?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A dining table displays a beautifully wrapped present with an elaborate ribbon and bow. An empty wrapping paper roll sits nearby with torn edges at its end. The scissors have been put back in the drawer. An empty tape dispenser shows its core with no tape remaining. A gift tag is attached to the present with a name written in careful handwriting.\n\nGenerative Task: Generate an image showing the gift wrapping setup at the moment when all tools are laid out on the table, ready to begin wrapping. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the gift unwrapped, without wrapping paper or ribbon decoration?", "tags": []},
+      { "question": "Is the wrapping paper roll full or mostly full?", "tags": []},
+      { "question": "Is there no gift tag tied to the present?", "tags": []},
+      { "question": "Is the tape dispenser full with tape?", "tags": []},
+      { "question": "Are the scissors on the table, ready for use?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A music room appears quiet and has been untouched for some time. A violin case is fully closed and latched, stored against a wall. A piano in the room is completely covered with a fabric dust cover. The music stand is empty, and the musician's chair is neatly tucked under the piano. The room is tidy, with no loose items or sheet music visible. The lights are turned off.\n\nGenerative Task: Generate an image of this same room at night during an intense practice session with two musicians playing different instruments. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a musician shown playing the violin?", "tags": []},
+      { "question": "Is the dust cover removed from the piano?", "tags": []},
+      { "question": "Is a second musician shown playing the piano?", "tags": []},
+      { "question": "Is the music stand set up and holding open sheets of music?", "tags": []},
+      { "question": "Are the lights in the room turned on?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A swimming pool area is shown after being cleaned and closed down. The pool is covered by a large, solid pool cover. All patio lounge chairs are folded and stacked against a wall. The patio table is completely bare. A diving board, if present, has its safety ladder raised or removed. Inflatable toys are deflated and stored in a mesh bag on the deck.\n\nGenerative Task: Generate an image of this same pool area during the peak of a lively swimming party. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the large cover removed, exposing the pool water?", "tags": []},
+      { "question": "Are the lounge chairs unfolded and arranged around the pool deck?", "tags": []},
+      { "question": "Is the patio table set with bowls of snacks and/or drink cups?", "tags": []},
+      { "question": "If a diving board is visible, is its ladder in the lowered, usable position?", "tags": []},
+      { "question": "Are there inflated toys floating on the pool's water surface?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A woodworking shop is shown in a clean, orderly state after a project's completion. A single, finished wooden chair stands proudly in the center. The floor is swept clean of all sawdust and shavings. All woodworking tools and a pair of safety goggles are hanging neatly in their designated spots on a wall pegboard. A technical blueprint for the chair is rolled up and stored on a shelf.\n\nGenerative Task: Generate an image of this same workshop during the active construction of the chair. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the chair's components laid out on the workbench, either partially assembled or as separate pieces?", "tags": []},
+      { "question": "Is the floor around the workbench covered with wood shavings and sawdust?", "tags": []},
+      { "question": "Are some woodworking tools (like a saw or a drill) located on the workbench?", "tags": []},
+      { "question": "Are the safety goggles worn by a person?", "tags": []},
+      { "question": "Is the blueprint for the chair unrolled and spread out on the workbench or a nearby surface?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: An art classroom is shown after being fully cleaned and reset. Student artworks are no longer on the desks but are clipped to a drying line hanging across the room. The student desks are wiped clean and empty. Palettes have been washed and are stacked neatly on a supply shelf. All paint tubes are capped and organized in a storage tray. The water jars are empty and stored near a sink.\n\nGenerative Task: Generate an image of this same classroom during the peak of an active painting lesson. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are there student paintings on the desks?", "tags": []},
+      { "question": "Are the student desks occupied with art supplies (e.g., palettes, brushes)?", "tags": []},
+      { "question": "Are paint palettes on the desks with dabs of different colored paints on them?", "tags": []},
+      { "question": "Are there open or uncapped paint tubes on the desks or a central table?", "tags": []},
+      { "question": "Are there jars filled with murky, colored water on the desks?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A fitness studio shows the aftermath of an intense group class. Several dumbbells of various weights are scattered on the floor. Yoga mats are left unrolled in various spots across the room. Adjustable step platforms are disassembled and left at different heights. A whiteboard on the wall displays the workout routine, now partially smudged. Empty water bottles have been left on the floor.\n\nGenerative Task: Generate an image of this same fitness studio, fully cleaned and perfectly organized, ready for the next class. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the dumbbells arranged neatly on a weight rack?", "tags": []},
+      { "question": "Are the yoga mats tightly rolled up and stored in a designated bin or rack?", "tags": []},
+      { "question": "Are the step platforms stacked neatly in a corner of the room?", "tags": []},
+      { "question": "Is the whiteboard wiped clean, with no writing on it?", "tags": []},
+      { "question": "Is the floor completely clear of any water bottles?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A kitchen is shown after bread has been baked and the space cleaned up. A finished loaf of bread is cooling on a wire rack. The kitchen counter has been wiped clean. The large mixing bowl has been washed and is sitting upside-down in a dish rack to dry. A bag of flour is closed and stored on a shelf. A rolling pin is clean and hanging on a wall hook or stored in a drawer.\n\nGenerative Task: Generate an image of this same kitchen at the moment when everything is ready and the dough kneading phase is underway. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is there a ball of unbaked dough on a floured countertop?", "tags": []},
+      { "question": "Is the metal cooling rack empty?", "tags": []},
+      { "question": "Is the mixing bowl on the counter?", "tags": []},
+      { "question": "Is the bag of flour open and on the counter?", "tags": []},
+      { "question": "Is the rolling pin on the floured counter?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A living room is shown with its holiday decorating complete and all cleanup finished. A fully decorated Christmas tree stands in the corner, its lights glowing. The floor is clean, and all the empty storage containers, ornament boxes, and the stepladder have been put away and are no longer visible in the room.\n\nGenerative Task: Generate an image of this same living room as the decorating process is just about to begin: the tree has been set up, and all the supplies have been brought out. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the Christmas tree standing but completely bare, with no ornaments or lights on it?", "tags": []},
+      { "question": "Are large storage containers and/or ornament boxes sitting on the floor with items inside?", "tags": []},
+      { "question": "Is a stepladder unfolded and standing near the tree?", "tags": []},
+      { "question": "Is a tangled mass of string lights lying on the floor or spilling out of a box?", "tags": []},
+      { "question": "Are ornaments still inside their boxes or laid out on a nearby surface, but not on the tree?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A pharmacy counter is shown in a clean and organized state after all prescriptions have been filled. A finished, labeled prescription bottle stands in a customer pickup basket. The large medication stock bottles are closed and neatly arranged on a shelf behind the counter. The pill counting tray and spatula are clean and stored in their designated place. The countertop itself is wiped clean and uncluttered.\n\nGenerative Task: Generate an image of this same pharmacy counter during the active process of filling a prescription. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the countertop occupied by a pill tray, a stock bottle, and an empty prescription bottle?", "tags": []},
+      { "question": "Is a large medication stock bottle placed on the counter with its cap off?", "tags": []},
+      { "question": "Are there loose pills visible on the pill counting tray?", "tags": []},
+      { "question": "Is an empty, uncapped prescription bottle present on the counter?", "tags": []},
+      { "question": "Is a counting spatula lying on the counter or across the pill tray?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A barbershop is shown immediately after a client has left. A significant amount of cut hair litters the floor around the empty barber chair. The protective cape, dusted with small hair clippings, hangs from a hook. On the counter, a pair of scissors and a comb lie next to each other. An electric clipper also rests on the counter, its power cord unplugged and loosely coiled.\n\nGenerative Task: Generate an image of this same barbershop at the moment just before the haircut begins, with the client seated and the barber ready to use the electric clipper. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the floor around the barber chair clean and free of hair?", "tags": []},
+      { "question": "Is a person sitting in the barber chair?", "tags": []},
+      { "question": "Is the person in the chair wearing a clean protective cape?", "tags": []},
+      { "question": "Is a barber standing next to the chair, holding the electric clipper?", "tags": []},
+      { "question": "Is the electric clipper plugged into a power outlet?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A commercial pizza kitchen's prep station is shown after being fully cleaned at the end of a shift. The stainless steel countertop is wiped clean and is empty. The containers for toppings are closed and stored in a refrigerated unit. Trays of proofed dough balls are stored on a nearby rack. A large pizza peel (the paddle) and a sauce ladle are both clean and hanging on a wall-mounted tool rack.\n\nGenerative Task: Generate an image of this same prep station during the active assembly of a pizza, with all tools and ingredients already prepared and ready. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a circle of pizza dough on the countertop?", "tags": []},
+      { "question": "Is the countertop lightly dusted with flour around the pizza dough?", "tags": []},
+      { "question": "Are the metal topping containers on the counter?", "tags": []},
+      { "question": "Is a large pizza peel lying on the counter, ready for use?", "tags": []},
+      { "question": "Is a large ladle resting in a container of pizza sauce on the counter?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A children's playground shows the end of a busy day. A tetherball is wrapped tightly and high up around its pole. Empty juice boxes and snack wrappers litter a picnic table. The mulch or sand directly under the swings has been kicked into hollows. The sand in the sandbox is messy, with various toys partially buried. The main entrance gate to the playground is propped open.\n\nGenerative Task: Generate an image of this playground in its pristine and non-operational state before anyone has arrived. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the tetherball unwrapped and hanging straight down from its rope?", "tags": []},
+      { "question": "Is the picnic table clean and completely empty?", "tags": []},
+      { "question": "Is the ground surface under the swings smooth and level?", "tags": []},
+      { "question": "Is the sand in the sandbox smooth, with all the toys neatly collected in a corner or a container?", "tags": []},
+      { "question": "Is the main entrance gate to the playground closed?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: An auto repair garage shows a car that has just finished its service and is ready for the owner. The car is on the ground, with all four wheels on. The hood is closed. The old, used oil filter sits in a drain pan on the floor. A large, wheeled toolbox has all its drawers closed. The hydraulic car lift arms are fully retracted and on the floor.\n\nGenerative Task: Generate an image of this same garage during the middle of an active repair, such as a tire and oil change. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the car raised up on a hydraulic lift?", "tags": []},
+      { "question": "Is the car's hood open?", "tags": []},
+      { "question": "Is at least one wheel removed from the car, leaning against the lift or on the floor?", "tags": []},
+      { "question": "Is an oil drain pan positioned directly under the car's engine?", "tags": []},
+      { "question": "Are repair tools, such as a wrench or jack, lying on the floor or a workbench near the car?", "tags": [] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A flower shop's workstation is shown after a large order has been completed and the area cleaned. Several finished floral arrangements are displayed on a shelf. The main workbench is completely clean and wiped-down. Bulk flowers are stored in buckets on the floor, away from the workbench. Spools of ribbon and a roll of wrapping paper are stored neatly on a wall rack. A pair of floral shears is clean and hanging on a tool hook.\n\nGenerative Task: Generate an image of this same workstation during the active process of creating one of the arrangements, with all tools laid out on the workstation and ready for use.. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is an unfinished floral arrangement lying on the workbench?", "tags": []},
+      { "question": "Is the workbench scattered with cut stems and leaves?", "tags": []},
+      { "question": "Are loose, unarranged flowers present on the workbench?", "tags": []},
+      { "question": "Is a spool of ribbon on the workbench, with some ribbon unrolled?", "tags": []},
+      { "question": "Are the floral shears lying on the workbench among the debris?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A shoe store's fitting area is shown in a state of disarray after a busy period. Several open shoe boxes are on the floor, their lids and tissue paper scattered about. A single shoe from a pair is left on a fitting stool, while its mate is on the floor. The fitting stool itself is pushed away from the main seating bench. A full-length, freestanding mirror has been turned to face an odd angle. The shoe horn has been left on the floor.\n\nGenerative Task: Generate an image of this same shoe store in its pristine, organized state before any customers have arrived. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are all the shoes neatly arranged on the shelves?", "tags": []},
+      { "question": "Is the floor completely clear of any shoe boxes, lids, or paper?", "tags": []},
+      { "question": "Is the fitting stool tucked neatly beside the main seating bench?", "tags": []},
+      { "question": "Is the full-length mirror positioned squarely to face the seating area?", "tags": []},
+      { "question": "Is the shoe horn placed in a designated holder or on a shelf?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A coffee shop's counter is shown after a busy morning rush. The espresso machine's drip tray is full of dark liquid. Several used milk steaming pitchers with dried residue are clustered near the machine. A pile of used portafilters (the coffee handles) with compacted coffee pucks sits on the counter. The pastry display case has many empty spots. The 'Open' sign on the door is illuminated.\n\nGenerative Task: Generate an image of this same coffee shop, fully stocked and cleaned, just before opening for the day. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the espresso machine's drip tray clean and empty?", "tags": []},
+      { "question": "Are the milk steaming pitchers clean and neatly arranged on the counter?", "tags": []},
+      { "question": "Are the portafilters clean and free of coffee grounds?", "tags": []},
+      { "question": "Is the pastry display case fully stocked, with no empty spots?", "tags": []},
+      { "question": "Is the 'Open' sign turned off or a 'Closed' sign displayed on the door?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A pet grooming salon is shown after a busy day of appointments. The grooming table has a significant amount of trimmed pet fur on its surface. The large, stainless-steel bathtub has wet fur clinging to its sides. A flexible grooming loop/leash used for restraining pets is left dangling from the grooming arm over the table. A high-velocity pet dryer hose lies uncoiled on the floor. The waste bin is visibly full of fur.\n\nGenerative Task: Generate an image of this same grooming salon, fully cleaned and prepared for the next day's appointments. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the grooming table's surface clean and free of fur?", "tags": []},
+      { "question": "Is the stainless-steel bathtub clean and dry?", "tags": []},
+      { "question": "Is the grooming loop/leash unhooked or neatly secured to the grooming arm?", "tags": []},
+      { "question": "Is the pet dryer hose coiled and hanging on its designated hook or stand?", "tags": []},
+      { "question": "Is the waste bin empty, or does it have a new, clean liner?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A chemistry lab bench is shown after an experiment has been completed and the area fully cleaned. The glassware (flasks, beakers) has been washed and is sitting on a drying rack. The lab bench surface is wiped clean and is empty. The Bunsen burner is disconnected, its hose coiled next to it. The reagent bottles are closed and stored neatly on an overhead shelf. The lab notebook is closed and put away.\n\nGenerative Task: Generate an image of this same lab bench during the active heating phase of an experiment. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a flask or beaker positioned on a ring stand?", "tags": []},
+      { "question": "Is a Bunsen burner shown lit directly beneath a flask or beaker?", "tags": [] },
+      { "question": "Is the Bunsen burner's hose connected to a gas tap on the bench?", "tags": []},
+      { "question": "Is the lab notebook open on the bench?", "tags": []},
+      { "question": "Is the lab bench surface occupied by other equipment, like test tube racks or stirring rods?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A dry cleaning shop displays the completion of garment processing. Cleaned clothes hang on conveyor racks wrapped in protective plastic covers. Empty chemical solvent containers sit with their caps off and residue stains around their openings. Pressing machines show fabric fiber residue on their heated surfaces. Garment tags lie scattered with completed cleaning codes marked on them. A steam generator sits idle with water droplets still visible on nearby surfaces.\n\nGenerative Task: Generate an image depicting this dry cleaning shop before the cleaning process commenced. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are the clothes dirty and unwrapped?", "tags": []},
+      { "question": "Are the chemical containers capped securely and free of any residue or stains?", "tags": []},
+      { "question": "Are the pressing machine surfaces clean?", "tags": []},
+      { "question": "Are the garment tags free of any checkmarks or codes indicating the cleaning is complete?", "tags": []},
+      { "question": "Is the area around the steam generator dry without water droplets?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations: A restaurant kitchen is shown after being fully cleaned and shut down for the night. The gas stove burners are off, and the flat-top grill is wiped clean. All stainless-steel prep counters are empty and sanitized. Cooking pans are washed and hanging from an overhead pot rack. The order ticket rail above the pass-through window is empty. The heat lamps over the pass-through window are turned off.\n\nGenerative Task: Generate an image of this same restaurant kitchen during the peak of a busy dinner service. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Are there visible flames on the gas stove burners?", "tags": []},
+      { "question": "Are there cooking pans on the stove, some with food in them?", "tags": []},
+      { "question": "Are prepped ingredients (mise en place) placed on the prep counter?", "tags": []},
+      { "question": "Are there paper order tickets clipped to the order ticket rail?", "tags": []},
+      { "question": "Are the heat lamps over the pass-through window glowing, indicating they are on?", "tags": []}
+    ],
+    "Remark": "Claude"
+  },
+  "R-RR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn the floor of a living room, a large glass aquarium is shattered. Water and shards of glass cover the carpet. Several colorful tropical fish are flapping on the wet floor. A heavy, black bowling ball rests inside the remains of the broken tank.\n\nGenerative Task:\nFrom the evidence of the aftermath, generate a photorealistic image of the single, catastrophic action that caused all of these results simultaneously. Depict the scene as everything is about to happen, not the before or after. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a bowling ball shown in mid-air?", "tags": [] },
+      { "question": "Is the bowling ball about to make contact with a glass aquarium?", "tags": [] },
+      { "question": "Is the glass of the aquarium depicted as being intact?", "tags": [] },
+      { "question": "Are fish visible swimming inside the intact aquarium?", "tags": [] },
+      { "question": "Is the carpet or floor beneath the aquarium depicted as being dry?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nInside a reception hall, a multi-tiered wedding cake is smashed on one side. A baseball is embedded deep in the frosting. A nearby window pane is shattered, with fragments of glass on the floor inside. White frosting is splattered on the curtains next to the window.\n\nGenerative Task:\nReconstruct and generate a high-speed photograph of the precise and singular event that resulted in this specific pattern of destruction. The image should capture the moment just before the cake is about to be destroyed. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a baseball shown in mid-air inside the room?", "tags": [] },
+      { "question": "Is the window glass shattered?", "tags": [] },
+      { "question": "Are fragments of glass visible near the window?", "tags": [] },
+      { "question": "Is the wedding cake depicted as being intact and undamaged?", "tags": [] },
+      { "question": "Is the baseball positioned in the air between the shattering window and the intact cake?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a room being decorated, a ladder is lying on the floor. Three open paint cans (red, yellow, blue) are also on the floor, spilled. Large, distinct splatters of red, yellow, and blue paint cover the wall, the floor, and a previously pristine white sofa.\n\nGenerative Task:\nBased on the scene described, generate a dynamic, photorealistic image that captures the single moment of mishap. Do not show the aftermath; depict the action in progress. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a ladder shown in the process of tipping over?", "tags": [] },
+      { "question": "Are there three paint cans shown in mid-air?", "tags": [] },
+      { "question": "Is liquid paint (in red, yellow, and blue colors) shown arcing through the air from the falling cans?", "tags": [] },
+      { "question": "Are the wall and floor free of any paint stains?", "tags": [] },
+      { "question": "Is the white sofa depicted as being completely clean and free of paint?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a historic library, a row of tall, wooden bookshelves has a perfectly circular hole running clean through it. Splintered wood and thousands of shredded book pages litter the floor in a long line. At the end of the destructive path, a heavy, black cannonball is embedded deep in the far stone wall.\n\nGenerative Task:\nFrom the evidence, create a cinematic image capturing the powerful, singular moment of destruction. The image should freeze the action as it happens. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a black cannonball shown in mid-air inside a library?", "tags": [] },
+      { "question": "Is the cannonball shown in the process of passing through a wooden bookshelf?", "tags": [] },
+      { "question": "Are the books on the shelf, away from the immediate impact point, depicted as being neat and intact?", "tags": [] },
+      { "question": "Are wood splinters visible in the air around the impact point?", "tags": [] },
+      { "question": "Are shredded paper fragments visible in the air around the impact point?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a fancy dining room, an ornate silver gravy boat lies on its side on a white tablecloth. A large, dark brown puddle of gravy has soaked into the cloth. A trail of brown, saucy paw prints leads away from the table and across the carpet. A nearby fluffy white cat is frantically trying to groom a large, dark brown, dripping stain on its back and head.\n\nGenerative Task:\nGenerate an image of the scene just before the incident, with the cat still on the dining table. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a white cat shown on top of a dining table?", "tags": [] },
+      { "question": "Is the silver gravy boat placed upright on the table (not tipped over)?", "tags": [] },
+      { "question": "Does the silver gravy boat contain brown liquid inside?", "tags": [] },
+      { "question": "Is the white cat mostly clean, without gravy on its body?", "tags": [] },
+      { "question": "Is the white tablecloth depicted as being clean and free of stains?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a kitchen counter, a paper-mache volcano model is covered in a sticky, red, foamy residue. The foam has overflowed and stained the counter. A nearby glass of milk is also full of the same red foam. An empty box of baking soda lies on its side next to an empty bottle of vinegar.\n\nGenerative Task:\nBased on the evidence, reconstruct the moment of the 'science experiment' eruption. The image should capture the instant the reaction begins, just as the final ingredient is added. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is red foam just beginning to erupt from the top of the volcano model?", "tags": [] },
+      { "question": "Is a hand shown pouring or dropping a substance (e.g., vinegar or baking soda) into the volcano's opening?", "tags": [] },
+      { "question": "Is the kitchen counter around the base of the volcano depicted as being clean and dry, without any overflowed foam?", "tags": [] },
+      { "question": "Is the nearby glass of milk depicted as being pure white and uncontaminated by the red foam?", "tags": [] },
+      { "question": "Are the baking soda box (or vinegar bottle) depicted as being upright and not yet knocked over?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA cyclist is on the ground next to their bicycle on a paved path. The cyclist has a scraped knee. The bicycle's chain is broken and dangling from the gears. One of the pedals has a deep scuff mark on it.\n\nGenerative Task:\nBased on these clues, create a detailed image capturing the precise, singular moment of mechanical failure. The image should freeze the moment of action. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown riding a bicycle?", "tags": [] },
+      { "question": "Is the bicycle's chain shown in the process of snapping or in two separate pieces?", "tags": [] },
+      { "question": "Is the bicycle pedal intact and free of any scuff marks?", "tags": [] },
+      { "question": "Is the cyclist depicted as being on the bicycle, not on the ground?", "tags": [] },
+      { "question": "Is the cyclist's knee depicted as being clean and unscraped?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a bedroom windowsill sits an open jewelry box with one earring missing from a pair. A single black feather rests on the sill. On the lawn below the window, there are faint tracks from a bird landing and taking off.\n\nGenerative Task:\nReconstruct and generate a high-speed photograph of the precise and singular moment just after the theft has been completed, capturing the instant when the thief is about to escape. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a bird, such as a crow or magpie, visible in the scene?", "tags": [] },
+      { "question": "Is the bird holding a shiny earring in its beak?", "tags": [] },
+      { "question": "Is the bird depicted in mid-flight, taking off from the windowsill?", "tags": [] },
+      { "question": "Is there an open jewelry box on the windowsill?", "tags": [] },
+      { "question": "Is a single matching earring still visible inside the jewelry box?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA golf green is partially flooded with water. A plastic sprinkler head is shattered, with its fragments lying on the grass. A single white golf ball rests in the puddle next to the broken sprinkler. A nearby plastic water bottle has been knocked over, spilling its contents.\n\nGenerative Task:\nGenerate a dramatic, high-speed image capturing the tense instant just before the collision occurs. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the golf ball in the air, about to strike the sprinkler head?", "tags": [] },
+      { "question": "Is the sprinkler head intact with no visible cracks or damage?", "tags": [] },
+      { "question": "Is the sprinkler head in its off state and dry?", "tags": [] },
+      { "question": "Is the plastic water bottle upright?", "tags": [] },
+      { "question": "Is the grass of the golf green surrounding the sprinkler depicted as being dry?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA city street corner is shown. A red fire hydrant is captured at the very instant it breaks off at its base. A yellow taxi is positioned next to the hydrant. Beside a trash bin on the sidewalk, a stray dog is startled and running away.\n\nGenerative Task:\nGenerate a cinematic image capturing the precise moment when the fire hydrant has just fractured, freezing the action at the instant of breakage. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the fire hydrant shown in the process of breaking or shearing off?", "tags": [] },
+      { "question": "Is water depicted as just beginning to erupt from the hydrant?", "tags": [] },
+      { "question": "Is most of the street surface shown as dry?", "tags": [] },
+      { "question": "Is the front corner of the taxi shown making contact with the fire hydrant and sustaining damage?", "tags": [] },
+      { "question": "Is a stray dog shown in a startled pose or in the act of running away from the trash bin?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA dark room smells of burnt plastic. A person is lying on the floor. In their hand is a pair of wire cutters with blackened, melted tips. A single electrical wire hanging from the ceiling has been cut. The room's main light fixture is off.\n\nGenerative Task:\nGenerate a photorealistic image that reconstructs the dangerous event. Visualize the instant that explains the darkness and the person's state. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown holding a pair of wire cutters?", "tags": [] },
+      { "question": "Are the blades of the wire cutters shown making contact with an electrical wire?", "tags": [] },
+      { "question": "Is a bright flash of light with sparks shown at the point where the cutters meet the wire?", "tags": [] },
+      { "question": "Is the electrical wire still uncut, not yet severed?", "tags": [] },
+      { "question": "Is a light fixture in the room depicted as being illuminated and on?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a backyard, a person is completely soaked with water. On the wet grass next to them lies a smartphone with a cracked screen. The colorful, shredded remnants of a burst blue water balloon are scattered nearby. A water gun that was previously held in their hand has fallen to the ground.\n\nGenerative Task:\nFrom the evidence of the aftermath, generate a high-speed photograph of the single, splashy action that caused this situation. Depict the instant of peak action, not the before or after. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a blue water balloon shown making physical contact with a person?", "tags": [] },
+      { "question": "Is the water balloon shown in the process of bursting?", "tags": [] },
+      { "question": "Is the water gun still in the person's hand?", "tags": [] },
+      { "question": "Is the person shown holding a smartphone?", "tags": [] },
+      { "question": "Is the screen of the smartphone depicted as being intact and un-cracked?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a workshop floor, a large, intricate ice sculpture of a swan lies in shattered pieces. The floor is wet with melted water and covered in fine, sawdust-like ice shavings. A large chainsaw, now silent, lies on the floor nearby.\n\nGenerative Task:\nBased on these clues, create a detailed image capturing the precise, singular event of its creation. The image should freeze the very beginning of the action, showing the cause and its immediate, parallel effects. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown operating a chainsaw?", "tags": [] },
+      { "question": "Is the blade of the chainsaw shown making contact with a large block of ice?", "tags": [] },
+      { "question": "Is the main block of ice depicted as being mostly whole and not shattered?", "tags": [] },
+      { "question": "Are fine ice shavings or chips shown being sprayed into the air from the point of contact?", "tags": [] },
+      { "question": "Is the floor beneath the ice block depicted as being dry?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a house, a screen door leading to the backyard has a large, torn hole in its mesh. A dog is now sitting happily in the house. There are muddy paw prints on the clean floor inside the house, leading towards the door. A white sofa in the living room has visible paw prints on it. A cat, startled from its deep sleep, leaps off the sofa.\n\nGenerative Task:\nGenerate an image of the pristine indoor scene just before the dog bursts in from outside. Do not include the dog in the image. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the screen door intact with no damage?", "tags": []  },
+      { "question": "Is there no dog present in the scene?", "tags": []  },
+      { "question": "Is the cat still on the sofa?", "tags": [] },
+      { "question": "Is the white sofa clean?", "tags": [] },
+      { "question": "Is the floor inside the house clean?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nThe walls and ceiling of a modern kitchen are splattered with a green, pulpy liquid. A glass blender jar on the counter is half-empty. The blender's lid is sitting clean and dry next to the blender base. The blender jar has removed from its base.\n\nGenerative Task:\nGenerate an image capturing the precise instant when the green liquid begins to erupt out of the blender jar. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a blender jar shown on its base?", "tags": [] },
+      { "question": "Is the blender shown without its lid attached?", "tags": [] },
+      { "question": "Is a geyser of green liquid shown erupting from the top of the open blender jar?", "tags": [] },
+      { "question": "Are the kitchen walls behind the blender depicted as being clean?", "tags": [] },
+      { "question": "Is the ceiling above the blender depicted as being clean?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nAt a fancy party, a large crystal chandelier is missing several of its hanging crystals. A champagne bottle on a table is open, its wire cage dangling. The cork is nowhere to be found. A fine mist of champagne is slowly settling on the guests. Crystal fragments are scattered on the floor.\n\nGenerative Task:\nFrom the evidence, generate an image capturing the exact moment the champagne bottle is opened. Freeze the action as the cork is released. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a champagne cork shown in mid-air?", "tags": [] },
+      { "question": "Is the cork shown in mid-air, traveling toward the chandelier but having not yet made contact?", "tags": [] },
+      { "question": "Is the chandelier depicted as being fully intact?", "tags": [] },
+      { "question": "Is foam or champagne spray shown erupting from an open bottle below?", "tags": [] },
+      { "question": "Is the floor clean and free of crystal debris?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA skateboard lies on the ground in two separate pieces, its wooden deck snapped in the middle. Nearby, a metal handrail has a fresh scrape mark on it. A person is sitting on the pavement nursing a scraped elbow.\n\nGenerative Task:\nBased on these clues, create a detailed image capturing the precise, singular moment of catastrophic failure. The image should freeze the moment of action, not the resulting crash. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown riding a skateboard?", "tags": [] },
+      { "question": "Is the skateboard shown on top of a metal handrail?", "tags": [] },
+      { "question": "Is the wooden deck of the skateboard shown in the process of snapping in half?", "tags": [] },
+      { "question": "Is the person depicted in mid-air, above the breaking skateboard?", "tags": [] },
+      { "question": "Is the person's elbow still uninjured?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA freshly painted white wall is splattered with a huge splash of blue paint. A blue paint tray lies upside down on the floor in a large puddle. The painter, slipping backward, is wearing white overalls covered in blue splotches.\n\nGenerative Task:\nGenerate a high-speed image capturing the precise instant when the blue paint is first splashing through the air. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person (the painter) shown in the process of slipping?", "tags": [] },
+      { "question": "Is a paint tray shown in mid-air?", "tags": [] },
+      { "question": "Is a large amount of blue, liquid paint shown splashing out of the falling tray?", "tags": [] },
+      { "question": "Is the wall behind the person depicted as being clean and white?", "tags": [] },
+      { "question": "Are the painter's white overalls clean?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA grand piano lies smashed to pieces on the pavement below a high-rise building. A thick rope with a frayed, snapped end is dangling from a crane hook high above. The other end of the rope is still tied to the piano wreckage.\n\nGenerative Task:\nReconstruct and generate a dramatic image of the singular, catastrophic event responsible for this situation. Visualize the moment of failure. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a grand piano shown suspended in mid-air?", "tags": [] },
+      { "question": "Is a thick rope shown tied to the piano?", "tags": [] },
+      { "question": "Is the rope shown in the process of snapping?", "tags": [] },
+      { "question": "Is the piano itself depicted as being intact and undamaged?", "tags": [] },
+      { "question": "Is the pavement clean and free of piano fragments?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nAt a birthday party, the floor is littered with candy and small toys. The colorful, shredded remains of a paper-mache donkey hang from a tree branch. A blindfolded child is holding a wooden stick and looking confused.\n\nGenerative Task:\nGenerate a cinematic image freezing the precise moment the pinata first splits open. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person (a child) shown swinging a wooden stick?", "tags": [] },
+      { "question": "Is the stick making physical contact with a paper-mache pinata?", "tags": [] },
+      { "question": "Is the pinata shown in the process of bursting open?", "tags": [] },
+      { "question": "Is candy shown erupting from the breaking pinata?", "tags": [] },
+      { "question": "Is the ground below the pinata depicted as being clean and free of candy?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a kitchen, the cleaned stainless steel range hood above the stove is blackened with soot. The ceiling has scorch marks. The chef is standing back with no eyebrows and singed hair, holding an empty bottle of brandy. An iron skillet on the stove is now cool.\n\nGenerative Task:\nFrom the provided observations, create a detailed image illustrating the critical moment of this cooking technique gone wrong. The image must capture the single instant the flare-up occurred. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person (a chef) shown pouring a liquid from a bottle into a hot pan?", "tags": [] },
+      { "question": "Is a large fireball shown erupting upwards from the pan?", "tags": [] },
+      { "question": "Is the range hood above the stove depicted as being clean and not sooty?", "tags": [] },
+      { "question": "Is the ceiling above the stove depicted as being clean and unscorched?", "tags": [] },
+      { "question": "Are the chef’s eyebrows and hair shown as undamaged and unsinged?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA person is lying on the floor of their office next to an overturned swivel chair. A broken ceramic mug and a large, brown coffee stain are on the carpet. Papers from the desk are scattered.\n\nGenerative Task:\nBased on the scene described, generate a dynamic image that captures the single moment of lost balance. Do not show the aftermath; depict the action in progress. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the chair shown tilted far back and in the process of tipping over?", "tags": [] },
+      { "question": "Is a ceramic mug shown in mid-air, having just been knocked from the desk?", "tags": [] },
+      { "question": "Is brown liquid shown splashing out of the mug?", "tags": [] },
+      { "question": "Is the carpet on the floor depicted as being clean and free of stains?", "tags": [] },
+      { "question": "Are the papers scattered in the air?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a canyon, a long wooden rope bridge is hanging in two pieces, collapsed into the chasm below. The main support rope on one side is snapped, its frayed ends dangling. A person is at one end of the bridge, gasping for breath. Birds are flying off in all directions from the bridge.\n\nGenerative Task:\nReconstruct and generate a dramatic image of the singular, catastrophic event responsible for this situation. Visualize the moment of failure. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown on a rope bridge?", "tags": [] },
+      { "question": "Is the person on the bridge depicted as off-balance or reacting in shock?", "tags": [] },
+      { "question": "Is one of the main, thick support ropes of the bridge shown in the process of snapping?", "tags": [] },
+      { "question": "Is the wooden deck of the bridge shown in the process of tilting or collapsing?", "tags": [] },
+      { "question": "Are the birds standing on the bridge or just taking off from it?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nAt a riverside, a newly-felled tree lies with its stump in the water and its top on the riverbank. The tree's trunk has a distinctive V-shaped cut at its base. A nearby beaver lodge has fresh branches on it. The water is full of floating wood chips. A bird's nest is floating on the river.\n\nGenerative Task:\nFrom the evidence, create an image capturing the final, critical moment of the beaver's work. The image should freeze the action as it happens. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a beaver shown at the base of a tree?", "tags": [] },
+      { "question": "Is the tree shown in the process of tipping over?", "tags": [] },
+      { "question": "Is the tree's trunk shown with a V-shaped cut, but still partially connected?", "tags": [] },
+      { "question": "Are wood chips visible beneath the tree?", "tags": [] },
+      { "question": "Is the bird's nest still on the tree?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA brick wall has a perfectly circular hole in it, as if something has been erased. Glowing, pixel-like particles are drifting away from the hole. A person is holding a strange, futuristic-looking gun, which is now silent and cool.\n\nGenerative Task:\nBased on the clues, create a single, dynamic sci-fi image capturing the moment of disintegration. Depict the action, not the results. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown holding a futuristic-looking gun?", "tags": [] },
+      { "question": "Is a beam of light or energy shown being fired from the gun?", "tags": [] },
+      { "question": "Is the beam making contact with a brick wall?", "tags": [] },
+      { "question": "Are the bricks of the wall shown in the process of dissolving into glowing particles at the point of contact?", "tags": [] },
+      { "question": "Is the rest of the brick wall, away from the beam, depicted as being solid and intact?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a patio table, an empty two-liter soda bottle lies on its side in a large, sticky puddle. The table and a nearby chair are drenched. An empty paper tube that once held mints is on the ground. A person standing nearby is soaked from the waist down.\n\nGenerative Task:\nFrom the evidence of the aftermath, generate a photorealistic image of the initial moment when the reaction begins. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the soda bottle depicted as being upright?", "tags": [] },
+      { "question": "Are small, white, candy-like objects (mints) shown falling into the bottle's opening?", "tags": [] },
+      { "question": "Is a geyser of soda shown erupting from the top of a plastic bottle?", "tags": [] },
+      { "question": "Is the table surface around the bottle depicted as being dry?", "tags": [] },
+      { "question": "Is a person standing near the table depicted as being dry?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nA multi-tiered wedding cake is ruined, with four distinct sets of propeller marks gouged into the frosting. A broken quadcopter drone, its propellers snapped, lies on the floor covered in white frosting.\n\nGenerative Task:\nFrom the provided observations, create a detailed image illustrating the critical moment just before the impact occurs. The image must capture the single instant right before collision. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a quadcopter drone shown in mid-air?", "tags": [] },
+      { "question": "Is the drone shown about to make contact with the wedding cake, but not yet touching it?", "tags": [] },
+      { "question": "Is the wedding cake depicted as being intact and undamaged?", "tags": [] },
+      { "question": "Are the drone's propellers depicted as being intact?", "tags": [] },
+      { "question": "Is the drone’s body clean and free from white frosting?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nIn a backyard, a tire lies on the ground directly beneath a large tree branch. A thick rope with a frayed, snapped end hangs from the branch above. A kid has fallen to the ground, and a cat beneath the tree has been startled awake by the loud noise. A parent, who was watering plants nearby, is rushing over to check the situation.\n\nGenerative Task:\nGenerate a dynamic image capturing the instant just before the accident occurs, when everything is still intact and unharmed.. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a kid shown swinging on a tire swing?", "tags": [] },
+      { "question": "Is the rope supporting the tire intact?", "tags": [] },
+      { "question": "Is the tire depicted as being in the air?", "tags": [] },
+      { "question": "Is the cat asleep under the tree?", "tags": [] },
+      { "question": "Is the parent shown watering plants?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a street, a man is on the ground next to a tipped-over fruit cart. Apples, oranges, and bananas are scattered all over the pavement. The front wheel of the cart is bent at a right angle, and its axle is broken. The man's hat has fallen to the ground. A nearby pothole suggests where the cart may have caught and tipped.\n\nGenerative Task:\nFrom the evidence, create a cinematic image capturing the powerful, singular moment of the accident. The image should freeze the action as it happens. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person shown pushing a fruit cart?", "tags": [] },
+      { "question": "Is one of the cart's wheels shown making contact with a pothole?", "tags": [] },
+      { "question": "Is the cart shown in the process of tipping over?", "tags": [] },
+      { "question": "Is fruit shown spilling out of the tipping cart?", "tags": [] },
+      { "question": "Is the man wearing a hat?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\nOn a sidewalk, a freshly laid patch of concrete has a trail of bird footprints hardened into its surface. A single grey feather is stuck in the concrete at the end of the trail. At the end of the footprints, a breadcrumb has just been picked up.\n\nGenerative Task:\nBased on the clues, create a single, dynamic image capturing the moment this pattern was made. Depict the action, not the results. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a bird, such as a pigeon, shown on a patch of concrete?", "tags": [] },
+      { "question": "Is the bird's foot shown making an impression in the surface of the concrete?", "tags": [] },
+      { "question": "Is the surface of the concrete ahead of the bird depicted as being smooth and free of footprints?", "tags": [] },
+      { "question": "Does the bird have a grey feather?", "tags": [] },
+      { "question": "Is the bird shown in the act of pecking at a breadcrumb on the concrete?", "tags": [] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-RR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. Shattered porcelain shards and splashes of water cover the hardwood floor beneath a side-table.\n2. Wet paw-shaped marks meander from the windowsill toward the debris.\n3. Several pink lily petals lie scattered beyond the main puddle.\n4. The open window and a dangling wind-chime suggest a breeze.\n5. The foam ball that was originally on the table has rolled onto the floor.\n6. Several short cat hairs cling to a broken shard.\n\nGenerative Task:\nInfer the chain of actions that led to this scene and illustrate the moment just before the vase began to fall, without showing any shattered pieces. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a cat visible in the scene?", "tags": [] },
+      { "question": "Is the cat in contact with or about to touch a vase?", "tags": [] },
+      { "question": "Does the vase still contain flowers?", "tags": [] },
+      { "question": "Is the vase shown upright but unstable, perhaps wobbling slightly?", "tags": [] },
+      { "question": "Is the foam ball still visible on the tabletop?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A steel-framed bicycle leans against a weather-worn shed.\n2. Both tyres are flat, with cobwebs stretched between spokes.\n3. A race number “27” is half-peeling from the front handlebar.\n4. A trophy inscribed “River Run Classic — First Place” sits inside the shed.\n5. Rust flakes are scattered on the ground beneath the chain.\n\nGenerative Task:\nIllustrate the bicycle during its peak condition on race day. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Does the bicycle appear clean and free of rust?", "tags": [] },
+      { "question": "Are both tyres fully inflated?", "tags": [] },
+      { "question": "Is the race number “27” intact?", "tags": [] },
+      { "question": "Is the chain clean with no rust flakes?", "tags": [] },
+      { "question": "Are there no cobwebs or shed debris around the bicycle?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. An empty theatre stage is littered with colourful confetti.\n2. A lone microphone stand stands centre-stage under a spotlight.\n3. Scattered sheet-music pages lie on the floor near the music stand.\n4. A pair of drumsticks rests on the drum set.\n5. Numerous shoe prints mark the confetti-covered stage.\n\nGenerative Task:\nReconstruct the climactic performance moment. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a lead singer at the microphone stand?", "tags": [] },
+      { "question": "Is at least one guitarist playing on stage?", "tags": [] },
+      { "question": "Are stage spotlights turned on and aimed at the performers?", "tags": [] },
+      { "question": "Are the sheet-music pages placed on the music stand?", "tags": [] },
+      { "question": "Is there a drummer performing at the drum set?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A stone fountain stands dry and cracked, its basin filled with leaves.\n2. Moss covers much of the stone surface.\n3. A corroded metal grate at the fountain’s spout shows orange rust streaks.\n4. A bronze plaque dated 1890 is tarnished and green.\n5. Water stains mark the surrounding pavement.\n\nGenerative Task:\nDepict the fountain on the day it was unveiled. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is water visibly flowing from the fountain spout?", "tags": [] },
+      { "question": "Is the stone surface clean and free of moss?", "tags": [] },
+      { "question": "Is the metal grate shiny and unrusted?", "tags": [] },
+      { "question": "Is the basin filled with clear water, not leaves?", "tags": [] },
+      { "question": "Are people or decorations present for an unveiling?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A computer keyboard is stained with coffee pooling between keys.\n2. A ceramic mug lies on its side, completely emptied.\n3. Several sticky notes are soaked and stuck to the desk.\n4. A laptop power cable is pulled out from its socket.\n5. A splash pattern reaches an open folder of printed reports.\n\nGenerative Task:\nGenerate an image capturing the instant just before the accident, as the office worker’s hand is about to knock over the full coffee mug. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a full coffee mug positioned near a keyboard?", "tags": [] },
+      { "question": "Is the keyboard dry and unstained?", "tags": [] },
+      { "question": "Are printed reports still clean on the desk?", "tags": [] },
+      { "question": "Is the laptop power cable plugged in?", "tags": [] },
+      { "question": "Are the sticky notes dry and free of stains?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. Three snowballs lie flattened, their surfaces dirty and melting.\n2. A carrot and a knit scarf are scattered on the slushy ground.\n3. Boot prints show a heavy stomp pattern beside the debris.\n4. A broken branch sticks out of the snow mound.\n5. A pair of child’s mittens has fallen to the ground in the midst of the commotion.\n\nGenerative Task:\nIllustrate a child about to kick an intact snowman. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is an intact snowman standing upright?", "tags": [] },
+      { "question": "Is the carrot nose still attached to the snowman?", "tags": [] },
+      { "question": "Is the scarf wrapped around the snowman’s neck?", "tags": [] },
+      { "question": "Is the child shown in a pose that suggests they are about to kick the snowman ?", "tags": [] },
+      { "question": "Is the child wearing a pair of mittens?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A chessboard lies upside down on the rug, pieces scattered under the table.\n2. One knight is broken; its head split off.\n3. A tipped wine glass drips red liquid onto a fallen queen.\n4. A crumpled score sheet sits torn in half.\n5. A wall clock shows 11:00 and has a cracked glass face.\n\nGenerative Task:\nShow two players at the table, one gripping the edge of an upright chessboard in frustration, just one hour ago. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a chessboard upright on the table with pieces arranged?", "tags": [] },
+      { "question": "Is the knight chess piece intact?", "tags": [] },
+      { "question": "Is an intact wine glass standing on the table?", "tags": [] },
+      { "question": "Is the score sheet intact?", "tags": [] },
+      { "question": "Is the wall clock showing a time 10:00?", "tags": [] },
+      { "question": "Is the wall clock’s glass face intact?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A champagne cork is embedded in the ceiling tile above a dining table.\n2. Sticky foam trails down a chandelier onto clean empty glasses.\n3. A bottle lies on its side on a linen runner, label soaked.\n4. Confetti pieces cling to wet tablecloth spots.\n5. A plate of untouched hors d’oeuvres is splattered with droplets.\n\nGenerative Task:\nDepict a guest at the dining table beginning to open a sealed champagne bottle. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a person holding an upright champagne bottle at the table?", "tags": [] },
+      { "question": "Is the cork fully inserted in the bottle neck?", "tags": [] },
+      { "question": "Are the empty glasses clean and free of foam?", "tags": [] },
+      { "question": "Are the hors d’oeuvres free of liquid splatters?", "tags": [] },
+      { "question": "Is the ceiling intact without a cork hole?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. Shards of aquarium glass and a large puddle spread across the living-room floor.\n2. Two goldfish lie motionless on wet tiles.\n3. A plastic castle ornament rests upside-down among the shards.\n4. Damp cat paw prints lead away toward a sofa.\n5. Small clumps of cat fur cling to broken glass edges.\n\nGenerative Task:\"Depict the moment a cat paws at an intact, water-filled aquarium. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a cat touching an intact aquarium?", "tags": [] },
+      { "question": "Is the aquarium visibly tilted but unbroken?", "tags": [] },
+      { "question": "Are live fish visible inside the aquarium?", "tags": [] },
+      { "question": "Is the plastic castle ornament standing upright inside the aquarium?", "tags": [] },
+      { "question": "Is the floor around the stand dry and free of water?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A greenhouse panel is cracked with a deflated soccer ball resting inside.\n2. Glass shards lie among tomato plants.\n3. A goalpost faces the greenhouse from the lawn.\n4. Two muddy footprints mark the greenhouse floor.\n5. A watering can is toppled on its side.\n\nGenerative Task:\nShow a child kicking a fully inflated soccer ball toward an intact greenhouse panel. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a child in the act of kicking a soccer ball?", "tags": [] },
+      { "question": "Is the soccer ball airborne heading toward the greenhouse?", "tags": [] },
+      { "question": "Is the greenhouse glass panel intact without cracks?", "tags": [] },
+      { "question": "Are there no glass shards around the tomato plants?", "tags": [] },
+      { "question": "Is the watering can upright beside the plants?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A laboratory bench is stained purple from spilled liquid.\n2. A cracked glass beaker lies on its side.\n3. A lab coat sleeve nearby is stained.\n4. Blue liquid remains in a second intact beaker.\n5. Safety goggles are splashed with droplets.\n6. A broken glass rod is on the bench surface.\n\nGenerative Task:\nIllustrate a student carefully pouring blue liquid from one intact beaker into a red solution beaker. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a student wearing a lab coat and goggles?", "tags": [] },
+      { "question": "Are two intact beakers visible, one being poured into the other?", "tags": [] },
+      { "question": "Is the bench surface clean and dry?", "tags": [] },
+      { "question": "Is the glass rod on the bench surface intact?", "tags": [] },
+      { "question": "Is the lab coat sleeve undamaged and unstained?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A marble statue lies in three large pieces on a museum floor.\n2. Two rope stanchions are toppled beside a face-down “Do Not Touch” sign.\n3. A red alarm indicator flashes on a wall panel.\n4. A tourist guidebook lies open, pages bent, near the debris.\n5. Scuff marks mar the edge of the empty pedestal.\n\nGenerative Task:\nDepict the moment a visitor is about to topple the statue. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the statue upright and undamaged on its pedestal?", "tags": [] },
+      { "question": "Are the rope stanchions standing in place?", "tags": [] },
+      { "question": "Is the 'Do Not Touch' sign standing in place?", "tags": [] },
+      { "question": "Is the visitor standing inside the rope stanchions in front of the statue?", "tags": [] },
+      { "question": "Is the alarm light on the wall panel turned off?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. An empty bird-cage lies on its side, door wide open, on a living-room carpet.\n2. White feathers are scattered in a broad arc.\n3. A snapped wooden perch protrudes from the cage bars.\n4. A nearby window is slightly ajar.\n5. Tufts of cat fur cling to the overturned cage.\n6. Bird seed is spilled across the carpet fibres.\n\nGenerative Task:\nIllustrate a cat pawing at an upright birdcage with a bird inside. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the bird-cage upright with its door closed?", "tags": [] },
+      { "question": "Is the bird visibly perched inside the cage?", "tags": [] },
+      { "question": "Is a cat touching or reaching toward the cage?", "tags": [] },
+      { "question": "Is the carpet around the cage clear of feathers or seed?", "tags": [] },
+      { "question": "Is the wooden perch inside the cage intact and unbroken?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A clay flower pot lies shattered at the bottom of a staircase.\n2. Damp soil and roots are strewn across several steps.\n3. A trailing vine hangs, snapped, over a railing.\n4. Scuff marks appear on the wooden handrail midway down.\n5. One gardening glove has slipped from the hand and landed on an upper step, while the other remains on the person’s hand.\n\nGenerative Task:\nIllustrate a person just starting to descend the stairs, carefully carrying an intact potted plant. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the flower pot intact in the person’s hands?", "tags": [] },
+      { "question": "Are no soil or plant fragments on the steps?", "tags": [] },
+      { "question": "Is the vine unbroken and inside the pot?", "tags": [] },
+      { "question": "Is the wooden handrail free of visible scuff marks?", "tags": [] },
+      { "question": "Is the person wearing gardening gloves on both hands?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A snow globe lies shattered on a coffee-table, glitter-filled water soaking a magazine.\n2. Glass shards sparkle beneath a miniature house figurine.\n3. A coffee mug lies tipped on its side, knocked over by the globe—coffee pooled across the table surface.\n4. A sleeping cat, now startled by the noise, stretches on the floor nearby.\n5. A family photo frame stands splashed with droplets.\n\nGenerative Task:\nDepict the scene just before the accident occurs. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the snow globe intact on the coffee-table?", "tags": [] },
+      { "question": "Is the magazine dry beneath the globe?", "tags": [] },
+      { "question": "Is the coffee mug upright and contains coffee inside?", "tags": [] },
+      { "question": "Is the cat peacefully asleep nearby, not reacting to noise?", "tags": [] },
+      { "question": "Is the photo frame dry and free of water droplets?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A smartphone lies face-down on pavement, screen spider-cracked.\n2. Earbuds dangle, one bud lodged beneath the phone.\n3. A fresh coffee splatter forms a ring beside the device.\n4. A sandal lies near the curb, flung from the foot in motion..\n\nGenerative Task:\nDepict the moment just before the accident, showing the commuter walking normally. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the commuter holding an intact phone?", "tags": [] },
+      { "question": "Is the phone screen unbroken?", "tags": [] },
+      { "question": "Is a coffee cup shown in the commuter's hand?", "tags": [] },
+      { "question": "Are earbuds normally connected to the phone?", "tags": [] },
+      { "question": "Is the commuter depicted wearing sandals properly on both feet?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. Red smoothie coats countertop tiles and splashes upper cabinets.\n2. A blender jar sits lidless, blade still spinning slowly.\n3. Strawberries and ice cubes scatter across a cutting board.\n4. A recipe tablet display is dotted with liquid droplets.\n5. A power cord dangles, plug half-pulled from the socket.\n\nGenerative Task:\nDepict a cook preparing to start the blender. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the blender jar upright on its base?", "tags": [] },
+      { "question": "Is the blender shown without its lid attached?", "tags": [] },
+      { "question": "Is the countertop clean and dry?", "tags": [] },
+      { "question": "Are the strawberry and ice inside the blender jar?", "tags": [] },
+      { "question": "Is the power cord fully plugged into the outlet?", "tags": [] },
+      { "question": "Is the recipe tablet screen clean without droplets?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A parked car roof is dented with fresh green leaves stuck in the crease.\n2. A large tree branch lies split on the asphalt beside the vehicle.\n3. Shattered windshield glass glitters on the hood.\n4. The street gutter is lined with broken twigs and bark.\n5. A parking ticket that had been under the wiper has tumbled away in the wind.\n6. A neighbour’s recycling bin is tipped but unbroken nearby.\n\nGenerative Task:\nDepict the scene just before the wind arrives. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the tree branch unbroken and attached to the tree?", "tags": [] },
+      { "question": "Is the car roof smooth with no dents?", "tags": [] },
+      { "question": "Is the windshield whole without cracks?", "tags": [] },
+      { "question": "Is the parking ticket under the wiper visible?", "tags": [] },
+      { "question": "Is the recycling bin upright beside the curb?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A cafeteria tray lies inverted, bowls of soup splattered across a linoleum floor.\n2. Croutons and spoons scatter under nearby tables.\n3. A server’s apron bears orange stains.\n4. ‘Caution Wet’ placards just flank the spill zone.\n5. A ladle rests in a half-empty soup tureen.\n\nGenerative Task:\nShow a server steadily carrying a loaded tray of soup bowls toward tables. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the server carrying an upright tray with soup bowls?", "tags": [] },
+      { "question": "Are all soup bowls full and unspilled?", "tags": [] },
+      { "question": "Is the cafeteria floor dry and clear of food?", "tags": [] },
+      { "question": "Is the floor clear of any 'Caution Wet' placards?", "tags": [] },
+      { "question": "Is the server’s apron clean without stains?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. An evergreen Christmas tree lies sideways, branches bent and lights tangled.\n2. Shattered ornaments and hooks are scattered on the carpet.\n3. A crumpled paper-star topper rests near snapped tinsel strands.\n4. Short tufts of cat fur cling to fallen garland.\n5. The light string plug has just been pulled out of the wall socket.\n\nGenerative Task:\nDepict a cat midway up an upright, decorated tree. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is a cat climbing or perched in the upright tree?", "tags": [] },
+      { "question": "Is the Christmas tree standing straight?", "tags": [] },
+      { "question": "Are ornaments hanging unbroken on branches?", "tags": [] },
+      { "question": "Is the star topper fixed on the tree’s peak?", "tags": [] },
+      { "question": "Is the light plug inserted in the wall socket?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A frosted birthday cake lies upside-down on a kitchen floor, candles bent.\n2. Multi-coloured sprinkles stick to cabinet doors.\n3. A broken cake stand is split beside the mess.\n4. Icing smears across a child-height apron.\n5. A greeting card is spattered.\n\nGenerative Task:\nIllustrate a child carrying an intact, frosted cake on a stand toward a table. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the child holding a cake on a stand?", "tags": [] },
+      { "question": "Are the candles upright and unbent on the cake?", "tags": [] },
+      { "question": "Is the kitchen floor free of icing or crumbs?", "tags": [] },
+      { "question": "Is the apron clean without any icing.", "tags": [] },
+      { "question": "Is the greeting card lying clean and flat on a counter or table?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A shattered pickle jar and brine soak pantry floorboards.\n2. Glass shards nestle among dill sprigs and peppercorns.\n3. A top shelf shows an empty circle imprint in dust.\n4. A step stool leans to the side, one leg crushing a crate of eggs on the floor.\n5. A child-sized handprint appears in dust beside the gap.\n6. A child’s hat has fallen onto the floor.\n\nGenerative Task:\nIllustrate a child on a steady step stool reaching for an intact pickle jar on the top shelf. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the child standing safely on a level step stool?", "tags": [] },
+      { "question": "Is the child wearing a hat?", "tags": [] },
+      { "question": "Is the target pickle jar intact and full on the shelf?", "tags": [] },
+      { "question": "Is the pantry floor free of brine or glass?", "tags": [] },
+      { "question": "Are the eggs on the floor unbroken?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A tipped terrarium lies open, soil and succulents spilled on a desk.\n2. A toppled desk lamp throws shards of a cracked bulb.\n3. A hamster wheel sits empty beside gnawed power cable insulation.\n4. A cage door is ajar on a shelf.\n5. Tiny footprints in soil lead to a drawer gap.\n6. A half-eaten leafy cutting rests on a keyboard.\n\nGenerative Task:\nIllustrate a hamster squeezing through a cage door toward a closed terrarium sitting upright. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the terrarium upright with soil and plants inside?", "tags": [] },
+      { "question": "Is the hamster emerging from the cage door?", "tags": [] },
+      { "question": "Is the desk lamp upright with intact bulb?", "tags": [] },
+      { "question": "Is the power cable unchewed and intact?", "tags": [] },
+      { "question": "Is the keyboard free of leaves and soil?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A skateboard deck is snapped in two beside a concrete ramp.\n2. Protective wrist-guards lie scuffed and detached from straps.\n3. A sports drink bottle leaks across the park surface.\n4. A helmet’s visor bears fresh scrape marks.\n5. A broken wheel bolt glints near shredded grip-tape pieces.\n6. A cell-phone on selfie-stick shows a paused recording on cracked glass.\n\nGenerative Task:\nDepict a skater launching smoothly off the intact ramp on a whole skateboard—deck unbroken, helmet on head, drink bottle sealed and upright. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the skateboard deck whole with all wheels attached?", "tags": [] },
+      { "question": "Is the skater wearing a helmet and wrist-guards?", "tags": [] },
+      { "question": "Are the helmet and wrist-guards intact and free of scratches?", "tags": [] },
+      { "question": "Is the sports drink bottle standing closed on the ground?", "tags": [] },
+      { "question": "Is the phone screen uncracked on the selfie-stick?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A dinosaur skeleton exhibit lies collapsed, ribs and tail bones scattered on a museum floor.\n2. Rope barriers are toppled.\n3. A security alarm light flashes red above an entrance.\n4. A child’s rubber T-rex toy is left behind among the femur fragments.\n5. An information plaque is snapped off its stand.\n6. Dust patterns show fresh shoe scuffs around the debris.\n\nGenerative Task:\nDepict the moment just before the incident. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the dinosaur skeleton upright and complete on the pedestal?", "tags": [] },
+      { "question": "Are rope barriers standing upright around the exhibit?", "tags": [] },
+      { "question": "Is the security alarm light off (not flashing)?", "tags": [] },
+      { "question": "Is the information plaque mounted on its stand?", "tags": [] },
+      { "question": "Is the child holding the rubber toy?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. Two fruit-smoothies spread across the pool-deck tiles from a fallen tray.\n2. A flip-flop footprint smears through the colourful puddle.\n3. A pair of glasses from a poolside server falls onto the wet ground nearby.\n4. Straw pieces float amid the liquid.\n5. A lounge-chair towel is splashed pink at one corner.\n\nGenerative Task:\nIllustrate a poolside server carrying an upright tray with smoothies. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the server holding an upright tray with full smoothies?", "tags": [] },
+      { "question": "Is the pool-deck floor free of spills?", "tags": [] },
+      { "question": "Is the server wearing a pair of glasses?", "tags": [] },
+      { "question": "Is the server properly wearing flip-flops on their feet?", "tags": [] },
+      { "question": "Is the lounge-chair towel clean and unsplashed?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A dozen eggs lie smashed across a supermarket aisle tile.\n2. Yellow yolk and shell fragments spread beneath a squashed carton.\n3. Shoeprints show skid marks through the yolk.\n4. A floor-safety sign stands at one end of the spill.\n5. A wire shopping basket rests overturned beside the mess.\n6. Vegetables from the shopping basket are scattered across the floor.\n\nGenerative Task:\nIllustrate a shopper lifting a sealed egg carton from a full refrigerated shelf. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the shopper in the process of lifting an intact egg carton from the shelf?", "tags": [] },
+      { "question": "Is the supermarket floor beneath the shelf clean?", "tags": [] },
+      { "question": "Is the shopping basket upright?", "tags": [] },
+      { "question": "Are the vegetables still inside the shopping basket?", "tags": [] },
+      { "question": "Is the aisle clear of any floor-safety signs?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A dining-room tablecloth drapes askew, plates and cutlery shattered on the rug.\n2. Gravy soaks into a toppled chair seat.\n3. A dog’s leash trails from a collar beside a turkey platter.\n4. Cranberry sauce stains the leg of a buffet dresser.\n5. Paw prints track gravy toward an open patio door.\n\nGenerative Task:\nDepict a dog tugging the tablecloth edge while a full place setting remains on the table. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the dog pulling or reaching for the tablecloth?", "tags": [] },
+      { "question": "Is the tablecloth still mostly flat on the table?", "tags": [] },
+      { "question": "Are plates and cutlery arranged neatly on the table?", "tags": [] },
+      { "question": "Is the chair upright and clean?", "tags": [] },
+      { "question": "Is the floor clean and free of paw prints?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. A fallen glass jar filled with turpentine is cracked with its lid detached.\n2. Bright turpentine pools across an art-studio floor, dissolving pigment.\n3. Canvas edges are stained where the liquid reached.\n4. A paint-mixing palette from the stand lies face-down on the floor.\n5. A stool’s leg is splashed with rainbow streaks.\n\nGenerative Task:\nShow an artist placing a sealed turpentine jar on the workstation. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the turpentine jar upright with lid on?", "tags": [] },
+      { "question": "Is the studio floor free of liquid spills?", "tags": [] },
+      { "question": "Is the canvas clean and unstained on its easel?", "tags": [] },
+      { "question": "Is the palette resting paint-side up on the stand?", "tags": [] },
+      { "question": "Is the stool’s leg clean and free of paint?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-RR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Reconstructive Reasoning",
+    "Prompt": "Observations:\n1. An outdoor painter’s easel lies flat, wet landscape canvas face-down on grass.\n2. Gust-scattered brushes dot the lawn.\n3. A tipped jar of rinse water muddies nearby petals.\n4. A picnic cloth is half-dragged by the wind, fruit tipped.\n5. The sky umbrella frame is bent with one panel torn.\n\nGenerative Task:\nGenerate an image capturing the calm instant before the wind begins to rise. All objects mentioned in Observations must be reconstructed in the scene, except those that are meant to have disappeared in the reconstructed moment.",
+    "Checklist": [
+      { "question": "Is the easel standing upright with canvas secured?", "tags": [] },
+      { "question": "Are paint brushes collected in a jar on the stool?", "tags": [] },
+      { "question": "Is the rinse-water jar sealed or upright?", "tags": [] },
+      { "question": "Is the picnic cloth flat with fruit on it?", "tags": [] },
+      { "question": "Is the sky umbrella intact and shading the easel?", "tags": [] }
+    ],
+    "Remark": "GPT"
+  }
+}

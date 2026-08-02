@@ -1,0 +1,82 @@
+# Copyright (c) 2025 ByteDance Ltd. and/or its affiliates
+# SPDX-License-Identifier: Apache-2.0
+#
+# Supervised fine-tuning (SFT) recipe: blend several high-quality T2I
+# subsets (Seedream, Flux, structured-prompt JSON) with the L10 (full
+# ground-truth) structured-prompt drop rate.
+#
+# Each `dataset_names: - <name>: [N]` line means "sample N parquet shards
+# from this dataset". `<DATASET_NAME>` placeholders must be defined in
+# `data/dataset_info.py` before training.
+
+t2i_sft_seedream:
+  dataset_names:
+  - <DATASET_NAME_1>: [18000]
+  - <DATASET_NAME_2>: [2000]
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 2048
+    min_image_size: 512
+    max_pixels: 1_763_584 # 1328x1328
+  max_aspect_ratio: 4.0
+  is_mandatory: false
+  min_size: 512
+  weight: 50
+
+unified_t2i_pretrain:
+  dataset_names:
+  - <DATASET_NAME_3>: [4000000]
+  - <DATASET_NAME_4>: [3000000]
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1536
+    min_image_size: 512
+    max_pixels: 2457600 # 1536x1536
+  max_aspect_ratio: 4.0
+  is_mandatory: false
+  min_size: 512
+  weight: 50
+
+unified_t2i_ct:
+  dataset_names:
+  - <DATASET_NAME_5>: [2000]
+  - <DATASET_NAME_6>: [1500]
+  - <DATASET_NAME_7>: [1000]
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1536
+    min_image_size: 320
+  max_aspect_ratio: 3.5
+  is_mandatory: true
+  remove_gen_prompts: true
+  min_size: 512
+  weight: 170
+
+t2i_sft_flux:
+  dataset_names:
+  - <DATASET_NAME_8>: [200]
+  - <DATASET_NAME_9>: [200]
+  - <DATASET_NAME_10>: [150]
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 1536
+    min_image_size: 512
+  is_mandatory: false
+  max_aspect_ratio: 3
+  min_size: 512
+  weight: 90
+
+t2i_sft_json:
+  dataset_names:
+  - <DATASET_NAME_11>: [512]
+  sampling_config_name: l10
+  json_single_quote: True
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 2048
+    min_image_size: 512
+    max_pixels: 4194304 # 2048x2048
+  max_aspect_ratio: 4.0
+  min_size: 512
+  is_mandatory: true
+  weight: 180

@@ -1,0 +1,86 @@
+You judge semantic overlap between two lists of visual facts, both
+grouped into four categories (O/A/R/G — see below).
+
+You will receive:
+  SOURCE: the ground-truth list of visual facts for an image (from a
+          structured scene specification).
+  CAPTION: the list of visual facts extracted from an image caption.
+
+# Spatial conventions used in BOTH lists
+
+Bounding boxes appear as `<bbox>x1 y1 x2 y2</bbox>` where the four
+integers are **normalized 0-1000 coordinates** on the image canvas
+(top-left = (0,0), bottom-right = (1000,1000)). A bbox is a
+machine-readable spatial representation of a region.
+
+Natural-language spatial expressions describe the same spatial regions
+in words: "in the upper-left", "top middle", "near the bottom right",
+"in the center of the frame", "on the left side", "between A and B",
+"behind the table", etc. They are equivalent to (paraphrases of)
+bbox coordinates.
+
+**For matching purposes, treat bbox coordinates and natural-language
+spatial expressions as INTERCHANGEABLE.** A bbox at top-left (e.g.
+`<bbox>50 50 350 350</bbox>`) matches the verbal description "in the
+upper-left" or "top-left quadrant". A bbox spanning the center
+(`<bbox>300 300 700 700</bbox>`) matches "in the middle of the image"
+or "central area".
+
+Do NOT require exact numerical overlap between two bboxes when both
+sides happen to provide bbox values — they were produced by different
+annotators on the same image and a reasonable IoU (roughly the
+verbal-region level, not pixel-level) is sufficient.
+
+# Matching rules
+
+For EACH source tuple, decide whether any caption tuple conveys the
+same visual fact. Synonyms, paraphrases, and hypernyms count (e.g.
+"crimson" matches "red", "sofa" matches "couch", "smiling" matches
+"has a smile", "near the door" matches "by the doorway",
+"<bbox>...</bbox> spanning the upper third" matches "in the top").
+Differences in surface form do not matter; only whether the same
+visible fact is conveyed.
+
+Then do the SYMMETRIC check: for EACH caption tuple, mark YES if any
+source tuple conveys it, NO otherwise. Caption tuples that have no
+source support are **unsupported** (hallucinations or embellishments).
+
+Output format (one JSON object):
+
+{
+  "source_recall": {
+    "O": [YES/NO, ...],  # length = len(SOURCE.O)
+    "A": [YES/NO, ...],  # length = len(SOURCE.A)
+    "R": [YES/NO, ...],  # length = len(SOURCE.R)
+    "G": [YES/NO, ...]   # length = len(SOURCE.G)
+  },
+  "caption_precision": {
+    "O": [YES/NO, ...],  # length = len(CAPTION.O)
+    "A": [YES/NO, ...],  # length = len(CAPTION.A)
+    "R": [YES/NO, ...],  # length = len(CAPTION.R)
+    "G": [YES/NO, ...]   # length = len(CAPTION.G)
+  }
+}
+
+Rules:
+  - Apply the SAME matching bar in both directions.
+  - Match entities by semantic identity, not ID. "woman in pink sari"
+    matches "the woman" if there is only one woman.
+  - Attribute match: "color=red" in A matches "color=crimson" (synonym),
+    but "color=red" does NOT match "color=blue".
+  - Relation match: "person sits on cart" matches "person on cart",
+    even if the relation phrase differs.
+  - Spatial match: bbox ⇔ verbal location is INTERCHANGEABLE (see top).
+  - Do NOT count partial overlaps as YES — the essential visual fact
+    must be the same.
+  - If a tuple's category mismatches (e.g. SOURCE.A vs CAPTION.G), it
+    can still match if the underlying fact is the same.
+
+Output ONLY the JSON object, no commentary, no markdown fences.
+
+USER
+SOURCE:
+{source_tuples_json}
+
+CAPTION:
+{caption_tuples_json}

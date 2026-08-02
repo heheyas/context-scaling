@@ -1,0 +1,1465 @@
+{
+  "R-BR-001": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A long, winding line of colorful dominoes is set up across the desk. The line of dominoes leads directly to the base of a lightweight, cylindrical empty soda can. The can is positioned to be triggered as it falls. On the edge of the can, there is an eraser resting precariously. The line continues on the far side of the can, positioned to be triggered as the can falls. The final domino in the entire sequence is perched precariously on the edge of the desk, directly above the large 'on/off' switch of a power strip lying on the floor. The power strip is plugged in, and a desk lamp, which is also plugged into the strip, is turned ON, casting a warm light on the scene. The 'on/off' switch now has a small indicator light: when the switch is ON, the light is glowing, and when it is OFF, the light is not illuminated. A heavy, closed book and a full ceramic coffee mug sit safely on a corner of the desk, away from the domino path. Action: The first domino in the line is gently tipped over, initiating a chain reaction. Render the scene after all motion has completely stopped.",
+    "Checklist": [
+      { "question": "Are all the dominoes in the line now lying flat on the desk?", "tags": ["behave_pos"] },
+      { "question": "Is the empty soda can tipped over and lying on its side?", "tags": ["behave_pos"] },
+      { "question": "Is the eraser fallen off the top of the soda can?", "tags": ["behave_pos"] },
+      { "question": "Is the final domino now lying on the floor, not on the desk?", "tags": ["behave_pos"] },
+      { "question": "Is the indicator light on the power strip switch off?", "tags": ["behave_pos"] },
+      { "question": "Is the desk lamp now turned OFF?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy, closed book on the corner of the desk still in its original position?", "tags": ["behave_neg"] },
+      { "question": "Is the full ceramic coffee mug still standing upright and undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-002": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A person uses sharp scissors to cut through the ropes suspending heavy containers 12 feet above a concrete floor. The first three objects (from left to right) are suspended by two ropes, one on the left and one on the right. The first object, an open wooden crate filled with apples, has one rope cut. The second object, a tightly knotted plastic bag full of potatoes, has both ropes cut. The third object, an open cardboard box of oranges, has one rope cut. The person leaves the fourth rope intact, which holds a small metal toolbox.",
+    "Checklist": [
+      { "question": "Is the wooden crate still suspended in the air?", "tags": ["behave_pos"] },
+      { "question": "Is the tied plastic bag on the concrete floor?", "tags": ["behave_pos"] },
+      { "question": "Is the cardboard box still suspended in the air?", "tags": ["behave_pos"] },
+      { "question": "Are apples scattered on the ground?", "tags": ["behave_pos"] },
+      { "question": "Are potatoes in the plastic bag on the ground?", "tags": ["behave_pos"] },
+      { "question": "Are oranges scattered on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the metal toolbox still suspended in the air?", "tags": ["behave_neg"] },
+      { "question": "Is the fourth rope still intact and uncut?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-003": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a laboratory, a person accidentally knocks over a table. On the table are three unsealed glass beakers filled with red, blue, and yellow liquid, two glass test tubes with a clear solution, a stack of papers, and a lit Bunsen burner connected by a flexible gas hose. The person had just moved a microscope and calculator to a nearby safe shelf. The table tips completely over, causing the lit burner and all other remaining contents to fall and crash onto the white floor. The burning nozzle of the Bunsen burner lands directly on top of the stack of papers. The image should capture the scene moments after the crash.",
+    "Checklist": [
+      { "question": "Is the table overturned on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the glass beakers broken on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the glass test tubes broken on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there red, blue, and yellow liquid spilled and mixed on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the lit Bunsen burner on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the papers on the floor actively on fire or charred and smoking?", "tags": ["behave_pos"] },
+      { "question": "Is the microscope still safely on the shelf?", "tags": ["behave_neg"] },
+      { "question": "Is the calculator still safely on the shelf?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-004": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a workshop, a person places four items on the metal table of a heavy hydraulic press: a fresh egg, a full and unopened soda can, a cardboard tube, and an empty glass bottle. A wrench and a screwdriver have been moved from the table to a safe workbench nearby. The person then activates the hydraulic press, bringing the press plate down with crushing force onto all four items, and then raises the press plate back up, revealing the crushed remains on the table.",
+    "Checklist": [
+      { "question": "Is the egg completely crushed?", "tags": ["behave_pos"] },
+      { "question": "Is the soda can crushed and flattened?", "tags": ["behave_pos"] },
+      { "question": "Is the cardboard tube compressed and flattened?", "tags": ["behave_pos"] },
+      { "question": "Is the glass bottle shattered?", "tags": ["behave_pos"] },
+      { "question": "Is there egg yolk and white spilled on the table?", "tags": ["behave_pos"] },
+      { "question": "Is there soda spilled on the table?", "tags": ["behave_pos"] },
+      { "question": "Are there shattered glass fragments on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the wrench still intact on the safe workbench?", "tags": ["behave_neg"] },
+      { "question": "Is the screwdriver still intact on the safe workbench?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-005": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A fire is burning brightly in a stone fire pit. A person has placed several items on the flat stone rim, too close to the intense heat: a marshmallow on a stick is held just over the flames, a thin plastic cup, a piece of cardboard, and a small pat of butter. A metal mug full of water sits slightly further back on the rim. In the background, a garden hose lies on the grass. Action: The items are left exposed to the fire's intense heat for one minute, then the fire is extinguished using a garden hose, and the garden hose is placed back. Render the scene after the fire has been extinguished and all motion has stopped.",
+    "Checklist": [
+      { "question": "Is the marshmallow on the stick visibly toasted, browned, and drooping from melting?", "tags": ["behave_pos"] },
+      { "question": "Is the piece of cardboard blackened, smoldering, or actively burning at the edge closest to the fire?", "tags": ["behave_pos"] },
+      { "question": "Is the thin plastic cup visibly warped, melted, and deformed on the side facing the fire?", "tags": ["behave_pos"] },
+      { "question": "Is the pat of butter melted into a yellow, oily puddle?", "tags": ["behave_pos"] },
+      { "question": "Is the fire extinguished after the garden hose is used?", "tags": ["behave_pos"] },
+      { "question": "Is there any smoke remaining in the air after the fire is extinguished?", "tags": ["behave_pos"] },
+      { "question": "Is the garden hose lying on the grass in the background?", "tags": ["behave_pos"] },
+      { "question": "Is the metal mug still on the flat stone rim and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-006": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A person is carrying a large wooden tray up the stairs. On the tray are several items: a tall glass of water, a ceramic bowl of soup, a plate with a sandwich and a whole apple, and a small, delicate ceramic vase with a single flower. A wooden handrail runs along the wall, and a framed picture hangs on the wall beside the stairs. Action: The person trips on a step, dropping the entire tray. Render the scene on the staircase after the crash is complete and everything has settled.",
+    "Checklist": [
+      { "question": "Is the glass shattered into many pieces on the stairs?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic bowl broken into fragments on the stairs?", "tags": ["behave_pos"] },
+      { "question": "Is the delicate ceramic vase shattered on the stairs?", "tags": ["behave_pos"] },
+      { "question": "Is the staircase wet with spilled water and soup?", "tags": ["behave_pos"] },
+      { "question": "Is the sandwich dislodged from its plate and possibly broken apart on the stairs?", "tags": ["behave_pos"] },
+      { "question": "Is the apple shown having rolled down several steps, away from the main crash site?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden tray itself lying on the stairs?", "tags": ["behave_pos"] },
+      { "question": "Is the single flower from the vase now lying separately amidst the debris?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden handrail along the wall still intact and securely mounted?", "tags": ["behave_neg"] },
+      { "question": "Is the framed picture on the wall still hanging straight and undamaged?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-007": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a garage, a parked car accidentally rolls forward at a fast speed, and its bumper hits a workbench. On the workbench are one open, fragile glass jar filled with screws, one open-topped plastic container full of nails, a wooden toolbox, and several loose papers. On a separate, sturdy shelf well away from the workbench, a smartphone and car keys sit untouched. The car's impact on the workbench causes everything on it to be thrown off. Render the scene immediately after all actions have finished.",
+    "Checklist": [
+      { "question": "Is the glass jar on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are there glass fragments on the ground after the jar is broken?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic container on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden toolbox on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the screws scattered on the floor from the broken jar?", "tags": ["behave_pos"] },
+      { "question": "Are the nails scattered on the floor from the open-topped container?", "tags": ["behave_pos"] },
+      { "question": "Are the papers scattered on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the car in contact with the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is there any visible damage to the front of the car from the impact with the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is the workbench completely empty after the car's impact?", "tags": ["behave_pos"] },
+      { "question": "Is the smartphone still safe and untouched on the separate shelf?", "tags": ["behave_neg"] },
+      { "question": "Are the car keys still safe and untouched on the separate shelf?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-008": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A plain, unfrosted cupcake sits on a small plate. Next to it, a single fresh strawberry is standing upright. A shallow bowl contains a loose pile of colorful sprinkles. A clean drinking glass stands nearby. Action: A person takes a piping bag filled with thick, white frosting and fitted with a star-shaped nozzle. They squeeze a generous, continuous swirl of frosting directly onto the cupcake, then squeeze a small dollop onto the strawberry and the bowl of sprinkles. The piping bag is then placed with the nozzle facing inward. Render the scene at the exact instant the person stops squeezing.",
+    "Checklist": [
+      { "question": "Is there a continuous swirl of white frosting sitting on top of the cupcake?", "tags": ["behave_pos"] },
+      { "question": "Is the shape of the frosting on the cupcake ridged or textured, consistent with a star-shaped nozzle?", "tags": ["behave_pos"] },
+      { "question": "Is there a small dollop of white frosting sitting on top of the fresh strawberry?", "tags": ["behave_pos"] },
+      { "question": "Is the shape of the frosting on the fresh strawberry ridged or textured, consistent with a star-shaped nozzle?", "tags": ["behave_pos"] },
+      { "question": "Is there a small dollop of white frosting in the bowl of sprinkles?", "tags": ["behave_pos"] },
+      { "question": "Is the shape of the frosting on the bowl of sprinkles ridged or textured, consistent with a star-shaped nozzle?", "tags": ["behave_pos"] },
+      { "question": "Is there any white frosting residue on the nozzle of the piping bag?", "tags": ["behave_pos"] },
+      { "question": "Is the clean drinking glass nearby still empty and untouched?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-009": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A picnic table stands on a grassy lawn. The table is covered with a paper tablecloth that hangs over the edge. On the tablecloth are several items: one plastic plate with a sandwich, one tall glass cup filled with a dark drink, and a heavy ceramic bowl filled with salad. A separate lawn chair sits safely to the side. Action: A soccer ball is kicked with great force and strikes the edge of the tablecloth that is hanging over the side of the table, causing all objects to fall onto the ground. Fortunately, the lawn is soft, and none of the items are broken. Render the scene a moment after this impact.",
+    "Checklist": [
+      { "question": "Is the glass cup on the grass but visibly intact?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic bowl on the ground but visibly intact?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic plate on the ground but visibly intact?", "tags": ["behave_pos"] },
+      { "question": "Is the paper tablecloth now lying in a crumpled heap on the grass?", "tags": ["behave_pos"] },
+      { "question": "Is the dark drink from the cup spilled across the tablecloth or the surrounding grass?", "tags": ["behave_pos"] },
+      { "question": "Is the sandwich now on the ground and dislodged from the plate?", "tags": ["behave_pos"] },
+      { "question": "Is the salad scattered across the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the soccer ball now resting on the ground near the table?", "tags": ["behave_pos"] },
+      { "question": "Is the picnic table empty after the soccer ball strikes the tablecloth?", "tags": ["behave_pos"] },
+      { "question": "Is the picnic table itself still standing upright and unmoved?", "tags": ["behave_neg"] },
+      { "question": "Is the lawn chair to the side still upright and untouched?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-010": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a basement workshop, an electrical power strip is plugged into the wall, powering five active devices: a brightly lit table lamp that serves as the area's main light source, a spinning fan, a digital clock with a glowing red display, a laptop charging with its screen lit up and playing a video, and a tablet charging with its screen also on and showing a video. From above, a person accidentally drops a cup of water, and the cup falls onto the live power strip, after which they immediately rush to unplug all the devices from the strip. Render the scene immediately after all actions have finished.",
+    "Checklist": [
+      { "question": "Is the table lamp turned off or dark?", "tags": ["behave_pos"] },
+      { "question": "Is the fan stopped or motionless?", "tags": ["behave_pos"] },
+      { "question": "Is the digital clock's display now blank and unlit?", "tags": ["behave_pos"] },
+      { "question": "Is there water on the power strip?", "tags": ["behave_pos"] },
+      { "question": "Is the cup shown near the power strip after falling?", "tags": ["behave_pos"] },
+      { "question": "Is the cup overturned or possibly shattered?", "tags": ["behave_pos"] },
+      { "question": "Are all the plugs completely unplugged from the power strip?", "tags": ["behave_pos"] },
+      { "question": "Is the laptop still shown with its screen lit up?", "tags": ["behave_neg"] },
+      { "question": "Is the tablet still shown with its screen lit up?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-011": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A tall, clear glass pitcher filled with still water sits on the counter. On a small plate next to it are the ingredients for infused water: several thin lemon slices, a few tapioca pearls, a few sprigs of fresh mint, and a spoonful of white granulated sugar. A clean, empty glass stands safely to the side. Action: All the ingredients from the plate are tipped into the pitcher of water, and a small spoonful of strawberry jam is added and shaken well. Render the scene a few seconds after the ingredients have settled.",
+    "Checklist": [
+      { "question": "Are the thin lemon slices floating on or near the surface of the water?", "tags": ["behave_pos"] },
+      { "question": "Do the tapioca pearls settle at the bottom of the pitcher?", "tags": ["behave_pos"] },
+      { "question": "Are the fresh mint sprigs floating on the surface of the water?", "tags": ["behave_pos"] },
+      { "question": "Is the spoonful of sugar gone because it has dissolved?", "tags": ["behave_pos"] },
+      { "question": "Does the liquid in the pitcher turn red from the strawberry jam?", "tags": ["behave_pos"] },
+      { "question": "Are small splashes of water visible on the inside walls of the pitcher above the water line?", "tags": ["behave_pos"] },
+      { "question": "Is the small plate that held the ingredients now empty?", "tags": ["behave_pos"] },
+      { "question": "Is the empty glass standing next to the pitcher still clean and dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-012": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A shallow wooden tray is filled with fine sawdust. Mixed into the sawdust is a variety of small items: one iron nail, one long steel chain, one brass screw, one small pebble, one small magnet, and some iron filings. Next to the tray, a magnetic compass lies flat on the bench. An unpowered bar electromagnet is suspended from a clamp directly above the tray. Action: The electromagnet is lowered into the sawdust, switched on to full power, and then lifted straight up until it is clear of the tray. Render the scene at the exact instant the magnet clears the top of the sawdust.",
+    "Checklist": [
+      { "question": "Is the single iron nail clinging to the bottom of the electromagnet?", "tags": ["behave_pos"] },
+      { "question": "Is the steel chain hanging vertically down from the magnet?", "tags": ["behave_pos"] },
+      { "question": "Is the small magnet lifted and attached to the electromagnet?", "tags": ["behave_pos"] },
+      { "question": "Are iron filings clinging to the electromagnet?", "tags": ["behave_pos"] },
+      { "question": "Is the needle of the magnetic compass on the bench pointing directly at the powerful electromagnet?", "tags": ["behave_pos"] },
+      { "question": "Is the brass screw still visible within the sawdust in the tray, having been left behind?", "tags": ["behave_neg"] },
+      { "question": "Is the small pebble still visible within the sawdust?", "tags": ["behave_neg"] },
+      { "question": "Is the wooden tray itself still flat on the bench, unaffected by the magnet?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-013": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: The bathtub's drain is securely plugged, and the tub is filled almost to the brim with water and there is a floating rubber duck on the water. The bathroom door is closed, and a clean towel hangs on a hook on the outside of the door. Inside, a mirror is mounted over the sink. On the floor, there is a roll of toilet paper and a magazine. A sealed bottle of shampoo sits on a high shelf. Action: The hot water from the bathtub faucet is turned on to full pressure and left running for five minutes. Render the scene after the five minutes are up.",
+    "Checklist": [
+      { "question": "Is the bathtub overflowing, with water cascading onto the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the bathroom floor covered with water?", "tags": ["behave_pos"] },
+      { "question": "Is the mirror over the sink completely fogged over with condensation?", "tags": ["behave_pos"] },
+      { "question": "Is the roll of toilet paper on the floor unraveled and disintegrated into a wet pulp?", "tags": ["behave_pos"] },
+      { "question": "Is the rubber duck floating on the surface of the water on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the magazine floating but also visibly waterlogged, with its pages swollen and warped?", "tags": ["behave_pos"] },
+      { "question": "Is the entire room filled with a visible steamy or misty haze?", "tags": ["behave_pos"] },
+      { "question": "Is the sealed bottle of shampoo on the high shelf still upright and dry?", "tags": ["behave_neg"] },
+      { "question": "Is the towel hanging on the outside of the closed door still completely dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-014": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A dark cast-iron skillet sits on a stove burner. Inside the cold pan is a tight cluster of items: a pat of butter, a freshly cracked raw egg, a gummy bear, a white sugar cube, a fresh spinach leaf, and a small, dry piece of paper. Next to the stove, a metal spoon and a salt shaker sit on the counter. Action: The burner is turned on to high heat. Render the scene after 30 seconds of intense heating.",
+    "Checklist": [
+      { "question": "Is the pat of butter completely melted into a bubbling, liquid pool?", "tags": ["behave_pos"] },
+      { "question": "Is the clear part of the raw egg now opaque white and solidified?", "tags": ["behave_pos"] },
+      { "question": "Is the gummy bear slumped, glossy, and visibly melting, losing its original shape?", "tags": ["behave_pos"] },
+      { "question": "Is the white sugar cube melted into a bubbling, amber or brown liquid (caramel)?", "tags": ["behave_pos"] },
+      { "question": "Is the fresh spinach leaf visibly wilted, limp, and darkened from the heat?", "tags": ["behave_pos"] },
+      { "question": "Is the piece of paper browned, scorched, or possibly smoldering at the edges?", "tags": ["behave_pos"] },
+      { "question": "Is there steam or smoke visibly rising from the hot pan?", "tags": ["behave_pos"] },
+      { "question": "Is the metal spoon on the counter next to the stove still solid and in its place?", "tags": ["behave_neg"] },
+      { "question": "Is the salt shaker on the counter still upright and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-015": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A deep pot of hot, shimmering cooking oil sits on a lit stove burner. On the counter next to the stove, there is a clean, empty white ceramic plate lined with a single sheet of plain white paper towel. Action: Several slices of battered fresh fish, a handful of thinly sliced potatoes, and some fresh scallions are fried in the hot oil. A person then uses a metal slotted spoon to lift all the cooked items out of the oil and immediately places them onto the paper towel-lined plate. Render the scene at the exact instant the hot, oily food makes contact with the paper towel.",
+    "Checklist": [
+      { "question": "Are the slices of battered fish a crispy, golden-brown color on the plate?", "tags": ["behave_pos"] },
+      { "question": "Are the thinly sliced potatoes rigid, golden-brown, and visibly crispy on the plate?", "tags": ["behave_pos"] },
+      { "question": "Do the scallions turn dark after being fried in the hot oil?", "tags": ["behave_pos"] },
+      { "question": "Is the white paper towel on the plate showing translucent spots where the hot oil from the food is being absorbed?", "tags": ["behave_pos"] },
+      { "question": "Is there oil residue on the metal slotted spoon?", "tags": ["behave_pos"] },
+      { "question": "Is the metal slotted spoon, now empty, visible nearby (e.g., resting on the side of the pot or the counter)?", "tags": ["behave_pos"] },
+      { "question": "Is the stove burner beneath the pot still visibly on (e.g., showing a flame or a glowing coil)?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-016": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: On the desk sits a tight cluster of items: a single ice cube in a small dish, a red wax crayon, a small square of chocolate, a lit candle in a simple holder, a small pile of flour, and an empty, lightweight plastic cup. A heavy glass paperweight and a ceramic mug sit nearby. Action: A person aims a hair dryer, set to its highest heat and fan speed, and sweeps its nozzle slowly across the cluster of items. Render the scene at the exact instant the hair dryer is switched off after its sweep.",
+    "Checklist": [
+      { "question": "Is the ice cube partially or fully melted and sitting in a puddle of water in its dish?", "tags": ["behave_pos"] },
+      { "question": "Is the red wax crayon visibly melted or softened, losing its sharp shape where the heat passed?", "tags": ["behave_pos"] },
+      { "question": "Is the chocolate square visibly glossy, soft, and melting?", "tags": ["behave_pos"] },
+      { "question": "Is the candle's flame extinguished, possibly with a thin wisp of smoke rising from the wick?", "tags": ["behave_pos"] },
+      { "question": "Is the pile of flour blown away, with flour scattered across the desk in the direction of the airflow?", "tags": ["behave_pos"] },
+      { "question": "Is the empty plastic cup knocked over and lying on its side?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy glass paperweight still unmoved in its original position?", "tags": ["behave_neg"] },
+      { "question": "Is the ceramic mug still standing upright and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-017": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: The fan on the air hockey table is initially off. On its perforated playing surface rests a variety of items: a delicately built house of cards, a lightweight feather, a piece of tissue, a child's pinwheel on a stable stand, and a standard air hockey puck with a small lightweight ball on its edge. On the solid, non-perforated side rail, a heavy glass of soda and two heavy plastic air hockey mallets are placed securely. Action: The powerful fan underneath the table is switched on. Render the scene ten seconds after the air starts blowing, capturing the ongoing chaos.",
+    "Checklist": [
+      { "question": "Is the house of cards completely collapsed, with its individual cards scattered across the table?", "tags": ["behave_pos"] },
+      { "question": "Is the lightweight feather hovering high above the table surface in the air?", "tags": ["behave_pos"] },
+      { "question": "Is the piece of tissue lifted by the airflow?", "tags": ["behave_pos"] },
+      { "question": "Does the small lightweight ball fall off the air hockey puck?", "tags": ["behave_pos"] },
+      { "question": "Are the vanes of the pinwheel visibly blurred, indicating rapid rotation?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy glass of soda still standing securely on the solid side rail?", "tags": ["behave_neg"] },
+      { "question": "Are the two heavy plastic air hockey mallets still resting securely on the side rail?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-018": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: On a wooden workbench, a variety of items are clustered together: a tall, complete house of cards; a shallow dish filled with a mound of white flour; and a plastic cup containing a small amount of red juice. There is also an empty aluminum soda can placed above the 'x' mark. Further back on the bench sits a heavy cast-iron dumbbell. Action: A person aims a powerful, running leaf blower directly at the cluster of items and blasts them with air for three seconds, then unplugs the leaf blower and places it on the workbench. Render the scene right after the blower is turned off.",
+    "Checklist": [
+      { "question": "Are the playing cards that formed the house of cards completely blown apart and scattered across the bench?", "tags": ["behave_pos"] },
+      { "question": "Is the white flour from the dish blown out and scattered widely across the bench surface?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic cup knocked over and lying on its side?", "tags": ["behave_pos"] },
+      { "question": "Is there a splatter of red juice on the bench?", "tags": ["behave_pos"] },
+      { "question": "Is the empty aluminum soda can no longer positioned above the 'x' mark after the leaf blower blast?", "tags": ["behave_pos"] },
+      { "question": "Is the leaf blower unplugged and placed on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy cast-iron dumbbell in the background still in its original position, unmoved?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-019": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A transparent pot of water is boiling vigorously on a stove. On a clean, dry countertop next to the stove, there is a wooden cutting board. A tray holds several room-temperature items: a cold metal spoon, a piece of dark chocolate, a single dry saltine cracker, and a pair of clean eyeglasses. Action: The tray is held directly in the thick plume of steam for ten seconds, and then immediately placed down on the wooden cutting board. Render the scene the instant after the tray makes contact with the cutting board.",
+    "Checklist": [
+      { "question": "Is the metal spoon covered with a visible layer of condensation (water droplets)?", "tags": ["behave_pos"] },
+      { "question": "Is the piece of dark chocolate visibly glossy and melted?", "tags": ["behave_pos"] },
+      { "question": "Is the saltine cracker visibly limp, sagging, or warped from absorbing moisture?", "tags": ["behave_pos"] },
+      { "question": "Are the lenses of the eyeglasses completely fogged over and opaque?", "tags": ["behave_pos"] },
+      { "question": "Is a wet patch or mark beginning to form on the wooden cutting board directly beneath the tray?", "tags": ["behave_pos"] },
+      { "question": "Is the plume of steam from the pot now rising unobstructed into the air?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the water in the pot still visibly agitated from boiling?", "tags": ["behave_neg"] },
+      { "question": "Is the stove burner beneath the pot still visibly on (e.g., showing a flame or glowing element)?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-020": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A large, flat wooden lazy susan (turntable) sits in the center of the table. Several items are placed near its center: a tall, thin glass filled with orange juice; a stack of four sugar cubes; a lightweight, unlit candle in a holder; and a dense rubber ball. Next to the lazy susan, on the fixed surface of the table, sits a heavy ceramic bowl. Action: The lazy susan is spun forcefully at high speed for several seconds and then abruptly stopped, causing all items to be flung onto the main table. Render the scene at the exact instant the turntable stops moving.",
+    "Checklist": [
+      { "question": "Is the tall glass now lying on its side on the main table surface, having been thrown off the turntable?", "tags": ["behave_pos"] },
+      { "question": "Is there a large splatter of orange juice across the main table surface?", "tags": ["behave_pos"] },
+      { "question": "Are the sugar cubes scattered across the main table surface, no longer in a neat stack?", "tags": ["behave_pos"] },
+      { "question": "Is the lightweight candle holder now lying on the main table surface?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the lazy susan itself wet with streaks of orange juice leading to the edge?", "tags": ["behave_pos"] },
+      { "question": "Is the dense rubber ball now resting on the main table surface?", "tags": ["behave_pos"] },
+      { "question": "Is the lazy susan itself depicted as stationary and not blurred?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic bowl on the main table still upright and in its original position?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-021": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A tall glass filled with dark soda and several ice cubes sits on the desk. Next to it, an open paperback book has handwritten ink notes on its pages. A smartphone lies screen-up near the glass. At the far side of the desk, a heavy ceramic mug is standing. Action: The glass is accidentally knocked over, spilling its entire contents across the open book and the smartphone. Render the immediate aftermath of the spill.",
+    "Checklist": [
+      { "question": "Is the glass lying on its side on the desk?", "tags": ["behave_pos"] },
+      { "question": "Are ice cubes scattered on the desk and mixed with the spilled liquid?", "tags": ["behave_pos"] },
+      { "question": "Is there a large puddle of dark liquid spreading across the desk?", "tags": ["behave_pos"] },
+      { "question": "Are the pages of the open book visibly soaked and darkened by the soda?", "tags": ["behave_pos"] },
+      { "question": "Is the ink on the book's pages visibly smeared or running where it got wet?", "tags": ["behave_pos"] },
+      { "question": "Is the screen of the smartphone covered in droplets or a film of the dark liquid?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic mug at the far side of the desk still standing upright and dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-022": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A steel bar is held firmly in a metal vise. Below the bar, a shallow metal tray contains a line of small items: a few fluffy cotton balls, an inflated red balloon, a block of yellow wax, and a shallow dish of rubbing alcohol. A fire brick sits at the end of the line. On a shelf above, a closed can of oil and a pair of safety goggles are untouched. Action: A person, wearing work gloves, uses a powered angle grinder to cut into the steel bar, sending a directed shower of hot, glowing sparks down onto the items in the tray. Render the scene showing the items in the tray being affected.",
+    "Checklist": [
+      { "question": "Is a brilliant shower of sparks being ejected from the point where the grinder meets the steel bar?", "tags": ["behave_pos"] },
+      { "question": "Are the cotton balls smoldering or actively burning with small flames?", "tags": ["behave_pos"] },
+      { "question": "Is the red balloon popped, with its shriveled remnants visible in the tray?", "tags": ["behave_pos"] },
+      { "question": "Is the block of yellow wax visibly pitted and melted where the sparks have hit it?", "tags": ["behave_pos"] },
+      { "question": "Is the rubbing alcohol in the shallow dish ignited and burning with a visible flame?", "tags": ["behave_pos"] },
+      { "question": "Is the point on the steel bar being cut glowing red or orange from the intense heat?", "tags": ["behave_pos"] },
+      { "question": "Is the spinning disc of the angle grinder blurred, indicating rapid motion?", "tags": ["behave_pos"] },
+      { "question": "Is the fire brick at the end of the line still solid and largely unaffected, though possibly hit by sparks?", "tags": ["behave_neg"] },
+      { "question": "Are the safety goggles and the can of oil on the shelf above still untouched and safe?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-023": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: Several items are placed on a shelf: a clear glass completely full of liquid water, a sealed aluminum can of soda, a fresh, plump strawberry, an open jar of translucent honey, and a metal spoon. Action: The items are placed inside a freezer, and the door is closed for several hours. Render the scene showing the items inside the frosty freezer after this time has passed.",
+    "Checklist": [
+      { "question": "Is the water in the glass now a solid, opaque block of ice?", "tags": ["behave_pos"] },
+      { "question": "Does the ice in the glass expand, rising above the rim or causing the glass to crack?", "tags": ["behave_pos"] },
+      { "question": "Is the aluminum soda can visibly bulging at the top and bottom from the frozen liquid inside expanding?", "tags": ["behave_pos"] },
+      { "question": "Is the fresh strawberry covered in a layer of frost?", "tags": ["behave_pos"] },
+      { "question": "Is the honey in the jar no longer translucent and viscous, but opaque and solid-looking?", "tags": ["behave_pos"] },
+      { "question": "Is the metal spoon covered in a layer of frost?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar containing the honey still intact and not cracked?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-024": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: On the table lies a collection of small items: a dry autumn leaf, a piece of white paper with writing on it, a red wax crayon, and a small green plastic toy soldier. Nearby, a glass marble and a metal coin also rest on the table. Action: A person holds a magnifying glass, focusing the bright sunlight into a tiny, intense dot. They slowly drag this dot in a continuous line across the leaf, the paper, the crayon, and the toy soldier. Render the scene immediately after this line has been 'drawn'.",
+    "Checklist": [
+      { "question": "Is there a blackened, burnt line across the dry leaf?", "tags": ["behave_pos"] },
+      { "question": "Is there a dark brown or black scorch mark across the piece of paper?", "tags": ["behave_pos"] },
+      { "question": "Is the red wax crayon melted, showing a distinct groove or trough where the light passed?", "tags": ["behave_pos"] },
+      { "question": "Is the green plastic toy soldier visibly melted and deformed along a line?", "tags": ["behave_pos"] },
+      { "question": "Is the burn mark formed on the leaf, paper, crayon, and toy soldier aligned in a single continuous line?", "tags": ["behave_pos"] },
+      { "question": "Is the glass marble on the table still transparent and undamaged?", "tags": ["behave_neg"] },
+      { "question": "Is the metal coin on the table still shiny and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-025": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A can of cola sits on a white desk blotter. Next to it is a small, carefully stacked pyramid of white sugar cubes. Behind the can is a sheet of paper with fresh, handwritten ink notes. Further to the side, a heavy ceramic mug stands securely. A closed laptop is at the far edge of the desk. Action: A person vigorously shakes the can of cola, aims it towards the sugar cubes and paper, pulls the tab to open it, and finally places the can back on the table. Render the scene as the soda erupts from the can.",
+    "Checklist": [
+      { "question": "Is the pyramid of sugar cubes being knocked over or collapsing from the force of the spray?", "tags": ["behave_pos"] },
+      { "question": "Are the sugar cubes that have been hit by the soda visibly wet and starting to dissolve?", "tags": ["behave_pos"] },
+      { "question": "Is the sheet of paper behind the can being splattered with dark liquid?", "tags": ["behave_pos"] },
+      { "question": "Is the ink on the paper visibly smearing or running where the soda has hit it?", "tags": ["behave_pos"] },
+      { "question": "Is there a puddle of dark soda forming on the white desk blotter around the can?", "tags": ["behave_pos"] },
+      { "question": "Is the exterior of the soda can itself covered in streaks of foam running down its sides?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic mug to the side still standing upright and clean?", "tags": ["behave_neg"] },
+      { "question": "Is the closed laptop at the far edge of the desk still clean and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-026": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: Under a powerful, full-spectrum grow light in a greenhouse, several items are placed on a tray of dry soil: a leafy fern, a small cactus, a brightly colored flower, a colored plastic bottle cap and a small bar of chocolate. The grow light is positioned close to the items. On a separate, shaded shelf, a watering can sits untouched. Action: The grow light is left on continuously at maximum intensity for two weeks, with no watering. After this period, the grow light is turned off. Render the scene 10 minutes after the grow light has been switched off.",
+    "Checklist": [
+      { "question": "Is the leafy fern completely wilted, brown, and dead?", "tags": ["behave_pos"] },
+      { "question": "Is the small cactus still alive?", "tags": ["behave_pos"] },
+      { "question": "Is the brightly colored flower wilted after the prolonged exposure and lack of water?", "tags": ["behave_pos"] },
+      { "question": "Is the colored plastic bottle cap faded or whitish?", "tags": ["behave_pos"] },
+      { "question": "Does the bar of chocolate melt into a shapeless puddle and re-solidify?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the dry soil visibly cracked and bone-dry?", "tags": ["behave_pos"] },
+      { "question": "Is the watering can still on the shaded shelf?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-027": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a chemistry lab, several items are placed inside a large glass bell jar: a water-soaked sponge, a partially inflated balloon, a sealed bag of potato chips, an empty sealed soft plastic bottle, a metal coin, and a partially inflated rubber ball. Outside the bell jar on the bench, place another balloon that is partially inflated to the same degree as the one inside before evacuation, and a notebook. Action: The bell jar is sealed to a base, and a powerful vacuum pump is evacuating the air from inside. Render the scene during the evacuation process, when the air pressure has already dropped noticeably but not enough to damage the objects.",
+    "Checklist": [
+      { "question": "Are there bubbles emerging from the surface of the sponge inside the bell jar?", "tags": ["behave_pos"] },
+      { "question": "Is the balloon inside the bell jar more inflated than the one outside?", "tags": ["behave_pos"] },
+      { "question": "Is the sealed bag of potato chips puffed up like a pillow, appearing taut and inflated?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic bottle inside the bell jar puffed up from the reduced air pressure?", "tags": ["behave_pos"] },
+      { "question": "Is the rubber ball inflated due to the drop in air pressure?", "tags": ["behave_pos"] },
+      { "question": "Is the metal coin still inside the jar, unchanged?", "tags": ["behave_neg"] },
+      { "question": "Is the notebook still safe and dry on the separate lab bench?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-028": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: In a sealed chamber, an iron tray holds a variety of items: an iron nail, a copper wire, a silver spoon, an untreated wooden block, a slice of white bread, a gold ring, and a piece of plastic. Action: The chamber is exposed to constant high humidity for several months. Render the tray of items after this period.",
+    "Checklist": [
+      { "question": "Is the iron nail covered with red-brown rust?", "tags": ["behave_pos"] },
+      { "question": "Is the copper wire showing a dull, greenish patina?", "tags": ["behave_pos"] },
+      { "question": "Is the silver spoon visibly tarnished with dark spots?", "tags": ["behave_pos"] },
+      { "question": "Is the untreated wooden block swollen, warped, or showing signs of mold?", "tags": ["behave_pos"] },
+      { "question": "Is the slice of white bread covered in colorful mold?", "tags": ["behave_pos"] },
+      { "question": "Is the metal tray holding the items showing its own spots of rust?", "tags": ["behave_pos"] },
+      { "question": "Is the gold ring still uncorroded?", "tags": ["behave_neg"] },
+      { "question": "Is a piece of plastic on the tray still unchanged?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-029": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: On the counter, a plain white ceramic plate holds a cluster of items: a whole, raw egg in its shell; a solid, rectangular stick of butter; a few normal-sized white marshmallows; and a shiny, silver CD. Nearby on the counter sits a heavy ceramic utensil holder and a wooden cutting board. Action: The entire plate of items is microwaved on high for 90 seconds, then immediately removed and placed back on the counter. Render the scene on the counter at this exact moment.",
+    "Checklist": [
+      { "question": "Is the raw egg exploded, with cooked yellow and white fragments splattered across the plate?", "tags": ["behave_pos"] },
+      { "question": "Is the stick of butter almost completely melted into a pool of yellow liquid?", "tags": ["behave_pos"] },
+      { "question": "Are the marshmallows puffed up to several times their original size and looking soft or partially melted?", "tags": ["behave_pos"] },
+      { "question": "Does the shiny CD show intricate, branching scorch marks or burn patterns on its surface?", "tags": ["behave_pos"] },
+      { "question": "Is steam visibly rising from the hot food items and the plate?", "tags": ["behave_pos"] },
+      { "question": "Is the plate splattered with small bits of egg or other debris?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic utensil holder nearby on the counter still standing and clean?", "tags": ["behave_neg"] },
+      { "question": "Is the wooden cutting board nearby on the counter still clean and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-030": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image showing the result of this action: A large, clear tank completely filled with water sits on a lab bench. Floating on the surface are a cork and a sealed, air-filled plastic bottle. Next to the tank is an empty transparent glass cup containing only effervescent tablets, and an open logbook. A microscope sits further back on the bench. Action: A heavy lead weight, just small enough to fit into the tank, is dropped from above into the center of the tank, landing directly on the floating cork and bottle, and settles at the bottom. Render the scene at the moment when the lead weight has just reached and settled on the bottom of the tank.",
+    "Checklist": [
+      { "question": "Is the lead weight now resting on the bottom of the tank?", "tags": ["behave_pos"] },
+      { "question": "Is the cork pressed to the bottom of the tank by the lead weight?", "tags": ["behave_pos"] },
+      { "question": "Is the sealed plastic bottle pressed to the bottom of the tank by the lead weight?", "tags": ["behave_pos"] },
+      { "question": "Is the open logbook visibly wet with water splashes?", "tags": ["behave_pos"] },
+      { "question": "Is there some water inside the transparent glass cup?", "tags": ["behave_pos"] },
+      { "question": "Are the effervescent tablets in the cup visibly fizzing with bubbles?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the lab bench around the tank wet?", "tags": ["behave_pos"] },
+      { "question": "Are the inside walls of the tank, above the water line, covered in droplets from the splash?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy microscope in the background still upright and dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Claude"
+  },
+  "R-BR-031": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photorealistic image depicting the moment after a person's arm has carelessly swept across a kitchen counter. The initial scene was a clean counter with a tight cluster of items: a tall glass full of orange juice, a full, open cardboard carton of milk, and an open glass jar of strawberry jam. Next to them, a slice of plain bread was waiting in an upright toaster. On a separate small plate, positioned several inches away from this main cluster, sat a single ripe banana. The person's sweeping motion struck the cluster of items, sending the glass, the milk carton, and the jam jar tumbling off the counter's edge, while also pushing down the toaster's activation lever. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the tall glass on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there orange juice spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the milk carton on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there milk spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the jam jar on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there strawberry jam spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the slice of bread now lowered inside the toaster?", "tags": ["behave_pos"] },
+      { "question": "Is the toaster's lever in the down position?", "tags": ["behave_pos"] },
+      { "question": "Is the banana still on the small plate on the counter?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-032": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a wide-angle, realistic photo of a science lab immediately after a scientist has tripped on a loose floor cable. Before the accident, a central area of a long lab bench held a lit Bunsen burner with a glass beaker full of blue liquid heating on a metal stand directly above it. Nearby in this central area were a rack filled with several test tubes containing red liquid and a neat stack of research papers. At the far end of the long bench, well away from the central setup, sat a closed laptop. The scientist, in tripping, lurched forward, causing the stand with the beaker to topple onto the floor, while also sweeping the entire test tube rack, the beaker stand, and the stack of papers completely off the bench and onto the floor. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the glass beaker on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there blue liquid spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the metal stand that held the beaker knocked over or on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the flame of the Bunsen burner now exposed, without the beaker above it?", "tags": ["behave_pos"] },
+      { "question": "Are there multiple test tubes scattered on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there red liquid spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the research papers scattered across the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the loose cable on the floor?", "tags": ["behave_neg"] },
+      { "question": "Is the laptop still on the lab bench?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-033": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a dynamic, wide-shot photograph of a backyard patio scene in the immediate aftermath of two simultaneous events. Initially, a patio table was set with a checkered tablecloth, a heavy and wide-based glass pitcher full of water, a tall and slender vase holding one long-stemmed rose in water, and an open book with a paperweight on its left page. Nearby, a freshly washed shirt and a pair of trousers were hanging on a clothesline. A golden retriever was sitting on the grass. The two events were: a sudden, strong gust of wind swept across the patio, knocking the tall, slender vase over. At the same moment, the excited golden retriever jumped up against the clothesline with enough force to knock the shirt and trousers completely off the line, while its paw accidentally caught and got stuck on the clothesline. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the tall, slender vase knocked over onto its side?", "tags": ["behave_pos"] },
+      { "question": "Is the rose that was in the vase now lying on the table or the ground?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the tablecloth from the fallen vase?", "tags": ["behave_pos"] },
+      { "question": "Are the right-side pages of the open book shown fluttering or lifted by the wind?", "tags": ["behave_pos"] },
+      { "question": "Is the tablecloth billowing or lifted up by the wind at its edges?", "tags": ["behave_pos"] },
+      { "question": "Is the golden retriever depicted with its paw caught or tangled in the clothesline?", "tags": ["behave_pos"] },
+      { "question": "Is the clothesline visibly sagging or bent downwards in the middle?", "tags": ["behave_pos"] },
+      { "question": "Is the shirt that was on the line now on the ground?", "tags": ["behave_pos"] },
+      { "question": "Are the trousers that were on the line now on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy, wide-based glass pitcher of water still upright on the table?", "tags": ["behave_neg"] },
+      { "question": "Is the paperweight still holding the left page of the book down?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-034": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a child's playroom in the moment after an accident. A small square table was covered with a checkered tablecloth that hung down generously on all sides. On the table, there was a tower built of three large wooden blocks, a single plastic toy car, and a full, open-top sippy cup of juice. A large, heavy teddy bear was sitting on a chair nearby, not touching the table. A toddler, attempting a tablecloth trick, stood at one side, grabbed the edge of the tablecloth, and pulled it forcefully but slowly, dragging the entire tablecloth and all the items on it onto the floor. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the tablecloth on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the small table now completely bare?", "tags": ["behave_pos"] },
+      { "question": "Are the three wooden blocks on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic toy car on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the sippy cup on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the sippy cup lying on its side?", "tags": ["behave_pos"] },
+      { "question": "Is there juice spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy teddy bear still sitting on the nearby chair?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-035": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a picnic scene on a grassy field immediately after a frisbee throw has gone wrong. A large red and white checkered blanket was spread on the grass. In the center of the blanket was a tight setup of: a paper plate with a sandwich, a tall plastic cup full of soda, and an open bag of potato chips. On one corner of the blanket sat a heavy, closed picnic basket. An action has just occurred: a frisbee, thrown from off-screen, landed hard in the center of the food setup, sending the cup of soda, the paper plate, and the open bag of chips tumbling across the blanket. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is there a frisbee sitting on the checkered blanket?", "tags": ["behave_pos"] },
+      { "question": "Is the tall plastic cup of soda knocked over?", "tags": ["behave_pos"] },
+      { "question": "Is there soda spilled on the blanket?", "tags": ["behave_pos"] },
+      { "question": "Is the sandwich knocked off the paper plate?", "tags": ["behave_pos"] },
+      { "question": "Is the paper plate flipped upside down or on its side?", "tags": ["behave_pos"] },
+      { "question": "Are there potato chips spilled on the blanket?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy picnic basket still in its original position on the corner of the blanket?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-036": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a garage workshop right after a person has backed into a shelving unit. The initial scene was a tall, metal shelving unit. Its top shelf held a can of spray paint and an open can of red paint. The middle shelf held a glass jar full of nails (fragile) and a hammer. The bottom shelf held a heavy car battery. The concrete floor in front was clean. On the back wall, several tools such as electrical cords and a shovel are hanging. The action that just occurred: a person accidentally backed into one of the vertical supports of the shelving unit with enough force to make the entire unit topple over. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the metal shelving unit lying on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the open can of red paint on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there any red paint splattered on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the can of spray paint on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar that held the nails on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar broken from the fall onto the concrete floor?", "tags": ["behave_pos"] },
+      { "question": "Are nails spilled all over the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the hammer on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy car battery on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the tools on the back wall still hanging in place?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-037": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a quiet library just after a chain reaction event. At the end of an aisle, a small reading desk held a carefully constructed three-level house of cards. A wooden library cart was positioned in the aisle; its top shelf held a globe on a stand, a vertical stack of three hardcover books, and a tall vase with a single flower and water. A librarian, from the other end of the aisle, shoved the cart. It rolled forward and slammed into a leg of the reading desk, bringing the cart to an abrupt and jarring halt. All items on the top shelf, disturbed by the impact, fell from the cart. The massive, main bookshelves lining the aisle were full of books. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the house of cards on the desk completely collapsed?", "tags": ["behave_pos"] },
+      { "question": "Are the individual playing cards scattered on the desk surface?", "tags": ["behave_pos"] },
+      { "question": "Is the globe on the cart tipped over onto its side on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the stack of books on the cart toppled over on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the vase broken on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the floor near the broken vase?", "tags": ["behave_pos"] },
+      { "question": "Is the flower on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the books on the massive, main bookshelves still neatly in place?", "tags": ["behave_neg"] },
+      { "question": "Is the reading desk itself still standing, despite the collision?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-038": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a bookshelf scene immediately after a cat's action. The initial scene was a tall, dark wood bookshelf standing against a wall. On the wall next to the bookshelf hung a large painting. The top shelf of the bookshelf held a small, ceramic potted succulent, a glass of water, and a single, standing A5-sized, glass-fronted framed photo. The shelves below were filled with upright books. A curious cat, having climbed to the top shelf, has just swiped its paw and pushed the succulent, the glass of water, and the framed photo off the edge. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the cat on the top shelf, possibly looking down?", "tags": ["behave_pos"] },
+      { "question": "Is the potted succulent on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic pot of the succulent broken?", "tags": ["behave_pos"] },
+      { "question": "Is there dirt spilled on the floor from the broken pot?", "tags": ["behave_pos"] },
+      { "question": "Is the glass of water on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass shattered?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the framed photo on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass of the photo frame cracked or shattered?", "tags": ["behave_pos"] },
+      { "question": "Is the top shelf of the bookshelf now empty?", "tags": ["behave_pos"] },
+      { "question": "Are the books on the lower shelves still upright and in place?", "tags": ["behave_neg"] },
+      { "question": "Is the large painting on the wall next to the bookshelf still hanging undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-039": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image of a person's hands over a sink right after a grocery bag failure. Initially, a bottle of dish soap was sitting upright on the counter, right next to a clean, empty kitchen sink. A person was holding a full brown paper grocery bag directly over the sink when the bottom of the wet bag suddenly gave way. The contents were: several loose eggs, a single ripe tomato, a glass jar of pickles (fragile), and a head of lettuce. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is there broken eggshell in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is there liquid egg yolk and white in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is the ripe tomato in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar of pickles shattered in the sink?", "tags": ["behave_pos"] },
+      { "question": "Are there pickles in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is there pickle juice in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is the head of lettuce in the sink?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle of dish soap sitting next to the sink still upright?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-040": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of an open-air market stall during a sudden, violent, wind-driven rain downpour. The stall, supported by a wooden frame, was initially dry with a simple fabric awning. On a display table, exposed to the wind-driven blowing rain, were neat stacks of lightweight t-shirts, a wire rack holding paper postcards, and a stack of empty brown paper shopping bags. The force of the downpour and storm wind is directly hitting these exposed items. A heavy metal cash box sat on the back corner of the table. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Are the stacks of t-shirts visibly soaked with water?", "tags": ["behave_pos"] },
+      { "question": "Are the paper postcards wet?", "tags": ["behave_pos"] },
+      { "question": "Are the empty paper bags soaked and losing their shape?", "tags": ["behave_pos"] },
+      { "question": "Is the surface of the display table wet?", "tags": ["behave_pos"] },
+      { "question": "Is the ground around the stall wet?", "tags": ["behave_pos"] },
+      { "question": "Are the neat stacks of t-shirts blown over or in disarray?", "tags": ["behave_pos"] },
+      { "question": "Are the paper postcards or empty shopping bags scattered on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy metal cash box still sitting on the table?", "tags": ["behave_neg"] },
+      { "question": "Is the wooden frame of the stall itself still standing firmly?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-041": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic photo of a winter scene immediately after an event. Initial state: A suburban house has a thick, heavy layer of snow covering its slanted roof. The roof has a noticeable overhang (eave) that extends over the front porch. On the protected porch, a coir doormat is in front of the front door, on which hangs a festive winter wreath. A wall-mounted porch light is next to the door. In the yard, directly below the roof's edge and in the snow's path, stands a freshly-built snowman with a carrot nose. Next to the snowman, a pair of evergreen shrubs line the front of the house, with no snow covering them, and a child's plastic sled lies flat on the ground. A leafless tree stands well clear of the house. Action: The entire sheet of snow suddenly slides off the roof, crashing down onto the items in the yard. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the slanted roof of the house now mostly bare, with little or no snow?", "tags": ["behave_pos"] },
+      { "question": "Is there a very large, deep pile of displaced snow on the ground where the snow from the roof landed?", "tags": ["behave_pos"] },
+      { "question": "Is the snowman either completely buried or destroyed by the impact of the falling snow?", "tags": ["behave_pos"] },
+      { "question": "Are the evergreen shrubs heavily covered and weighed down by a thick layer of fallen snow?", "tags": ["behave_pos"] },
+      { "question": "Is the child's plastic sled completely buried and obscured by the snow pile?", "tags": ["behave_pos"] },
+      { "question": "Is the doormat on the porch still visible and relatively free of snow, protected by the roof overhang?", "tags": ["behave_neg"] },
+      { "question": "Is the festive wreath on the front door still visible and free of snow?", "tags": ["behave_neg"] },
+      { "question": "Is the wall-mounted porch light still visible and free of snow?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-042": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photorealistic image of a campfire scene at night, depicting the aftermath of a chain-reaction accident. Initial state: A person is roasting a marshmallow on a long wooden stick over a fire pit. Next to the fire is an open plastic bag of marshmallows. A few feet away, a small, foldable camping table is set up; on it sits a full, open plastic bottle of water, a neat stack of paper plates, and a pair of sunglasses. A closed plastic cooler is on the ground further away. The wooden stick suddenly overheats from the fire and snaps, causing the burning marshmallow to fall off and land in the open plastic bag of marshmallows. Startled, the person jumps back, colliding squarely with the camping table, knocking it completely over. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the long wooden stick visibly broken into two pieces?", "tags": ["behave_pos"] },
+      { "question": "Is the content of the marshmallow bag a single, gooey, melted mass?", "tags": ["behave_pos"] },
+      { "question": "Is the open plastic bag of marshmallows melted and smoking?", "tags": ["behave_pos"] },
+      { "question": "Is the camping table lying on its side or collapsed on the ground, instead of standing upright?", "tags": ["behave_pos"] },
+      { "question": "Are the paper plates scattered on the ground instead of being in a neat stack?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic water bottle lying on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is there a large puddle of spilled water on the ground near the fallen table?", "tags": ["behave_pos"] },
+      { "question": "Are the sunglasses lying on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the closed plastic cooler, located further away, still upright and untouched?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-043": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a bakery kitchen immediately after a clumsy baker has caused an accident. Initially, a metal shelf was positioned directly above a workbench. On this shelf were an open paper bag of flour, a glass bottle of vanilla extract (fragile), and an open container of brown sugar powder with a rear opening. On the workbench directly below, a heavy, industrial stand mixer was bolted to the surface. The baker, reaching for something high, stumbled and hit the shelf hard, causing all of its contents to be violently dislodged and sent crashing downwards onto the workbench. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the paper bag of flour on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is there any flour scattered on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is the glass bottle of vanilla extract shattered on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is there dark vanilla liquid spilled on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is the container of brown sugar powder on the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is brown sugar powder spilled from the shaker onto the workbench?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy, bolted stand mixer still in its original position?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-044": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a chaotic pet store scene just after a cat has leaped onto a display shelf. Initially, the middle display shelf held a small, open-topped fishbowl with a single goldfish, a precarious stack of three cat food cans, and an open bag of birdseed. A heavy bag of dog food was on the bottom shelf. A small, nimble cat has just jumped from the floor, but its landing was clumsy and directly in the center of the display. The cat's impact immediately toppled the precarious stack of cans, which in turn knocked over both the fishbowl and the open bag of birdseed, sending some cans and birdseed tumbling off the shelf's edge. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is a cat depicted on the middle display shelf?", "tags": ["behave_pos"] },
+      { "question": "Is the small fishbowl tipped over?", "tags": ["behave_pos"] },
+      { "question": "Is water spilled on the shelf?", "tags": ["behave_pos"] },
+      { "question": "Is the goldfish on the surface of the shelf, outside of the bowl?", "tags": ["behave_pos"] },
+      { "question": "Are there cat food cans scattered on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is birdseed spilled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy bag of dog food still on the bottom shelf?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-045": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a poolside scene at the moment a person performs a huge cannonball jump. Initially, the concrete edge of the pool was dry. On the edge sat a small, portable radio, a pair of sunglasses, an open novel lying face down, and a tall, unstable plastic cup of lemonade (easy to fall over). A large, heavy beach towel was folded neatly on a lounge chair positioned well away from the pool's edge, safely out of the splash zone. The cannonball jump hits the water with enough force to send a massive wave of water crashing over the pool's edge, drenching everything on it.",
+    "Checklist": [
+      { "question": "Is there a massive splash of water erupting from the pool?", "tags": ["behave_pos"] },
+      { "question": "Is the concrete edge of the pool now wet from the splash?", "tags": ["behave_pos"] },
+      { "question": "Is the portable radio wet from the splash after the cannonball jump?", "tags": ["behave_pos"] },
+      { "question": "Are the sunglasses wet from the splash after the cannonball jump?", "tags": ["behave_pos"] },
+      { "question": "Is the tall plastic cup of lemonade knocked over by the splash?", "tags": ["behave_pos"] },
+      { "question": "Is lemonade spilled on the concrete?", "tags": ["behave_pos"] },
+      { "question": "Are the pages of the novel visibly soaked or warped?", "tags": ["behave_pos"] },
+      { "question": "Is the folded beach towel on the distant lounge chair still dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-046": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a museum gallery after an accident. Initial state: A modern, square coffee table with a thin glass top and metal legs stands in the center of the room. On the glass top, there is a ceramic bowl filled with decorative polished stones, a neat stack of paper flyers, and a small, heavy bronze sculpture. On the far wall hangs a large framed painting, surrounded by velvet stanchions. Action: A tall, heavy wooden crate, being moved nearby, has just tipped over sideways, falling directly onto the center of the glass table with the glass shattered completely. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the large wooden crate lying on its side, resting on the wreckage?", "tags": ["behave_pos"] },
+      { "question": "Is the glass top of the table completely shattered, with fragments on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic bowl shattered into pieces on the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the decorative stones from the bowl scattered on the floor among the debris?", "tags": ["behave_pos"] },
+      { "question": "Are the paper flyers scattered across the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the small bronze sculpture lying on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the large painting on the far wall still hanging securely and undamaged?", "tags": ["behave_neg"] },
+      { "question": "Are the velvet stanchions still intact after the crate fell onto the table?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-047": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a formal dinner table just after a server has tripped. The table was set with fine china, a tall, lit candelabra in the center, and multiple wine glasses. A server was walking by, holding a large silver tray with a tureen of soup and a bottle of red wine (fragile). A chair was unexpectedly pulled out into the server's path. The action is the server tripping over the chair leg and lurching forward, sending the tray flying onto the table, while also knocking into the lit candelabra. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the silver tray on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the tureen of soup overturned or shattered on the table?", "tags": ["behave_pos"] },
+      { "question": "Is soup splashed across the white tablecloth?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle of red wine shattered on the table?", "tags": ["behave_pos"] },
+      { "question": "Is red wine spilled on the tablecloth?", "tags": ["behave_pos"] },
+      { "question": "Is the tall candelabra knocked over by the impact?", "tags": ["behave_pos"] },
+      { "question": "Is the chair still standing upright after the server tripped?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-048": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a chaotic grocery store aisle immediately after a shopping cart accident. Initially, the aisle featured a large, floor-standing cardboard display of soda cans stacked in a pyramid. On the main metal shelving right next to it, the highest shelf held a row of glass jars of pickles (fragile) and several large bags of flour. A 'Wet Floor' sign was positioned at the far end of the aisle. The action that just occurred: the shopping cart veered sideways, plowing through the base of the cardboard soda can display and then slamming forcefully into the highest shelf of the adjacent main shelving unit, knocking all the items from that shelf down. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the cardboard display for soda cans crumpled or knocked over?", "tags": ["behave_pos"] },
+      { "question": "Is the pyramid stack of soda cans collapsed?", "tags": ["behave_pos"] },
+      { "question": "Are numerous soda cans scattered and rolling on the aisle floor?", "tags": ["behave_pos"] },
+      { "question": "Is the shopping cart positioned next to the main shelving unit at the point of impact?", "tags": ["behave_pos"] },
+      { "question": "Is at least one glass jar of pickles knocked onto the floor from the impacted shelf?", "tags": ["behave_pos"] },
+      { "question": "Is the fallen glass jar of pickles shattered?", "tags": ["behave_pos"] },
+      { "question": "Are pickles and brine spilled on the floor near the shattered jar?", "tags": ["behave_pos"] },
+      { "question": "Do the bags of flour fall onto the floor after the shelf is hit?", "tags": ["behave_pos"] },
+      { "question": "Is the 'Wet Floor' sign at the far end of the aisle still standing?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-049": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a bedroom scene at the moment a person sleepily fumbles for the alarm. Initially, a bedside table stands on a fluffy rug next to a bed. On the table: a glass of water, an alarm clock, and a smartphone connected by its charging cable to a wall socket. On the far corner of the table sits a heavy, stable lamp with a wide base. The action that just occurred: the person in bed, trying to turn off the alarm, missed and flailed their arm widely across the table's surface. The motion knocked over the glass of water and the alarm clock on the table. Their hand also snagged the smartphone's charging cable, pulling the device tumbling off the edge of the table, with the charging cable detaching from the smartphone due to the impact. The commotion also startled a sleeping cat nearby. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the glass of water knocked over?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the surface of the bedside table?", "tags": ["behave_pos"] },
+      { "question": "Is the alarm clock knocked over onto its side on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the smartphone on the floor?", "tags": ["behave_pos"] },
+      { "question": "Does the charging cable detach from the smartphone after the impact?", "tags": ["behave_pos"] },
+      { "question": "Does the cat on the floor appear to be awake?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy lamp with the wide base still standing upright on the far corner of the table?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-050": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo set on the second story of an unfinished building, with exposed steel beams and a concrete floor, right after an accident. Initially, an unlatched metal toolbox was placed near the edge of the floor. On top of the closed toolbox sat a full, open plastic water bottle and a sandwich wrapped in foil. Several meters away from the edge rested a stable stack of three heavy cinder blocks. The action that just happened: a construction worker, turning around while carrying a long steel pipe on his shoulder, swung the end of the pipe and hit the toolbox, pushing it completely off the edge of the second story. The image should capture the moment when all of the items are still in mid-air, just after being knocked off, but before hitting the ground.",
+    "Checklist": [
+      { "question": "Is the metal toolbox in mid-air, having just fallen from the edge?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic water bottle also in mid-air, falling separately?", "tags": ["behave_pos"] },
+      { "question": "Is the foil-wrapped sandwich also in mid-air?", "tags": ["behave_pos"] },
+      { "question": "Is the toolbox shown with its lid flying open from the fall?", "tags": ["behave_pos"] },
+      { "question": "As the full water bottle tumbles in mid-air, is water spraying out of it?", "tags": ["behave_pos"] },
+      { "question": "Is the edge of the concrete floor where the toolbox used to be now empty?", "tags": ["behave_pos"] },
+      { "question": "Is the stack of three heavy cinder blocks still in its original position?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-051": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a nighttime campsite in the moment after a person trips. The initial scene shows a small fire burning in a fire pit. A cooking pot full of stew is on a metal stand over the fire. Next to the fire is a folding camp chair, on which rests an open book and a metal camping mug. Further away, a tent stands with a battery-powered lantern hanging just inside its open flap. The action that just took place: a person, walking in the dark, tripped on a large, unseen rock near the fire, lurching forward and crashing into the cooking pot's stand and the camp chair, knocking the pot over into the fire pit. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the cooking pot's metal stand knocked over?", "tags": ["behave_pos"] },
+      { "question": "Is the cooking pot tipped over, lying in the fire pit?", "tags": ["behave_pos"] },
+      { "question": "Is a large amount of steam or smoke from the spilled stew?", "tags": ["behave_pos"] },
+      { "question": "Is the folding camp chair knocked over?", "tags": ["behave_pos"] },
+      { "question": "Is the open book on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the metal camping mug on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the tent in the background still standing erect?", "tags": ["behave_neg"] },
+      { "question": "Is the battery-powered lantern still hanging inside the tent's flap?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-052": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image of a theater stage right after a dramatic mishap. The stage is set for a king's study. A heavy wooden throne sits center stage. To its left stands a tall, freestanding candelabra. To its right, a full-sized, heavy suit of decorative armor stands precariously balanced. Next to the armor is a small, delicate-looking prop table holding a prop metal goblet, a fake plastic crown, a large open book, and a rolled-up scroll. A thick velvet curtain hangs at the back. The action that just occurred: an actor, making a clumsy exit, stumbled backward and collided hard with the precariously balanced suit of armor. The heavy metal figure tipped over, crashing down and smashing the small, delicate-looking prop table. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the heavy suit of armor toppled over?", "tags": ["behave_pos"] },
+      { "question": "Is the small, delicate-looking table broken or shattered on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the prop metal goblet on the stage floor?", "tags": ["behave_pos"] },
+      { "question": "Is the fake plastic crown on the stage floor?", "tags": ["behave_pos"] },
+      { "question": "Is the large open book on the stage floor, possibly amidst the wreckage?", "tags": ["behave_pos"] },
+      { "question": "Is the scroll lying on the stage floor?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy wooden throne still upright and in its original position?", "tags": ["behave_neg"] },
+      { "question": "Is the tall candelabra on the other side of the stage still standing undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-053": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a Rube Goldberg-style chain reaction in a classroom, captured at the final moment. The initial setup contains a taut elastic cord placed just before a line of standing dominoes, with a matchstick fixed at the midpoint of the cord under tension. Behind the domino line, the last domino is positioned to connect to a mechanism designed to cut the rope suspending a steel marble. The marble is aligned to roll down a ramp into a glass beaker filled with red-colored water, which rests on a white sheet of paper. Far to the side of this setup on the same desk is a closed microscope under a dust cover. The actions that just occurred: the matchstick is used to burn through the taut elastic cord, which, upon snapping, tips over the first domino in the line. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the matchstick charred or blackened after burning?", "tags": ["behave_pos"] },
+      { "question": "Is the elastic cord visibly broken after being burned through?", "tags": ["behave_pos"] },
+      { "question": "Are all of the dominoes in the line lying flat on the desk?", "tags": ["behave_pos"] },
+      { "question": "Does the rope holding the suspended steel marble appear to be cut?", "tags": ["behave_pos"] },
+      { "question": "Is the steel marble inside the glass beaker?", "tags": ["behave_pos"] },
+      { "question": "Is the white sheet of paper under the beaker stained with red splashes?", "tags": ["behave_pos"] },
+      { "question": "Is the microscope still on the desk, far from the experiment?", "tags": ["behave_neg"] },
+      { "question": "Is the dust cover still on the microscope and completely dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-054": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a living room scene at the instant a cat has an accident. Initially, a large, rectangular glass aquarium, full of water and a few small, colorful fish, rests on a sturdy wooden stand. The aquarium has an open top. A heavy hardcover book is on the stand, right next to the aquarium. The action that just occurred: a curious cat, which was walking along the edge of the aquarium stand, has lost its footing and fallen directly into the water. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the cat inside the aquarium?", "tags": ["behave_pos"] },
+      { "question": "Is the cat's fur soaking wet?", "tags": ["behave_pos"] },
+      { "question": "Does the cat's entry into the tank cause a significant splash of water?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the stand outside the aquarium?", "tags": ["behave_pos"] },
+      { "question": "Is the cover of the heavy hardcover book wet from the splash?", "tags": ["behave_pos"] },
+      { "question": "Does the cat have a panicked or angry expression?", "tags": ["behave_pos"] },
+      { "question": "Is the sturdy wooden stand itself still upright and stable?", "tags": ["behave_neg"] },
+      { "question": "Is a painting on the far wall of the living room still dry and hanging correctly?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-055": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a pottery studio in the immediate aftermath of a mishap. Initially, a potter was sitting at a potter's wheel, which held a freshly-thrown, wet clay vase that was tall and symmetric. On a wooden shelf directly above the wheel, there was a bag of clay powder, a sponge in a shallow bowl of water, and a single metal sculpting tool. On a separate table across the room — away from the mishap scene — sat a finished, glazed ceramic bowl. The potter suddenly loses control of the spinning clay vase which splatters everywhere, startling the potter. In their flustered reaction, they accidentally knock over the wooden shelf above the wheel. All the items on the shelf are knocked off. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the potter's wheel spinning rapidly?", "tags": ["behave_pos"] },
+      { "question": "Are there pieces and splatters of wet clay flung outwards from the wheel?", "tags": ["behave_pos"] },
+      { "question": "Is the wall around the potter's wheel covered in splatters and chunks of wet clay?", "tags": ["behave_pos"] },
+      { "question": "Is the potter, who is sitting at the wheel, covered in splatters of wet clay?", "tags": ["behave_pos"] },
+      { "question": "Is the bag of clay powder lying on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the bowl of water with the sponge on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the sponge lying outside the shallow bowl after the shelf was knocked over?", "tags": ["behave_pos"] },
+      { "question": "Does water from the bowl spill onto the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the metal sculpting tool on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the finished, glazed ceramic bowl on the separate table across the room still clean and intact?", "tags": ["behave_neg"] },
+      { "question": "Is the separate table across the room free from any clay splatters?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-056": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo inside a lavish dining room at the exact moment of a spectacular catering disaster. On the far wall hangs a large, framed painting. A long dining table, covered with a white tablecloth, is exquisitely set with fine china plates, water goblets, and small bread baskets for numerous seated guests. In the center of the table is a low, wide floral arrangement. The disaster begins as a waiter, maneuvering a two-tiered serving cart laden with a large porcelain soup tureen, a stack of soup bowls, and a bottle of red wine, trips on a seated guest's chair leg. The waiter loses his grip, shoving the heavy cart forward. A front wheel of the cart collides with a leg of the dining table, causing the entire cart to pivot violently and begin to topple sideways, directly onto the surface of the fully set dining table. Due to the tremendous impact, every fragile item on the cart shatters into pieces, while the force also sends the small bread baskets on the table tumbling over. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the serving cart overturned or in the process of falling onto the tabletop?", "tags": ["behave_pos"] },
+      { "question": "Is the large soup tureen falling or shattered?", "tags": ["behave_pos"] },
+      { "question": "Is there soup spilled onto the tablecloth?", "tags": ["behave_pos"] },
+      { "question": "Are multiple soup bowls from the cart scattered or broken?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle of red wine falling or broken?", "tags": ["behave_pos"] },
+      { "question": "Is there red wine spilled onto the tablecloth?", "tags": ["behave_pos"] },
+      { "question": "Is there bread spilled from the baskets onto the table?", "tags": ["behave_pos"] },
+      { "question": "Is the large, framed painting on the far wall of the dining room unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-057": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a bowling alley lane at the moment after a very clumsy release. Initially, a bowler was holding a heavy bowling ball. Next to the lane, a small table held a tall, full glass pitcher of soda and a bucket of popcorn. On the ball return machine, a second, green bowling ball was waiting. The action that just occurred: the bowler accidentally swung the heavy ball backwards and then lost their grip. The ball flew sideways, not down the lane, and struck the small table with enough force to completely overturn it. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the heavy bowling ball on the floor in the seating area, not on the lane?", "tags": ["behave_pos"] },
+      { "question": "Is the small table tipped over or collapsed?", "tags": ["behave_pos"] },
+      { "question": "Is the glass pitcher on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass pitcher shattered?", "tags": ["behave_pos"] },
+      { "question": "Is there soda spilled all over the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the bucket of popcorn on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is popcorn spilled on the floor after the table was overturned?", "tags": ["behave_pos"] },
+      { "question": "Is the green bowling ball still sitting in the ball return machine?", "tags": ["behave_neg"] },
+      { "question": "Are the bowling pins at the far end of the lane still standing in a perfect triangle?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-058": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a chaotic outdoor flea market stall in the aftermath of a chase. The stall consisted of a rickety wooden table. On the table, there was a neat stack of old vinyl records, a delicate porcelain doll standing on its own, and an open cardboard box full of colorful glass marbles. Underneath the table on the ground sat a heavy, cast-iron skillet. The action that just happened: a large dog, chasing a cat, ran at full speed directly under the table, catching its long leash on one of the table's legs and pulling it violently, causing the table to tip over and leaving the dog tangled at the scene of the accident. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the rickety wooden table overturned or tilted at an extreme angle?", "tags": ["behave_pos"] },
+      { "question": "Is the dog shown tangled in its leash and the table leg at the spot?", "tags": ["behave_pos"] },
+      { "question": "Is the stack of vinyl records toppled and scattered on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the porcelain doll on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the porcelain doll shattered into pieces?", "tags": ["behave_pos"] },
+      { "question": "Is the cardboard box tipped over?", "tags": ["behave_pos"] },
+      { "question": "Are colorful glass marbles scattered and rolling on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy cast-iron skillet still sitting on the ground, largely unmoved?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-059": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo from behind the scenes on a movie set at the moment a stunt goes wrong. The set is a medieval throne room with large, prop stone walls. A stuntman was supposed to swing on a thick rope across the room. Directly below the rope's path is a 'breakaway' prop table, which is designed to shatter easily, laden with prop food (a foam turkey, rubber fruit) and lightweight pewter goblets. A large, expensive film camera is mounted on a heavy-duty tripod a safe distance away. The action that just took place: the thick rope snapped mid-swing, causing the stuntman to fall directly onto the breakaway table below and shatter it on impact. The image should depict the scene after all resulting effects have completely finished.",
+    "Checklist": [
+      { "question": "Is the stuntman on the ground amidst the wreckage of the table?", "tags": ["behave_pos"] },
+      { "question": "Is the thick rope shown with a frayed, snapped end hanging from above?", "tags": ["behave_pos"] },
+      { "question": "Is the breakaway prop table shattered into pieces on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the prop foam turkey on the floor among the debris?", "tags": ["behave_pos"] },
+      { "question": "Is the rubber fruit scattered across the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the lightweight pewter goblets scattered on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the large film camera still upright and secure on its heavy-duty tripod?", "tags": ["behave_neg"] },
+      { "question": "Are the prop stone walls of the set completely undamaged?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-060": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate an image of a rooftop garden immediately following an accident. Initially, the scene contained a lightweight aluminum table. On this table was a stack of five empty paper seed packets, a small, full plastic watering can, and a single terra-cotta pot with a small flower. Nearby on the rooftop floor stood a very large, heavy ceramic planter containing a small tree. A metal wind chime was hanging from an overhang above the table. A sudden, powerful gust of wind strikes the rooftop, overturning the lightweight aluminum table. Depict the scene in the aftermath of the table being overturned, with the wind still blowing strongly across the rooftop.",
+    "Checklist": [
+      { "question": "Is the lightweight aluminum table knocked over onto its side?", "tags": ["behave_pos"] },
+      { "question": "Are the paper seed packets being blown or scattered across the rooftop floor?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic watering can on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is there water spilled on the rooftop floor from the watering can?", "tags": ["behave_pos"] },
+      { "question": "Is the terra-cotta pot on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the terra-cotta pot shattered into pieces?", "tags": ["behave_pos"] },
+      { "question": "Is the flower and its soil spilled out onto the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the wind chime being blown by the wind (i.e., not hanging straight down)?", "tags": ["behave_pos"] },
+      { "question": "Is the small tree in the heavy planter shown with its leaves rustling intensely?", "tags": ["behave_pos"] },
+      { "question": "Is the very large, heavy ceramic planter still upright in its original position?", "tags": ["behave_neg"] },
+      { "question": "Is the small tree still rooted within its heavy planter?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "Gemini"
+  },
+  "R-BR-061": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a photo of a bathroom sink area at the moment after a mishap. Initially, the sink's drain was plugged and the basin was half-full of clean water. On the pristine white counter next to the sink sat an open bottle of bright blue mouthwash, a toothbrush in a ceramic holder, and a bar of soap in a soap dish. A clean mirror was mounted on the wall above the sink, and a clean towel was hanging on a rack several feet away. Actions: A person's elbow forcefully swept across the counter, knocking over the ceramic toothbrush holder and simultaneously sending the bottle of mouthwash flying directly into the basin of water.",
+    "Checklist": [
+      { "question": "Is the bottle of mouthwash inside the sink basin?", "tags": ["behave_pos"] },
+      { "question": "Is part of the sink water tinted blue from the spilled mouthwash?", "tags": ["behave_pos"] },
+      { "question": "Is the water in the sink visibly turbulent, with ripples or splashes still evident from the impact?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic toothbrush holder knocked over onto its side on the counter?", "tags": ["behave_pos"] },
+      { "question": "Is the toothbrush now lying on the counter, separate from its holder?", "tags": ["behave_pos"] },
+      { "question": "Is the bar of soap still resting in its soap dish?", "tags": ["behave_neg"] },
+      { "question": "Is the towel hanging on a rack several feet away still clean and dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-062": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a sidewalk vendor scene captured after the actions finish. Initial state: A heavy street cart with its brakes engaged is parked by the curb on pavement that slopes gently toward the road (rightward). An unlocked A-frame signboard stands open beside the cart near the road. On the cart’s top, a single bright red flyer lies by itself at the very front-right edge; two white flyers are stacked neatly behind it. A loose paper napkin lies near the cart’s front edge. Two helium balloons are tied with short strings to the cart’s handle, and a short strip of small pennant ribbons is tied to the same handle. A sealed metal thermos stands upright at the back of the cart. Under a fixed awning next to the cart is a small table holding a ceramic mug of tea. Actions: A strong gust of wind blows steadily from left to right for several seconds while a cyclist rides past on the road, brushing the signboard’s left leg so the hinge folds and the board collapses. Render the street scene after these actions are complete.",
+    "Checklist": [
+      { "question": "Is the A-frame signboard collapsed on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is the bright red flyer no longer on the cart's top (e.g., is it airborne or on the ground to the right)?", "tags": ["behave_pos"] },
+      { "question": "Are the two white flyers on the cart visibly disturbed or shifted from their neat stack?", "tags": ["behave_pos"] },
+      { "question": "Is the loose paper napkin no longer on the cart's top?", "tags": ["behave_pos"] },
+      { "question": "Are both helium balloons leaning significantly toward the right (downwind)?", "tags": ["behave_pos"] },
+      { "question": "Are both balloon strings stretched taut toward the right?", "tags": ["behave_pos"] },
+      { "question": "Are the pennant ribbons streaming toward the right?", "tags": ["behave_pos"] },
+      { "question": "Is the sealed metal thermos still upright on the cart?", "tags": ["behave_neg"] },
+      { "question": "Is the ceramic mug itself still standing upright on the table?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-063": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a small office captured after the actions finish. Initial state: On a wall-mounted corkboard hang three square sticky notes (left, center, right), with the center note being only loosely attached. Each note adheres only along its top edge. A floor-standing fan sits half a meter in front of the board. A window with a sheer curtain is to the fan’s left. Directly in front of the fan, at the desk’s front edge, lies one unsecured A4 sheet; farther back is a heavy glass filled with water and a small windmill toy with a fixed base. A fabric lanyard strap hangs freely from a pin on the board’s lower left corner. On a wall shelf is a small cactus in a heavy ceramic pot. Actions: A steady breeze enters through the newly opened window as the fan is switched to maximum and pointed directly at the board. Render the office after these actions are complete.",
+    "Checklist": [
+      { "question": "Are the left and right sticky notes still on the board but visibly curled or fluttering upward?", "tags": ["behave_pos"] },
+      { "question": "Does the center sticky note fall off the corkboard after the fan is switched on?", "tags": ["behave_pos"] },
+      { "question": "Is the unsecured A4 sheet no longer on the desk (e.g., is it on the floor or in the air)?", "tags": ["behave_pos"] },
+      { "question": "Is the sheer curtain billowing inward from the open window?", "tags": ["behave_pos"] },
+      { "question": "Is the hanging lanyard strap blown outward, away from the board?", "tags": ["behave_pos"] },
+      { "question": "Is the windmill spinning due to the breeze from the fan?", "tags": ["behave_pos"] },
+      { "question": "Is the fan itself depicted with its blades spinning rapidly (motion blur)?", "tags": ["behave_pos"] },
+      { "question": "Is the glass of water itself still standing upright on the desk?", "tags": ["behave_neg"] },
+      { "question": "Is the cactus still upright in its pot on the wall shelf?", "tags": ["behave_neg"] },
+      { "question": "Is the corkboard still mounted firmly on the wall?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-064": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a garage corner captured after the actions finish. Initial state: A short wooden ramp descends to the floor. A skateboard rests at the top, aligned straight down the ramp. An open, lidless can of blue paint sits centered on the skateboard deck. At the ramp’s foot, a fixed wooden stop blocks wheels. In front of the stop, a full-spread newspaper lies flat, and a white cotton rag overlaps the newspaper’s right edge. A small plastic toy boat sits in the middle of the newspaper. A garden hose is coiled on wall hooks to the left. A closed metal toolbox sits on a workbench in the back. Actions: A person gives the skateboard a strong straight push so it rolls down the ramp until its front wheels strike the stop. Render the scene after these actions are complete.",
+    "Checklist": [
+      { "question": "Is the skateboard positioned with its front wheels in contact with the wooden stop?", "tags": ["behave_pos"] },
+      { "question": "Is the open blue paint can overturned?", "tags": ["behave_pos"] },
+      { "question": "Is there a large amount of paint spilled on the floor at the bottom of the ramp?", "tags": ["behave_pos"] },
+      { "question": "Is the newspaper visibly stained with blue paint?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic toy boat visibly stained with blue paint?", "tags": ["behave_pos"] },
+      { "question": "Is the white cotton rag visibly stained with blue paint?", "tags": ["behave_pos"] },
+      { "question": "Is the garden hose still hanging coiled on the wall hooks?", "tags": ["behave_neg"] },
+      { "question": "Is the closed metal toolbox still on the workbench?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-065": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image inside a subway car captured after the actions finish. Initial state: A small service cart with free-rolling wheels stands in the aisle, facing a vertical grab pole 40 cm ahead. On the cart’s top front edge is an open paper cup filled to the brim with black coffee; directly behind it, a sealed screw-cap bottle is strapped upright. On the lower shelf is a closed metal toolbox with rubber feet. On the floor centered in the cart’s path lies a bright yellow microfiber cloth, flat. An overhead route map panel is mounted along the wall. The sliding door beside the pole is closed. Actions: The train brakes sharply to a stop, causing the cart to roll forward until its front collides with the vertical pole. All items on the cart’s top shelf fall off because of the inertia, with the coffee cup toppling over toward the yellow microfiber cloth. Render the scene after these actions are complete.",
+    "Checklist": [
+      { "question": "Is the cart’s front in contact with the vertical grab pole?", "tags": ["behave_pos"] },
+      { "question": "Is the coffee cup on the floor or the yellow microfiber cloth after the collision?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle on the floor after the collision?", "tags": ["behave_pos"] },
+      { "question": "Is there spilled coffee visible on the floor after the collision?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle no longer standing upright after the collision?", "tags": ["behave_pos"] },
+      { "question": "Is the yellow microfiber cloth soaked with spilled coffee?", "tags": ["behave_pos"] },
+      { "question": "Is the toolbox still on the cart’s lower shelf?", "tags": ["behave_neg"] },
+      { "question": "Is the overhead route map panel still mounted on the wall?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-066": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a living room coffee table captured after the actions finish. Initial state: At the table’s center stands a simple three-card house of cards. The topmost card is a Joker lying flat. The king of diamonds and the seven of clubs are propped upright, forming the structure. At the back-left of the table sit a heavy glass paperweight and an open hardcover book with its pages facing the fan. A single sheet of paper rests on the book. A floor-standing fan to the left faces the table. Behind the fan, a window is fully open with a sheer curtain. Actions: The fan is left blowing at the table for several seconds. By coincidence, all of the playing cards collapse face-up onto the tabletop. Render the room after these actions are complete.",
+    "Checklist": [
+      { "question": "Are all the cards that formed the house of cards now lying flat and scattered on the table surface?", "tags": ["behave_pos"] },
+      { "question": "Is the king of diamonds now lying on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the seven of clubs now lying on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the Joker card now lying on the table?", "tags": ["behave_pos"] },
+      { "question": "Are the pages of the open hardcover book ruffled or partially turned over by the wind?", "tags": ["behave_pos"] },
+      { "question": "Is the single sheet of paper no longer on the book?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy glass paperweight still in its original position on the table?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-067": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a study desk captured after the actions finish. Initial state: On the desk sits a loose pile of steel paperclips. A small steel binder clip is clamped to a red paperclip at the top of the pile. To the right stands a full, open aluminum soda can. To the left lies a plastic pen. At the back is a ceramic mug. A strong horseshoe magnet hangs from a stand directly above the pile. Actions: The magnet is lowered until it contacts the binder clip, then raised straight back up, causing it to swing slightly and knock over the soda can. Render the desk after these actions are complete.",
+    "Checklist": [
+      { "question": "Is the steel binder clip attached directly beneath the magnet?", "tags": ["behave_pos"] },
+      { "question": "Is the red paperclip hanging immediately below the binder clip?", "tags": ["behave_pos"] },
+      { "question": "Is a vertical chain of several paperclips hanging beneath the red paperclip?", "tags": ["behave_pos"] },
+      { "question": "Is the aluminum soda can lying on its side on the desk?", "tags": ["behave_pos"] },
+      { "question": "Is there a puddle of spilled liquid on the desk originating from the toppled can?", "tags": ["behave_pos"] },
+      { "question": "Is the plastic pen still lying on the desk?", "tags": ["behave_neg"] },
+      { "question": "Is the ceramic mug at the back still standing upright?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-068": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a backyard captured after the actions finish. Initial state: A fixed spray sprinkler head is set to a 60-degree arc aimed entirely toward the left side of the yard. On the left concrete path within this spray arc stands an open blue bucket and an upright brown paper grocery bag. Next to the bag is a small, dry sand castle made by a child, and some simple water-soluble chalk drawings are on the concrete. On the right side, under a deep porch roof, a wooden bench holds a neatly folded blanket. A closed toolbox rests on dry gravel further right. Actions: Turn on the sprinkler for 30 seconds. Render the yard after these actions are complete.",
+    "Checklist": [
+      { "question": "Are water droplets visible on the exterior of the blue bucket?", "tags": ["behave_pos"] },
+      { "question": "Is the brown paper grocery bag visibly collapsed or sagging from being wet?", "tags": ["behave_pos"] },
+      { "question": "Is the concrete path on the left side visibly wet?", "tags": ["behave_pos"] },
+      { "question": "Is the small sand castle visibly eroded or partially washed away?", "tags": ["behave_pos"] },
+      { "question": "Are the chalk drawings on the concrete visibly smeared, faded, or running from the water?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden bench under the porch still dry?", "tags": ["behave_neg"] },
+      { "question": "Is the neatly folded blanket still resting on the bench and dry?", "tags": ["behave_neg"] },
+      { "question": "Is the closed toolbox still on the dry gravel on the right side?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-069": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a kitchen counter captured after the actions finish. Initial state: A blender jug is filled to the brim with red berry smoothie; its lid sits upside down on the counter 30 cm away. Next to the blender is a roll of white paper towels standing on its end and a clear glass of milk. A wooden cutting board with a peeled banana is slightly closer. A sealed salt shaker stands upright near the back of the counter. A tiled backsplash is behind the blender. Actions: The blender is switched to high speed for five seconds without its lid. Render the kitchen after these actions are complete.",
+    "Checklist": [
+      { "question": "Is red liquid splattered on the countertop around the blender?", "tags": ["behave_pos"] },
+      { "question": "Is the tiled backsplash behind the blender speckled with red liquid?", "tags": ["behave_pos"] },
+      { "question": "Is the peeled banana on the cutting board stained with red liquid?", "tags": ["behave_pos"] },
+      { "question": "Is the blender jug’s fill level now visibly lower than the brim?", "tags": ["behave_pos"] },
+      { "question": "Is the exterior of the white paper towel roll splattered with red droplets?", "tags": ["behave_pos"] },
+      { "question": "Are there red streaks or droplets visible inside or on the side of the glass of milk?", "tags": ["behave_pos"] },
+      { "question": "Is the interior of the blender jug splattered with red smoothie?", "tags": ["behave_pos"] },
+      { "question": "Is the blender lid still off the jug and resting upside down on the counter?", "tags": ["behave_neg"] },
+      { "question": "Is the sealed salt shaker still upright?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-070": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a study captured after the actions finish. Initial state: A window on the left wall is fully open inward, with a sheer curtain hanging beside it. A steady wind-driven rain blows from left to right. Beneath the window on a wooden desk, an open paperback book lies flat at the left edge. A ceramic coaster with an empty mug sits next to the book. On the far right of the desk sits a shelf, on which a laptop is placed. A folded bath towel rests on a chair to the right of the desk. A framed photo hangs on the back wall. Actions: The scene is left this way for one minute during the wind-blown rain. Render the study after these actions are complete.",
+    "Checklist": [
+      { "question": "Are the open paperback book’s pages visibly wet, darkened by water, and ruffled by the wind?", "tags": ["behave_pos"] },
+      { "question": "Is there a visible puddle or wet area on the desktop, especially on the left side?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic coaster visibly wet with pooled water or droplets?", "tags": ["behave_pos"] },
+      { "question": "Is the exterior of the empty mug visibly wet?", "tags": ["behave_pos"] },
+      { "question": "Is the interior surface of the open window frame and the windowsill visibly wet?", "tags": ["behave_pos"] },
+      { "question": "Is the sheer curtain billowing or blowing inward from the wind?", "tags": ["behave_pos"] },
+      { "question": "Is the window still open inward?", "tags": ["behave_neg"] },
+      { "question": "Is the framed photo still hanging on the back wall and dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-071": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of the immediate aftermath of an event. Initial state: A car covered in a thick layer of dried mud and dust is parked. A single dry maple leaf is stuck to the center of the front windshield. Crucially, the driver's side window has been left fully open. Nearby, but outside the wash bay, is a dry payment kiosk. Actions: The car has just completed a full cycle in an automatic car wash involving soap, high-pressure water jets, and large spinning brushes. The image should capture the car as it sits at the exit of the wash bay, moments after the process has finished, with a perspective that clearly shows both the front of the car and the driver’s side open window.",
+    "Checklist": [
+      { "question": "Is the car's body now largely clean, shiny, and wet, with the layer of mud completely gone?", "tags": ["behave_pos"] },
+      { "question": "Is the dry maple leaf that was on the windshield now gone, having been washed away?", "tags": ["behave_pos"] },
+      { "question": "Is the interior of the driver's side door, including the armrest and seat edge, visibly wet from water spraying through the open window?", "tags": ["behave_pos"] },
+      { "question": "Is the ground beneath and around the car covered in puddles of water?", "tags": ["behave_pos"] },
+      { "question": "Are the car's tires now clean and black/wet instead of being covered in mud?", "tags": ["behave_pos"] },
+      { "question": "Are the car's windows clean but still showing some streaks or droplets of water?", "tags": ["behave_pos"] },
+      { "question": "Is the driver's side window still open?", "tags": ["behave_neg"] },
+      { "question": "Is the payment kiosk located outside the wash bay still completely dry and unaffected?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-072": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a kitchen island captured after the actions finish. Initial state: An uncapped 2-liter plastic bottle of cola stands upright in the center of a wide, empty plastic basin. A paper tube loaded with mint candies is positioned directly above the bottle's mouth, held by a removable pin. To the left of the basin is a small, neat stack of white paper napkins. To the right is a sealed stainless steel water bottle; farther back sits a closed cookbook. Actions: Pull the pin, allowing the mints to drop into the cola bottle. The resulting eruption is vigorous enough to knock over the stack of paper napkins. Render the scene five seconds after the eruption begins.",
+    "Checklist": [
+      { "question": "Is a large amount of foam erupting from or overflowing the mouth of the cola bottle?", "tags": ["behave_pos"] },
+      { "question": "Is a significant amount of cola foam and liquid collected in the surrounding plastic basin?", "tags": ["behave_pos"] },
+      { "question": "Are dark cola droplets visible splattered on the bottle’s exterior?", "tags": ["behave_pos"] },
+      { "question": "Is the paper tube that held the mints now visibly empty?", "tags": ["behave_pos"] },
+      { "question": "Are the scattered paper napkins visibly wet or stained with dark cola?", "tags": ["behave_pos"] },
+      { "question": "Is the sealed stainless steel water bottle still standing upright?", "tags": ["behave_neg"] },
+      { "question": "Is the cookbook still closed on the counter?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-073": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Create a single, photorealistic breakfast counter scene captured after the actions finish. Initial state: An open, transparent, full cereal box, an empty ceramic bowl, and a metal spoon all sit on a tray. A sealed milk carton with a screw-on cap stands behind the tray. Actions: Cereal is poured from the box into the bowl until it’s about half full, causing a few flakes to spill onto the tray. The box is then set back down on the tray. The cap is unscrewed from the milk carton and placed on the tray before pouring milk onto the cereal in the bowl. Finally, the spoon is picked up and placed into the bowl.",
+    "Checklist": [
+      { "question": "Is the cereal in the bowl visibly wet or soaked with milk?", "tags": ["behave_pos"] },
+      { "question": "Is the metal spoon now resting inside the bowl instead of on the tray?", "tags": ["behave_pos"] },
+      { "question": "Is the milk carton's screw-on cap lying on the tray as a separate object?", "tags": ["behave_pos"] },
+      { "question": "Is the milk carton's spout visibly open (missing its cap)?", "tags": ["behave_pos"] },
+      { "question": "Is the fill level of the cereal in the box visibly lower than full?", "tags": ["behave_pos"] },
+      { "question": "Are there a few spilled flakes of dry cereal on the tray's surface, outside the bowl?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic bowl still upright on the tray?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-074": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a stovetop captured after the actions finish. Initial state: A cast-iron skillet is preheated on a lit gas burner. On a wooden cutting board nearby rest a single ice cube and a shrimp. A pair of metal tongs lies next to them. Actions: The ice cube is placed onto the center of the hot skillet. Using tongs, a shrimp is carefully laid flat into the skillet, and the glass lid is quickly placed over the skillet to cover it. Render the scene one minute after the lid is placed.",
+    "Checklist": [
+      { "question": "Is the ice cube partially or fully melted into water in the skillet?", "tags": ["behave_pos"] },
+      { "question": "Does the shrimp turn red after being placed in the hot skillet?", "tags": ["behave_pos"] },
+      { "question": "Is the glass lid now covering the top of the skillet?", "tags": ["behave_pos"] },
+      { "question": "Is the inner surface of the glass lid visibly covered with water condensation?", "tags": ["behave_pos"] },
+      { "question": "Is the gas burner under the skillet still visibly lit?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden cutting board now empty after the ice cube and shrimp have been moved to the skillet?", "tags": ["behave_pos"] },
+      { "question": "Is the wooden cutting board still on the counter?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-075": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a tray experiment captured after the actions finish. Initial state: A shallow rectangular tray is level. A tennis ball is in the center. A tall, lightweight plastic cup full of water stands upright near the left side of the tray. A small puddle of sticky honey is in the middle of the tray, between the ball and the right side of the tray. A soft foam bumper is attached along the right inner edge of the tray. Actions: Tilt the entire tray 45 degrees to the right, causing the objects to move. After five seconds, slowly return the tray to a perfectly level position. Render the tray five seconds after it has been returned to level.",
+    "Checklist": [
+      { "question": "Is the tall plastic cup lying on its side instead of standing upright?", "tags": ["behave_pos"] },
+      { "question": "Is spilled water visible in the tray?", "tags": ["behave_pos"] },
+      { "question": "Is the tennis ball resting against the right-side foam bumper?", "tags": ["behave_pos"] },
+      { "question": "Is the tennis ball visibly coated with honey?", "tags": ["behave_pos"] },
+      { "question": "Is the original puddle of honey now smeared into a trail leading to the right side of the tray?", "tags": ["behave_pos"] },
+      { "question": "Is the foam bumper still firmly attached to the right inner wall of the tray?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-076": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a workbench captured after the actions finish. Initial state: A cardboard sheet lies on newspapers. A flat plastic stencil with a star-shaped cutout is centered on the cardboard and taped down at its four corners with masking tape. An aerosol can of blue spray paint stands beside it with its cap on. A roll of masking tape lies near the cardboard, and a potted plant is on a high shelf. Actions: Shake the can, remove the cap, and spray directly downward over the stencil for five seconds. Set the can upright next to the cardboard. Finally, carefully lift the stencil straight up and place it, paint-side up, on the newspaper to the right of the cardboard.",
+    "Checklist": [
+      { "question": "Is the stencil now lying on the newspaper, separate from the cardboard?", "tags": ["behave_pos"] },
+      { "question": "Is the blue color confined only to the star shape, with the rest of the cardboard showing its natural color?", "tags": ["behave_pos"] },
+      { "question": "Does the stencil have blue paint only outside the star, leaving the star area unpainted?", "tags": ["behave_pos"] },
+      { "question": "Are the four pieces of masking tape still attached to the corners of the stencil?", "tags": ["behave_pos"] },
+      { "question": "Is the spray can standing upright without its cap?", "tags": ["behave_pos"] },
+      { "question": "Is the cap of the spray can lying somewhere on the newspaper?", "tags": ["behave_pos"] },
+      { "question": "Is the potted plant still undisturbed on the high shelf?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-077": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a kitchen sink captured after the actions finish. Initial state: In the center of the sink basin stands a 1-liter clear plastic bottle of cola, filled to the brim and tightly capped. A dry sponge sits on the back ledge next to a closed soap dispenser. A ceramic plant pot is on the windowsill above. Actions: Vigorously shake the capped bottle for ten seconds over the sink, then immediately unscrew the cap. The resulting eruption of foam splashes onto the back ledge. After the fizzing subsides, pick up the sponge, wipe the back ledge clean, and then place the wet sponge in the sink basin.",
+    "Checklist": [
+      { "question": "Is dark cola liquid from the eruption visible inside the sink basin?", "tags": ["behave_pos"] },
+      { "question": "Is the liquid level inside the bottle now significantly lower than the top?", "tags": ["behave_pos"] },
+      { "question": "Is the bottle's cap lying somewhere in the sink or on the counter?", "tags": ["behave_pos"] },
+      { "question": "Is the sponge now inside the sink basin instead of on the back ledge?", "tags": ["behave_pos"] },
+      { "question": "Is the sponge visibly wet and possibly stained with dark cola liquid?", "tags": ["behave_pos"] },
+      { "question": "Is the back ledge clean and free of cola liquid after the sponge has wiped it?", "tags": ["behave_pos"] },
+      { "question": "Is the ceramic plant pot still undisturbed on the windowsill?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-078": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a study desk captured after the actions finish. Initial state: Three dominoes—red, blue, green—stand upright in a straight line from left to right, spaced just far enough to chain react. A faint chalk outline is drawn around the base of each domino. A tiny paper flag rests on the top edge of the green domino. To the right of the green domino, a folded index card stands as a tent directly in its fall path. Farther back sit a heavy glass paperweight and a closed notebook. Actions: Gently push the red domino toward the blue one to start the line toppling. Do not touch anything else.",
+    "Checklist": [
+      { "question": "Is the red domino lying flat on the desk surface?", "tags": ["behave_pos"] },
+      { "question": "Is the blue domino lying flat on the desk surface?", "tags": ["behave_pos"] },
+      { "question": "Is the green domino lying flat on the desk surface?", "tags": ["behave_pos"] },
+      { "question": "Is the red domino lying to the right of its own chalk outline?", "tags": ["behave_pos"] },
+      { "question": "Is the blue domino lying to the right of its own chalk outline?", "tags": ["behave_pos"] },
+      { "question": "Is the toppled green domino now physically touching the collapsed index card?", "tags": ["behave_pos"] },
+      { "question": "Is the paper flag now lying on the desk, separate from the dominoes?", "tags": ["behave_pos"] },
+      { "question": "Is the folded index card completely flattened or collapsed on the desk?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy glass paperweight still standing undisturbed in the background?", "tags": ["behave_neg"] },
+      { "question": "Is the closed notebook still closed and undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-079": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a countertop experiment captured after the actions finish. Initial state: A large, sharp-edged ice cube sits centered on a wire cooling rack over a shallow metal baking tray. On the tray under the rack is a small pile of purple powdered drink mix. Next to the ice cube, a single, lightweight paper napkin is placed. A hair dryer, initially plugged into a wall outlet, is on a stand facing the ice cube. A closed cookbook is farther back. Actions: Switch the hair dryer to 'hot' and 'high' for thirty seconds, directing the air at the ice cube. Then, switch the dryer off and unplug it from the outlet, leaving the cord loose.",
+    "Checklist": [
+      { "question": "Is there a pool of liquid in the baking tray?", "tags": ["behave_pos"] },
+      { "question": "Does some of the purple powdered drink mix dissolve, turning the water purple after melting?", "tags": ["behave_pos"] },
+      { "question": "Is the hair dryer's electrical plug no longer in the wall outlet?", "tags": ["behave_pos"] },
+      { "question": "Is the lightweight paper napkin blown from its original position?", "tags": ["behave_pos"] },
+      { "question": "Is the closed cookbook still closed and dry on the counter?", "tags": ["behave_neg"] },
+      { "question": "Is the hair dryer still positioned on its stand?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-080": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a small ramp track captured after the actions finish. Initial state: Two parallel lanes descend from a shared START gate. A red toy car is in the left lane and a blue toy car is in the right, both behind the closed gate. At the bottom of the left lane, a small tower of three yellow plastic blocks stands before a foam bumper. The right lane is a steep ramp ending directly in front of a shallow bowl filled with colored water. A closed toolbox sits to the right of the track. Actions: Lift the shared START gate to release both cars simultaneously. Do not touch anything else.",
+    "Checklist": [
+      { "question": "Is the shared START gate shown in the raised (open) position?", "tags": ["behave_pos"] },
+      { "question": "Is the red toy car at the bottom of the left lane?", "tags": ["behave_pos"] },
+      { "question": "Are the yellow plastic blocks scattered on the track around the red car?", "tags": ["behave_pos"] },
+      { "question": "Is the blue toy car at the bottom of its lane, partially submerged in the colored water?", "tags": ["behave_pos"] },
+      { "question": "Is the colored water visibly splashed out of the bowl and onto the surrounding track surface?", "tags": ["behave_pos"] },
+      { "question": "Is the closed toolbox still closed and undisturbed to the right of the track?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-081": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic room scene captured after the actions finish. Initial state: A ceiling fan with a single long paper streamer hanging from its center is off. On a table directly below it stands a heavy ceramic mug and a lightweight, empty paper cup. A framed picture hangs on the wall. A pendant lamp to the side is off. Actions: Turn on the pendant lamp, take the framed picture off the wall and place it face-up on the table, then switch the ceiling fan to its highest speed and leave it running, and then knock over an empty paper cup.",
+    "Checklist": [
+      { "question": "Is there visible motion blur on the spinning fan blades?", "tags": ["behave_pos"] },
+      { "question": "Is the paper streamer blowing sideways or angled outward, not hanging straight down?", "tags": ["behave_pos"] },
+      { "question": "Is the empty paper cup knocked over or lying on its side on the table?", "tags": ["behave_pos"] },
+      { "question": "Is the pendant lamp switched on and emitting light?", "tags": ["behave_pos"] },
+      { "question": "Is the framed picture now lying on the table instead of hanging on the wall?", "tags": ["behave_pos"] },
+      { "question": "Is there an empty picture hook or nail visible on the wall?", "tags": ["behave_pos"] },
+      { "question": "Is the heavy ceramic mug still standing upright on the table?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-082": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic tabletop science image captured after the actions finish. Initial state: A steel bar magnet lies on a sheet of white paper. A transparent small cup full of iron filings sits nearby. Next to it are a brass key and a steel paperclip. Actions: Pour most of the iron filings from the cup onto the paper, accidentally spilling a small pile directly onto the tabletop beside the paper. Gently tap the paper twice, then place the steel paperclip on the paper, near one of the magnet's ends, where the magnetic field induces a temporary magnetic field in the paperclip. Finally, set the now-empty cup down.",
+    "Checklist": [
+      { "question": "Do the iron filings on the paper form visible curved lines between the magnet's poles?", "tags": ["behave_pos"] },
+      { "question": "Are iron filings on the paper densely clustered near the magnet's two ends?", "tags": ["behave_pos"] },
+      { "question": "Is the cup on the table visibly empty or containing very few filings?", "tags": ["behave_pos"] },
+      { "question": "Is there a small, distinct pile of spilled iron filings on the tabletop, separate from the paper?", "tags": ["behave_pos"] },
+      { "question": "Is the steel paperclip located on the sheet of paper?", "tags": ["behave_pos"] },
+      { "question": "Are some iron filings clinging to the paperclip in a way that makes them appear to stand on end?", "tags": ["behave_pos"] },
+      { "question": "Is the brass key still lying on the table, unaffected by the magnet?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-083": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic backyard scene captured after the actions finish. Initial state: A white T-shirt hangs on a clothesline. A blue T-shirt hangs nearby under a protective roof overhang. The ground is dry. A garden hose is neatly coiled. On a wooden bench under the overhang rests a dry, folded newspaper. Next to the white T-shirt on the ground is a terracotta pot with a plant. Actions: Uncoil the garden hose and drop it on the ground, then spray the white T-shirt thoroughly with water; the strong spray also hits the ground and the terracotta pot. Turn off the water and place the dripping hose nozzle on top of the newspaper on the bench.",
+    "Checklist": [
+      { "question": "Is the white T-shirt visibly wet and darkened with water?", "tags": ["behave_pos"] },
+      { "question": "Is water dripping from the bottom edge of the white T-shirt?", "tags": ["behave_pos"] },
+      { "question": "Is the ground area beneath and around the white T-shirt visibly wet?", "tags": ["behave_pos"] },
+      { "question": "Is the soil in the terracotta pot dark and wet, and are the plant's leaves glistening with water?", "tags": ["behave_pos"] },
+      { "question": "Is the garden hose lying uncoiled on the ground?", "tags": ["behave_pos"] },
+      { "question": "Is there a wet patch on the newspaper where the nozzle is dripping?", "tags": ["behave_pos"] },
+      { "question": "Is the blue T-shirt under the overhang still dry?", "tags": ["behave_neg"] },
+      { "question": "Is the ground under the roof overhang still dry?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-084": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a living room corner captured after the actions finish. Initial state: A helium balloon is clipped to a clamp on a side table. On the table is a stack of three books. A floor lamp nearby is off. A framed photo hangs on the wall. Actions: Turn on the floor lamp, take the top book from the stack and place it on the floor, then take the framed photo from the wall and lay it on top of the remaining two books on the table. Finally, unclip the balloon and release it.",
+    "Checklist": [
+      { "question": "Is the helium balloon pressing against the ceiling?", "tags": ["behave_pos"] },
+      { "question": "Is the floor lamp switched on and emitting light?", "tags": ["behave_pos"] },
+      { "question": "Is the stack of books on the table composed of only two books?", "tags": ["behave_pos"] },
+      { "question": "Is there a single book lying on the floor next to the table?", "tags": ["behave_pos"] },
+      { "question": "Is the framed photo lying on top of the stack of books on the table?", "tags": ["behave_pos"] },
+      { "question": "Is there an empty hook or nail on the wall where the photo used to hang?", "tags": ["behave_pos"] },
+      { "question": "Is the clamp that was originally holding the helium balloon still on the side table after the balloon is released?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-085": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of a kitchen counter captured after the actions finish. Initial state: A 1-liter glass jar stands on the counter. A black marker line is drawn at its 0.5-liter level. A 0.75-liter cup is full of sand. A plastic funnel is nearby. A cookbook is standing upright. Actions: Open the cookbook and lay it flat on the counter, then place the funnel in the jar's mouth. Pour the entire cup of sand into the funnel, spilling some sand onto the open pages of the cookbook in the process. Remove the funnel from the jar and place it upside-down on the counter, then set the empty cup down.",
+    "Checklist": [
+      { "question": "Is there a mound of sand inside the jar?", "tags": ["behave_pos"] },
+      { "question": "Is the level of the sand inside the jar clearly above the black marker line?", "tags": ["behave_pos"] },
+      { "question": "Is the cup shown empty on the counter?", "tags": ["behave_pos"] },
+      { "question": "Is the cookbook lying open and flat instead of standing upright?", "tags": ["behave_pos"] },
+      { "question": "Is there a visible scattering of sand on the open pages of the cookbook?", "tags": ["behave_pos"] },
+      { "question": "Is the funnel now on the counter and separate from the jar?", "tags": ["behave_pos"] },
+      { "question": "Is the funnel positioned upside-down?", "tags": ["behave_pos"] },
+      { "question": "Is there a small pile of residual sand on the counter where the upside-down funnel was placed?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar still standing upright?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-086": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic image of the immediate aftermath of a household accident. Initial state: A person was carrying a full paper grocery bag across a kitchen with a white tile floor. The bag contained a glass jar of red tomato sauce (fragile), a bag of loose eggs, a sturdy metal can of beans, and a large head of lettuce. On the kitchen counter above the floor are a fruit bowl and a coffee maker. Actions: The bottom of the paper grocery bag suddenly tears open, causing all of its contents to fall directly onto the tile floor. The image should capture the chaotic scene on the floor a moment after impact.",
+    "Checklist": [
+      { "question": "Is the paper grocery bag visibly torn at the bottom and crumpled on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the glass jar of tomato sauce shattered?", "tags": ["behave_pos"] },
+      { "question": "Are red sauce and glass fragments spilled across the floor?", "tags": ["behave_pos"] },
+      { "question": "Are the loose eggs crushed, with raw, spilled egg yolk and albumen visible amongst the debris?", "tags": ["behave_pos"] },
+      { "question": "Is the metal can of beans lying on its side on the floor?", "tags": ["behave_pos"] },
+      { "question": "Is the head of lettuce relatively intact but perhaps bruised or with a few loose leaves, sitting amidst the mess?", "tags": ["behave_pos"] },
+      { "question": "On the counter above the mess, is the fruit bowl still neatly arranged and completely clean?", "tags": ["behave_neg"] },
+      { "question": "Is the coffee maker on the counter still clean and undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-087": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic tabletop scene after all actions finish. Initial state: A small unopened ketchup packet lies on a white ceramic plate. Kitchen scissors rest to the right. A neatly folded paper napkin sits at the plate’s upper edge. A salt shaker and a glass of water stand farther back. Actions: Use the scissors to snip the packet’s corner, then squeeze the entire contents onto the middle of the plate, getting a small amount of ketchup on the scissor blades in the process. Place the empty packet on the plate, pick up the napkin, unfold it, and wipe the scissor blades clean. Finally, place the used napkin and the scissors back down, swapping their positions when putting them back.",
+    "Checklist": [
+      { "question": "Is a pool of red ketchup visible on the middle of the plate?", "tags": ["behave_pos"] },
+      { "question": "Is the ketchup packet on the plate visibly empty and flattened?", "tags": ["behave_pos"] },
+      { "question": "Is one corner of the ketchup packet visibly cut open?", "tags": ["behave_pos"] },
+      { "question": "Are the kitchen scissors now resting on the table (not on the plate)?", "tags": ["behave_pos"] },
+      { "question": "Are the blades of the kitchen scissors clean?", "tags": ["behave_pos"] },
+      { "question": "Is the paper napkin now unfolded or crumpled, not neatly folded?", "tags": ["behave_pos"] },
+      { "question": "Is there a visible red ketchup smudge on the surface of the napkin?", "tags": ["behave_pos"] },
+      { "question": "Is the used napkin now placed to the right of the plate, where the scissors were originally?", "tags": ["behave_pos"] },
+      { "question": "Are the scissors now placed at the plate’s upper edge, where the napkin was originally?", "tags": ["behave_pos"] },
+      { "question": "Is the salt shaker still standing upright in the background?", "tags": ["behave_neg"] },
+      { "question": "Is the glass of water still upright and undisturbed?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-088": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic desk scene captured after all actions finish. Initial state: A glass hourglass timer stands on a shallow tray; the upper bulb is full of sand. A faint black line is marked at mid-height on the lower bulb. A closed notebook, a capped pen, and a full mug of black coffee lie to the side. Actions: Flip the hourglass, uncap the pen, and use the pen to write the word 'TIMING' on a blank page. Place the uncapped pen down beside the notebook. The scene is rendered at the exact moment the sand pile in the lower bulb surpasses the black line.",
+    "Checklist": [
+      { "question": "Is a conical pile of sand visible in the lower bulb of the hourglass?", "tags": ["behave_pos"] },
+      { "question": "Is a thin stream of sand visible passing through the neck of the hourglass?", "tags": ["behave_pos"] },
+      { "question": "Is the sand level in the upper bulb significantly lower than full?", "tags": ["behave_pos"] },
+      { "question": "Is the sand level in the lower bulb above the black reference line?", "tags": ["behave_pos"] },
+      { "question": "Is the notebook now open, showing a page?", "tags": ["behave_pos"] },
+      { "question": "Is the word 'TIMING' visibly written on the notebook page?", "tags": ["behave_pos"] },
+      { "question": "Is the pen lying on the desk without its cap on?", "tags": ["behave_pos"] },
+      { "question": "Is the pen's cap visible on the desk as a separate object?", "tags": ["behave_pos"] },
+      { "question": "Is the tray under the hourglass undisturbed?", "tags": ["behave_neg"] },
+      { "question": "Is the mug of black coffee still full and untouched?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-089": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic office tabletop after all actions finish. Initial state: A red ink pad with its lid open sits to the left. A rubber stamp ('PAID') is nearby. Two blank white index cards are stacked neatly. A stapler, a tape dispenser, and a capped blue pen are farther back. Actions: Staple the two index cards together at the top-left corner, then press the stamp onto the ink pad. Press the inked stamp onto the center of the top index card, uncap the blue pen, and draw a circle around the 'PAID' imprint. Finally, close the lid of the ink pad.",
+    "Checklist": [
+      { "question": "Is a red 'PAID' imprint visible on the top index card?", "tags": ["behave_pos"] },
+      { "question": "Is there a blue ink circle drawn around the 'PAID' imprint?", "tags": ["behave_pos"] },
+      { "question": "Are the two index cards physically joined by a metal staple in one corner?", "tags": ["behave_pos"] },
+      { "question": "Is the rubber stamp resting somewhere on the table, not in the user's hand?", "tags": ["behave_pos"] },
+      { "question": "Is the lid of the red ink pad now closed?", "tags": ["behave_pos"] },
+      { "question": "Is the blue pen lying on the table without its cap?", "tags": ["behave_pos"] },
+      { "question": "Is the blue pen's cap lying on the table as a separate object?", "tags": ["behave_pos"] },
+      { "question": "Is the stapler upright and in its original position?", "tags": ["behave_neg"] },
+      { "question": "Is the tape dispenser untouched in the background?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  },
+  "R-BR-090": {
+    "Main Class": "Reasoning",
+    "Sub Class": "Behavioral Reasoning",
+    "Prompt": "Generate a single, photorealistic kitchen counter scene captured after all actions finish. Initial state: A manual citrus juicer sits centered over a clear measuring cup. On a small plate to the left lie two orange halves, cut-face up; the half on the left is designated for juicing. A clean, neatly folded dish towel lies to the right. A standard glass salt shaker with a screw-on metal lid stands upright at the back. Actions: Press and twist the left orange half vigorously on the reamer, then place the squeezed orange half back to its original position, causing a few strands of pulp to drop onto the plate's surface. Unscrew the lid from the salt shaker and place the lid on the counter beside the shaker's base. After getting some juice on the hand, pick up the dish towel to wipe the hand clean. Finally, while placing the now-used towel back, accidentally knock over the base of the salt shaker.",
+    "Checklist": [
+      { "question": "Is a quantity of orange juice visible inside the measuring cup?", "tags": ["behave_pos"] },
+      { "question": "Is the juicer's reamer visibly coated with orange pulp and juice?", "tags": ["behave_pos"] },
+      { "question": "Is the squeezed orange half on the plate visibly hollowed or compressed?", "tags": ["behave_pos"] },
+      { "question": "Is the squeezed orange half on the left of the plate?", "tags": ["behave_pos"] },
+      { "question": "Are there visible strands of pulp on the surface of the plate, separate from the orange halves?", "tags": ["behave_pos"] },
+      { "question": "Is the dish towel no longer neatly folded (e.g., is it unfolded or crumpled)?", "tags": ["behave_pos"] },
+      { "question": "Is there a visible orange-colored stain on the dish towel?", "tags": ["behave_pos"] },
+      { "question": "Is the main body of the salt shaker lying on its side instead of standing upright?", "tags": ["behave_pos"] },
+      { "question": "Is there a visible pile or scattering of salt spilled on the counter from the open top of the shaker?", "tags": ["behave_pos"] },
+      { "question": "Is the unsqueezed orange half still on the plate and appearing intact?", "tags": ["behave_neg"] },
+      { "question": "Is the unsqueezed orange half still on the right of the plate?", "tags": ["behave_neg"] },
+      { "question": "Is the measuring cup still standing upright beneath the juicer?", "tags": ["behave_neg"] }
+    ],
+    "Remark": "GPT"
+  }
+}

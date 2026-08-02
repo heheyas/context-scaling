@@ -1,0 +1,20 @@
+# Copyright (c) 2025 ByteDance Ltd. and/or its affiliates
+# SPDX-License-Identifier: Apache-2.0
+#
+# Sanity-check recipe: minimal single-dataset config for smoke testing
+# the training loop end-to-end. Replace `<DATASET_NAME>` with a dataset
+# registered in `data/dataset_info.py`.
+
+t2i_ct_json:
+  dataset_names:
+  - <DATASET_NAME>: [1]
+  sampling_config_name: l10
+  json_single_quote: True
+  image_transform_args:
+    image_stride: 16
+    max_image_size: 512
+    min_image_size: 256
+    max_pixels: 262144 # 512x512
+  max_aspect_ratio: 4.0
+  is_mandatory: true
+  weight: 1
